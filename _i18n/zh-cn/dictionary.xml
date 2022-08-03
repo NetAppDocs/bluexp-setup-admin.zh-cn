@@ -2381,112 +2381,6 @@
   <block id="04e60b39adde0e5f7e0bdecbea515591" category="paragraph">目前、"我的商机"可以让您发现AWS帐户中现有的适用于ONTAP 文件系统的FSX。</block>
   <block id="0023c752677bd572df55463d76cf9b90" category="inline-link">了解如何利用"我的商机"发现适用于ONTAP 的FSx</block>
   <block id="b8aac0d7b730cae52d7fa6174da69a85" category="paragraph"><block ref="b8aac0d7b730cae52d7fa6174da69a85" category="inline-link-rx"></block></block>
-  <block id="36403db09ed916406c9f181948f4d246" category="paragraph">在使用AppTemplate标记服务时、Connector会发出以下API请求来管理Azure资源上的标记：</block>
-  <block id="ba8b530e6d2fe6c9b134f0959b8faac0" category="list-text">microsoft.resources/resources/read、"microsoft.resources/subscriptions/operationresults/read"、"microsoft.resources/subscriptions/resourcegroups/read"、"microsoft.resources/resources/resources/resources/resources/read"、"microsoft.resources/tags /read"、 "microsoft.resources/tags /write"、</block>
-  <block id="4a741f88a7ee322e323f9a68dc71eaa8" category="paragraph">Microsoft.Compute/virtualMachines/read"、Microsoft.Compute/virtualMachines/start/action"、Microsoft.Compute/virtualMachines/deallocate/action"、"Microsoft。Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、 "microsoft.Storage/storageAccounts""microsoft.Storage/storageAccounts/blobServices/containers"、"microsoft.KeyVault/vauls/Read"、"microsoft.KeyVault/vauls/accessPolicies/write"、Microsoft.Network/networkInterfaces/read"、"microsoft.resources/subscriptions/locations/read"、Microsoft.Network/virtualNetworks/read"、 Microsoft.Network/virtualNetworks/subnets/read"、"microsoft.resources/deployments/read"、"microsoft.resources/deployments/write"、"microsoft.resources/subscriptions/operationresults/read"、"microsoft.resources/subscriptions/resourcegroups/read"、 "microsoft.resources/subscriptions/resources/resources/resources/read"、"microsoft.resources/subscriptions/resourcegroups/write"、"microsoft.Authorization/locks/*"、"Microsoft.Network/privateEndpoints/write"、"Microsoft.Network/privateEndpoints/read"、 Microsoft.Network/privateDnsZones/virtualNetworkLinks/write"、Microsoft.Network/virtualNetworks/join/action"、Microsoft.Network/privateDnsZones/A/write"、Microsoft.Network/privateDnsZones/read"、Microsoft.Network/privateDnsZones/virtualNetworkLinks/read"、 Microsoft.Compute/virtualMachines/extensions/delete"、Microsoft.Compute/virtualMachines/delete"、Microsoft.Network/networkInterfaces/delete"、Microsoft.Network/networkSecurityGroups/delete"、"Microsoft。resources/deployments/delete"、 "microsoft.resources/tags /read"、"microsoft.resources/tags /write"、Microsoft.Network/publicIPAddresses/delete""microsoft.Storage/storageAccounts"、blobServices/contains/write"</block>
-  <block id="0d1b08c34858921bc7c662b228acb7ba" category="paragraph">？？？</block>
-  <block id="c3269a1e4d1894eb0d5fc86ce540973b" category="paragraph">Microsoft.Compute/locations/operations/read"、Microsoft.Compute/locations/vmSizes/read"、Microsoft.Compute/operations/read"、Microsoft.Compute/virtualMachines/instanceView/read"、Microsoft.Compute/virtualMachines/powerOff/action"、 Microsoft.Compute/virtualMachines/read"、Microsoft.Compute/virtualMachines/restart/action"、Microsoft.Compute/virtualMachines/start/action"、Microsoft.Compute/virtualMachines/write"、Microsoft.Compute/images/read"、 Microsoft.Compute/disks/delete"、Microsoft.Compute/disks/read"、Microsoft.Compute/disks/write"、"microsoft.Storage/SchecknameAvailability /Read"、"microsoft.Storage/operations/Read"、 "microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、"blobServices/containers"、"Microsoft.Network/networkInterfaces/read"、Microsoft.Network/networkInterfaces/write"、 Microsoft.Network/networkInterfaces/join/action"、Microsoft.Network/networkSecurityGroups/read"、Microsoft.Network/networkSecurityGroups/write"、"microsoft.resources/subscriptions/locations/read"、Microsoft.Network/locations/operationResults/read"、 Microsoft.Network/locations/operations/read"、Microsoft.Network/virtualNetworks/read"、Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read"、Microsoft.Network/virtualNetworks/subnets/read"、Microsoft.Network/virtualNetworks/subnets/virtualMachines/read"、 Microsoft.Network/virtualNetworks/virtualMachines/read"、Microsoft.Network/virtualNetworks/subnets/join/action"、Microsoft.Network/virtualNetworks/subnets/write"、Microsoft.Network/routeTables/join/action"、"Microsoft。resources/deployments/operations/read"、 "microsoft.resources/deployments/read"、"microsoft.resources/deployments/write"、"microsoft.resources/resources/read"、"microsoft.resources/subscriptions/operationresults/read"、"microsoft.resources/subscriptions/resourcegroups/delete"、 "microsoft.resources/subscriptions/resourcegroups/read"、"microsoft.resources/subscriptions/resourcegroups/resources/read"、"microsoft.resources/subscriptions/resourcegroups/write"、</block>
-  <block id="d2c1f1ced1012651da83e1903e830dc3" category="paragraph">使用Cloud Data sense时、Connector会发出以下API请求来扫描Azure Blob存储：</block>
-  <block id="43d9b79c5b53ab68cb8cd498460af433" category="paragraph">在使用Cloud Tiering时、Connector会发出以下API请求、将数据分层到Azure Blob存储。</block>
-  <block id="2a54718457f74f946e039a1134dc6bce" category="paragraph">"microsoft.Storage/storageAccounts/Listkeys/action"、"microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts/blobServices/containers"、"microsoft.resources/subscriptions/locations/read"、"microsoft.resources/subscriptions/operationresults/read"、 "microsoft.resources/subscriptions/resourcegroups/read"、"microsoft.resources/subscriptions/resourcegroups/write"、"microsoft.Storage/storageAccounts/managementPolicies/write""microsoft.Storage/storageAccounts/blobServices/containers/write"</block>
-  <block id="30a86f05f0661c6246fb025d97c4ddd3" category="cell">创建Cloud Volumes ONTAP 并停止、启动、删除和获取系统状态。" Microsoft.Compute/locations/operations/read"、</block>
-  <block id="b1864a45910aa3b2adb00b2e11eb88a7" category="cell">无"Microsoft.Compute/locations/vmSizes/read"、</block>
-  <block id="4be636adb7dccd1a8bb413c7b6b9b34b" category="cell">无"microsoft.resources/subscriptions/locations/read"、</block>
-  <block id="e2b915a176490f9a21076beae09df0d9" category="cell">无"Microsoft.Compute/operations/read"、</block>
-  <block id="02e5615b1273aea5f2cf47afbd533acf" category="cell">无"Microsoft.Compute/virtualMachines/instanceView/read"、</block>
-  <block id="f8c767dd07edf6f8919cb683133ae41c" category="cell">无"Microsoft.Compute/virtualMachines/powerOff/action"、</block>
-  <block id="e79e4800b229f83e1b656f1d448e092f" category="cell">无"Microsoft.Compute/virtualMachines/read"、</block>
-  <block id="bdbc4a560298c0b3202a1050c0d21f38" category="cell">无"Microsoft.Compute/virtualMachines/restart/action"、</block>
-  <block id="4bfb6489dcbd253b66bc59ecb65cb4a6" category="cell">无"Microsoft.Compute/virtualMachines/start/action"、</block>
-  <block id="8e78e7943904341ade4a2c18d1ef7fb7" category="cell">无"Microsoft.Compute/virtualMachines/deallocate/action"、</block>
-  <block id="3f1f1b5abdeb4680a68df8de999606b2" category="cell">无"Microsoft.Compute/virtualMachines/vmSizes/read"、</block>
-  <block id="d9a1064cee8260e870a1ad165a235381" category="cell">无"Microsoft.Compute/virtualMachines/write"、</block>
-  <block id="4a7e51319a4b6fa30c9ee3b3123db2fa" category="cell">从VHD启用Cloud Volumes ONTAP 部署。" Microsoft.Compute/images/write"、</block>
-  <block id="1dcde381a5e07bd8af6432093d8c4d56" category="cell">无"Microsoft.Compute/images/read"、</block>
-  <block id="a01f97c3912ef431efc63ac6b4189bd8" category="cell">在目标子网Microsoft.Network/networkInterfaces/read"中为Cloud Volumes ONTAP 创建和管理网络接口</block>
-  <block id="8ce6a1b25412eeb48916255a93108146" category="cell">无"Microsoft.Network/networkInterfaces/write"、</block>
-  <block id="ec438a9f39e05ad9de83dca263c4ee37" category="cell">无"Microsoft.Network/networkInterfaces/join/action"、</block>
-  <block id="a2968496d4bf14101ab6a28aa801dfa4" category="cell">为Cloud Volumes ONTAP Microsoft.Network/networkSecurityGroups/read"创建预定义的网络安全组、</block>
-  <block id="5a83dffcc9a6b229790fc81ae2429997" category="cell">无"Microsoft.Network/networkSecurityGroups/write"、</block>
-  <block id="2e08f4b609fe7d929a017ed601d29186" category="cell">无"Microsoft.Network/networkSecurityGroups/join/action"、</block>
-  <block id="d1457b72c3fb323a2671125aef3eab5d" category="cell">？</block>
-  <block id="7e3ba818075172e20345e8e79e65f729" category="cell">获取有关区域、目标vNet和子网的网络信息、并将Cloud Volumes ONTAP 添加到VNets Microsoft.Network/locations/operationResults/read"、</block>
-  <block id="22502bf3c034d7af264cd1cc5506e88b" category="cell">无"Microsoft.Network/locations/operations/read"、</block>
-  <block id="292e54a5ebde9ad29c055ba48b2080a0" category="cell">无"Microsoft.Network/virtualNetworks/read"、</block>
-  <block id="b6911a8e033df4360519aed0ba8ab661" category="cell">无"Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read"、</block>
-  <block id="d8c33f40da6def08d9ef1f1762d55b7a" category="cell">无"Microsoft.Network/virtualNetworks/subnets/read"、</block>
-  <block id="0f79f2af70ee56820436b9e0dd7c303c" category="cell">无"Microsoft.Network/virtualNetworks/subnets/virtualMachines/read"、</block>
-  <block id="86e5704cf93ff4735ba4ec1fbb8276f2" category="cell">无"Microsoft.Network/virtualNetworks/virtualMachines/read"、</block>
-  <block id="af2662c128754452342253890c7ef4dd" category="cell">无"Microsoft.Network/virtualNetworks/subnets/join/action"、</block>
-  <block id="0f5bf29549e247ebbc3bd9162e246c30" category="cell">为Cloud Volumes ONTAP "microsoft.resources/deployments/operations/read"创建和管理资源组、</block>
-  <block id="dae1e981a460d4af6534c6d3f5881c65" category="cell">无"microsoft.resources/deployments/read"、</block>
-  <block id="d7d76366578777f984e58b41d3b99a9b" category="cell">无"microsoft.resources/deployments/write"、</block>
-  <block id="629563bafc016505058d9746589ed4f8" category="cell">无"microsoft.resources/resources/read"、</block>
-  <block id="12a9977850febf0f73649060df2f8908" category="cell">无"microsoft.resources/subscriptions/operationresults/read"、</block>
-  <block id="42412b4a4546156bd5b49edf1470f5ed" category="cell">无"microsoft.resources/subscriptions/resources/delete"、</block>
-  <block id="90a98cd091de1e2b03ed4ec64c042838" category="cell">无"microsoft.resources/subscriptions/resources/read"、</block>
-  <block id="de13595186e978ab4b7e21397994a873" category="cell">无"microsoft.resources/subscriptions/resources/resources/read"、</block>
-  <block id="117715bdc1c957f14a1e749977aed42a" category="cell">无"microsoft.resources/subscriptions/resources/write"、</block>
-  <block id="6ce845ae3f99e2e1fc66be98c727852a" category="cell">管理Azure存储帐户和磁盘并将磁盘连接到Cloud Volumes ONTAP Microsoft.Compute/disks/read"、</block>
-  <block id="8436270974330401da5cb31ce02bcf40" category="cell">无"Microsoft.Compute/disks/write"、</block>
-  <block id="8b85e351b7dc4009f7d9cd4b746d27ae" category="cell">无"Microsoft.Compute/disks/delete"、</block>
-  <block id="84e1d8577e2e8a639e20971156ce64df" category="cell">无"microsoft.Storage/checknameavailability / read"、</block>
-  <block id="d5986a3f9ad60cd877e5880b57162575" category="cell">无"microsoft.Storage/operations/read"、</block>
-  <block id="c76d07f987f6d68a38fc30c22ada6924" category="cell">无"microsoft.Storage/storageAccounts"、</block>
-  <block id="20df28754e7364ac3916ea7d160ed11a" category="cell">无"microsoft.Storage/storageAccounts"、</block>
-  <block id="24d0f8256fe5bafda7cd063a5856c015" category="cell">无"microsoft.Storage/storageAccounts"、</block>
-  <block id="1eeb73520ce69e34a7dfc8a67b282612" category="cell">无"microsoft.Storage/storageAccounts"、</block>
-  <block id="961b47aab0daffbb36cace7cc939d680" category="cell">无"microsoft.Storage/storageAccounts"</block>
-  <block id="9539fc58f2e2ca37623614da55adebd9" category="cell">无"microsoft.Storage/使用 情况/读取"、</block>
-  <block id="382c205ba83dfae44451ddc0e78d094b" category="cell">启用到Azure Blob存储的备份、并对存储帐户"microsoft.Storage/storageAccounts"/ blobServices/containers"进行加密、</block>
-  <block id="54f8d94025b343465f4ea45cbbd4000b" category="cell">无"microsoft.keyvault/vauls/read"、</block>
-  <block id="235225065ffe8b09730e020c8ad96ec4" category="cell">无"microsoft.KeyVault/vauls/accessPolicies/write"</block>
-  <block id="35007bbabd63417faf0d2c146fb6e276" category="cell">为数据分层启用vNet服务端点Microsoft.Network/virtualNetworks/subnets/write"、</block>
-  <block id="adc151c2072a1b1bd6254779ddcae646" category="cell">无"Microsoft.Network/routeTables/join/action"、</block>
-  <block id="ef63e7cc9efbad3247279e284e14d8df" category="cell">创建和管理Azure托管快照"Microsoft.Compute/snapshots/write"、</block>
-  <block id="5ef8307184fd200340df54d444ffcbb0" category="cell">无"Microsoft.Compute/snapshots/read"、</block>
-  <block id="32f6557f4f023390ec662d7da15002c9" category="cell">无"Microsoft.Compute/snapshots/delete"、</block>
-  <block id="6495822039bb204a82bf0bf302c5e3d9" category="cell">无"Microsoft.Compute/disks/beginGetAccess/action"、</block>
-  <block id="a13fb947477f82f172396f7635a16ab5" category="cell">创建和管理Cloud Volumes ONTAP 的可用性集"Microsoft.Compute/availabilitySets/write"、Microsoft.Compute/availabilitySets/read"、</block>
-  <block id="fd7df604c58ead49971187f82a772199" category="cell">从Azure Marketplace启用编程部署。"microsoft.MarketplaceOrered/OfferTypes/Publishers/Offers/Plans/agreements/read"、</block>
-  <block id="1468117863875447d010500776b4ebaa" category="cell">无"microsoft.MarketplaceOrered/OfferTypes/Publisher/Offers/Plans/agreements/write"、</block>
-  <block id="051716b57dddeb9ca250b9c1dbe12172" category="cell">管理HA对的Azure负载平衡器Microsoft.Network/loadBalancers/read"、</block>
-  <block id="be65be5ad075768eef005d62ad8f2860" category="cell">无"Microsoft.Network/loadBalancers/write"、</block>
-  <block id="279b55da5d7e92c55c089723f81d33eb" category="cell">无"Microsoft.Network/loadBalancers/delete"、</block>
-  <block id="b118f057081fadae90b807bb5997abb6" category="cell">无"Microsoft.Network/loadBalancers/backendAddressPools/read"、</block>
-  <block id="a23f6f55fdc63a984d864a4ea5dd4243" category="cell">无"Microsoft.Network/loadBalancers/backendAddressPools/join/action"、</block>
-  <block id="0a887844b8a0c1ba1c1d4a6a51813692" category="cell">无"Microsoft.Network/loadBalancers/frontendIPConfigurations/read"、</block>
-  <block id="943a03abab26c4713b5f0b4b1cc892f9" category="cell">无"Microsoft.Network/loadBalancers/loadBalancingRules/read"、</block>
-  <block id="2db330d831d0579005a106855a03dd07" category="cell">无"Microsoft.Network/loadBalancers/probes/read"、</block>
-  <block id="4314bdea7704bdf4cc521fd7758d4bdc" category="cell">无"Microsoft.Network/loadBalancers/probes/join/action"、</block>
-  <block id="71ad4a9f8b1c1dee6633c3edbbdbdc2d" category="cell">启用对Azure磁盘上的锁定的管理</block>
-  <block id="a4598b203f675034030d13b8c2ee2c29" category="cell">在未提供与子网外部的连接时、启用对私有端点的管理。Cloud Manager 会为 HA 创建存储帐户，但子网中只有内部连接。" Microsoft.Network/privateEndpoints/write"、</block>
-  <block id="d91fb8a6c0a59278532bb4ad7b2feda6" category="cell">无"microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/Actions"、</block>
-  <block id="8716b68d300481afbff49c6cabfb165b" category="cell">无"microsoft.Storage/storageAccounts/privateEndpointConnections/Read"、</block>
-  <block id="77d7f886b0da5332458ea1bf548465c1" category="cell">无"Microsoft.Network/privateEndpoints/read"、</block>
-  <block id="78045c8cdf690c4b1ea39876067bdd36" category="cell">无"Microsoft.Network/privateDnsZones/write"、</block>
-  <block id="926cc8dd3234c5984a413bb6051e9108" category="cell">无"Microsoft.Network/privateDnsZones/virtualNetworkLinks/write"、</block>
-  <block id="449718b3ddc7856bd749b81a88511d36" category="cell">无"Microsoft.Network/virtualNetworks/join/action"、</block>
-  <block id="69aa9c345cac744136cf239b4efc2eb2" category="cell">无"Microsoft.Network/privateDnsZones/A/write"、</block>
-  <block id="26c52d0469f01fd588c1be05ec1c0dcf" category="cell">无"Microsoft.Network/privateDnsZones/read"、</block>
-  <block id="c305fb7cf5de485cd712447eea15f328" category="cell">无"Microsoft.Network/privateDnsZones/virtualNetworkLinks/read"、</block>
-  <block id="1983a80e8a38d59289c65d3b8631bf04" category="cell">用于使用全局文件缓存。"microsoft.Insights / Metrics / Read"、Microsoft.Compute/virtualMachines/extensions/write"、Microsoft.Compute/virtualMachines/extensions/read"、Microsoft.Compute/virtualMachines/extensions/delete"、Microsoft.Compute/virtualMachines/delete"、 Microsoft.Network/networkInterfaces/delete"、Microsoft.Network/networkSecurityGroups/delete"、"microsoft.resources/deployments/delete"、</block>
-  <block id="59c7a75db7bf88265f26114ffb37f7fa" category="cell">在部署失败或删除Microsoft.Network/privateEndpoints/delete"时从属于Cloud Volumes ONTAP 的资源组中删除资源</block>
-  <block id="f3c142dee0cd449238d252963b4ae15b" category="cell">无"Microsoft.Compute/availabilitySets/delete"、</block>
-  <block id="87aa64ec28e2752d7ada580073537dd1" category="cell">使用Cloud Manager API Microsoft.Compute/diskEncryptionSets/read"在Cloud Volumes ONTAP 中使用客户管理的加密密钥</block>
-  <block id="af5e4bdef3396b7250c7c009ae1b5089" category="cell">无"Microsoft.Compute/diskEncryptionSets/write"、</block>
-  <block id="3b1475bc837a2cc3bc663ee0ecf628e6" category="cell">无"microsoft.KeyVault/vauls/deploy/action"、</block>
-  <block id="98f95a5f5c977f8c007324a61944a026" category="cell">无Microsoft.Compute/diskEncryptionSets/delete"</block>
-  <block id="74e5eca5685642fbcb4f991b39221a6c" category="cell">通过 Cloud Manager 可以为 HA 对配置应用程序安全组，从而隔离 HA 互连和集群网络 NIC 。" Microsoft.Network/applicationSecurityGroups/write"、</block>
-  <block id="f7d9943f72474f0f5338f4c01490d7d4" category="cell">无"Microsoft.Network/applicationSecurityGroups/read"、</block>
-  <block id="c165229fc6c308d16690b305e8804c24" category="cell">是、Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action"、</block>
-  <block id="720560fb65fa88320ad37153ecd9bc28" category="cell">无"Microsoft.Network/networkSecurityGroups/securityRules/write"、</block>
-  <block id="a5e6662b2bd509fa72a6452b5eff315c" category="cell">无"Microsoft.Network/applicationSecurityGroups/delete"、</block>
-  <block id="67984079dc06bfdfd42f169387e11791" category="cell">无Microsoft.Network/networkSecurityGroups/securityRules/delete"</block>
-  <block id="4601ea706e69216df9564172960ef7bc" category="cell">是的、在Excel中列出、但对于CVO、如果我有标记服务的标签、则为这些标签。使用Cloud Manager标记服务管理Azure资源上的标记。"microsoft.resources/tags /read"、"microsoft.resources/tags /write"、"microsoft.resources/tags /delete"*** Excel中缺少。I have them listed as for using customer-managed encryption keys***"microsoft.keyvault/vauls/read"、"microsoft.keyvault/vauls/accessPolicies/write"、"*** used for ANF、but listed under CVO in the Excel file Microsoft.NetApp/netAppAccounts/read" Microsoft.NetApp/netAppAccounts/capacityPools/read" Microsoft.NetApp/netAppAccounts/capacityPools/volumes/write" Microsoft.NetApp/netAppAccounts/capacityPools/volumes/read" Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete" 在部署、操作和删除时、**列为"否"、但它们在策略中、因此必须在某个阶段使用、对吗？***"Microsoft.Compute/images/write"、</block>
-  <block id="fb01a2bd482fff99a38bc9571e286b36" category="cell">否、在部署中列出问号、请访问："Microsoft.Network/networkSecurityGroups/join/action"、"***仅列出两个删除所需的权限。是否正确？***</block>
-  <block id="0987e5bde139c54427573b7afe1d9422" category="paragraph">Connector发出以下API请求、以发现和管理Azure Kubernetes Service (AKS)中运行的集群：</block>
-  <block id="622db1cfe2ea35c66ce2096ce759f7d9" category="paragraph">Microsoft.Compute/virtualMachines/read"、"microsoft.resources/subscriptions/locations/read"、"microsoft.resources/subscriptions/operationresults/read"、"microsoft.resources/subscriptions/resources/resources/resources/read"、 "microsoft.ContainerService/managedClusters/read" microsoft.ContainerService/managedClusters/ListClusterUserCredential/操作</block>
   <block id="6233440a829ea8d3e6200b654640bc7d" category="summary">Cloud Manager帐户管理员需要先部署Connector、然后才能使用大多数Cloud Manager功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。</block>
   <block id="da68412a7fbaa56185ffff11a0811d32" category="paragraph">Cloud Manager帐户管理员需要先部署_Connector_、然后才能使用大多数Cloud Manager功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。 <block ref="39840e1bb98f6582f1bf4e505d666ea1" category="inline-link-macro-rx"></block>。</block>
   <block id="5f174caa182ccf4eda7018d2ae4ed7a0" category="section-title">打开端口3128以显示AutoSupport 消息</block>
@@ -2518,4 +2412,49 @@
   <block id="586c381704849af8eb925f1bb3c1cc89" category="paragraph">在此初始版本中、"我的商机"可让您发现AWS帐户中现有的ONTAP 文件系统FSX。</block>
   <block id="56148e3a5b597bf775527bf28e119033" category="paragraph"><block ref="56148e3a5b597bf775527bf28e119033" category="inline-link-rx"></block></block>
   <block id="a92dc2a225f00bb9e0d676f2e4ae484e" category="sidebar">使用"我的商机"进行发现</block>
+  <block id="d97ba5e3e0f58b633ff060180e9fbaff" category="cell">Microsoft.Compute/locations/operations/read" ， Microsoft.Compute/locations/vmSizes/read" ， Microsoft.Compute/operations/read" ， Microsoft.Compute/virtualMachines/instanceView/read" ， Microsoft.Compute/virtualMachines/powerOff/action" ， Microsoft.Compute/virtualMachines/read" ， Microsoft.Compute/virtualMachines/restart/action" ， Microsoft.Compute/virtualMachines/start/action" ， Microsoft.Compute/virtualMachines/deallocate/action" ， Microsoft.Compute/virtualMachines/vmSizes/read" ， " Microsoft.Compute/virtualMachines/write" ，</block>
+  <block id="03e844f92068480c699196ff085bc846" category="cell">创建 Cloud Volumes ONTAP 并停止、启动、删除和获取系统状态。</block>
+  <block id="fd9c6454134af594d0f4aceb332bb30b" category="cell">"Microsoft.compute/images/write" 、 "Microsoft.compute/images/read" 、</block>
+  <block id="e0ef7509033a0b37c5785395afff0f80" category="cell">支持从 VHD 部署 Cloud Volumes ONTAP 。</block>
+  <block id="53ddb0a6f0f74025d7c007fdcf9c326a" category="cell">Microsoft.Compute/disks/delete" ， Microsoft.Compute/disks/read" ， Microsoft.Compute/disks/write" ， "microsoft.Storage/SchecknameAvailability /Read" ， "microsoft.Storage/operations/Read" ， "microsoft.Storage/storageAccounts" ， "microsoft.Storage/storageAccouns/Read" ， "microsoft.Storage/storageAccounts" ， "microsoft.Storage/storageAccounts" ， "microsoft.Storage/storageAccounts" ， "microsoft.Storage/storageAccounts" ， "microsoft.Storage/Acces/ Read" ，</block>
+  <block id="1485ad02cace45a04d0546a3118bcc05" category="cell">管理 Azure 存储帐户和磁盘、并将磁盘连接到 Cloud Volumes ONTAP 。</block>
+  <block id="2d22322b73530fa21752138a37487151" category="cell">"microsoft.Storage/storageAccounts/blobServices/contains/read" ， "microsoft.KeyVault/vauls/read" ， "microsoft.KeyVault/vauls/accessPolicies/write"</block>
+  <block id="7d9ff9593eed7ac04fd87a8cf5bc4744" category="cell">可备份到 Azure Blob 存储并对存储帐户进行加密</block>
+  <block id="a8b9df73a9d5808e6726a6a31acbc36c" category="cell">"microsoft.network/networkinterfaces/read" 、 "microsoft.network/networkinterfaces/write" 、 "microsoft.network/networkinterfaces/join/action" 、</block>
+  <block id="e81639b3c138e7deea81d6ea285642c3" category="cell">在目标子网中为 Cloud Volumes ONTAP 创建和管理网络接口。</block>
+  <block id="ea451ff0a822e22b74eb2ac0075aeae5" category="cell">"microsoft.network/networksecuritygroups/read" 、 "microsoft.network/networksecuritygroups/write" 、 "microsoft.network/networksecuritygroups/join/action" 、</block>
+  <block id="5d2c7fa5ce039daf851bec38586dfa4e" category="cell">为 Cloud Volumes ONTAP 创建预定义的网络安全组。</block>
+  <block id="eb97a3712f22f00039023cf34b1b5669" category="cell">"microsoft.resources/subscriptions/locations/read" ， Microsoft.Network/locations/operationResults/read" ， Microsoft.Network/locations/operations/read" ， Microsoft.Network/virtualNetworks/read" ， Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read" ， Microsoft.Network/virtualNetworks/subnets/read" ， Microsoft.Network/virtualNetworks/subnets/virtualMachines/read" ， Microsoft.Network/virtualNetworks/virtualMachines/read" ， Microsoft.Network/virtualNetworks/subnets/join/action" ，</block>
+  <block id="7ddcc999950a03444681bf01d6ca2c7e" category="cell">获取有关区域、目标 VNet 和子网的网络信息、并将 Cloud Volumes ONTAP 添加到 VNETS 。</block>
+  <block id="3d5d80f03b41b7d18c4166c3d3a18c20" category="cell">Microsoft.Network/virtualNetworks/subnets/write" ， Microsoft.Network/routeTables/join/action" ，</block>
+  <block id="f87bfa28f1001d18feb114065877fc3a" category="cell">启用 VNet 服务端点以进行数据分层。</block>
+  <block id="be0ff3f4a9a9ba3c9f1d902e2721c261" category="cell">"Microsoft.Resources/deployments/operations/read" 、 "Microsoft.Resources/deployments/read" 、 "Microsoft.Resources/deployments/write" 、</block>
+  <block id="5ae975b07208128d0fb591bfbef55e41" category="cell">从模板部署 Cloud Volumes ONTAP 。</block>
+  <block id="2da684dfb946dbe5450afe79ab13c0f9" category="cell">"microsoft.resources/deployments/operations/read" ， "microsoft.resources/deployments/read" ， "microsoft.resources/deployments/write" ， "microsoft.resources/resources/read" ， "microsoft.resources/subscriptions/operationresults/read" ， "microsoft.resources/subscriptions/resourcegroups/delete" ， "microsoft.resources/subscriptions/resourcegroups/read" ， "microsoft.resources/subscriptions/resourcegroups/write" ，</block>
+  <block id="85f4accd43cd18cdfebf3cca6d7dc630" category="cell">为 Cloud Volumes ONTAP 创建和管理资源组。</block>
+  <block id="a3281c57ce5948a8e5ceae169c3756d2" category="cell">Microsoft.Compute/snapshots/write" ， Microsoft.Compute/snapshots/read" ， Microsoft.Compute/snapshots/delete" ， Microsoft.Compute/disks/beginGetAccess/action" ，</block>
+  <block id="4538e7cd86845a2d80406e031773921a" category="cell">创建和管理 Azure 管理的快照。</block>
+  <block id="ce74897c9aa2ec395a2c030d9bcfb687" category="cell">"microsoft.compute/availabilitysets/write" 、 "microsoft.compute/availabilitysets/read" 、</block>
+  <block id="d5200d7c256dcdc83f4eb6ac423b73a5" category="cell">创建和管理 Cloud Volumes ONTAP 的可用性集。</block>
+  <block id="bdf2b311dd2ec08b889a9ac912858e8f" category="cell">"Microsoft.Marketplac订购 / 服务类型 / 发布者 / 服务 / 计划 / 协议 / 读取 " 、 "Microsoft.Marketplac订购 / 服务类型 / 发布者 / 服务 / 计划 / 协议 / 写入 "</block>
+  <block id="e12a97500e0466292b969f7f36b34bd5" category="cell">支持从 Azure Marketplace 进行编程部署。</block>
+  <block id="09e9256057a299133f2d9e827d5a19e8" category="cell">Microsoft.Network/loadBalancers/read" ， Microsoft.Network/loadBalancers/write" ， Microsoft.Network/loadBalancers/delete" ， Microsoft.Network/loadBalancers/backendAddressPools/read" ， Microsoft.Network/loadBalancers/backendAddressPools/join/action" ， Microsoft.Network/loadBalancers/frontendIPConfigurations/read" ， Microsoft.Network/loadBalancers/loadBalancingRules/read" ， Microsoft.Network/loadBalancers/probes/read" ， Microsoft.Network/loadBalancers/probes/join/action" ，</block>
+  <block id="6a9efa369ca78d3ae74096e5a91079b5" category="cell">管理 HA 对的 Azure 负载平衡器。</block>
+  <block id="e9e0d42f73ca40ed9eaea2770e09e4d7" category="cell">支持管理 Azure 磁盘上的锁定。</block>
+  <block id="8c55404ad7d0a3544e084cb7c1c24b9b" category="cell">"microsoft.Authorization/roleDefinitions/write" ， "microsoft.Authorization/roleAssignments/write" ， "microsoft.Web/sites/*"</block>
+  <block id="6dad07dbe3c6cb07c7f11f3ec1d17103" category="cell">管理 HA 对的故障转移。</block>
+  <block id="2728f6b3c1459507cfec0a13d41a801b" category="cell">Microsoft.Network/privateEndpoints/write" ， "microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/Actions" ， "microsoft.Storage/storageAccounts/privateEndpointConnections/Read" ， Microsoft.Network/privateEndpoints/read" ， Microsoft.Network/privateDnsZones/write" ， Microsoft.Network/privateDnsZones/virtualNetworkLinks/write" ， Microsoft.Network/virtualNetworks/join/action" ， Microsoft.Network/privateDnsZones/A/write" ， Microsoft.Network/privateDnsZones/read" ， Microsoft.Network/privateDnsZones/virtualNetworkLinks/read" ，</block>
+  <block id="8a7740d1d0304fcc063d4ca4d8c26635" category="cell">用于管理私有端点。如果未向子网外部提供连接，则会使用私有端点。Cloud Manager 会为 HA 创建存储帐户，但子网中只有内部连接。</block>
+  <block id="608e422629f837500b64bfbc33702ba2" category="cell">" Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete" ，</block>
+  <block id="7a61be2ed3f9683c9603ca2b84d7c2cb" category="cell">允许 Cloud Manager 删除 Azure NetApp Files 的卷。</block>
+  <block id="28b0ec1cb929a835cac6c02c2551a737" category="cell">"microsoft.resources/deployments/operationStatuss/Read" ， "microsoft.Insights / Metrics /Read" ， Microsoft.Compute/virtualMachines/extensions/write" ， Microsoft.Compute/virtualMachines/extensions/read" ， Microsoft.Compute/virtualMachines/extensions/delete" ， Microsoft.Compute/virtualMachines/delete" ， Microsoft.Network/networkInterfaces/delete" ， Microsoft.Network/networkSecurityGroups/delete" ， "Microsoft 。 resources/deployments/delete" ，</block>
+  <block id="5f05dc6284752d92ad8bea8dd9f0c295" category="cell">用于使用全局文件缓存。</block>
+  <block id="730d2ff3fd0266eb5bfb7ad8eeaec2c7" category="cell">Microsoft.Network/privateEndpoints/delete" ， Microsoft.Compute/availabilitySets/delete" ，</block>
+  <block id="35d57719bd90eb190fd2f3ff0f68b355" category="cell">允许 Cloud Manager 在部署失败或删除时从属于 Cloud Volumes ONTAP 的资源组中删除资源。</block>
+  <block id="a032cdcdf45ef14060b4217d926bb02d" category="cell">Microsoft.Compute/diskEncryptionSets/read" Microsoft.Compute/diskEncryptionSets/write" ， Microsoft.Compute/diskEncryptionSets/delete" "microsoft.KeyVault/vauls/deploy/action" ， "microsoft.KeyVault/vauls/read" ， "microsoft.KeyVault/vauls/accessPolicies/write" ，</block>
+  <block id="ddaeb0a80f847a018dd4f2477519479a" category="cell">支持将客户管理的加密密钥与 Cloud Volumes ONTAP 结合使用。使用 API 支持此功能。</block>
+  <block id="6107f1b80d7168738856c2d90ab53dc2" category="cell">"microsoft.resources/tags /read" ， "microsoft.resources/tags /write" ， "microsoft.resources/tags /delete"</block>
+  <block id="73739ec334e1d954edaeed2bf7ea0f3b" category="cell">用于使用 Cloud Manager 标记服务管理 Azure 资源上的标记。</block>
+  <block id="6250087ecc700216c1d087cafab27212" category="cell">Microsoft.Network/applicationSecurityGroups/write" ， Microsoft.Network/applicationSecurityGroups/read" ， Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action" ， Microsoft.Network/networkSecurityGroups/securityRules/write" ， Microsoft.Network/applicationSecurityGroups/delete" ， " Microsoft.Network/networkSecurityGroups/securityRules/delete"</block>
+  <block id="68ecf3b89d5580d152c5d9385d1d9cdc" category="cell">通过 Cloud Manager 可以为 HA 对配置应用程序安全组，从而隔离 HA 互连和集群网络 NIC 。</block>
 </blocks>
