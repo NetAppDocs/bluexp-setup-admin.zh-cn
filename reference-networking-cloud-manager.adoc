@@ -81,7 +81,17 @@ Cloud Manager 使用 IP 地址位于 172.17.0.0/16 和 172.18.0.0/16 范围的�
 
 == 端口和安全组
 
-除非您启动 Connector ，否则不会向其传入流量。HTTP 和 HTTPS 可用于访问 link:concept-connectors.html#the-local-user-interface["本地 UI"]，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。
+没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。HTTP 和 HTTPS 可用于访问 link:concept-connectors.html#the-local-user-interface["本地 UI"]，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。
+
+
+
+=== 用于AutoSupport 消息的代理服务器
+
+如果Cloud Volumes ONTAP 无法通过出站Internet连接发送AutoSupport 消息、则Cloud Manager会自动将Cloud Volumes ONTAP 配置为使用Connector作为代理服务器。
+
+唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
+
+如果您为Cloud Volumes ONTAP 定义了严格的出站规则、则还需要确保Cloud Volumes ONTAP 安全组允许通过端口3128进行_outout_连接。
 
 
 
@@ -107,7 +117,7 @@ Connector 的安全组需要入站和出站规则。
 | HTTPS | 443. | 提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问，以及从 Cloud Data sense 实例建立的连接 
 
 
-| TCP | 3128 | 如果您的 AWS 网络不使用 NAT 或代理，则可为云数据感知实例提供 Internet 访问 
+| TCP | 3128 | 为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。您必须在部署后手动打开此端口。 <<Proxy server for AutoSupport messages,详细了解Connector的代理服务器>>。 
 
 
 | TCP | 9060 | 支持启用和使用 Cloud Data sense （仅适用于 GovCloud 部署） 
@@ -183,6 +193,9 @@ Connector 的安全组需要入站和出站规则。
 | HTTPS | 443. | 提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问，以及从 Cloud Data sense 实例建立的连接 
 
 
+| TCP | 3128 | 为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。您必须在部署后手动打开此端口。 <<Proxy server for AutoSupport messages,详细了解Connector的代理服务器>>。 
+
+
 | TCP | 9060 | 支持启用和使用 Cloud Data Asense （仅适用于政府云部署） 
 |===
 
@@ -248,6 +261,9 @@ Connector 的防火墙规则需要入站和出站规则。
 
 
 | HTTPS | 443. | 提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问 
+
+
+| TCP | 3128 | 为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。您必须在部署后手动打开此端口。 <<Proxy server for AutoSupport messages,详细了解Connector的代理服务器>>。 
 |===
 
 

@@ -108,6 +108,8 @@ sidebar:
         url: "/task-adding-gcp-accounts.html"
     - title: NetApp 支持站点帐户
       url: "/task-adding-nss-accounts.html"
+    - title: 使用"我的商机"进行发现
+      url: "/concept-my-opportunities.html"
   - title: 参考
     entries:
     - title: 权限摘要

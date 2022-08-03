@@ -18,6 +18,30 @@ summary: 了解 Cloud Manager 管理功能的新增功能，包括 NetApp 帐户
 
 
 
+== 2022年7月31日
+
+
+
+=== 连接器3.9.21
+
+* 我们引入了一种新方法来发现您尚未在Cloud Manager中管理的现有云资源。
++
+在Canvas上、*我的商机*选项卡提供了一个集中位置、用于发现您可以添加到Cloud Manager中的现有资源、以便在混合多云中实现一致的数据服务和操作。
+
++
+在此初始版本中、"我的商机"可让您发现AWS帐户中现有的ONTAP 文件系统FSX。
+
++
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-using-my-opportunities["了解如何利用"我的商机"发现适用于ONTAP 的FSx"^]
+
+* 此版本的连接器还包括Cloud Volumes ONTAP 增强功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#31-july-2022["了解Cloud Volumes ONTAP 增强功能"^]
+
+
+
+
+
 == 2022年7月15日
 
 

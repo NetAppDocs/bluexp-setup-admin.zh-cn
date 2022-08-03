@@ -14,7 +14,7 @@ summary: 大多数情况下，您需要在云或内部网络中部署 Connector 
 
 
 [role="lead"]
-大多数情况下，客户管理员需要在云或内部网络中部署 _Connector_ 。连接器是 Cloud Manager 日常使用的关键组件。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。
+在大多数情况下、Cloud Manager帐户管理员需要在云或内部网络中部署_Connector_。连接器是 Cloud Manager 日常使用的关键组件。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。
 
 
 
@@ -97,7 +97,7 @@ summary: 大多数情况下，您需要在云或内部网络中部署 Connector 
 
 == 如何创建 Connector
 
-在工作空间管理员创建 Cloud Volumes ONTAP 工作环境并使用上述任何其他服务之前，客户管理员需要先创建连接器。管理员可以通过多种方式创建Connector：
+在工作空间管理员创建Cloud Volumes ONTAP 工作环境并使用上述任何其他服务之前、Cloud Manager帐户管理员需要创建连接器。管理员可以通过多种方式创建Connector：
 
 * 直接从 Cloud Manager （建议）
 +

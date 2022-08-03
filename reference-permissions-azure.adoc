@@ -131,7 +131,6 @@ summary: 当Cloud Manager在Azure中启动Connector VM时、它会将一个自�
                         "Microsoft.Compute/snapshots/delete",
                         "Microsoft.Network/privateEndpoints/delete",
                         "Microsoft.Compute/availabilitySets/delete",
-                        "Microsoft.Network/loadBalancers/delete",
                         "Microsoft.KeyVault/vaults/read",
                         "Microsoft.KeyVault/vaults/accessPolicies/write",
                         "Microsoft.Compute/diskEncryptionSets/write",
@@ -145,7 +144,11 @@ summary: 当Cloud Manager在Azure中启动Connector VM时、它会将一个自�
                         "Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action",
                         "Microsoft.Network/networkSecurityGroups/securityRules/write",
                         "Microsoft.Network/applicationSecurityGroups/delete",
-                        "Microsoft.Network/networkSecurityGroups/securityRules/delete"
+                        "Microsoft.Network/networkSecurityGroups/securityRules/delete",
+                        "Microsoft.Network/publicIPAddresses/delete",
+                        "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+                        "Microsoft.ContainerService/managedClusters/read",
+                        "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -157,79 +160,291 @@ summary: 当Cloud Manager在Azure中启动Connector VM时、它会将一个自�
 
 == 如何使用Azure权限
 
-[cols="50,50"]
+以下各节介绍了如何对每个NetApp云服务使用权限。如果您的公司策略规定仅在需要时提供权限、则此信息会很有用。
+
+
+
+=== AppTemplate标记
+
+在使用AppTemplate标记服务时、Connector会发出以下API请求来管理Azure资源上的标记：
+
+* microsoft.resources/resources/read、"microsoft.resources/subscriptions/operationresults/read"、"microsoft.resources/subscriptions/resourcegroups/read"、"microsoft.resources/resources/resources/resources/resources/read"、"microsoft.resources/tags /read"、 "microsoft.resources/tags /write"、
+
+
+
+
+=== 云备份
+
+Connector会发出以下API请求来部署Cloud Backup的还原实例：
+
+Microsoft.Compute/virtualMachines/read"、Microsoft.Compute/virtualMachines/start/action"、Microsoft.Compute/virtualMachines/deallocate/action"、"Microsoft。Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、 "microsoft.Storage/storageAccounts""microsoft.Storage/storageAccounts/blobServices/containers"、"microsoft.KeyVault/vauls/Read"、"microsoft.KeyVault/vauls/accessPolicies/write"、Microsoft.Network/networkInterfaces/read"、"microsoft.resources/subscriptions/locations/read"、Microsoft.Network/virtualNetworks/read"、 Microsoft.Network/virtualNetworks/subnets/read"、"microsoft.resources/deployments/read"、"microsoft.resources/deployments/write"、"microsoft.resources/subscriptions/operationresults/read"、"microsoft.resources/subscriptions/resourcegroups/read"、 "microsoft.resources/subscriptions/resources/resources/resources/read"、"microsoft.resources/subscriptions/resourcegroups/write"、"microsoft.Authorization/locks/*"、"Microsoft.Network/privateEndpoints/write"、"Microsoft.Network/privateEndpoints/read"、 Microsoft.Network/privateDnsZones/virtualNetworkLinks/write"、Microsoft.Network/virtualNetworks/join/action"、Microsoft.Network/privateDnsZones/A/write"、Microsoft.Network/privateDnsZones/read"、Microsoft.Network/privateDnsZones/virtualNetworkLinks/read"、 Microsoft.Compute/virtualMachines/extensions/delete"、Microsoft.Compute/virtualMachines/delete"、Microsoft.Network/networkInterfaces/delete"、Microsoft.Network/networkSecurityGroups/delete"、"Microsoft。resources/deployments/delete"、 "microsoft.resources/tags /read"、"microsoft.resources/tags /write"、Microsoft.Network/publicIPAddresses/delete""microsoft.Storage/storageAccounts"、blobServices/contains/write"
+
+Connector会发出以下API请求来管理Amazon S3中的备份：
+
+？？？
+
+
+
+=== 云数据感知
+
+Connector发出以下API请求以部署Cloud Data sense实例：
+
+Microsoft.Compute/locations/operations/read"、Microsoft.Compute/locations/vmSizes/read"、Microsoft.Compute/operations/read"、Microsoft.Compute/virtualMachines/instanceView/read"、Microsoft.Compute/virtualMachines/powerOff/action"、 Microsoft.Compute/virtualMachines/read"、Microsoft.Compute/virtualMachines/restart/action"、Microsoft.Compute/virtualMachines/start/action"、Microsoft.Compute/virtualMachines/write"、Microsoft.Compute/images/read"、 Microsoft.Compute/disks/delete"、Microsoft.Compute/disks/read"、Microsoft.Compute/disks/write"、"microsoft.Storage/SchecknameAvailability /Read"、"microsoft.Storage/operations/Read"、 "microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、"blobServices/containers"、"Microsoft.Network/networkInterfaces/read"、Microsoft.Network/networkInterfaces/write"、 Microsoft.Network/networkInterfaces/join/action"、Microsoft.Network/networkSecurityGroups/read"、Microsoft.Network/networkSecurityGroups/write"、"microsoft.resources/subscriptions/locations/read"、Microsoft.Network/locations/operationResults/read"、 Microsoft.Network/locations/operations/read"、Microsoft.Network/virtualNetworks/read"、Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read"、Microsoft.Network/virtualNetworks/subnets/read"、Microsoft.Network/virtualNetworks/subnets/virtualMachines/read"、 Microsoft.Network/virtualNetworks/virtualMachines/read"、Microsoft.Network/virtualNetworks/subnets/join/action"、Microsoft.Network/virtualNetworks/subnets/write"、Microsoft.Network/routeTables/join/action"、"Microsoft。resources/deployments/operations/read"、 "microsoft.resources/deployments/read"、"microsoft.resources/deployments/write"、"microsoft.resources/resources/read"、"microsoft.resources/subscriptions/operationresults/read"、"microsoft.resources/subscriptions/resourcegroups/delete"、 "microsoft.resources/subscriptions/resourcegroups/read"、"microsoft.resources/subscriptions/resourcegroups/resources/read"、"microsoft.resources/subscriptions/resourcegroups/write"、
+
+使用Cloud Data sense时、Connector会发出以下API请求来扫描Azure Blob存储：
+
+？？？
+
+
+
+=== 云分层
+
+在使用Cloud Tiering时、Connector会发出以下API请求、将数据分层到Azure Blob存储。
+
+"microsoft.Storage/storageAccounts/Listkeys/action"、"microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts"、"microsoft.Storage/storageAccounts/blobServices/containers"、"microsoft.resources/subscriptions/locations/read"、"microsoft.resources/subscriptions/operationresults/read"、 "microsoft.resources/subscriptions/resourcegroups/read"、"microsoft.resources/subscriptions/resourcegroups/write"、"microsoft.Storage/storageAccounts/managementPolicies/write""microsoft.Storage/storageAccounts/blobServices/containers/write"
+
+
+
+=== Cloud Volumes ONTAP
+
+Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes ONTAP。
+
+[cols="5*"]
 |===
-| 操作 | 目的 
+| 目的 | Action | 用于部署？ | 用于日常操作？ | 用于删除？ 
 
 
-| Microsoft.Compute/locations/operations/read" ， Microsoft.Compute/locations/vmSizes/read" ， Microsoft.Compute/operations/read" ， Microsoft.Compute/virtualMachines/instanceView/read" ， Microsoft.Compute/virtualMachines/powerOff/action" ， Microsoft.Compute/virtualMachines/read" ， Microsoft.Compute/virtualMachines/restart/action" ， Microsoft.Compute/virtualMachines/start/action" ， Microsoft.Compute/virtualMachines/deallocate/action" ， Microsoft.Compute/virtualMachines/vmSizes/read" ， " Microsoft.Compute/virtualMachines/write" ， | 创建 Cloud Volumes ONTAP 并停止、启动、删除和获取系统状态。 
+.11+| 创建Cloud Volumes ONTAP 并停止、启动、删除和获取系统状态。" Microsoft.Compute/locations/operations/read"、 | 是的。 | 是的。 | 无"Microsoft.Compute/locations/vmSizes/read"、 | 是的。 
 
 
-| "Microsoft.compute/images/write" 、 "Microsoft.compute/images/read" 、 | 支持从 VHD 部署 Cloud Volumes ONTAP 。 
+| 是的。 | 无"microsoft.resources/subscriptions/locations/read"、 | 是的。 | 否 
 
 
-| Microsoft.Compute/disks/delete" ， Microsoft.Compute/disks/read" ， Microsoft.Compute/disks/write" ， "microsoft.Storage/SchecknameAvailability /Read" ， "microsoft.Storage/operations/Read" ， "microsoft.Storage/storageAccounts" ， "microsoft.Storage/storageAccouns/Read" ， "microsoft.Storage/storageAccounts" ， "microsoft.Storage/storageAccounts" ， "microsoft.Storage/storageAccounts" ， "microsoft.Storage/storageAccounts" ， "microsoft.Storage/Acces/ Read" ， | 管理 Azure 存储帐户和磁盘、并将磁盘连接到 Cloud Volumes ONTAP 。 
+| 无"Microsoft.Compute/operations/read"、 | 是的。 | 是的。 | 无"Microsoft.Compute/virtualMachines/instanceView/read"、 
 
 
-| "microsoft.Storage/storageAccounts/blobServices/contains/read" ， "microsoft.KeyVault/vauls/read" ， "microsoft.KeyVault/vauls/accessPolicies/write" | 可备份到 Azure Blob 存储并对存储帐户进行加密 
+| 是的。 | 是的。 | 无"Microsoft.Compute/virtualMachines/powerOff/action"、 | 是的。 
 
 
-| "microsoft.network/networkinterfaces/read" 、 "microsoft.network/networkinterfaces/write" 、 "microsoft.network/networkinterfaces/join/action" 、 | 在目标子网中为 Cloud Volumes ONTAP 创建和管理网络接口。 
+| 是的。 | 无"Microsoft.Compute/virtualMachines/read"、 | 是的。 | 是的。 
 
 
-| "microsoft.network/networksecuritygroups/read" 、 "microsoft.network/networksecuritygroups/write" 、 "microsoft.network/networksecuritygroups/join/action" 、 | 为 Cloud Volumes ONTAP 创建预定义的网络安全组。 
+| 无"Microsoft.Compute/virtualMachines/restart/action"、 | 是的。 | 是的。 | 无"Microsoft.Compute/virtualMachines/start/action"、 
 
 
-| "microsoft.resources/subscriptions/locations/read" ， Microsoft.Network/locations/operationResults/read" ， Microsoft.Network/locations/operations/read" ， Microsoft.Network/virtualNetworks/read" ， Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read" ， Microsoft.Network/virtualNetworks/subnets/read" ， Microsoft.Network/virtualNetworks/subnets/virtualMachines/read" ， Microsoft.Network/virtualNetworks/virtualMachines/read" ， Microsoft.Network/virtualNetworks/subnets/join/action" ， | 获取有关区域、目标 VNet 和子网的网络信息、并将 Cloud Volumes ONTAP 添加到 VNETS 。 
+| 是的。 | 是的。 | 无"Microsoft.Compute/virtualMachines/deallocate/action"、 | 否 
 
 
-| Microsoft.Network/virtualNetworks/subnets/write" ， Microsoft.Network/routeTables/join/action" ， | 启用 VNet 服务端点以进行数据分层。 
+| 是的。 | 无"Microsoft.Compute/virtualMachines/vmSizes/read"、 | 否 | 是的。 
 
 
-| "Microsoft.Resources/deployments/operations/read" 、 "Microsoft.Resources/deployments/read" 、 "Microsoft.Resources/deployments/write" 、 | 从模板部署 Cloud Volumes ONTAP 。 
+| 无"Microsoft.Compute/virtualMachines/write"、 | 是的。 | 是的。 | 否 
 
 
-| "microsoft.resources/deployments/operations/read" ， "microsoft.resources/deployments/read" ， "microsoft.resources/deployments/write" ， "microsoft.resources/resources/read" ， "microsoft.resources/subscriptions/operationresults/read" ， "microsoft.resources/subscriptions/resourcegroups/delete" ， "microsoft.resources/subscriptions/resourcegroups/read" ， "microsoft.resources/subscriptions/resourcegroups/write" ， | 为 Cloud Volumes ONTAP 创建和管理资源组。 
+.2+| 从VHD启用Cloud Volumes ONTAP 部署。" Microsoft.Compute/images/write"、 | 否 | 否 | 无"Microsoft.Compute/images/read"、 
 
 
-| Microsoft.Compute/snapshots/write" ， Microsoft.Compute/snapshots/read" ， Microsoft.Compute/snapshots/delete" ， Microsoft.Compute/disks/beginGetAccess/action" ， | 创建和管理 Azure 管理的快照。 
+| 是的。 | 否 | 否 
 
 
-| "microsoft.compute/availabilitysets/write" 、 "microsoft.compute/availabilitysets/read" 、 | 创建和管理 Cloud Volumes ONTAP 的可用性集。 
+.3+| 在目标子网Microsoft.Network/networkInterfaces/read"中为Cloud Volumes ONTAP 创建和管理网络接口 | 是的。 | 是的。 | 无"Microsoft.Network/networkInterfaces/write"、 | 是的。 
 
 
-| "Microsoft.Marketplac订购 / 服务类型 / 发布者 / 服务 / 计划 / 协议 / 读取 " 、 "Microsoft.Marketplac订购 / 服务类型 / 发布者 / 服务 / 计划 / 协议 / 写入 " | 支持从 Azure Marketplace 进行编程部署。 
+| 是的。 | 无"Microsoft.Network/networkInterfaces/join/action"、 | 是的。 | 是的。 
 
 
-| Microsoft.Network/loadBalancers/read" ， Microsoft.Network/loadBalancers/write" ， Microsoft.Network/loadBalancers/delete" ， Microsoft.Network/loadBalancers/backendAddressPools/read" ， Microsoft.Network/loadBalancers/backendAddressPools/join/action" ， Microsoft.Network/loadBalancers/frontendIPConfigurations/read" ， Microsoft.Network/loadBalancers/loadBalancingRules/read" ， Microsoft.Network/loadBalancers/probes/read" ， Microsoft.Network/loadBalancers/probes/join/action" ， | 管理 HA 对的 Azure 负载平衡器。 
+| 否 .3+| 为Cloud Volumes ONTAP Microsoft.Network/networkSecurityGroups/read"创建预定义的网络安全组、 | 是的。 | 是的。 
 
 
-| "Microsoft.Authorization/Locks/*" | 支持管理 Azure 磁盘上的锁定。 
+| 无"Microsoft.Network/networkSecurityGroups/write"、 | 是的。 | 是的。 | 无"Microsoft.Network/networkSecurityGroups/join/action"、 
 
 
-| "microsoft.Authorization/roleDefinitions/write" ， "microsoft.Authorization/roleAssignments/write" ， "microsoft.Web/sites/*" | 管理 HA 对的故障转移。 
+| ？ | 否 | 否 .9+| 获取有关区域、目标vNet和子网的网络信息、并将Cloud Volumes ONTAP 添加到VNets Microsoft.Network/locations/operationResults/read"、 
 
 
-| Microsoft.Network/privateEndpoints/write" ， "microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/Actions" ， "microsoft.Storage/storageAccounts/privateEndpointConnections/Read" ， Microsoft.Network/privateEndpoints/read" ， Microsoft.Network/privateDnsZones/write" ， Microsoft.Network/privateDnsZones/virtualNetworkLinks/write" ， Microsoft.Network/virtualNetworks/join/action" ， Microsoft.Network/privateDnsZones/A/write" ， Microsoft.Network/privateDnsZones/read" ， Microsoft.Network/privateDnsZones/virtualNetworkLinks/read" ， | 用于管理私有端点。如果未向子网外部提供连接，则会使用私有端点。Cloud Manager 会为 HA 创建存储帐户，但子网中只有内部连接。 
+| 是的。 | 是的。 | 无"Microsoft.Network/locations/operations/read"、 | 是的。 
 
 
-| " Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete" ， | 允许 Cloud Manager 删除 Azure NetApp Files 的卷。 
+| 是的。 | 无"Microsoft.Network/virtualNetworks/read"、 | 是的。 | 否 
 
 
-| "microsoft.resources/deployments/operationStatuss/Read" | Azure 在某些虚拟机部署中需要此权限（取决于部署期间使用的底层物理硬件）。 
+| 无"Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read"、 | 是的。 | 否 | 无"Microsoft.Network/virtualNetworks/subnets/read"、 
 
 
-| "microsoft.resources/deployments/operationStatuss/Read" ， "microsoft.Insights / Metrics /Read" ， Microsoft.Compute/virtualMachines/extensions/write" ， Microsoft.Compute/virtualMachines/extensions/read" ， Microsoft.Compute/virtualMachines/extensions/delete" ， Microsoft.Compute/virtualMachines/delete" ， Microsoft.Network/networkInterfaces/delete" ， Microsoft.Network/networkSecurityGroups/delete" ， "Microsoft 。 resources/deployments/delete" ， | 用于使用全局文件缓存。 
+| 是的。 | 是的。 | 无"Microsoft.Network/virtualNetworks/subnets/virtualMachines/read"、 | 是的。 
 
 
-| Microsoft.Network/privateEndpoints/delete" ， Microsoft.Compute/availabilitySets/delete" ， | 允许 Cloud Manager 在部署失败或删除时从属于 Cloud Volumes ONTAP 的资源组中删除资源。 
+| 是的。 | 无"Microsoft.Network/virtualNetworks/virtualMachines/read"、 | 是的。 | 是的。 
 
 
-| Microsoft.Compute/diskEncryptionSets/read" Microsoft.Compute/diskEncryptionSets/write" ， Microsoft.Compute/diskEncryptionSets/delete" "microsoft.KeyVault/vauls/deploy/action" ， "microsoft.KeyVault/vauls/read" ， "microsoft.KeyVault/vauls/accessPolicies/write" ， | 支持将客户管理的加密密钥与 Cloud Volumes ONTAP 结合使用。使用 API 支持此功能。 
+| 无"Microsoft.Network/virtualNetworks/subnets/join/action"、 | 是的。 | 是的。 | 否 
 
 
-| "microsoft.resources/tags /read" ， "microsoft.resources/tags /write" ， "microsoft.resources/tags /delete" | 用于使用 Cloud Manager 标记服务管理 Azure 资源上的标记。 
+.9+| 为Cloud Volumes ONTAP "microsoft.resources/deployments/operations/read"创建和管理资源组、 | 是的。 | 是的。 | 无"microsoft.resources/deployments/read"、 
 
 
-| Microsoft.Network/applicationSecurityGroups/write" ， Microsoft.Network/applicationSecurityGroups/read" ， Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action" ， Microsoft.Network/networkSecurityGroups/securityRules/write" ， Microsoft.Network/applicationSecurityGroups/delete" ， " Microsoft.Network/networkSecurityGroups/securityRules/delete" | 通过 Cloud Manager 可以为 HA 对配置应用程序安全组，从而隔离 HA 互连和集群网络 NIC 。 
+| 是的。 | 是的。 | 无"microsoft.resources/deployments/write"、 
+
+
+| 是的。 | 是的。 | 无"microsoft.resources/resources/read"、 | 是的。 
+
+
+| 是的。 | 无"microsoft.resources/subscriptions/operationresults/read"、 | 是的。 | 是的。 
+
+
+| 无"microsoft.resources/subscriptions/resources/delete"、 | 是的。 | 是的。 | 无"microsoft.resources/subscriptions/resources/read"、 
+
+
+| 否 | 是的。 | 无"microsoft.resources/subscriptions/resources/resources/read"、 | 是的。 
+
+
+| 是的。 | 无"microsoft.resources/subscriptions/resources/write"、 | 是的。 | 是的。 
+
+
+| 否 .11+| 管理Azure存储帐户和磁盘并将磁盘连接到Cloud Volumes ONTAP Microsoft.Compute/disks/read"、 | 是的。 | 是的。 
+
+
+| 无"Microsoft.Compute/disks/write"、 | 是的。 | 是的。 
+
+
+| 无"Microsoft.Compute/disks/delete"、 | 是的。 | 是的。 | 无"microsoft.Storage/checknameavailability / read"、 
+
+
+| 是的。 | 是的。 | 无"microsoft.Storage/operations/read"、 | 是的。 
+
+
+| 是的。 | 无"microsoft.Storage/storageAccounts"、 | 是的。 | 是的。 
+
+
+| 无"microsoft.Storage/storageAccounts"、 | 是的。 | 是的。 | 无"microsoft.Storage/storageAccounts"、 
+
+
+| 否 | 是的。 | 无"microsoft.Storage/storageAccounts"、 | 否 
+
+
+| 否 | 无"microsoft.Storage/storageAccounts" | 是的。 | 是的。 
+
+
+| 无"microsoft.Storage/使用 情况/读取"、 | 否 | 是的。 | 否 
+
+
+.3+| 启用到Azure Blob存储的备份、并对存储帐户"microsoft.Storage/storageAccounts"/ blobServices/containers"进行加密、 | 是的。 | 是的。 | 无"microsoft.keyvault/vauls/read"、 
+
+
+| 是的。 | 是的。 | 无"microsoft.KeyVault/vauls/accessPolicies/write" 
+
+
+| 是的。 | 是的。 | 否 .2+| 为数据分层启用vNet服务端点Microsoft.Network/virtualNetworks/subnets/write"、 
+
+
+| 是的。 | 是的。 | 无"Microsoft.Network/routeTables/join/action"、 | 是的。 
+
+
+| 是的。 | 否 .4+| 创建和管理Azure托管快照"Microsoft.Compute/snapshots/write"、 | 是的。 | 是的。 
+
+
+| 无"Microsoft.Compute/snapshots/read"、 | 是的。 | 是的。 | 无"Microsoft.Compute/snapshots/delete"、 
+
+
+| 否 | 是的。 | 无"Microsoft.Compute/disks/beginGetAccess/action"、 | 否 
+
+
+| 是的。 | 否 .2+| 创建和管理Cloud Volumes ONTAP 的可用性集"Microsoft.Compute/availabilitySets/write"、Microsoft.Compute/availabilitySets/read"、 .2+| 从Azure Marketplace启用编程部署。"microsoft.MarketplaceOrered/OfferTypes/Publishers/Offers/Plans/agreements/read"、 
+
+
+| 是的。 | 否 | 无"microsoft.MarketplaceOrered/OfferTypes/Publisher/Offers/Plans/agreements/write"、 
+
+
+| 是的。 | 是的。 | 否 .9+| 管理HA对的Azure负载平衡器Microsoft.Network/loadBalancers/read"、 | 是的。 
+
+
+| 是的。 | 无"Microsoft.Network/loadBalancers/write"、 | 是的。 | 否 
+
+
+| 无"Microsoft.Network/loadBalancers/delete"、 | 否 | 是的。 | 无"Microsoft.Network/loadBalancers/backendAddressPools/read"、 
+
+
+| 是的。 | 是的。 | 无"Microsoft.Network/loadBalancers/backendAddressPools/join/action"、 | 否 
+
+
+| 否 | 无"Microsoft.Network/loadBalancers/frontendIPConfigurations/read"、 | 否 | 否 
+
+
+| 无"Microsoft.Network/loadBalancers/loadBalancingRules/read"、 | 是的。 | 否 | 无"Microsoft.Network/loadBalancers/probes/read"、 
+
+
+| 是的。 | 否 | 无"Microsoft.Network/loadBalancers/probes/join/action"、 | 是的。 
+
+
+| 否 | 否 | 启用对Azure磁盘上的锁定的管理 | "Microsoft.Authorization/Locks/*" 
+
+
+| 是的。 | 是的。 | 否 .10+| 在未提供与子网外部的连接时、启用对私有端点的管理。Cloud Manager 会为 HA 创建存储帐户，但子网中只有内部连接。" Microsoft.Network/privateEndpoints/write"、 
+
+
+| 是的。 | 是的。 | 无"microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/Actions"、 | 是的。 
+
+
+| 否 | 无"microsoft.Storage/storageAccounts/privateEndpointConnections/Read"、 | 是的。 | 是的。 
+
+
+| 无"Microsoft.Network/privateEndpoints/read"、 | 是的。 | 是的。 | 无"Microsoft.Network/privateDnsZones/write"、 
+
+
+| 是的。 | 是的。 | 无"Microsoft.Network/privateDnsZones/virtualNetworkLinks/write"、 | 是的。 
+
+
+| 是的。 | 无"Microsoft.Network/virtualNetworks/join/action"、 | 是的。 | 是的。 
+
+
+| 无"Microsoft.Network/privateDnsZones/A/write"、 | 是的。 | 是的。 | 无"Microsoft.Network/privateDnsZones/read"、 
+
+
+| 是的。 | 是的。 | 无"Microsoft.Network/privateDnsZones/virtualNetworkLinks/read"、 | 是的。 
+
+
+| 是的。 | 否 | Azure 在某些虚拟机部署中需要此权限（取决于部署期间使用的底层物理硬件）。 | "microsoft.resources/deployments/operationStatuss/Read" 
+
+
+| 是的。 | 是的。 | 否 | 用于使用全局文件缓存。"microsoft.Insights / Metrics / Read"、Microsoft.Compute/virtualMachines/extensions/write"、Microsoft.Compute/virtualMachines/extensions/read"、Microsoft.Compute/virtualMachines/extensions/delete"、Microsoft.Compute/virtualMachines/delete"、 Microsoft.Network/networkInterfaces/delete"、Microsoft.Network/networkSecurityGroups/delete"、"microsoft.resources/deployments/delete"、 
+
+
+.2+| 在部署失败或删除Microsoft.Network/privateEndpoints/delete"时从属于Cloud Volumes ONTAP 的资源组中删除资源 | 是的。 | 是的。 | 无"Microsoft.Compute/availabilitySets/delete"、 | 是的。 
+
+
+| 是的。 | 否 .4+| 使用Cloud Manager API Microsoft.Compute/diskEncryptionSets/read"在Cloud Volumes ONTAP 中使用客户管理的加密密钥 | 是的。 
+
+
+| 是的。 | 无"Microsoft.Compute/diskEncryptionSets/write"、 | 是的。 | 是的。 
+
+
+| 无"microsoft.KeyVault/vauls/deploy/action"、 | 是的。 | 否 | 无Microsoft.Compute/diskEncryptionSets/delete" 
+
+
+| 是的。 | 是的。 | 否 | 通过 Cloud Manager 可以为 HA 对配置应用程序安全组，从而隔离 HA 互连和集群网络 NIC 。" Microsoft.Network/applicationSecurityGroups/write"、 
+
+
+| 否 | 是的。 | 无"Microsoft.Network/applicationSecurityGroups/read"、 | 否 | 是的。 
+
+
+| 是、Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action"、 | 否 | 是的。 | 无"Microsoft.Network/networkSecurityGroups/securityRules/write"、 | 是的。 
+
+
+| 是的。 | 无"Microsoft.Network/applicationSecurityGroups/delete"、 | 否 | 是的。 | 无Microsoft.Network/networkSecurityGroups/securityRules/delete" 
+
+
+| 否 | 是的。 | 是的、在Excel中列出、但对于CVO、如果我有标记服务的标签、则为这些标签。使用Cloud Manager标记服务管理Azure资源上的标记。"microsoft.resources/tags /read"、"microsoft.resources/tags /write"、"microsoft.resources/tags /delete"*** Excel中缺少。I have them listed as for using customer-managed encryption keys***"microsoft.keyvault/vauls/read"、"microsoft.keyvault/vauls/accessPolicies/write"、"*** used for ANF、but listed under CVO in the Excel file Microsoft.NetApp/netAppAccounts/read" Microsoft.NetApp/netAppAccounts/capacityPools/read" Microsoft.NetApp/netAppAccounts/capacityPools/volumes/write" Microsoft.NetApp/netAppAccounts/capacityPools/volumes/read" Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete" 在部署、操作和删除时、**列为"否"、但它们在策略中、因此必须在某个阶段使用、对吗？***"Microsoft.Compute/images/write"、 | 否 | 否 
+
+
+| 无"microsoft.Storage/storageAccounts"、 | 否 | 否 | 无"Microsoft.Network/loadBalancers/backendAddressPools/join/action"、 | 否 
+
+
+| 否 | 无"Microsoft.Network/loadBalancers/frontendIPConfigurations/read"、 | 否 | 否 | 否、在部署中列出问号、请访问："Microsoft.Network/networkSecurityGroups/join/action"、"***仅列出两个删除所需的权限。是否正确？*** 
 |===
+
+
+=== Kubernetes
+
+Connector发出以下API请求、以发现和管理Azure Kubernetes Service (AKS)中运行的集群：
+
+Microsoft.Compute/virtualMachines/read"、"microsoft.resources/subscriptions/locations/read"、"microsoft.resources/subscriptions/operationresults/read"、"microsoft.resources/subscriptions/resources/resources/resources/read"、 "microsoft.ContainerService/managedClusters/read" microsoft.ContainerService/managedClusters/ListClusterUserCredential/操作

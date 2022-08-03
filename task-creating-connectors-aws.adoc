@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-creating-connectors-aws.html 
 keywords: fsx for ontap, iam, user role, create connector in aws, launch connector in aws, deploy connector in aws, aws connector, connector aws, connector permissions 
-summary: 客户管理员需要先部署 Connector ，然后才能使用大多数 Cloud Manager 功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。 
+summary: Cloud Manager帐户管理员需要先部署Connector、然后才能使用大多数Cloud Manager功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。 
 ---
 = 从 Cloud Manager 在 AWS 中创建连接器
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 客户管理员需要先部署 Connector ，然后才能使用大多数
 
 
 [role="lead"]
-客户管理员需要先部署 _Connector_ ，然后才能使用大多数 Cloud Manager 功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。 link:concept-connectors.html["了解何时需要连接器"]。
+Cloud Manager帐户管理员需要先部署_Connector_、然后才能使用大多数Cloud Manager功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。 link:concept-connectors.html["了解何时需要连接器"]。
 
 此页面介绍如何直接从 Cloud Manager 在 AWS 中创建 Connector 。 link:concept-connectors.html#how-to-create-a-connector["了解部署 Connector 的其他方法"]。
 
@@ -223,3 +223,13 @@ NOTE: 除非您启动 Connector ，否则不会向其传入流量。HTTP 和 HTT
 您需要将连接器与工作空间关联，以便 Workspace 管理员可以使用这些连接器创建 Cloud Volumes ONTAP 系统。如果您只有帐户管理员，则不需要将 Connector 与工作空间相关联。默认情况下，帐户管理员可以访问 Cloud Manager 中的所有工作空间。 link:task-setting-up-netapp-accounts.html#associating-connectors-with-workspaces["了解更多信息。"]。
 
 如果您在创建Connector的同一AWS帐户中有Amazon S3存储分段、则会在Canvas上自动显示Amazon S3工作环境。 link:task-viewing-amazon-s3.html["详细了解如何使用此工作环境"]。
+
+
+
+== 打开端口3128以显示AutoSupport 消息
+
+如果您计划在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则Cloud Manager会自动将Cloud Volumes ONTAP 配置为使用Connector作为代理服务器。
+
+唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
+
+如果对Cloud Volumes ONTAP 使用默认安全组、则不需要对其安全组进行任何更改。但是、如果您计划为Cloud Volumes ONTAP 定义严格的出站规则、则还需要确保Cloud Volumes ONTAP 安全组允许通过端口3128进行_outout_连接。

@@ -22,7 +22,7 @@ _NetApp 帐户 _ 提供多租户功能，可用于在 Cloud Manager 中将用户
 
 image:screenshot_account_selection.gif["Cloud Manager 设置向导的屏幕截图，提示您输入要在其中创建 Cloud Manager 的 NetApp 帐户。"]
 
-然后，帐户管理员可以通过管理用户（成员），工作空间，连接器和订阅来修改此帐户的设置：
+然后、Cloud Manager帐户管理员可以通过管理用户(成员)、工作空间、连接器和订阅来修改此帐户的设置：
 
 image:screenshot_account_settings.gif["屏幕截图显示了 \" 管理帐户 \" 小工具，您可以从中管理用户，工作空间和连接器。"]
 
