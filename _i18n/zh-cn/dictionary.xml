@@ -1885,7 +1885,6 @@
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">EC2实例类型为T3.xlarge。</block>
   <block id="1c4a1f461d9d9ab860d5238735bbfa23" category="list-text">此映像的操作系统为Red Hat Enterprise Linux 7.6 (HVM)。</block>
   <block id="09572768e7bd2d34b2a051ebb8774173" category="list-text">EC2 Linux实例的用户名为EC2-user。</block>
-  <block id="3e08af2c96d38d93f2b461c17451752f" category="list-text">默认系统磁盘为50 GiB GP2磁盘。</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Azure详细信息</block>
   <block id="82e44dd5e94a855110f9dea154fed0ed" category="list-text">VM类型为DS3 v2。</block>
   <block id="6b20346212b35fa23c8778f7b40af243" category="list-text">映像的操作系统为CentOS 7.6。</block>
@@ -2457,4 +2456,5 @@
   <block id="73739ec334e1d954edaeed2bf7ea0f3b" category="cell">用于使用 Cloud Manager 标记服务管理 Azure 资源上的标记。</block>
   <block id="6250087ecc700216c1d087cafab27212" category="cell">Microsoft.Network/applicationSecurityGroups/write" ， Microsoft.Network/applicationSecurityGroups/read" ， Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action" ， Microsoft.Network/networkSecurityGroups/securityRules/write" ， Microsoft.Network/applicationSecurityGroups/delete" ， " Microsoft.Network/networkSecurityGroups/securityRules/delete"</block>
   <block id="68ecf3b89d5580d152c5d9385d1d9cdc" category="cell">通过 Cloud Manager 可以为 HA 对配置应用程序安全组，从而隔离 HA 互连和集群网络 NIC 。</block>
+  <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">默认系统磁盘为100 GiB GP2磁盘。</block>
 </blocks>
