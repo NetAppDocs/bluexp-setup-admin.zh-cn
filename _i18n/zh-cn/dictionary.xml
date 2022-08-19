@@ -2457,4 +2457,5 @@
   <block id="6250087ecc700216c1d087cafab27212" category="cell">Microsoft.Network/applicationSecurityGroups/write" ， Microsoft.Network/applicationSecurityGroups/read" ， Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action" ， Microsoft.Network/networkSecurityGroups/securityRules/write" ， Microsoft.Network/applicationSecurityGroups/delete" ， " Microsoft.Network/networkSecurityGroups/securityRules/delete"</block>
   <block id="68ecf3b89d5580d152c5d9385d1d9cdc" category="cell">通过 Cloud Manager 可以为 HA 对配置应用程序安全组，从而隔离 HA 互连和集群网络 NIC 。</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">默认系统磁盘为100 GiB GP2磁盘。</block>
+  <block id="02bc515db3673d54b5989cdf43534729" category="list-text">单击*同步数据*以同步与S3存储分段之间的数据。</block>
 </blocks>
