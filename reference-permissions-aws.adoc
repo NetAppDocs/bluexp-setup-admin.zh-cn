@@ -326,7 +326,7 @@ summary: 当Cloud Manager在AWS中启动Connector实例时、它会向此实例�
       "Effect": "Allow",
       "Action": [
         "ec2:DescribeRegions",
-        "iam:ListInstanceProfiles",
+        "iam:GetInstanceProfile",
         "eks:ListClusters",
         "eks:DescribeCluster"
       ],

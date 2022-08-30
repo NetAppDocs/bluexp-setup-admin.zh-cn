@@ -36,7 +36,7 @@ image:screenshot-cloud-central-signup.png["Cloud Central 注册表的屏幕截�
 
 +
 
-NOTE: 使用NetApp登录时、您的NetApp支持站点凭据不会添加到支持信息板中的Cloud Manager中。
+NOTE: 如果使用"登录到NetApp"选项、则您的NetApp支持站点(NSS)凭据不会添加到支持信息板中的Cloud Manager中。要为Cloud Volumes ONTAP 启用关键工作流并通过Active IQ 启用预测性分析和主动式支持、需要将NSS凭据添加到Cloud Manager。 link:task-adding-nss-accounts.html["了解如何将NSS凭据添加到Cloud Manager"]。
 
 
 

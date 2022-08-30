@@ -1948,7 +1948,6 @@
   <block id="13a0adeb2b159ac19c415adb2a302ac7" category="list-text">如果您通过使用NetApp支持站点凭据登录进行注册、则每次都需要使用该登录选项。</block>
   <block id="e7330d051a059d074bb6d948d1b195a1" category="paragraph"><block ref="e7330d051a059d074bb6d948d1b195a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0eac24292d137662727eddfcb308122d" category="paragraph">每次登录时、您都需要使用在此注册过程中选择的选项。</block>
-  <block id="5bcda5b087049d72bac31d0484792c9e" category="admonition">使用NetApp登录时、您的NetApp支持站点凭据不会添加到支持信息板中的Cloud Manager中。</block>
   <block id="bb3811f4fe37370092ea428b21cf1249" category="list-text">如果您已注册NetApp支持站点帐户、请单击*使用NetApp*登录、然后输入您的NetApp支持站点凭据。</block>
   <block id="fa4e197c715b6a6e61487c84fa10bc13" category="paragraph"><block ref="fa4e197c715b6a6e61487c84fa10bc13" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
@@ -2458,4 +2457,6 @@
   <block id="68ecf3b89d5580d152c5d9385d1d9cdc" category="cell">通过 Cloud Manager 可以为 HA 对配置应用程序安全组，从而隔离 HA 互连和集群网络 NIC 。</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">默认系统磁盘为100 GiB GP2磁盘。</block>
   <block id="02bc515db3673d54b5989cdf43534729" category="list-text">单击*同步数据*以同步与S3存储分段之间的数据。</block>
+  <block id="ff544de20f1db68a595954432523da78" category="inline-link-macro">了解如何将NSS凭据添加到Cloud Manager</block>
+  <block id="d9ca7aa291299ee1e7d3ee864546df7e" category="admonition">如果使用"登录到NetApp"选项、则您的NetApp支持站点(NSS)凭据不会添加到支持信息板中的Cloud Manager中。要为Cloud Volumes ONTAP 启用关键工作流并通过Active IQ 启用预测性分析和主动式支持、需要将NSS凭据添加到Cloud Manager。 <block ref="d6386b10f546ed3137ed8f21203dfb6b" category="inline-link-macro-rx"></block>。</block>
 </blocks>
