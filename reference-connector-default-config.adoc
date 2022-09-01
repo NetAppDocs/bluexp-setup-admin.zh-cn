@@ -57,7 +57,7 @@ summary: 如果您需要对连接器进行故障排除，了解其配置方式�
 
 如果您从Cloud Manager或云提供商的市场部署了Connector、请注意以下事项：
 
-* VM实例为n1-standard-4。
+* VM实例为n2-standard-4。
 * 映像的操作系统为CentOS 7.9。
 +
 操作系统不包含 GUI 。您必须使用终端访问系统。
