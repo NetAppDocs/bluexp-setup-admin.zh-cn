@@ -2459,4 +2459,5 @@
   <block id="d9ca7aa291299ee1e7d3ee864546df7e" category="admonition">如果使用"登录到NetApp"选项、则您的NetApp支持站点(NSS)凭据不会添加到支持信息板中的Cloud Manager中。要为Cloud Volumes ONTAP 启用关键工作流并通过Active IQ 启用预测性分析和主动式支持、需要将NSS凭据添加到Cloud Manager。 <block ref="d6386b10f546ed3137ed8f21203dfb6b" category="inline-link-macro-rx"></block>。</block>
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-4。</block>
   <block id="0964bfe0dd83b0d60f5d55fd4502a11b" category="list-text">VM实例为n2-standard-4。</block>
+  <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">API调用Azure和ONTAP 、云数据感知、勒索软件服务以及向NetApp发送AutoSupport 消息</block>
 </blocks>
