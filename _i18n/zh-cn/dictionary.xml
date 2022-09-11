@@ -2460,4 +2460,28 @@
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-4。</block>
   <block id="0964bfe0dd83b0d60f5d55fd4502a11b" category="list-text">VM实例为n2-standard-4。</block>
   <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">API调用Azure和ONTAP 、云数据感知、勒索软件服务以及向NetApp发送AutoSupport 消息</block>
+  <block id="256ab1840f1451e503e5f45aae6693e2" category="paragraph">在对卷备份使用DataLock和勒索软件保护时、Connector会发出以下API请求：</block>
+  <block id="f8a21cbcda6edc5ae1bf2008fc82b99d" category="list-text">S3 ： GetObjectVersionTagging</block>
+  <block id="bce339f31623f1dca1af841a36515224" category="list-text">S3 ： GetBucketObjectLockConfiguration</block>
+  <block id="f80f99cee549d1cdd0a4fe6a1527ea90" category="list-text">S3：GetObjectVersionAcl</block>
+  <block id="8294994c5d25f83ad700127a1296848a" category="list-text">S3 ： PutObjectTagging</block>
+  <block id="b2335f57b5f9e0d848379b1a0a069e0f" category="list-text">S3 ： DeleteObjectTagging</block>
+  <block id="e852d63f7c89f0e29a51f2cf08ca3a04" category="list-text">S3 ： GetObjectRetention</block>
+  <block id="701a93440874840e104cb9071c1b25d9" category="list-text">S3 ： DeleteObjectVersionTagging</block>
+  <block id="63c20717f207c238dd1a7f80b31c8b44" category="list-text">S3 ： PutBucketObjectLockConfiguration</block>
+  <block id="2720ba253382275ebb851de5d590b5cc" category="list-text">S3：ListBucketByTags</block>
+  <block id="1f18fa681e41f8b76a72d4b098de5308" category="list-text">S3 ： GetObjectTagging</block>
+  <block id="add933b88888a149eeec11df9799f79b" category="list-text">S3 ： PutBucketVersioning</block>
+  <block id="d8e31ed0ac2c966c1cc806b8cf0bf044" category="list-text">S3 ： PutObjectVersionTagging</block>
+  <block id="bd665782f6bfd8e4fc4d9f19cbc1e30f" category="list-text">S3 ： GetBucketVersioning</block>
+  <block id="f0eb418c56fa2bd3945fc5bc9dfd5308" category="list-text">S3：BypassGovernanceRetention</block>
+  <block id="b5abb00ccfe2eac60ae96d2e208a3d71" category="list-text">S3 ： PutObjectRetention</block>
+  <block id="2575b79b2cd768a027306db8b9e8614a" category="list-text">S3 ： GetObjectVersion</block>
+  <block id="36df1b975561708b246ef1801ea416e5" category="section-title">适用于 ONTAP 的 FSX</block>
+  <block id="a66bcfc4972d6f3d13b3d340290757dd" category="paragraph">连接器会发出以下API请求来发现和管理适用于ONTAP 的FSX：</block>
+  <block id="6c2169e32dbe273efb12c5de01180bd2" category="list-text">EC2：Describe保留实例服务</block>
+  <block id="c7d6e8e55ec100d2a5894fa3c2eaabd4" category="list-text">EC2：Describe PlacementGroup</block>
+  <block id="4e505c18a3df31a39f42336b9b57fa97" category="section-title">S3存储分段发现</block>
+  <block id="1fd4dfa3fe95514f04e3ecdd7e8a001d" category="paragraph">Connector会发出以下API请求来发现Amazon S3存储分段：</block>
+  <block id="080045bf6ab788297df2820c007203af" category="paragraph">S3 ： GetEncryptionConfiguration</block>
 </blocks>

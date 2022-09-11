@@ -127,14 +127,15 @@ summary: 当Cloud Manager在AWS中启动Connector实例时、它会向此实例�
         "cloudformation:DeleteStack",
         "ec2:DescribePlacementGroups",
         "iam:GetRolePolicy",
-		"s3:ListAllMyBuckets",
+		    "s3:ListAllMyBuckets",
         "s3:GetObject",
         "iam:GetRole",
         "s3:DeleteObject",
         "s3:DeleteObjectVersion",
         "s3:PutObject",
-		"ec2:ModifyVolume",
-        "ec2:DescribeVolumesModifications"
+		    "ec2:ModifyVolume",
+        "ec2:DescribeVolumesModifications",
+		    "s3:GetEncryptionConfiguration"
       ],
       "Resource": "*"
     },
@@ -144,7 +145,7 @@ summary: 当Cloud Manager在AWS中启动Connector实例时、它会向此实例�
       "Action": [
         "ec2:StartInstances",
         "ec2:StopInstances",
-        "ec2:DescribeInstances",
+		    "ec2:DescribeInstances",
         "ec2:DescribeInstanceStatus",
         "ec2:RunInstances",
         "ec2:TerminateInstances",
@@ -196,7 +197,21 @@ summary: 当Cloud Manager在AWS中启动Connector实例时、它会向此实例�
         "s3:PutBucketAcl",
         "s3:AbortMultipartUpload",
         "s3:ListMultipartUploadParts",
-        "s3:DeleteBucket"
+        "s3:DeleteBucket",
+		    "s3:GetObjectVersionTagging",
+			  "s3:GetObjectVersionAcl",
+	   		"s3:GetObjectRetention",
+	   		"s3:GetObjectTagging",
+	   		"s3:GetObjectVersion",
+	   		"s3:PutObjectVersionTagging",
+	   		"s3:PutObjectRetention",
+	   		"s3:DeleteObjectTagging",
+	   		"s3:DeleteObjectVersionTagging",
+	   		"s3:GetBucketObjectLockConfiguration",
+	   		"s3:GetBucketVersioning",
+	   		"s3:PutBucketObjectLockConfiguration",
+	   		"s3:PutBucketVersioning",
+	   		"s3:BypassGovernanceRetention"
       ],
       "Resource": [
         "arn:aws:s3:::netapp-backup-*"
@@ -326,9 +341,9 @@ summary: 当Cloud Manager在AWS中启动Connector实例时、它会向此实例�
       "Effect": "Allow",
       "Action": [
         "ec2:DescribeRegions",
-        "iam:GetInstanceProfile",
         "eks:ListClusters",
-        "eks:DescribeCluster"
+        "eks:DescribeCluster",
+		    "iam:GetInstanceProfiles"
       ],
       "Resource": "*"
     },
@@ -718,6 +733,37 @@ Connector会发出以下API请求来管理Amazon S3中的备份：
 * 粘附：BatechDelete分区
 
 
+在对卷备份使用DataLock和勒索软件保护时、Connector会发出以下API请求：
+
+* S3 ： GetObjectVersionTagging
+* S3 ： GetBucketObjectLockConfiguration
+* S3：GetObjectVersionAcl
+* S3 ： PutObjectTagging
+* S3 ： DeleteObject
+* S3 ： DeleteObjectTagging
+* S3 ： GetObjectRetention
+* S3 ： DeleteObjectVersionTagging
+* S3 ： PutObject
+* S3 ： GetObject
+* S3 ： PutBucketObjectLockConfiguration
+* S3 ： GetLifeycleConfiguration
+* S3：ListBucketByTags
+* S3 ： GetBucketTagging
+* S3 ： DeleteObjectVersion
+* S3 ： ListBucketVersions
+* S3 ： ListBucket
+* S3 ： PutBucketTagging
+* S3 ： GetObjectTagging
+* S3 ： PutBucketVersioning
+* S3 ： PutObjectVersionTagging
+* S3 ： GetBucketVersioning
+* S3 ： GetBucketAcl
+* S3：BypassGovernanceRetention
+* S3 ： PutObjectRetention
+* S3 ： GetBucketLocation
+* S3 ： GetObjectVersion
+
+
 
 
 === 云数据感知
@@ -1076,6 +1122,42 @@ Connector会发出以下API请求、以便在部署期间部署全局文件缓�
 
 
 
+=== 适用于 ONTAP 的 FSX
+
+连接器会发出以下API请求来发现和管理适用于ONTAP 的FSX：
+
+* EC2：Describe实例
+* EC2：Describe实例状态
+* EC2：Describe实例属性
+* EC2：Describe RouteTables
+* EC2：Describe
+* EC2：CreateTags
+* EC2：Describe卷
+* EC2：Describe安全性组
+* EC2：Describe网络接口
+* EC2：Describe子网
+* EC2：Describe
+* EC2：Describe DhcpOptions
+* EC2：Describe Snapshot
+* EC2：Describe KeyPairs
+* EC2：Describe注册
+* EC2：Describe标记
+* EC2：Describe IamInstanceProfileAssociations
+* EC2：Describe保留实例服务
+* EC2：介绍VpcEndpoints
+* EC2：Describe
+* EC2：Describe卷修改
+* EC2：Describe PlacementGroup
+* 公里：列表*
+* 公里：描述*
+* 公里：CreateGrant
+* Kms：ListAliases
+* FSX：描述*
+* FSX：List*
+
+
+
+
 === Kubernetes
 
 Connector会发出以下API请求来发现和管理Amazon EKS集群：
@@ -1085,3 +1167,11 @@ Connector会发出以下API请求来发现和管理Amazon EKS集群：
 * EKS：Describe集群
 * IAM：GetInstanceProfile
 
+
+
+
+=== S3存储分段发现
+
+Connector会发出以下API请求来发现Amazon S3存储分段：
+
+S3 ： GetEncryptionConfiguration
