@@ -2478,10 +2478,10 @@
   <block id="b5abb00ccfe2eac60ae96d2e208a3d71" category="list-text">S3 ： PutObjectRetention</block>
   <block id="2575b79b2cd768a027306db8b9e8614a" category="list-text">S3 ： GetObjectVersion</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="section-title">适用于 ONTAP 的 FSX</block>
-  <block id="a66bcfc4972d6f3d13b3d340290757dd" category="paragraph">连接器会发出以下API请求来发现和管理适用于ONTAP 的FSX：</block>
   <block id="6c2169e32dbe273efb12c5de01180bd2" category="list-text">EC2：Describe保留实例服务</block>
   <block id="c7d6e8e55ec100d2a5894fa3c2eaabd4" category="list-text">EC2：Describe PlacementGroup</block>
   <block id="4e505c18a3df31a39f42336b9b57fa97" category="section-title">S3存储分段发现</block>
   <block id="1fd4dfa3fe95514f04e3ecdd7e8a001d" category="paragraph">Connector会发出以下API请求来发现Amazon S3存储分段：</block>
   <block id="080045bf6ab788297df2820c007203af" category="paragraph">S3 ： GetEncryptionConfiguration</block>
+  <block id="2e0aa8db26606696ba7bb05ec89284a7" category="paragraph">Connector发出以下API请求来管理适用于ONTAP 的FSX：</block>
 </blocks>

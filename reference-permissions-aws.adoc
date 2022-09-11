@@ -1124,7 +1124,7 @@ Connector会发出以下API请求、以便在部署期间部署全局文件缓�
 
 === 适用于 ONTAP 的 FSX
 
-连接器会发出以下API请求来发现和管理适用于ONTAP 的FSX：
+Connector发出以下API请求来管理适用于ONTAP 的FSX：
 
 * EC2：Describe实例
 * EC2：Describe实例状态
