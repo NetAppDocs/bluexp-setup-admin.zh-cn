@@ -32,7 +32,7 @@ summary: 通过服务帐户， Cloud Manager 可以部署和管理与 Connector 
 
 下图显示了上面编号 1 和 2 中所述的权限要求：
 
-image:diagram_permissions_gcp.png["说明"]
+image:diagram_permissions_gcp.png["一个概念映像、用于描述用于部署Cloud Volumes ONTAP 的Google和服务帐户的权限要求。"]
 
 
 

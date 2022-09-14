@@ -71,7 +71,7 @@ image:screenshot-help-support.png["帮助菜单的屏幕截图，其中列出的
 
 
 +
-image:screenshot-connector-autosupport.png[""]
+image:screenshot-connector-autosupport.png["支持信息板的屏幕截图、显示用户可以单击此处下载和发送AutoSupport 消息。"]
 
 
 

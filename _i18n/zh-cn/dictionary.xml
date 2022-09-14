@@ -391,8 +391,6 @@
   <block id="361b7d728922145fd2ca0e3452223253" category="inline-link-macro">了解如何使用 YAML 文件设置权限</block>
   <block id="4e1c6449adb7c84edc67d892edd6565c" category="paragraph">我们设置了两个 YAML 文件，其中包括用户和服务帐户所需的权限。 <block ref="cd5291ac5e03c6d3b89e0c36ca9255d0" category="inline-link-macro-rx"></block>。</block>
   <block id="fee2d29ad57ecb4f5309060016b4495c" category="paragraph">下图显示了上面编号 1 和 2 中所述的权限要求：</block>
-  <block id="74d08617d74abf19fd56b9d2616415e0" category="inline-image-macro">说明</block>
-  <block id="255370d53f2dbf9e81af416701f41c1c" category="paragraph"><block ref="255370d53f2dbf9e81af416701f41c1c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ebd7d1e81a9a2891e260eecaa709adbf" category="section-title">Cloud Volumes ONTAP 项目</block>
   <block id="a4ccd00c9229d2a8510153f89f2a576a" category="paragraph">Cloud Volumes ONTAP 可以与 Connector 位于同一项目中，也可以位于不同项目中。要在其他项目中部署 Cloud Volumes ONTAP ，您需要先将 Connector 服务帐户和角色添加到该项目中。</block>
   <block id="c5eb6c02a9d49411a265d5ddf6527796" category="inline-link-macro">了解如何设置服务帐户</block>
@@ -877,7 +875,6 @@
   <block id="24d980f868691fec5316d23a370b1a82" category="list-text">根据向 NetApp 支持部门发送信息的方式，选择以下选项之一：</block>
   <block id="b9ec9a523cf55268d71bff7e627ff5be" category="list-text">选择选项以将 AutoSupport 消息下载到本地计算机。然后，您可以使用首选方法将其发送给 NetApp 支持部门。</block>
   <block id="1be1fe56cfe6a879b6c9c537795ab474" category="list-text">单击 * 发送 NetApp* 以直接将消息发送给 AutoSupport 支持。</block>
-  <block id="038465d74b6306845fffdf73a6d9b4ef" category="paragraph"><block ref="038465d74b6306845fffdf73a6d9b4ef" category="inline-image-macro-rx" type="image"></block></block>
   <block id="92ca244e2f6af5665f270d0017a9ee62" category="section-title">连接到 Linux VM</block>
   <block id="e55bb4f4a0a85c49aa386bbab887b86f" category="paragraph">如果您需要连接到运行 Connector 的 Linux VM ，可以使用云提供商提供的连接选项来执行此操作。</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="section-title">AWS</block>
@@ -2484,4 +2481,8 @@
   <block id="1fd4dfa3fe95514f04e3ecdd7e8a001d" category="paragraph">Connector会发出以下API请求来发现Amazon S3存储分段：</block>
   <block id="080045bf6ab788297df2820c007203af" category="paragraph">S3 ： GetEncryptionConfiguration</block>
   <block id="2e0aa8db26606696ba7bb05ec89284a7" category="paragraph">Connector发出以下API请求来管理适用于ONTAP 的FSX：</block>
+  <block id="fd4365eba430cfa4f48d4c96ee23c1cc" category="inline-image-macro">支持信息板的屏幕截图、显示用户可以单击此处下载和发送AutoSupport 消息。</block>
+  <block id="328e4502038eaedc10a81f50a70db084" category="paragraph"><block ref="328e4502038eaedc10a81f50a70db084" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b33affeaa41a09a9f3a99d38d14376f" category="inline-image-macro">一个概念映像、用于描述用于部署Cloud Volumes ONTAP 的Google和服务帐户的权限要求。</block>
+  <block id="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="paragraph"><block ref="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
