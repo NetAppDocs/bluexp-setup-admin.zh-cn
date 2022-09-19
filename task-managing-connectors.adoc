@@ -211,7 +211,7 @@ sudo /path/cloud-manager-connector-offline-v3.9.14
 
 .可以访问 Internet 的主机上的软件升级又如何？
 ****
-只要有最新版本， Connector 就会自动将其软件更新到最新版本 link:reference-networking-cloud-manager.html["出站 Internet 访问"] 以获取软件更新。
+只要Connector能够通过出站Internet访问来获取软件更新、它就会自动将其软件更新到最新版本。
 
 ****
 

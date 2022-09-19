@@ -24,11 +24,11 @@ summary: 添加和管理 AWS 凭据，以便 Cloud Manager 拥有在 AWS 帐户�
 
 * 向现有Connector添加其他AWS凭据
 +
-通过向现有连接器添加新的 AWS 凭据，您可以使用同一连接器在另一个 AWS 帐户中部署 Cloud Volumes ONTAP 。 <<Add additional credentials to a Connector,了解如何将 AWS 凭据添加到 Connector>>。
+通过向现有连接器添加新的 AWS 凭据，您可以使用同一连接器在另一个 AWS 帐户中部署 Cloud Volumes ONTAP 。  additional credentials to a Connector,了解如何将 AWS 凭据添加到 Connector。
 
 * 将AWS凭据添加到Cloud Manager以创建Connector
 +
-向Cloud Manager添加新的AWS凭据可为Cloud Manager提供创建Connector所需的权限。 <<Add credentials to Cloud Manager for creating a Connector,了解如何向 Cloud Manager 添加 AWS 凭据>>。
+向Cloud Manager添加新的AWS凭据可为Cloud Manager提供创建Connector所需的权限。  credentials to Cloud Manager for creating a Connector,了解如何向 Cloud Manager 添加 AWS 凭据。
 
 * 将AWS凭据添加到Cloud Manager for FSX for ONTAP
 +
@@ -63,8 +63,8 @@ NOTE: 从 Cloud Manager 部署 Connector 时， Cloud Manager 会自动为部署
 
 * 选项 *
 
-* <<Grant permissions by assuming an IAM role in another account>>
-* <<Grant permissions by providing AWS keys>>
+*  permissions by assuming an IAM role in another account
+*  permissions by providing AWS keys
 
 
 
@@ -88,7 +88,7 @@ NOTE: 从 Cloud Manager 部署 Connector 时， Cloud Manager 会自动为部署
 . 复制 IAM 角色的角色 ARN ，以便稍后将其粘贴到 Cloud Manager 中。
 
 
-现在，此帐户具有所需权限。 <<add-the-credentials,现在，您可以将凭据添加到 Connector>>。
+现在，此帐户具有所需权限。 ,现在，您可以将凭据添加到 Connector。
 
 
 
@@ -109,7 +109,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 
 
-现在，此帐户具有所需权限。 <<add-the-credentials,现在，您可以将凭据添加到 Connector>>。
+现在，此帐户具有所需权限。 ,现在，您可以将凭据添加到 Connector。
 
 
 
@@ -174,7 +174,7 @@ image:screenshot_accounts_switch_aws.png["单击详细信息和 amp ；凭据页
 . 复制 IAM 角色的角色 ARN ，以便您可以在下一步将其粘贴到 Cloud Manager 中。
 
 
-IAM 角色现在具有所需的权限。 <<add-the-credentials-2,现在，您可以将其添加到 Cloud Manager 中>>。
+IAM 角色现在具有所需的权限。 ,现在，您可以将其添加到 Cloud Manager 中。
 
 
 

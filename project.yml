@@ -39,8 +39,6 @@ sidebar:
       entries:
       - title: 了解连接器
         url: "/concept-connectors.html"
-      - title: 设置网络
-        url: "/reference-networking-cloud-manager.html"
       - title: 在 AWS 中创建连接器
         url: "/task-creating-connectors-aws.html"
       - title: 在 Azure 中创建连接器
@@ -113,14 +111,26 @@ sidebar:
       url: "/concept-my-opportunities.html"
   - title: 参考
     entries:
-    - title: 权限摘要
-      url: "/reference-permissions.html"
-    - title: Connector 的 AWS 权限
-      url: "/reference-permissions-aws.html"
-    - title: Connector 的 Azure 权限
-      url: "/reference-permissions-azure.html"
-    - title: 适用于 Connector 的 Google Cloud 权限
-      url: "/reference-permissions-gcp.html"
+    - title: 权限
+      entries:
+      - title: 权限摘要
+        url: "/reference-permissions.html"
+      - title: Connector 的 AWS 权限
+        url: "/reference-permissions-aws.html"
+      - title: Connector 的 Azure 权限
+        url: "/reference-permissions-azure.html"
+      - title: 适用于 Connector 的 Google Cloud 权限
+        url: "/reference-permissions-gcp.html"
+    - title: 端口
+      entries:
+      - title: AWS中的安全组规则
+        url: "/reference-ports-aws.html"
+      - title: Azure中的安全组规则
+        url: "/reference-ports-azure.html"
+      - title: Google Cloud中的防火墙规则
+        url: "/reference-ports-gcp.html"
+      - title: 内部连接器的端口
+        url: "/reference-ports-on-prem.html"
   - title: 知识和支持
     entries:
     - title: 注册以获得支持
@@ -141,8 +151,6 @@ homepage:
     links:
     - title: 了解连接器
       url: concept-connectors.html
-    - title: 设置网络
-      url: reference-networking-cloud-manager.html
     - title: 管理连接器
       url: task-managing-connectors.html
   - title: NetApp 帐户
@@ -172,4 +180,4 @@ homepage:
 product-family:
   name: Cloud Manager
   repo: cloud-manager-family
-  sidebar_label: All Cloud Manager documentation
+  sidebar_label: 所有 Cloud Manager 文档

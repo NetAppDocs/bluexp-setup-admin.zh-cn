@@ -61,7 +61,18 @@ Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果�
 虚拟机管理程序:: 经过认证可运行 CentOS 或 Red Hat Enterprise Linux 的裸机或托管虚拟机管理程序https://access.redhat.com/certified-hypervisors["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
 /var 中的磁盘空间:: 必须有 20 GiB 的可用空间
-出站 Internet 访问:: 要安装 Connector ，需要进行出站 Internet 访问，而要使 Connector 能够管理公有云环境中的资源和流程，则需要进行出站 Internet 访问。有关端点列表，请参见 link:reference-networking-cloud-manager.html["连接器的网络连接要求"]。
+出站 Internet 访问:: 在安装过程中、Connector的安装程序必须访问以下URL：
++
+--
+* https://dl.fedoraProject.org/pub/epel/epEl-release-latest-7.noarch.rpm
+* https://s3.amazonaws.com/aws-cli/awscri-bundle.zip
+* https://*.blob.core.windows.net 或 https://hub.docker.com
++
+主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。
+
+
+
+--
 
 
 

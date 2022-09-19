@@ -25,7 +25,45 @@ TIP: 在创建首个 Cloud Volumes ONTAP 工作环境时，如果您还没有连
 
 
 
-== 设置部署Connector的权限
+== 快速入门
+
+按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
+
+[role="quick-margin-para"]
+通过创建并附加自定义角色、确保您的Google Cloud帐户具有正确的权限。
+
+[role="quick-margin-para"]
+ up permissions,查看自定义角色。
+
+[role="quick-margin-para"]
+创建Connector VM时、您需要将其与服务帐户关联。此服务帐户必须具有一个自定义角色、该角色有权管理Google Cloud中的资源。
+
+[role="quick-margin-para"]
+ up a service account,查看自定义角色。
+
+[role="quick-margin-para"]
+您需要一个VPC和子网、并可通过出站Internet访问特定端点。如果出站Internet需要HTTP代理、则需要IP地址、凭据和HTTPS证书。
+
+[role="quick-margin-para"]
+ up networking,查看网络连接要求。
+
+.跨度 class="image><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png"[] Alt+four"></span>启用Google Cloud API
+* Cloud Deployment Manager V2 API
+* 云日志记录 API
+* Cloud Resource Manager API
+* 计算引擎 API
+* 身份和访问管理（ IAM ） API
+
+
+[role="quick-margin-para"]
+单击Connector下拉列表、选择*添加连接器*、然后按照提示进行操作。
+
+[role="quick-margin-para"]
+ a Connector,按照分步说明进行操作。
+
+
+
+== 设置权限
 
 在部署Connector之前、您需要确保Google Cloud帐户具有正确的权限。
 
@@ -102,7 +140,7 @@ Google Cloud用户现在具有创建Connector所需的权限。
 
 
 
-== 为Connector设置服务帐户
+== 设置服务帐户
 
 需要使用服务帐户为Connector提供在Google Cloud中管理资源所需的权限。创建此服务帐户时，您需要将其与 Connector VM 关联。
 
@@ -218,7 +256,57 @@ includedPermissions:
 
 
 
-== 共享 VPC 权限
+== 设置网络
+
+设置您的网络，以便 Connector 可以管理公有云环境中的资源和流程。除了为Connector提供VPC和子网之外、您还需要确保满足以下要求。
+
+
+
+=== 连接到目标网络
+
+连接器要求与您要创建的工作环境类型以及计划启用的服务建立网络连接。
+
+例如、如果您在公司网络中安装了连接器、则必须设置与启动Cloud Volumes ONTAP 的VPC的VPN连接。
+
+
+
+=== 出站 Internet 访问
+
+连接器需要通过出站 Internet 访问来管理公有云环境中的资源和流程。
+
+[cols="2*"]
+|===
+| 端点 | 目的 
+
+
+| https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
+
+
+| https://*.cloudmanager.cloud.netapp.com | 在 Cloud Manager 中提供 SaaS 功能和服务。 
+
+
+| https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
+|===
+
+
+=== 代理服务器
+
+如果您的组织要求为所有传出Internet流量部署HTTP代理、请获取有关HTTP代理的以下信息：
+
+* IP 地址
+* 凭据
+* HTTPS证书
+
+
+
+
+=== 安全组
+
+没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。HTTP 和 HTTPS 可用于访问 link:concept-connectors.html#the-local-user-interface["本地 UI"]，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。
+
+
+
+=== 共享 VPC 权限
 
 如果您使用共享 VPC 将资源部署到服务项目中，则需要以下权限。此表仅供参考，您的环境应在 IAM 配置完成后反映权限表。
 
@@ -279,6 +367,12 @@ includedPermissions:
 
 
 
+=== IP地址限制
+
+可能与172范围内的IP地址冲突。 link:reference-limitations.html["了解有关此限制的更多信息"]。
+
+
+
 == 启用 Google Cloud API
 
 部署连接器和 Cloud Volumes ONTAP 需要多个 API 。
@@ -297,16 +391,9 @@ includedPermissions:
 
 
 
-== 在Google Cloud中创建连接器
+== 创建连接器
 
 直接从 Cloud Manager 用户界面或使用 gcloud 在 Google Cloud 中创建 Connector 。
-
-.您需要什么？ #8217 ；将需要什么
-* 您的Google Cloud帐户所需的权限、如本页面第一部分所述。
-* Google Cloud 项目。
-* 一种具有创建和管理 Cloud Volumes ONTAP 所需权限的服务帐户，如本页面第一部分所述。
-* 您选择的 Google Cloud 区域中的 VPC 和子网。
-
 
 [role="tabbed-block"]
 ====
@@ -317,27 +404,22 @@ includedPermissions:
 image:screenshot_connector_add.gif["标题中显示 Connector 图标和 Add Connector 操作的屏幕截图。"]
 
 . 选择 * Google Cloud Platform* 作为云提供商。
+. 在*部署Connector*页面上、查看有关所需内容的详细信息。您有两种选择：
 +
-请记住， Connector 必须与您要创建的工作环境类型以及您计划启用的服务建立网络连接。
+.. 单击*继续*以使用产品指南为部署做准备。产品指南中的每个步骤都包含文档本页中包含的信息。
+.. 如果您已按照此页面上的步骤做好准备、请单击*跳至部署*。
 
-+
-link:reference-networking-cloud-manager.html["详细了解 Connector 的网络要求"]。
 
 . 按照向导中的步骤创建 Connector ：
 +
-** * 准备就绪 * ：查看您需要的内容。
 ** 如果出现提示，请登录到您的 Google 帐户，该帐户应具有创建虚拟机实例所需的权限。
 +
 此表由 Google 拥有和托管。您的凭据不会提供给 NetApp 。
 
-** * 基本设置 * ：输入虚拟机实例的名称，指定标记，选择项目，然后选择具有所需权限的服务帐户（有关详细信息，请参见上述部分）。
+** *详细信息*：输入虚拟机实例的名称、指定标记、选择项目、然后选择具有所需权限的服务帐户(有关详细信息、请参见上述部分)。
 ** * 位置 * ：指定实例的区域，分区， VPC 和子网。
 ** * 网络 * ：选择是否启用公有 IP 地址，并可选择指定代理配置。
 ** * 防火墙策略 * ：选择是创建新的防火墙策略，还是选择允许入站 HTTP ， HTTPS 和 SSH 访问的现有防火墙策略。
-+
-
-NOTE: 除非您启动 Connector ，否则不会向其传入流量。HTTP 和 HTTPS 可用于访问 link:concept-connectors.html#the-local-user-interface["本地 UI"]，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。
-
 ** * 审核 * ：查看您选择的内容，确认您的设置正确无误。
 
 

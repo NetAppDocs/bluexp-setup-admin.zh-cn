@@ -21,7 +21,7 @@ NOTE: Cloud Manager 不支持在 Connector 中使用 HTTPS 代理。
 
 如果公有 IP地址或NAT网关不可用、则将连接器配置为使用HTTP代理服务器可提供出站Internet访问。此代理服务器仅为Connector提供出站连接。它不为Cloud Volumes ONTAP 系统提供任何连接。
 
-如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则Cloud Manager会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。 link:reference-networking-cloud-manager.html#proxy-server-for-autosupport-messages["了解有关使用代理服务器发送AutoSupport 消息的更多信息"]。
+如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则Cloud Manager会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
 
 
 

@@ -42,7 +42,7 @@ link:task-installing-linux.html["查看虚拟机要求"]。
 
 ** 对于网络安全组， Connector 需要使用 SSH ， HTTP 和 HTTPS 进行入站连接。
 +
-link:reference-networking-cloud-manager.html#rules-for-the-connector-in-azure["详细了解 Connector 的安全组规则"]。
+link:reference-ports-azure.html["详细了解 Connector 的安全组规则"]。
 
 ** 在 * 管理 * 下，通过选择 * 启用 * 系统分配的托管身份 * 来为连接器启用。
 +

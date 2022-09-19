@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: reference-ports-on-prem.html 
+keywords: networking, network, requirements, ports, on-prem, linux, http, https 
+summary: 在内部Linux主机上手动安装时、Connector会使用以下入站端口。 
+---
+= 内部连接器的端口
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在内部 Linux 主机上手动安装时， Connector 会使用以下 _inbound_ 端口。
+
+这些入站规则适用于以下两种部署模式：通过 Internet 访问或不通过 Internet 访问安装的内部连接器。
+
+[cols="10,10,80"]
+|===
+| 协议 | Port | 目的 
+
+
+| HTTP | 80 | 提供从客户端 Web 浏览器到本地用户界面的 HTTP 访问 
+
+
+| HTTPS | 443. | 提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问 
+|===

@@ -33,11 +33,13 @@ summary: 大多数情况下，您需要在云或内部网络中部署 Connector 
 * 云数据感知
 * 云分层
 * Cloud Volumes ONTAP
+* E系列系统
 * 全局文件缓存
 * Google Cloud Storage发现
 * Kubernetes 集群
 * 监控
 * 内部 ONTAP 集群
+* StorageGRID
 
 
 以下服务需要使用连接器 * 。 not_* ：
@@ -160,7 +162,7 @@ Connector 需要特定的云提供商权限才能代表您执行操作。例如�
 
 我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然 Cloud Manager 平台中的大多数服务和功能均通过基于 SaaS 的软件提供，但有几项特性和功能取决于 Connector 的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。
 
-只要有最新版本， Connector 就会自动将其软件更新到最新版本 link:reference-networking-cloud-manager.html["出站 Internet 访问"] 以获取软件更新。
+只要Connector能够通过出站Internet访问来获取软件更新、它就会自动将其软件更新到最新版本。
 
 
 

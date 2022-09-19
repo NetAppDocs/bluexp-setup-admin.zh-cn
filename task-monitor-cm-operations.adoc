@@ -50,7 +50,7 @@ summary: 您可以监控 Cloud Manager 正在执行的操作的状态，以查�
 
 image:screenshot_notification_full.png["显示通知中心中当前通知列表的屏幕截图。"]
 
-此外、您还可以将Cloud Manager配置为通过电子邮件发送通知、以便即使未登录到系统、您也能了解重要的系统活动。您可以将电子邮件发送给您的NetApp云帐户中的任何Cloud Central用户、也可以发送给需要了解某些类型的系统活动的任何其他收件人。请参见 <<Setting email notification settings,设置电子邮件通知设置>> 。
+此外、您还可以将Cloud Manager配置为通过电子邮件发送通知、以便即使未登录到系统、您也能了解重要的系统活动。您可以将电子邮件发送给您的NetApp云帐户中的任何Cloud Central用户、也可以发送给需要了解某些类型的系统活动的任何其他收件人。请参见  email notification settings,设置电子邮件通知设置 。
 
 
 
