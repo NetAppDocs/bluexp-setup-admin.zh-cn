@@ -1204,8 +1204,6 @@
   <block id="5becfd4bbec3e5daaed9dbc85669ff84" category="paragraph"><block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>。</block>
   <block id="958c315a8c40765f65895091ecc83488" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
-  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">有关 Cloud Manager 3.9 的注意事项</block>
-  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="section-title">连接到目标网络</block>
   <block id="19dfd3f6e4e8058b5d5537232d50ca9b" category="paragraph">连接器要求与您要创建的工作环境类型以及计划启用的服务建立网络连接。</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">可能与 172 范围内的 IP 地址冲突</block>
@@ -2527,4 +2525,6 @@
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
   <block id="59c4ba689ab2a5e1f09df561f47e0d6c" category="inline-link">了解如何创建案例</block>
   <block id="55fc63d7111caa2a4badd753983607c4" category="paragraph"><block ref="45512476d85432fc18c9be020e976fed" category="inline-link-rx"></block>。</block>
+  <block id="d14a27b37d19411318313c75f11baf13" category="inline-link-macro">Cloud Manager注意事项</block>
+  <block id="300aa46e11928dbde4552827675beb31" category="list-text"><block ref="300aa46e11928dbde4552827675beb31" category="inline-link-macro-rx"></block></block>
 </blocks>
