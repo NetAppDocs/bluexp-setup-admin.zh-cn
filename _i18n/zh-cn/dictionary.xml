@@ -1225,7 +1225,6 @@
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
   <block id="cb4b69eb9bd10da82c15dca2f86a1385" category="cell">9060</block>
-  <block id="a88f9f8d3b07dc3b0bfb7e3fd41aaebe" category="cell">支持启用和使用 Cloud Data sense （仅适用于 GovCloud 部署）</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">出站规则</block>
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">连接器的预定义安全组将打开所有出站流量。如果可以接受，请遵循基本出站规则。如果您需要更严格的规则、请使用高级出站规则。</block>
   <block id="d4dc7fa133657e4530cfde55110ec3c1" category="section-title">基本外向规则</block>
@@ -1779,7 +1778,6 @@
   <block id="6c08c57e382a25a778455184cd9b1a4a" category="list-text">在 Cloud Manager 中，单击 * 帮助 &gt; 支持 * 。</block>
   <block id="f5052c65917d7341726235d4d4941461" category="list-text">在 "Technical Support" 下选择一个可用选项：</block>
   <block id="0c01b3b7191c43507ad9ca43d6443731" category="cell">提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问，以及从 Cloud Data sense 实例建立的连接</block>
-  <block id="b774573fe7b53358246a054f6d44ca83" category="cell">支持启用和使用 Cloud Data Asense （仅适用于政府云部署）</block>
   <block id="5c6b09600cdfc594130f9f3c053efecb" category="section-title">更改连接器的 IP 地址</block>
   <block id="a0dc112a414c5a75d4f2454974efc323" category="paragraph">如果您的业务需要，您可以更改云提供商自动分配的 Connector 实例的内部 IP 地址和公有 IP 地址。</block>
   <block id="bfe6d8b96fb30d923a8089019f265d6b" category="list-text">按照云提供商的说明更改连接器实例的本地 IP 地址或公有 IP 地址（或两者）。</block>
@@ -2527,4 +2525,5 @@
   <block id="55fc63d7111caa2a4badd753983607c4" category="paragraph"><block ref="45512476d85432fc18c9be020e976fed" category="inline-link-rx"></block>。</block>
   <block id="d14a27b37d19411318313c75f11baf13" category="inline-link-macro">Cloud Manager注意事项</block>
   <block id="300aa46e11928dbde4552827675beb31" category="list-text"><block ref="300aa46e11928dbde4552827675beb31" category="inline-link-macro-rx"></block></block>
+  <block id="84f0978b53ad6dbefb1e08686d6c7c18" category="cell">能够在政府云部署中启用和使用云数据感知和云备份。如果您在Cloud Manager帐户中禁用SaaS接口、则Cloud Backup也需要此端口。</block>
 </blocks>
