@@ -800,7 +800,6 @@
   <block id="e96bc5b1e40abf07ff070b96c65057db" category="doc">从 AWS Marketplace 创建 Connector</block>
   <block id="2d7f301de264581382e23e0ee22d9345" category="list-text">创建角色类型为 Amazon EC2 的 IAM 角色，并将您在上一步骤中创建的策略附加到该角色。</block>
   <block id="b00b1f51aba44811e0f61d74eec7e04b" category="inline-link">AWS Marketplace 上的 Cloud Manager 页面</block>
-  <block id="d69392574f5dab79aa43319b4e54fd67" category="list-text">现在转到<block ref="46abe95496a5b5a2812b7657abaac71b" category="inline-link-rx"></block> 从 AMI 部署 Cloud Manager 。</block>
   <block id="040f37a8d15d49c042b5c21da1018a88" category="paragraph">IAM 用户必须具有 AWS Marketplace 权限才能订阅和取消订阅。</block>
   <block id="b748cb0f2ad325f27d30850a71d55e6d" category="list-text">在 Marketplace 页面上，单击 * 继续订阅 * ，然后单击 * 继续配置 * 。</block>
   <block id="648fca9db3d7e8e554a59d3519d8b0f6" category="inline-image-macro">屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。</block>
@@ -809,10 +808,8 @@
   <block id="197769c5244e448b93746c973eb17b81" category="list-text">在 * 选择操作 * 下，选择 * 通过 EC2 启动 * ，然后单击 * 启动 * 。</block>
   <block id="b9d63d61319311d69840ec497c3aae41" category="paragraph">以下步骤介绍了如何从 EC2 控制台启动实例，因为控制台允许您将 IAM 角色附加到 Cloud Manager 实例。使用 * 从网站启动 * 操作无法实现这一点。</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">按照提示配置和部署实例：</block>
-  <block id="a6828ac7fbbeb95cc7862274b48845dd" category="list-text">* 选择实例类型 * ：根据区域可用性，选择支持的实例类型之一（建议使用 T3.xlarge ）。</block>
   <block id="3346e4a27b0ab9e94d29515e25908ed6" category="inline-link-macro">查看实例要求</block>
   <block id="147baea3682d69bc05c129ad525efc92" category="paragraph"><block ref="febf0a115cd8e255527b99e98806a2dd" category="inline-link-macro-rx"></block>。</block>
-  <block id="05e87e87275d39b74f7a0a5fa72e11f4" category="list-text">* 配置实例 * ：选择一个 VPC 和子网，选择您在第 1 步中创建的 IAM 角色，启用终止保护（建议），然后选择符合您要求的任何其他配置选项。</block>
   <block id="f1e012a5b5a981694252d85992469fd7" category="inline-image-macro">显示 AWS 中配置实例页面上的字段的屏幕截图。此时将选择您应在步骤 1 中创建的 IAM 角色。</block>
   <block id="f9392b26d00f01de79eca77088c996c1" category="paragraph"><block ref="f9392b26d00f01de79eca77088c996c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="05c4d183e8bff44df2e6ac91133757fd" category="list-text">* 添加存储 * ：保留默认存储选项。</block>
@@ -1012,7 +1009,6 @@
   <block id="ed949d24ab11f0d2a40c0b8161ab4cf3" category="list-text"><block ref="ed949d24ab11f0d2a40c0b8161ab4cf3" category="inline-link-macro-rx"></block></block>
   <block id="21e74b3c28d006317f38a2bc8eb1da3b" category="inline-link-macro">Azure Marketplace</block>
   <block id="42416828ae8ae7a901a48c71094e7a44" category="list-text"><block ref="42416828ae8ae7a901a48c71094e7a44" category="inline-link-macro-rx"></block></block>
-  <block id="7421da902099eda1935bb2e6574e1747" category="paragraph">如果需要创建一个 Connector 来完成操作， Cloud Manager 将提示您创建一个连接器。</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="section-title">权限</block>
   <block id="176cadcb8516ed122391204572190282" category="paragraph">创建 Connector 需要特定权限，而 Connector 实例本身也需要另一组权限。</block>
   <block id="dd5605419268a28968870a791ffa5636" category="section-title">创建 Connector 的权限</block>
@@ -1048,7 +1044,6 @@
   <block id="8cace447f88df36aff1b15d754f25f8b" category="paragraph"><block ref="34c92eb0b80eb3e0fe9fb66053c42d9e" category="inline-link-macro-rx"></block>。</block>
   <block id="71da84f38b79ce90467a2699cf371e30" category="section-title">本地用户界面</block>
   <block id="d78e63b2e43a582b35ba2f4c0eac45bd" category="inline-link">SaaS 用户界面</block>
-  <block id="fbd47947ca4ebf7d7bec907722dc57c2" category="paragraph">而您应从执行几乎所有任务<block ref="8f305b98f88a161e5a1e68aca36c2103" category="inline-link-rx"></block>，连接器上仍提供本地用户界面。如果您在无法访问 Internet 的环境中安装 Connector ，并且需要从 Connector 本身执行一些任务，而不是从 SaaS 界面执行这些任务，则需要使用此接口：</block>
   <block id="1765f6ca29cc9e21e15e0348d66bfdca" category="inline-link-macro">了解如何访问本地 UI</block>
   <block id="538fc0c04ce8a0ef5cf78a12dbe8f68a" category="section-title">连接器升级</block>
   <block id="d4150be963d8e8a8648985d057b82c98" category="summary">如果您的公司策略要求您使用代理服务器与 Internet 进行所有 HTTP 通信，则必须将您的连接器配置为使用该 HTTP 代理服务器。代理服务器可以位于云中或网络中。</block>
@@ -1498,7 +1493,6 @@
   <block id="f8cccaed0b932ef662605b0a2cef04df" category="list-text">从已连接到 Connector 虚拟机的主机打开 Web 浏览器，然后输入以下 URL ：</block>
   <block id="15651752f9388c39de2befbaf44cab09" category="inline-image-macro">屏幕截图显示了设置 Cloud Manager 屏幕，您可以通过该屏幕选择 NetApp 帐户并为系统命名。</block>
   <block id="36e5523be69425d9ed8506047f0c21c0" category="paragraph"><block ref="36e5523be69425d9ed8506047f0c21c0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="94b1721579eea40ee683582aae52b01e" category="paragraph">现在，已安装并设置 Connector 。您必须先授予 Azure 权限，然后用户才能在 Azure 中部署 Cloud Volumes ONTAP 。</block>
   <block id="53093f6c5402328654bf860d6c52db0a" category="section-title">正在授予 Azure 权限</block>
   <block id="74aac1234eeac8d40c64bd3b59349316" category="paragraph">在 Azure 中部署 Connector 时，您应已启用<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block>。现在，您必须先创建一个自定义角色，然后为一个或多个订阅的 Connector 虚拟机分配此角色，从而授予所需的 Azure 权限。</block>
   <block id="5baa38c3e3ec02608b08189c2df5b21b" category="paragraph">现在，您应该拥有一个名为 Cloud Manager Operator 的自定义角色，可以将该角色分配给 Connector 虚拟机。</block>
@@ -1741,11 +1735,6 @@
   <block id="1e0ffea311b606e155cd79847cc310dd" category="list-text">将策略附加到 IAM 角色或 IAM 用户。</block>
   <block id="4522caea722d5e7e4eedf46bebdf92b1" category="list-text">创建 Connector 时，请为 Cloud Manager 提供 IAM 角色的 ARN 或 IAM 用户的 AWS 访问密钥和机密密钥。</block>
   <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b4c6a2f33e7b2a38495546b8d5cd8e84" category="paragraph">请注意，此帐户必须是客户级别的帐户（而不是来宾或临时帐户）。</block>
-  <block id="fc65ebd4739f2f8ca46062a8280faea9" category="section-title">注册您的帐户以获得支持</block>
-  <block id="3e080914efe0d0ca025439fbb68d437f" category="paragraph">支持注册可从 Cloud Manager 的支持信息板中获取。</block>
-  <block id="fb07bf6b7698dbe934b8b2164d915484" category="list-text">在 * 资源 * 选项卡中，单击 * 注册支持 * 。</block>
-  <block id="392fb0270d0d84dbc3fdf8c67da1e5ad" category="list-text">选择要注册的 NSS 凭据，然后单击 * 注册 * 。</block>
   <block id="a6a8d3a613b6b7ece18f688d168e5cda" category="cell">API 调用 AWS 和 ONTAP ，云数据感知，勒索软件服务以及向 NetApp 发送 AutoSupport 消息</block>
   <block id="6dabf2a1195c84bdf3b7bf30e5ddf080" category="cell">API 调用 GCP 和 ONTAP ，云数据感知，勒索软件服务以及向 NetApp 发送 AutoSupport 消息</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律声明提供对版权声明、商标、专利等的访问。</block>
@@ -1878,13 +1867,11 @@
   <block id="0ef5e09df96e6b4d97470a69c3a5bb03" category="list-text"><block ref="0ef5e09df96e6b4d97470a69c3a5bb03" category="inline-link-rx"></block></block>
   <block id="c6e51205c48cc37a7cc66b973d442adf" category="inline-link">使用云数据感知扫描内部ONTAP 卷数据</block>
   <block id="a2946220130b0d51ecc66e35f8a65cbe" category="list-text"><block ref="a2946220130b0d51ecc66e35f8a65cbe" category="inline-link-rx"></block></block>
-  <block id="fe287ea744fed512490d3282fcd528aa" category="paragraph">例如、连接器是Cloud Volumes ONTAP 运行状况和运行的关键组件。如果某个连接器已关闭、则使用基于节点的许可的Cloud Volumes ONTAP PAYGO系统将在与某个连接器失去通信超过14天之后关闭。</block>
   <block id="f959d763eb10941db3ab7db04cdccc7d" category="paragraph">虽然您应该从 SaaS 用户界面执行几乎所有任务，但连接器上仍提供本地用户界面。如果您要从无法访问出站Internet的政府区域或站点访问Cloud Manager、则需要使用在Connector上运行的本地用户界面。</block>
   <block id="bf16d7909c891a5a760cab0ad77d53bc" category="list-text">输入您的用户名和密码以登录。</block>
   <block id="bb88bf03aaf2d1b8891c8b85df8bd28f" category="paragraph">请注意、这些地区仅支持Cloud Volumes ONTAP 、云备份、云数据感知和复制服务。政府地区不支持任何其他NetApp服务。</block>
   <block id="4141e80854c65807682dd0ff767b4228" category="inline-link-macro">了解如何在Connector上访问本地UI</block>
   <block id="b5d309d79224e6f55d1d4c6b68090c82" category="paragraph"><block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
-  <block id="60eb2845b0a0e58270dc0f4a47eeb2b9" category="paragraph">如果您要从无法访问出站Internet的政府区域或站点访问Cloud Manager、则需要登录到在Connector上运行的本地用户界面。 <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
   <block id="38ce4e90f119b89b2fdf1f274431e262" category="section-title">2022年6月28日</block>
   <block id="47d69a1f17128c359904338c3502fe31" category="section-title">使用NetApp凭据登录</block>
   <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">当新用户注册到Cloud Central时、他们现在可以选择*使用NetApp*登录选项以使用其NetApp支持站点凭据登录。这是输入电子邮件地址和密码的替代方法。</block>
@@ -2342,8 +2329,6 @@
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">请注意、注册表单中仅允许使用英文字符。</block>
   <block id="0948a4e54803455bbc7561374084a508" category="list-text">打开 Web 浏览器并转到<block ref="25c9ce3f64e912d3750c233c5edfffad" category="inline-link-rx"></block></block>
   <block id="92c98a22e55c97d93ef587c4ab17c0c0" category="paragraph">在大多数情况下、Cloud Manager帐户管理员需要在云或内部网络中部署_Connector_。连接器是 Cloud Manager 日常使用的关键组件。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。</block>
-  <block id="6cfc3e268dd85bc996870e9d6e4ee23e" category="paragraph">在工作空间管理员创建Cloud Volumes ONTAP 工作环境并使用上述任何其他服务之前、Cloud Manager帐户管理员需要创建连接器。管理员可以通过多种方式创建Connector：</block>
-  <block id="7d01d614f55d9a17fd8f5a391015e623" category="list-text">登录到Cloud Manager后、Cloud Manager帐户管理员需要在云提供商或内部网络中部署_Connector_。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。Azure NetApp Files ， Cloud Volumes Service 或 Cloud Sync 不需要连接器，但 Cloud Manager 中的所有其他服务和功能都需要连接器。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="01f2c0e19d8bbd614814f0651e7feec1" category="section-title">连接器3.9.21</block>
   <block id="1beb197487d0f07564b924071751aa36" category="list-text">我们引入了一种新方法来发现您尚未在Cloud Manager中管理的现有云资源。</block>
@@ -2526,4 +2511,105 @@
   <block id="d14a27b37d19411318313c75f11baf13" category="inline-link-macro">Cloud Manager注意事项</block>
   <block id="300aa46e11928dbde4552827675beb31" category="list-text"><block ref="300aa46e11928dbde4552827675beb31" category="inline-link-macro-rx"></block></block>
   <block id="84f0978b53ad6dbefb1e08686d6c7c18" category="cell">能够在政府云部署中启用和使用云数据感知和云备份。如果您在Cloud Manager帐户中禁用SaaS接口、则Cloud Backup也需要此端口。</block>
+  <block id="dad58696941aaa2124c3e63e968f1ec4" category="paragraph">对于AWS商业区域、最好直接从Cloud Manager创建Connector、但如果愿意、您可以从AWS Marketplace启动Connector。对于AWS政府区域、您不能从Cloud Manager的SaaS网站在政府区域部署Connector、因此、下一个最佳选择是从AWS Marketplace进行部署。</block>
+  <block id="0560c44ef22b138c9eed058100e3958f" category="inline-link-macro">了解如何在现有Linux主机上安装Connector</block>
+  <block id="98ff432bce07ea5e0c59f2cf0dadc227" category="admonition">您还可以在网络或云中的现有Linux主机上下载并安装Connector软件。 <block ref="4868e0950edab502b69d904c3cd6f0e3" category="inline-link-macro-rx"></block>。</block>
+  <block id="30d512403b06e33cb94352c1729e7d1b" category="section-title">在AWS商业区域创建Connector</block>
+  <block id="8ccda5ecd976ff61f01e8112ac621dbd" category="paragraph">您可以直接从适用于Cloud Manager的AWS Marketplace产品在AWS商业区域启动Connector实例。</block>
+  <block id="751d9b3a9d8dab30f8b6003eb672ebd0" category="paragraph">创建Connector的IAM用户必须具有AWS Marketplace权限才能订阅和取消订阅。</block>
+  <block id="b59d97df6f11b73048b61dfe798201ae" category="list-text">转至<block ref="46abe95496a5b5a2812b7657abaac71b" category="inline-link-rx"></block> 要从AMI部署Cloud Manager、请执行以下操作：</block>
+  <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*名称和标记*：输入实例的名称和标记。</block>
+  <block id="0119f25d0f0675e35d374c56d3828a0b" category="list-text">*应用程序和操作系统映像*：跳过此部分。已选择Cloud Manager AMI。</block>
+  <block id="2ddbec48a3825e36a3669e60058351a9" category="list-text">*实例类型*：根据区域可用性、选择支持的实例类型之一(建议使用T3.xlarge)。</block>
+  <block id="a2edeeec0c237aa79e3b1f0eb87b07e4" category="list-text">*密钥对(login)*：选择要用于安全连接到实例的密钥对。</block>
+  <block id="db8b616682d262766c36f81013b4f840" category="list-text">*网络设置*：根据需要编辑网络设置：</block>
+  <block id="c04d267ebc445e8f04c29787ecab6547" category="list-text">选择所需的VPC和子网。</block>
+  <block id="f851630c999713801d4adbdaeecfc902" category="list-text">指定实例是否应具有公有 IP地址。</block>
+  <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">指定防火墙设置、以便为Connector实例启用所需的连接方法：SSH、HTTP和HTTPS。</block>
+  <block id="79b8b9ad9bf89b0b494ac4c62694d70f" category="list-text">*配置存储*：保留默认存储选项。</block>
+  <block id="ee668a782c901c68308a297c282e1a99" category="list-text">*高级详细信息*：在* IAM intance profile*下、选择您在步骤1中创建的IAM角色。</block>
+  <block id="00e3e218776ebf2123cac5b55d575b53" category="list-text">*摘要*：查看摘要、然后单击*启动实例*。</block>
+  <block id="25b2a57ebdd9c77734f7240c452db3ef" category="list-text">打开 Web 浏览器并转到<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block> 开始将Connector与Cloud Manager结合使用。</block>
+  <block id="cb23f220e682583c8219c3f7102e6885" category="section-title">在AWS政府区域创建Connector</block>
+  <block id="ef2f7769ddc9c9f5b8e739ee29b5b594" category="paragraph">要在AWS政府区域部署Connector、您需要转到EC2服务、然后从AWS Marketplace中选择Cloud Manager产品。</block>
+  <block id="e700080dad34937da55745dc28985788" category="list-text">转到AWS Marketplace中的Cloud Manager产品。</block>
+  <block id="614c6375b77e957ec55496649f3b351b" category="list-text">打开EC2服务并选择*启动实例*。</block>
+  <block id="1c45874ffe2b0b3918ae446e4018a195" category="list-text">选择* AWS Marketplace *。</block>
+  <block id="3858ef45cf9fafde46be5c1089813ca0" category="list-text">搜索Cloud Manager并选择产品。</block>
+  <block id="110943a8a4bb96acfaf08f709648cade" category="inline-image-macro">在AWS Marketplace中搜索Cloud Manager产品后显示该产品的屏幕截图</block>
+  <block id="0c48de0ac9103e1aee875f6ae631d192" category="paragraph"><block ref="0c48de0ac9103e1aee875f6ae631d192" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="26983a904e0717c520032a2178795368" category="list-text">单击 * 继续 * 。</block>
+  <block id="07910e9ec98e7a02ee5b24f85cc660d2" category="list-text">*选择一个实例类型*：根据区域可用性、选择一个受支持的实例类型(建议使用T3.xlarge)。</block>
+  <block id="7de969f5ec8b28cd7687e32ca5c245bc" category="list-text">*配置实例详细信息*：选择一个VPC和子网、选择您在第1步中创建的IAM角色、启用终止保护(建议)、然后选择符合您要求的任何其他配置选项。</block>
+  <block id="ab055dd2454f72eae9c16179690384d6" category="paragraph">现在，您可以使用 NetApp 帐户安装并设置 Connector 。</block>
+  <block id="ffd720233eaf31d1f3e418cbededed22" category="paragraph">任何时候要使用Cloud Manager、请打开Web浏览器并连接到Connector实例的IP地址：<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
+  <block id="d4d1e4d7a1862b2f824535c50d2aef05" category="paragraph">由于Connector部署在政府区域、因此无法从访问<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block>。</block>
+  <block id="028ecb795c7225a3860d19dee3ea530c" category="paragraph">如果您要从无法访问出站Internet的政府区域或站点访问Cloud Manager、则需要在创建Connector后登录到本地用户界面。 <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
+  <block id="85926b387833c0d2d9c8da74b9b2c8f2" category="paragraph">对于Azure商业区域、最好直接从Cloud Manager创建Connector、但您可以根据需要从Azure Marketplace启动Connector。对于Azure政府区域、您不能从Cloud Manager的SaaS网站在政府区域部署Connector、因此、下一个最佳选择是从Azure Marketplace进行部署。</block>
+  <block id="5c7c86fa3a72eff2eda7fc5d06d22cc8" category="paragraph">如果Connector位于Azure商业区域、请打开Web浏览器并转到<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block> 开始将Connector与Cloud Manager结合使用。</block>
+  <block id="4ff576acdb8dc9245e9af2a935cc45a5" category="paragraph">如果Connector位于Azure政府区域、则可以通过打开Web浏览器并连接到Connector实例的IP地址来使用Cloud Manager：<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
+  <block id="d1a9582568e79d0f7df77bf8db0c78c2" category="paragraph">在向NetApp技术支持部门创建支持案例之前、您需要先将NetApp 支持站点 (NSS)帐户添加到Cloud Manager中、然后注册获取支持。</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支持注册概述</block>
+  <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">激活支持授权有两种形式的注册：</block>
+  <block id="e84e72c56ec69ee05b16bee368f2f4cb" category="list-text">注册Cloud Manager帐户ID支持订阅(您的20位960xxxxxxxxx序列号、位于Cloud Manager的支持资源页面上)。</block>
+  <block id="86d34aa6dedf863c0a4ff5e293c1ec79" category="paragraph">此ID可用作Cloud Manager中任何服务的单一支持订阅ID。必须注册每个Cloud Manager帐户级别的支持订阅。</block>
+  <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在云提供商的市场中注册与订阅关联的Cloud Volumes ONTAP 序列号(即20位909201xxxxxxxx序列号)。</block>
+  <block id="dbea8abd63832b9ce98fbfac8dbb8c15" category="paragraph">这些序列号通常称为_PAYGO序列号、并由Cloud Manager在部署Cloud Volumes ONTAP 时生成。</block>
+  <block id="a9e835b028baaab9d917fafc714e25a5" category="paragraph">注册这两种类型的序列号可实现打开支持服务单、自动生成案例和Active IQ 等功能。</block>
+  <block id="98bc603dcb6d5a57d540b13b541fa41a" category="paragraph">您的注册方式取决于您是新客户还是现有客户或合作伙伴。</block>
+  <block id="e5646198d2e01aab2cec9ef946f9c53a" category="list-text">现有客户或合作伙伴</block>
+  <block id="60791d56f45a3f9f1287510b65d323df" category="paragraph">作为现有NetApp客户或合作伙伴、您可以使用NetApp 支持站点 (NSS) SSO帐户执行上述注册。在支持信息板中、Cloud Manager提供了一个* NSS管理*页面、您可以在其中添加NSS帐户。添加NSS帐户后、Cloud Manager会自动为您注册这些序列号。</block>
+  <block id="4e6af37fb81d50483d832d4de6e2b26a" category="inline-xref">了解如何添加NSS帐户</block>
+  <block id="32e82838df6d3ab4de32d996ebbe98cd" category="paragraph"><block ref="27c44e31a17502f2e9a25a83f2f37696" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1c91f3adc957364cb01d33e100ee1ea3" category="list-text">NetApp新手</block>
+  <block id="bcce750f51c727121c6fa1fb7d2c91f8" category="paragraph">如果您是NetApp的新用户、则必须在NetApp的支持注册站点上一次性注册Cloud Manager帐户ID序列号。完成此注册并创建新的NSS帐户后、您可以在Cloud Manager中使用此帐户进行自动注册。</block>
+  <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">了解如何向NetApp注册</block>
+  <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f6c4c1e9625a13b1b4d06a8f53f2ccfd" category="section-title">将NSS帐户添加到Cloud Manager</block>
+  <block id="0bfa39d13bc65474a81520ace129413d" category="paragraph">通过这些操作、Cloud Manager可以使用您的NSS帐户执行许可证下载、软件升级验证和未来支持注册等操作。</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">请注意以下事项：</block>
+  <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">由三个水平点组成的图标</block>
+  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">成功登录后、NetApp将存储NSS用户名。这是系统生成的ID、映射到您的电子邮件。在* NSS Management*页面上、您可以从显示电子邮件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
+  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">如果您需要刷新登录凭据令牌、则中还会提供一个*更新凭据*选项 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 菜单。使用此选项将提示您重新登录。</block>
+  <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">向NetApp注册</block>
+  <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">具有NSS帐户的现有客户</block>
+  <block id="d4b6092976537c153c496a428098980c" category="paragraph">如果您是拥有NSS帐户的NetApp客户、则只需通过Cloud Manager注册支持即可。</block>
+  <block id="c9d4df035d54072bb393bd27f6769cc7" category="list-text">如果您尚未将NSS帐户添加到Cloud Manager中、请执行此操作。</block>
+  <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">在*资源*页面上、单击*注册支持*。</block>
+  <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">显示帐户序列号和注册支持选项的屏幕截图</block>
+  <block id="113f9cd7bac6f4faa6b8d58e3e099a8e" category="paragraph"><block ref="113f9cd7bac6f4faa6b8d58e3e099a8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">现有客户、但无NSS帐户</block>
+  <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">如果您是现有的NetApp客户、拥有现有许可证和序列号、但拥有_no_ NSS帐户、则只需创建一个NSS帐户即可。</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp 支持站点 用户注册表</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">完成以创建NetApp 支持站点 帐户<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。</block>
+  <block id="d6cb31c22f8f843a781cccec33157281" category="list-text">请务必复制上面用于序列号字段的Cloud Manager帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp的新品牌</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp的新客户、并且没有NSS帐户、请按照以下每个步骤进行操作。</block>
+  <block id="59dd2a274c2c6a3cc5b3dce08109019d" category="list-text">从支持注册页面找到您的Cloud Manager帐户ID序列号。</block>
+  <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp的支持注册站点</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">导航到<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 并选择*我不是NetApp注册客户*。</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填写必填字段(带有红色星号的字段)。</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">在*产品线*字段中、选择*云管理器*、然后选择适用的计费提供商。</block>
+  <block id="1192dec4cc2b923397748a651cef178f" category="list-text">复制上述第2步中的Cloud Manager帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">系统会立即向提供的邮箱发送一封电子邮件、以完成此安全事务。如果验证电子邮件未在几分钟内收到、请务必检查您的垃圾邮件文件夹。</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">在电子邮件中确认操作。</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">确认将向NetApp提交您的请求、并建议您创建NetApp 支持站点 帐户。</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">在此过程中、NetApp应与您联系。这是针对新用户的一次性入职练习。</block>
+  <block id="cc7175a084ebd6e004cb2c751c162569" category="paragraph">拥有NetApp 支持站点 帐户后、您可以导航到Cloud Manager以添加此NSS帐户以供将来注册。</block>
+  <block id="b2066702e3e6316940ded0c6aa30980d" category="list-text">登录到Cloud Manager后、Cloud Manager帐户管理员需要在云提供商或内部网络中部署_Connector_。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。请注意、Cloud Manager中的大多数服务和功能(但并非所有服务和功能)都需要使用Connector。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
+  <block id="7608a60c77d3b58b2fe8cdc80a69c915" category="admonition">如果您在无法访问出站Internet的环境中运行、则可以在该环境中安装Connector软件并访问Connector上提供的本地用户界面。 <block ref="c5bcec7879e3189e4c7a5fdbd8b19a5b" category="inline-link-macro-rx"></block>。</block>
+  <block id="398448ac9e129f38d5f9d9b9e4710793" category="paragraph">例如、连接器是Cloud Volumes ONTAP 运行状况和运行的关键组件。如果某个连接器已关闭，则 Cloud Volumes ONTAP PAYGO 系统将在与某个连接器失去通信超过 14 天之后关闭。</block>
+  <block id="b46003b26b49cd1b627ec1666586013e" category="summary">如果您在政府区域运营、则需要从云提供商的市场或使用手动安装方法部署Connector。您不能从Cloud Manager的SaaS网站在政府区域部署Connector。</block>
+  <block id="e329219d5ceb07040d4a92f76918e18c" category="doc">在政府区域创建Connector</block>
+  <block id="269732fe326fedbab2007fcb7c8f5090" category="paragraph">如果您在政府区域运营、则需要从云提供商的市场部署Connector、或者在现有Linux主机上手动安装Connector软件。您不能从Cloud Manager的SaaS网站在政府区域部署Connector。</block>
+  <block id="e822c1cd07b3639eedf5f1bedb9beaa0" category="list-text"><block ref="e822c1cd07b3639eedf5f1bedb9beaa0" category="inline-link-macro-rx"></block></block>
+  <block id="58e61369cd7221124732850e5e76afa5" category="list-text"><block ref="58e61369cd7221124732850e5e76afa5" category="inline-link-macro-rx"></block></block>
+  <block id="ed735c903ed6cdbd695395bc4d404651" category="inline-link-macro">在您自己的Linux主机上安装Connector</block>
+  <block id="1dbe2aafec7f9c19eaf4c72558a8bc64" category="list-text"><block ref="1dbe2aafec7f9c19eaf4c72558a8bc64" category="inline-link-macro-rx"></block></block>
+  <block id="32ca71310dadc8fc1c3dc9edd297e66e" category="paragraph">部署Connector后、您可以通过打开Web浏览器并连接到Connector实例的IP地址来访问Cloud Manager：<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
+  <block id="9878eb7f6fc13faa4a717cc5b1192951" category="paragraph">Cloud Manager帐户管理员可以通过多种方式创建Connector：</block>
+  <block id="08bcb1ae91400f74899c5825a1f7973c" category="paragraph">而您应从执行几乎所有任务<block ref="8f305b98f88a161e5a1e68aca36c2103" category="inline-link-rx"></block>，连接器上仍提供本地用户界面。如果您在无法访问Internet的环境(例如政府区域)中安装Connector、并且需要从Connector本身执行一些任务、而不是从SaaS界面执行、则需要使用此接口：</block>
 </blocks>

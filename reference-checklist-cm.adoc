@@ -75,7 +75,7 @@ AWS 服务（ AmazonAWS.com ）：
 
 |===
 --
-Connector 的出站网络连接:: 登录到Cloud Manager后、Cloud Manager帐户管理员需要在云提供商或内部网络中部署_Connector_。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。Azure NetApp Files ， Cloud Volumes Service 或 Cloud Sync 不需要连接器，但 Cloud Manager 中的所有其他服务和功能都需要连接器。 link:concept-connectors.html["了解有关连接器及其工作原理的更多信息"]。
+Connector 的出站网络连接:: 登录到Cloud Manager后、Cloud Manager帐户管理员需要在云提供商或内部网络中部署_Connector_。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。请注意、Cloud Manager中的大多数服务和功能(但并非所有服务和功能)都需要使用Connector。 link:concept-connectors.html["了解有关连接器及其工作原理的更多信息"]。
 +
 --
 * 部署 Connector 的网络位置必须具有出站 Internet 连接。

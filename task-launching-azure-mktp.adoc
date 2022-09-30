@@ -14,7 +14,10 @@ summary: 最好直接从 Cloud Manager 创建 Connector ，但如果愿意，您
 
 
 [role="lead"]
-最好直接从 Cloud Manager 创建 Connector ，但如果愿意，您可以从 Azure Marketplace 启动 Connector 。创建并设置 Connector 后， Cloud Manager 将在您创建新的工作环境时自动使用它。
+对于Azure商业区域、最好直接从Cloud Manager创建Connector、但您可以根据需要从Azure Marketplace启动Connector。对于Azure政府区域、您不能从Cloud Manager的SaaS网站在政府区域部署Connector、因此、下一个最佳选择是从Azure Marketplace进行部署。
+
+
+TIP: 您还可以在网络或云中的现有Linux主机上下载并安装Connector软件。 link:task-installing-linux.html["了解如何在现有Linux主机上安装Connector"]。
 
 
 
@@ -72,7 +75,13 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了设置 Cloud Man
 
 
 
-现在，已安装并设置 Connector 。您必须先授予 Azure 权限，然后用户才能在 Azure 中部署 Cloud Volumes ONTAP 。
+现在，您可以使用 NetApp 帐户安装并设置 Connector 。
+
+如果Connector位于Azure商业区域、请打开Web浏览器并转到 https://cloudmanager.netapp.com[] 开始将Connector与Cloud Manager结合使用。
+
+如果Connector位于Azure政府区域、则可以通过打开Web浏览器并连接到Connector实例的IP地址来使用Cloud Manager： http://_ipaddress_:80[]
+
+由于Connector部署在政府区域、因此无法从访问 https://cloudmanager.netapp.com[]。
 
 
 

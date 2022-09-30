@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: task-create-connectors-gov.html 
+keywords: government region, gov, govcloud, connector 
+summary: 如果您在政府区域运营、则需要从云提供商的市场或使用手动安装方法部署Connector。您不能从Cloud Manager的SaaS网站在政府区域部署Connector。 
+---
+= 在政府区域创建Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您在政府区域运营、则需要从云提供商的市场部署Connector、或者在现有Linux主机上手动安装Connector软件。您不能从Cloud Manager的SaaS网站在政府区域部署Connector。
+
+* link:task-launching-aws-mktp.html#create-the-connector-in-an-aws-government-region["从 AWS Marketplace 创建 Connector"]
+* link:task-launching-azure-mktp.html["从 Azure Marketplace 创建 Connector"]
+* link:task-installing-linux.html["在您自己的Linux主机上安装Connector"]
+
+
+部署Connector后、您可以通过打开Web浏览器并连接到Connector实例的IP地址来访问Cloud Manager： http://_ipaddress_:80[]
+
+由于Connector部署在政府区域、因此无法从访问 https://cloudmanager.netapp.com[]。

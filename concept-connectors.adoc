@@ -93,13 +93,13 @@ summary: 大多数情况下，您需要在云或内部网络中部署 Connector 
 
 连接器应始终保持运行状态。对于您启用的服务的持续运行状况和运行来说，这一点非常重要。
 
-例如、连接器是Cloud Volumes ONTAP 运行状况和运行的关键组件。如果某个连接器已关闭、则使用基于节点的许可的Cloud Volumes ONTAP PAYGO系统将在与某个连接器失去通信超过14天之后关闭。
+例如、连接器是Cloud Volumes ONTAP 运行状况和运行的关键组件。如果某个连接器已关闭，则 Cloud Volumes ONTAP PAYGO 系统将在与某个连接器失去通信超过 14 天之后关闭。
 
 
 
 == 如何创建 Connector
 
-在工作空间管理员创建Cloud Volumes ONTAP 工作环境并使用上述任何其他服务之前、Cloud Manager帐户管理员需要创建连接器。管理员可以通过多种方式创建Connector：
+Cloud Manager帐户管理员可以通过多种方式创建Connector：
 
 * 直接从 Cloud Manager （建议）
 +
@@ -122,7 +122,7 @@ summary: 大多数情况下，您需要在云或内部网络中部署 Connector 
 
 
 
-如果需要创建一个 Connector 来完成操作， Cloud Manager 将提示您创建一个连接器。
+如果您在政府区域运营、则需要从云提供商的市场部署Connector、或者在现有Linux主机上手动安装Connector软件。您不能从Cloud Manager的SaaS网站在政府区域部署Connector。
 
 
 
@@ -217,7 +217,7 @@ link:task-managing-connectors.html["了解如何在连接器之间切换"]。
 
 == 本地用户界面
 
-而您应从执行几乎所有任务 https://cloudmanager.netapp.com["SaaS 用户界面"^]，连接器上仍提供本地用户界面。如果您在无法访问 Internet 的环境中安装 Connector ，并且需要从 Connector 本身执行一些任务，而不是从 SaaS 界面执行这些任务，则需要使用此接口：
+而您应从执行几乎所有任务 https://cloudmanager.netapp.com["SaaS 用户界面"^]，连接器上仍提供本地用户界面。如果您在无法访问Internet的环境(例如政府区域)中安装Connector、并且需要从Connector本身执行一些任务、而不是从SaaS界面执行、则需要使用此接口：
 
 * link:task-configuring-proxy.html["设置代理服务器"]
 * 安装修补程序（您通常与 NetApp 人员一起安装修补程序）
