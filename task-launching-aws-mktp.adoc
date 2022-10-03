@@ -70,7 +70,7 @@ AWS 使用指定的设置启动软件。Connector 实例和软件应在大约五
 
 . 从已连接到 Connector 实例的主机打开 Web 浏览器，然后输入以下 URL ：
 +
-http://_ipaddress_:80[]
+http://_ipaddress_[]
 
 . 登录后，设置 Connector ：
 +
@@ -139,7 +139,7 @@ AWS 使用指定的设置启动软件。Connector 实例和软件应在大约五
 
 . 从已连接到 Connector 实例的主机打开 Web 浏览器，然后输入以下 URL ：
 +
-http://_ipaddress_:80[]
+http://_ipaddress_[]
 
 . 登录后，设置 Connector ：
 +
@@ -157,7 +157,7 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connec
 
 现在，您可以使用 NetApp 帐户安装并设置 Connector 。
 
-任何时候要使用Cloud Manager、请打开Web浏览器并连接到Connector实例的IP地址： http://_ipaddress_:80[]
+任何时候要使用Cloud Manager、请打开Web浏览器并连接到Connector实例的IP地址： http://_ipaddress_[]
 
 由于Connector部署在政府区域、因此无法从访问 https://cloudmanager.netapp.com[]。
 

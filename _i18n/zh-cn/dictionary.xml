@@ -760,7 +760,6 @@
   <block id="3725c308cfc8c643d641a79a6973de6a" category="paragraph">有关这些标志的详细信息，请访问 <block ref="da0fbb66abe85889cc98553ca2ce188d" category="inline-link-macro-rx"></block>。</block>
   <block id="6e73017040e152e8818eb7f83bc493fc" category="paragraph">运行命令可使用 NetApp 黄金映像部署 Connector 。Connector 实例和软件应在大约五分钟内运行。</block>
   <block id="bd9691461cb90d45ce8386aaf15e21a6" category="list-text">从已连接到 Connector 实例的主机打开 Web 浏览器，然后输入以下 URL ：</block>
-  <block id="2dfdf7b0d4a150072509d59652cddbf7" category="paragraph"><block ref="2dfdf7b0d4a150072509d59652cddbf7" category="inline-link-rx"></block></block>
   <block id="a00513d5f518d02aa962d5bbb308cdfb" category="list-text">登录后，设置 Connector ：</block>
   <block id="759ba4e73fa8a63f85961494f316d3ed" category="list-text">指定要与 Connector 关联的 NetApp 帐户。</block>
   <block id="531dd1abfed48af076a56cbf57b47ca8" category="inline-link-macro">了解 NetApp 客户</block>
@@ -2542,12 +2541,10 @@
   <block id="07910e9ec98e7a02ee5b24f85cc660d2" category="list-text">*选择一个实例类型*：根据区域可用性、选择一个受支持的实例类型(建议使用T3.xlarge)。</block>
   <block id="7de969f5ec8b28cd7687e32ca5c245bc" category="list-text">*配置实例详细信息*：选择一个VPC和子网、选择您在第1步中创建的IAM角色、启用终止保护(建议)、然后选择符合您要求的任何其他配置选项。</block>
   <block id="ab055dd2454f72eae9c16179690384d6" category="paragraph">现在，您可以使用 NetApp 帐户安装并设置 Connector 。</block>
-  <block id="ffd720233eaf31d1f3e418cbededed22" category="paragraph">任何时候要使用Cloud Manager、请打开Web浏览器并连接到Connector实例的IP地址：<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
   <block id="d4d1e4d7a1862b2f824535c50d2aef05" category="paragraph">由于Connector部署在政府区域、因此无法从访问<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block>。</block>
   <block id="028ecb795c7225a3860d19dee3ea530c" category="paragraph">如果您要从无法访问出站Internet的政府区域或站点访问Cloud Manager、则需要在创建Connector后登录到本地用户界面。 <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
   <block id="85926b387833c0d2d9c8da74b9b2c8f2" category="paragraph">对于Azure商业区域、最好直接从Cloud Manager创建Connector、但您可以根据需要从Azure Marketplace启动Connector。对于Azure政府区域、您不能从Cloud Manager的SaaS网站在政府区域部署Connector、因此、下一个最佳选择是从Azure Marketplace进行部署。</block>
   <block id="5c7c86fa3a72eff2eda7fc5d06d22cc8" category="paragraph">如果Connector位于Azure商业区域、请打开Web浏览器并转到<block ref="ed21e31bd71ab546f26978ff562b5c5d" category="inline-link-rx"></block> 开始将Connector与Cloud Manager结合使用。</block>
-  <block id="4ff576acdb8dc9245e9af2a935cc45a5" category="paragraph">如果Connector位于Azure政府区域、则可以通过打开Web浏览器并连接到Connector实例的IP地址来使用Cloud Manager：<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
   <block id="d1a9582568e79d0f7df77bf8db0c78c2" category="paragraph">在向NetApp技术支持部门创建支持案例之前、您需要先将NetApp 支持站点 (NSS)帐户添加到Cloud Manager中、然后注册获取支持。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支持注册概述</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">激活支持授权有两种形式的注册：</block>
@@ -2609,8 +2606,14 @@
   <block id="58e61369cd7221124732850e5e76afa5" category="list-text"><block ref="58e61369cd7221124732850e5e76afa5" category="inline-link-macro-rx"></block></block>
   <block id="ed735c903ed6cdbd695395bc4d404651" category="inline-link-macro">在您自己的Linux主机上安装Connector</block>
   <block id="1dbe2aafec7f9c19eaf4c72558a8bc64" category="list-text"><block ref="1dbe2aafec7f9c19eaf4c72558a8bc64" category="inline-link-macro-rx"></block></block>
-  <block id="32ca71310dadc8fc1c3dc9edd297e66e" category="paragraph">部署Connector后、您可以通过打开Web浏览器并连接到Connector实例的IP地址来访问Cloud Manager：<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
   <block id="9878eb7f6fc13faa4a717cc5b1192951" category="paragraph">Cloud Manager帐户管理员可以通过多种方式创建Connector：</block>
   <block id="08bcb1ae91400f74899c5825a1f7973c" category="paragraph">而您应从执行几乎所有任务<block ref="8f305b98f88a161e5a1e68aca36c2103" category="inline-link-rx"></block>，连接器上仍提供本地用户界面。如果您在无法访问Internet的环境(例如政府区域)中安装Connector、并且需要从Connector本身执行一些任务、而不是从SaaS界面执行、则需要使用此接口：</block>
   <block id="08072de6f5a921907c2b45d019f7d63c" category="paragraph">要在您自己的Linux主机上手动安装、您必须使用联机安装程序在可访问Internet的主机上安装Connector。Cloud Manager可以使用单独的"脱机"安装程序、但只有无法访问Internet的内部站点才支持此安装程序。政府区域不支持此功能。</block>
+  <block id="0d5ee8e9bcc8751b7e244c6060a8ce2e" category="paragraph"><block ref="0d5ee8e9bcc8751b7e244c6060a8ce2e" category="inline-link-rx"></block></block>
+  <block id="1b5c2413dd231baab0a3590fccf0cb20" category="paragraph">任何时候要使用Cloud Manager、请打开Web浏览器并连接到Connector实例的IP地址：<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
+  <block id="5e50b798e9d8415fb0ee66559aedf39e" category="paragraph">如果Connector位于Azure政府区域、则可以通过打开Web浏览器并连接到Connector实例的IP地址来使用Cloud Manager：<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
+  <block id="654a986da1d7f49a7d2efc48def362d3" category="paragraph">使用以下链接之一查看有关创建Connector的说明：</block>
+  <block id="f6142793a7fc590c102faad49ea20e0e" category="inline-link">在AWS C2S环境中创建连接器和Cloud Volumes ONTAP</block>
+  <block id="c9bea61d35e54e0303121feefa6c6e14" category="list-text"><block ref="c9bea61d35e54e0303121feefa6c6e14" category="inline-link-rx"></block></block>
+  <block id="afba41e19132010c49cd4b192f7f2518" category="paragraph">部署Connector后、您可以通过打开Web浏览器并连接到Connector实例的IP地址来访问Cloud Manager：<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
 </blocks>

@@ -59,7 +59,7 @@ Azure 使用指定的设置部署虚拟机。虚拟机和 Connector 软件应在
 
 . 从已连接到 Connector 虚拟机的主机打开 Web 浏览器，然后输入以下 URL ：
 +
-http://_ipaddress_:80[]
+http://_ipaddress_[]
 
 . 登录后，设置 Connector ：
 +
@@ -79,7 +79,7 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了设置 Cloud Man
 
 如果Connector位于Azure商业区域、请打开Web浏览器并转到 https://cloudmanager.netapp.com[] 开始将Connector与Cloud Manager结合使用。
 
-如果Connector位于Azure政府区域、则可以通过打开Web浏览器并连接到Connector实例的IP地址来使用Cloud Manager： http://_ipaddress_:80[]
+如果Connector位于Azure政府区域、则可以通过打开Web浏览器并连接到Connector实例的IP地址来使用Cloud Manager： http://_ipaddress_[]
 
 由于Connector部署在政府区域、因此无法从访问 https://cloudmanager.netapp.com[]。
 
