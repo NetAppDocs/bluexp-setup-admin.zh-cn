@@ -27,6 +27,6 @@ summary: 如果您在政府区域运营、则需要从云提供商的市场或�
 
 
 
-部署Connector后、您可以通过打开Web浏览器并连接到Connector实例的IP地址来访问Cloud Manager： http://_ipaddress_[]
+部署Connector后、您可以通过打开Web浏览器并连接到Connector实例的IP地址来访问Cloud Manager： https://_ipaddress_[]
 
 由于Connector部署在政府区域、因此无法从访问 https://cloudmanager.netapp.com[]。

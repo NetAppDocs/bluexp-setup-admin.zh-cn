@@ -2609,11 +2609,10 @@
   <block id="9878eb7f6fc13faa4a717cc5b1192951" category="paragraph">Cloud Manager帐户管理员可以通过多种方式创建Connector：</block>
   <block id="08bcb1ae91400f74899c5825a1f7973c" category="paragraph">而您应从执行几乎所有任务<block ref="8f305b98f88a161e5a1e68aca36c2103" category="inline-link-rx"></block>，连接器上仍提供本地用户界面。如果您在无法访问Internet的环境(例如政府区域)中安装Connector、并且需要从Connector本身执行一些任务、而不是从SaaS界面执行、则需要使用此接口：</block>
   <block id="08072de6f5a921907c2b45d019f7d63c" category="paragraph">要在您自己的Linux主机上手动安装、您必须使用联机安装程序在可访问Internet的主机上安装Connector。Cloud Manager可以使用单独的"脱机"安装程序、但只有无法访问Internet的内部站点才支持此安装程序。政府区域不支持此功能。</block>
-  <block id="0d5ee8e9bcc8751b7e244c6060a8ce2e" category="paragraph"><block ref="0d5ee8e9bcc8751b7e244c6060a8ce2e" category="inline-link-rx"></block></block>
-  <block id="1b5c2413dd231baab0a3590fccf0cb20" category="paragraph">任何时候要使用Cloud Manager、请打开Web浏览器并连接到Connector实例的IP地址：<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
-  <block id="5e50b798e9d8415fb0ee66559aedf39e" category="paragraph">如果Connector位于Azure政府区域、则可以通过打开Web浏览器并连接到Connector实例的IP地址来使用Cloud Manager：<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
   <block id="654a986da1d7f49a7d2efc48def362d3" category="paragraph">使用以下链接之一查看有关创建Connector的说明：</block>
   <block id="f6142793a7fc590c102faad49ea20e0e" category="inline-link">在AWS C2S环境中创建连接器和Cloud Volumes ONTAP</block>
   <block id="c9bea61d35e54e0303121feefa6c6e14" category="list-text"><block ref="c9bea61d35e54e0303121feefa6c6e14" category="inline-link-rx"></block></block>
-  <block id="afba41e19132010c49cd4b192f7f2518" category="paragraph">部署Connector后、您可以通过打开Web浏览器并连接到Connector实例的IP地址来访问Cloud Manager：<block ref="8670a7b523e8c6a97ef9ebe1b38202af" category="inline-link-rx"></block></block>
+  <block id="dd67adbc83557c45a033469a2632edbb" category="paragraph">任何时候要使用Cloud Manager、请打开Web浏览器并连接到Connector实例的IP地址：<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
+  <block id="4fc63d83f4164273804f76277bc9b0d3" category="paragraph">如果Connector位于Azure政府区域、则可以通过打开Web浏览器并连接到Connector实例的IP地址来使用Cloud Manager：<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
+  <block id="58048ddb566733365166efeac45f2917" category="paragraph">部署Connector后、您可以通过打开Web浏览器并连接到Connector实例的IP地址来访问Cloud Manager：<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
 </blocks>
