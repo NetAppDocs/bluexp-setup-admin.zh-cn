@@ -19,6 +19,9 @@ summary: 如果您在政府区域运营、则需要从云提供商的市场或�
 * link:task-launching-aws-mktp.html#create-the-connector-in-an-aws-government-region["从 AWS Marketplace 创建 Connector"]
 * link:task-launching-azure-mktp.html["从 Azure Marketplace 创建 Connector"]
 * link:task-installing-linux.html["在您自己的Linux主机上安装Connector"]
++
+要在您自己的Linux主机上手动安装、您必须使用联机安装程序在可访问Internet的主机上安装Connector。Cloud Manager可以使用单独的"脱机"安装程序、但只有无法访问Internet的内部站点才支持此安装程序。政府区域不支持此功能。
+
 
 
 部署Connector后、您可以通过打开Web浏览器并连接到Connector实例的IP地址来访问Cloud Manager： http://_ipaddress_:80[]

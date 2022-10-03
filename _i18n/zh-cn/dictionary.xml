@@ -2612,4 +2612,5 @@
   <block id="32ca71310dadc8fc1c3dc9edd297e66e" category="paragraph">部署Connector后、您可以通过打开Web浏览器并连接到Connector实例的IP地址来访问Cloud Manager：<block ref="a60ca185b138421b16753fe169ef52b7" category="inline-link-rx"></block></block>
   <block id="9878eb7f6fc13faa4a717cc5b1192951" category="paragraph">Cloud Manager帐户管理员可以通过多种方式创建Connector：</block>
   <block id="08bcb1ae91400f74899c5825a1f7973c" category="paragraph">而您应从执行几乎所有任务<block ref="8f305b98f88a161e5a1e68aca36c2103" category="inline-link-rx"></block>，连接器上仍提供本地用户界面。如果您在无法访问Internet的环境(例如政府区域)中安装Connector、并且需要从Connector本身执行一些任务、而不是从SaaS界面执行、则需要使用此接口：</block>
+  <block id="08072de6f5a921907c2b45d019f7d63c" category="paragraph">要在您自己的Linux主机上手动安装、您必须使用联机安装程序在可访问Internet的主机上安装Connector。Cloud Manager可以使用单独的"脱机"安装程序、但只有无法访问Internet的内部站点才支持此安装程序。政府区域不支持此功能。</block>
 </blocks>

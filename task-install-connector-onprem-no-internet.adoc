@@ -67,7 +67,7 @@ Docker 引擎:: 在安装 Connector 之前，主机上需要安装 Docker 引擎
 +
 [source, cli]
 ----
-sudo sysctl enable docker && sudo sysctl start docker
+sudo systemctl enable docker && sudo systemctl start docker
 ----
 . 从下载 Cloud Manager 软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]。
 . 将安装程序复制到 Linux 主机。
