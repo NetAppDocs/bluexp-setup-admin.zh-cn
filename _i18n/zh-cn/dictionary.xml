@@ -688,7 +688,6 @@
   <block id="c30c9ad6a6f620b9a2a07c6f14399a1e" category="list-text"><block ref="63a6eacd526447284dd7555861e56994" category="inline-link-rx"></block>。</block>
   <block id="37a4b78df3288cf5c1bd086a6d1d5f9f" category="inline-link">通过向该项目添加具有 Cloud Manager 角色的服务帐户来授予访问权限</block>
   <block id="24e3dee161bfcb834ffc481206a123e7" category="list-text">如果要在其他项目中部署 Cloud Volumes ONTAP ，<block ref="7fd81496d9765541412df8e9d20889a5" category="inline-link-rx"></block>。您需要对每个项目重复此步骤。</block>
-  <block id="436551d909ff1add0114d9105eddf95f" category="section-title">共享 VPC 权限</block>
   <block id="15660d75ef0f69d0acd64487e9544b7a" category="paragraph">如果您使用共享 VPC 将资源部署到服务项目中，则需要以下权限。此表仅供参考，您的环境应在 IAM 配置完成后反映权限表。</block>
   <block id="ef1d00d8a237a1bbe431e1091f5715fb" category="cell">创建者</block>
   <block id="b3b70561d21898703c46811dcb865200" category="cell">托管在中</block>
@@ -1116,7 +1115,6 @@
   <block id="ffcad347e7fbe5448bc3fabe48be2db8" category="paragraph">连接器需要通过出站 Internet 访问来联系以下端点，以便管理公有云环境中的资源和流程。</block>
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">https://support.netapp.com</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">https://*.cloudmanager.cloud.netapp.com</block>
   <block id="6021edb3dc94e2b4496476a9e46f9e38" category="cell">在 Cloud Manager 中提供 SaaS 功能和服务。</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">升级 Connector 及其 Docker 组件。</block>
@@ -1465,8 +1463,6 @@
   <block id="7941f4ec9829eb5baad10a6f908245f5" category="cell">将云密钥管理服务中由客户管理的加密密钥与 Cloud Volumes ONTAP 结合使用。</block>
   <block id="47ba3a5c64279fe36c99fd745c770415" category="cell">— compute.instances.setServiceAccount — iam.serviceAccounts.actAs — iam.serviceAccounts.getIamPolicy — iam.serviceAccounts.list — storage.objects.get — storage.objects.list</block>
   <block id="0e6cd912fcc55d354754239bbb3b910e" category="cell">在 Cloud Volumes ONTAP 实例上设置服务帐户。此服务帐户提供将数据分层到 Google Cloud Storage 存储分段的权限。</block>
-  <block id="d2c6cfd5802914828d96e32d814067c8" category="cell">— compute.addresses … list — compute.backendServices.create — compute.networks.updatePolicy — compute.regionBackendServices.create — compute.regionBackendServices.get — compute.regionBackendServices.list</block>
-  <block id="f8f6d7002b5f0b250f8f9b5e203c6988" category="cell">部署 HA 对。</block>
   <block id="7ae509c8f6a49ea947573abf4cb9d134" category="cell">— compute.subnetworks.use — compute.subnetworks.useExternalIp — compute.instances.addAccessConfig</block>
   <block id="cfce2399f4f36929c6a0ea17350ac8aa" category="cell">启用 Cloud Data sense 。</block>
   <block id="f85c74998244978e7f2016bbc795aea2" category="cell">— container.clusters 。 get — container.clusters 。 list</block>
@@ -2227,7 +2223,6 @@
   <block id="a4b90b417735642fce23ce0ce7441ca3" category="paragraph">已设置Connector VM的服务帐户。</block>
   <block id="aecabcaa0f622aafe82a445d66cf8ca7" category="inline-link-macro">以上部分中的权限</block>
   <block id="3c011542a6f32f96698424943f4c21db" category="list-text"><block ref="3c011542a6f32f96698424943f4c21db" category="inline-link-macro-rx"></block></block>
-  <block id="e99cec7b008996e3bd5b81e8019e24ba" category="list-text"><block ref="e99cec7b008996e3bd5b81e8019e24ba" category="inline-link-macro-rx"></block></block>
   <block id="f56eaa1aab7c91f2f987469fb824ff7a" category="inline-link-macro">查看所需的AWS权限</block>
   <block id="c3eae6aa2c5fdc205f8fa520ed336419" category="list-text"><block ref="c3eae6aa2c5fdc205f8fa520ed336419" category="inline-link-macro-rx"></block></block>
   <block id="bcccd030f9d90bb330cfffec45ec9788" category="inline-link-macro">查看所需的Azure权限</block>
@@ -2485,13 +2480,8 @@
   <block id="e22a4abc98b47ca148e0dfda7e259162" category="doc">Google Cloud中的防火墙规则</block>
   <block id="05070f603d4009196dfaec7e5ec5e933" category="paragraph">如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则Cloud Manager会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。</block>
   <block id="a4359ad4c0ffb5518aa6c64f29f02b5b" category="paragraph">通过创建并附加自定义角色、确保您的Google Cloud帐户具有正确的权限。</block>
-  <block id="79b5e164502a529d170531ef62df5f6e" category="inline-xref">查看自定义角色</block>
-  <block id="41b98c70857fbd877eaa6d5aa2afb38f" category="paragraph"><block ref="56342c0f42ba8cc53bfd82f726307829" category="inline-xref-macro-rx"></block>。</block>
   <block id="f3644ee5935c45fc9eda641aff25c872" category="paragraph">创建Connector VM时、您需要将其与服务帐户关联。此服务帐户必须具有一个自定义角色、该角色有权管理Google Cloud中的资源。</block>
-  <block id="10b8e1fabef4ff1cdc6916e0d45fd2d9" category="paragraph"><block ref="43195205bf0c290642c5b60423b88943" category="inline-xref-macro-rx"></block>。</block>
-  <block id="01790991bacd709c167c554d551529eb" category="list-title">跨度 class="image&gt;&lt;img src=<block ref="687851ea92b6566013c78343fcd6878f" category="inline-link-rx"></block> Alt+four"&gt;&lt;/span&gt;启用Google Cloud API</block>
   <block id="9a11eb5da5d06e3593dc6b41553d97e5" category="section-title">设置权限</block>
-  <block id="ec8725380aa2f688c9b9d45557c44600" category="section-title">设置服务帐户</block>
   <block id="3824876226172edfe0f17e8022b60fda" category="section-title">启用 Google Cloud API</block>
   <block id="abfd76b9567ca082322504a092e076c7" category="list-text">*详细信息*：输入虚拟机实例的名称、指定标记、选择项目、然后选择具有所需权限的服务帐户(有关详细信息、请参见上述部分)。</block>
   <block id="0e4b0391e50169d97fc505f0c73a94ba" category="paragraph">此连接器应部署在与其管理的 Cloud Volumes ONTAP 系统所在的同一 Azure 区域或中<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 对于 Cloud Volumes ONTAP 系统。此要求可确保在 Cloud Volumes ONTAP 与其关联存储帐户之间使用 Azure 专用链路连接。</block>
@@ -2615,4 +2605,23 @@
   <block id="dd67adbc83557c45a033469a2632edbb" category="paragraph">任何时候要使用Cloud Manager、请打开Web浏览器并连接到Connector实例的IP地址：<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
   <block id="4fc63d83f4164273804f76277bc9b0d3" category="paragraph">如果Connector位于Azure政府区域、则可以通过打开Web浏览器并连接到Connector实例的IP地址来使用Cloud Manager：<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
   <block id="58048ddb566733365166efeac45f2917" category="paragraph">部署Connector后、您可以通过打开Web浏览器并连接到Connector实例的IP地址来访问Cloud Manager：<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
+  <block id="e57298db10eaab02d032c6ff2a9e6fdd" category="cell">—compute.addresses。list</block>
+  <block id="43e22af3bd90038d6c1a4c68927d2d7e" category="cell">在部署HA对时检索区域中的地址。</block>
+  <block id="f506121b724cd6d8d13fbaddaf1c64d6" category="cell">—compute.backendServices.create—compute.regionBackendServices.create—compute.regionBackendServices.get—compute.regionBackendServices.list</block>
+  <block id="ab989208a01fcee6c888dec1f39482d9" category="cell">配置后端服务以分布HA对中的流量。</block>
+  <block id="739bf63a1a7b0a2e180e692ece9b9b11" category="cell">—compute.networks.updatePolicy</block>
+  <block id="40601d6546f763ec088fee026a0da641" category="cell">在HA对的vPC和子网上应用防火墙规则。</block>
+  <block id="f61e4d929e921b5a3ae0bb6f78fe9b6c" category="cell">https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com</block>
+  <block id="2e984b55a3264399d03f7fc4df06df78" category="list-title">跨度 class="image&gt;&lt;img src=<block ref="0c3becc25d95e48b9ca863002a042824" category="inline-link-rx"></block> Alt-one"&gt;&lt;/span&gt;设置权限</block>
+  <block id="6e1d3688abed116ca1fcde1dce3ec4f4" category="paragraph"><block ref="68a9c9d924aeef1d7ada39f0d3540b49" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d52202757c4d92357913471e220a772a" category="paragraph"><block ref="f796454a6004e39753971668625d9d8d" category="inline-xref-macro-rx"></block>。</block>
+  <block id="39cab3defe876dfaf2b80cf98f49e2c7" category="list-text">如果您使用的是共享VPC、请在服务项目和主机项目中设置权限。</block>
+  <block id="324adee08a3c7a87ddad1096556db802" category="paragraph"><block ref="f14d47c142ef6f4bd65c33223ef00cac" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ecd9b46cc61d7175d5da2c42f7b70152" category="list-title">跨度 class="image&gt;&lt;img src=<block ref="ddd753dc2858fe3a5582f20b300a0541" category="inline-link-rx"></block> Alt-Three "&gt;&lt;/span&gt;启用Google Cloud API</block>
+  <block id="d84e71566ed38f5bfe97daee41fb601d" category="paragraph">以下项需要权限：</block>
+  <block id="ae741fad6aa93f78e0e5033a1d01d94b" category="list-text">要部署Connector VM的用户</block>
+  <block id="302f26bc0fa67eed7c3feeaa0ab2bcab" category="list-text">在部署期间需要附加到Connector VM的服务帐户</block>
+  <block id="6fe79cfc93a8b51f7a8316a55877bfc4" category="list-text">共享VPC权限(如果您使用共享VPC将资源部署到服务项目中)</block>
+  <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">设置共享VPC权限</block>
+  <block id="17d9282186c2451db90a83330e5c9d7b" category="list-text"><block ref="17d9282186c2451db90a83330e5c9d7b" category="inline-link-macro-rx"></block></block>
 </blocks>

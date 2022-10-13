@@ -29,17 +29,20 @@ TIP: 在创建首个 Cloud Volumes ONTAP 工作环境时，如果您还没有连
 
 按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
 
-[role="quick-margin-para"]
-通过创建并附加自定义角色、确保您的Google Cloud帐户具有正确的权限。
+.跨度 class="image><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png"[] Alt-one"></span>设置权限
+* 通过创建并附加自定义角色、确保您的Google Cloud帐户具有正确的权限。
++
+ up permissions to deploy the Connector。
 
-[role="quick-margin-para"]
- up permissions,查看自定义角色。
+* 创建Connector VM时、您需要将其与服务帐户关联。此服务帐户必须具有一个自定义角色、该角色有权管理Google Cloud中的资源。
++
+ up a service account for the Connector。
 
-[role="quick-margin-para"]
-创建Connector VM时、您需要将其与服务帐户关联。此服务帐户必须具有一个自定义角色、该角色有权管理Google Cloud中的资源。
+* 如果您使用的是共享VPC、请在服务项目和主机项目中设置权限。
++
+ up shared VPC permissions。
 
-[role="quick-margin-para"]
- up a service account,查看自定义角色。
+
 
 [role="quick-margin-para"]
 您需要一个VPC和子网、并可通过出站Internet访问特定端点。如果出站Internet需要HTTP代理、则需要IP地址、凭据和HTTPS证书。
@@ -47,7 +50,7 @@ TIP: 在创建首个 Cloud Volumes ONTAP 工作环境时，如果您还没有连
 [role="quick-margin-para"]
  up networking,查看网络连接要求。
 
-.跨度 class="image><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png"[] Alt+four"></span>启用Google Cloud API
+.跨度 class="image><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] Alt-Three "></span>启用Google Cloud API
 * Cloud Deployment Manager V2 API
 * 云日志记录 API
 * Cloud Resource Manager API
@@ -64,6 +67,17 @@ TIP: 在创建首个 Cloud Volumes ONTAP 工作环境时，如果您还没有连
 
 
 == 设置权限
+
+以下项需要权限：
+
+* 要部署Connector VM的用户
+* 在部署期间需要附加到Connector VM的服务帐户
+* 共享VPC权限(如果您使用共享VPC将资源部署到服务项目中)
+
+
+
+
+=== 设置部署Connector的权限
 
 在部署Connector之前、您需要确保Google Cloud帐户具有正确的权限。
 
@@ -140,7 +154,7 @@ Google Cloud用户现在具有创建Connector所需的权限。
 
 
 
-== 设置服务帐户
+=== 为Connector设置服务帐户
 
 需要使用服务帐户为Connector提供在Google Cloud中管理资源所需的权限。创建此服务帐户时，您需要将其与 Connector VM 关联。
 
@@ -256,57 +270,7 @@ includedPermissions:
 
 
 
-== 设置网络
-
-设置您的网络，以便 Connector 可以管理公有云环境中的资源和流程。除了为Connector提供VPC和子网之外、您还需要确保满足以下要求。
-
-
-
-=== 连接到目标网络
-
-连接器要求与您要创建的工作环境类型以及计划启用的服务建立网络连接。
-
-例如、如果您在公司网络中安装了连接器、则必须设置与启动Cloud Volumes ONTAP 的VPC的VPN连接。
-
-
-
-=== 出站 Internet 访问
-
-连接器需要通过出站 Internet 访问来管理公有云环境中的资源和流程。
-
-[cols="2*"]
-|===
-| 端点 | 目的 
-
-
-| https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
-
-
-| https://*.cloudmanager.cloud.netapp.com | 在 Cloud Manager 中提供 SaaS 功能和服务。 
-
-
-| https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
-|===
-
-
-=== 代理服务器
-
-如果您的组织要求为所有传出Internet流量部署HTTP代理、请获取有关HTTP代理的以下信息：
-
-* IP 地址
-* 凭据
-* HTTPS证书
-
-
-
-
-=== 安全组
-
-没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。HTTP 和 HTTPS 可用于访问 link:concept-connectors.html#the-local-user-interface["本地 UI"]，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。
-
-
-
-=== 共享 VPC 权限
+=== 设置共享VPC权限
 
 如果您使用共享 VPC 将资源部署到服务项目中，则需要以下权限。此表仅供参考，您的环境应在 IAM 配置完成后反映权限表。
 
@@ -325,7 +289,7 @@ includedPermissions:
 
 
 | 连接器服务帐户 | 自定义 | 服务项目  a| 
-* link:task-creating-connectors-gcp.html#set-up-permissions-for-the-connector["以上部分中的权限"]
+* link:task-creating-connectors-gcp.html#set-up-a-service-account-for-the-connector["以上部分中的权限"]
 
  a| 
 * compute.networkUser
@@ -364,6 +328,56 @@ includedPermissions:
 . 只有当您不向部署传递防火墙规则并选择让 Cloud Manager 为您创建这些规则时，才需要 firewall.create 和 firewall.delete 。这些权限位于 Cloud Manager 服务帐户 .yaml 文件中。如果要使用共享 VPC 部署 HA 对，则会使用这些权限为 VC1 ， 2 和 3 创建防火墙规则。对于所有其他部署，这些权限还将用于为 VPC0 创建规则。
 . 对于数据分层，分层服务帐户必须在服务帐户上具有 serviceAccount.user 角色，而不仅仅是在项目级别。目前，如果您在项目级别分配 serviceAccount.user ，则在使用 getIAMPolicy 查询服务帐户时不会显示权限。
 
+
+
+
+== 设置网络
+
+设置您的网络，以便 Connector 可以管理公有云环境中的资源和流程。除了为Connector提供VPC和子网之外、您还需要确保满足以下要求。
+
+
+
+=== 连接到目标网络
+
+连接器要求与您要创建的工作环境类型以及计划启用的服务建立网络连接。
+
+例如、如果您在公司网络中安装了连接器、则必须设置与启动Cloud Volumes ONTAP 的VPC的VPN连接。
+
+
+
+=== 出站 Internet 访问
+
+连接器需要通过出站 Internet 访问来管理公有云环境中的资源和流程。
+
+[cols="2*"]
+|===
+| 端点 | 目的 
+
+
+| https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
+
+
+| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在 Cloud Manager 中提供 SaaS 功能和服务。 
+
+
+| https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
+|===
+
+
+=== 代理服务器
+
+如果您的组织要求为所有传出Internet流量部署HTTP代理、请获取有关HTTP代理的以下信息：
+
+* IP 地址
+* 凭据
+* HTTPS证书
+
+
+
+
+=== 安全组
+
+没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。HTTP 和 HTTPS 可用于访问 link:concept-connectors.html#the-local-user-interface["本地 UI"]，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。
 
 
 
