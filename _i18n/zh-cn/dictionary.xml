@@ -1297,7 +1297,6 @@
   <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
   <block id="379f39ccee41ac65b6cdfb0734a7098c" category="list-text">4 个核心或 4 个 vCPU</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
-  <block id="752a423b7896d2c8176434adcd527e26" category="list-text">16 GB</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">支持的操作系统</block>
   <block id="17095cfe60ed8524003ea5bde611c4ea" category="list-text">CentOS 7.6</block>
   <block id="b0a4a3d9e04daf57d04de7ad03004279" category="list-text">CentOS 7.7</block>
@@ -2580,7 +2579,6 @@
   <block id="cc7175a084ebd6e004cb2c751c162569" category="paragraph">拥有NetApp 支持站点 帐户后、您可以导航到Cloud Manager以添加此NSS帐户以供将来注册。</block>
   <block id="b2066702e3e6316940ded0c6aa30980d" category="list-text">登录到Cloud Manager后、Cloud Manager帐户管理员需要在云提供商或内部网络中部署_Connector_。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。请注意、Cloud Manager中的大多数服务和功能(但并非所有服务和功能)都需要使用Connector。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
   <block id="7608a60c77d3b58b2fe8cdc80a69c915" category="admonition">如果您在无法访问出站Internet的环境中运行、则可以在该环境中安装Connector软件并访问Connector上提供的本地用户界面。 <block ref="c5bcec7879e3189e4c7a5fdbd8b19a5b" category="inline-link-macro-rx"></block>。</block>
-  <block id="398448ac9e129f38d5f9d9b9e4710793" category="paragraph">例如、连接器是Cloud Volumes ONTAP 运行状况和运行的关键组件。如果某个连接器已关闭，则 Cloud Volumes ONTAP PAYGO 系统将在与某个连接器失去通信超过 14 天之后关闭。</block>
   <block id="b46003b26b49cd1b627ec1666586013e" category="summary">如果您在政府区域运营、则需要从云提供商的市场或使用手动安装方法部署Connector。您不能从Cloud Manager的SaaS网站在政府区域部署Connector。</block>
   <block id="e329219d5ceb07040d4a92f76918e18c" category="doc">在政府区域创建Connector</block>
   <block id="269732fe326fedbab2007fcb7c8f5090" category="paragraph">如果您在政府区域运营、则需要从云提供商的市场部署Connector、或者在现有Linux主机上手动安装Connector软件。您不能从Cloud Manager的SaaS网站在政府区域部署Connector。</block>
@@ -2619,4 +2617,7 @@
   <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">通过支持信息板、您可以添加和管理NetApp 支持站点 帐户、以便与Cloud Manager结合使用。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您拥有客户级别的帐户、则可以添加一个或多个NSS帐户。</block>
   <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">如果您有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户一起添加。</block>
+  <block id="6c73104e218372ccda6dc2d58fda524d" category="paragraph">例如、连接器是Cloud Volumes ONTAP 运行状况和运行的关键组件。如果某个连接器已关闭、则Cloud Volumes ONTAP PAYGO系统和基于容量的BYOL系统将在与某个连接器的通信中断14天后关闭。发生这种情况的原因是、Connector每天都会刷新系统上的许可。</block>
+  <block id="b9c53fca7bb84d0455a2b4768b130e38" category="admonition">如果您的Cloud Volumes ONTAP 系统具有基于节点的BYOL许可证、则该系统会在14天后保持运行、因为该许可证已安装在Cloud Volumes ONTAP 系统上。</block>
+  <block id="2538b2df52d923f09592be3b38238322" category="list-text">14 GB</block>
 </blocks>
