@@ -69,7 +69,7 @@ Docker 引擎:: 在安装 Connector 之前，主机上需要安装 Docker 引擎
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
-. 从下载 Cloud Manager 软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]。
+. 从下载BlueXP软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]。
 . 将安装程序复制到 Linux 主机。
 . 分配运行脚本的权限。
 +
@@ -90,23 +90,23 @@ sudo /path/cloud-manager-connector-offline-v3.9.19
 +
 image:screenshot-onprem-darksite-welcome.png["在 Web 浏览器中输入连接器的 IP 地址后显示的欢迎页面的屏幕截图。"]
 
-. 单击 * 设置新的 Cloud Manager* ，然后按照提示设置系统。
+. 单击*设置新的BlueXp *、然后按照提示设置系统。
 +
-** * 系统详细信息 * ：输入 Cloud Manager 系统的名称和您的公司名称。
+** *系统详细信息*：输入Connector的名称和公司名称。
 +
-image:screenshot-onprem-darksite-details.png["系统详细信息页面的屏幕截图，提示您输入 Cloud Manager 名称和公司名称。"]
+image:screenshot-onprem-darksite-details.png["系统详细信息页面的屏幕截图、提示您输入BlueXP名称和公司名称。"]
 
 ** * 创建管理员用户 * ：为系统创建管理员用户。
 +
-此用户帐户在系统本地运行。无法连接到 NetApp Cloud Central 。
+此用户帐户在系统本地运行。无法通过BlueXP连接到可用的auth0服务。
 
 ** * 审阅 * ：查看详细信息，接受许可协议，然后单击 * 设置 * 。
 
 
-. 使用刚刚创建的管理员用户登录到 Cloud Manager 。
+. 使用刚刚创建的管理员用户登录到BlueXP。
 
 
-现在已安装 Connector ，您可以开始使用非公开站点部署中提供的 Cloud Manager 功能。
+现在已安装Connector、您可以开始使用非公开站点部署中提供的BlueXP功能。
 
 .接下来是什么？
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["发现内部 ONTAP 集群"^]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-viewing-amazon-s3.html 
 keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
-summary: 在AWS中安装Connector后、Cloud Manager可以自动发现有关安装此Connector的AWS帐户中的Amazon S3存储分段的信息。Amazon S3工作环境已添加到Canvas中、您可以查看此信息。 
+summary: 在AWS中安装Connector后、BlueXP可以自动发现有关安装此Connector的AWS帐户中的Amazon S3存储分段的信息。Amazon S3工作环境已添加到Canvas中、您可以查看此信息。 
 ---
 = 查看 Amazon S3 存储分段
 :hardbreaks:
@@ -14,12 +14,13 @@ summary: 在AWS中安装Connector后、Cloud Manager可以自动发现有关安�
 
 
 [role="lead"]
-在AWS中安装Connector后、Cloud Manager可以自动发现有关安装此Connector的AWS帐户中的Amazon S3存储分段的信息。Amazon S3工作环境已添加到Canvas中、您可以查看此信息。
+在AWS中安装Connector后、BlueXP可以自动发现有关安装此Connector的AWS帐户中的Amazon S3存储分段的信息。Amazon S3工作环境已添加到Canvas中、您可以查看此信息。
 
 您可以查看有关S3存储分段的详细信息、包括区域、访问策略、帐户、总容量和已用容量等。这些存储分段可用作云备份、云分层或Cloud Sync 操作的目标。此外、您还可以使用Cloud Data sense扫描这些分段。
 
 .步骤
 . link:task-creating-connectors-aws.html["安装连接器"] 在要查看 Amazon S3 存储分段的 AWS 帐户中。
+. 从导航菜单中、选择*存储>画布*。
 +
 之后不久，您将自动看到 Amazon S3 工作环境。
 

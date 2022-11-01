@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-installing-linux.html 
 keywords: install connector, manually install connector, install connector software, installation, installing, linux, installer, software, on prem, on-prem, silent, configurations, ec2, vm, ports, ram, operating system, os, host, requirement, requirements, hypervisor, disk, space, mysql, centos, rhel, red hat, cpu, disk space 
-summary: 创建 Connector 的最常见方法是直接从 Cloud Manager 或云提供商的市场创建。但是，您可以选择在网络或云中的现有 Linux 主机上下载并安装 Connector 软件。 
+summary: 创建Connector的最常见方法是直接从BlueXP或云提供商的市场创建。但是，您可以选择在网络或云中的现有 Linux 主机上下载并安装 Connector 软件。 
 ---
 = 在可访问 Internet 的现有 Linux 主机上安装 Connector
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 创建 Connector 的最常见方法是直接从 Cloud Manager 或云提
 
 
 [role="lead"]
-创建 Connector 的最常见方法是直接从 Cloud Manager 或云提供商的市场创建。但是，您可以选择在网络或云中的现有 Linux 主机上下载并安装 Connector 软件。这些步骤特定于可访问 Internet 的主机。
+创建Connector的最常见方法是直接从BlueXP或云提供商的市场创建。但是，您可以选择在网络或云中的现有 Linux 主机上下载并安装 Connector 软件。这些步骤特定于可访问 Internet 的主机。
 
 link:concept-connectors.html["了解部署 Connector 的其他方法"]。
 
@@ -92,7 +92,7 @@ Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果�
 
 
 .步骤
-. 从下载 Cloud Manager 软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
+. 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
 +
 有关在 AWS 中将文件连接和复制到 EC2 实例的帮助，请参见 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html["AWS 文档：使用 SSH 连接到 Linux 实例"^]。
 
@@ -128,7 +128,7 @@ _proxywd_ 是您指定的用户名的密码。
 
 . 除非指定了 silent 参数，否则请输入 * 。 Y* 以继续安装。
 +
-现在已安装 Cloud Manager 。在安装结束时、如果指定了代理服务器、则 Cloud Manager Service (OCCM) 会重新启动两次。
+此时将安装Connector。在安装结束时、如果您指定了代理服务器、则Connector服务(occa)将重新启动两次。
 
 . 打开 Web 浏览器并输入以下 URL ：
 +
@@ -137,16 +137,16 @@ https://_ipaddress_[]
 +
 _ipaddress_ 可以是 localhost ，专用 IP 地址或公有 IP 地址，具体取决于主机的配置。例如，如果连接器位于公有云中且没有公有 IP 地址，则必须输入与连接器主机连接的主机的专用 IP 地址。
 
-. 请在 NetApp Cloud Central 上注册或登录。
-. 如果您在 Google Cloud 中安装了 Connector ，请设置一个服务帐户，该帐户具有 Cloud Manager 在项目中创建和管理 Cloud Volumes ONTAP 系统所需的权限。
+. 注册或登录。
+. 如果您在Google Cloud中安装了Connector、请设置一个服务帐户、该帐户具有BlueXP在项目中创建和管理Cloud Volumes ONTAP 系统所需的权限。
 +
 .. https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["在 GCP 中创建角色"^] 其中包括中定义的权限 link:reference-permissions-gcp.html["GCP的连接器策略"]。
 .. https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["创建 GCP 服务帐户并应用刚刚创建的自定义角色"^]。
 .. https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["将此服务帐户与 Connector VM 关联"^]。
-.. 如果要在其他项目中部署 Cloud Volumes ONTAP ， https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["通过向该项目添加具有 Cloud Manager 角色的服务帐户来授予访问权限"^]。您需要对每个项目重复此步骤。
+.. 如果要在其他项目中部署 Cloud Volumes ONTAP ， https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限"^]。您需要对每个项目重复此步骤。
 
 
-. 登录后，设置 Cloud Manager ：
+. 登录后、设置BlueXP：
 +
 .. 指定要与 Connector 关联的 NetApp 帐户。
 +
@@ -160,11 +160,11 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了设置屏幕，�
 
 
 
-现在，您可以使用 NetApp 帐户安装并设置 Connector 。Cloud Manager 将在您创建新的工作环境时自动使用此 Connector 。
+现在，您可以使用 NetApp 帐户安装并设置 Connector 。在创建新的工作环境时、BlueXP将自动使用此Connector。
 
-设置权限，以便 Cloud Manager 可以管理公有云环境中的资源和流程：
+设置权限、以便BlueXP可以管理公有 云环境中的资源和流程：
 
-* AWS link:task-adding-aws-accounts.html["设置 AWS 帐户，然后将其添加到 Cloud Manager"]
-* Azure 酒店 link:task-adding-azure-accounts.html["设置 Azure 帐户，然后将其添加到 Cloud Manager"]
+* AWS link:task-adding-aws-accounts.html["设置AWS帐户、然后将其添加到BlueXP"]
+* Azure 酒店 link:task-adding-azure-accounts.html["设置Azure帐户、然后将其添加到BlueXP"]
 * Google Cloud ：请参见上文第 7 步
 

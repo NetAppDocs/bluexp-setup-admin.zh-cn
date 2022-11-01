@@ -22,7 +22,7 @@ link:concept-netapp-accounts.html["详细了解 NetApp 客户的工作原理"]�
 
 == 使用租户 API 管理您的帐户
 
-如果要通过发送 API 请求来管理帐户设置，则需要使用 _租 户 API 。此 API 与用于创建和管理 Cloud Volumes ONTAP 工作环境的 Cloud Manager API 不同。
+如果要通过发送 API 请求来管理帐户设置，则需要使用 _租 户 API 。此API与用于创建和管理Cloud Volumes ONTAP 工作环境的BlueXP API不同。
 
 https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["查看租户 API 的端点"^]
 
@@ -36,13 +36,13 @@ https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["�
 
 === 添加用户
 
-将 Cloud Central 用户与 NetApp 帐户关联，以便这些用户可以在 Cloud Manager 中创建和管理工作环境。
+将用户与您的NetApp帐户关联、以便这些用户可以在BlueXP中创建和管理工作环境。
 
 .步骤
-. 如果用户尚未执行此操作，请让用户转到 https://cloud.netapp.com["NetApp Cloud Central"^] 并注册。
-. 从 Cloud Manager 顶部，单击 * 帐户 * 下拉列表。
+. 如果用户尚未执行此操作，请让用户转到 https://cloud.netapp.com["NetApp BlueXP网站"^] 并注册。
+. 从BlueXP顶部、单击*帐户*下拉列表。
 +
-image:screenshot-account-settings-menu.png["一个屏幕截图，显示 Cloud Manager 顶部横幅中的 Account Settings 选项。"]
+image:screenshot-account-settings-menu.png["一个屏幕截图、显示了BlueXP顶部横幅中的Account Settings选项。"]
 
 . 单击当前选定帐户旁边的 * 管理帐户 * 。
 +
@@ -51,7 +51,7 @@ image:screenshot-manage-account-settings.png["显示 \" 帐户 \" 下拉列表�
 . 在成员选项卡中，单击 * 关联用户 * 。
 . 输入用户的电子邮件地址并为用户选择一个角色：
 +
-** * 帐户管理员 * ：可以在 Cloud Manager 中执行任何操作。
+** *帐户管理员*：可以在BlueXP中执行任何操作。
 ** * 工作空间管理员 * ：可以在分配的工作空间中创建和管理资源。
 ** * 合规性查看器 * ：只能查看 Cloud Data sense 合规性信息，并为其有权访问的工作空间生成报告。
 ** * SnapCenter Admin* ：可以使用 SnapCenter 服务创建应用程序一致的备份并使用这些备份还原数据。_ 此服务当前处于测试阶段。 _
@@ -64,7 +64,7 @@ image:screenshot_associate_user.gif["屏幕截图显示了如何通过选择角�
 . 单击 * 关联 * 。
 
 
-用户应从 NetApp Cloud Central 收到一封标题为 " 客户关联 " 的电子邮件。 此电子邮件包含访问 Cloud Manager 所需的信息。
+用户应收到NetApp BlueXP发送的一封名为"客户关联"的电子邮件。 此电子邮件包含访问BlueXP所需的信息。
 
 
 
@@ -73,7 +73,7 @@ image:screenshot_associate_user.gif["屏幕截图显示了如何通过选择角�
 解除用户关联后，用户将无法再访问 NetApp 帐户中的资源。
 
 .步骤
-. 从 Cloud Manager 顶部，单击 * 帐户 * 下拉列表，然后单击 * 管理帐户 * 。
+. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
 +
 image:screenshot-manage-account-settings.png["显示 \" 帐户 \" 下拉列表中的 \" 管理帐户设置 \" 选项的屏幕截图。"]
 
@@ -93,7 +93,7 @@ image:screenshot_associate_user_workspace.png["屏幕截图，显示将鼠标悬
 您可以随时将 Workspace Admins 与工作空间关联和解除关联。通过关联用户，用户可以在该工作空间中创建和查看工作环境。
 
 .步骤
-. 从 Cloud Manager 顶部，单击 * 帐户 * 下拉列表，然后单击 * 管理帐户 * 。
+. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
 +
 image:screenshot-manage-account-settings.png["显示 \" 帐户 \" 下拉列表中的 \" 管理帐户设置 \" 选项的屏幕截图。"]
 
@@ -105,17 +105,17 @@ image:screenshot_associate_user_workspace.png["屏幕截图，显示将鼠标悬
 . 选择要与用户关联的工作空间，然后单击 * 应用 * 。
 
 
-现在，只要 Connector 还与这些工作空间关联，用户就可以从 Cloud Manager 访问这些工作空间。
+现在、只要Connector还与这些工作空间关联、用户就可以从BlueXP访问这些工作空间。
 
 
 
 == 创建和管理服务帐户
 
-服务帐户充当 " 用户 " ，可以通过授权 API 调用 Cloud Manager 来实现自动化。这样可以更轻松地管理自动化，因为您不需要基于可以随时离开公司的真实用户帐户构建自动化脚本。如果您使用的是联合，则可以创建令牌，而无需从云生成刷新令牌。
+服务帐户充当"用户"、可以通过授权API调用BlueXP来实现自动化。这样可以更轻松地管理自动化，因为您不需要基于可以随时离开公司的真实用户帐户构建自动化脚本。如果您使用的是联合，则可以创建令牌，而无需从云生成刷新令牌。
 
-您可以通过为服务帐户分配角色来为其授予权限，就像任何其他 Cloud Manager 用户一样。您还可以将服务帐户与特定工作空间相关联，以控制服务可以访问的工作环境（资源）。
+您可以通过为服务帐户分配角色来为其授予权限、就像任何其他BlueXP用户一样。您还可以将服务帐户与特定工作空间相关联，以控制服务可以访问的工作环境（资源）。
 
-创建服务帐户时，您可以通过 Cloud Manager 复制或下载此服务帐户的客户端 ID 和客户端密钥。此密钥对用于通过 Cloud Manager 进行身份验证。
+创建服务帐户时、您可以通过BlueXP复制或下载此服务帐户的客户端ID和客户端密钥。此密钥对用于通过BlueXP进行身份验证。
 
 
 
@@ -124,9 +124,9 @@ image:screenshot_associate_user_workspace.png["屏幕截图，显示将鼠标悬
 根据需要创建尽可能多的服务帐户来管理工作环境中的资源。
 
 .步骤
-. 从 Cloud Manager 顶部，单击 * 帐户 * 下拉列表。
+. 从BlueXP顶部、单击*帐户*下拉列表。
 +
-image:screenshot-account-settings-menu.png["一个屏幕截图，显示 Cloud Manager 顶部横幅中的 Account Settings 选项。"]
+image:screenshot-account-settings-menu.png["一个屏幕截图、显示了BlueXP顶部横幅中的Account Settings选项。"]
 
 . 单击当前选定帐户旁边的 * 管理帐户 * 。
 +
@@ -137,7 +137,7 @@ image:screenshot-manage-account-settings.png["显示 \" 帐户 \" 下拉列表�
 . 单击 * 创建 * 。
 . 复制或下载客户端 ID 和客户端密钥。
 +
-此客户端密钥只能显示一次，不会由 Cloud Manager 存储在任何位置。复制或下载密钥并将其安全存储。
+客户端密钥只能显示一次、不会由BlueXP存储在任何位置。复制或下载密钥并将其安全存储。
 
 . 单击 * 关闭 * 。
 
@@ -189,7 +189,7 @@ image:screenshot_service_account_actions.gif["屏幕截图，显示将鼠标悬�
 . 单击 * 重新创建 * 进行确认。
 . 复制或下载客户端 ID 和客户端密钥。
 +
-此客户端密钥只能显示一次，不会由 Cloud Manager 存储在任何位置。复制或下载密钥并将其安全存储。
+客户端密钥只能显示一次、不会由BlueXP存储在任何位置。复制或下载密钥并将其安全存储。
 
 . 单击 * 关闭 * 。
 
@@ -216,7 +216,7 @@ image:screenshot_service_account_actions.gif["屏幕截图，显示将鼠标悬�
 通过创建，重命名和删除工作空间来管理工作空间。请注意，如果某个工作空间包含任何资源，则无法将其删除。必须为空。
 
 .步骤
-. 从 Cloud Manager 顶部，单击 * 帐户 * 下拉列表，然后单击 * 管理帐户 * 。
+. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
 . 单击 * 工作空间 * 。
 . 选择以下选项之一：
 +
@@ -231,14 +231,14 @@ image:screenshot_service_account_actions.gif["屏幕截图，显示将鼠标悬�
 
 == 管理 Connector 的工作空间
 
-您需要将 Connector 与工作空间关联，以便 Workspace 管理员可以从 Cloud Manager 访问这些工作空间。
+您需要将Connector与工作空间关联、以便Workspace管理员可以从BlueXP访问这些工作空间。
 
-如果您只有帐户管理员，则不需要将 Connector 与工作空间相关联。默认情况下，帐户管理员可以访问 Cloud Manager 中的所有工作空间。
+如果您只有帐户管理员，则不需要将 Connector 与工作空间相关联。默认情况下、帐户管理员可以访问BlueXP中的所有工作空间。
 
 link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["详细了解用户，工作空间和连接器"]。
 
 .步骤
-. 从 Cloud Manager 顶部，单击 * 帐户 * 下拉列表，然后单击 * 管理帐户 * 。
+. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
 . 单击 * 连接器 * 。
 . 单击要关联的 Connector 的 * 管理工作空间 * 。
 . 选择要与 Connector 关联的工作空间，然后单击 * 应用 * 。
@@ -255,7 +255,7 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["详�
 link:concept-netapp-accounts.html#subscriptions["了解有关订阅的更多信息"]。
 
 .步骤
-. 从 Cloud Manager 顶部，单击 * 帐户 * 下拉列表，然后单击 * 管理帐户 * 。
+. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
 . 单击 * 订阅 * 。
 +
 您将只看到与当前正在查看的帐户关联的订阅。
@@ -274,7 +274,7 @@ image:screenshot_subscription_menu.gif["订阅的操作菜单的屏幕截图。"
 随时更改您的帐户名称，将其更改为对您有意义的名称。
 
 .步骤
-. 从 Cloud Manager 顶部，单击 * 帐户 * 下拉列表，然后单击 * 管理帐户 * 。
+. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
 . 在 * 概述 * 选项卡中，单击帐户名称旁边的编辑图标。
 . 键入新帐户名称并单击 * 保存 * 。
 
@@ -283,12 +283,12 @@ image:screenshot_subscription_menu.gif["订阅的操作菜单的屏幕截图。"
 
 == 允许私有预览
 
-允许在您的帐户中进行私有预览，以访问在 Cloud Manager 中预览的新 NetApp 云服务。
+允许在您的帐户中进行私有预览、以访问在BlueXP中预览的新NetApp云服务。
 
 私有预览中的服务无法保证按预期运行，并且可能会持续中断并缺少功能。
 
 .步骤
-. 从 Cloud Manager 顶部，单击 * 帐户 * 下拉列表，然后单击 * 管理帐户 * 。
+. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
 . 在 * 概述 * 选项卡中，启用 * 允许私有预览 * 设置。
 
 
@@ -296,10 +296,10 @@ image:screenshot_subscription_menu.gif["订阅的操作菜单的屏幕截图。"
 
 == 允许第三方服务
 
-允许您帐户中的第三方服务访问 Cloud Manager 中提供的第三方服务。第三方服务是指与 NetApp 提供的服务类似的云服务，但它们由第三方公司管理和支持。
+允许您帐户中的第三方服务访问BlueXP中提供的第三方服务。第三方服务是指与 NetApp 提供的服务类似的云服务，但它们由第三方公司管理和支持。
 
 .步骤
-. 从 Cloud Manager 顶部，单击 * 帐户 * 下拉列表，然后单击 * 管理帐户 * 。
+. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
 . 在 * 概述 * 选项卡中，启用 * 允许第三方服务 * 设置。
 
 
@@ -309,7 +309,7 @@ image:screenshot_subscription_menu.gif["订阅的操作菜单的屏幕截图。"
 
 除非您需要遵守公司的安全策略，否则我们不建议禁用 SaaS 平台。禁用 SaaS 平台会限制您使用 NetApp 集成云服务的能力。
 
-如果禁用 SaaS 平台，则无法从 Cloud Manager 获得以下服务：
+如果禁用SaaS平台、则无法从BlueXP获得以下服务：
 
 * 云数据感知
 * Kubernetes
@@ -320,9 +320,9 @@ image:screenshot_subscription_menu.gif["订阅的操作菜单的屏幕截图。"
 如果禁用 SaaS 平台，则需要从执行所有任务 link:task-managing-connectors.html#access-the-local-ui["Connector 上提供的本地用户界面"]。
 
 
-CAUTION: 此操作不可逆，将阻止您使用 Cloud Manager SaaS 平台。您需要从本地连接器执行操作。您将无法使用 NetApp 的许多集成云服务，重新启用 SaaS 平台需要 NetApp 支持的帮助。
+CAUTION: 此操作不可逆、将阻止您使用BlueXP SaaS平台。您需要从本地连接器执行操作。您将无法使用 NetApp 的许多集成云服务，重新启用 SaaS 平台需要 NetApp 支持的帮助。
 
 .步骤
-. 从 Cloud Manager 顶部，单击 * 帐户 * 下拉列表，然后单击 * 管理帐户 * 。
+. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
 . 在概述选项卡中，切换选项以禁用 SaaS 平台。
 

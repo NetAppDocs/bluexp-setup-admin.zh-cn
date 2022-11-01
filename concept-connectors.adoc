@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-connectors.html 
 keywords: 'concept, connectors, learn about connectors, service connectors, what are connectors, what is a connector, what"s a connector, days, 14 days' 
-summary: 大多数情况下，您需要在云或内部网络中部署 Connector 。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。 
+summary: 大多数情况下，您需要在云或内部网络中部署 Connector 。对于BlueXP的日常使用来说、连接器是一个至关重要的组件。它使BlueXP能够管理公有 云环境中的资源和流程。 
 ---
 = 了解连接器
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 大多数情况下，您需要在云或内部网络中部署 Connector 
 
 
 [role="lead"]
-在大多数情况下、Cloud Manager帐户管理员需要在云或内部网络中部署_Connector_。连接器是 Cloud Manager 日常使用的关键组件。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。
+在大多数情况下、BlueXP客户管理员需要在云或内部网络中部署_Connector_。对于BlueXP的日常使用来说、连接器是一个至关重要的组件。它使BlueXP能够管理公有 云环境中的资源和流程。
 
 
 
 == 需要连接器时
 
-要使用 Cloud Manager 中的许多功能和服务，需要使用 Connector 。
+要使用BlueXP中的许多功能和服务、需要使用Connector。
 
 
 
@@ -44,7 +44,7 @@ summary: 大多数情况下，您需要在云或内部网络中部署 Connector 
 
 以下服务需要使用连接器 * 。 not_* ：
 
-* Active IQ 数字顾问
+* Digital Advisor
 * 创建适用于 ONTAP 的 Amazon FSx 工作环境虽然创建工作环境不需要使用 Connector ，但需要使用它来创建和管理卷，复制数据以及将适用于 ONTAP 的 FSx 与 Data sense 和 Cloud Sync 等 NetApp 云服务集成。
 * Azure NetApp Files
 +
@@ -102,9 +102,9 @@ NOTE: 如果您的Cloud Volumes ONTAP 系统具有基于节点的BYOL许可证�
 
 == 如何创建 Connector
 
-Cloud Manager帐户管理员可以通过多种方式创建Connector：
+BlueXP帐户管理员可以通过多种方式创建Connector：
 
-* 直接从 Cloud Manager （建议）
+* 直接从BlueXP (建议)
 +
 ** link:task-creating-connectors-aws.html["在 AWS 中创建"]
 ** link:task-creating-connectors-azure.html["在 Azure 中创建"]
@@ -125,7 +125,7 @@ Cloud Manager帐户管理员可以通过多种方式创建Connector：
 
 
 
-如果您在政府区域运营、则需要从云提供商的市场部署Connector、或者在现有Linux主机上手动安装Connector软件。您不能从Cloud Manager的SaaS网站在政府区域部署Connector。
+如果您在政府区域运营、则需要从云提供商的市场部署Connector、或者在现有Linux主机上手动安装Connector软件。您不能从BlueXP的SaaS网站在政府区域部署Connector。
 
 
 
@@ -137,7 +137,7 @@ Cloud Manager帐户管理员可以通过多种方式创建Connector：
 
 === 创建 Connector 的权限
 
-从 Cloud Manager 创建 Connector 的用户需要特定权限才能在您选择的云提供商中部署此实例。Cloud Manager 将在您创建 Connector 时提醒您权限要求。
+从BlueXP创建Connector的用户需要特定权限才能在您选择的云提供商中部署此实例。
 
 * link:task-creating-connectors-aws.html["查看所需的AWS权限"]
 * link:task-creating-connectors-azure.html["查看所需的Azure权限"]
@@ -150,7 +150,7 @@ Cloud Manager帐户管理员可以通过多种方式创建Connector：
 
 Connector 需要特定的云提供商权限才能代表您执行操作。例如，部署和管理 Cloud Volumes ONTAP 。
 
-直接从 Cloud Manager 创建 Connector 时， Cloud Manager 会使用所需权限创建 Connector 。您无需执行任何操作。
+直接从BlueXP创建Connector时、BlueXP会使用所需权限创建Connector。您无需执行任何操作。
 
 如果您自己从 AWS Marketplace ， Azure Marketplace 或通过手动安装软件来创建 Connector ，则需要确保已设置正确的权限。
 
@@ -163,7 +163,7 @@ Connector 需要特定的云提供商权限才能代表您执行操作。例如�
 
 == 连接器升级
 
-我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然 Cloud Manager 平台中的大多数服务和功能均通过基于 SaaS 的软件提供，但有几项特性和功能取决于 Connector 的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。
+我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然BlueXP平台中的大多数服务和功能均通过基于SaaS的软件提供、但有几项特性和功能取决于Connector的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。
 
 只要Connector能够通过出站Internet访问来获取软件更新、它就会自动将其软件更新到最新版本。
 
@@ -171,7 +171,7 @@ Connector 需要特定的云提供商权限才能代表您执行操作。例如�
 
 == 每个连接器的工作环境数量
 
-Connector 可以在 Cloud Manager 中管理多个工作环境。一个 Connector 应管理的最大工作环境数因情况而异。具体取决于工作环境的类型，卷数量，要管理的容量以及用户数量。
+一个Connector可以在BlueXP中管理多个工作环境。一个 Connector 应管理的最大工作环境数因情况而异。具体取决于工作环境的类型，卷数量，要管理的容量以及用户数量。
 
 如果您要进行大规模部署，请与 NetApp 代表合作来估算您的环境规模。如果您在此过程中遇到任何问题，请通过产品内聊天联系我们。
 
@@ -198,7 +198,7 @@ Connector 可以在 Cloud Manager 中管理多个工作环境。一个 Connector
 . link:task-managing-connectors.html["切换到另一个连接器"]
 . 发现现有工作环境。
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["将现有 Cloud Volumes ONTAP 系统添加到 Cloud Manager"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["将现有Cloud Volumes ONTAP 系统添加到BlueXP"^]
 ** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["发现 ONTAP 集群"^]
 
 
@@ -212,7 +212,7 @@ Connector 可以在 Cloud Manager 中管理多个工作环境。一个 Connector
 
 == 何时在连接器之间切换
 
-创建首个 Connector 时， Cloud Manager 会自动对您创建的每个附加工作环境使用此 Connector 。创建额外的 Connector 后，您需要在它们之间切换，以查看每个 Connector 特有的工作环境。
+创建第一个Connector时、BlueXP会自动对您创建的每个附加工作环境使用该Connector。创建额外的 Connector 后，您需要在它们之间切换，以查看每个 Connector 特有的工作环境。
 
 link:task-managing-connectors.html["了解如何在连接器之间切换"]。
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-creating-connectors-gcp.html 
 keywords: create connector in gcp, launch connector in gcp, deploy connector in gcp, gcp connector, connector gcp, connector permissions 
-summary: Cloud Manager帐户管理员需要先部署Connector、然后才能使用大多数Cloud Manager功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。 
+summary: 在使用大多数BlueXP功能之前、BlueXP帐户管理员需要先部署Connector。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。 
 ---
-= 从 Cloud Manager 在 Google Cloud 中创建 Connector
+= 从BlueXP在Google Cloud中创建连接器
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,14 @@ summary: Cloud Manager帐户管理员需要先部署Connector、然后才能使�
 
 
 [role="lead"]
-Cloud Manager帐户管理员需要先部署_Connector_、然后才能使用大多数Cloud Manager功能。 link:concept-connectors.html["了解何时需要连接器"]。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。
+BlueXP帐户管理员需要先部署_Connector_、然后才能使用大多数BlueXP功能。 link:concept-connectors.html["了解何时需要连接器"]。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。
 
-此页面介绍如何直接从Cloud Manager在Google Cloud中创建Connector。 link:concept-connectors.html#how-to-create-a-connector["了解部署 Connector 的其他方法"]。
+此页面介绍如何直接从BlueXP在Google Cloud中创建Connector。 link:concept-connectors.html#how-to-create-a-connector["了解部署 Connector 的其他方法"]。
 
 这些步骤必须由具有帐户管理员角色的用户完成。Workspace 管理员无法创建 Connector 。
 
 
-TIP: 在创建首个 Cloud Volumes ONTAP 工作环境时，如果您还没有连接器， Cloud Manager 将提示您创建一个连接器。
+TIP: 在创建首个Cloud Volumes ONTAP 工作环境时、如果您还没有连接器、BlueXP将提示您创建一个连接器。
 
 
 
@@ -87,7 +87,7 @@ TIP: 在创建首个 Cloud Volumes ONTAP 工作环境时，如果您还没有连
 [source, yaml]
 ----
 title: Connector deployment policy
-description: Permissions for the user who deploys the Connector from Cloud Manager
+description: Permissions for the user who deploys the Connector from BlueXP
 stage: GA
 includedPermissions:
 - compute.disks.create
@@ -147,7 +147,7 @@ includedPermissions:
 - compute.instances.setServiceAccount
 - iam.serviceAccounts.list
 ----
-. 将自定义角色附加到要从Cloud Manager部署Connector的用户。
+. 将自定义角色附加到要从BlueXP部署Connector的用户。
 
 
 Google Cloud用户现在具有创建Connector所需的权限。
@@ -165,7 +165,7 @@ Google Cloud用户现在具有创建Connector所需的权限。
 +
 [source, yaml]
 ----
-title: NetApp Cloud Manager
+title: NetApp BlueXP
 description: Permissions for the service account associated with the Connector instance.
 stage: GA
 includedPermissions:
@@ -263,7 +263,7 @@ includedPermissions:
 - storage.buckets.getIamPolicy
 ----
 . https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["创建Google Cloud服务帐户并应用您刚刚创建的自定义角色"^]。
-. 如果要在其他项目中部署 Cloud Volumes ONTAP ， https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["通过向该项目添加具有 Cloud Manager 角色的服务帐户来授予访问权限"^]。您需要对每个项目重复此步骤。
+. 如果要在其他项目中部署 Cloud Volumes ONTAP ， https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限"^]。您需要对每个项目重复此步骤。
 
 
 已设置Connector VM的服务帐户。
@@ -300,7 +300,7 @@ includedPermissions:
 
 | Cloud Volumes ONTAP 服务帐户 | 自定义 | 服务项目  a| 
 * storage.admin
-* 成员： Cloud Manager 服务帐户为 serviceAccount.user
+* 成员：BlueXP服务帐户serviceAccount.user
 
 | 不适用 | （可选）适用于数据分层和 Cloud Backup 
 
@@ -311,7 +311,7 @@ includedPermissions:
  a| 
 * compute.networkUser
 
-| 代表部署与Google Cloud API进行交互。允许 Cloud Manager 使用共享网络。 
+| 代表部署与Google Cloud API进行交互。允许BlueXP使用共享网络。 
 
 
 | Google Compute Engine 默认服务帐户 | Google Cloud | 服务项目  a| 
@@ -320,12 +320,12 @@ includedPermissions:
  a| 
 * compute.networkUser
 
-| 代表部署部署部署部署Google Cloud实例和计算基础架构。允许 Cloud Manager 使用共享网络。 
+| 代表部署部署部署部署Google Cloud实例和计算基础架构。允许BlueXP使用共享网络。 
 |===
 注释：
 
-. 只有在未向部署传递防火墙规则并选择让 Cloud Manager 为您创建这些规则的情况下，主机项目才需要使用 deploymentManager.editor.如果未指定任何规则， Cloud Manager 将在包含 VPC0 防火墙规则的主机项目中创建部署。
-. 只有当您不向部署传递防火墙规则并选择让 Cloud Manager 为您创建这些规则时，才需要 firewall.create 和 firewall.delete 。这些权限位于 Cloud Manager 服务帐户 .yaml 文件中。如果要使用共享 VPC 部署 HA 对，则会使用这些权限为 VC1 ， 2 和 3 创建防火墙规则。对于所有其他部署，这些权限还将用于为 VPC0 创建规则。
+. 只有在未向部署传递防火墙规则并选择让BlueXP为您创建这些规则的情况下、主机项目才需要使用deploymentmanager.editor.如果未指定任何规则、BlueXP将在包含VPC0防火墙规则的主机项目中创建部署。
+. 只有当您不向部署传递防火墙规则并选择让BlueXP为您创建这些规则时、才需要firewall.create和firewall.delete。这些权限位于BlueXP帐户.YAML文件中。如果要使用共享 VPC 部署 HA 对，则会使用这些权限为 VC1 ， 2 和 3 创建防火墙规则。对于所有其他部署，这些权限还将用于为 VPC0 创建规则。
 . 对于数据分层，分层服务帐户必须在服务帐户上具有 serviceAccount.user 角色，而不仅仅是在项目级别。目前，如果您在项目级别分配 serviceAccount.user ，则在使用 getIAMPolicy 查询服务帐户时不会显示权限。
 
 
@@ -357,7 +357,7 @@ includedPermissions:
 | https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
 
 
-| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在 Cloud Manager 中提供 SaaS 功能和服务。 
+| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在BlueXP中提供SaaS功能和服务。 
 
 
 | https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
@@ -407,11 +407,11 @@ includedPermissions:
 
 == 创建连接器
 
-直接从 Cloud Manager 用户界面或使用 gcloud 在 Google Cloud 中创建 Connector 。
+直接从BlueXP用户界面或使用gcloud在Google Cloud中创建Connector。
 
 [role="tabbed-block"]
 ====
-.云管理器
+.BlueXP
 --
 . 如果要创建首个工作环境，请单击 * 添加工作环境 * 并按照提示进行操作。否则，请单击 * 连接器 * 下拉列表并选择 * 添加连接器 * 。
 +
@@ -533,7 +533,7 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connec
 
 --
 ====
-现在，您可以使用 NetApp 帐户安装并设置 Connector 。Cloud Manager 将在您创建新的工作环境时自动使用此 Connector 。但是，如果您有多个 Connector ，则需要 link:task-managing-connectors.html["在它们之间切换"]。
+现在，您可以使用 NetApp 帐户安装并设置 Connector 。在创建新的工作环境时、BlueXP将自动使用此Connector。但是，如果您有多个 Connector ，则需要 link:task-managing-connectors.html["在它们之间切换"]。
 
 如果您在创建Connector的同一Google Cloud帐户中有Google Cloud Storage存储分段、则会在Canvas上自动显示Google Cloud Storage工作环境。 link:task-viewing-gcp-storage.html["详细了解如何使用此工作环境"]。
 
@@ -541,7 +541,7 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connec
 
 == 打开端口3128以显示AutoSupport 消息
 
-如果您计划在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则Cloud Manager会自动将Cloud Volumes ONTAP 配置为使用Connector作为代理服务器。
+如果您计划在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则BlueXP会自动将Cloud Volumes ONTAP 配置为使用此连接器作为代理服务器。
 
 唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
 

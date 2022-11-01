@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-installing-https-cert.html 
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
-summary: 默认情况下， Cloud Manager 使用自签名证书对 Web 控制台进行 HTTPS 访问。您可以安装由证书颁发机构（ CA ）签名的证书、该证书提供比自签名证书更好的安全保护。 
+summary: 默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS访问。您可以安装由证书颁发机构（ CA ）签名的证书、该证书提供比自签名证书更好的安全保护。 
 ---
 = 管理 HTTPS 证书以实现安全访问
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 默认情况下， Cloud Manager 使用自签名证书对 Web 控制台
 
 
 [role="lead"]
-默认情况下， Cloud Manager 使用自签名证书对 Web 控制台进行 HTTPS 访问。您可以安装由证书颁发机构（ CA ）签名的证书、该证书提供比自签名证书更好的安全保护。
+默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS访问。您可以安装由证书颁发机构（ CA ）签名的证书、该证书提供比自签名证书更好的安全保护。
 
 
 
 == 开始之前
 
-您需要先创建 Connector ，然后才能更改 Cloud Manager 设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
+您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
 
 
 
@@ -29,9 +29,9 @@ summary: 默认情况下， Cloud Manager 使用自签名证书对 Web 控制台
 安装由 CA 签名的证书以确保安全访问。
 
 .步骤
-. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * HTTPS 设置 * 。
+. 在BlueXP控制台的右上角、单击设置图标、然后选择* HTTPS设置*。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图，显示 Cloud Manager 控制台右上角的设置图标。"]
+image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
 . 在 HTTPS 设置页面中、通过生成证书签名请求（ CSR ）或安装您自己的 CA 签名证书来安装证书：
 +
@@ -43,7 +43,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图，显示 Cloud Manager �
 | 生成 CSR  a| 
 .. 输入 Connector 主机的主机名或 DNS （其公用名），然后单击 * 生成 CSR* 。
 +
-Cloud Manager 将显示证书签名请求。
+BlueXP将显示证书签名请求。
 
 .. 使用 CSR 向 CA 提交 SSL 证书请求。
 +
@@ -65,22 +65,22 @@ Cloud Manager 将显示证书签名请求。
 |===
 
 
-Cloud Manager 现在使用 CA 签名的证书提供安全 HTTPS 访问。下图显示了为安全访问配置的 Cloud Manager 系统：
+现在、BlueXP使用CA签名证书提供安全的HTTPS访问。下图显示了为安全访问配置的BlueXP帐户：
 
 image:screenshot_https_cert.gif["屏幕截图：在安装签名证书后显示 HTTPS 设置页面。该页显示证书属性和续订证书的选项。"]
 
 
 
-== 续订 Cloud Manager HTTPS 证书
+== 续订BlueXP HTTPS证书
 
-您应该在云管理器 HTTPS 证书过期之前续订该证书，以确保对云管理器 Web 控制台的安全访问。如果在证书过期前未续订证书、则当用户使用 HTTPS 访问 Web 控制台时会显示警告。
+您应在BlueXP HTTPS证书到期之前续订该证书、以确保对BlueXP控制台的安全访问。如果您未在证书过期之前续订证书、则在用户使用HTTPS访问Web控制台时会显示一条警告。
 
 .步骤
-. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * HTTPS 设置 * 。
+. 在BlueXP控制台的右上角、单击设置图标、然后选择* HTTPS设置*。
 +
-此时将显示有关 Cloud Manager 证书的详细信息、包括到期日期。
+此时将显示有关BlueXP证书的详细信息、包括到期日期。
 
 . 单击 * 更改证书 * ，然后按照以下步骤生成 CSR 或安装您自己的 CA 签名证书。
 
 
-Cloud Manager 使用新的 CA 签名证书提供安全 HTTPS 访问。
+BlueXP使用新的CA签名证书提供安全的HTTPS访问。

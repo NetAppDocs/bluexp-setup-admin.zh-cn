@@ -17,11 +17,11 @@ summary: 如果您的公司策略要求您使用代理服务器与 Internet 进�
 如果您的公司策略要求您使用代理服务器与Internet进行所有HTTP通信、则必须将您的连接器配置为使用HTTP代理服务器。代理服务器可以位于云中或网络中。
 
 
-NOTE: Cloud Manager 不支持在 Connector 中使用 HTTPS 代理。
+NOTE: BlueXP不支持在Connector中使用HTTPS代理。
 
 如果公有 IP地址或NAT网关不可用、则将连接器配置为使用HTTP代理服务器可提供出站Internet访问。此代理服务器仅为Connector提供出站连接。它不为Cloud Volumes ONTAP 系统提供任何连接。
 
-如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则Cloud Manager会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
+如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
 
 
 
@@ -32,7 +32,7 @@ NOTE: Cloud Manager 不支持在 Connector 中使用 HTTPS 代理。
 请注意，此操作将重新启动 Connector 。继续操作前，请确保 Connector 未执行任何操作。
 
 .步骤
-. link:task-logging-in.html["登录到 Cloud Manager SaaS 界面"^] 从已通过网络连接到 Connector 实例的计算机。
+. link:task-logging-in.html["登录到BlueXP SaaS界面"^] 从已通过网络连接到 Connector 实例的计算机。
 +
 如果此连接器没有公有 IP 地址，您需要 VPN 连接，或者您需要从与此连接器位于同一网络的跳转主机进行连接。
 
@@ -41,11 +41,11 @@ NOTE: Cloud Manager 不支持在 Connector 中使用 HTTPS 代理。
 image:screenshot_connector_local_ui.gif["标题中显示 Connector 图标和 Go to Local UI 操作的屏幕截图。"]
 
 +
-在 Connector 上运行的 Cloud Manager 界面将加载到新的浏览器选项卡中。
+在Connector上运行的BlueXP界面将加载到新的浏览器选项卡中。
 
-. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 连接器设置 * 。
+. 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图，显示 Cloud Manager 控制台右上角的设置图标。"]
+image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
 . 在 * 常规 * 下，单击 * HTTP 代理配置 * 。
 . 设置代理：
@@ -56,7 +56,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图，显示 Cloud Manager �
 .. 单击 * 保存 * 。
 +
 
-NOTE: Cloud Manager 不支持包含 @ 字符的密码。
+NOTE: BlueXP不支持包含@字符的密码。
 
 
 
@@ -66,12 +66,12 @@ NOTE: Cloud Manager 不支持包含 @ 字符的密码。
 
 == 启用直接 API 流量
 
-如果您配置了代理服务器，则无需通过代理即可将 API 调用直接发送到 Cloud Manager 。在 AWS ， Azure 或 Google Cloud 中运行的 Connectors 支持此选项。
+如果您配置了代理服务器、则无需通过代理即可将API调用直接发送到BlueXP。在 AWS ， Azure 或 Google Cloud 中运行的 Connectors 支持此选项。
 
 .步骤
-. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 连接器设置 * 。
+. 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图，显示 Cloud Manager 控制台右上角的设置图标。"]
+image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
 . 在 * 常规 * 下，单击 * 支持直接 API 流量 * 。
 . 单击复选框以启用此选项，然后单击 * 保存 * 。

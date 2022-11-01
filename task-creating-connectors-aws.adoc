@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-creating-connectors-aws.html 
 keywords: fsx for ontap, iam, user role, create connector in aws, launch connector in aws, deploy connector in aws, aws connector, connector aws, connector permissions 
-summary: Cloud Manager帐户管理员需要先部署Connector、然后才能使用大多数Cloud Manager功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。 
+summary: 在使用大多数BlueXP功能之前、BlueXP帐户管理员需要先部署Connector。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。 
 ---
-= 从 Cloud Manager 在 AWS 中创建连接器
+= 从BlueXP在AWS中创建连接器
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Cloud Manager帐户管理员需要先部署Connector、然后才能使�
 
 
 [role="lead"]
-Cloud Manager帐户管理员需要先部署_Connector_、然后才能使用大多数Cloud Manager功能。借助此连接器， Cloud Manager 可以管理公有云环境中的资源和流程。 link:concept-connectors.html["了解何时需要连接器"]。
+BlueXP帐户管理员需要先部署_Connector_、然后才能使用大多数BlueXP功能。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。 link:concept-connectors.html["了解何时需要连接器"]。
 
-此页面介绍如何直接从 Cloud Manager 在 AWS 中创建 Connector 。 link:concept-connectors.html#how-to-create-a-connector["了解部署 Connector 的其他方法"]。
+此页面介绍如何直接从BlueXP在AWS中创建Connector。 link:concept-connectors.html#how-to-create-a-connector["了解部署 Connector 的其他方法"]。
 
 这些步骤必须由具有帐户管理员角色的用户完成。Workspace 管理员无法创建 Connector 。
 
@@ -27,7 +27,7 @@ Cloud Manager帐户管理员需要先部署_Connector_、然后才能使用大�
 按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
 
 [role="quick-margin-para"]
-要在AWS中启动Connector、Cloud Manager需要通过承担IAM角色或使用AWS访问密钥向AWS进行身份验证。使用任一选项、都需要IAM策略。
+要在AWS中启动Connector、BlueXP需要通过承担IAM角色或使用AWS访问密钥向AWS进行身份验证。使用任一选项、都需要IAM策略。
 
 [role="quick-margin-para"]
  an IAM policy,查看IAM角色 或  up AWS authentication,按照分步说明进行操作。
@@ -48,9 +48,9 @@ Cloud Manager帐户管理员需要先部署_Connector_、然后才能使用大�
 
 == 设置 AWS 身份验证
 
-Cloud Manager 需要先向 AWS 进行身份验证，然后才能在 VPC 中部署 Connector 实例。您可以选择以下身份验证方法之一：
+BlueXP需要先向AWS进行身份验证、然后才能在VPC中部署Connector实例。您可以选择以下身份验证方法之一：
 
-* 让Cloud Manager承担具有所需权限的IAM角色
+* 让BlueXP承担具有所需权限的IAM角色
 * 为具有所需权限的IAM用户提供AWS访问密钥和机密密钥
 
 
@@ -60,9 +60,9 @@ Cloud Manager 需要先向 AWS 进行身份验证，然后才能在 VPC 中部�
 
 === 创建IAM策略
 
-此策略仅包含从Cloud Manager在AWS中启动Connector实例所需的权限。请勿在其他情况下使用此策略。
+此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。请勿在其他情况下使用此策略。
 
-在Cloud Manager创建Connector时、它会将一组新的权限应用于Connector实例、从而使Connector能够管理公有 云环境中的资源。
+当BlueXP创建Connector时、它会将一组新的权限应用于Connector实例、从而使Connector能够管理公有 云环境中的资源。
 
 .步骤
 . 转到AWS IAM控制台。
@@ -145,13 +145,13 @@ Cloud Manager 需要先向 AWS 进行身份验证，然后才能在 VPC 中部�
 . 单击*创建策略*。
 
 
-将此策略附加到Cloud Manager可以承担的IAM角色或IAM用户。
+将策略附加到BlueXP可以承担的IAM角色或IAM用户。
 
 
 
 === 设置 IAM 角色
 
-设置一个 IAM 角色， Cloud Manager 可以承担此角色，以便在 AWS 中部署 Connector 。
+设置一个IAM角色、BlueXP可以承担此角色、以便在AWS中部署Connector。
 
 .步骤
 . 转到目标帐户中的 AWS IAM 控制台。
@@ -161,11 +161,11 @@ Cloud Manager 需要先向 AWS 进行身份验证，然后才能在 VPC 中部�
 
 +
 ** 在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。
-** 选择 * 其他 AWS 帐户 * ，然后输入 Cloud Manager SaaS 帐户的 ID ： 952013314444
+** 选择*其他AWS帐户*、然后输入BlueXP SaaS帐户的ID：952013314444
 ** 选择在上一节中创建的策略。
 
 
-. 创建角色后、复制角色ARN、以便您可以在创建Connector时将其粘贴到Cloud Manager中。
+. 创建角色后、复制角色ARN、以便您可以在创建Connector时将其粘贴到BlueXP中。
 
 
 IAM 角色现在具有所需的权限。
@@ -184,7 +184,7 @@ IAM 角色现在具有所需的权限。
 . 确保您有权访问 IAM 用户的访问密钥和机密密钥。
 
 
-AWS 用户现在具有从 Cloud Manager 创建 Connector 所需的权限。在 Cloud Manager 提示时，您需要为此用户指定 AWS 访问密钥。
+AWS用户现在具有从BlueXP创建Connector所需的权限。在BlueXP提示时、您需要为此用户指定AWS访问密钥。
 
 
 
@@ -214,7 +214,7 @@ AWS 用户现在具有从 Cloud Manager 创建 Connector 所需的权限。在 C
 | https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
 
 
-| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在 Cloud Manager 中提供 SaaS 功能和服务。 
+| https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在BlueXP中提供SaaS功能和服务。 
 
 
 | https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
@@ -246,7 +246,7 @@ AWS 用户现在具有从 Cloud Manager 创建 Connector 所需的权限。在 C
 
 == 创建连接器
 
-您可以通过 Cloud Manager 直接从其用户界面在 AWS 中创建 Connector 。
+通过BlueXP、您可以直接从其用户界面在AWS中创建Connector。
 
 .步骤
 . 如果要创建首个工作环境，请单击 * 添加工作环境 * 并按照提示进行操作。否则，请单击 * 连接器 * 下拉列表并选择 * 添加连接器 * 。
@@ -263,7 +263,7 @@ image:screenshot_connector_add.gif["标题中显示 Connector 图标和 Add Conn
 . 按照向导中的步骤创建 Connector ：
 +
 ** * 准备就绪 * ：查看您需要的内容。
-** * AWS Credentials* ：指定您的 AWS 区域，然后选择身份验证方法，即 Cloud Manager 可以承担的 IAM 角色或 AWS 访问密钥和机密密钥。
+** * AWS Credentials*：指定您的AWS区域、然后选择身份验证方法、即BlueXP可以承担的IAM角色或AWS访问密钥和机密密钥。
 +
 
 TIP: 如果选择 * 承担角色 * ，则可以从 Connector 部署向导创建第一组凭据。必须从 " 凭据 " 页面创建任何其他凭据集。然后，这些文件将从向导的下拉列表中显示。 link:task-adding-aws-accounts.html["了解如何添加其他凭据"]。
@@ -272,7 +272,7 @@ TIP: 如果选择 * 承担角色 * ，则可以从 Connector 部署向导创建�
 +
 *** 输入实例的名称。
 *** 向实例添加自定义标记（元数据）。
-*** 选择是希望 Cloud Manager 创建具有所需权限的新角色，还是要选择使用设置的现有角色 link:reference-permissions-aws.html["所需权限"]。
+*** 选择是希望BlueXP创建具有所需权限的新角色、还是要选择使用设置的现有角色 link:reference-permissions-aws.html["所需权限"]。
 *** 选择是否要对 Connector 的 EBS 磁盘进行加密。您可以选择使用默认加密密钥或自定义密钥。
 
 
@@ -296,7 +296,7 @@ TIP: 如果选择 * 承担角色 * ，则可以从 Connector 部署向导创建�
 
 == 打开端口3128以显示AutoSupport 消息
 
-如果您计划在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则Cloud Manager会自动将Cloud Volumes ONTAP 配置为使用Connector作为代理服务器。
+如果您计划在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则BlueXP会自动将Cloud Volumes ONTAP 配置为使用此连接器作为代理服务器。
 
 唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
 

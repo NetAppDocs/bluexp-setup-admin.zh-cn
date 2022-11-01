@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-whats-next.html 
 keywords: get started, create working environments, manage settings 
-summary: 登录并设置 Cloud Manager 后，用户便可开始创建和发现工作环境。 
+summary: 登录并设置BlueXP后、用户便可开始创建和发现工作环境。 
 ---
 = 下一步行动
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 登录并设置 Cloud Manager 后，用户便可开始创建和发现�
 
 
 [role="lead"]
-登录并设置 Cloud Manager 后，用户便可开始创建和发现工作环境。
+登录并设置BlueXP后、用户便可开始创建和发现工作环境。
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["开始使用适用于 AWS 的 Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["开始使用适用于 Azure 的 Cloud Volumes ONTAP"^]

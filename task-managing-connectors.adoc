@@ -30,7 +30,7 @@ summary: 创建一个或多个连接器后，您可以通过在连接器之间�
 image:screenshot_connector_switch.gif["标题中显示 Connector 图标和 Switch 操作的屏幕截图。"]
 
 +
-Cloud Manager 将刷新并显示与选定 Connector 关联的工作环境。
+BlueXP将刷新并显示与选定连接器关联的工作环境。
 
 
 
@@ -38,7 +38,7 @@ Cloud Manager 将刷新并显示与选定 Connector 关联的工作环境。
 
 == 访问本地 UI
 
-虽然您应该从 SaaS 用户界面执行几乎所有任务，但连接器上仍提供本地用户界面。如果您要从无法访问出站Internet的政府区域或站点访问Cloud Manager、则需要使用在Connector上运行的本地用户界面。
+虽然您应该从 SaaS 用户界面执行几乎所有任务，但连接器上仍提供本地用户界面。如果您要从政府区域或无法访问出站Internet的站点访问BlueXP、则需要使用Connector上运行的本地用户界面。
 
 .步骤
 . 打开 Web 浏览器并输入以下 URL ：
@@ -59,7 +59,7 @@ _ipaddress_ 可以是 localhost ，专用 IP 地址或公有 IP 地址，具体�
 
 .步骤
 . 连接到连接器本地 UI ，如上一节所述。
-. 在 Cloud Manager 控制台右上角，单击帮助图标，然后选择 * 支持 * 。
+. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
 +
 image:screenshot-help-support.png["帮助菜单的屏幕截图，其中列出的第一个选项为支持"]
 
@@ -132,7 +132,7 @@ service service-manager start
 
 .步骤
 . 按照云提供商的说明更改连接器实例的本地 IP 地址或公有 IP 地址（或两者）。
-. 如果您更改了公有 IP 地址，并且需要连接到在 Connector 上运行的本地用户界面，请重新启动 Connector 实例以向 Cloud Manager 注册新的 IP 地址。
+. 如果您更改了公有 IP地址、并且需要连接到在Connector上运行的本地用户界面、请重新启动Connector实例、以便向BlueXP注册新的IP地址。
 . 如果更改了专用 IP 地址，请更新 Cloud Volumes ONTAP 配置文件的备份位置，以便将备份发送到 Connector 上的新专用 IP 地址。
 +
 .. 从 Cloud Volumes ONTAP 命令行界面运行以下命令以删除当前备份目标：
@@ -141,7 +141,7 @@ service service-manager start
 ----
 system configuration backup settings modify -destination ""
 ----
-.. 转到 Cloud Manager 并打开工作环境。
+.. 转到BlueXP并打开工作环境。
 .. 单击菜单并选择 * 高级 > 配置备份 * 。
 .. 单击 * 设置备份目标 * 。
 
@@ -155,7 +155,7 @@ system configuration backup settings modify -destination ""
 添加并删除 Connector 的 URI 。
 
 .步骤
-. 单击 Cloud Manager 标题中的 * 连接器 * 下拉列表。
+. 单击BlueXP标题中的*连接器*下拉列表。
 . 单击 * 管理连接器 * 。
 . 单击 Connector 的操作菜单，然后单击 * 编辑 URIs* 。
 . 添加并删除 URI ，然后单击 * 应用 * 。
@@ -165,7 +165,7 @@ system configuration backup settings modify -destination ""
 
 == 修复使用 Google Cloud NAT 网关时的下载失败问题
 
-连接器会自动下载 Cloud Volumes ONTAP 的软件更新。如果您的配置使用 Google Cloud NAT 网关，则下载可能会失败。您可以通过限制软件映像划分到的部件数来更正此问题描述。必须使用 Cloud Manager API 完成此步骤。
+连接器会自动下载 Cloud Volumes ONTAP 的软件更新。如果您的配置使用 Google Cloud NAT 网关，则下载可能会失败。您可以通过限制软件映像划分到的部件数来更正此问题描述。必须使用BlueXP API完成此步骤。
 
 .步骤
 . 使用以下 JSON 正文向 /occm/config 提交 PUT 请求：
@@ -192,7 +192,7 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 在升级过程中， Connector 需要重新启动，因此用户界面在升级期间将不可用。
 
 .步骤
-. 从下载 Cloud Manager 软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]。
+. 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]。
 . 将安装程序复制到 Linux 主机。
 . 分配运行脚本的权限。
 +
@@ -216,18 +216,18 @@ sudo /path/cloud-manager-connector-offline-v3.9.14
 ****
 
 
-== 从 Cloud Manager 中删除 Connectors
+== 从BlueXP中删除连接器
 
-如果某个 Connector 处于非活动状态，您可以将其从 Cloud Manager 中的 Connectors 列表中删除。如果删除了 Connector 虚拟机或卸载了 Connector 软件，则可以执行此操作。
+如果某个连接器处于非活动状态、您可以将其从BlueXP中的连接器列表中删除。如果删除了 Connector 虚拟机或卸载了 Connector 软件，则可以执行此操作。
 
 有关删除连接器，请注意以下事项：
 
 * 此操作不会删除虚拟机。
-* 无法还原此操作—从 Cloud Manager 中删除 Connector 后，便无法将其重新添加到 Cloud Manager 中。
+* 无法还原此操作—从BlueXP中删除Connector后、便无法重新添加它
 
 
 .步骤
-. 单击 Cloud Manager 标题中的 * 连接器 * 下拉列表。
+. 单击BlueXP标题中的*连接器*下拉列表。
 . 单击 * 管理连接器 * 。
 . 单击非活动连接器的操作菜单，然后单击 * 删除连接器 * 。
 +
@@ -236,7 +236,7 @@ image:screenshot_connector_remove.gif["Connector 小工具的屏幕截图，您�
 . 输入 Connector 的名称进行确认，然后单击删除。
 
 
-Cloud Manager 将从其记录中删除 Connector 。
+BlueXP会从其记录中删除Connector。
 
 
 

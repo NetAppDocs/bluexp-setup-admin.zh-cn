@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-support-registration.html 
 keywords: support registration, register for support, support, nss account, add nss account, 
-summary: 在向 NetApp 技术支持创建支持案例之前，您需要先将 NetApp 支持站点帐户添加到 Cloud Manager 中，然后注册获取支持。 
+summary: 在向NetApp技术支持部门创建支持案例之前、您需要向BlueXP添加一个NetApp 支持站点 帐户、然后注册获取支持。 
 ---
 = 注册以获得支持
 :allow-uri-read: 
@@ -10,7 +10,7 @@ summary: 在向 NetApp 技术支持创建支持案例之前，您需要先将 Ne
 :imagesdir: ../media/
 
 
-在向NetApp技术支持部门创建支持案例之前、您需要先将NetApp 支持站点 (NSS)帐户添加到Cloud Manager中、然后注册获取支持。
+在向NetApp技术支持部门创建支持案例之前、您需要向BlueXP添加NetApp 支持站点 (NSS)帐户、然后注册获取支持。
 
 
 
@@ -18,30 +18,30 @@ summary: 在向 NetApp 技术支持创建支持案例之前，您需要先将 Ne
 
 激活支持授权有两种形式的注册：
 
-* 注册Cloud Manager帐户ID支持订阅(您的20位960xxxxxxxxx序列号、位于Cloud Manager的支持资源页面上)。
+* 注册您的BlueXP帐户ID支持订阅(您的20位960xxxxxxxxx序列号、位于BlueXP的支持资源页面上)。
 +
-此ID可用作Cloud Manager中任何服务的单一支持订阅ID。必须注册每个Cloud Manager帐户级别的支持订阅。
+这是您在BlueXP中使用的任何服务的单一支持订阅ID。必须注册每个BlueXP帐户级别的支持订阅。
 
 * 在云提供商的市场中注册与订阅关联的Cloud Volumes ONTAP 序列号(即20位909201xxxxxxxx序列号)。
 +
-这些序列号通常称为_PAYGO序列号、并由Cloud Manager在部署Cloud Volumes ONTAP 时生成。
+这些序列号通常称为_PAYGO序列号、并由BlueXP在部署Cloud Volumes ONTAP 时生成。
 
 
 
-注册这两种类型的序列号可实现打开支持服务单、自动生成案例和Active IQ 等功能。
+注册这两种类型的序列号可实现打开支持服务单和自动生成案例等功能。
 
 您的注册方式取决于您是新客户还是现有客户或合作伙伴。
 
 * 现有客户或合作伙伴
 +
-作为现有NetApp客户或合作伙伴、您可以使用NetApp 支持站点 (NSS) SSO帐户执行上述注册。在支持信息板中、Cloud Manager提供了一个* NSS管理*页面、您可以在其中添加NSS帐户。添加NSS帐户后、Cloud Manager会自动为您注册这些序列号。
+作为现有NetApp客户或合作伙伴、您可以使用NetApp 支持站点 (NSS) SSO帐户执行上述注册。在支持信息板中、BlueXP提供了一个* NSS管理*页面、您可以在其中添加NSS帐户。添加NSS帐户后、BlueXP会自动为您注册这些序列号。
 
 +
- an NSS account to Cloud Manager,了解如何添加NSS帐户。
+ an NSS account to BlueXP,了解如何添加NSS帐户。
 
 * NetApp新手
 +
-如果您是NetApp的新用户、则必须在NetApp的支持注册站点上一次性注册Cloud Manager帐户ID序列号。完成此注册并创建新的NSS帐户后、您可以在Cloud Manager中使用此帐户进行自动注册。
+如果您是NetApp的新用户、则必须在NetApp的支持注册站点上一次性注册您的BlueXP帐户ID序列号。完成此注册并创建新的NSS帐户后、您可以在BlueXP中使用此帐户进行自动注册。
 
 +
  with NetApp,了解如何向NetApp注册。
@@ -50,7 +50,7 @@ summary: 在向 NetApp 技术支持创建支持案例之前，您需要先将 Ne
 
 
 
-== 将NSS帐户添加到Cloud Manager
+== 将NSS帐户添加到BlueXP
 
 通过支持信息板、您可以添加和管理NetApp 支持站点 帐户、以便与Cloud Manager结合使用。
 
@@ -59,7 +59,7 @@ summary: 在向 NetApp 技术支持创建支持案例之前，您需要先将 Ne
 
 
 .步骤
-. 在 Cloud Manager 控制台右上角，单击帮助图标，然后选择 * 支持 * 。
+. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["帮助菜单的屏幕截图，其中列出的第一个选项为支持"]
 
@@ -70,7 +70,7 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 
 . 在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。
 +
-通过这些操作、Cloud Manager可以使用您的NSS帐户执行许可证下载、软件升级验证和未来支持注册等操作。
+通过这些操作、BlueXP可以使用您的NSS帐户执行许可证下载、软件升级验证和未来支持注册等操作。
 
 +
 请注意以下事项：
@@ -93,14 +93,14 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 
 === 具有NSS帐户的现有客户
 
-如果您是拥有NSS帐户的NetApp客户、则只需通过Cloud Manager注册支持即可。
+如果您是拥有NSS帐户的NetApp客户、则只需通过BlueXP注册支持即可。
 
 .步骤
-. 在 Cloud Manager 控制台右上角，单击帮助图标，然后选择 * 支持 * 。
+. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["帮助菜单的屏幕截图，其中列出的第一个选项为支持"]
 
-. 如果您尚未将NSS帐户添加到Cloud Manager中、请执行此操作。
+. 如果您尚未将NSS帐户添加到BlueXP、请执行此操作。
 . 在*资源*页面上、单击*注册支持*。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-register-support.png["显示帐户序列号和注册支持选项的屏幕截图"]
@@ -117,7 +117,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 . 完成以创建NetApp 支持站点 帐户 https://mysupport.netapp.com/site/user/registration["NetApp 支持站点 用户注册表"^]
 +
 .. 请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。
-.. 请务必复制上面用于序列号字段的Cloud Manager帐户序列号(960xxxx)。这样可以加快帐户处理速度。
+.. 请务必复制上面用于序列号字段的BlueXP帐户序列号(960xxxx)。这样可以加快帐户处理速度。
 
 
 
@@ -129,7 +129,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 如果您是NetApp的新客户、并且没有NSS帐户、请按照以下每个步骤进行操作。
 
 .步骤
-. 在 Cloud Manager 控制台右上角，单击帮助图标，然后选择 * 支持 * 。
+. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["帮助菜单的屏幕截图，其中列出的第一个选项为支持"]
 
@@ -158,4 +158,4 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 在此过程中、NetApp应与您联系。这是针对新用户的一次性入职练习。
 
-拥有NetApp 支持站点 帐户后、您可以导航到Cloud Manager以添加此NSS帐户以供将来注册。
+拥有NetApp 支持站点 帐户后、您可以导航到BlueXP以添加此NSS帐户以供将来注册。

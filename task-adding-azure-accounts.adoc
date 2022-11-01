@@ -4,7 +4,7 @@ permalink: task-adding-azure-accounts.html
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
 summary: '创建 Cloud Volumes ONTAP 系统时，您需要选择要用于该系统的 Azure 凭据和 Marketplace 订阅。如果您管理多个 Azure Marketplace 订阅，则可以从 " 凭据 " 页面将其中每个订阅分配给不同的 Azure 凭据。' 
 ---
-= 管理 Cloud Manager 的 Azure 凭据和订阅
+= 管理BlueXP的Azure凭据和订阅
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,19 +16,19 @@ summary: '创建 Cloud Volumes ONTAP 系统时，您需要选择要用于该系�
 [role="lead"]
 创建 Cloud Volumes ONTAP 系统时，您需要选择要用于该系统的 Azure 凭据。如果您使用的是按需购买许可，则还需要选择 Marketplace 订阅。如果您需要使用多个 Azure 凭据或多个适用于 Cloud Volumes ONTAP 的 Azure Marketplace 订阅，请按照此页面上的步骤进行操作。
 
-可以通过两种方式在 Cloud Manager 中添加其他 Azure 订阅和凭据。
+可以通过两种方式在BlueXP中添加其他Azure订阅和凭据。
 
 . 将其他 Azure 订阅与 Azure 托管身份关联。
-. 如果要使用不同的 Azure 凭据部署 Cloud Volumes ONTAP ，请使用服务主体授予 Azure 权限，并将其凭据添加到 Cloud Manager 。
+. 如果要使用不同的Azure凭据部署Cloud Volumes ONTAP 、请使用服务主体授予Azure权限、并将其凭据添加到BlueXP。
 
 
 
 
 == 将其他 Azure 订阅与受管身份关联
 
-通过 Cloud Manager ，您可以选择要在其中部署 Cloud Volumes ONTAP 的 Azure 凭据和 Azure 订阅。除非关联，否则您无法为托管身份配置文件选择其他 Azure 订阅 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["托管身份"^] 这些订阅。
+通过BlueXP、您可以选择要在其中部署Cloud Volumes ONTAP 的Azure凭据和Azure订阅。除非关联，否则您无法为托管身份配置文件选择其他 Azure 订阅 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["托管身份"^] 这些订阅。
 
-托管身份为 link:concept-accounts-azure.html["初始 Azure 帐户"] 从 Cloud Manager 部署 Connector 时。部署 Connector 时， Cloud Manager 会创建 Cloud Manager 操作员角色并将其分配给 Connector 虚拟机。
+托管身份为 link:concept-accounts-azure.html["初始 Azure 帐户"] 从BlueXP部署Connector时。部署Connector时、BlueXP创建了BlueXP操作员角色并将其分配给Connector虚拟机。
 
 .步骤
 . 登录 Azure 门户。
@@ -37,10 +37,10 @@ summary: '创建 Cloud Volumes ONTAP 系统时，您需要选择要用于该系�
 +
 .. 单击 * 添加 * > * 添加角色分配 * ，然后添加权限：
 +
-*** 选择 * Cloud Manager Operator* 角色。
+*** 选择* BlueXP操作员*角色。
 +
 
-NOTE: Cloud Manager Operator是Connector策略中提供的默认名称。如果您为角色选择了其他名称，请选择该名称。
+NOTE: BlueXP操作员是Connector策略中提供的默认名称。如果您为角色选择了其他名称，请选择该名称。
 
 *** 分配对 * 虚拟机 * 的访问权限。
 *** 选择创建 Connector 虚拟机的订阅。
@@ -59,24 +59,24 @@ image:screenshot_accounts_switch_azure_subscription.gif["屏幕截图显示了�
 
 
 
-== 向 Cloud Manager 添加其他 Azure 凭据
+== 向BlueXP添加其他Azure凭据
 
-从 Cloud Manager 部署 Connector 时， Cloud Manager 会在具有所需权限的虚拟机上启用系统分配的托管身份。在为 Cloud Volumes ONTAP 创建新工作环境时， Cloud Manager 会默认选择以下 Azure 凭据：
+从BlueXP部署Connector时、BlueXP会在具有所需权限的虚拟机上启用系统分配的托管身份。默认情况下、在为Cloud Volumes ONTAP 创建新工作环境时、BlueXP会选择这些Azure凭据。
 
 
 TIP: 如果在现有系统上手动安装 Connector 软件，则不会添加一组初始凭据。 link:concept-accounts-azure.html["了解 Azure 凭据和权限"]。
 
-如果您要使用 _Different_ Azure 凭据部署 Cloud Volumes ONTAP ，则必须通过在 Azure Active Directory 中为每个 Azure 帐户创建和设置服务主体来授予所需权限。然后，您可以将新凭据添加到 Cloud Manager 。
+如果您要使用 _Different_ Azure 凭据部署 Cloud Volumes ONTAP ，则必须通过在 Azure Active Directory 中为每个 Azure 帐户创建和设置服务主体来授予所需权限。然后、您可以将新凭据添加到BlueXP。
 
 
 
 === 使用服务主体授予 Azure 权限
 
-Cloud Manager 需要权限才能在 Azure 中执行操作。您可以通过在 Azure Active Directory 中创建和设置服务主体以及获取 Cloud Manager 所需的 Azure 凭据来为 Azure 帐户授予所需权限。
+BlueXP需要在Azure中执行操作的权限。您可以通过在Azure Active Directory中创建和设置服务主体以及获取BlueXP所需的Azure凭据来为Azure帐户授予所需权限。
 
-下图描述了 Cloud Manager 如何获得在 Azure 中执行操作的权限。与一个或多个 Azure 订阅绑定的服务主体对象表示 Azure Active Directory 中的 Cloud Manager 并分配给允许所需权限的自定义角色。
+下图展示了BlueXP如何获取在Azure中执行操作的权限。与一个或多个Azure订阅绑定的服务主体对象表示Azure Active Directory中的BlueXP、并分配给允许所需权限的自定义角色。
 
-image:diagram_azure_authentication.png["概念映像，显示云管理器在进行 API 调用之前从 Azure Active Directory 获取身份验证和授权。在 Active Directory 中， Cloud Manager 操作员角色定义权限。它与一个或多个 Azure 订阅以及一个表示 Cloud Manger 应用程序的服务主体对象相关联。"]
+image:diagram_azure_authentication.png["概念映像、显示BlueXP在进行API调用之前从Azure Active Directory获取身份验证和授权。在Active Directory中、BlueXP角色定义权限。它与一个或多个 Azure 订阅以及一个表示 Cloud Manger 应用程序的服务主体对象相关联。"]
 
 .步骤
 .  an Azure Active Directory application,创建 Azure Active Directory 应用程序。
@@ -90,7 +90,7 @@ image:diagram_azure_authentication.png["概念映像，显示云管理器在进�
 
 ==== 创建 Azure Active Directory 应用程序
 
-创建一个 Azure Active Directory （ AD ）应用程序和服务主体， Cloud Manager 可使用该应用程序和服务主体进行基于角色的访问控制。
+创建一个Azure Active Directory (AD)应用程序和服务主体、BlueXP可使用它进行基于角色的访问控制。
 
 要创建 Active Directory 应用程序并将此应用程序分配给角色，您必须在 Azure 中拥有适当的权限。有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]。
 
@@ -104,7 +104,7 @@ image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory
 . 指定有关应用程序的详细信息：
 +
 ** * 名称 * ：输入应用程序的名称。
-** * 帐户类型 * ：选择帐户类型（任何将适用于 Cloud Manager ）。
+** *帐户类型*：选择帐户类型(任何将适用于BlueXP)。
 ** * 重定向 URI* ：可以将此字段留空。
 
 
@@ -117,7 +117,7 @@ image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory
 
 ==== 将应用程序分配给角色
 
-您必须将服务主体绑定到一个或多个 OnCommand 订阅，并为其分配自定义 "Cloud Manager 操作员 " 角色，以便 管理器在 Azure 中具有权限。
+您必须将服务主体绑定到一个或多个Azure订阅并为其分配自定义"BlueXP操作员"角色、以便BlueXP在Azure中具有权限。
 
 .步骤
 . 创建自定义角色：
@@ -155,7 +155,7 @@ image:screenshot_azure_shell_upload.png["Azure Cloud Shell 的屏幕截图，您
 az role definition create --role-definition Policy_for_Setup_As_Service_Azure.json
 ----
 +
-现在，您应该拥有一个名为 Cloud Manager Operator 的自定义角色，可以将该角色分配给 Connector 虚拟机。
+现在、您应该拥有一个名为BlueXP操作员的自定义角色、可以将该角色分配给Connector虚拟机。
 
 
 
@@ -166,7 +166,7 @@ az role definition create --role-definition Policy_for_Setup_As_Service_Azure.js
 .. 从 Azure 门户中，打开 * 订阅 * 服务。
 .. 选择订阅。
 .. 单击 * 访问控制（ IAM ） > 添加 > 添加角色分配 * 。
-.. 在 * 角色 * 选项卡中，选择 * Cloud Manager 操作员 * 角色，然后单击 * 下一步 * 。
+.. 在*角色*选项卡中、选择* BlueXP操作员*角色、然后单击*下一步*。
 .. 在 * 成员 * 选项卡中，完成以下步骤：
 +
 *** 保持选中 * 用户，组或服务主体 * 。
@@ -190,7 +190,7 @@ image:screenshot_azure_service_principal_role.png["Azure 门户的屏幕截图�
 现在，服务主体具有部署 Connector 所需的 Azure 权限。
 
 +
-如果要从多个 Azure 订阅部署 Cloud Volumes ONTAP ，则必须将服务主体绑定到每个订阅。使用 Cloud Manager ，您可以选择部署 Cloud Volumes ONTAP 时要使用的订阅。
+如果要从多个 Azure 订阅部署 Cloud Volumes ONTAP ，则必须将服务主体绑定到每个订阅。通过BlueXP、您可以选择要在部署Cloud Volumes ONTAP 时使用的订阅。
 
 
 
@@ -219,7 +219,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure 门户的屏幕截图，
 
 ==== 获取应用程序 ID 和目录 ID
 
-将 Azure 帐户添加到 Cloud Manager 时，您需要提供应用程序（客户端） ID 和目录（租户） ID 。Cloud Manager 使用 ID 以编程方式登录。
+将Azure帐户添加到BlueXP时、您需要提供应用程序(客户端) ID和目录(租户) ID。BlueXP使用ID以编程方式登录。
 
 .步骤
 . 在 * Azure Active Directory* 服务中，单击 * 应用程序注册 * 并选择应用程序。
@@ -233,7 +233,7 @@ image:screenshot_azure_app_ids.gif["显示 Azure Active Directory 中某个应�
 
 ==== 创建客户端密钥
 
-您需要创建客户端密钥，然后向 Cloud Manager 提供该密钥的值，以便 Cloud Manager 可以使用它向 Azure AD 进行身份验证。
+您需要创建客户端密钥、然后为BlueXP提供该密钥的值、以便BlueXP可以使用它向Azure AD进行身份验证。
 
 .步骤
 . 打开 * Azure Active Directory* 服务。
@@ -247,22 +247,22 @@ image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中�
 
 
 
-此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。添加 Azure 帐户时，您需要在 Cloud Manager 中输入此信息。
+此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。添加Azure帐户时、您需要在BlueXP中输入此信息。
 
 
 
-=== 将凭据添加到 Cloud Manager
+=== 将凭据添加到BlueXP
 
-在为 Azure 帐户提供所需权限后，您可以将该帐户的凭据添加到 Cloud Manager 中。完成此步骤后，您可以使用不同的 Azure 凭据启动 Cloud Volumes ONTAP 。
+在为Azure帐户提供所需权限后、您可以将该帐户的凭据添加到BlueXP。完成此步骤后，您可以使用不同的 Azure 凭据启动 Cloud Volumes ONTAP 。
 
-如果您刚刚在云提供商中创建了这些凭据，则可能需要几分钟的时间才能使用这些凭据。请等待几分钟，然后再将凭据添加到 Cloud Manager 。
+如果您刚刚在云提供商中创建了这些凭据，则可能需要几分钟的时间才能使用这些凭据。请等待几分钟、然后再将凭据添加到BlueXP。
 
-您需要先创建 Connector ，然后才能更改 Cloud Manager 设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
+您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
 
 .步骤
-. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 凭据 * 。
+. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图，显示 Cloud Manager 控制台右上角的设置图标。"]
+image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
 . 单击 * 添加凭据 * ，然后按照向导中的步骤进行操作。
 +
@@ -291,24 +291,24 @@ image:screenshot_accounts_switch_azure.gif["一个屏幕截图，显示在单击
 
 == 管理现有凭据
 
-通过关联 Marketplace 订阅，编辑凭据并将其删除，管理已添加到 Cloud Manager 的 Azure 凭据。
+通过关联Marketplace订阅、编辑凭据并将其删除、管理已添加到BlueXP的Azure凭据。
 
 
 
 === 将 Azure Marketplace 订阅与凭据关联
 
-将 Azure 凭据添加到 Cloud Manager 后，您可以将 Azure Marketplace 订阅与这些凭据相关联。通过订阅，您可以创建按需购买的 Cloud Volumes ONTAP 系统并使用其他 NetApp 云服务。
+将Azure凭据添加到BlueXP后、您可以将Azure Marketplace订阅与这些凭据相关联。通过订阅，您可以创建按需购买的 Cloud Volumes ONTAP 系统并使用其他 NetApp 云服务。
 
-在以下两种情况下，您可能会在将凭据添加到 Cloud Manager 后关联 Azure Marketplace 订阅：
+在以下两种情况下、您可能会在将凭据添加到BlueXP后关联Azure Marketplace订阅：
 
-* 最初将凭据添加到 Cloud Manager 时，您未关联订阅。
+* 最初将凭据添加到BlueXP时、您未关联订阅。
 * 您希望将现有 Azure Marketplace 订阅替换为新订阅。
 
 
-您需要先创建 Connector ，然后才能更改 Cloud Manager 设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
+您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
 
 .步骤
-. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 凭据 * 。
+. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
 . 单击一组凭据的操作菜单，然后选择 * 关联订阅 * 。
 +
 image:screenshot_azure_add_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
@@ -325,10 +325,10 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 
 === 编辑凭据
 
-通过修改 Azure 服务凭据的详细信息，在 Cloud Manager 中编辑 Azure 凭据。例如，如果为服务主体应用程序创建了新密钥，则可能需要更新客户端密钥。
+通过修改Azure服务凭据的详细信息、在BlueXP中编辑Azure凭据。例如，如果为服务主体应用程序创建了新密钥，则可能需要更新客户端密钥。
 
 .步骤
-. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 凭据 * 。
+. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
 . 单击一组凭据的操作菜单，然后选择 * 编辑凭据 * 。
 . 进行所需的更改，然后单击 * 应用 * 。
 
@@ -337,10 +337,10 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 
 === 正在删除凭据
 
-如果您不再需要一组凭据，可以从 Cloud Manager 中删除这些凭据。您只能删除与工作环境无关的凭据。
+如果您不再需要一组凭据、可以从BlueXP中删除这些凭据。您只能删除与工作环境无关的凭据。
 
 .步骤
-. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 凭据 * 。
+. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
 . 单击一组凭据的操作菜单，然后选择 * 删除凭据 * 。
 . 单击 * 删除 * 进行确认。
 

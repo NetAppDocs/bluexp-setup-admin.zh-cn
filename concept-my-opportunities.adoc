@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-my-opportunities.html 
 keywords: discover, discovering fsx, discover fsx, discovering, my opportunities, opportunities 
-summary: '在"画布"上、"我的商机"选项卡提供了一个集中位置、用于发现您可以添加到Cloud Manager中的现有资源、以便在混合多云中实现一致的数据服务和操作。' 
+summary: '在"画布"上、"我的商机"选项卡提供了一个集中位置、用于发现您可以添加到BlueXP中的现有资源、以便在混合多云中实现一致的数据服务和操作。' 
 ---
 = 我的商机
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: '在"画布"上、"我的商机"选项卡提供了一个集中位置、
 
 
 [role="lead"]
-在Canvas上、*我的商机*选项卡提供了一个集中位置、用于发现您可以添加到Cloud Manager中的现有资源、以便在混合多云中实现一致的数据服务和操作。
+在Canvas上、*我的商机*选项卡提供了一个集中位置、用于发现您可以添加到BlueXP中的现有资源、以便在混合多云中实现一致的数据服务和操作。
 
 目前、"我的商机"可以让您发现AWS帐户中现有的适用于ONTAP 文件系统的FSX。
 

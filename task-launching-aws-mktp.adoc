@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-launching-aws-mktp.html 
 keywords: install connector, create connector, deploy connector, installation, installing, marketplace, aws, launch, launching, ec2 console, iam role, govcloud, government, aws government, aws govcloud, gov marketplace 
-summary: 最好直接从 Cloud Manager 创建 Connector ，但如果您不想指定 AWS 访问密钥，则可以从 AWS Marketplace 启动 Connector 。创建并设置 Connector 后， Cloud Manager 将在您创建新的工作环境时自动使用它。 
+summary: 对于AWS商业区域、最好直接从BlueXP创建Connector、但如果愿意、您可以从AWS Marketplace启动Connector。对于AWS政府区域、您不能从BlueXP SaaS网站在政府区域部署Connector、因此、下一个最佳选择是从AWS Marketplace进行部署。 
 ---
 = 从 AWS Marketplace 创建 Connector
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 最好直接从 Cloud Manager 创建 Connector ，但如果您不想指
 
 
 [role="lead"]
-对于AWS商业区域、最好直接从Cloud Manager创建Connector、但如果愿意、您可以从AWS Marketplace启动Connector。对于AWS政府区域、您不能从Cloud Manager的SaaS网站在政府区域部署Connector、因此、下一个最佳选择是从AWS Marketplace进行部署。
+对于AWS商业区域、最好直接从BlueXP创建Connector、但如果愿意、您可以从AWS Marketplace启动Connector。对于AWS政府区域、您不能从BlueXP SaaS网站在政府区域部署Connector、因此、下一个最佳选择是从AWS Marketplace进行部署。
 
 
 TIP: 您还可以在网络或云中的现有Linux主机上下载并安装Connector软件。 link:task-installing-linux.html["了解如何在现有Linux主机上安装Connector"]。
@@ -23,7 +23,7 @@ TIP: 您还可以在网络或云中的现有Linux主机上下载并安装Connect
 
 == 在AWS商业区域创建Connector
 
-您可以直接从适用于Cloud Manager的AWS Marketplace产品在AWS商业区域启动Connector实例。
+您可以直接从适用于BlueXP的AWS Marketplace产品中在AWS商业区域启动Connector实例。
 
 创建Connector的IAM用户必须具有AWS Marketplace权限才能订阅和取消订阅。
 
@@ -34,7 +34,7 @@ TIP: 您还可以在网络或云中的现有Linux主机上下载并安装Connect
 .. 创建角色类型为 Amazon EC2 的 IAM 角色，并将您在上一步骤中创建的策略附加到该角色。
 
 
-. 转至 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace 上的 Cloud Manager 页面"^] 要从AMI部署Cloud Manager、请执行以下操作：
+. 转至 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP页面"^] 要从AMI部署连接器、请执行以下操作：
 . 在 Marketplace 页面上，单击 * 继续订阅 * ，然后单击 * 继续配置 * 。
 +
 image:screenshot_subscribe_cm.gif["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
@@ -42,12 +42,12 @@ image:screenshot_subscribe_cm.gif["屏幕截图显示了 AWS Marketplace 上的 
 . 更改任何默认选项，然后单击 * 继续启动 * 。
 . 在 * 选择操作 * 下，选择 * 通过 EC2 启动 * ，然后单击 * 启动 * 。
 +
-以下步骤介绍了如何从 EC2 控制台启动实例，因为控制台允许您将 IAM 角色附加到 Cloud Manager 实例。使用 * 从网站启动 * 操作无法实现这一点。
+以下步骤介绍了如何从EC2控制台启动实例、因为控制台允许您将IAM角色附加到Connector实例。使用 * 从网站启动 * 操作无法实现这一点。
 
 . 按照提示配置和部署实例：
 +
 ** *名称和标记*：输入实例的名称和标记。
-** *应用程序和操作系统映像*：跳过此部分。已选择Cloud Manager AMI。
+** *应用程序和操作系统映像*：跳过此部分。已选择连接器AMI。
 ** *实例类型*：根据区域可用性、选择支持的实例类型之一(建议使用T3.xlarge)。
 +
 link:task-installing-linux.html["查看实例要求"]。
@@ -61,7 +61,7 @@ link:task-installing-linux.html["查看实例要求"]。
 
 
 ** *配置存储*：保留默认存储选项。
-** *高级详细信息*：在* IAM intance profile*下、选择您在步骤1中创建的IAM角色。
+** *高级详细信息*：在* IAM实例配置文件*下、选择您在步骤1中创建的IAM角色。
 ** *摘要*：查看摘要、然后单击*启动实例*。
 +
 AWS 使用指定的设置启动软件。Connector 实例和软件应在大约五分钟内运行。
@@ -84,10 +84,10 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connec
 
 
 
-. 打开 Web 浏览器并转到 https://cloudmanager.netapp.com[] 开始将Connector与Cloud Manager结合使用。
+. 打开 Web 浏览器并转到 https://cloudmanager.netapp.com[] 开始将Connector与BlueXP结合使用。
 
 
-现在，您可以使用 NetApp 帐户安装并设置 Connector 。Cloud Manager 将在您创建新的工作环境时自动使用此 Connector 。但是，如果您有多个 Connector ，则需要 link:task-managing-connectors.html["在它们之间切换"]。
+现在，您可以使用 NetApp 帐户安装并设置 Connector 。在创建新的工作环境时、BlueXP将自动使用此Connector。但是，如果您有多个 Connector ，则需要 link:task-managing-connectors.html["在它们之间切换"]。
 
 如果您在创建Connector的同一AWS帐户中有Amazon S3存储分段、则会在Canvas上自动显示Amazon S3工作环境。 link:task-viewing-amazon-s3.html["详细了解如何使用此工作环境"]。
 
@@ -95,7 +95,7 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connec
 
 == 在AWS政府区域创建Connector
 
-要在AWS政府区域部署Connector、您需要转到EC2服务、然后从AWS Marketplace中选择Cloud Manager产品。
+要在AWS政府区域部署Connector、您需要转至EC2服务并从AWS Marketplace中选择BlueXP产品。
 
 .步骤
 . 在AWS中设置权限：
@@ -104,16 +104,16 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connec
 .. 创建角色类型为 Amazon EC2 的 IAM 角色，并将您在上一步骤中创建的策略附加到该角色。
 
 
-. 转到AWS Marketplace中的Cloud Manager产品。
+. 转到AWS Marketplace中的BlueXP产品。
 +
 IAM 用户必须具有 AWS Marketplace 权限才能订阅和取消订阅。
 
 +
 .. 打开EC2服务并选择*启动实例*。
 .. 选择* AWS Marketplace *。
-.. 搜索Cloud Manager并选择产品。
+.. 搜索BlueXP并选择产品。
 +
-image:screenshot-gov-cloud-mktp.png["在AWS Marketplace中搜索Cloud Manager产品后显示该产品的屏幕截图"]
+image:screenshot-gov-cloud-mktp.png["在AWS Marketplace中搜索BlueXP产品后显示该产品的屏幕截图"]
 
 .. 单击 * 继续 * 。
 
@@ -157,7 +157,7 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connec
 
 现在，您可以使用 NetApp 帐户安装并设置 Connector 。
 
-任何时候要使用Cloud Manager、请打开Web浏览器并连接到Connector实例的IP地址： https://_ipaddress_[]
+任何时候要使用BlueXP、请打开Web浏览器并连接到Connector实例的IP地址： https://_ipaddress_[]
 
 由于Connector部署在政府区域、因此无法从访问 https://cloudmanager.netapp.com[]。
 
@@ -165,7 +165,7 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connec
 
 == 打开端口3128以显示AutoSupport 消息
 
-如果您计划在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则Cloud Manager会自动将Cloud Volumes ONTAP 配置为使用Connector作为代理服务器。
+如果您计划在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则BlueXP会自动将Cloud Volumes ONTAP 配置为使用此连接器作为代理服务器。
 
 唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
 

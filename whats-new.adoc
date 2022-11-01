@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 了解 Cloud Manager 管理功能的新增功能，包括 NetApp 帐户，连接器，云提供商凭据等。 
+summary: '了解BlueXP (以前称为Cloud Manager)管理功能的新增功能：NetApp帐户、连接器、云提供商凭据等。' 
 ---
 = 新增功能
 :hardbreaks:
@@ -14,7 +14,13 @@ summary: 了解 Cloud Manager 管理功能的新增功能，包括 NetApp 帐户
 
 
 [role="lead"]
-了解 Cloud Manager 管理功能的新增功能： NetApp 帐户，连接器，云提供商凭据等。
+了解BlueXP (以前称为Cloud Manager)管理功能的新增功能：NetApp帐户、连接器、云提供商凭据等。
+
+
+
+== 2022年11月1日
+
+现在、当与您的帐户关联的刷新令牌在3个月后过期时、Cloud Manager将提示您更新与您的NetApp 支持站点 帐户关联的凭据。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["了解如何管理 NSS 帐户"^]
 
 
 

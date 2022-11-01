@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
-summary: 通过 Cloud Manager ，您可以选择部署 Cloud Volumes ONTAP 时要使用的 Azure 凭据。您可以使用初始 Azure 凭据部署所有 Cloud Volumes ONTAP 系统，也可以添加其他凭据。 
+summary: 通过BlueXP、您可以选择部署Cloud Volumes ONTAP 时要使用的Azure凭据。您可以使用初始 Azure 凭据部署所有 Cloud Volumes ONTAP 系统，也可以添加其他凭据。 
 ---
 = Azure 凭据和权限
 :hardbreaks:
@@ -14,19 +14,19 @@ summary: 通过 Cloud Manager ，您可以选择部署 Cloud Volumes ONTAP 时�
 
 
 [role="lead"]
-通过 Cloud Manager ，您可以选择部署 Cloud Volumes ONTAP 时要使用的 Azure 凭据。您可以使用初始 Azure 凭据部署所有 Cloud Volumes ONTAP 系统，也可以添加其他凭据。
+通过BlueXP、您可以选择部署Cloud Volumes ONTAP 时要使用的Azure凭据。您可以使用初始 Azure 凭据部署所有 Cloud Volumes ONTAP 系统，也可以添加其他凭据。
 
 
 
 == 初始 Azure 凭据
 
-从 Cloud Manager 部署 Connector 时，您需要使用有权部署 Connector 虚拟机的 Azure 帐户或服务主体。中列出了所需的权限 link:task-creating-connectors-azure.html["适用于 Azure 的连接器部署策略"]。
+从BlueXP部署Connector时、您需要使用有权部署Connector虚拟机的Azure帐户或服务主体。中列出了所需的权限 link:task-creating-connectors-azure.html["适用于 Azure 的连接器部署策略"]。
 
-当 Cloud Manager 在 Azure 中部署 Connector 虚拟机时，它会启用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系统分配的受管身份"^] 在虚拟机上，创建自定义角色并将其分配给虚拟机。此角色为 Cloud Manager 提供了管理该 Azure 订阅中的资源和流程的权限。 link:reference-permissions-azure.html["查看 Cloud Manager 如何使用权限"]。
+当BlueXP在Azure中部署Connector虚拟机时、它会启用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系统分配的受管身份"^] 在虚拟机上，创建自定义角色并将其分配给虚拟机。此角色为BlueXP提供了管理该Azure订阅中的资源和进程所需的权限。 link:reference-permissions-azure.html["查看BlueXP如何使用权限"]。
 
-image:diagram_permissions_initial_azure.png["一个概念映像，显示 Cloud Central 在 Azure 帐户和订阅中部署 Cloud Manager 。系统分配的受管身份将被启用，并为 Cloud Manager 虚拟机分配自定义角色。"]
+image:diagram_permissions_initial_azure.png["一个概念映像、显示了BlueXP在Azure帐户和订阅中部署Connector。系统分配的受管身份将被启用、并为Connector虚拟机分配自定义角色。"]
 
-在为 Cloud Volumes ONTAP 创建新工作环境时， Cloud Manager 会默认选择以下 Azure 凭据：
+默认情况下、在为Cloud Volumes ONTAP 创建新工作环境时、BlueXP会选择以下Azure凭据：
 
 image:screenshot_accounts_select_azure.gif["屏幕截图，显示 \"Details\" 和 \"amp\" ； \"Credentials\" 页面中的 \"Switch Account\" 选项。"]
 
@@ -44,7 +44,7 @@ image:screenshot_accounts_select_azure.gif["屏幕截图，显示 \"Details\" �
 
 image:diagram_permissions_multiple_azure.png["显示初始 Azure 帐户（通过自定义角色和托管身份接收权限）以及通过自定义角色和服务主体接收权限的其他两个帐户的概念映像。"]
 
-您可以这样做 link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["将帐户凭据添加到 Cloud Manager"] 提供有关 AD 服务主体的详细信息。
+您可以这样做 link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["将帐户凭据添加到BlueXP"] 提供有关 AD 服务主体的详细信息。
 
 添加另一组凭据后，您可以在创建新的工作环境时切换到这些凭据：
 
@@ -52,7 +52,7 @@ image:screenshot_accounts_switch_azure.gif["单击详细信息和 amp ；凭据�
 
 .市场部署和内部部署如何？
 ****
-以上各节介绍了从 NetApp Cloud Central 为 Connector 推荐的部署方法。您也可以从在 Azure 中部署 Connector link:task-launching-azure-mktp.html["Azure Marketplace"]，您可以 link:task-installing-linux.html["在内部安装 Connector"]。
+以上各节介绍了BlueXP中建议的Connector部署方法。您也可以从在 Azure 中部署 Connector link:task-launching-azure-mktp.html["Azure Marketplace"]，您可以 link:task-installing-linux.html["在内部安装 Connector"]。
 
 如果您使用 Marketplace ，则会以相同方式提供权限。您只需手动创建并设置 Connector 的托管身份，然后为任何其他帐户提供权限即可。
 
