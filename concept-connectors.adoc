@@ -37,7 +37,6 @@ summary: 大多数情况下，您需要在云或内部网络中部署 Connector 
 * 全局文件缓存
 * Google Cloud Storage发现
 * Kubernetes 集群
-* 监控
 * 内部 ONTAP 集群
 * StorageGRID
 
