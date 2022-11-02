@@ -96,8 +96,9 @@ image:screenshot_notification_filters.png["显示通知中心中可用的两种�
 
 您可以通过电子邮件发送特定类型的通知、以便即使未登录到BlueXP、您也能了解重要的系统活动。您可以向NetApp帐户中的任何用户或需要了解某些类型的系统活动的任何其他收件人发送电子邮件。
 
+[NOTE]
 ====
-* 目前、只有Cloud Sync 通过电子邮件发送通知。未来版本将添加其他服务。
+* 目前、只有Cloud Sync 和Cloud Backup通过电子邮件发送通知。未来版本将添加其他服务。
 * 如果Connector安装在无法访问Internet的站点上、则不支持发送电子邮件通知。
 
 

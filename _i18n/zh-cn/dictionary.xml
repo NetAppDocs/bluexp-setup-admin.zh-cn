@@ -765,7 +765,6 @@
   <block id="dad57e95fc9a5390302ad830888cbdb9" category="list-text">云备份</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="85eb427901278daf26f132cb3e076914" category="list-text">Kubernetes 集群</block>
-  <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="list-text">监控</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="list-text">内部 ONTAP 集群</block>
   <block id="d7c778975033347c9e67ffb83d3e7948" category="paragraph">以下服务需要使用连接器 * 。 not_* ：</block>
   <block id="a8435d00af3d55ea03fdb027caa5b23b" category="list-text">创建适用于 ONTAP 的 Amazon FSx 工作环境虽然创建工作环境不需要使用 Connector ，但需要使用它来创建和管理卷，复制数据以及将适用于 ONTAP 的 FSx 与 Data sense 和 Cloud Sync 等 NetApp 云服务集成。</block>
@@ -2162,7 +2161,6 @@
   <block id="6c73104e218372ccda6dc2d58fda524d" category="paragraph">例如、连接器是Cloud Volumes ONTAP 运行状况和运行的关键组件。如果某个连接器已关闭、则Cloud Volumes ONTAP PAYGO系统和基于容量的BYOL系统将在与某个连接器的通信中断14天后关闭。发生这种情况的原因是、Connector每天都会刷新系统上的许可。</block>
   <block id="b9c53fca7bb84d0455a2b4768b130e38" category="admonition">如果您的Cloud Volumes ONTAP 系统具有基于节点的BYOL许可证、则该系统会在14天后保持运行、因为该许可证已安装在Cloud Volumes ONTAP 系统上。</block>
   <block id="2538b2df52d923f09592be3b38238322" category="list-text">14 GB</block>
-  <block id="ee684612f76fd9e6afd18a46554f2ede" category="list-text">目前、只有Cloud Sync 通过电子邮件发送通知。未来版本将添加其他服务。</block>
   <block id="5fd245f2aeee830efb92d081af6a0e22" category="list-text">如果Connector安装在无法访问Internet的站点上、则不支持发送电子邮件通知。</block>
   <block id="288bb352dffecbb16aa463067359ba15" category="summary">默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS访问。您可以安装由证书颁发机构（ CA ）签名的证书、该证书提供比自签名证书更好的安全保护。</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">您需要先创建Connector、然后才能更改BlueXP设置。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
@@ -2643,4 +2641,5 @@
   <block id="a222de5f9a1db461954d4160797dfa76" category="sidebar">管理BlueXP</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP博客</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
+  <block id="0600a5fd997330da4629c9667c77df85" category="list-text">目前、只有Cloud Sync 和Cloud Backup通过电子邮件发送通知。未来版本将添加其他服务。</block>
 </blocks>
