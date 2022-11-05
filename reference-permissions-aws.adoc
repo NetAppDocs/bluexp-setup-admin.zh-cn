@@ -198,20 +198,22 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
         "s3:AbortMultipartUpload",
         "s3:ListMultipartUploadParts",
         "s3:DeleteBucket",
-		    "s3:GetObjectVersionTagging",
-			  "s3:GetObjectVersionAcl",
-	   		"s3:GetObjectRetention",
-	   		"s3:GetObjectTagging",
-	   		"s3:GetObjectVersion",
-	   		"s3:PutObjectVersionTagging",
-	   		"s3:PutObjectRetention",
-	   		"s3:DeleteObjectTagging",
-	   		"s3:DeleteObjectVersionTagging",
-	   		"s3:GetBucketObjectLockConfiguration",
-	   		"s3:GetBucketVersioning",
-	   		"s3:PutBucketObjectLockConfiguration",
-	   		"s3:PutBucketVersioning",
-	   		"s3:BypassGovernanceRetention"
+        "s3:GetObjectVersionTagging",
+        "s3:GetObjectVersionAcl",
+        "s3:GetObjectRetention",
+        "s3:GetObjectTagging",
+        "s3:GetObjectVersion",
+        "s3:PutObjectVersionTagging",
+        "s3:PutObjectRetention",
+        "s3:DeleteObjectTagging",
+        "s3:DeleteObjectVersionTagging",
+        "s3:GetBucketObjectLockConfiguration",
+        "s3:GetBucketVersioning",
+        "s3:PutBucketObjectLockConfiguration",
+        "s3:PutBucketVersioning",
+        "s3:BypassGovernanceRetention",
+        "s3:PutBucketPolicy",
+        "s3:PutBucketOwnershipControls"
       ],
       "Resource": [
         "arn:aws:s3:::netapp-backup-*"
@@ -762,6 +764,12 @@ Connector会发出以下API请求来管理Amazon S3中的备份：
 * S3 ： PutObjectRetention
 * S3 ： GetBucketLocation
 * S3 ： GetObjectVersion
+
+
+如果您对Cloud Volumes ONTAP 备份使用的AWS帐户与源卷使用的AWS帐户不同、则Connector会发出以下API请求：
+
+* S3 ： PutBucketPolicy
+* S3：PutBucketOwnershipControls.
 
 
 

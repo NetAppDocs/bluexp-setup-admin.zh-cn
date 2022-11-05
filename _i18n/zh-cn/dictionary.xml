@@ -2747,4 +2747,7 @@
   <block id="317850f59220c738a6550c8cc0fbd9c5" category="list-text">microsoft.ContainerService/managedClusters/ListClusterUserCredential/action</block>
   <block id="7df73b4d45ae40b78f71890397153a90" category="inline-link">了解如何创建服务帐户令牌</block>
   <block id="60b28f10e8222a1f3de55253077c373d" category="paragraph"><block ref="60b28f10e8222a1f3de55253077c373d" category="inline-link-rx"></block></block>
+  <block id="c188f3200de41a855c54a31c5e486db6" category="paragraph">如果您对Cloud Volumes ONTAP 备份使用的AWS帐户与源卷使用的AWS帐户不同、则Connector会发出以下API请求：</block>
+  <block id="4b9c42bf1853fa25d534302dbc43f035" category="list-text">S3 ： PutBucketPolicy</block>
+  <block id="fa4d7248969f7582be82c5aa4b15e08b" category="list-text">S3：PutBucketOwnershipControls.</block>
 </blocks>
