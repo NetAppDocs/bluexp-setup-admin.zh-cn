@@ -707,6 +707,9 @@ Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes 
 
 
 | microsoft.resources/tags或delete | 是的。 | 否 | 否 
+
+
+| 在创建期间对存储帐户进行加密 | microsoft.ManagedIdentity/userAssignedIdentities/assign/action | 是的。 | 是的。 | 否 
 |===
 
 

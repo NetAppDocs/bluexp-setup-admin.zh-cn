@@ -2750,4 +2750,36 @@
   <block id="c188f3200de41a855c54a31c5e486db6" category="paragraph">如果您对Cloud Volumes ONTAP 备份使用的AWS帐户与源卷使用的AWS帐户不同、则Connector会发出以下API请求：</block>
   <block id="4b9c42bf1853fa25d534302dbc43f035" category="list-text">S3 ： PutBucketPolicy</block>
   <block id="fa4d7248969f7582be82c5aa4b15e08b" category="list-text">S3：PutBucketOwnershipControls.</block>
+  <block id="c9c484fe908813be17fe13bbdeabfb1d" category="cell">在创建期间对存储帐户进行加密</block>
+  <block id="4d17b7f0d1f8c0ae69c0ec8d32fea349" category="summary">当您从云提供商的市场订阅BlueXP时、系统会将您重定向到BlueXP网站、您需要在该网站上保存订阅并将其与特定帐户关联。订阅后、每个订阅均可通过数字电子钱包进行管理。</block>
+  <block id="b01b1be092b95233172f870dc729234b" category="doc">管理PAYGO订阅和合同</block>
+  <block id="e858f445394700e621aa67dd8e3fe958" category="section-title">查看您的订阅</block>
+  <block id="9c1b3fb5f48f73ce89025933ec931382" category="paragraph">Digital Wallet提供了有关与您的BlueXP帐户和Astra (Astra使用BlueXP的计费服务)关联的每个PAYGO订阅和年度合同的详细信息。</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">从BlueXP导航菜单中、选择*监管&gt;数字电子钱包*。</block>
+  <block id="8c3682e85d7f4dbe8a46485082335dec" category="list-text">选择*订阅*。</block>
+  <block id="572e470335e0a6d55da05c732a01aed3" category="list-text">在查看订阅信息时、您可以按如下所示与表中的详细信息进行交互：</block>
+  <block id="6a1de13d318f22872902849cd26467b4" category="list-text">展开一行可查看更多详细信息。</block>
+  <block id="d61aec883b403c61da2d8d8e19d78473" category="inline-image-macro">数字电子邮件中订阅选项卡的屏幕截图、您可以在其中选择行末尾的箭头将其展开。</block>
+  <block id="3a9d2caf2b3b63f1b3ab7d00e469b158" category="paragraph"><block ref="3a9d2caf2b3b63f1b3ab7d00e469b158" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="56594b7222b35921f9fe676eadf6bbdf" category="inline-image-macro">表标题末尾的加号图标</block>
+  <block id="31ede6b5001222203bb2fe87698bcc3a" category="list-text">单击 <block ref="98b11313fea6c4106e5a3c018f0ffbc9" category="inline-image-macro-rx" type="image"></block> 可选择表中显示的列。</block>
+  <block id="c090ce3dc0b8ea780bfa95c666328c67" category="paragraph">请注意、默认情况下不会显示"术语"和"自动续订"列。自动续订列仅显示Azure合同的续订信息。</block>
+  <block id="48772efe35cdbabca3c0abdab7360b57" category="paragraph">请注意下表中显示的内容：</block>
+  <block id="4d34f1097f6c8b9cee28bca8b78bbee9" category="list-text">Start date</block>
+  <block id="d1686d74b72c58f44c6fceaf3011df0b" category="list-text">开始日期是您成功将订阅与您的帐户关联并开始计费的日期。</block>
+  <block id="716e98867696fbbeed00e3dcd1f76758" category="list-text">如果表中显示不适用、则目前无法从云提供商的API获取此信息。</block>
+  <block id="cd494d76449d5dfe0c0adfb2f3447761" category="list-text">合同</block>
+  <block id="8090b542b799e2f0268fddd048d44eda" category="list-text">如果您扩展了合同的详细信息、则数字电子钱包将显示您当前计划的可用内容：合同选项和单位(容量或节点数)。</block>
+  <block id="7f96d1365390f4c6a7c1befe0b068769" category="list-text">数字电子钱包将确定结束日期、以及合同是否将尽快续订、即将结束或是否已结束。</block>
+  <block id="d1d7830f95588ae511ee592eab47c2b0" category="list-text">如果您拥有AWS合同、并且在开始日期之后更改了合同的任何选项、请务必从AWS验证您的合同选项。</block>
+  <block id="6942b724002d90bb0f705f478cdd6bf3" category="section-title">管理您的订阅</block>
+  <block id="ac3dad7b0d90a8896f44e77f84726619" category="paragraph">您可以通过重命名订阅并选择与订阅关联的帐户、从数字电子钱包中管理订阅。</block>
+  <block id="23531331db8be0d13d9ce3c0685c0c8e" category="paragraph"><block ref="23531331db8be0d13d9ce3c0685c0c8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="79e4d47d0339f23eefd594d30e729f96" category="list-text">选择重命名订阅或管理与订阅关联的NetApp帐户。</block>
+  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
+  <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">连接器3.9.23</block>
+  <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">您的BlueXP PAYGO订阅和年度合同现在可从Digital Wallet查看和管理。</block>
+  <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">了解如何管理您的订阅</block>
+  <block id="ee0a02cf5f32853f4619caef4f31ab4e" category="paragraph"><block ref="ee0a02cf5f32853f4619caef4f31ab4e" category="inline-link-rx"></block></block>
+  <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
 </blocks>

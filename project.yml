@@ -81,6 +81,8 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: 默认配置
         url: "/reference-connector-default-config.html"
+    - title: 订阅
+      url: "/task-manage-subscriptions.html"
     - title: 已发现云存储
       entries:
       - title: 查看Amazon S3存储分段

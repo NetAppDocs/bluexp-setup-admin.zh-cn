@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-manage-subscriptions.html 
+keywords: digital wallet, subscriptions, paygo subscriptions, contracts, annual contracts 
+summary: 当您从云提供商的市场订阅BlueXP时、系统会将您重定向到BlueXP网站、您需要在该网站上保存订阅并将其与特定帐户关联。订阅后、每个订阅均可通过数字电子钱包进行管理。 
+---
+= 管理PAYGO订阅和合同
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+当您从云提供商的市场订阅BlueXP时、系统会将您重定向到BlueXP网站、您需要在该网站上保存订阅并将其与特定帐户关联。订阅后、每个订阅均可通过数字电子钱包进行管理。
+
+
+
+== 查看您的订阅
+
+Digital Wallet提供了有关与您的BlueXP帐户和Astra (Astra使用BlueXP的计费服务)关联的每个PAYGO订阅和年度合同的详细信息。
+
+.步骤
+. 从BlueXP导航菜单中、选择*监管>数字电子钱包*。
+. 选择*订阅*。
++
+您将只看到与当前正在查看的帐户关联的订阅。
+
+. 在查看订阅信息时、您可以按如下所示与表中的详细信息进行交互：
++
+** 展开一行可查看更多详细信息。
++
+image:screenshot-subscriptions-expand.png["数字电子邮件中订阅选项卡的屏幕截图、您可以在其中选择行末尾的箭头将其展开。"]
+
+** 单击 image:icon-column-selector.png["表标题末尾的加号图标"] 可选择表中显示的列。
++
+请注意、默认情况下不会显示"术语"和"自动续订"列。自动续订列仅显示Azure合同的续订信息。
+
+
+
++
+请注意下表中显示的内容：
+
++
+Start date:: 开始日期是您成功将订阅与您的帐户关联并开始计费的日期。
+不适用:: 如果表中显示不适用、则目前无法从云提供商的API获取此信息。
+合同::
++
+--
+** 如果您扩展了合同的详细信息、则数字电子钱包将显示您当前计划的可用内容：合同选项和单位(容量或节点数)。
+** 数字电子钱包将确定结束日期、以及合同是否将尽快续订、即将结束或是否已结束。
+** 如果您拥有AWS合同、并且在开始日期之后更改了合同的任何选项、请务必从AWS验证您的合同选项。
+
+
+--
+
+
+
+
+
+
+== 管理您的订阅
+
+您可以通过重命名订阅并选择与订阅关联的帐户、从数字电子钱包中管理订阅。
+
+例如，假设您有两个帐户，每个帐户都通过单独的订阅付费。您可能会解除某个订阅与某个帐户的关联，以便该帐户中的用户在创建 Cloud Volume ONTAP 工作环境时不会意外选择错误的订阅。
+
+.步骤
+. 从BlueXP导航菜单中、选择*监管>数字电子钱包*。
+. 选择*订阅*。
+. 单击与要管理的订阅对应的行中的操作菜单。
++
+image:screenshot-subscription-menu.png["订阅的操作菜单的屏幕截图。"]
+
+. 选择重命名订阅或管理与订阅关联的NetApp帐户。
+
