@@ -13,6 +13,7 @@ summary: 借助BlueXP、IT专家和云架构师可以使用NetApp的云解决方
 :imagesdir: ./media/
 
 
+[role="lead"]
 借助BlueXP (以前称为Cloud Manager)、IT专家和云架构师可以使用NetApp的云解决方案集中管理其混合多云基础架构。
 
 

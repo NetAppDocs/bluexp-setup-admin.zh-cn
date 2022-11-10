@@ -1465,7 +1465,6 @@
   <block id="0c5f74a83e5cbc5c6c230dd0caf096f7" category="inline-link">适用于商业区域的Azure Marketplace页面</block>
   <block id="5fb9ace1b2fee444b848b1ad1c5d886c" category="list-text"><block ref="5fb9ace1b2fee444b848b1ad1c5d886c" category="inline-link-rx"></block></block>
   <block id="8ac340f924d72696326df51a32dbdee5" category="inline-link">Azure政府区域的Azure Marketplace页面</block>
-  <block id="d60d2a63a86471881f173bb3041b00f7" category="list-text"><block ref="d60d2a63a86471881f173bb3041b00f7" category="inline-link-rx"></block></block>
   <block id="da14ee4a8100ac08980150bcda1e397d" category="inline-link-macro">了解Connector的默认配置</block>
   <block id="84fc34721c0c912a148a70d22ac7cd5a" category="paragraph"><block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="2fc22405cb36e8596d9bdb7b52cbf10c" category="paragraph">您可能希望在部署连接器之前或需要对任何问题进行故障排除时了解有关连接器的更多信息。</block>
@@ -2782,4 +2781,5 @@
   <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
   <block id="9683999221dec5e41e35756b2a8aee04" category="list-text">此映像的操作系统为Red Hat Enterprise Linux 8.6。</block>
   <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
+  <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
 </blocks>
