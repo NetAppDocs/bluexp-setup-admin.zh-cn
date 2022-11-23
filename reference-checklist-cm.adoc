@@ -98,7 +98,6 @@ Connector 的出站网络连接:: 登录到BlueXP后、BlueXP帐户管理员需�
 |===
 * 如果您选择在自己的Linux主机上手动安装Connector (而不是直接从BlueXP界面安装)、则Connector的安装程序需要在安装过程中访问以下端点：
 +
-** https://dl.fedoraProject.org/pub/epel/epEl-release-latest-7.noarch.rpm
 ** https://s3.amazonaws.com/aws-cli/awscri-bundle.zip
 ** https://*.blob.core.windows.net 或 https://hub.docker.com
 +

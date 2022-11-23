@@ -30,8 +30,8 @@ TIP: 您还可以在网络或云中的现有Linux主机上下载并安装Connect
 .步骤
 . 在AWS中设置权限：
 +
-.. 在IAM控制台中、通过复制和粘贴内容来创建您自己的策略 link:reference-permissions-aws.html["Connector的IAM策略"]。
-.. 创建角色类型为 Amazon EC2 的 IAM 角色，并将您在上一步骤中创建的策略附加到该角色。
+.. 在IAM控制台中、通过复制和粘贴内容来创建所需的策略 link:reference-permissions-aws.html["Connector的IAM策略"]。
+.. 创建角色类型为Amazon EC2的IAM角色、并将上一步中创建的策略附加到该角色。
 
 
 . 转至 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP页面"^] 要从AMI部署连接器、请执行以下操作：

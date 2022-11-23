@@ -64,7 +64,6 @@ Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果�
 出站 Internet 访问:: 在安装过程中、Connector的安装程序必须访问以下URL：
 +
 --
-* https://dl.fedoraProject.org/pub/epel/epEl-release-latest-7.noarch.rpm
 * https://s3.amazonaws.com/aws-cli/awscri-bundle.zip
 * https://*.blob.core.windows.net 或 https://hub.docker.com
 +

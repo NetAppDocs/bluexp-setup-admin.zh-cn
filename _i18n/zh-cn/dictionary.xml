@@ -149,7 +149,6 @@
   <block id="2dbbb3b6b99aebde1c79427caf3046e0" category="list-text"><block ref="02c78f765c83c4fb4a0370471b089610" category="inline-xref-macro-rx"></block></block>
   <block id="0db58c0529496c0e926af5f8c9002335" category="list-text"><block ref="60d271fc50ad3f5d03a8767578822d7b" category="inline-xref-macro-rx"></block></block>
   <block id="6fca6b826d3e4d0980a08d26e6cf905f" category="section-title">在另一个帐户中担任 IAM 角色以授予权限</block>
-  <block id="7ab2c48379bd2eb50d8191dc807ded90" category="list-text">转到要部署 Cloud Volumes ONTAP 的目标帐户中的 IAM 控制台。</block>
   <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">在访问管理下，单击 * 角色 &gt; 创建角色 * ，然后按照步骤创建角色。</block>
   <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">请务必执行以下操作：</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。</block>
@@ -159,7 +158,6 @@
   <block id="e7e95c3a4b88e02526b2bf48eb3cff3b" category="section-title">通过提供 AWS 密钥授予权限</block>
   <block id="47d50d25f4b51617534e107d21701e80" category="inline-link">AWS 文档：创建 IAM 策略</block>
   <block id="8466ec46633472a027af5c909c923782" category="paragraph"><block ref="8466ec46633472a027af5c909c923782" category="inline-link-rx"></block></block>
-  <block id="923890d009c62cd46ebbcc491c981264" category="list-text">将策略附加到 IAM 角色或 IAM 用户。</block>
   <block id="001eb8189b805b3dbf012a0955d8682f" category="inline-link">AWS 文档：创建 IAM 角色</block>
   <block id="f470dc03b4486f269b32bef6a5d721d1" category="list-text"><block ref="f470dc03b4486f269b32bef6a5d721d1" category="inline-link-rx"></block></block>
   <block id="ae447524ca7a094fbd322687e0154e93" category="inline-link">AWS 文档：添加和删除 IAM 策略</block>
@@ -896,7 +894,6 @@
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">升级 Connector 及其 Docker 组件。</block>
-  <block id="1608afc958ae647f4bdf5b85e8f9a7b3" category="list-text">https://dl.fedoraProject.org/pub/epel/epEl-release-latest-7.noarch.rpm</block>
   <block id="66f9783489f42faf5074015874cb1c5f" category="list-text">https://s3.amazonaws.com/aws-cli/awscri-bundle.zip</block>
   <block id="b0d26ef113a60166d94bd96f9067b52b" category="list-text">https://*.blob.core.windows.net 或 https://hub.docker.com</block>
   <block id="35bd57a4dcfbd7a695f9beb7d01913c6" category="paragraph">主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。</block>
@@ -1356,7 +1353,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
   <block id="f350efde95c992c9fb3c75c0e8aefcf0" category="list-text">在 * 角色 * 选项卡中，选择 * Azure SetupAsService* 角色，然后单击 * 下一步 * 。</block>
-  <block id="448746f589ceea8f1b3191a05fe6c57c" category="paragraph">将 AWS 凭据添加到 Connector ，以便它可以在其他 AWS 帐户中部署和管理 Cloud Volumes ONTAP 。您可以在其他帐户中提供 IAM 角色的 ARN ，也可以提供 AWS 访问密钥。</block>
   <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022 年 2 月 27 日</block>
   <block id="3ac47455b10c6fb4061a70a91fdbfde2" category="section-title">2022 年 1 月 30 日</block>
   <block id="586301717819197e24001cac47efdaaa" category="section-title">2022 年 1 月 2 日</block>
@@ -1574,9 +1570,7 @@
   <block id="5e56842d0cfbf695522e945a01570eba" category="paragraph"><block ref="5e56842d0cfbf695522e945a01570eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b434da4c5ce39b5e4a95ec5159a66676" category="list-text">输入姓名、电子邮件地址、选择收件人将收到的通知类型、然后单击*添加新收件人*。</block>
   <block id="19d38e2a40bebb64998474cbec167167" category="list-text">向现有Connector添加其他AWS凭据</block>
-  <block id="2d85cb7a34de23c6b7db0459f207a310" category="paragraph">通过向现有连接器添加新的 AWS 凭据，您可以使用同一连接器在另一个 AWS 帐户中部署 Cloud Volumes ONTAP 。 <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>。</block>
   <block id="f63d604edef29843d35ad367e0d82814" category="inline-link">了解如何为适用于 ONTAP 的 FSX 设置权限</block>
-  <block id="38d6d2ec27372e53c82e1227b5be44d4" category="section-title">向Connector添加其他凭据</block>
   <block id="875232e8c1abaa42024ddc396bcef6da" category="list-text">创建包含创建Connector所需权限的策略。</block>
   <block id="8dbc816059e1b421ecb65c693d5f2171" category="paragraph">现在、您可以在创建新Connector时使用这些凭据。</block>
   <block id="c3d36b4a46dce16b3ad60eecabc87582" category="list-text">Amazon S3发现</block>
@@ -1780,14 +1774,9 @@
   <block id="c5078b96055d6b776ee265ca4c7650c2" category="paragraph">您还需要确保角色是最新的、因为在后续版本中添加了新权限。</block>
   <block id="92ec95b8916ebc493b6546010073c81f" category="section-title">如何使用Azure权限</block>
   <block id="ab75cfa6ae53348a737404e49985eb65" category="paragraph">如果有新版本的 Connector 软件可用，则这些软件将发布到 NetApp 支持站点。 <block ref="f17f7484922764d58b748b63a8956073" category="inline-link-macro-rx"></block>。</block>
-  <block id="4e1f839391e849a6065024e60ace4c38" category="section-title">IAM策略</block>
-  <block id="d4d0602f330087eb24859ead29d741c3" category="paragraph">下面显示的IAM策略提供了Connector根据您的AWS区域管理公有 云环境中的资源和流程所需的权限。</block>
-  <block id="4862cb85107f653706d201ef95242294" category="paragraph">如果您从AWS Marketplace部署Connector、或者在Linux主机上手动安装Connector、则需要自己设置策略。</block>
   <block id="222ddb2f355a49f64fb3858123f2b97b" category="open-title">标准区域</block>
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="open-title">GovCloud (美国)地区</block>
   <block id="a8416eae2db8c97eb943559351fab358" category="open-title">C2S环境</block>
-  <block id="6686aeeff6eb0de250e6d134bb4b8cd5" category="list-text">通过复制和粘贴内容来创建策略 <block ref="9b22ee86ed2d831066d00816566458ca" category="inline-link-macro-rx"></block>。</block>
-  <block id="f3a061f1a8165759dd31c8b1fe6bda72" category="list-text">在IAM控制台中、通过复制和粘贴内容来创建策略 <block ref="9b22ee86ed2d831066d00816566458ca" category="inline-link-macro-rx"></block>。</block>
   <block id="3d35bba2e5ea6e739fb94736dc402017" category="inline-link">查看适用于 ONTAP 的 FSX 所需的权限</block>
   <block id="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="list-text"><block ref="df00618b6e4c6f7fcb9a7fbb4c65b54e" category="inline-link-rx"></block></block>
   <block id="d2ec6bce44b6da11cd78a79db47dd385" category="inline-link-macro">查看连接器部署策略</block>
@@ -2278,8 +2267,6 @@
   <block id="9c92b299186eaf0673a98ba9b40f21d8" category="paragraph">通过BlueXP、您可以通过以下几种方式提供AWS凭据：与Connector实例关联的IAM角色、在可信帐户中担任IAM角色或提供AWS访问密钥。 <block ref="327ad200be450c94b449dea92a32b142" category="inline-link-macro-rx"></block>。</block>
   <block id="dac708f9ff7b3626ce8ac5a2ec42c9cf" category="paragraph">对于前两个选项、BlueXP使用AWS安全令牌服务获取持续轮换的临时凭据。此过程是最佳实践，因为它是自动的，并且安全。</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">如果您为BlueXP提供了AWS访问密钥、则应定期在BlueXP中更新这些密钥以轮换使用。这是一个完全手动的过程。</block>
-  <block id="a048177d059588f14caf812603cfdd39" category="paragraph">在将其他 AWS 凭据添加到 Connector 之前，您需要提供所需的权限。通过这些权限、BlueXP可以管理该AWS帐户中的资源和进程。如何提供权限取决于您是要为BlueXP提供受信任帐户或AWS密钥中某个角色的ARN。</block>
-  <block id="84576afbb5fec67a524a7228418c58be" category="admonition">在从BlueXP部署Connector时、BlueXP会自动为部署此Connector的帐户添加AWS凭据。如果您在现有系统上手动安装了 Connector 软件，则不会添加此初始帐户。 <block ref="36da95d92772c6b5e5c7802773061f54" category="inline-link-macro-rx"></block>。</block>
   <block id="cc9abb75b8a4618db30dc1fa4729b191" category="paragraph">您可以使用 IAM 角色在部署 Connector 实例的源 AWS 帐户与其他 AWS 帐户之间设置信任关系。然后、您可以为BlueXP提供可信帐户中IAM角色的ARN。</block>
   <block id="2a486959a51570756bb9f881e508d399" category="list-text">复制IAM角色的角色ARN、以便稍后将其粘贴到BlueXP中。</block>
   <block id="c9c2739152f3fc14fabc2dda4c1578c8" category="paragraph">如果要为BlueXP为IAM用户提供AWS密钥、则需要向该用户授予所需的权限。BlueXP IAM策略定义了允许BlueXP使用的AWS操作和资源。</block>
@@ -2340,7 +2327,6 @@
   <block id="9103937d6e94a5d3e88276d85254bdff" category="paragraph">如果您计划在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则BlueXP会自动将Cloud Volumes ONTAP 配置为使用此连接器作为代理服务器。</block>
   <block id="0e4e5198cc4ce7f534d554683573c921" category="summary">当BlueXP在AWS中启动Connector实例时、它会向此实例附加一个策略、此策略可为Connector提供管理该AWS帐户中资源和进程的权限。Connector使用这些权限对多个AWS服务进行API调用、包括EC2、S3、CloudFormation、IAM、 密钥管理服务等。</block>
   <block id="30782d3f448f611988824827b71e6b96" category="paragraph">当BlueXP在AWS中启动Connector实例时、它会向此实例附加一个策略、此策略可为Connector提供管理该AWS帐户中资源和进程的权限。Connector使用这些权限对多个AWS服务进行API调用、包括EC2、S3、CloudFormation、IAM、 密钥管理服务(KMS)等。</block>
-  <block id="025d94cf0afe9214e325eed1d6fcb08e" category="paragraph">直接从BlueXP创建Connector时、BlueXP会自动将此策略应用于Connector。</block>
   <block id="fa63e1e893cffd937dfc1bfa0546daf3" category="summary">您可以监控BlueXP正在执行的操作的状态、以查看是否存在需要解决的任何问题。您可以在通知中心、时间线中查看状态、也可以向您的电子邮件发送通知。</block>
   <block id="1e687a002fd0b9a542bf652069246ebb" category="paragraph">通知可跟踪您在BlueXP中启动的操作的进度、以便您可以验证操作是否成功。您可以通过它们查看当前登录会话期间启动的许多BlueXP操作的状态。目前、并非所有服务都会将信息报告到通知中心。</block>
   <block id="07ab717203091859eadd0800a6760a62" category="paragraph">此外、您还可以将BlueXP配置为通过电子邮件发送通知、以便即使未登录到系统、您也能了解重要的系统活动。您可以向NetApp云帐户中的任何用户或需要了解某些类型的系统活动的任何其他收件人发送电子邮件。请参见 <block ref="2fb0285882e9333d924eb054161cd903" category="inline-xref-macro-rx"></block> 。</block>
@@ -2782,4 +2768,28 @@
   <block id="9683999221dec5e41e35756b2a8aee04" category="list-text">此映像的操作系统为Red Hat Enterprise Linux 8.6。</block>
   <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
   <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
+  <block id="2e5620a6569fc852b94b7e03a147a125" category="paragraph">将AWS凭据添加到现有连接器可提供在公有 云环境中管理资源和进程所需的权限。 <block ref="568ce14d3cdae759e790bc127b222228" category="inline-xref-macro-rx"></block>。</block>
+  <block id="2107472aff38cfdebba436df3f42b23b" category="section-title">向 Connector 添加凭据</block>
+  <block id="3b463d710672b6b69227759d4e8c954d" category="paragraph">将AWS凭据添加到Connector、以便其拥有在公有 云环境中管理资源和流程所需的权限。您可以在其他帐户中提供 IAM 角色的 ARN ，也可以提供 AWS 访问密钥。</block>
+  <block id="c482e377fe0af4cde6c8150a691978b5" category="paragraph">在将AWS凭据添加到Connector之前、您需要提供所需的权限。通过这些权限、BlueXP可以管理该AWS帐户中的资源和进程。如何提供权限取决于您是要为BlueXP提供受信任帐户或AWS密钥中某个角色的ARN。</block>
+  <block id="907d45cdba89ff9735d0c51d08c2c193" category="admonition">如果您从BlueXP部署了Connector、则BlueXP会自动为部署此Connector的帐户添加AWS凭据。如果您从AWS Marketplace部署了Connector或在现有系统上手动安装了Connector软件、则不会添加此初始帐户。 <block ref="36da95d92772c6b5e5c7802773061f54" category="inline-link-macro-rx"></block>。</block>
+  <block id="2c76935f38c3f21d03c203f5311fc4f4" category="list-text">转到要为Connector提供权限的目标帐户中的IAM控制台。</block>
+  <block id="d8abc68ad3edce81a2a9f0c17b141c80" category="inline-link-macro">Connector的IAM策略</block>
+  <block id="c2e4546cbde31fc634ce4d7fcdec56bb" category="list-text">通过复制和粘贴内容来创建所需的策略 <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
+  <block id="357f29ef130f7ac8015a481d6e7c76f7" category="list-text">在IAM控制台中、通过复制和粘贴内容来创建策略 <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
+  <block id="681f994cad6161982250b03f44510310" category="list-text">将策略附加到IAM角色或IAM用户。</block>
+  <block id="c1141a37b962270fc1e8960233830c99" category="section-title">IAM策略</block>
+  <block id="d169cac20ae3e0b6b9cec32d273de5f2" category="paragraph">下面提供的IAM策略为Connector提供了根据您的AWS区域管理公有 云环境中的资源和流程所需的权限。</block>
+  <block id="74b6a526e505305f967084e06fa6aaf3" category="paragraph">如果您直接从BlueXP在标准AWS区域中创建Connector、则BlueXP会自动将策略应用到Connector。在这种情况下、您无需执行任何操作。</block>
+  <block id="fb86f9a9f53ddf38f2b2297b0200b8a3" category="paragraph">如果您从AWS Marketplace部署Connector、或者在Linux主机上手动安装Connector、则需要自己设置策略。</block>
+  <block id="b8502b99c36d378968d3d20a7561e523" category="paragraph">此外、您还需要确保在后续版本中添加新权限时策略保持最新。</block>
+  <block id="de16d176ab7c6c01a7ce45f2e7213194" category="paragraph">选择您所在的区域以查看所需的策略：</block>
+  <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">对于标准区域、权限会分布在两个策略中。由于AWS中受管策略的字符大小上限、因此需要使用两个策略。</block>
+  <block id="989bc9b22ba83d48ca30cdc4d2a0cbb8" category="paragraph">第一个策略为以下服务提供权限：</block>
+  <block id="bf43596ea2ef9041f13ded2298cba686" category="paragraph">第二个策略为以下服务提供权限：</block>
+  <block id="6db3bf95be125a91f9ff9118d152f966" category="list-text">附加模板标记</block>
+  <block id="995c7db8420cf7c1d22ec979a1f735ba" category="open-title">策略1</block>
+  <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">策略2</block>
+  <block id="d094d5c78e8dbf27acd1a70c29b4b863" category="list-text">在IAM控制台中、通过复制和粘贴内容来创建所需的策略 <block ref="ee2fdef0fe1bd713e3c2d2a78c0fdb68" category="inline-link-macro-rx"></block>。</block>
+  <block id="a6a23d0964b870781db3c2557ec3583c" category="list-text">创建角色类型为Amazon EC2的IAM角色、并将上一步中创建的策略附加到该角色。</block>
 </blocks>
