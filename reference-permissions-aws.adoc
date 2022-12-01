@@ -31,6 +31,7 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 选择您所在的区域以查看所需的策略：
 
 .标准区域
+[%collapsible]
 ====
 对于标准区域、权限会分布在两个策略中。由于AWS中受管策略的字符大小上限、因此需要使用两个策略。
 
@@ -401,6 +402,7 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 =====
 ====
 .GovCloud (美国)地区
+[%collapsible]
 ====
 [source, json]
 ----
@@ -562,6 +564,7 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 ----
 ====
 .C2S环境
+[%collapsible]
 ====
 [source, json]
 ----

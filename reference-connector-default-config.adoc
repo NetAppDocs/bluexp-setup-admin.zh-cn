@@ -108,7 +108,6 @@ Connector 安装文件夹位于以下位置：
 
 * 7 邮政编码
 * AWSCLI
-* Docker
 * Java
 * Kubectl
 * MySQL

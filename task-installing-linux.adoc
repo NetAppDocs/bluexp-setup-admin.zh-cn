@@ -49,6 +49,7 @@ GCP 计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建
 * Red Hat Enterprise Linux 7.7
 * Red Hat Enterprise Linux 7.8
 * Red Hat Enterprise Linux 7.9
+* Red Hat Enterprise Linux 8.6
 +
 Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果未注册，则在安装 Connector 期间，系统无法访问存储库来更新所需的第三方软件。
 
@@ -61,6 +62,7 @@ Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果�
 虚拟机管理程序:: 经过认证可运行 CentOS 或 Red Hat Enterprise Linux 的裸机或托管虚拟机管理程序https://access.redhat.com/certified-hypervisors["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
 /var 中的磁盘空间:: 必须有 20 GiB 的可用空间
+Docker 引擎:: 在安装 Connector 之前，主机上需要安装 Docker 引擎版本 19 或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]
 出站 Internet 访问:: 在安装过程中、Connector的安装程序必须访问以下URL：
 +
 --
@@ -91,6 +93,12 @@ Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果�
 
 
 .步骤
+. 验证 Docker 是否已启用且正在运行。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
 . 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
 +
 有关在 AWS 中将文件连接和复制到 EC2 实例的帮助，请参见 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html["AWS 文档：使用 SSH 连接到 Linux 实例"^]。
@@ -99,7 +107,7 @@ Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果�
 +
 [source, cli]
 ----
-chmod +x OnCommandCloudManager-V3.9.19.sh
+chmod +x OnCommandCloudManager-V3.9.23.sh
 ----
 . 运行安装脚本。
 +
@@ -108,24 +116,8 @@ chmod +x OnCommandCloudManager-V3.9.19.sh
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.19.sh [silent] [proxy=ipaddress] [proxyport=port] [proxyuser=user_name] [proxypwd=password]
+ ./OnCommandCloudManager-V3.9.23.sh --proxy http://occm:password@10.0.0.30:9090/ --cacert /root/rootca.pem
 ----
-+
-_silent_ 运行安装时不提示您提供信息。
-
-+
-如果主机位于代理服务器后端，则需要 _proxy_ 。
-
-+
-_proxyport_ 是代理服务器的端口。
-
-+
-_proxyuser_ 是代理服务器的用户名，前提是需要进行基本身份验证。
-
-+
-_proxywd_ 是您指定的用户名的密码。
-
-. 除非指定了 silent 参数，否则请输入 * 。 Y* 以继续安装。
 +
 此时将安装Connector。在安装结束时、如果您指定了代理服务器、则Connector服务(occa)将重新启动两次。
 

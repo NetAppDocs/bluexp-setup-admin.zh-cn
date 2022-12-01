@@ -48,7 +48,6 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Compute/virtualMachines/start/action",
                     "Microsoft.Compute/virtualMachines/vmSizes/read",
                     "Microsoft.Compute/virtualMachines/write",
-                    "Microsoft.Compute/images/write",
                     "Microsoft.Compute/images/read",
                     "Microsoft.Network/locations/operationResults/read",
                     "Microsoft.Network/locations/operations/read",
@@ -79,9 +78,9 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Storage/storageAccounts/listkeys/action",
                     "Microsoft.Storage/storageAccounts/read",
                     "Microsoft.Storage/storageAccounts/delete",
-                    "Microsoft.Storage/storageAccounts/regeneratekey/action",
                     "Microsoft.Storage/storageAccounts/write",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+                    "Microsoft.Storage/storageAccounts/blobServices/containers/write",
                     "Microsoft.Storage/usages/read",
                     "Microsoft.Compute/snapshots/write",
                     "Microsoft.Compute/snapshots/read",
@@ -94,8 +93,6 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Network/loadBalancers/write",
                     "Microsoft.Network/loadBalancers/delete",
                     "Microsoft.Network/loadBalancers/backendAddressPools/read",
-                    "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
-                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
                     "Microsoft.Network/loadBalancers/loadBalancingRules/read",
                     "Microsoft.Network/loadBalancers/probes/read",
                     "Microsoft.Network/loadBalancers/probes/join/action",
@@ -740,4 +737,26 @@ Connector发出以下API请求、以发现和管理Azure Kubernetes Service (AKS
 * microsoft.resources/subscriptions/resources/resources/read
 * microsoft.ContainerService/managedClusters/Read
 * microsoft.ContainerService/managedClusters/ListClusterUserCredential/action
+
+
+
+
+== 更改日志
+
+添加和删除权限后、我们将在以下各节中记录这些权限。
+
+
+
+=== 2022年12月1日
+
+已将以下权限添加到JSON策略中。它是Cloud Backup和Cloud Tiering所必需的。
+
+microsoft.Storage/storageAccounts"(存储帐户)/blobServices/容器/写入
+
+已从JSON策略中删除以下权限。不再需要它们。
+
+* Microsoft.Compute/images/write
+* Microsoft.Network/loadBalancers/backendAddressPools/join/action
+* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
+* microsoft.Storage/storageAccounts/重新 生成密钥/操作
 
