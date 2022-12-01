@@ -2784,8 +2784,6 @@
   <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">更改日志</block>
   <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">添加和删除权限后、我们将在以下各节中记录这些权限。</block>
   <block id="a6123430b152ca358cd64ba937f6f1b9" category="section-title">2022年12月1日</block>
-  <block id="2b4c0f2b7b106fa61101f47cad35238a" category="paragraph">已将以下权限添加到JSON策略中。它是Cloud Backup和Cloud Tiering所必需的。</block>
-  <block id="a8a929fafb2eb09e993d8c797a52b5ef" category="paragraph">已从JSON策略中删除以下权限。不再需要它们。</block>
   <block id="ac692d638162a1dc479fa6a76fb4e114" category="list-text">Microsoft.Compute/images/write</block>
   <block id="61d40b12dddcd9e571bbe7a89b0fbae8" category="list-text">Microsoft.Network/loadBalancers/backendAddressPools/join/action</block>
   <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
@@ -2796,4 +2794,8 @@
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">从支持注册页面找到您的帐户ID序列号。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">复制上述第2步中的帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
+  <block id="0b4c13076b9b5e7ba5fa39333693ef77" category="paragraph">已向JSON策略添加以下权限：</block>
+  <block id="e9c8bdcc91d25115e46e6c43d23fe563" category="paragraph">Cloud Backup和Cloud Tiering需要此权限。</block>
+  <block id="175e0c32b0d1e82352dde70ca6ad31a2" category="paragraph">Cloud Backup需要此权限。</block>
+  <block id="1ff61a19534f16f8c2b0aa752b13fb0a" category="paragraph">已从JSON策略中删除以下权限、因为不再需要这些权限：</block>
 </blocks>

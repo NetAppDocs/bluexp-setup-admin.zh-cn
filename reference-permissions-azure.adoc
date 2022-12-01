@@ -128,7 +128,6 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Compute/snapshots/delete",
                     "Microsoft.Network/privateEndpoints/delete",
                     "Microsoft.Compute/availabilitySets/delete",
-                    "Microsoft.Network/loadBalancers/delete",
                     "Microsoft.KeyVault/vaults/read",
                     "Microsoft.KeyVault/vaults/accessPolicies/write",
                     "Microsoft.Compute/diskEncryptionSets/write",
@@ -154,6 +153,7 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Synapse/workspaces/firewallRules/read",
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
+                    "Microsoft.Network/publicIPAddresses/delete",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
     ],
     "NotActions": [],
@@ -749,11 +749,19 @@ Connector发出以下API请求、以发现和管理Azure Kubernetes Service (AKS
 
 === 2022年12月1日
 
-已将以下权限添加到JSON策略中。它是Cloud Backup和Cloud Tiering所必需的。
+已向JSON策略添加以下权限：
 
-microsoft.Storage/storageAccounts"(存储帐户)/blobServices/容器/写入
+* microsoft.Storage/storageAccounts"(存储帐户)/blobServices/容器/写入
++
+Cloud Backup和Cloud Tiering需要此权限。
 
-已从JSON策略中删除以下权限。不再需要它们。
+* Microsoft.Network/publicIPAddresses/delete
++
+Cloud Backup需要此权限。
+
+
+
+已从JSON策略中删除以下权限、因为不再需要这些权限：
 
 * Microsoft.Compute/images/write
 * Microsoft.Network/loadBalancers/backendAddressPools/join/action
