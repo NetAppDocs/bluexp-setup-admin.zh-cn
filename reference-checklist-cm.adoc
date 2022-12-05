@@ -91,7 +91,20 @@ Connector 的出站网络连接:: 登录到BlueXP后、BlueXP帐户管理员需�
 | https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
 
 
-| https://*.api.bluexp.netapp.com \https://api.bluexp.netapp.com \https://*.cloudmanager.cloud.netapp.com \https://cloudmanager.cloud.netapp.com | 在BlueXP中提供SaaS功能和服务。注意：Connector当前正在与cloudmanager.cloud.netapp.com"联系、但在即将发布的版本中、它将开始与api.bluexp.netapp.com"联系。 
+ a| 
+https://*.api.bluexp.netapp.com
+
+https://api.bluexp.netapp.com
+
+https://*.cloudmanager.cloud.netapp.com
+
+https://cloudmanager.cloud.netapp.com
+ a| 
+在BlueXP中提供SaaS功能和服务。
+
+
+NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。
+
 
 
 | https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
