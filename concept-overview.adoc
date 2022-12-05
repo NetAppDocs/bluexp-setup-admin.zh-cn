@@ -69,7 +69,7 @@ BlueXP包括一个与BlueXP网站集成的基于SaaS的界面、以及用于管�
 
 === 软件即服务
 
-BlueXP可通过访问 https://cloudmanager.netapp.com["基于 SaaS 的用户界面"^] 和 API 。通过这种 SaaS 体验，您可以在最新功能发布后自动访问这些功能，并轻松在 NetApp 客户和连接器之间切换。
+BlueXP可通过访问 https://console.bluexp.netapp.com["基于 SaaS 的用户界面"^] 和 API 。通过这种 SaaS 体验，您可以在最新功能发布后自动访问这些功能，并轻松在 NetApp 客户和连接器之间切换。
 
 
 TIP: 如果您在无法访问出站Internet的环境中运行、则可以在该环境中安装Connector软件并访问Connector上提供的本地用户界面。 link:concept-connectors.html["了解有关连接器的更多信息"]。

@@ -84,7 +84,7 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connec
 
 
 
-. 打开 Web 浏览器并转到 https://cloudmanager.netapp.com[] 开始将Connector与BlueXP结合使用。
+. 打开 Web 浏览器并转到 https://console.bluexp.netapp.com[] 开始将Connector与BlueXP结合使用。
 
 
 现在，您可以使用 NetApp 帐户安装并设置 Connector 。在创建新的工作环境时、BlueXP将自动使用此Connector。但是，如果您有多个 Connector ，则需要 link:task-managing-connectors.html["在它们之间切换"]。
@@ -159,7 +159,7 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connec
 
 任何时候要使用BlueXP、请打开Web浏览器并连接到Connector实例的IP地址： https://_ipaddress_[]
 
-由于Connector部署在政府区域、因此无法从访问 https://cloudmanager.netapp.com[]。
+由于Connector部署在政府区域、因此无法从访问 https://console.bluexp.netapp.com[]。
 
 
 

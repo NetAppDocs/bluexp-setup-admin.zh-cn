@@ -77,11 +77,11 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了设置BlueXP屏�
 
 现在，您可以使用 NetApp 帐户安装并设置 Connector 。
 
-如果Connector位于Azure商业区域、请打开Web浏览器并转到 https://cloudmanager.netapp.com[] 开始将Connector与BlueXP结合使用。
+如果Connector位于Azure商业区域、请打开Web浏览器并转到 https://console.bluexp.netapp.com[] 开始将Connector与BlueXP结合使用。
 
 如果Connector位于Azure政府区域、则可以通过打开Web浏览器并连接到Connector实例的IP地址来使用BlueXP： https://_ipaddress_[]
 
-由于Connector部署在政府区域、因此无法从访问 https://cloudmanager.netapp.com[]。
+由于Connector部署在政府区域、因此无法从访问 https://console.bluexp.netapp.com[]。
 
 
 

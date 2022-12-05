@@ -219,7 +219,7 @@ link:task-managing-connectors.html["了解如何在连接器之间切换"]。
 
 == 本地用户界面
 
-而您应从执行几乎所有任务 https://cloudmanager.netapp.com["SaaS 用户界面"^]，连接器上仍提供本地用户界面。如果您在无法访问Internet的环境(例如政府区域)中安装Connector、并且需要从Connector本身执行一些任务、而不是从SaaS界面执行、则需要使用此接口：
+而您应从执行几乎所有任务 https://console.bluexp.netapp.com["SaaS 用户界面"^]，连接器上仍提供本地用户界面。如果您在无法访问Internet的环境(例如政府区域)中安装Connector、并且需要从Connector本身执行一些任务、而不是从SaaS界面执行、则需要使用此接口：
 
 * link:task-configuring-proxy.html["设置代理服务器"]
 * 安装修补程序（您通常与 NetApp 人员一起安装修补程序）
