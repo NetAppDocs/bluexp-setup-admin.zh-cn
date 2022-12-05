@@ -82,6 +82,7 @@ Docker 引擎:: 在安装 Connector 之前，主机上需要安装 Docker 引擎
 
 确认您拥有受支持的 Linux 主机后，您可以获取 Connector 软件并进行安装。
 
+.所需权限
 安装连接器需要 root 权限。
 
 .关于此任务
@@ -151,8 +152,10 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了设置屏幕，�
 
 
 
+.结果
 现在，您可以使用 NetApp 帐户安装并设置 Connector 。在创建新的工作环境时、BlueXP将自动使用此Connector。
 
+.完成后
 设置权限、以便BlueXP可以管理公有 云环境中的资源和流程：
 
 * AWS link:task-adding-aws-accounts.html["设置AWS帐户、然后将其添加到BlueXP"]

@@ -24,11 +24,11 @@ summary: 添加和管理AWS凭据、以便BlueXP拥有在AWS帐户中部署和�
 
 * 向现有Connector添加其他AWS凭据
 +
-将AWS凭据添加到现有连接器可提供在公有 云环境中管理资源和进程所需的权限。  credentials to a Connector,了解如何将 AWS 凭据添加到 Connector。
+将AWS凭据添加到现有连接器可提供在公有 云环境中管理资源和进程所需的权限。 <<向 Connector 添加凭据,了解如何将 AWS 凭据添加到 Connector>>。
 
 * 将AWS凭据添加到BlueXP以创建Connector
 +
-向BlueXP添加新的AWS凭据可为BlueXP提供创建Connector所需的权限。  credentials to BlueXP for creating a Connector,了解如何向BlueXP添加AWS凭据。
+向BlueXP添加新的AWS凭据可为BlueXP提供创建Connector所需的权限。 <<向BlueXP添加用于创建Connector的凭据,了解如何向BlueXP添加AWS凭据>>。
 
 * 将AWS凭据添加到BlueXP for FSX for ONTAP
 +
@@ -63,8 +63,8 @@ NOTE: 如果您从BlueXP部署了Connector、则BlueXP会自动为部署此Conne
 
 * 选项 *
 
-*  permissions by assuming an IAM role in another account
-*  permissions by providing AWS keys
+* <<在另一个帐户中担任 IAM 角色以授予权限>>
+* <<通过提供 AWS 密钥授予权限>>
 
 
 
@@ -88,7 +88,8 @@ NOTE: 如果您从BlueXP部署了Connector、则BlueXP会自动为部署此Conne
 . 复制IAM角色的角色ARN、以便稍后将其粘贴到BlueXP中。
 
 
-现在，此帐户具有所需权限。 ,现在，您可以将凭据添加到 Connector。
+.结果
+现在，此帐户具有所需权限。 <<add-the-credentials,现在，您可以将凭据添加到 Connector>>。
 
 
 
@@ -109,7 +110,8 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 
 
-现在，此帐户具有所需权限。 ,现在，您可以将凭据添加到 Connector。
+.结果
+现在，此帐户具有所需权限。 <<add-the-credentials,现在，您可以将凭据添加到 Connector>>。
 
 
 
@@ -117,6 +119,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 在为 AWS 帐户提供所需权限后，您可以将该帐户的凭据添加到现有 Connector 。这样，您就可以使用同一个连接器在该帐户中启动 Cloud Volumes ONTAP 系统了。
 
+.开始之前
 如果您刚刚在云提供商中创建了这些凭据，则可能需要几分钟的时间才能使用这些凭据。请等待几分钟、然后再将凭据添加到BlueXP。
 
 .步骤
@@ -138,6 +141,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 
 
 
+.结果
 现在，在创建新的工作环境时，您可以从 " 详细信息和凭据 " 页面切换到另一组凭据：
 
 image:screenshot_accounts_switch_aws.png["单击详细信息和 amp ；凭据页面中的切换帐户后，显示在云提供商帐户之间进行选择的屏幕截图。"]
@@ -174,7 +178,8 @@ image:screenshot_accounts_switch_aws.png["单击详细信息和 amp ；凭据页
 . 复制IAM角色的角色ARN、以便在下一步将其粘贴到BlueXP中。
 
 
-IAM 角色现在具有所需的权限。 ,现在、您可以将其添加到BlueXP中。
+.结果
+IAM 角色现在具有所需的权限。 <<add-the-credentials-2,现在、您可以将其添加到BlueXP中>>。
 
 
 
@@ -182,6 +187,7 @@ IAM 角色现在具有所需的权限。 ,现在、您可以将其添加到BlueX
 
 为IAM角色提供所需权限后、将角色ARN添加到BlueXP中。
 
+.开始之前
 如果您刚刚创建了 IAM 角色，则可能需要几分钟的时间，直到这些角色可用为止。请等待几分钟、然后再将凭据添加到BlueXP。
 
 .步骤
@@ -198,6 +204,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 
 
 
+.结果
 现在、您可以在创建新Connector时使用这些凭据。
 
 
@@ -212,6 +219,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 * 您希望将现有 AWS Marketplace 订阅替换为新订阅。
 
 
+.您需要的内容
 您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何创建 Connector"]。
 
 .步骤

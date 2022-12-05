@@ -26,23 +26,26 @@ BlueXP帐户管理员需要先部署_Connector_、然后才能使用大多数Blu
 
 按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 设置身份验证
 [role="quick-margin-para"]
 要在AWS中启动Connector、BlueXP需要通过承担IAM角色或使用AWS访问密钥向AWS进行身份验证。使用任一选项、都需要IAM策略。
 
 [role="quick-margin-para"]
- an IAM policy,查看IAM角色 或  up AWS authentication,按照分步说明进行操作。
+<<创建IAM策略,查看IAM角色>> 或 <<设置 AWS 身份验证,按照分步说明进行操作>>。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 设置网络
 [role="quick-margin-para"]
 您需要一个VPC和子网、并可通过出站Internet访问特定端点。如果出站Internet需要HTTP代理、则需要IP地址、凭据和HTTPS证书。
 
 [role="quick-margin-para"]
- up networking,查看网络连接要求。
+<<设置网络,查看网络连接要求>>。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 创建Connector
 [role="quick-margin-para"]
 单击Connector下拉列表、选择*添加连接器*、然后按照提示进行操作。
 
 [role="quick-margin-para"]
- a Connector,按照分步说明进行操作。
+<<创建连接器,按照分步说明进行操作>>。
 
 
 
@@ -145,6 +148,7 @@ BlueXP需要先向AWS进行身份验证、然后才能在VPC中部署Connector�
 . 单击*创建策略*。
 
 
+.下一步是什么？
 将策略附加到BlueXP可以承担的IAM角色或IAM用户。
 
 
@@ -168,6 +172,7 @@ BlueXP需要先向AWS进行身份验证、然后才能在VPC中部署Connector�
 . 创建角色后、复制角色ARN、以便您可以在创建Connector时将其粘贴到BlueXP中。
 
 
+.结果
 IAM 角色现在具有所需的权限。
 
 
@@ -184,6 +189,7 @@ IAM 角色现在具有所需的权限。
 . 确保您有权访问 IAM 用户的访问密钥和机密密钥。
 
 
+.结果
 AWS用户现在具有从BlueXP创建Connector所需的权限。在BlueXP提示时、您需要为此用户指定AWS访问密钥。
 
 
@@ -303,6 +309,7 @@ TIP: 如果选择 * 承担角色 * ，则可以从 Connector 部署向导创建�
 
 
 
+.完成后
 如果您在创建Connector的同一AWS帐户中有Amazon S3存储分段、则会在Canvas上自动显示Amazon S3工作环境。 link:task-viewing-amazon-s3.html["详细了解如何使用此工作环境"]。
 
 

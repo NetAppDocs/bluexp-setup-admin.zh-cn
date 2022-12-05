@@ -37,14 +37,14 @@ summary: 在向NetApp技术支持部门创建支持案例之前、您需要向Bl
 作为现有NetApp客户或合作伙伴、您可以使用NetApp 支持站点 (NSS) SSO帐户执行上述注册。在支持信息板中、BlueXP提供了一个* NSS管理*页面、您可以在其中添加NSS帐户。添加NSS帐户后、BlueXP会自动为您注册这些序列号。
 
 +
- an NSS account to BlueXP,了解如何添加NSS帐户。
+<<将NSS帐户添加到BlueXP,了解如何添加NSS帐户>>。
 
 * NetApp新手
 +
 如果您是NetApp的新用户、则必须在NetApp的支持注册站点上一次性注册您的BlueXP帐户ID序列号。完成此注册并创建新的NSS帐户后、您可以在BlueXP中使用此帐户进行自动注册。
 
 +
- with NetApp,了解如何向NetApp注册。
+<<向NetApp注册,了解如何向NetApp注册>>。
 
 
 
@@ -156,6 +156,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 
+.完成后
 在此过程中、NetApp应与您联系。这是针对新用户的一次性入职练习。
 
 拥有NetApp 支持站点 帐户后、您可以导航到BlueXP以添加此NSS帐户以供将来注册。

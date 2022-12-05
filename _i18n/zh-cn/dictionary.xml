@@ -55,7 +55,6 @@
   <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">单击 * 下一步 * 。</block>
   <block id="e3bbb08034982e47da96f9df0529c14b" category="list-text">单击 * 审核 + 分配 * 。</block>
   <block id="d1935eb90cca6ebd3015d6f8e86defe1" category="section-title">使用 Azure 帐户登录以创建 Connector</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">您需要什么？ #8217 ；将需要什么</block>
   <block id="cec61994be2c9633fc4acb202e4b9c41" category="list-text">Azure 订阅。</block>
   <block id="3c8e2502b00949bb2ead22830ddfa05d" category="list-text">您选择的 Azure 区域中的 vNet 和子网。</block>
   <block id="bb0af45d6e9045bc2046c5f245006f7c" category="paragraph">这些权限适用于 Connector 实例本身。它是一组与您先前设置的权限不同的权限，只需部署 Connector 即可。</block>
@@ -220,7 +219,6 @@
   <block id="357ea3bd3c0ef6c545391cef7aa07936" category="paragraph"><block ref="357ea3bd3c0ef6c545391cef7aa07936" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6bd6a4807d0f305654a405a52bb8f189" category="list-text">单击 * 解除关联用户 * ，然后单击 * 解除关联 * 进行确认。</block>
   <block id="7892544a93f2a4d39f1ef832ba4d1eff" category="paragraph">用户无法再访问此 NetApp 帐户中的资源。</block>
-  <block id="c467a2567dd5be7e777708d1616b892d" category="section-title">管理 Workspace Admin 的工作空间</block>
   <block id="8ecff25aa4ee2497099b60f83bd4dde7" category="paragraph">您可以随时将 Workspace Admins 与工作空间关联和解除关联。通过关联用户，用户可以在该工作空间中创建和查看工作环境。</block>
   <block id="20c165118f7907a441e0a3fe5213b892" category="list-text">单击 * 管理工作空间 * 。</block>
   <block id="9c3fb861370470582b50839e482bd5f9" category="list-text">选择要与用户关联的工作空间，然后单击 * 应用 * 。</block>
@@ -257,7 +255,6 @@
   <block id="e6b782b96ee9fd72a275037e1f900b6f" category="list-text">单击 * 添加新工作空间 * 以创建新工作空间。</block>
   <block id="9606b9dd050f482ce022efaf9f3754c9" category="list-text">单击 * 重命名 * 以重命名工作空间。</block>
   <block id="ca4a2e09f147267af54ea5fd1d962c6a" category="list-text">单击 * 删除 * 以删除此工作空间。</block>
-  <block id="3bf33688db3de262b29d7aef6461deb2" category="section-title">管理 Connector 的工作空间</block>
   <block id="b7f7a48c60012c23b8adb659da31b71a" category="inline-link-macro">详细了解用户，工作空间和连接器</block>
   <block id="7d033896524ebe16495f74d9f7202783" category="paragraph"><block ref="cf2050a2914e59a752ab48465ba00e16" category="inline-link-macro-rx"></block>。</block>
   <block id="9e704e76a760053c0baca32c96d9c6a3" category="list-text">单击 * 连接器 * 。</block>
@@ -634,7 +631,6 @@
   <block id="7c6de4e6a71e2b217261299a5641fe12" category="section-title">将 Connectors 与工作空间关联</block>
   <block id="fdbdd6715cf2177c49f2aa51748944ad" category="paragraph">您需要将连接器与工作空间关联，以便 Workspace 管理员可以使用这些连接器创建 Cloud Volumes ONTAP 系统。</block>
   <block id="211c1a963db0ec4433679bba9d1a1973" category="paragraph">Workspace 管理员现在可以使用这些连接器创建 Cloud Volumes ONTAP 系统。</block>
-  <block id="3f297ef15cde0668e93b35f2752fd4fd" category="section-title">下一步是什么？</block>
   <block id="a85cd5dda897ee694c0a8a7ebe893293" category="inline-link-macro">了解如何管理您的帐户</block>
   <block id="e93366502d593964f54fa78a54256cef" category="paragraph">现在，您已经设置了帐户，您可以随时通过删除用户，管理工作空间，连接器和订阅来对其进行管理。 <block ref="4b4f4de61b1c0103e06c096d3b330838" category="inline-link-macro-rx"></block>。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">获取帮助</block>
@@ -697,7 +693,6 @@
   <block id="fce63be6a5df1b8f029ff105a6d48616" category="paragraph">在 Connector 上更新操作系统，以确保使用最新的安全更新对其进行修补。</block>
   <block id="1208149fe3ebe603e8d12495099b22e4" category="list-text">访问 Connector 主机上的命令行界面 Shell 。</block>
   <block id="065ff36e9f63c035ca95dbe0bff46bfe" category="list-text">使用提升的权限运行以下命令：</block>
-  <block id="0e4dffadcdac4ac871fee08c9b43fc4e" category="section-title">编辑 Connector 的 URI</block>
   <block id="e2729464f9bccb35f8d10ba5019f3955" category="paragraph">添加并删除 Connector 的 URI 。</block>
   <block id="5e6a0548d1a9b870a897fd2b63da39c6" category="list-text">单击 * 管理连接器 * 。</block>
   <block id="184412530c50886985d099a0d5cedd16" category="list-text">单击 Connector 的操作菜单，然后单击 * 编辑 URIs* 。</block>
@@ -1078,7 +1073,6 @@
   <block id="baae31039a43d31e57f9e5c0c7262afc" category="paragraph"><block ref="baae31039a43d31e57f9e5c0c7262afc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="43601154a054554dd57207148a15b7b1" category="list-text">* 创建管理员用户 * ：为系统创建管理员用户。</block>
   <block id="b530111cab51b765877bc100b0a43e1f" category="list-text">* 审阅 * ：查看详细信息，接受许可协议，然后单击 * 设置 * 。</block>
-  <block id="7c3983f18df54b898b386f7cf4a7d05c" category="list-title">接下来是什么？</block>
   <block id="cc9787ce69467700348def59db8ff725" category="inline-link">发现内部 ONTAP 集群</block>
   <block id="533c556705825be9a1a97d191373f80f" category="list-text"><block ref="533c556705825be9a1a97d191373f80f" category="inline-link-rx"></block></block>
   <block id="8160a46a5d4541efd7702f3fa8a2ecad" category="inline-link">在内部 ONTAP 集群之间复制数据</block>
@@ -1088,7 +1082,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">连接器限制</block>
   <block id="82538689c7a66297973814120306d42f" category="section-title">仅支持 HTTP 代理服务器</block>
-  <block id="e65172f12d5a004e18b6be974b9871c6" category="section-title">不支持 SSL 解密</block>
   <block id="7bd92bd111bfbf23b12f73672eb0dd1c" category="inline-link-macro">安装由证书颁发机构（ CA ）签名的 HTTPS 证书</block>
   <block id="c3ce271d53cbf6a7afd137a37f4ee8d6" category="paragraph">为了增强安全性，您可以选择 <block ref="11df3d19916b70ba1d82d33e876689bc" category="inline-link-macro-rx"></block>。</block>
   <block id="e949623e23f093c132f86ba2771e8a2e" category="section-title">加载本地 UI 时显示空白页面</block>
@@ -2072,12 +2065,10 @@
   <block id="ab989208a01fcee6c888dec1f39482d9" category="cell">配置后端服务以分布HA对中的流量。</block>
   <block id="739bf63a1a7b0a2e180e692ece9b9b11" category="cell">—compute.networks.updatePolicy</block>
   <block id="40601d6546f763ec088fee026a0da641" category="cell">在HA对的vPC和子网上应用防火墙规则。</block>
-  <block id="2e984b55a3264399d03f7fc4df06df78" category="list-title">跨度 class="image&gt;&lt;img src=<block ref="0c3becc25d95e48b9ca863002a042824" category="inline-link-rx"></block> Alt-one"&gt;&lt;/span&gt;设置权限</block>
   <block id="6e1d3688abed116ca1fcde1dce3ec4f4" category="paragraph"><block ref="68a9c9d924aeef1d7ada39f0d3540b49" category="inline-xref-macro-rx"></block>。</block>
   <block id="d52202757c4d92357913471e220a772a" category="paragraph"><block ref="f796454a6004e39753971668625d9d8d" category="inline-xref-macro-rx"></block>。</block>
   <block id="39cab3defe876dfaf2b80cf98f49e2c7" category="list-text">如果您使用的是共享VPC、请在服务项目和主机项目中设置权限。</block>
   <block id="324adee08a3c7a87ddad1096556db802" category="paragraph"><block ref="f14d47c142ef6f4bd65c33223ef00cac" category="inline-xref-macro-rx"></block>。</block>
-  <block id="ecd9b46cc61d7175d5da2c42f7b70152" category="list-title">跨度 class="image&gt;&lt;img src=<block ref="ddd753dc2858fe3a5582f20b300a0541" category="inline-link-rx"></block> Alt-Three "&gt;&lt;/span&gt;启用Google Cloud API</block>
   <block id="d84e71566ed38f5bfe97daee41fb601d" category="paragraph">以下项需要权限：</block>
   <block id="ae741fad6aa93f78e0e5033a1d01d94b" category="list-text">要部署Connector VM的用户</block>
   <block id="302f26bc0fa67eed7c3feeaa0ab2bcab" category="list-text">在部署期间需要附加到Connector VM的服务帐户</block>
@@ -2807,4 +2798,25 @@
   <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">https://cloudmanager.cloud.netapp.com</block>
   <block id="23486ca53d499245ebae5460cf6d10ad" category="paragraph">在BlueXP中提供SaaS功能和服务。</block>
   <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。</block>
+  <block id="ffe7522d9ea3d134eb0a945275d454d7" category="paragraph-title">所需权限</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">结果</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成后</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的内容</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">开始之前</block>
+  <block id="1bc21092e961975ea4123f4414693f69" category="section-title">不支持SSL解密</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一个</block>
+  <block id="38850c0d5ada5706d4546808821a96d1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 设置身份验证</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">两个</block>
+  <block id="0acd6f364c67bcef47587e5727525116" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 设置网络</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三个</block>
+  <block id="aea46324800b152c6a50caff1d14e2fc" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 创建Connector</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">下一步是什么？</block>
+  <block id="eb9bb09a006b6e7bcc7d0b9525344bcf" category="section-title">编辑Connector的URI</block>
+  <block id="62804365dc8c62cf4546f894ddfc5e1c" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 设置权限</block>
+  <block id="b74f07963110d8742672d27a25bb3383" category="list-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 启用 Google Cloud API</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四个</block>
+  <block id="3b9dafc67ff049020d09b9ebd18aaa5d" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 创建Connector</block>
+  <block id="5ccc745272c52ce1868d5bcf2b07705a" category="section-title">管理Workspace Admin的工作空间</block>
+  <block id="1cf32fb78afaf111cd4c8421dc8592a6" category="section-title">管理Connector的工作空间</block>
+  <block id="c558073ec27a1686dce5ebbe5da43092" category="paragraph-title">登录选项</block>
 </blocks>

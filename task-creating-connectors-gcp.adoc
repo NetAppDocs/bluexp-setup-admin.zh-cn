@@ -29,28 +29,31 @@ TIP: 在创建首个Cloud Volumes ONTAP 工作环境时、如果您还没有连�
 
 按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
 
-.跨度 class="image><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png"[] Alt-one"></span>设置权限
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 设置权限
+[role="quick-margin-list"]
 * 通过创建并附加自定义角色、确保您的Google Cloud帐户具有正确的权限。
 +
- up permissions to deploy the Connector。
+<<设置部署Connector的权限>>。
 
 * 创建Connector VM时、您需要将其与服务帐户关联。此服务帐户必须具有一个自定义角色、该角色有权管理Google Cloud中的资源。
 +
- up a service account for the Connector。
+<<为Connector设置服务帐户>>。
 
 * 如果您使用的是共享VPC、请在服务项目和主机项目中设置权限。
 +
- up shared VPC permissions。
+<<设置共享VPC权限>>。
 
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 设置网络
 [role="quick-margin-para"]
 您需要一个VPC和子网、并可通过出站Internet访问特定端点。如果出站Internet需要HTTP代理、则需要IP地址、凭据和HTTPS证书。
 
 [role="quick-margin-para"]
- up networking,查看网络连接要求。
+<<设置网络,查看网络连接要求>>。
 
-.跨度 class="image><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png"[] Alt-Three "></span>启用Google Cloud API
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 启用 Google Cloud API
+[role="quick-margin-list"]
 * Cloud Deployment Manager V2 API
 * 云日志记录 API
 * Cloud Resource Manager API
@@ -58,11 +61,12 @@ TIP: 在创建首个Cloud Volumes ONTAP 工作环境时、如果您还没有连�
 * 身份和访问管理（ IAM ） API
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 创建Connector
 [role="quick-margin-para"]
 单击Connector下拉列表、选择*添加连接器*、然后按照提示进行操作。
 
 [role="quick-margin-para"]
- a Connector,按照分步说明进行操作。
+<<创建连接器,按照分步说明进行操作>>。
 
 
 
@@ -150,6 +154,7 @@ includedPermissions:
 . 将自定义角色附加到要从BlueXP部署Connector的用户。
 
 
+.结果
 Google Cloud用户现在具有创建Connector所需的权限。
 
 
@@ -266,6 +271,7 @@ includedPermissions:
 . 如果要在其他项目中部署 Cloud Volumes ONTAP ， https://cloud.google.com/iam/docs/granting-changing-revoking-access#granting-console["通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限"^]。您需要对每个项目重复此步骤。
 
 
+.结果
 已设置Connector VM的服务帐户。
 
 
@@ -546,6 +552,7 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connec
 
 --
 ====
+.结果
 现在，您可以使用 NetApp 帐户安装并设置 Connector 。在创建新的工作环境时、BlueXP将自动使用此Connector。但是，如果您有多个 Connector ，则需要 link:task-managing-connectors.html["在它们之间切换"]。
 
 如果您在创建Connector的同一Google Cloud帐户中有Google Cloud Storage存储分段、则会在Canvas上自动显示Google Cloud Storage工作环境。 link:task-viewing-gcp-storage.html["详细了解如何使用此工作环境"]。

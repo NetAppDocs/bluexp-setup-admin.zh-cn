@@ -18,6 +18,7 @@ summary: 您可以通过基于SaaS的用户界面从Web浏览器访问BlueXP。
 
 如果您要从政府区域或无法访问出站Internet的站点访问BlueXP、则需要登录到在Connector本地运行的BlueXP用户界面。 link:task-managing-connectors.html#access-the-local-ui["了解如何在Connector上访问本地UI"]。
 
+.登录选项
 您可以使用以下选项之一登录到BlueXP：
 
 * 您的现有NetApp 支持站点 (NSS)凭据
@@ -59,4 +60,5 @@ image:screenshot-login.png["BlueXP的登录页面。"]
 
 
 
+.结果
 您现在已登录、可以开始使用BlueXP管理混合多云基础架构。

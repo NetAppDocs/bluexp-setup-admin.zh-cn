@@ -34,7 +34,7 @@ Connector的Google Cloud防火墙规则需要入站和出站规则。
 | HTTPS | 443. | 提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问 
 
 
-| TCP | 3128 | 为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。您必须在部署后手动打开此端口。  server for AutoSupport messages,详细了解Connector的代理服务器。 
+| TCP | 3128 | 为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。您必须在部署后手动打开此端口。 <<Proxy server for AutoSupport messages,详细了解Connector的代理服务器>>。 
 |===
 
 

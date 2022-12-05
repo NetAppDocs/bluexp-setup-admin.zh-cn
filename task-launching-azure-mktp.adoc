@@ -75,6 +75,7 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了设置BlueXP屏�
 
 
 
+.结果
 现在，您可以使用 NetApp 帐户安装并设置 Connector 。
 
 如果Connector位于Azure商业区域、请打开Web浏览器并转到 https://console.bluexp.netapp.com[] 开始将Connector与BlueXP结合使用。
@@ -154,6 +155,7 @@ NOTE: BlueXP操作员是BlueXP策略中提供的默认名称。如果您为角�
 
 
 
+.结果
 现在， Connector 拥有管理公有云环境中的资源和流程所需的权限。在创建新的工作环境时、BlueXP将自动使用此Connector。但是，如果您有多个 Connector ，则需要 link:task-managing-connectors.html["在它们之间切换"]。
 
 如果您在创建Connector的同一Azure帐户中使用Azure Blob存储、则会在Canvas上自动显示Azure Blob工作环境。 link:task-viewing-azure-blob.html["详细了解如何使用此工作环境"]。

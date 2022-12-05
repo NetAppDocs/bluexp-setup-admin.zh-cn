@@ -42,7 +42,7 @@ BlueXP不支持在Connector中使用HTTPS代理。
 
 
 
-=== 不支持 SSL 解密
+=== 不支持SSL解密
 
 BlueXP不支持启用了SSL解密的防火墙配置。如果启用了SSL解密、则错误消息将显示在BlueXP中、而Connector实例将显示为非活动状态。
 

@@ -61,6 +61,7 @@ Docker 引擎:: 在安装 Connector 之前，主机上需要安装 Docker 引擎
 
 确认您拥有受支持的 Linux 主机后，您可以获取 Connector 软件并进行安装。
 
+.所需权限
 安装连接器需要 root 权限。
 
 .步骤
@@ -107,9 +108,10 @@ image:screenshot-onprem-darksite-details.png["系统详细信息页面的屏幕�
 . 使用刚刚创建的管理员用户登录到BlueXP。
 
 
+.结果
 现在已安装Connector、您可以开始使用非公开站点部署中提供的BlueXP功能。
 
-.接下来是什么？
+.下一步是什么？
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["发现内部 ONTAP 集群"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在内部 ONTAP 集群之间复制数据"^]
 * https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["使用云备份将内部ONTAP 卷数据备份到StorageGRID"^]

@@ -28,6 +28,7 @@ summary: '创建 Cloud Volumes ONTAP 系统时，您需要选择要用于该系�
 
 通过BlueXP、您可以选择要在其中部署Cloud Volumes ONTAP 的Azure凭据和Azure订阅。除非关联，否则您无法为托管身份配置文件选择其他 Azure 订阅 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["托管身份"^] 这些订阅。
 
+.关于此任务
 托管身份为 link:concept-accounts-azure.html["初始 Azure 帐户"] 从BlueXP部署Connector时。部署Connector时、BlueXP创建了BlueXP操作员角色并将其分配给Connector虚拟机。
 
 .步骤
@@ -53,6 +54,7 @@ NOTE: BlueXP操作员是Connector策略中提供的默认名称。如果您为�
 . 对其他订阅重复这些步骤。
 
 
+.结果
 创建新的工作环境时，您现在应该能够为托管身份配置文件从多个 Azure 订阅中进行选择。
 
 image:screenshot_accounts_switch_azure_subscription.gif["屏幕截图显示了在选择 Microsoft Azure Provider 帐户时可以选择多个 Azure 订阅的功能。"]
@@ -74,16 +76,17 @@ TIP: 如果在现有系统上手动安装 Connector 软件，则不会添加一�
 
 BlueXP需要在Azure中执行操作的权限。您可以通过在Azure Active Directory中创建和设置服务主体以及获取BlueXP所需的Azure凭据来为Azure帐户授予所需权限。
 
+.关于此任务
 下图展示了BlueXP如何获取在Azure中执行操作的权限。与一个或多个Azure订阅绑定的服务主体对象表示Azure Active Directory中的BlueXP、并分配给允许所需权限的自定义角色。
 
 image:diagram_azure_authentication.png["概念映像、显示BlueXP在进行API调用之前从Azure Active Directory获取身份验证和授权。在Active Directory中、BlueXP角色定义权限。它与一个或多个 Azure 订阅以及一个表示 Cloud Manger 应用程序的服务主体对象相关联。"]
 
 .步骤
-.  an Azure Active Directory application,创建 Azure Active Directory 应用程序。
-.  the application to a role,将应用程序分配给角色。
-.  Windows Azure Service Management API permissions,添加 Windows Azure 服务管理 API 权限。
-.  the application ID and directory ID,获取应用程序 ID 和目录 ID。
-.  a client secret,创建客户端密钥。
+. <<创建 Azure Active Directory 应用程序,创建 Azure Active Directory 应用程序>>。
+. <<将应用程序分配给角色,将应用程序分配给角色>>。
+. <<添加 Windows Azure 服务管理 API 权限,添加 Windows Azure 服务管理 API 权限>>。
+. <<获取应用程序 ID 和目录 ID,获取应用程序 ID 和目录 ID>>。
+. <<创建客户端密钥,创建客户端密钥>>。
 
 
 
@@ -92,6 +95,7 @@ image:diagram_azure_authentication.png["概念映像、显示BlueXP在进行API�
 
 创建一个Azure Active Directory (AD)应用程序和服务主体、BlueXP可使用它进行基于角色的访问控制。
 
+.开始之前
 要创建 Active Directory 应用程序并将此应用程序分配给角色，您必须在 Azure 中拥有适当的权限。有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]。
 
 .步骤
@@ -111,6 +115,7 @@ image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory
 . 单击 * 注册 * 。
 
 
+.结果
 您已创建 AD 应用程序和服务主体。
 
 
@@ -247,6 +252,7 @@ image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中�
 
 
 
+.结果
 此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。添加Azure帐户时、您需要在BlueXP中输入此信息。
 
 
@@ -255,8 +261,10 @@ image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中�
 
 在为Azure帐户提供所需权限后、您可以将该帐户的凭据添加到BlueXP。完成此步骤后，您可以使用不同的 Azure 凭据启动 Cloud Volumes ONTAP 。
 
+.开始之前
 如果您刚刚在云提供商中创建了这些凭据，则可能需要几分钟的时间才能使用这些凭据。请等待几分钟、然后再将凭据添加到BlueXP。
 
+.您需要的内容
 您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
 
 .步骤
@@ -269,9 +277,9 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 .. * 凭据位置 * ：选择 * Microsoft Azure > Connector* 。
 .. * 定义凭据 * ：输入有关授予所需权限的 Azure Active Directory 服务主体的信息：
 +
-*** 应用程序（客户端） ID ：请参见  the application ID and directory ID。
-*** 目录（租户） ID ：请参见  the application ID and directory ID。
-*** 客户端密钥：请参见  a client secret。
+*** 应用程序（客户端） ID ：请参见 <<获取应用程序 ID 和目录 ID>>。
+*** 目录（租户） ID ：请参见 <<获取应用程序 ID 和目录 ID>>。
+*** 客户端密钥：请参见 <<创建客户端密钥>>。
 
 
 .. * 市场订阅 * ：通过立即订阅或选择现有订阅，将市场订阅与这些凭据相关联。
@@ -283,6 +291,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 
 
 
+.结果
 现在，您可以从 " 详细信息和凭据 " 页面切换到不同的凭据集 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["创建新的工作环境时"^]
 
 image:screenshot_accounts_switch_azure.gif["一个屏幕截图，显示在单击 Details  ； Credentials 页面中的 Edit Credentials 后在凭据之间进行选择的情况。"]
@@ -305,6 +314,7 @@ image:screenshot_accounts_switch_azure.gif["一个屏幕截图，显示在单击
 * 您希望将现有 Azure Marketplace 订阅替换为新订阅。
 
 
+.您需要的内容
 您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
 
 .步骤

@@ -65,6 +65,7 @@ BlueXP将显示证书签名请求。
 |===
 
 
+.结果
 现在、BlueXP使用CA签名证书提供安全的HTTPS访问。下图显示了为安全访问配置的BlueXP帐户：
 
 image:screenshot_https_cert.gif["屏幕截图：在安装签名证书后显示 HTTPS 设置页面。该页显示证书属性和续订证书的选项。"]
@@ -83,4 +84,5 @@ image:screenshot_https_cert.gif["屏幕截图：在安装签名证书后显示 H
 . 单击 * 更改证书 * ，然后按照以下步骤生成 CSR 或安装您自己的 CA 签名证书。
 
 
+.结果
 BlueXP使用新的CA签名证书提供安全的HTTPS访问。
