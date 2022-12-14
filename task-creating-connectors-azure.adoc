@@ -14,11 +14,13 @@ summary: 在使用大多数BlueXP功能之前、BlueXP帐户管理员需要先�
 
 
 [role="lead"]
-BlueXP帐户管理员需要先部署_Connector_、然后才能使用大多数BlueXP功能。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。 link:concept-connectors.html["了解何时需要连接器"]。
+BlueXP帐户管理员需要先部署_Connector_、然后才能使用大多数BlueXP功能。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。
 
-此页面介绍如何直接从BlueXP在Azure中创建Connector。 link:concept-connectors.html#how-to-create-a-connector["了解部署 Connector 的其他方法"]。
+以下步骤介绍如何直接从BlueXP SaaS网站在Azure商业区域创建Connector。
 
-这些步骤必须由具有帐户管理员角色的用户完成。Workspace 管理员无法创建 Connector 。
+* link:task-create-connectors-gov.html["了解如何在政府区域部署Connector"]
+* link:concept-connectors.html#how-to-create-a-connector["了解部署 Connector 的其他方法"]
+
 
 
 

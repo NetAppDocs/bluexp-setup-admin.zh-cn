@@ -38,7 +38,7 @@ TIP: 您还可以在网络或云中的现有Linux主机上下载并安装Connect
 . 转至 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP页面"^] 要从AMI部署连接器、请执行以下操作：
 . 在 Marketplace 页面上，单击 * 继续订阅 * ，然后单击 * 继续配置 * 。
 +
-image:screenshot_subscribe_cm.gif["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
+image:screenshot-subscribe-aws.png["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
 
 . 更改任何默认选项，然后单击 * 继续启动 * 。
 . 在 * 选择操作 * 下，选择 * 通过 EC2 启动 * ，然后单击 * 启动 * 。
@@ -80,9 +80,6 @@ https://_ipaddress_[]
 link:concept-netapp-accounts.html["了解 NetApp 客户"]。
 
 .. 输入系统名称。
-+
-image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connector\" 屏幕，可用于选择 NetApp 帐户并为系统命名。"]
-
 
 
 . 打开 Web 浏览器并转到 https://console.bluexp.netapp.com[] 开始将Connector与BlueXP结合使用。
@@ -150,9 +147,6 @@ https://_ipaddress_[]
 link:concept-netapp-accounts.html["了解 NetApp 客户"]。
 
 .. 输入系统名称。
-+
-image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connector\" 屏幕，可用于选择 NetApp 帐户并为系统命名。"]
-
 
 
 

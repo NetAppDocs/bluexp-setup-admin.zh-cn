@@ -109,14 +109,9 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 | https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
 |===
-* 如果您选择在自己的Linux主机上手动安装Connector (而不是直接从BlueXP界面安装)、则Connector的安装程序需要在安装过程中访问以下端点：
+* 如果您选择在自己的Linux主机上手动安装Connector (而不是直接从BlueXP界面安装)、则Connector的安装程序需要在安装过程中访问多个端点：
 +
-** https://s3.amazonaws.com/aws-cli/awscri-bundle.zip
-** https://*.blob.core.windows.net 或 https://hub.docker.com
-+
-主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。
-
-
+link:task-installing-linux.html["查看端点列表"]。
 
 * 除非您启动 Connector ，否则不会向其传入流量。
 +

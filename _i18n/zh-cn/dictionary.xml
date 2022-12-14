@@ -613,8 +613,6 @@
   <block id="531dd1abfed48af076a56cbf57b47ca8" category="inline-link-macro">了解 NetApp 客户</block>
   <block id="55b620da531e446543c62d6fb6d3f03f" category="paragraph"><block ref="c892241c2a895928e80c961e4d7a26f4" category="inline-link-macro-rx"></block>。</block>
   <block id="d80e79c3d96dec3b7d4daf9305412777" category="list-text">输入系统名称。</block>
-  <block id="b7cc882225d4b093221554881a085ca4" category="inline-image-macro">屏幕截图显示了 "Set Up Connector" 屏幕，可用于选择 NetApp 帐户并为系统命名。</block>
-  <block id="ac8bdf7adae2e58a7ebb316b87ae9c56" category="paragraph"><block ref="ac8bdf7adae2e58a7ebb316b87ae9c56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ced2daafb1652bcf5bbc847ec20fd008" category="inline-link-macro">在它们之间切换</block>
   <block id="f3e4ad8de2923d1ab615cff85a4f99f5" category="doc">在 NetApp 帐户中设置工作空间和用户</block>
   <block id="ec37691ba98782dfd927ff958050c215" category="section-title">添加工作空间</block>
@@ -639,7 +637,6 @@
   <block id="040f37a8d15d49c042b5c21da1018a88" category="paragraph">IAM 用户必须具有 AWS Marketplace 权限才能订阅和取消订阅。</block>
   <block id="b748cb0f2ad325f27d30850a71d55e6d" category="list-text">在 Marketplace 页面上，单击 * 继续订阅 * ，然后单击 * 继续配置 * 。</block>
   <block id="648fca9db3d7e8e554a59d3519d8b0f6" category="inline-image-macro">屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。</block>
-  <block id="09840755c5e1c205b5a61231831ba16f" category="paragraph"><block ref="09840755c5e1c205b5a61231831ba16f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6901834c9ae604b653768895509f4303" category="list-text">更改任何默认选项，然后单击 * 继续启动 * 。</block>
   <block id="197769c5244e448b93746c973eb17b81" category="list-text">在 * 选择操作 * 下，选择 * 通过 EC2 启动 * ，然后单击 * 启动 * 。</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">按照提示配置和部署实例：</block>
@@ -888,8 +885,6 @@
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">升级 Connector 及其 Docker 组件。</block>
-  <block id="66f9783489f42faf5074015874cb1c5f" category="list-text">https://s3.amazonaws.com/aws-cli/awscri-bundle.zip</block>
-  <block id="b0d26ef113a60166d94bd96f9067b52b" category="list-text">https://*.blob.core.windows.net 或 https://hub.docker.com</block>
   <block id="35bd57a4dcfbd7a695f9beb7d01913c6" category="paragraph">主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。</block>
   <block id="11ffd2b7817530008f4bc1916d79b3d7" category="list-text">除非您启动 Connector ，否则不会向其传入流量。</block>
   <block id="eedca72959934d39da95314809917fb3" category="paragraph">通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。</block>
@@ -1250,18 +1245,12 @@
   <block id="3a0381e5879eb05d4447518a0fe21601" category="list-text">此安装将安装 AWS 命令行工具（ awscli ），以便从 NetApp 支持部门执行恢复过程。</block>
   <block id="c421e739c1e3aa36da0456d7f369e45f" category="paragraph">如果您收到安装 AWSCLI 失败的消息，则可以安全地忽略该消息。如果没有工具，连接器可以成功运行。</block>
   <block id="aad3dfdc62f79a4c10e86004046d9509" category="list-text">NetApp 支持站点上提供的安装程序可能是早期版本。安装后，如果有新版本可用， Connector 会自动进行更新。</block>
-  <block id="1b5f30edaa0508ac79f12ba9891a0f16" category="inline-link">AWS 文档：使用 SSH 连接到 Linux 实例</block>
-  <block id="880818f23f18d557a415dab94d58f242" category="paragraph">有关在 AWS 中将文件连接和复制到 EC2 实例的帮助，请参见<block ref="dc4460aa50f8a612f26d39414027ad75" category="inline-link-rx"></block>。</block>
   <block id="325740f998865be7879e32048d406868" category="list-text">运行安装脚本。</block>
-  <block id="d2da61b44f426c871849fe81368a8e4f" category="paragraph">如果您有代理服务器，则需要输入命令参数，如下所示。安装程序不会提示您提供有关代理的信息。</block>
   <block id="8dae847f59a6afd8d7e49b7b7654d0eb" category="list-text">打开 Web 浏览器并输入以下 URL ：</block>
   <block id="0594b17c3f6f94eb28b63eec7d7d3841" category="paragraph"><block ref="0594b17c3f6f94eb28b63eec7d7d3841" category="inline-link-rx"></block></block>
   <block id="a28c11d82be2375d6506ed209153e0c1" category="paragraph">_ipaddress_ 可以是 localhost ，专用 IP 地址或公有 IP 地址，具体取决于主机的配置。例如，如果连接器位于公有云中且没有公有 IP 地址，则必须输入与连接器主机连接的主机的专用 IP 地址。</block>
   <block id="78a0d16b70372e27005759683969aed9" category="inline-link">将此服务帐户与 Connector VM 关联</block>
   <block id="065c40fb33b56030d4bbcc42fcbf0d16" category="list-text"><block ref="1a9447e1a13f89edfdde92dee038b283" category="inline-link-rx"></block>。</block>
-  <block id="5b065d9fe675d1a98ef70d7a3436d9e7" category="inline-image-macro">屏幕截图显示了设置屏幕，可用于选择 NetApp 帐户并为系统命名。</block>
-  <block id="90acb993325ea2038d45629d9ccc1fc0" category="paragraph"><block ref="90acb993325ea2038d45629d9ccc1fc0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a376d701bcf6f33dfc99e261c767ae1e" category="list-text">Google Cloud ：请参见上文第 7 步</block>
   <block id="7cddf1ab764729128f3c7130203d73a0" category="list-text">选择 * Amazon Web Services* 作为您的云提供商，然后单击 * 继续 * 。</block>
   <block id="694c0d1ad033ac65143fd7073852f718" category="list-text">* 详细信息 * ：提供有关连接器的详细信息。</block>
   <block id="bb535485e7b97661af60ecc59e655498" category="list-text">输入实例的名称。</block>
@@ -1275,24 +1264,13 @@
   <block id="6bcce13786258734e514d9a072a3c23a" category="list-text">Connector 安装文件夹位于以下位置：</block>
   <block id="1290fecb35d9c7e8b4f1faf1f9b5c7f3" category="paragraph">/opt/application/netapp/cloudmanager</block>
   <block id="af22c16aeca9d8bc2515764efff73455" category="list-text">日志文件包含在以下文件夹中：</block>
-  <block id="9038f40808a3b534dd4031904a7d2ce8" category="list-text">/opt/application/netapp/cloudmanager/log</block>
   <block id="00226bd25a9eabd1528d0b9c1c7eb5e2" category="paragraph">此文件夹中的日志提供了有关连接器和 Docker 映像的详细信息。</block>
   <block id="b7fb1cb20b803995e802d3588f424efa" category="list-text">/opt/application/netapp/cloudmanager/docker_occm/data/log</block>
   <block id="99479a37072ffa90a7b1b8b6c6eb156b" category="list-text">OCUM 服务依赖于 MySQL 服务。</block>
   <block id="7681f9932e27b70d263e349bf8e45ccb" category="paragraph">如果 MySQL 服务已关闭，则 OCCM 服务也将关闭。</block>
-  <block id="0cc88c75f9ccb3b092b1a9e54edf31dd" category="list-text">7 邮政编码</block>
-  <block id="824e65f15b61863b18403a352208dbf8" category="list-text">AWSCLI</block>
-  <block id="d52387880e1ea22817a72d3759213819" category="list-text">Java</block>
-  <block id="6f49e891fdb1bb11823492f4d315b2fd" category="list-text">Kubectl</block>
-  <block id="62a004b95946bb97541afa471dcca73a" category="list-text">MySQL</block>
-  <block id="bc564dcbf13f1065be526346597880e6" category="list-text">Tridentctl</block>
-  <block id="718f59718640c6506b3721fbc8bf3a4d" category="list-text">拉拔</block>
-  <block id="f7bd8a523429508417b95f15d7d78a4f" category="list-text">wget</block>
   <block id="262eae76dd865321cbe26eb35ccca998" category="list-text">Connector 在 Linux 主机上使用以下端口：</block>
   <block id="f99405255f2e0275d201caf689380ada" category="list-text">80 用于 HTTP 访问</block>
   <block id="95376c13fd8813cbd5336d84e0207ed1" category="list-text">443 用于 HTTPS 访问</block>
-  <block id="276b8acd33de7f3d565955f164e67cd2" category="list-text">8666 用于 Service Manager API</block>
-  <block id="803a96dc7774103b48557af2d8ee96c3" category="list-text">8777 ，用于运行状况检查程序容器服务 API</block>
   <block id="953a0ee991cb0f7fd649dff3efa51614" category="section-title">无 Internet 访问的默认配置</block>
   <block id="23b1e0717b9b8b52e9ae0f29f7fc4241" category="inline-link-macro">了解有关此安装选项的更多信息</block>
   <block id="d29c75496182e07bc5b38ffe2cb4de30" category="paragraph">如果您在无法访问 Internet 的内部 Linux 主机上手动安装了 Connector ，则以下配置适用。 <block ref="4d73489e378e81ca61892ecf59f809a5" category="inline-link-macro-rx"></block>。</block>
@@ -1461,7 +1439,6 @@
   <block id="bc4aa6323016172de14a6835883b27c7" category="section-title">安装文件夹</block>
   <block id="81fae4ea40cc442afa43dab4cc001004" category="section-title">日志文件</block>
   <block id="7ab07ea46199c644dddf2520b843394b" category="section-title">连接器服务</block>
-  <block id="27fe4eb3edbaff8f250e2d51f7462681" category="section-title">软件包</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">端口</block>
   <block id="bffde7130bcbd48dc4d26900909a6ec0" category="inline-link">创建Google Cloud服务帐户并应用您刚刚创建的自定义角色</block>
   <block id="8ffe57ff2d6f0334349512874d9ed89d" category="list-text"><block ref="e91ca9f63029ef70f3223d4f72fac132" category="inline-link-rx"></block>。</block>
@@ -2168,9 +2145,6 @@
   <block id="a0676ac5cfebaef69b53ff7e37cd8c3c" category="paragraph">如果您从BlueXP或云提供商的市场部署了Connector、请注意以下事项：</block>
   <block id="117c785e61d16618a1202c0ae6cf754a" category="paragraph">此文件夹中的日志提供了有关云服务以及在Connector上运行的BlueXP服务的详细信息。</block>
   <block id="9381e0bddd6aaa003edbc676c4bf74ee" category="list-text">BlueXP服务名为occa。</block>
-  <block id="764d44260ad297eee560240a0f9876dc" category="paragraph">如果尚未安装以下软件包、则BlueXP会在Linux主机上安装它们：</block>
-  <block id="08cb80fa4f936d781e5b8c3e12f64139" category="list-text">3306用于BlueXP数据库</block>
-  <block id="21ce98ebf19ba7dfc7a4300742bb8f2a" category="list-text">适用于BlueXP API代理的8080</block>
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">这些限制特定于BlueXP的设置和管理：Connector、SaaS平台等。</block>
   <block id="efdb2123102821583a0af000d2fa9040" category="paragraph">BlueXP使用IP地址位于172.17.0.0/16和172.18.0.0/16范围的两个接口部署Connector。</block>
   <block id="5646658d58bb92ba775a6c2cd024ef17" category="paragraph">如果您的网络中的子网配置了上述任一范围、则您可能会在BlueXP中遇到连接失败。例如、在BlueXP中发现内部ONTAP 集群可能会失败。</block>
@@ -2196,7 +2170,6 @@
   <block id="36e6435fcbb8fc1cb1db7a6b55e336f8" category="cell">您的Web浏览器连接到这些端点、以便通过BlueXP集中进行用户身份验证。</block>
   <block id="9307a4b1840270d6e9b32ec060d29760" category="paragraph">在大多数情况下、您应该从SaaS UI使用BlueXP、但是 <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>，然后必须从 Web 浏览器输入主机的 IP 地址。</block>
   <block id="ea7babb79350418e9437972e245c5e46" category="list-text">登录到BlueXP后、BlueXP帐户管理员需要在云提供商或内部网络中部署_Connector_。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。请注意、在BlueXP中、大多数服务和功能都需要连接器、但并非所有服务和功能都需要连接器。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
-  <block id="8a4762cb5d44b37be8c41c99aa8c77d1" category="list-text">如果您选择在自己的Linux主机上手动安装Connector (而不是直接从BlueXP界面安装)、则Connector的安装程序需要在安装过程中访问以下端点：</block>
   <block id="b9288d749f3ef53ccabb6e5c7c7bc85f" category="list-text">您需要一个有权直接从BlueXP在云提供商中部署Connector的帐户。</block>
   <block id="aa752bf0c5f36649ca4bd7a513728abe" category="list-text">创建Connector时、请为BlueXP提供IAM角色的ARN或IAM用户的AWS访问密钥和机密密钥。</block>
   <block id="52fa2650896e1ee785bcdceccae31e8d" category="list-text">将此角色分配给要从BlueXP创建Connector的用户。</block>
@@ -2310,8 +2283,6 @@
   <block id="7c083cefb70575179c33df9514a78fce" category="list-text">在BlueXP菜单栏中、单击*设置&gt;时间线*。</block>
   <block id="750a8d708df5a8d73fc4ec2fb142feb6" category="summary">对于Azure商业区域、最好直接从BlueXP创建Connector、但如果愿意、您可以从Azure Marketplace启动Connector。对于Azure政府区域、您不能从BlueXP SaaS网站在政府区域部署Connector、因此、下一个最佳选择是从Azure Marketplace进行部署。</block>
   <block id="0e1b45b3594b4c3ece1911fc871e9fe5" category="list-text">此连接器可以对HDD或SSD磁盘执行最佳性能。</block>
-  <block id="2bf1f619d2f890a36c270d8592ed2afc" category="inline-image-macro">屏幕截图显示了设置BlueXP屏幕、您可以通过该屏幕选择NetApp帐户并为系统命名。</block>
-  <block id="0d815f71e04fd373dfef85f5c2a1e6b5" category="paragraph"><block ref="0d815f71e04fd373dfef85f5c2a1e6b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f13f9c900e17fbd7423292fc7d7a65ef" category="paragraph">如果Connector位于Azure政府区域、则可以通过打开Web浏览器并连接到Connector实例的IP地址来使用BlueXP：<block ref="e3a51e84cbbae6e45a585984f3be3fd0" category="inline-link-rx"></block></block>
   <block id="32d2a3c1d987b586f424356144271b0e" category="paragraph">现在、您应该拥有一个名为BlueXP操作员的自定义角色、可以将该角色分配给Connector虚拟机。</block>
   <block id="54b14f07c36bed41295c2086ea238332" category="list-text">在*角色*选项卡中、选择* BlueXP操作员*角色、然后单击*下一步*。</block>
@@ -2363,7 +2334,6 @@
   <block id="a6e51e5836a7fd28d1b3879d7658a4fb" category="paragraph">将Azure凭据添加到BlueXP后、您可以将Azure Marketplace订阅与这些凭据相关联。通过订阅，您可以创建按需购买的 Cloud Volumes ONTAP 系统并使用其他 NetApp 云服务。</block>
   <block id="2e6aa15d4609a29d86e5e9f886599c4c" category="paragraph">在以下两种情况下、您可能会在将凭据添加到BlueXP后关联Azure Marketplace订阅：</block>
   <block id="bf6a5b9863bb599dd7d76e43de882036" category="paragraph">通过修改Azure服务凭据的详细信息、在BlueXP中编辑Azure凭据。例如，如果为服务主体应用程序创建了新密钥，则可能需要更新客户端密钥。</block>
-  <block id="379280cc324da5135d2ccadf286698e6" category="summary">创建Connector的最常见方法是直接从BlueXP或云提供商的市场创建。但是，您可以选择在网络或云中的现有 Linux 主机上下载并安装 Connector 软件。</block>
   <block id="ac9c35728450917d81cf663988a4bac2" category="paragraph">创建Connector的最常见方法是直接从BlueXP或云提供商的市场创建。但是，您可以选择在网络或云中的现有 Linux 主机上下载并安装 Connector 软件。这些步骤特定于可访问 Internet 的主机。</block>
   <block id="7e64bcd49d202a618920fe22d66f21ac" category="list-text">从下载Connector软件<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>，然后将其复制到 Linux 主机。</block>
   <block id="e832abccfbda1e1df2db47f59705c74c" category="paragraph">此时将安装Connector。在安装结束时、如果您指定了代理服务器、则Connector服务(occa)将重新启动两次。</block>
@@ -2446,8 +2416,6 @@
   <block id="309a17e5c03cbe61700c1e46eb38532f" category="cell">从BlueXP中删除工作环境</block>
   <block id="32938b525c2b2416fa93e4e59287cb16" category="summary">在"画布"上、"我的商机"选项卡提供了一个集中位置、用于发现您可以添加到BlueXP中的现有资源、以便在混合多云中实现一致的数据服务和操作。</block>
   <block id="b620bd6c68fcba7c4e98498bd33fd93c" category="paragraph">在Canvas上、*我的商机*选项卡提供了一个集中位置、用于发现您可以添加到BlueXP中的现有资源、以便在混合多云中实现一致的数据服务和操作。</block>
-  <block id="beba35b5f1ffff4e7c4c9683317102ed" category="paragraph">BlueXP帐户管理员需要先部署_Connector_、然后才能使用大多数BlueXP功能。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。 <block ref="39840e1bb98f6582f1bf4e505d666ea1" category="inline-link-macro-rx"></block>。</block>
-  <block id="642291c0cdf2ee77f8c053427866b467" category="paragraph">此页面介绍如何直接从BlueXP在Azure中创建Connector。 <block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block>。</block>
   <block id="9207a1bb9dbe8c5c1aac06abfdb5a64a" category="paragraph">要部署Connector、您需要为BlueXP提供一个登录名、该登录名必须具有在Azure中创建Connector VM所需的权限。</block>
   <block id="f651afd4cab9136bd78c9e4950f05cb9" category="paragraph">在从BlueXP部署Connector之前、您需要确保Azure帐户具有正确的权限。</block>
   <block id="8747c846ccf20f1b6f26f06f38406ffa" category="admonition">此策略仅包含从BlueXP在Azure中启动Connector VM所需的权限。请勿在其他情况下使用此策略。当BlueXP创建Connector时、它会将一组新的权限应用于Connector VM、从而使Connector能够管理公有 云环境中的资源。</block>
@@ -2498,7 +2466,6 @@
   <block id="a74d4f6da1f4962caa974b5e68852f05" category="admonition">转到"NSS管理"页面时、BlueXP会为表中的每个帐户生成一个令牌。此令牌包含有关关联电子邮件地址的信息。退出此页面后，此令牌将被删除。此信息永远不会缓存，这有助于保护您的隐私。</block>
   <block id="c7a6c5419388c54dd17826c0c6b4dc85" category="paragraph">BlueXP将显示NetApp 支持站点 用户名和关联的电子邮件地址。您可以使用复制按钮复制电子邮件地址。</block>
   <block id="09e40761f22ee02fc6f59d79db4d6f93" category="paragraph">删除您不想再用于BlueXP的任何NSS帐户。</block>
-  <block id="2b728e40e9cb22f93792e581f831c6e8" category="paragraph">此页面介绍如何直接从BlueXP在AWS中创建Connector。 <block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block>。</block>
   <block id="2ff3310af3f7a8c23232832947eccc41" category="paragraph">要在AWS中启动Connector、BlueXP需要通过承担IAM角色或使用AWS访问密钥向AWS进行身份验证。使用任一选项、都需要IAM策略。</block>
   <block id="92c5959c8282fd63c3afcbd1c9b13f51" category="paragraph">BlueXP需要先向AWS进行身份验证、然后才能在VPC中部署Connector实例。您可以选择以下身份验证方法之一：</block>
   <block id="61f21c125c1220d8643bea1729345e36" category="list-text">让BlueXP承担具有所需权限的IAM角色</block>
@@ -2819,4 +2786,40 @@
   <block id="5ccc745272c52ce1868d5bcf2b07705a" category="section-title">管理Workspace Admin的工作空间</block>
   <block id="1cf32fb78afaf111cd4c8421dc8592a6" category="section-title">管理Connector的工作空间</block>
   <block id="c558073ec27a1686dce5ebbe5da43092" category="paragraph-title">登录选项</block>
+  <block id="25fd4db5a75c387fe3fd85258810fcad" category="list-text">如果您选择在自己的Linux主机上手动安装Connector (而不是直接从BlueXP界面安装)、则Connector的安装程序需要在安装过程中访问多个端点：</block>
+  <block id="d225210f36f5d8518fad068e89f2d1c3" category="inline-link-macro">查看端点列表</block>
+  <block id="c0355dfc890e268b51bb88722cb448a9" category="paragraph"><block ref="12b2338905766fe009fef0e6c52eb82d" category="inline-link-macro-rx"></block>。</block>
+  <block id="762cb137e48e2922920955cfb157dea8" category="list-text">在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
+  <block id="d03b3625d28d43168905850da108e917" category="list-text">https://mysupport.netapp.com</block>
+  <block id="648b7f3d6699305c92d33129e6ea00fe" category="list-text">https://cloudmanager.cloud.netapp.com/tenancy</block>
+  <block id="aeed9abd051a5ff37a94ee8ea302bdd8" category="list-text">https://stream.cloudmanager.cloud.netapp.com</block>
+  <block id="9dcb0a1d3281e001a6085626a264be49" category="list-text">https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="49fa0b884bb05dfb3678aff69fc2a90f" category="list-text">https://production-artifacts.cloudmanager.cloud.netapp.com</block>
+  <block id="f55e31da35f47937201bdbf54e964315" category="list-text">https://*.blob.core.windows.net</block>
+  <block id="4212008c2b937ee581ff9e530b8440f8" category="list-text">安装Connector的root权限。</block>
+  <block id="f39873ba3fdf2dff72b117d1ccc0a3f8" category="list-text">有关代理服务器的详细信息、如果从Connector访问Internet需要代理。</block>
+  <block id="2d8d8f0bca25643e72f72642f3d69663" category="paragraph">您可以选择在安装后配置代理服务器、但这样做需要重新启动Connector。</block>
+  <block id="65b78a376b8b24b27e70f95a439510ed" category="list-text">如果代理服务器使用HTTPS、则为CA签名证书。</block>
+  <block id="e4e566d8d29952e9ed77e5d97574962e" category="paragraph">您应下载适用于您的网络或云中的Connector安装程序。</block>
+  <block id="658dfe68751aa32c88df07e11961f9e4" category="paragraph">-proxy和-cacert参数是可选的。如果您有代理服务器、则需要输入所示的参数。安装程序不会提示您提供有关代理的信息。</block>
+  <block id="b9fe00008273bec266b1b13a375c5496" category="paragraph">以下是使用这两个可选参数的命令示例：</block>
+  <block id="c4b4fca8bb676cd8922fa6d8e24c4b0b" category="paragraph">-proxy会将Connector配置为使用以下格式之一的HTTP或HTTPS代理服务器：</block>
+  <block id="2ceb0e196c300f23618f8a9e66bf0553" category="list-text">http://address:port</block>
+  <block id="56ea310ec955ce6bca75693a1ac8f92d" category="list-text">http://username:password@address:port</block>
+  <block id="ab0bd0c76dc86ad344963fb604cbdb9a" category="list-text">https://address:port</block>
+  <block id="0e304d528ea3fafc4ceebb3dd322c283" category="list-text">https://username:password@address:port</block>
+  <block id="aa39dfaee370d13c729f753fcb941905" category="paragraph">-cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。只有在指定HTTPS代理服务器时、才需要此参数。</block>
+  <block id="32a79a3da73e9b7dab502ea9e60bf1a5" category="section-title">设置连接器</block>
+  <block id="9679c37d1ece85e4705ecd886aca356e" category="paragraph">注册或登录、然后设置Connector以使用您的帐户。</block>
+  <block id="f585d8283789f95373bb4a61f1b6ce67" category="list-text">Google Cloud：请参见上面的第3步</block>
+  <block id="bdf21bb8cfe7ab9d40f2a425c4b3b3d2" category="paragraph">BlueXP帐户管理员需要先部署_Connector_、然后才能使用大多数BlueXP功能。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。</block>
+  <block id="d244936e046f15fcb45607b4abdb4b1a" category="paragraph">以下步骤介绍如何直接从BlueXP SaaS网站在Azure商业区域创建Connector。</block>
+  <block id="2e8e562450aa2519f49cd0db32ef65de" category="inline-link-macro">了解如何在政府区域部署Connector</block>
+  <block id="7f86b05bc7243efe06f8812a8de60993" category="list-text"><block ref="7f86b05bc7243efe06f8812a8de60993" category="inline-link-macro-rx"></block></block>
+  <block id="f56df5f8b4fd558a7482d6115403eadd" category="list-text"><block ref="f56df5f8b4fd558a7482d6115403eadd" category="inline-link-macro-rx"></block></block>
+  <block id="4c8996b4b6a0d48752377c7e6f5e0168" category="paragraph">以下步骤介绍如何直接从BlueXP SaaS网站在AWS商业区域中创建Connector。</block>
+  <block id="973e3a2a390bb57ce9d9e16ac0145023" category="paragraph"><block ref="973e3a2a390bb57ce9d9e16ac0145023" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ff6e28c8eaa73c74f132f30b8a504071" category="list-text">/opt/application/netapp/cloudmanager/log或</block>
+  <block id="f41aa0898b72dcd91cd63bd3d33d4258" category="list-text">/opt/application/netapp/service-manager-2/logs (从新的3.9.23安装开始)</block>
+  <block id="ca20316f548fc97a4d2a061c877b1956" category="paragraph">这些文件夹中的日志提供了有关连接器和Docker映像的详细信息。</block>
 </blocks>

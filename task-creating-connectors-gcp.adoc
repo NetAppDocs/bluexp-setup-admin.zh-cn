@@ -504,7 +504,7 @@ gcloud compute instances create <instance-name>
   --image-family=cloudmanager
   --scopes=cloud-platform
   --project=<project>
-  --service-account=<<service-account>
+  --service-account=<service-account>
   --zone=<zone>
   --no-address
   --tags <network-tag>
@@ -543,9 +543,6 @@ https://_ipaddress_[]
 link:concept-netapp-accounts.html["了解 NetApp 客户"]。
 
 .. 输入系统名称。
-+
-image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了 \"Set Up Connector\" 屏幕，可用于选择 NetApp 帐户并为系统命名。"]
-
 
 
 

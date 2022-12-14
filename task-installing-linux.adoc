@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-installing-linux.html 
 keywords: install connector, manually install connector, install connector software, installation, installing, linux, installer, software, on prem, on-prem, silent, configurations, ec2, vm, ports, ram, operating system, os, host, requirement, requirements, hypervisor, disk, space, mysql, centos, rhel, red hat, cpu, disk space 
-summary: 创建Connector的最常见方法是直接从BlueXP或云提供商的市场创建。但是，您可以选择在网络或云中的现有 Linux 主机上下载并安装 Connector 软件。 
+summary: 创建Connector的最常见方法是直接从BlueXP或云提供商的市场创建。但是，您可以选择在网络或云中的现有 Linux 主机上下载并安装 Connector 软件。这些步骤特定于可访问 Internet 的主机。 
 ---
 = 在可访问 Internet 的现有 Linux 主机上安装 Connector
 :hardbreaks:
@@ -62,16 +62,20 @@ Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果�
 虚拟机管理程序:: 经过认证可运行 CentOS 或 Red Hat Enterprise Linux 的裸机或托管虚拟机管理程序https://access.redhat.com/certified-hypervisors["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
 /var 中的磁盘空间:: 必须有 20 GiB 的可用空间
-Docker 引擎:: 在安装 Connector 之前，主机上需要安装 Docker 引擎版本 19 或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]
+Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]
 出站 Internet 访问:: 在安装过程中、Connector的安装程序必须访问以下URL：
 +
 --
-* https://s3.amazonaws.com/aws-cli/awscri-bundle.zip
-* https://*.blob.core.windows.net 或 https://hub.docker.com
-+
+* https://support.netapp.com
+* https://mysupport.netapp.com
+* https://cloudmanager.cloud.netapp.com/tenancy
+* https://stream.cloudmanager.cloud.netapp.com
+* https://cloudmanagerinfraprod.azurecr.io
+* https://production-artifacts.cloudmanager.cloud.netapp.com
+* https://*.blob.core.windows.net
+
+
 主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。
-
-
 
 --
 
@@ -82,8 +86,14 @@ Docker 引擎:: 在安装 Connector 之前，主机上需要安装 Docker 引擎
 
 确认您拥有受支持的 Linux 主机后，您可以获取 Connector 软件并进行安装。
 
-.所需权限
-安装连接器需要 root 权限。
+.您需要的内容
+* 安装Connector的root权限。
+* 有关代理服务器的详细信息、如果从Connector访问Internet需要代理。
++
+您可以选择在安装后配置代理服务器、但这样做需要重新启动Connector。
+
+* 如果代理服务器使用HTTPS、则为CA签名证书。
+
 
 .关于此任务
 * 此安装将安装 AWS 命令行工具（ awscli ），以便从 NetApp 支持部门执行恢复过程。
@@ -102,26 +112,56 @@ sudo systemctl enable docker && sudo systemctl start docker
 ----
 . 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
 +
-有关在 AWS 中将文件连接和复制到 EC2 实例的帮助，请参见 http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html["AWS 文档：使用 SSH 连接到 Linux 实例"^]。
+您应下载适用于您的网络或云中的Connector安装程序。
 
 . 分配运行脚本的权限。
 +
 [source, cli]
 ----
-chmod +x OnCommandCloudManager-V3.9.23.sh
+chmod +x OnCommandCloudManager-V3.9.23
 ----
 . 运行安装脚本。
 +
-如果您有代理服务器，则需要输入命令参数，如下所示。安装程序不会提示您提供有关代理的信息。
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.23 --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+-proxy和-cacert参数是可选的。如果您有代理服务器、则需要输入所示的参数。安装程序不会提示您提供有关代理的信息。
+
++
+以下是使用这两个可选参数的命令示例：
 
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.23.sh --proxy http://occm:password@10.0.0.30:9090/ --cacert /root/rootca.pem
+ ./OnCommandCloudManager-V3.9.23 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
+-proxy会将Connector配置为使用以下格式之一的HTTP或HTTPS代理服务器：
+
++
+** http://address:port
+** http://username:password@address:port
+** https://address:port
+** https://username:password@address:port
+
+
++
+-cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。只有在指定HTTPS代理服务器时、才需要此参数。
+
+
+
+.结果
 此时将安装Connector。在安装结束时、如果您指定了代理服务器、则Connector服务(occa)将重新启动两次。
 
+
+
+== 设置连接器
+
+注册或登录、然后设置Connector以使用您的帐户。
+
+.步骤
 . 打开 Web 浏览器并输入以下 URL ：
 +
 https://_ipaddress_[]
@@ -145,9 +185,6 @@ _ipaddress_ 可以是 localhost ，专用 IP 地址或公有 IP 地址，具体�
 link:concept-netapp-accounts.html["了解 NetApp 客户"]。
 
 .. 输入系统名称。
-+
-image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了设置屏幕，可用于选择 NetApp 帐户并为系统命名。"]
-
 
 
 
@@ -160,5 +197,5 @@ image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了设置屏幕，�
 
 * AWS link:task-adding-aws-accounts.html["设置AWS帐户、然后将其添加到BlueXP"]
 * Azure 酒店 link:task-adding-azure-accounts.html["设置Azure帐户、然后将其添加到BlueXP"]
-* Google Cloud ：请参见上文第 7 步
+* Google Cloud：请参见上面的第3步
 

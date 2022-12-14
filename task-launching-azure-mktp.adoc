@@ -68,9 +68,6 @@ https://_ipaddress_[]
 link:concept-netapp-accounts.html["了解 NetApp 客户"]。
 
 .. 输入系统名称。
-+
-image:screenshot_set_up_cloud_manager.gif["屏幕截图显示了设置BlueXP屏幕、您可以通过该屏幕选择NetApp帐户并为系统命名。"]
-
 
 
 
