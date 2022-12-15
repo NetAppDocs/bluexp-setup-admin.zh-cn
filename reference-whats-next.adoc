@@ -16,12 +16,14 @@ summary: 登录并设置BlueXP后、用户便可开始创建和发现工作环�
 [role="lead"]
 登录并设置BlueXP后、用户便可开始创建和发现工作环境。
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["开始使用适用于 AWS 的 Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["开始使用适用于 Azure 的 Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["开始使用适用于 Google Cloud 的 Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["设置 Azure NetApp Files"^]
-* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["设置适用于 ONTAP 的 Amazon FSX"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-aws/task-manage-cvs-aws.html["为 AWS 设置 Cloud Volumes Service"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["发现内部 ONTAP 集群"^]
-* link:task-viewing-amazon-s3.html["发现您的 Amazon S3 存储分段"]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["适用于 ONTAP 的 Amazon FSX"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["适用于 AWS 的 Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["适用于 Azure 的 Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["适用于 Google Cloud 的 Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/task-set-up-google-cloud.html["适用于 Google Cloud 的 Cloud Volumes Service"^]
+* https://docs.netapp.com/us-en/cloud-manager-e-series/task-discover-e-series.html["E系列系统"^]
+* https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["Kubernetes 集群"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["内部 ONTAP 集群"^]
+* https://docs.netapp.com/us-en/cloud-manager-storagegrid/task-discover-storagegrid.html["StorageGRID 系统"^]
 

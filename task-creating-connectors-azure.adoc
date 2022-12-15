@@ -52,15 +52,15 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-pr
 
 == 设置网络
 
-设置您的网络，以便 Connector 可以管理公有云环境中的资源和流程。除了为Connector提供vNet和子网之外、您还需要确保满足以下要求。
+设置您的网络，以便 Connector 可以管理公有云环境中的资源和流程。除了为Connector提供虚拟网络和子网之外、您还需要确保满足以下要求。
 
 
 
 === 连接到目标网络
 
-连接器要求与您要创建的工作环境类型以及计划启用的服务建立网络连接。
+Connector需要与您要创建的工作环境类型以及计划启用的服务建立网络连接。
 
-例如、如果您在公司网络中安装了连接器、则必须设置与启动Cloud Volumes ONTAP 的vNet的VPN连接。
+例如、如果您在公司网络中安装了连接器、则必须设置与启动Cloud Volumes ONTAP 的虚拟网络的VPN连接。
 
 
 
@@ -109,13 +109,13 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 === 安全组
 
-没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。HTTP 和 HTTPS 可用于访问 link:concept-connectors.html#the-local-user-interface["本地 UI"]，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。
+没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。HTTP 和 HTTPS 可用于访问 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#the-local-user-interface["本地 UI"]，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。
 
 
 
 === IP地址限制
 
-可能与172范围内的IP地址冲突。 link:reference-limitations.html["了解有关此限制的更多信息"]。
+可能与172范围内的IP地址冲突。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["了解有关此限制的更多信息"]。
 
 
 
