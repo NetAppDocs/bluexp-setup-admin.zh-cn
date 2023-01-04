@@ -254,7 +254,7 @@ BlueXP会从其记录中删除Connector。
 .步骤
 . 在 Linux 主机上运行卸载脚本：
 +
-* /opt/application/netapp/cloudmanager/bin/uninstall.sh [silent]*
+*/opt/application/netapp/service-manager-2/uninstall.sh [silent]*
 
 +
 _silent_ 运行此脚本，而不提示您进行确认。

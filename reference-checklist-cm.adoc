@@ -62,8 +62,8 @@ AWS 服务（ AmazonAWS.com ）：
 | https://widget.intercom.io | 用于与 NetApp 云专家交流的产品内聊天。 
 
 
-| 连接器的 IP 地址  a| 
-在大多数情况下、您应该从SaaS UI使用BlueXP、但是 link:concept-connectors.html#the-local-user-interface["使用本地 UI 时"]，然后必须从 Web 浏览器输入主机的 IP 地址。
+| 连接器的IP地址  a| 
+在大多数情况下、您应该从SaaS UI使用BlueXP、但是 link:concept-connectors.html#the-local-user-interface["使用本地 UI 时"]、则必须从Web浏览器输入主机的IP地址。
 
 根据与云提供商的连接，使用分配给主机的专用 IP 或公有 IP ：
 
@@ -115,7 +115,7 @@ link:task-installing-linux.html["查看端点列表"]。
 
 * 除非您启动 Connector ，否则不会向其传入流量。
 +
-通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。
+通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。同时、如果在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。
 
 
 
@@ -157,7 +157,7 @@ NOTE: 可通过其他方法创建连接器：您可以从创建连接器 link:ta
 | link:task-creating-connectors-gcp.html["单击此处可查看详细步骤"]。 
 |===
 --
-为单个服务建立网络:: 设置完成后、您便可开始使用BlueXP中提供的服务了。请注意，每个服务都有自己的网络要求。有关详细信息，请参见以下页面。
+为单个服务建立网络:: 设置完成后、即可开始使用BlueXP中提供的服务。请注意，每个服务都有自己的网络要求。有关详细信息，请参见以下页面。
 +
 --
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-networking-aws.html["适用于 AWS 的 Cloud Volumes ONTAP"^]

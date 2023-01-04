@@ -721,7 +721,6 @@
   <block id="4d67fb715dceafe12fe6803426ac57b2" category="section-title">从可访问 Internet 的主机卸载</block>
   <block id="e089c95fb359ddfa284cac5771dbcd57" category="paragraph">联机连接器包含一个卸载脚本，您可以使用此脚本卸载软件。</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">在 Linux 主机上运行卸载脚本：</block>
-  <block id="e2f6c6cb24129499bc001ae5e6c182d2" category="paragraph">* /opt/application/netapp/cloudmanager/bin/uninstall.sh [silent]*</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silent_ 运行此脚本，而不提示您进行确认。</block>
   <block id="8df713934e0916c402f7101820962747" category="section-title">从无法访问 Internet 的主机卸载</block>
   <block id="aa03c0a49ae5be9aa71931d934887122" category="paragraph">如果您从 NetApp 支持站点下载了 Connector 软件并将其安装在无法访问 Internet 的受限网络中，请使用以下命令。</block>
@@ -871,7 +870,6 @@
   <block id="b809225d6fab27e3db8c3ac3e0a640c5" category="cell">https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com</block>
   <block id="abc66ca669cfbd9be590874c67e8d7ef" category="cell">https://widget.intercom.io</block>
   <block id="30fe214f0e8ecaf9b895a0137cad8ce9" category="cell">用于与 NetApp 云专家交流的产品内聊天。</block>
-  <block id="df5b9982059c29cbe72aa6342e6b47a8" category="cell">连接器的 IP 地址</block>
   <block id="0b83c97017787b7fdc5aaf31aaf0da59" category="inline-link-macro">使用本地 UI 时</block>
   <block id="4c2345ba2614b91eb52d47835c18de63" category="paragraph">根据与云提供商的连接，使用分配给主机的专用 IP 或公有 IP ：</block>
   <block id="a106b753f18f3561086de4e9f0a06365" category="list-text">如果您拥有 VPN 并直接访问虚拟网络，则专用 IP 可以正常工作</block>
@@ -887,7 +885,6 @@
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">升级 Connector 及其 Docker 组件。</block>
   <block id="35bd57a4dcfbd7a695f9beb7d01913c6" category="paragraph">主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。</block>
   <block id="11ffd2b7817530008f4bc1916d79b3d7" category="list-text">除非您启动 Connector ，否则不会向其传入流量。</block>
-  <block id="eedca72959934d39da95314809917fb3" category="paragraph">通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。</block>
   <block id="0d07862d67097acd517fe27c0de099d7" category="list-text">云提供商权限</block>
   <block id="538af31ddd16eccfcf12aa9e35a4474b" category="inline-link-macro">手动安装软件</block>
   <block id="6f03862f0add724759472d86f71c9877" category="admonition">可通过其他方法创建连接器：您可以从创建连接器 <block ref="ed949d24ab11f0d2a40c0b8161ab4cf3" category="inline-link-macro-rx"></block>， <block ref="42416828ae8ae7a901a48c71094e7a44" category="inline-link-macro-rx"></block>也可以 <block ref="8337d7ed6def6d5f87da23456032c34a" category="inline-link-macro-rx"></block>。</block>
@@ -2125,13 +2122,11 @@
   <block id="1a6c8c62d26581c9cf35da7a9ecc4a79" category="cell">在Google Cloud中从BlueXP部署Connector时需要此功能。</block>
   <block id="8776ba6c1697445dc54ff1aab6a344fe" category="cell">需要更新NetApp 支持站点 (NSS)凭据或向BlueXP添加新的NSS凭据。</block>
   <block id="36e6435fcbb8fc1cb1db7a6b55e336f8" category="cell">您的Web浏览器连接到这些端点、以便通过BlueXP集中进行用户身份验证。</block>
-  <block id="9307a4b1840270d6e9b32ec060d29760" category="paragraph">在大多数情况下、您应该从SaaS UI使用BlueXP、但是 <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>，然后必须从 Web 浏览器输入主机的 IP 地址。</block>
   <block id="ea7babb79350418e9437972e245c5e46" category="list-text">登录到BlueXP后、BlueXP帐户管理员需要在云提供商或内部网络中部署_Connector_。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。请注意、在BlueXP中、大多数服务和功能都需要连接器、但并非所有服务和功能都需要连接器。 <block ref="fc0525c57d574c03610221b6665bff18" category="inline-link-macro-rx"></block>。</block>
   <block id="b9288d749f3ef53ccabb6e5c7c7bc85f" category="list-text">您需要一个有权直接从BlueXP在云提供商中部署Connector的帐户。</block>
   <block id="aa752bf0c5f36649ca4bd7a513728abe" category="list-text">创建Connector时、请为BlueXP提供IAM角色的ARN或IAM用户的AWS访问密钥和机密密钥。</block>
   <block id="52fa2650896e1ee785bcdceccae31e8d" category="list-text">将此角色分配给要从BlueXP创建Connector的用户。</block>
   <block id="0bf50bb8ad7c4e2c1492e97a5ed174ac" category="list-text">将此角色附加到将从BlueXP创建Connector的用户。</block>
-  <block id="9248603a11ea2c749d830243087dd219" category="list-text">设置完成后、您便可开始使用BlueXP中提供的服务了。请注意，每个服务都有自己的网络要求。有关详细信息，请参见以下页面。</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp通过多种方式为BlueXP提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp通过多种方式为BlueXP及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">搜索BlueXP知识库、查找有助于解决问题的文章。</block>
@@ -2816,4 +2811,13 @@
   <block id="92f468efd354e3cfaab0772943ec7f1d" category="list-text"><block ref="92f468efd354e3cfaab0772943ec7f1d" category="inline-link-rx"></block></block>
   <block id="412b379b83628f21da708ff096d131e5" category="list-text"><block ref="412b379b83628f21da708ff096d131e5" category="inline-link-rx"></block></block>
   <block id="a565303474e8a5c2bfe13bce52714f80" category="list-text"><block ref="a565303474e8a5c2bfe13bce52714f80" category="inline-link-rx"></block></block>
+  <block id="a6e1656bf1d677715d170327b95cc743" category="paragraph">*/opt/application/netapp/service-manager-2/uninstall.sh [silent]*</block>
+  <block id="1f7138998459804601fc351f8d442e29" category="section-title">2023年1月1日</block>
+  <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">连接器3.9.25</block>
+  <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">此版本的连接器包含Cloud Volumes ONTAP 增强功能和错误修复。</block>
+  <block id="826d1d89ec2a521e40a7a91c2ee8f024" category="paragraph"><block ref="826d1d89ec2a521e40a7a91c2ee8f024" category="inline-link-rx"></block></block>
+  <block id="c07581a9e3714e573075f510c11a8b05" category="cell">连接器的IP地址</block>
+  <block id="1c3a99b9cab6b55c9a46ccd58a1283c8" category="paragraph">在大多数情况下、您应该从SaaS UI使用BlueXP、但是 <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>、则必须从Web浏览器输入主机的IP地址。</block>
+  <block id="c24732648af9b734203cc5a8a19f2537" category="paragraph">通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。同时、如果在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。</block>
+  <block id="31cd3194dbc40a48cdae969161abd4a5" category="list-text">设置完成后、即可开始使用BlueXP中提供的服务。请注意，每个服务都有自己的网络要求。有关详细信息，请参见以下页面。</block>
 </blocks>

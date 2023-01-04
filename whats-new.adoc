@@ -18,6 +18,18 @@ summary: '了解BlueXP (以前称为Cloud Manager)管理功能的新增功能：
 
 
 
+== 2023年1月1日
+
+
+
+=== 连接器3.9.25
+
+此版本的连接器包含Cloud Volumes ONTAP 增强功能和错误修复。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1-january-2023["了解Cloud Volumes ONTAP 增强功能"^]
+
+
+
 == 2022年12月4日
 
 
