@@ -2678,7 +2678,6 @@
   <block id="4e7880d4f8d9cf685f649e74e34a3de7" category="list-text">在安装 Connector 之前，主机上需要安装 Docker 引擎版本 19 或更高版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
   <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">更改日志</block>
   <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">添加和删除权限后、我们将在以下各节中记录这些权限。</block>
-  <block id="a6123430b152ca358cd64ba937f6f1b9" category="section-title">2022年12月1日</block>
   <block id="ac692d638162a1dc479fa6a76fb4e114" category="list-text">Microsoft.Compute/images/write</block>
   <block id="61d40b12dddcd9e571bbe7a89b0fbae8" category="list-text">Microsoft.Network/loadBalancers/backendAddressPools/join/action</block>
   <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
@@ -2820,4 +2819,10 @@
   <block id="1c3a99b9cab6b55c9a46ccd58a1283c8" category="paragraph">在大多数情况下、您应该从SaaS UI使用BlueXP、但是 <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>、则必须从Web浏览器输入主机的IP地址。</block>
   <block id="c24732648af9b734203cc5a8a19f2537" category="paragraph">通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。同时、如果在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。</block>
   <block id="31cd3194dbc40a48cdae969161abd4a5" category="list-text">设置完成后、即可开始使用BlueXP中提供的服务。请注意，每个服务都有自己的网络要求。有关详细信息，请参见以下页面。</block>
+  <block id="9efb399c3a128a79f4671ff959339e79" category="list-text">microsoft.Storage/storageAccounts/ListAccountSAS/操作</block>
+  <block id="a5b807c71b066c1d33685818cfa2806e" category="list-text">microsoft.Synape/workworkworks/privateEndpointConnectionsApproval/操作</block>
+  <block id="176944a9db0702558233e827d21e2f80" category="section-title">2023年1月5日</block>
+  <block id="267cfa5c9c91dc1d99dc797e89903dfa" category="paragraph">Cloud Backup需要这些权限。</block>
+  <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">Cloud Volumes ONTAP 部署需要此权限。</block>
+  <block id="1d37387582eb7a955869d3991c1dab28" category="section-title">2022年12月1日</block>
 </blocks>

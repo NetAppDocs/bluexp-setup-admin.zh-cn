@@ -81,6 +81,7 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Storage/storageAccounts/write",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/read",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+                    "Microsoft.Storage/storageAccounts/listAccountSas/action",
                     "Microsoft.Storage/usages/read",
                     "Microsoft.Compute/snapshots/write",
                     "Microsoft.Compute/snapshots/read",
@@ -93,6 +94,7 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Network/loadBalancers/write",
                     "Microsoft.Network/loadBalancers/delete",
                     "Microsoft.Network/loadBalancers/backendAddressPools/read",
+                    "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
                     "Microsoft.Network/loadBalancers/loadBalancingRules/read",
                     "Microsoft.Network/loadBalancers/probes/read",
                     "Microsoft.Network/loadBalancers/probes/join/action",
@@ -154,6 +156,7 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
                     "Microsoft.Network/publicIPAddresses/delete",
+                    "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
     ],
     "NotActions": [],
@@ -208,6 +211,7 @@ Connector为备份和还原操作发出以下API请求：
 * microsoft.Storage/storageAccounts"或"Read"
 * microsoft.Storage/storageAccounts"或"write"
 * microsoft.Storage/storageAccounts"(存储帐户)/blobServices/containers/read
+* microsoft.Storage/storageAccounts/ListAccountSAS/操作
 * microsoft.KeyVault/vauls/read
 * microsoft.KeyVault/vauls/accessPolicies/write
 * Microsoft.Network/networkInterfaces/read
@@ -246,6 +250,7 @@ Connector为备份和还原操作发出以下API请求：
 * microsoft.Synape/workscales/firewallRules/read
 * microsoft.Synape/workflows/replaceAllIpFirewallRules/action.
 * microsoft.Synape/workworkeds/operationResults/Read
+* microsoft.Synape/workworkworks/privateEndpointConnectionsApproval/操作
 
 
 
@@ -616,19 +621,22 @@ Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes 
 | Microsoft.Network/loadBalancers/backendAddressPools/read | 是的。 | 是的。 | 否 
 
 
+| Microsoft.Network/loadBalancers/backendAddressPools/join/action | 是的。 | 否 | 否 
+
+
 | Microsoft.Network/loadBalancers/loadBalancingRules/read | 是的。 | 否 | 否 
 
 
 | Microsoft.Network/loadBalancers/probes/read | 是的。 | 否 | 否 
 
 
-| Microsoft.Network/loadBalancers/probes/join/action | 是的。 | 否 | 否 
+| Microsoft.Network/loadBalancers/probes/join/action | 是的。 | 否 | 否 | 启用对Azure磁盘上的锁定的管理 
 
 
-| 启用对Azure磁盘上的锁定的管理 | Microsoft授权/锁定/* | 是的。 | 是的。 | 否 
+| Microsoft授权/锁定/* | 是的。 | 是的。 | 否 .10+| 当子网外部没有连接时、为HA对启用私有端点 
 
 
-.10+| 当子网外部没有连接时、为HA对启用私有端点 | Microsoft.Network/privateEndpoints/write | 是的。 | 是的。 | 否 
+| Microsoft.Network/privateEndpoints/write | 是的。 | 是的。 | 否 
 
 
 | microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/操作 | 是的。 | 否 | 否 
@@ -655,19 +663,19 @@ Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes 
 | Microsoft.Network/privateDnsZones/read | 是的。 | 是的。 | 否 
 
 
-| Microsoft.Network/privateDnsZones/virtualNetworkLinks/read | 是的。 | 是的。 | 否 
+| Microsoft.Network/privateDnsZones/virtualNetworkLinks/read | 是的。 | 是的。 | 否 | Azure在某些虚拟机部署中需要使用、具体取决于底层物理硬件 
 
 
-| Azure在某些虚拟机部署中需要使用、具体取决于底层物理硬件 | microsoft.resources/deployments/operationStatuss/Read | 是的。 | 是的。 | 否 
+| microsoft.resources/deployments/operationStatuss/Read | 是的。 | 是的。 | 否 .2+| 如果部署失败或删除、请从资源组中删除资源 
 
 
-.2+| 如果部署失败或删除、请从资源组中删除资源 | Microsoft.Network/privateEndpoints/delete | 是的。 | 是的。 | 否 
+| Microsoft.Network/privateEndpoints/delete | 是的。 | 是的。 | 否 
 
 
-| Microsoft.Compute/availabilitySets/delete | 是的。 | 是的。 | 否 
+| Microsoft.Compute/availabilitySets/delete | 是的。 | 是的。 | 否 .4+| 使用API时、启用使用客户管理的加密密钥 
 
 
-.4+| 使用API时、启用使用客户管理的加密密钥 | Microsoft.Compute/diskEncryptionSets/read | 是的。 | 是的。 | 是的。 
+| Microsoft.Compute/diskEncryptionSets/read | 是的。 | 是的。 | 是的。 
 
 
 | Microsoft.Compute/diskEncryptionSets/write | 是的。 | 是的。 | 否 
@@ -676,10 +684,10 @@ Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes 
 | microsoft.KeyVault/vauls/deploy/action | 是的。 | 否 | 否 
 
 
-| Microsoft.Compute/diskEncryptionSets/delete | 是的。 | 是的。 | 是的。 
+| Microsoft.Compute/diskEncryptionSets/delete | 是的。 | 是的。 | 是的。 .6+| 为HA对配置应用程序安全组、以隔离HA互连和集群网络NIC 
 
 
-.6+| 为HA对配置应用程序安全组、以隔离HA互连和集群网络NIC | Microsoft.Network/applicationSecurityGroups/write | 否 | 是的。 | 否 
+| Microsoft.Network/applicationSecurityGroups/write | 否 | 是的。 | 否 
 
 
 | Microsoft.Network/applicationSecurityGroups/read | 否 | 是的。 | 是的。 
@@ -694,19 +702,16 @@ Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes 
 | Microsoft.Network/applicationSecurityGroups/delete | 否 | 是的。 | 否 
 
 
-| Microsoft.Network/networkSecurityGroups/securityRules/delete | 否 | 是的。 | 是的。 
+| Microsoft.Network/networkSecurityGroups/securityRules/delete | 否 | 是的。 | 是的。 .3+| 读取、写入和删除与Cloud Volumes ONTAP 资源关联的标记 
 
 
-.3+| 读取、写入和删除与Cloud Volumes ONTAP 资源关联的标记 | microsoft.resources/tags或read | 否 | 是的。 | 否 
+| microsoft.resources/tags或read | 否 | 是的。 | 否 
 
 
 | microsoft.resources/tags或write | 是的。 | 是的。 | 否 
 
 
-| microsoft.resources/tags或delete | 是的。 | 否 | 否 
-
-
-| 在创建期间对存储帐户进行加密 | microsoft.ManagedIdentity/userAssignedIdentities/assign/action | 是的。 | 是的。 | 否 
+| microsoft.resources/tags或delete | 是的。 | 否 | 否 | 在创建期间对存储帐户进行加密 
 |===
 
 
@@ -747,6 +752,23 @@ Connector发出以下API请求、以发现和管理Azure Kubernetes Service (AKS
 
 
 
+=== 2023年1月5日
+
+已向JSON策略添加以下权限：
+
+* microsoft.Storage/storageAccounts/ListAccountSAS/操作
+* microsoft.Synape/workworkworks/privateEndpointConnectionsApproval/操作
++
+Cloud Backup需要这些权限。
+
+* Microsoft.Network/loadBalancers/backendAddressPools/join/action
++
+Cloud Volumes ONTAP 部署需要此权限。
+
+
+
+
+
 === 2022年12月1日
 
 已向JSON策略添加以下权限：
@@ -764,7 +786,6 @@ Cloud Backup需要此权限。
 已从JSON策略中删除以下权限、因为不再需要这些权限：
 
 * Microsoft.Compute/images/write
-* Microsoft.Network/loadBalancers/backendAddressPools/join/action
 * Microsoft.Network/loadBalancers/frontendIPConfigurations/read
 * microsoft.Storage/storageAccounts/重新 生成密钥/操作
 
