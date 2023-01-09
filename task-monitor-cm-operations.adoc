@@ -98,7 +98,7 @@ image:screenshot_notification_filters.png["显示通知中心中可用的两种�
 
 [NOTE]
 ====
-* 目前、只有Cloud Sync 和Cloud Backup通过电子邮件发送通知。未来版本将添加其他服务。
+* 目前、只有Cloud Sync 、云备份和勒索软件保护部门通过电子邮件发送通知。未来版本将添加其他服务。
 * 如果Connector安装在无法访问Internet的站点上、则不支持发送电子邮件通知。
 
 

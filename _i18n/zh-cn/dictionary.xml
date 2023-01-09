@@ -2455,7 +2455,6 @@
   <block id="a222de5f9a1db461954d4160797dfa76" category="sidebar">管理BlueXP</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP博客</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
-  <block id="0600a5fd997330da4629c9667c77df85" category="list-text">目前、只有Cloud Sync 和Cloud Backup通过电子邮件发送通知。未来版本将添加其他服务。</block>
   <block id="36403db09ed916406c9f181948f4d246" category="paragraph">在使用AppTemplate标记服务时、Connector会发出以下API请求来管理Azure资源上的标记：</block>
   <block id="e53322337eb6e5958408340612abf40d" category="list-text">microsoft.resources/resources/read</block>
   <block id="5d5a38f96b2eb95a1bae225c6959a21b" category="list-text">microsoft.resources/subscriptions/operationresults/read</block>
@@ -2830,4 +2829,5 @@
   <block id="ef67c5eab6f3bfee1596c3f8734a88c7" category="paragraph">虽然直接发现内部ONTAP 集群不需要连接器、但如果要利用其他BlueXP功能、则需要连接器。</block>
   <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">了解有关内部ONTAP 集群的发现和管理选项的更多信息</block>
   <block id="7a5dd38f95e02bff17a0b6c794d9ce2b" category="paragraph"><block ref="7a5dd38f95e02bff17a0b6c794d9ce2b" category="inline-link-rx"></block></block>
+  <block id="82e02d499effaa5b28aba8ede321e414" category="list-text">目前、只有Cloud Sync 、云备份和勒索软件保护部门通过电子邮件发送通知。未来版本将添加其他服务。</block>
 </blocks>
