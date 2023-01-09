@@ -749,19 +749,16 @@
   <block id="cd9ffc2440addbacdf692ee7105ad41f" category="paragraph">系统 ID 显示在顶部。</block>
   <block id="e6e80588e9fe7cf89218fea44300f7ca" category="doc">了解连接器</block>
   <block id="098ba24e143dd197f509e41083f0103e" category="section-title">需要连接器时</block>
-  <block id="992a0f0542384f1ee5ef51b7cf4ae6c4" category="section-title">服务</block>
   <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">适用于 ONTAP 的 Amazon FSX 管理功能</block>
   <block id="dad57e95fc9a5390302ad830888cbdb9" category="list-text">云备份</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="85eb427901278daf26f132cb3e076914" category="list-text">Kubernetes 集群</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="list-text">内部 ONTAP 集群</block>
   <block id="d7c778975033347c9e67ffb83d3e7948" category="paragraph">以下服务需要使用连接器 * 。 not_* ：</block>
-  <block id="a8435d00af3d55ea03fdb027caa5b23b" category="list-text">创建适用于 ONTAP 的 Amazon FSx 工作环境虽然创建工作环境不需要使用 Connector ，但需要使用它来创建和管理卷，复制数据以及将适用于 ONTAP 的 FSx 与 Data sense 和 Cloud Sync 等 NetApp 云服务集成。</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="list-text">Azure NetApp Files</block>
   <block id="d4f99f1852ac22c1cad9673e75e03dc1" category="paragraph">虽然设置和管理 Azure NetApp Files 不需要连接器，但如果要使用云数据感知扫描 Azure NetApp Files 数据，则需要连接器。</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="list-text">适用于 Google Cloud 的 Cloud Volumes Service</block>
   <block id="e367efbc26bd12c0d6ae37dd6a55ef9b" category="list-text">Cloud Sync</block>
-  <block id="986e1f3279b4d74444bd32d4f833afbd" category="section-title">数字电子钱包</block>
   <block id="cbe129909ca1b56ccace7cbd5ffca407" category="paragraph">在几乎所有情况下，您都可以在没有连接器的情况下向数字电子钱包添加许可证。</block>
   <block id="1ab568c31a52b2095bb19460f2f7bac6" category="paragraph">只有在使用 Cloud Volumes ONTAP _node-based _ 许可证时，才需要使用 Connector 向数字电子钱包添加许可证。在这种情况下，需要使用连接器，因为数据是从 Cloud Volumes ONTAP 系统上安装的许可证中获取的。</block>
   <block id="ff0e00d64f60db5d99e55c6d706306cc" category="section-title">支持的位置</block>
@@ -2141,7 +2138,6 @@
   <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">此错误可能意味着NSS帐户及其关联的记录公司与BlueXP帐户序列号(即960xxxx)或工作环境序列号。您可以查看*创建案例*表顶部的NSS帐户列表以找到正确的匹配项、也可以使用以下选项之一寻求帮助：</block>
   <block id="f0cdc0b5ab986e2023bc8adbb9019ee4" category="summary">大多数情况下，您需要在云或内部网络中部署 Connector 。对于BlueXP的日常使用来说、连接器是一个至关重要的组件。它使BlueXP能够管理公有 云环境中的资源和流程。</block>
   <block id="4ef3e263a8519b21e0d35c0289f980ec" category="paragraph">在大多数情况下、BlueXP客户管理员需要在云或内部网络中部署_Connector_。对于BlueXP的日常使用来说、连接器是一个至关重要的组件。它使BlueXP能够管理公有 云环境中的资源和流程。</block>
-  <block id="d68d607d7912cfeb0caaf3df3be1ac25" category="paragraph">要使用BlueXP中的许多功能和服务、需要使用Connector。</block>
   <block id="f079f17b0940258743d34e7b771c715f" category="list-text">Digital Advisor</block>
   <block id="929fef37761db7862ee3491989ae1b5f" category="paragraph">BlueXP帐户管理员可以通过多种方式创建Connector：</block>
   <block id="9176e438fb1bac846f4dd758c6d57b0e" category="list-text">直接从BlueXP (建议)</block>
@@ -2825,4 +2821,13 @@
   <block id="267cfa5c9c91dc1d99dc797e89903dfa" category="paragraph">Cloud Backup需要这些权限。</block>
   <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">Cloud Volumes ONTAP 部署需要此权限。</block>
   <block id="1d37387582eb7a955869d3991c1dab28" category="section-title">2022年12月1日</block>
+  <block id="5847199ca78e66e581ccd10e8e88b057" category="list-text">使用Azure命令行界面创建自定义角色：</block>
+  <block id="2878685a3c92cde3d19e546e9e7ed65b" category="paragraph">要在BlueXP中使用以下功能和服务、需要使用Connector：</block>
+  <block id="9fc1f8c97e791c3c5fa11f21f2c02740" category="list-text">与BlueXP数据服务的内部ONTAP 集群集成</block>
+  <block id="68e3f4e356478210df0b83fb7c76a924" category="list-text">创建适用于 ONTAP 的 Amazon FSX 工作环境</block>
+  <block id="760c8ab5d3061033f77f7ded2f3cad11" category="paragraph">虽然创建工作环境不需要 Connector ，但创建和管理卷，复制数据以及将适用于 ONTAP 的 FSx 与 NetApp 云服务（例如 Data sense 和 Cloud Sync ）集成在一起也是必需的。</block>
+  <block id="184e70c253a2ad370c338775e7482497" category="list-text">直接发现内部ONTAP 集群</block>
+  <block id="ef67c5eab6f3bfee1596c3f8734a88c7" category="paragraph">虽然直接发现内部ONTAP 集群不需要连接器、但如果要利用其他BlueXP功能、则需要连接器。</block>
+  <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">了解有关内部ONTAP 集群的发现和管理选项的更多信息</block>
+  <block id="7a5dd38f95e02bff17a0b6c794d9ce2b" category="paragraph"><block ref="7a5dd38f95e02bff17a0b6c794d9ce2b" category="inline-link-rx"></block></block>
 </blocks>

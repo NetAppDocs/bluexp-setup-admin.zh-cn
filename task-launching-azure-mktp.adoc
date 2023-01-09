@@ -116,11 +116,11 @@ link:concept-netapp-accounts.html["了解 NetApp 客户"]。
 +
 image:screenshot_azure_shell_upload.png["Azure Cloud Shell 的屏幕截图，您可以在其中选择上传文件的选项。"]
 
-*** 输入以下 Azure 命令行界面命令：
+*** 使用Azure命令行界面创建自定义角色：
 +
 [source, azurecli]
 ----
-az role definition create --role-definition Policy_for_Setup_As_Service_Azure.json
+az role definition create --role-definition Connector_Policy.json
 ----
 +
 现在、您应该拥有一个名为BlueXP操作员的自定义角色、可以将该角色分配给Connector虚拟机。

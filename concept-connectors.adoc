@@ -20,11 +20,7 @@ summary: 大多数情况下，您需要在云或内部网络中部署 Connector 
 
 == 需要连接器时
 
-要使用BlueXP中的许多功能和服务、需要使用Connector。
-
-
-
-=== 服务
+要在BlueXP中使用以下功能和服务、需要使用Connector：
 
 * 适用于 ONTAP 的 Amazon FSX 管理功能
 * Amazon S3发现
@@ -37,29 +33,37 @@ summary: 大多数情况下，您需要在云或内部网络中部署 Connector 
 * 全局文件缓存
 * Google Cloud Storage发现
 * Kubernetes 集群
-* 内部 ONTAP 集群
+* 与BlueXP数据服务的内部ONTAP 集群集成
 * StorageGRID
 
 
 以下服务需要使用连接器 * 。 not_* ：
 
 * Digital Advisor
-* 创建适用于 ONTAP 的 Amazon FSx 工作环境虽然创建工作环境不需要使用 Connector ，但需要使用它来创建和管理卷，复制数据以及将适用于 ONTAP 的 FSx 与 Data sense 和 Cloud Sync 等 NetApp 云服务集成。
++
+在几乎所有情况下，您都可以在没有连接器的情况下向数字电子钱包添加许可证。
+
++
+只有在使用 Cloud Volumes ONTAP _node-based _ 许可证时，才需要使用 Connector 向数字电子钱包添加许可证。在这种情况下，需要使用连接器，因为数据是从 Cloud Volumes ONTAP 系统上安装的许可证中获取的。
+
+* 创建适用于 ONTAP 的 Amazon FSX 工作环境
++
+虽然创建工作环境不需要 Connector ，但创建和管理卷，复制数据以及将适用于 ONTAP 的 FSx 与 NetApp 云服务（例如 Data sense 和 Cloud Sync ）集成在一起也是必需的。
+
 * Azure NetApp Files
 +
 虽然设置和管理 Azure NetApp Files 不需要连接器，但如果要使用云数据感知扫描 Azure NetApp Files 数据，则需要连接器。
 
 * 适用于 Google Cloud 的 Cloud Volumes Service
 * Cloud Sync
+* 直接发现内部ONTAP 集群
++
+虽然直接发现内部ONTAP 集群不需要连接器、但如果要利用其他BlueXP功能、则需要连接器。
+
++
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["了解有关内部ONTAP 集群的发现和管理选项的更多信息"^]
 
 
-
-
-=== 数字电子钱包
-
-在几乎所有情况下，您都可以在没有连接器的情况下向数字电子钱包添加许可证。
-
-只有在使用 Cloud Volumes ONTAP _node-based _ 许可证时，才需要使用 Connector 向数字电子钱包添加许可证。在这种情况下，需要使用连接器，因为数据是从 Cloud Volumes ONTAP 系统上安装的许可证中获取的。
 
 
 
