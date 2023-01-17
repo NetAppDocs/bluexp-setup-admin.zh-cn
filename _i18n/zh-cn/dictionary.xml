@@ -2000,7 +2000,6 @@
   <block id="d84e71566ed38f5bfe97daee41fb601d" category="paragraph">以下项需要权限：</block>
   <block id="ae741fad6aa93f78e0e5033a1d01d94b" category="list-text">要部署Connector VM的用户</block>
   <block id="302f26bc0fa67eed7c3feeaa0ab2bcab" category="list-text">在部署期间需要附加到Connector VM的服务帐户</block>
-  <block id="6fe79cfc93a8b51f7a8316a55877bfc4" category="list-text">共享VPC权限(如果您使用共享VPC将资源部署到服务项目中)</block>
   <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">设置共享VPC权限</block>
   <block id="17d9282186c2451db90a83330e5c9d7b" category="list-text"><block ref="17d9282186c2451db90a83330e5c9d7b" category="inline-link-macro-rx"></block></block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您拥有客户级别的帐户、则可以添加一个或多个NSS帐户。</block>
@@ -2830,4 +2829,17 @@
   <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">了解有关内部ONTAP 集群的发现和管理选项的更多信息</block>
   <block id="7a5dd38f95e02bff17a0b6c794d9ce2b" category="paragraph"><block ref="7a5dd38f95e02bff17a0b6c794d9ce2b" category="inline-link-rx"></block></block>
   <block id="82e02d499effaa5b28aba8ede321e414" category="list-text">目前、只有Cloud Sync 、云备份和勒索软件保护部门通过电子邮件发送通知。未来版本将添加其他服务。</block>
+  <block id="8fb23cdc1bc8f3ca6d2863041a4364b5" category="list-text">如果您要跨多个项目部署Cloud Volumes ONTAP 、请确保Connector能够访问这些项目。</block>
+  <block id="c17e95cb1967072e9156ac6ad6f7c033" category="paragraph"><block ref="02f20f4e9af364f73c72b808dd1224d3" category="inline-xref-macro-rx"></block>。</block>
+  <block id="8e791012319a6cc33e02b9f65f0eb71d" category="paragraph">根据您的配置、您可能还需要完成以下步骤：</block>
+  <block id="f78e7e80b2f4d00362b5fcc2740c2408" category="list-text">在项目之间设置权限</block>
+  <block id="f25346a7c8bf8795443396442b179238" category="list-text">设置共享VPC的权限</block>
+  <block id="b54026f2d69ec7f7219507fafb9892a7" category="paragraph">如果您计划将Cloud Volumes ONTAP 系统部署在与Connector所在项目不同的项目中、则需要为Connector的服务帐户提供对这些项目的访问权限。</block>
+  <block id="cf4f902f986fa557d6c9a367c5fc98aa" category="paragraph">例如、假设Connector位于项目1中、而您希望在项目2中创建Cloud Volumes ONTAP 系统。您需要授予对项目2中服务帐户的访问权限。</block>
+  <block id="c2e0d7b38c035030529af19f9203dd9b" category="list-text">在Google Cloud控制台中、转到IAM服务并选择要在其中创建Cloud Volumes ONTAP 系统的项目。</block>
+  <block id="e2b43bc6eddd7c5ec2c7104bd42e0e6e" category="list-text">在* IAM *页面上、选择*授予访问权限*并提供所需的详细信息。</block>
+  <block id="eacb1b3758ebd1aa03b4f1b86b49bd53" category="list-text">输入Connector服务帐户的电子邮件。</block>
+  <block id="8f3118254324aa503647a0f0a4cd34cc" category="list-text">选择Connector的自定义角色。</block>
+  <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Google Cloud文档</block>
+  <block id="ece59c09a5f78f29903e8e1daac67577" category="paragraph">有关详细信息，请参见<block ref="eb023f41fbcdd6f661c855770356f2dc" category="inline-link-rx"></block></block>
 </blocks>

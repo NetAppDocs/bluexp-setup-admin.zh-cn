@@ -39,6 +39,10 @@ TIP: 在创建首个Cloud Volumes ONTAP 工作环境时、如果您还没有连�
 +
 <<为Connector设置服务帐户>>。
 
+* 如果您要跨多个项目部署Cloud Volumes ONTAP 、请确保Connector能够访问这些项目。
++
+<<在项目之间设置权限>>。
+
 * 如果您使用的是共享VPC、请在服务项目和主机项目中设置权限。
 +
 <<设置共享VPC权限>>。
@@ -76,7 +80,12 @@ TIP: 在创建首个Cloud Volumes ONTAP 工作环境时、如果您还没有连�
 
 * 要部署Connector VM的用户
 * 在部署期间需要附加到Connector VM的服务帐户
-* 共享VPC权限(如果您使用共享VPC将资源部署到服务项目中)
+
+
+根据您的配置、您可能还需要完成以下步骤：
+
+* 在项目之间设置权限
+* 设置共享VPC的权限
 
 
 
@@ -273,6 +282,27 @@ includedPermissions:
 
 .结果
 已设置Connector VM的服务帐户。
+
+
+
+=== 在项目之间设置权限
+
+如果您计划将Cloud Volumes ONTAP 系统部署在与Connector所在项目不同的项目中、则需要为Connector的服务帐户提供对这些项目的访问权限。
+
+例如、假设Connector位于项目1中、而您希望在项目2中创建Cloud Volumes ONTAP 系统。您需要授予对项目2中服务帐户的访问权限。
+
+.步骤
+. 在Google Cloud控制台中、转到IAM服务并选择要在其中创建Cloud Volumes ONTAP 系统的项目。
+. 在* IAM *页面上、选择*授予访问权限*并提供所需的详细信息。
++
+** 输入Connector服务帐户的电子邮件。
+** 选择Connector的自定义角色。
+** 单击 * 保存 * 。
+
+
+
+
+有关详细信息，请参见 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud文档"^]
 
 
 
