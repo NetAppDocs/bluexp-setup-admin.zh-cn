@@ -18,9 +18,9 @@ summary: 您可以管理与 Connector VM 实例关联的凭据。
 
 
 
-== 将 Marketplace 订阅与 GCP 凭据关联
+== 将Marketplace订阅与Google Cloud凭据关联
 
-在GCP中部署Connector时、BlueXP会创建一组与Connector VM实例关联的默认凭据。这些凭据是BlueXP用于部署Cloud Volumes ONTAP 的凭据。
+在Google Cloud中部署Connector时、BlueXP会创建一组与Connector VM实例关联的默认凭据。这些凭据是BlueXP用于部署Cloud Volumes ONTAP 的凭据。
 
 您可以随时更改与这些凭据关联的 Marketplace 订阅。通过订阅，您可以创建按需购买的 Cloud Volumes ONTAP 系统并使用其他 NetApp 云服务。
 
@@ -63,11 +63,11 @@ image:screenshot_gcp_marketplace_register.png["注册弹出窗口的屏幕截图
 
 +
 
-NOTE: 要将 GCP 订阅链接到您的 NetApp 帐户，必须完成此步骤。只有在从此页面重定向并登录到BlueXP后、链接订阅的过程才会完成。
+NOTE: 要将Google Cloud订阅链接到您的NetApp帐户、必须完成此步骤。只有在从此页面重定向并登录到BlueXP后、链接订阅的过程才会完成。
 
 . 重定向到BlueXP后、登录或注册、然后单击*完成*继续。
 +
-GCP 订阅将链接到与您的用户登录关联的所有 NetApp 帐户。
+Google Cloud订阅将链接到与您的用户登录关联的所有NetApp帐户。如果您需要限制对新订阅的访问权限、可以从数字电子钱包管理与订阅关联的NetApp帐户。 link:task-manage-subscriptions.html#manage-your-subscriptions["了解如何管理您的订阅"]。
 
 +
 image:screenshot_gcp_sub_mapping.png["将 GCP 订阅映射到 NetApp 帐户的屏幕截图。"]

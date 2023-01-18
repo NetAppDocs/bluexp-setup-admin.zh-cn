@@ -189,10 +189,8 @@
   <block id="16c6fa81afb88d058842087a5734f874" category="list-text">单击一组凭据的操作菜单，然后选择 * 删除凭据 * 。</block>
   <block id="e66ca765497b1a570afc1443e2e6de1b" category="list-text">单击 * 删除 * 进行确认。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
-  <block id="55a16520d9c426fd88ba06b9313cc1a0" category="summary">执行初始设置后，您可以稍后通过管理用户，服务帐户，工作空间，连接器和订阅来管理帐户设置。</block>
   <block id="e97f2d246afe934ce73e145389529b37" category="doc">管理您的 NetApp 帐户</block>
   <block id="d4b56cbbe5ee118eb18ad55bfaaef1f5" category="inline-link-macro">执行初始设置后</block>
-  <block id="5ca55a4446a62df5192547357ad6fb04" category="paragraph"><block ref="a7a3c89d37624da5130984f9aaffd146" category="inline-link-macro-rx"></block>，您可以稍后通过管理用户，服务帐户，工作空间，连接器和订阅来管理帐户设置。</block>
   <block id="e3ba9a6d6bd7803ef5c067df61b7b06d" category="inline-link-macro">详细了解 NetApp 客户的工作原理</block>
   <block id="8ce9af11424a2d44b99a247ddc735a73" category="paragraph"><block ref="47a0acf8f17a3fbb1dd16df7e2126917" category="inline-link-macro-rx"></block>。</block>
   <block id="1b18a6ba342c7916f9ed427680d9d69c" category="section-title">使用租户 API 管理您的帐户</block>
@@ -260,16 +258,10 @@
   <block id="9e704e76a760053c0baca32c96d9c6a3" category="list-text">单击 * 连接器 * 。</block>
   <block id="33e248648a845f8d6e538dfb02e4620f" category="list-text">单击要关联的 Connector 的 * 管理工作空间 * 。</block>
   <block id="cda68882da0fbacdfcd7b3b52e15c47f" category="list-text">选择要与 Connector 关联的工作空间，然后单击 * 应用 * 。</block>
-  <block id="95a0841b9a7d083d0e92b10bbb2d9538" category="section-title">管理订阅</block>
-  <block id="0dd6409072fddd7ebe4fbc13bf55f62e" category="paragraph">从云提供商的市场订阅后，每个订阅均可从 Account Settings 小工具中获取。您可以选择重命名订阅并取消订阅与一个或多个帐户的关联。</block>
   <block id="eb6dd0692058cd4edb3fb82f48db1f57" category="paragraph">例如，假设您有两个帐户，每个帐户都通过单独的订阅付费。您可能会解除某个订阅与某个帐户的关联，以便该帐户中的用户在创建 Cloud Volume ONTAP 工作环境时不会意外选择错误的订阅。</block>
-  <block id="4e33b7dde110d702aea770ac0e58ff70" category="inline-link-macro">了解有关订阅的更多信息</block>
-  <block id="e60fd65ca245c4c248984b9d4277352e" category="list-text">单击 * 订阅 * 。</block>
   <block id="1422eb9c77ef6c74d6abe35beedc5d64" category="paragraph">您将只看到与当前正在查看的帐户关联的订阅。</block>
   <block id="73da254ba1aec222348424b9442c52df" category="list-text">单击与要管理的订阅对应的行中的操作菜单。</block>
   <block id="1dea06c0cd8c3b77e4597670a860c155" category="inline-image-macro">订阅的操作菜单的屏幕截图。</block>
-  <block id="c34b4a942868a996723a5a6be924703b" category="paragraph"><block ref="c34b4a942868a996723a5a6be924703b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="acc46a11f0719b1f8e8b77ecf282a60b" category="list-text">选择重命名订阅或管理与订阅关联的帐户。</block>
   <block id="d99140e9dbce5900e2fc973e36296b03" category="section-title">更改帐户名称</block>
   <block id="189ceeb6f6551a85e755c8abaeac5372" category="paragraph">随时更改您的帐户名称，将其更改为对您有意义的名称。</block>
   <block id="92301771e4680316275db3e93ac9036c" category="list-text">在 * 概述 * 选项卡中，单击帐户名称旁边的编辑图标。</block>
@@ -974,7 +966,6 @@
   <block id="b5c1dbf300be5c998c2da388a4bae39b" category="paragraph">在内部 Linux 主机上手动安装时， Connector 会使用以下 _inbound_ 端口。</block>
   <block id="9fd4da59ae98e0088d69c210beb651b2" category="paragraph">这些入站规则适用于以下两种部署模式：通过 Internet 访问或不通过 Internet 访问安装的内部连接器。</block>
   <block id="329d19fc5afbf1e6e6b899cb6324212a" category="summary">您可以管理与 Connector VM 实例关联的凭据。</block>
-  <block id="0b6a93a12e94b586f0634222ff996760" category="section-title">将 Marketplace 订阅与 GCP 凭据关联</block>
   <block id="fd5876417edb63f12f7c19c175309431" category="paragraph">您可以随时更改与这些凭据关联的 Marketplace 订阅。通过订阅，您可以创建按需购买的 Cloud Volumes ONTAP 系统并使用其他 NetApp 云服务。</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3607221d62467c2e5249f8716b69616f" category="list-text">从下拉列表中选择 Google Cloud 项目和订阅。</block>
@@ -993,7 +984,6 @@
   <block id="ca4f48bdc60c2a16dd59109486af30ee" category="paragraph">此步骤会将您的传输请求发送给 NetApp 。</block>
   <block id="e3d03a33db92a9024d72af3cae4684fd" category="inline-image-macro">注册弹出窗口的屏幕截图。</block>
   <block id="6373a7d66fb33193565645f81635ec0c" category="paragraph"><block ref="6373a7d66fb33193565645f81635ec0c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1a6175a8e3e5614e22cf07d1d33b6ac8" category="paragraph">GCP 订阅将链接到与您的用户登录关联的所有 NetApp 帐户。</block>
   <block id="f4c056c11ef2563cc898db48d406c84e" category="inline-image-macro">将 GCP 订阅映射到 NetApp 帐户的屏幕截图。</block>
   <block id="2a085e42ac25547701a033cd0ebb75be" category="paragraph"><block ref="2a085e42ac25547701a033cd0ebb75be" category="inline-image-macro-rx" type="image"></block></block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">订阅分配页面的屏幕截图。</block>
@@ -1302,7 +1292,6 @@
   <block id="6dc6b060b761d145366b9ed041137917" category="sidebar">管理 AWS 凭据</block>
   <block id="c135c603177e58023474a65f829c0fd3" category="sidebar">管理 Azure 凭据</block>
   <block id="15f599d5c4282f662b38657a0b5c5739" category="sidebar">管理 Google Cloud 凭据</block>
-  <block id="09c202bf0add37d2a76b765c2e456516" category="paragraph"><block ref="461fdc6a79888d7d572f0fc87e6f595a" category="inline-link-macro-rx"></block>。</block>
   <block id="736683b36559de9a86788ab6e33c00d8" category="paragraph">如果禁用 SaaS 平台，则需要从执行所有任务 <block ref="d248ae1d8e530aaf57663e2d920abe18" category="inline-link-macro-rx"></block>。</block>
   <block id="42719a12f66c2c272af903550dd96abe" category="paragraph"><block ref="3d5e26c44503b9c3759d0014c33a4b1a" category="inline-link-macro-rx"></block>。</block>
   <block id="cf1d9ac600892a9c03d7ebca3ca130cb" category="paragraph"><block ref="1a1e214f52d56e3240a2456ee3e051fc" category="inline-link-macro-rx"></block>。</block>
@@ -2329,12 +2318,10 @@
   <block id="7e1224e2fd0f204a7cd31b8672f1b63d" category="list-text">您需要使用有权从BlueXP启动Connector VM实例的Google帐户部署Connector。</block>
   <block id="a7cc308b583002579bbc229d6f63001c" category="list-text">部署 Connector 时，系统会提示您选择<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> VM 实例。BlueXP可从服务帐户获得代表您创建和管理Cloud Volumes ONTAP 系统的权限。权限可通过将自定义角色附加到服务帐户来提供。</block>
   <block id="16f38628224f0a131edc6e33cc001598" category="doc">管理BlueXP的Google Cloud凭据和订阅</block>
-  <block id="b0fb7f98471ec678dbb2ee495f025477" category="paragraph">在GCP中部署Connector时、BlueXP会创建一组与Connector VM实例关联的默认凭据。这些凭据是BlueXP用于部署Cloud Volumes ONTAP 的凭据。</block>
   <block id="7a0df3203d8f6522d2b39b5f4c38db03" category="admonition">在完成以下步骤之前、请确保您在Google Cloud帐户中同时拥有计费管理员权限、并同时拥有BlueXP登录权限。</block>
   <block id="cdcf076c3fd3e62a3c7e3691d02894db" category="inline-link">Google Cloud Marketplace上的NetApp BlueXP页面</block>
   <block id="b7e7a20500f8489bfa6b8a559c74a1d4" category="list-text">重定向到后<block ref="d9d3d72c24d9b3446210d5b539c6bbf5" category="inline-link-rx"></block>，确保在顶部导航菜单中选择了正确的项目。</block>
   <block id="10e61096cba50402ef6cb31c1b17e8ae" category="list-text">在弹出对话框中、单击*向NetApp、Inc.注册*以重定向到NetApp BlueXP网站。</block>
-  <block id="d702a454ff12f6e62c26b9cc376bfe70" category="admonition">要将 GCP 订阅链接到您的 NetApp 帐户，必须完成此步骤。只有在从此页面重定向并登录到BlueXP后、链接订阅的过程才会完成。</block>
   <block id="3654f8874077bf13f59590812bd85494" category="list-text">重定向到BlueXP后、登录或注册、然后单击*完成*继续。</block>
   <block id="4314e9e91f1c1e76df01e49490b3367e" category="inline-link">BlueXP网站上的Cloud Volumes ONTAP 页面</block>
   <block id="289bd5956a254b6fa364eac8856b1768" category="admonition">如果贵组织的某个用户已从您的计费帐户订阅NetApp BlueXP订阅、则您将重定向到<block ref="03328ba9e09d435ba77b020263fc11e5" category="inline-link-rx"></block> 而是。如果这是意外情况，请联系您的 NetApp 销售团队。Google 仅为每个 Google 计费帐户启用一个订阅。</block>
@@ -2842,4 +2829,10 @@
   <block id="8f3118254324aa503647a0f0a4cd34cc" category="list-text">选择Connector的自定义角色。</block>
   <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Google Cloud文档</block>
   <block id="ece59c09a5f78f29903e8e1daac67577" category="paragraph">有关详细信息，请参见<block ref="eb023f41fbcdd6f661c855770356f2dc" category="inline-link-rx"></block></block>
+  <block id="12106b63996e2c061ca66d31f3a9c50f" category="summary">执行初始设置后、您可以稍后通过管理用户、服务帐户、工作空间和连接器来管理帐户设置。</block>
+  <block id="f8c69c794c16f5aeea65ba6150c5c239" category="paragraph"><block ref="a7a3c89d37624da5130984f9aaffd146" category="inline-link-macro-rx"></block>、您可以稍后通过管理用户、服务帐户、工作空间和连接器来管理帐户设置。</block>
+  <block id="2dbb2a35f48f58340e040cb41a1d70b1" category="section-title">将Marketplace订阅与Google Cloud凭据关联</block>
+  <block id="72a31d53edf5989e236535eb541ee755" category="paragraph">在Google Cloud中部署Connector时、BlueXP会创建一组与Connector VM实例关联的默认凭据。这些凭据是BlueXP用于部署Cloud Volumes ONTAP 的凭据。</block>
+  <block id="80d154feb16cf91b0edec06497c1ceaa" category="admonition">要将Google Cloud订阅链接到您的NetApp帐户、必须完成此步骤。只有在从此页面重定向并登录到BlueXP后、链接订阅的过程才会完成。</block>
+  <block id="3ef651256a22c79667581299224bf5b3" category="paragraph">Google Cloud订阅将链接到与您的用户登录关联的所有NetApp帐户。如果您需要限制对新订阅的访问权限、可以从数字电子钱包管理与订阅关联的NetApp帐户。 <block ref="b8248518be94d54d622f572d1d196b86" category="inline-link-macro-rx"></block>。</block>
 </blocks>

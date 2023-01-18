@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-netapp-accounts.html 
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, member, remove user, remove users, remove, delete, account, user account, user accounts, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector, service account 
-summary: 执行初始设置后，您可以稍后通过管理用户，服务帐户，工作空间，连接器和订阅来管理帐户设置。 
+summary: 执行初始设置后、您可以稍后通过管理用户、服务帐户、工作空间和连接器来管理帐户设置。 
 ---
 = 管理您的 NetApp 帐户
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 执行初始设置后，您可以稍后通过管理用户，服务帐�
 
 
 [role="lead"]
-link:task-setting-up-netapp-accounts.html["执行初始设置后"]，您可以稍后通过管理用户，服务帐户，工作空间，连接器和订阅来管理帐户设置。
+link:task-setting-up-netapp-accounts.html["执行初始设置后"]、您可以稍后通过管理用户、服务帐户、工作空间和连接器来管理帐户设置。
 
 link:concept-netapp-accounts.html["详细了解 NetApp 客户的工作原理"]。
 
@@ -236,29 +236,6 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["详�
 . 单击 * 连接器 * 。
 . 单击要关联的 Connector 的 * 管理工作空间 * 。
 . 选择要与 Connector 关联的工作空间，然后单击 * 应用 * 。
-
-
-
-
-== 管理订阅
-
-从云提供商的市场订阅后，每个订阅均可从 Account Settings 小工具中获取。您可以选择重命名订阅并取消订阅与一个或多个帐户的关联。
-
-例如，假设您有两个帐户，每个帐户都通过单独的订阅付费。您可能会解除某个订阅与某个帐户的关联，以便该帐户中的用户在创建 Cloud Volume ONTAP 工作环境时不会意外选择错误的订阅。
-
-link:concept-netapp-accounts.html#subscriptions["了解有关订阅的更多信息"]。
-
-.步骤
-. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
-. 单击 * 订阅 * 。
-+
-您将只看到与当前正在查看的帐户关联的订阅。
-
-. 单击与要管理的订阅对应的行中的操作菜单。
-+
-image:screenshot_subscription_menu.gif["订阅的操作菜单的屏幕截图。"]
-
-. 选择重命名订阅或管理与订阅关联的帐户。
 
 
 
