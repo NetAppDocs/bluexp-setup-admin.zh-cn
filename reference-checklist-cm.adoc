@@ -60,19 +60,6 @@ AWS 服务（ AmazonAWS.com ）：
 
 
 | https://widget.intercom.io | 用于与 NetApp 云专家交流的产品内聊天。 
-
-
-| 连接器的IP地址  a| 
-在大多数情况下、您应该从SaaS UI使用BlueXP、但是 link:concept-connectors.html#the-local-user-interface["使用本地 UI 时"]、则必须从Web浏览器输入主机的IP地址。
-
-根据与云提供商的连接，使用分配给主机的专用 IP 或公有 IP ：
-
-* 如果您拥有 VPN 并直接访问虚拟网络，则专用 IP 可以正常工作
-* 公有 IP 可用于任何网络连接情形
-
-
-无论哪种情况，都可以通过确保安全组规则仅允许从授权的 IP 或子网进行访问来确保网络访问的安全。
-
 |===
 --
 Connector 的出站网络连接:: 登录到BlueXP后、BlueXP帐户管理员需要在云提供商或内部网络中部署_Connector_。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。请注意、在BlueXP中、大多数服务和功能都需要连接器、但并非所有服务和功能都需要连接器。 link:concept-connectors.html["了解有关连接器及其工作原理的更多信息"]。
@@ -86,6 +73,24 @@ Connector 的出站网络连接:: 登录到BlueXP后、BlueXP帐户管理员需�
 [cols="2*"]
 |===
 | 端点 | 目的 
+
+
+| \https：//https <region> ：//__LW_AT__.amazonaws.com | 管理AWS中的资源。 
+
+
+| https://management.azure.com https://login.microsoftonline.com | 管理Azure公共区域中的资源。 
+
+
+| https://management.usgovcloudapi.net \https://login.microsoftonline.us | 管理Azure政府区域中的资源。 
+
+
+| https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud | 管理Azure IL6区域中的资源。 
+
+
+| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | 管理Azure中国地区的资源。 
+
+
+| https://www.googleapis.com/compute/v1/\https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 在Google Cloud中管理资源。 
 
 
 | https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 

@@ -859,11 +859,6 @@
   <block id="b809225d6fab27e3db8c3ac3e0a640c5" category="cell">https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com</block>
   <block id="abc66ca669cfbd9be590874c67e8d7ef" category="cell">https://widget.intercom.io</block>
   <block id="30fe214f0e8ecaf9b895a0137cad8ce9" category="cell">用于与 NetApp 云专家交流的产品内聊天。</block>
-  <block id="0b83c97017787b7fdc5aaf31aaf0da59" category="inline-link-macro">使用本地 UI 时</block>
-  <block id="4c2345ba2614b91eb52d47835c18de63" category="paragraph">根据与云提供商的连接，使用分配给主机的专用 IP 或公有 IP ：</block>
-  <block id="a106b753f18f3561086de4e9f0a06365" category="list-text">如果您拥有 VPN 并直接访问虚拟网络，则专用 IP 可以正常工作</block>
-  <block id="460ad81025c5e747a488e7ca0874eca7" category="list-text">公有 IP 可用于任何网络连接情形</block>
-  <block id="bdaeab98be7ea04f74f8e3ab24e46ace" category="paragraph">无论哪种情况，都可以通过确保安全组规则仅允许从授权的 IP 或子网进行访问来确保网络访问的安全。</block>
   <block id="69ff128f810d7736dba17f0dc54a437f" category="list-text">Connector 的出站网络连接</block>
   <block id="aad0acfa5f3eeed54fc96b5bafd12ca7" category="inline-link-macro">了解有关连接器及其工作原理的更多信息</block>
   <block id="9827c1dc4f901b9ac9340f0034c5a996" category="list-text">部署 Connector 的网络位置必须具有出站 Internet 连接。</block>
@@ -2796,8 +2791,6 @@
   <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">连接器3.9.25</block>
   <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">此版本的连接器包含Cloud Volumes ONTAP 增强功能和错误修复。</block>
   <block id="826d1d89ec2a521e40a7a91c2ee8f024" category="paragraph"><block ref="826d1d89ec2a521e40a7a91c2ee8f024" category="inline-link-rx"></block></block>
-  <block id="c07581a9e3714e573075f510c11a8b05" category="cell">连接器的IP地址</block>
-  <block id="1c3a99b9cab6b55c9a46ccd58a1283c8" category="paragraph">在大多数情况下、您应该从SaaS UI使用BlueXP、但是 <block ref="9a2b10ef390e45d8a69a5a0f7a3a563a" category="inline-link-macro-rx"></block>、则必须从Web浏览器输入主机的IP地址。</block>
   <block id="c24732648af9b734203cc5a8a19f2537" category="paragraph">通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。同时、如果在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。</block>
   <block id="31cd3194dbc40a48cdae969161abd4a5" category="list-text">设置完成后、即可开始使用BlueXP中提供的服务。请注意，每个服务都有自己的网络要求。有关详细信息，请参见以下页面。</block>
   <block id="9efb399c3a128a79f4671ff959339e79" category="list-text">microsoft.Storage/storageAccounts/ListAccountSAS/操作</block>
@@ -2835,4 +2828,31 @@
   <block id="72a31d53edf5989e236535eb541ee755" category="paragraph">在Google Cloud中部署Connector时、BlueXP会创建一组与Connector VM实例关联的默认凭据。这些凭据是BlueXP用于部署Cloud Volumes ONTAP 的凭据。</block>
   <block id="80d154feb16cf91b0edec06497c1ceaa" category="admonition">要将Google Cloud订阅链接到您的NetApp帐户、必须完成此步骤。只有在从此页面重定向并登录到BlueXP后、链接订阅的过程才会完成。</block>
   <block id="3ef651256a22c79667581299224bf5b3" category="paragraph">Google Cloud订阅将链接到与您的用户登录关联的所有NetApp帐户。如果您需要限制对新订阅的访问权限、可以从数字电子钱包管理与订阅关联的NetApp帐户。 <block ref="b8248518be94d54d622f572d1d196b86" category="inline-link-macro-rx"></block>。</block>
+  <block id="cc328ccddf672987f092ca6f44c9f9cf" category="cell">https://management.azure.com https://login.microsoftonline.com</block>
+  <block id="068395f3cd26ca40ad905de3790c9435" category="cell">管理Azure公共区域中的资源。</block>
+  <block id="6696e65cc873b2af9823ebafd2e332a8" category="cell">https://management.usgovcloudapi.net \https://login.microsoftonline.us</block>
+  <block id="61b99e46ccbb3b872a32fbf2f064b87b" category="cell">管理Azure政府区域中的资源。</block>
+  <block id="2ef9710cab4f48c3bcc58dac5ab20752" category="cell">https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud</block>
+  <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">管理Azure IL6区域中的资源。</block>
+  <block id="c9499afcd46d4343e88fb1acd8c931d8" category="cell">https://management.chinacloudapi.cn \https://login.chinacloudapi.cn</block>
+  <block id="232055d452a21264f8d549e50d695b18" category="cell">管理Azure中国地区的资源。</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支持云提供商解决方案</block>
+  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">有关已集成到BlueXP中的以下云提供商解决方案的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="701741ae6d160ecd5058c2eefa334a6c" category="cell">\https：//https &lt;region&gt; ：//__LW_AT__.amazonaws.com</block>
+  <block id="2452d1aef80214dacfb33f192b762434" category="cell">管理AWS中的资源。</block>
+  <block id="3933fdb8f34cb01278a72748377338a5" category="cell">https://www.googleapis.com/compute/v1/\https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
+  <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">在Google Cloud中管理资源。</block>
+  <block id="4ce604ab4b6f3184f26713f30bde1bbe" category="cell">—cloudkms.encryptoKeys.get—cloudkms.encryptoKeys.getIamPolicy—cloudkms.encryptoKeys.list—cloudkms.cryptoKeys.setIamPolicy—cloudkms.keyrings.get—cloudkms.keyrings.getIamPolicy—cloudkms.keyrings.list—cloudkms.keyRings.setIamPolicy</block>
+  <block id="9e4edb2eed22d4c91a667b29567ee08d" category="cell">在Cloud Backup激活向导中选择您自己的客户管理密钥、而不是使用默认的Google管理的加密密钥。</block>
+  <block id="8988a38ba3aaf6cb48e549dc3babd50e" category="section-title">2023年1月27日</block>
+  <block id="6f3dd3aa6f04d6f98a881afe84a14828" category="paragraph">已向策略添加以下权限：</block>
+  <block id="d5b52c55f0ffe2752d39b0d85f9ad0ef" category="list-text">cloudkms.CryptoKeys.getIamPolicy</block>
+  <block id="631730c9e44e80f5f69e36901808bf98" category="list-text">cloudkms.cryptoKeys.setIamPolicy</block>
+  <block id="7d5beaedd0c93a11314ff6699a51454e" category="list-text">cloudkms.keyrings.get</block>
+  <block id="9df83ab1f3ab5fb0d62768dd3ff406e6" category="list-text">cloudkms.keyrings.getIamPolicy</block>
+  <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
+  <block id="3705a469472bf9882aff3f58dc3f4c5b" category="cell">\shtps：//management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud</block>
 </blocks>

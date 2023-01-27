@@ -43,6 +43,24 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 
 | https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
+
+
+| \https：//https <region> ：//__LW_AT__.amazonaws.com | 管理AWS中的资源。 
+
+
+| https://management.azure.com https://login.microsoftonline.com | 管理Azure公共区域中的资源。 
+
+
+| https://management.usgovcloudapi.net \https://login.microsoftonline.us | 管理Azure政府区域中的资源。 
+
+
+| \shtps：//management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud | 管理Azure IL6区域中的资源。 
+
+
+| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | 管理Azure中国地区的资源。 
+
+
+| https://www.googleapis.com/compute/v1/\https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 在Google Cloud中管理资源。 
 |===
 
 

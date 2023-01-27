@@ -219,6 +219,9 @@ Connector需要与您要创建的工作环境类型以及计划启用的服务�
 | 端点 | 目的 
 
 
+| \https：//https <region> ：//__LW_AT__.amazonaws.com | 管理AWS中的资源。 
+
+
 | https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
 
 

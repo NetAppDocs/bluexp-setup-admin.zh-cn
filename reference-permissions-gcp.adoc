@@ -124,6 +124,11 @@ includedPermissions:
 - storage.objects.list
 - monitoring.timeSeries.list
 - storage.buckets.getIamPolicy
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkms.keyRings.get
+- cloudkms.keyRings.getIamPolicy
+- cloudkms.keyRings.setIamPolicy
 ----
 
 
@@ -228,4 +233,27 @@ includedPermissions:
 
 
 | —monitoration.timesery.list—storage.bames.getIamPolicy | 了解有关Google Cloud存储分段的信息。 
+
+
+| —cloudkms.encryptoKeys.get—cloudkms.encryptoKeys.getIamPolicy—cloudkms.encryptoKeys.list—cloudkms.cryptoKeys.setIamPolicy—cloudkms.keyrings.get—cloudkms.keyrings.getIamPolicy—cloudkms.keyrings.list—cloudkms.keyRings.setIamPolicy | 在Cloud Backup激活向导中选择您自己的客户管理密钥、而不是使用默认的Google管理的加密密钥。 
 |===
+
+
+== 更改日志
+
+添加和删除权限后、我们将在以下各节中记录这些权限。
+
+
+
+=== 2023年1月27日
+
+已向策略添加以下权限：
+
+* cloudkms.CryptoKeys.getIamPolicy
+* cloudkms.cryptoKeys.setIamPolicy
+* cloudkms.keyrings.get
+* cloudkms.keyrings.getIamPolicy
+* cloudkms.keyRings.setIamPolicy
+
+
+Cloud Backup需要这些权限。
