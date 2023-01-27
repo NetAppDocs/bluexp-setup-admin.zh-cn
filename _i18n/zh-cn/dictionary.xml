@@ -622,7 +622,6 @@
   <block id="fdbdd6715cf2177c49f2aa51748944ad" category="paragraph">您需要将连接器与工作空间关联，以便 Workspace 管理员可以使用这些连接器创建 Cloud Volumes ONTAP 系统。</block>
   <block id="211c1a963db0ec4433679bba9d1a1973" category="paragraph">Workspace 管理员现在可以使用这些连接器创建 Cloud Volumes ONTAP 系统。</block>
   <block id="a85cd5dda897ee694c0a8a7ebe893293" category="inline-link-macro">了解如何管理您的帐户</block>
-  <block id="e93366502d593964f54fa78a54256cef" category="paragraph">现在，您已经设置了帐户，您可以随时通过删除用户，管理工作空间，连接器和订阅来对其进行管理。 <block ref="4b4f4de61b1c0103e06c096d3b330838" category="inline-link-macro-rx"></block>。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">获取帮助</block>
   <block id="e96bc5b1e40abf07ff070b96c65057db" category="doc">从 AWS Marketplace 创建 Connector</block>
   <block id="2d7f301de264581382e23e0ee22d9345" category="list-text">创建角色类型为 Amazon EC2 的 IAM 角色，并将您在上一步骤中创建的策略附加到该角色。</block>
@@ -816,8 +815,6 @@
   <block id="d78e63b2e43a582b35ba2f4c0eac45bd" category="inline-link">SaaS 用户界面</block>
   <block id="1765f6ca29cc9e21e15e0348d66bfdca" category="inline-link-macro">了解如何访问本地 UI</block>
   <block id="538fc0c04ce8a0ef5cf78a12dbe8f68a" category="section-title">连接器升级</block>
-  <block id="d4150be963d8e8a8648985d057b82c98" category="summary">如果您的公司策略要求您使用代理服务器与 Internet 进行所有 HTTP 通信，则必须将您的连接器配置为使用该 HTTP 代理服务器。代理服务器可以位于云中或网络中。</block>
-  <block id="bfe172c64db091b2b40778626fd53667" category="doc">配置 Connector 以使用 HTTP 代理服务器</block>
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">在 Connector 上启用代理</block>
   <block id="a211e8f0d908dfd70d36364b3fbd91b0" category="paragraph">在将 Connector 配置为使用代理服务器时，该连接器及其管理的 Cloud Volumes ONTAP 系统（包括任何 HA 调解器）都会使用代理服务器。</block>
   <block id="3b7b9877611524faf200a074a681f3fc" category="paragraph">请注意，此操作将重新启动 Connector 。继续操作前，请确保 Connector 未执行任何操作。</block>
@@ -1146,7 +1143,6 @@
   <block id="14a3ec4432f577b0adffd0ed91b508cd" category="list-text">如果要从其他订阅部署 Cloud Volumes ONTAP 、请切换到该订阅，然后重复这些步骤。</block>
   <block id="8853b96c8dcf3d773756121a97f3874f" category="paragraph">例如，多个用户可以在称为 _workworkspace 的隔离环境中部署和管理 Cloud Volumes ONTAP 系统。除非共享这些工作空间，否则其他用户不会看到这些工作空间。</block>
   <block id="b2eef7b6d059839882bf88ec94098a7c" category="inline-image-macro">屏幕截图显示了 " 管理帐户 " 小工具，您可以从中管理用户，工作空间和连接器。</block>
-  <block id="7fe2b3cad6e0fd3e01f58b23a9a48525" category="paragraph"><block ref="7fe2b3cad6e0fd3e01f58b23a9a48525" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3fc84828d29031ccb044fc851a791dd5" category="inline-link-macro">设置 NetApp 帐户</block>
   <block id="72c3eeaa29779a60f2efe95a1c173302" category="paragraph">有关分步说明，请参见 <block ref="2e63be6a139b9c6424fb3c44b74add23" category="inline-link-macro-rx"></block>。</block>
   <block id="ff73074ccafb0bcfc1c49a09ceb6532f" category="section-title">帐户设置</block>
@@ -1158,19 +1154,11 @@
   <block id="e9b0a93b5b5cd95f3a2c544875c51ae3" category="inline-link-macro">详细了解这些角色</block>
   <block id="7895b348f81fb8e1118370d6314dfb51" category="paragraph"><block ref="a7cac0974b1a57b009ba128474746390" category="inline-link-macro-rx"></block>。</block>
   <block id="d5e92609cf510f5f97ac326e907a0540" category="section-title">工作空间</block>
-  <block id="60d3dd11504adc56b8a14c980bdd5d7e" category="paragraph">工作环境代表存储系统：</block>
-  <block id="6d62e44bd211e57c0032e46d82290592" category="list-text">单节点 Cloud Volumes ONTAP 系统或 HA 对</block>
-  <block id="77a4ac7460b467c67ece8cfb55ed209d" category="list-text">网络中的内部 ONTAP 集群</block>
-  <block id="5e916b8b38543efb8ef5bc8e670d1215" category="list-text">NetApp 私有存储配置中的 ONTAP 集群</block>
   <block id="db0bbabf83c6d4f2a7e710c9d223191c" category="inline-link-macro">了解如何添加工作空间</block>
   <block id="ced2d945d98014d4467b685b8314caa1" category="paragraph"><block ref="5fada74255cc5bbf99ee00eda10403ac" category="inline-link-macro-rx"></block>。</block>
   <block id="649d75c6283da2a4b802839db32a41af" category="inline-link-macro">了解有关连接器的更多信息</block>
   <block id="75599088791b92751fdc2c9cee3a481e" category="paragraph"><block ref="c5bcec7879e3189e4c7a5fdbd8b19a5b" category="inline-link-macro-rx"></block>。</block>
   <block id="4ca2c509994c2776d0880357b4e8e5be" category="section-title">订阅</block>
-  <block id="eb7609cbad4b54a1269927272d7ddf53" category="paragraph">这些是与选定帐户关联的 NetApp 订阅。</block>
-  <block id="93568a1c17a387012558e910c14e7060" category="paragraph">订阅后，每个订阅均可从 " 管理帐户 " 小工具中获取。您将只看到与当前正在查看的帐户关联的订阅。</block>
-  <block id="bda4907cd89656b2bda837a282994221" category="paragraph">您可以选择重命名订阅并取消订阅与一个或多个帐户的关联。</block>
-  <block id="3bdc84428bee979e77f1781f40304f42" category="inline-link-macro">了解如何管理订阅</block>
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">示例</block>
   <block id="6643fe16b29885768bd30191d9673e3e" category="paragraph">以下示例说明了如何设置帐户。</block>
   <block id="5035e448f1f49334cb738cddfa38f051" category="admonition">在后面的两个示例映像中， Connector 和 Cloud Volumes ONTAP 系统实际上并不驻留在 NetApp 帐户中—它们运行在云提供商中。这是每个组件之间关系的概念表示。</block>
@@ -1293,7 +1281,6 @@
   <block id="0992dccda336100add15ce23fc9702f3" category="list-text"><block ref="0992dccda336100add15ce23fc9702f3" category="inline-link-rx"></block></block>
   <block id="3439d2a50956809b2cccde2f89685ce6" category="list-text"><block ref="3439d2a50956809b2cccde2f89685ce6" category="inline-link-rx"></block></block>
   <block id="fad43b5fbcb08d889da84d61cf2ea0e8" category="list-text"><block ref="fad43b5fbcb08d889da84d61cf2ea0e8" category="inline-link-rx"></block></block>
-  <block id="a37da40b1cf1ce86308b603dbc497d9d" category="paragraph"><block ref="443587ef67dfdb72c89535a3fb85e4c4" category="inline-link-macro-rx"></block>。</block>
   <block id="de60a486c1b92dffa7eb55af0b1c8bb0" category="paragraph">可以通过两种方式添加其他 AWS 凭据。</block>
   <block id="1e0ffea311b606e155cd79847cc310dd" category="list-text">将策略附加到 IAM 角色或 IAM 用户。</block>
   <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
@@ -1788,7 +1775,6 @@
   <block id="5f174caa182ccf4eda7018d2ae4ed7a0" category="section-title">打开端口3128以显示AutoSupport 消息</block>
   <block id="5fc25795a93f92bfee952eef3220d9e5" category="paragraph">唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。</block>
   <block id="489db3f339b691ea4dea5f4572483024" category="paragraph">如果对Cloud Volumes ONTAP 使用默认安全组、则不需要对其安全组进行任何更改。但是、如果您计划为Cloud Volumes ONTAP 定义严格的出站规则、则还需要确保Cloud Volumes ONTAP 安全组允许通过端口3128进行_outout_连接。</block>
-  <block id="117e86e552d0c131628c9b59f4f27b24" category="paragraph">如果您的公司策略要求您使用代理服务器与Internet进行所有HTTP通信、则必须将您的连接器配置为使用HTTP代理服务器。代理服务器可以位于云中或网络中。</block>
   <block id="cd5948a5853fc000f635c34407e9be0e" category="paragraph">如果公有 IP地址或NAT网关不可用、则将连接器配置为使用HTTP代理服务器可提供出站Internet访问。此代理服务器仅为Connector提供出站连接。它不为Cloud Volumes ONTAP 系统提供任何连接。</block>
   <block id="6d222908a201e6b65bf048113504f4c1" category="inline-xref">详细了解Connector的代理服务器</block>
   <block id="379c1280ecc325be9f0d74d095f55ae9" category="cell">为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。您必须在部署后手动打开此端口。 <block ref="9a4dd6e745bb9c3853507bba2251a2cd" category="inline-xref-macro-rx"></block>。</block>
@@ -2024,16 +2010,11 @@
   <block id="5c003b7f397067f0fc40909f87cde11b" category="paragraph">_NetApp帐户_提供多租户功能、可用于在BlueXP内将用户和资源组织在隔离的工作空间中。</block>
   <block id="c08e0acfb414367415c038345e4c0ad8" category="paragraph">首次访问BlueXP时、系统会提示您选择或创建NetApp帐户：</block>
   <block id="ca3dd06e715b50b0d24512292f803669" category="inline-image-macro">BlueXP设置向导的屏幕截图、提示您输入要在其中创建BlueXP的NetApp帐户。</block>
-  <block id="5b0ceafe4cf4db53492676845d2b61bb" category="paragraph"><block ref="5b0ceafe4cf4db53492676845d2b61bb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4fdee13cfdebdc3f01deb5ca5f67934f" category="paragraph">然后、BlueXP帐户管理员可以通过管理用户(成员)、工作空间、连接器和订阅来修改此帐户的设置：</block>
-  <block id="477ca1b4f458cf89a95d6b523a6cd807" category="paragraph">通过BlueXP中的"管理帐户"小工具、客户管理员可以管理NetApp帐户。如果您刚刚创建了帐户，则从头开始。但是，如果您已设置帐户，则会看到与该帐户关联的用户，工作空间，连接器和订阅。</block>
   <block id="017ed1bc01073c81677d981001613c16" category="paragraph">" 概述 " 页面将显示 " 帐户名称 " 和 " 帐户 ID" 。注册某些服务时，您可能需要提供帐户 ID 。此页面还包括一些BlueXP配置选项。</block>
   <block id="099685cfc1eb5331aeaaf96dd8dcc45c" category="paragraph">成员是您与NetApp帐户关联的BlueXP用户。通过将用户与某个帐户以及该帐户中的一个或多个工作空间相关联、这些用户可以在BlueXP中创建和管理工作环境。</block>
   <block id="d8b443dec47ef3fe29b32e2c5b56a6ec" category="list-text">_Account Admin_：可以在BlueXP中执行任何操作。</block>
   <block id="8322c371977d0ed96075b5448c122826" category="paragraph">在BlueXP中、工作空间会将任意数量的_work2_环境与其他工作环境隔离。除非帐户管理员将管理员与工作空间关联，否则 Workspace 管理员无法访问工作空间中的工作环境。</block>
   <block id="dfb1d6b546a58e94444916141dd6a141" category="paragraph">借助连接器、BlueXP可以管理公有 云环境中的资源和流程。连接器在云提供商中部署的虚拟机实例上运行，或者在您配置的内部主机上运行。</block>
-  <block id="f2e48283adc0e8071ea35676528cd30b" category="paragraph">您可以将 Connector 与多个 NetApp 云数据服务结合使用。例如、如果您已经有适用于BlueXP的Connector、则可以在设置Cloud Tiering服务时选择它。</block>
-  <block id="56d806d8894cb6f15ba1fb66e66b3cf3" category="paragraph">当您从云提供商的市场订阅BlueXP时、系统会将您重定向到BlueXP网站、您需要在该网站上保存订阅并将其与特定帐户关联。</block>
   <block id="1dfe6f08cb8e712d8c99300a0890f211" category="paragraph">下面是另一个示例，通过使用两个单独的 NetApp 帐户显示了最高的多租户级别。例如、服务提供商可能会在一个帐户中使用BlueXP为其客户提供服务、而使用另一个帐户为其业务部门之一提供灾难恢复。</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="doc">登录到BlueXP</block>
   <block id="7f7cb82a5dd812c3a52b46966d21ac40" category="paragraph">您可以通过基于SaaS的用户界面从Web浏览器访问BlueXP。</block>
@@ -2084,7 +2065,6 @@
   <block id="5646658d58bb92ba775a6c2cd024ef17" category="paragraph">如果您的网络中的子网配置了上述任一范围、则您可能会在BlueXP中遇到连接失败。例如、在BlueXP中发现内部ONTAP 集群可能会失败。</block>
   <block id="4195cd5f5be4f9f1f03edcb9e48c9b07" category="inline-link-macro">BlueXP Connector IP与现有网络冲突</block>
   <block id="290b978e42f71f7d091ff656795a223e" category="paragraph">请参见知识库文章 <block ref="ec3dc3610ab92c8939c1af12267841a7" category="inline-link-macro-rx"></block> 有关如何更改连接器接口的IP地址的说明。</block>
-  <block id="2b82837bf5cef64e65d0df717eafd918" category="paragraph">BlueXP不支持在Connector中使用HTTPS代理。</block>
   <block id="5f06d23f83d6190c4d06ff980526b619" category="paragraph">BlueXP不支持启用了SSL解密的防火墙配置。如果启用了SSL解密、则错误消息将显示在BlueXP中、而Connector实例将显示为非活动状态。</block>
   <block id="ad031591b605d8cc8b0bf802ff591d40" category="paragraph">如果您在AWS GovCloud区域、Azure Gov区域或Azure DoD区域部署Connector、则只能通过Connector的主机IP地址访问BlueXP。对整个帐户禁用对 SaaS 平台的访问。</block>
   <block id="0eecc61a1a6e481db1e7242f1c8c6009" category="paragraph">这意味着、只有能够访问最终用户内部VPC-vNet的有权限用户才能使用BlueXP的UI或API。</block>
@@ -2855,4 +2835,17 @@
   <block id="9df83ab1f3ab5fb0d62768dd3ff406e6" category="list-text">cloudkms.keyrings.getIamPolicy</block>
   <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
   <block id="3705a469472bf9882aff3f58dc3f4c5b" category="cell">\shtps：//management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud</block>
+  <block id="0a72a5335f5b852604ea0ad0c2fe10e1" category="paragraph">现在、您已经设置了帐户、您可以随时通过删除用户、管理工作空间和管理Connector来管理它。 <block ref="4b4f4de61b1c0103e06c096d3b330838" category="inline-link-macro-rx"></block>。</block>
+  <block id="86159ef2c579fd643503396dca6f3885" category="paragraph"><block ref="86159ef2c579fd643503396dca6f3885" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1403ef0f8512715bcf44602da2445c6a" category="paragraph">然后、BlueXP帐户管理员可以通过管理用户(成员)、工作空间和连接器来修改此帐户的设置：</block>
+  <block id="8cdce640828eda5cb8aadf745fb4ab7b" category="paragraph"><block ref="8cdce640828eda5cb8aadf745fb4ab7b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="10ae1ddc891d1002b557009f269a5987" category="paragraph">通过BlueXP中的"管理帐户"小工具、客户管理员可以管理NetApp帐户。如果您刚刚创建了帐户，则从头开始。但是、如果您已设置帐户、则会看到与该帐户关联的_all_用户、工作空间和连接器。</block>
+  <block id="dcc399fb58d401bf940e5d9de0f0387a" category="paragraph">工作环境代表存储系统。例如：</block>
+  <block id="a340186ec1e6c164285cf5a71abe8c4c" category="list-text">Cloud Volumes ONTAP 系统</block>
+  <block id="e64a5009263178a9824652eb7624d300" category="list-text">内部ONTAP 集群</block>
+  <block id="46f3c2b17cd41da44d4022428c48ec74" category="list-text">Kubernetes集群</block>
+  <block id="aa2a9593bd535a1923acb9053fd7788b" category="paragraph">您可以将 Connector 与多个 NetApp 云数据服务结合使用。例如、如果您正在使用连接器管理Cloud Volumes ONTAP 、则可以将同一个连接器与云分层等其他服务结合使用。</block>
+  <block id="a046fbde0a8e04968445555624e37a69" category="summary">如果您的公司策略要求您使用代理服务器进行与Internet的所有通信、则需要将您的连接器配置为使用该代理服务器。如果您未将Connector配置为在安装期间使用代理服务器、则可以将Connector配置为随时使用该代理服务器。</block>
+  <block id="07fe9439c5f6159dd126f0b5ad5b0282" category="doc">配置Connector以使用HTTP代理服务器</block>
+  <block id="231f168c8922afc18c96c3ab2866fb77" category="paragraph">BlueXP支持从用户界面配置HTTP代理服务器。代理服务器可以位于云中或网络中。</block>
 </blocks>

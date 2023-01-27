@@ -123,4 +123,4 @@ Workspace 管理员现在可以使用这些连接器创建 Cloud Volumes ONTAP �
 
 == 下一步是什么？
 
-现在，您已经设置了帐户，您可以随时通过删除用户，管理工作空间，连接器和订阅来对其进行管理。 link:task-managing-netapp-accounts.html["了解如何管理您的帐户"]。
+现在、您已经设置了帐户、您可以随时通过删除用户、管理工作空间和管理Connector来管理它。 link:task-managing-netapp-accounts.html["了解如何管理您的帐户"]。

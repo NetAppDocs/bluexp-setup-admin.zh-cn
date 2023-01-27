@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-configuring-proxy.html 
 keywords: proxy, proxy server, proxy, internet, HTTP, http, https 
-summary: 如果您的公司策略要求您使用代理服务器与 Internet 进行所有 HTTP 通信，则必须将您的连接器配置为使用该 HTTP 代理服务器。代理服务器可以位于云中或网络中。 
+summary: 如果您的公司策略要求您使用代理服务器进行与Internet的所有通信、则需要将您的连接器配置为使用该代理服务器。如果您未将Connector配置为在安装期间使用代理服务器、则可以将Connector配置为随时使用该代理服务器。 
 ---
-= 配置 Connector 以使用 HTTP 代理服务器
+= 配置Connector以使用HTTP代理服务器
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,9 @@ summary: 如果您的公司策略要求您使用代理服务器与 Internet 进�
 
 
 [role="lead"]
-如果您的公司策略要求您使用代理服务器与Internet进行所有HTTP通信、则必须将您的连接器配置为使用HTTP代理服务器。代理服务器可以位于云中或网络中。
+如果您的公司策略要求您使用代理服务器进行与Internet的所有通信、则需要将您的连接器配置为使用该代理服务器。如果您未将Connector配置为在安装期间使用代理服务器、则可以将Connector配置为随时使用该代理服务器。
 
-
-NOTE: BlueXP不支持在Connector中使用HTTPS代理。
+BlueXP支持从用户界面配置HTTP代理服务器。代理服务器可以位于云中或网络中。
 
 如果公有 IP地址或NAT网关不可用、则将连接器配置为使用HTTP代理服务器可提供出站Internet访问。此代理服务器仅为Connector提供出站连接。它不为Cloud Volumes ONTAP 系统提供任何连接。
 
