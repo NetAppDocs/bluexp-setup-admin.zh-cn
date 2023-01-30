@@ -2848,4 +2848,5 @@
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">如果您的公司策略要求您使用代理服务器进行与Internet的所有通信、则需要将您的连接器配置为使用该代理服务器。如果您未将Connector配置为在安装期间使用代理服务器、则可以将Connector配置为随时使用该代理服务器。</block>
   <block id="07fe9439c5f6159dd126f0b5ad5b0282" category="doc">配置Connector以使用HTTP代理服务器</block>
   <block id="231f168c8922afc18c96c3ab2866fb77" category="paragraph">BlueXP支持从用户界面配置HTTP代理服务器。代理服务器可以位于云中或网络中。</block>
+  <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">禁用SaaS平台时、政府区域支持Cloud Backup、但禁用SaaS平台时、商业区域则不支持Cloud Backup</block>
 </blocks>

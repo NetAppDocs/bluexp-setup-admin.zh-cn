@@ -282,6 +282,10 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["详�
 
 如果禁用SaaS平台、则无法从BlueXP获得以下服务：
 
+* 云备份
++
+禁用SaaS平台时、政府区域支持Cloud Backup、但禁用SaaS平台时、商业区域则不支持Cloud Backup
+
 * 云数据感知
 * Kubernetes
 * 云分层
