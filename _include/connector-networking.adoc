@@ -66,7 +66,7 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 === 代理服务器
 
-如果您的组织要求为所有传出Internet流量部署HTTP代理、请获取有关HTTP代理的以下信息：
+如果您的组织要求为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息：
 
 * IP 地址
 * 凭据

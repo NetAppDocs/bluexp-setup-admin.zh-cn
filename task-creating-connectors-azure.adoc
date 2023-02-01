@@ -110,7 +110,7 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 === 代理服务器
 
-如果您的组织要求为所有传出Internet流量部署HTTP代理、请获取有关HTTP代理的以下信息：
+如果您的组织要求为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息：
 
 * IP 地址
 * 凭据
@@ -588,7 +588,7 @@ image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中�
 .您需要的内容
 * Azure 订阅。
 * 您选择的 Azure 区域中的 vNet 和子网。
-* 有关HTTP代理的详细信息、如果您的组织需要一个代理来处理所有传出Internet流量：
+* 有关代理服务器的详细信息、如果您的组织需要代理来处理所有传出Internet流量：
 +
 ** IP 地址
 ** 凭据

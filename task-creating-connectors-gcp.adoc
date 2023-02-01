@@ -51,7 +51,7 @@ TIP: 在创建首个Cloud Volumes ONTAP 工作环境时、如果您还没有连�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 设置网络
 [role="quick-margin-para"]
-您需要一个VPC和子网、并可通过出站Internet访问特定端点。如果出站Internet需要HTTP代理、则需要IP地址、凭据和HTTPS证书。
+您需要一个VPC和子网、并可通过出站Internet访问特定端点。如果出站Internet需要代理服务器、则需要IP地址、凭据和HTTPS证书。
 
 [role="quick-margin-para"]
 <<设置网络,查看网络连接要求>>。
@@ -423,7 +423,7 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 === 代理服务器
 
-如果您的组织要求为所有传出Internet流量部署HTTP代理、请获取有关HTTP代理的以下信息：
+如果您的组织要求为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息：
 
 * IP 地址
 * 凭据

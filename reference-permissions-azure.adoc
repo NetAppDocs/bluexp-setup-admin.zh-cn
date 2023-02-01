@@ -425,7 +425,7 @@ Connector会为日常操作发出以下API请求。
 
 === Cloud Volumes ONTAP
 
-Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes ONTAP。
+Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTAP。
 
 [cols="5*"]
 |===

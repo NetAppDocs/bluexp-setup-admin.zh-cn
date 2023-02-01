@@ -37,7 +37,7 @@ BlueXP帐户管理员需要先部署_Connector_、然后才能使用大多数Blu
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 设置网络
 [role="quick-margin-para"]
-您需要一个VPC和子网、并可通过出站Internet访问特定端点。如果出站Internet需要HTTP代理、则需要IP地址、凭据和HTTPS证书。
+您需要一个VPC和子网、并可通过出站Internet访问特定端点。如果出站Internet需要代理服务器、则需要IP地址、凭据和HTTPS证书。
 
 [role="quick-margin-para"]
 <<设置网络,查看网络连接要求>>。
@@ -247,7 +247,7 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 === 代理服务器
 
-如果您的组织要求为所有传出Internet流量部署HTTP代理、请获取有关HTTP代理的以下信息：
+如果您的组织要求为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息：
 
 * IP 地址
 * 凭据
@@ -300,7 +300,7 @@ TIP: 如果选择 * 承担角色 * ，则可以从 Connector 部署向导创建�
 *** 选择是否要对 Connector 的 EBS 磁盘进行加密。您可以选择使用默认加密密钥或自定义密钥。
 
 
-** * 网络 * ：指定实例的 VPC ，子网和密钥对，选择是否启用公有 IP 地址，并可选择指定代理配置。
+** *网络*：指定实例的VPC、子网和密钥对、选择是否启用公共IP地址、并可选择指定代理配置(支持HTTP和HTTPS)。
 +
 确保您具有可用于Connector的正确密钥对。如果没有密钥对、您将无法访问Connector虚拟机。
 

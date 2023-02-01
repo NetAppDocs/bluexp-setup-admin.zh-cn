@@ -88,7 +88,7 @@ Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3
 
 .您需要的内容
 * 安装Connector的root权限。
-* 有关代理服务器的详细信息、如果从Connector访问Internet需要代理。
+* 有关代理服务器的详细信息、如果从Connector访问Internet需要代理。支持HTTP和HTTPS。
 +
 您可以选择在安装后配置代理服务器、但这样做需要重新启动Connector。
 
@@ -110,6 +110,16 @@ Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
+. 如果在主机上设置了_http_proxy_或_https_proxy_系统变量、请将其删除：
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+如果不删除这些系统变量、安装将失败。
+
 . 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
 +
 您应下载适用于您的网络或云中的Connector安装程序。

@@ -4,7 +4,7 @@ permalink: task-configuring-proxy.html
 keywords: proxy, proxy server, proxy, internet, HTTP, http, https 
 summary: 如果您的公司策略要求您使用代理服务器进行与Internet的所有通信、则需要将您的连接器配置为使用该代理服务器。如果您未将Connector配置为在安装期间使用代理服务器、则可以将Connector配置为随时使用该代理服务器。 
 ---
-= 配置Connector以使用HTTP代理服务器
+= 配置Connector以使用代理服务器
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,9 +16,9 @@ summary: 如果您的公司策略要求您使用代理服务器进行与Internet
 [role="lead"]
 如果您的公司策略要求您使用代理服务器进行与Internet的所有通信、则需要将您的连接器配置为使用该代理服务器。如果您未将Connector配置为在安装期间使用代理服务器、则可以将Connector配置为随时使用该代理服务器。
 
-BlueXP支持从用户界面配置HTTP代理服务器。代理服务器可以位于云中或网络中。
+BlueXP支持HTTP和HTTPS。代理服务器可以位于云中或网络中。
 
-如果公有 IP地址或NAT网关不可用、则将连接器配置为使用HTTP代理服务器可提供出站Internet访问。此代理服务器仅为Connector提供出站连接。它不为Cloud Volumes ONTAP 系统提供任何连接。
+如果公共IP地址或NAT网关不可用、则将Connector配置为使用代理服务器可提供出站Internet访问。此代理服务器仅为Connector提供出站连接。它不为Cloud Volumes ONTAP 系统提供任何连接。
 
 如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
 
@@ -50,7 +50,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 . 设置代理：
 +
 .. 单击 * 启用代理 * 。
-.. 使用语法指定服务器 http://_address:port_[]
+.. 使用语法指定服务器 http://_address:port_[] 或 https://_address:port_[]
 .. 如果服务器需要基本身份验证，请指定用户名和密码
 .. 单击 * 保存 * 。
 +
