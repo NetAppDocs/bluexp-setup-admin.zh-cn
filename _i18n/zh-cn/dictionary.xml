@@ -924,7 +924,6 @@
   <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
-  <block id="cb4b69eb9bd10da82c15dca2f86a1385" category="cell">9060</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">出站规则</block>
   <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">连接器的预定义安全组将打开所有出站流量。如果可以接受，请遵循基本出站规则。如果您需要更严格的规则、请使用高级出站规则。</block>
   <block id="d4dc7fa133657e4530cfde55110ec3c1" category="section-title">基本外向规则</block>
@@ -2048,7 +2047,6 @@
   <block id="70f1be412fcdc9d0de757859e335f5a6" category="summary">登录并设置BlueXP后、用户便可开始创建和发现工作环境。</block>
   <block id="082338dd3697084a7af4c20fcdf81e82" category="summary">当BlueXP在Azure中启动Connector VM时、它会将一个自定义角色附加到该VM、从而使Connector能够管理该Azure订阅中的资源和进程。Connector使用权限对多个Azure服务进行API调用。</block>
   <block id="770735bf1cfd4e882dd9ac93b90271d3" category="paragraph">直接从BlueXP创建Connector时、BlueXP会自动将此自定义角色应用于Connector。</block>
-  <block id="f0f5ff10d4c591333ded6e8023c5d365" category="cell">能够在政府云部署中启用和使用云数据感知和云备份。如果您在BlueXP帐户中禁用SaaS接口、则Cloud Backup也需要此端口。</block>
   <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">用于BlueXP的DNS解析</block>
   <block id="ab84a9278b660f1adee8c0a3fe2938de" category="paragraph">如果您从BlueXP、云提供商的市场部署了Connector、或者在可访问Internet的内部Linux主机上手动安装了Connector、则以下配置详细信息适用。</block>
   <block id="a0676ac5cfebaef69b53ff7e37cd8c3c" category="paragraph">如果您从BlueXP或云提供商的市场部署了Connector、请注意以下事项：</block>
@@ -2852,4 +2850,6 @@
   <block id="66dcf6df2e799ff19e8fe5b0ed10a143" category="paragraph">如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">使用语法指定服务器<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> 或<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
   <block id="5b2b679cfd4361d102ffc80defe9709e" category="list-text">*网络*：指定实例的VPC、子网和密钥对、选择是否启用公共IP地址、并可选择指定代理配置(支持HTTP和HTTPS)。</block>
+  <block id="6bd6b829c865d2a64a85e79355655e12" category="cell">9060、9061</block>
+  <block id="971da77efd7f98f0cb0eeb45103b5b77" category="cell">能够在政府云部署中启用和使用云数据感知和云备份。如果您在BlueXP帐户中禁用SaaS接口、则Cloud Backup也需要这些端口。</block>
 </blocks>

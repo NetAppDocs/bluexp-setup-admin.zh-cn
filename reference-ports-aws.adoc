@@ -37,7 +37,7 @@ Connector的AWS安全组需要入站和出站规则。
 | TCP | 3128 | 为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。您必须在部署后手动打开此端口。 <<Proxy server for AutoSupport messages,详细了解Connector的代理服务器>>。 
 
 
-| TCP | 9060 | 能够在政府云部署中启用和使用云数据感知和云备份。如果您在BlueXP帐户中禁用SaaS接口、则Cloud Backup也需要此端口。 
+| TCP | 9060、9061 | 能够在政府云部署中启用和使用云数据感知和云备份。如果您在BlueXP帐户中禁用SaaS接口、则Cloud Backup也需要这些端口。 
 |===
 
 
