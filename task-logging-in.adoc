@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: 您可以通过基于SaaS的用户界面从Web浏览器访问BlueXP。 
+summary: 注册到BlueXP后、您可以通过基于SaaS的用户界面从Web浏览器登录。 
 ---
 = 登录到BlueXP
 :hardbreaks:
@@ -14,7 +14,9 @@ summary: 您可以通过基于SaaS的用户界面从Web浏览器访问BlueXP。
 
 
 [role="lead"]
-您可以通过基于SaaS的用户界面从Web浏览器访问BlueXP。
+注册到BlueXP后、您可以通过基于SaaS的用户界面从Web浏览器登录。
+
+link:task-sign-up-saas.html["了解如何注册到BlueXP并创建组织"]。
 
 如果您要从政府区域或无法访问出站Internet的站点访问BlueXP、则需要登录到在Connector本地运行的BlueXP用户界面。 link:task-managing-connectors.html#access-the-local-ui["了解如何在Connector上访问本地UI"]。
 
@@ -22,40 +24,21 @@ summary: 您可以通过基于SaaS的用户界面从Web浏览器访问BlueXP。
 您可以使用以下选项之一登录到BlueXP：
 
 * 您的现有NetApp 支持站点 (NSS)凭据
-+
-使用此选项时、您的NetApp 支持站点 (NSS)凭据不会添加到支持信息板中的BlueXP中。要为Cloud Volumes ONTAP 启用关键工作流、需要将NSS凭据添加到BlueXP。 link:task-adding-nss-accounts.html["了解如何将NSS凭据添加到BlueXP"]。
-
 * 使用您的电子邮件地址和密码登录NetApp云
+* 联合连接
 +
-此选项支持联合连接。您可以使用单点登录使用公司目录中的凭据（联合身份）登录。要了解更多信息，请转到 https://cloud.netapp.com/help-center["BlueXP帮助中心"^] 然后单击*登录选项*。
+您可以使用单点登录使用公司目录中的凭据（联合身份）登录。要了解更多信息，请转到 https://cloud.netapp.com/help-center["BlueXP帮助中心"^] 然后单击*登录选项*。
 
-
-
-每次登录时、您都需要使用与首次登录时相同的选项。
-
-* 如果您通过使用NetApp支持站点凭据登录进行注册、则每次都需要使用该登录选项。
-* 如果您通过输入电子邮件和密码进行注册、则每次登录时都需要输入这些凭据。
 
 
 .步骤
 . 打开Web浏览器并转到 https://console.bluexp.netapp.com["BlueXP控制台"^]
+. 在*登录*页面上、输入与您的登录关联的电子邮件地址。
+. 根据与您的登录关联的身份验证方法、系统将提示您输入凭据：
 +
-此时将显示NetApp BlueXP登录页面。
-
-+
-image:screenshot-login.png["BlueXP的登录页面。"]
-
-. 选择一个登录选项：
-+
-** 如果您之前创建了NetApp云凭据、请使用您的电子邮件和密码登录。
-** 如果您没有云凭据、但已有NetApp 支持站点 (NSS)帐户、请选择*使用您的NetApp 支持站点 凭据登录*。
-** 如果您没有NSS帐户且尚未创建NetApp云凭据、请单击*注册*以创建NetApp云登录。
-+
-请注意、注册表单中仅允许使用英文字符。
-
-+
-注册后、您将收到NetApp发送的电子邮件。单击电子邮件中的链接以验证您的电子邮件地址、然后登录。
-
+** NetApp云凭据：输入密码
+** 联合用户：输入您的联合身份凭据
+** NetApp 支持站点 帐户：输入您的NetApp 支持站点 凭据
 
 
 

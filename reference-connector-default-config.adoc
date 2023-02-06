@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-connector-default-config.html 
 keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux 
-summary: 如果您需要对连接器进行故障排除，了解其配置方式可能会有所帮助。 
+summary: 您可能希望在部署连接器之前或需要对任何问题进行故障排除时了解有关连接器的更多信息。 
 ---
 = Connector 的默认配置
 :hardbreaks:

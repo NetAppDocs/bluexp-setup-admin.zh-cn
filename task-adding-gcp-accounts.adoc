@@ -40,7 +40,7 @@ image:screenshot_gcp_associate.gif["为 Google Cloud 凭据选择的 Google Clou
 
 NOTE: 在完成以下步骤之前、请确保您在Google Cloud帐户中同时拥有计费管理员权限、并同时拥有BlueXP登录权限。
 
-. 查看订阅步骤并单击 * 继续 * 。
+. 查看订阅步骤并单击*继续*。
 +
 image:screenshot_gcp_sub_popup.png["订阅弹出窗口的屏幕截图。"]
 
@@ -65,16 +65,25 @@ image:screenshot_gcp_marketplace_register.png["注册弹出窗口的屏幕截图
 
 NOTE: 要将Google Cloud订阅链接到您的NetApp帐户、必须完成此步骤。只有在从此页面重定向并登录到BlueXP后、链接订阅的过程才会完成。
 
-. 重定向到BlueXP后、登录或注册、然后单击*完成*继续。
+. 在*订阅分配*页面中：
 +
-Google Cloud订阅将链接到与您的用户登录关联的所有NetApp帐户。如果您需要限制对新订阅的访问权限、可以从数字电子钱包管理与订阅关联的NetApp帐户。 link:task-manage-subscriptions.html#manage-your-subscriptions["了解如何管理您的订阅"]。
+** 选择要与此订阅关联的NetApp帐户。
+** 在*替换现有订阅*字段中、选择是否要将一个帐户的现有订阅自动替换为此新订阅。
++
+此新订阅将取代帐户中所有凭据的现有订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。
 
 +
-image:screenshot_gcp_sub_mapping.png["将 GCP 订阅映射到 NetApp 帐户的屏幕截图。"]
+对于所有其他帐户、您需要重复上述步骤来手动关联订阅。
+
+** 单击 * 保存 * 。
++
+image:screenshot-google-cloud-subscription.png["订阅分配页面的屏幕截图、可用于将此订阅与一个或多个帐户关联、并选择替换其中一个帐户的现有订阅。"]
 
 +
 
-NOTE: 如果贵组织的某个用户已从您的计费帐户订阅NetApp BlueXP订阅、则您将重定向到 https://cloud.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP网站上的Cloud Volumes ONTAP 页面"^] 而是。如果这是意外情况，请联系您的 NetApp 销售团队。Google 仅为每个 Google 计费帐户启用一个订阅。
+NOTE: 如果贵组织的某个用户已从您的计费帐户订阅NetApp BlueXP订阅、则您将重定向到 https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP网站上的Cloud Volumes ONTAP 页面"^] 而是。如果这是意外情况，请联系您的 NetApp 销售团队。Google 仅为每个 Google 计费帐户启用一个订阅。
+
+
 
 . 完成此过程后、导航回BlueXP中的凭据页面并选择此新订阅。
 +
@@ -94,11 +103,11 @@ image:screenshot_gcp_associate.gif["订阅分配页面的屏幕截图。"]
 image:screenshot_gcp_manage_orders.png["订阅后的 Marketplace 页面的屏幕截图。"]
 
 +
-.. 如果订单显示绿色复选标记，这是意外的，则使用同一计费帐户的组织中的其他人可能已订阅。如果这是意外情况，或者您需要此订阅的详细信息，请联系您的 NetApp 销售团队。
+** 如果订单显示绿色复选标记，这是意外的，则使用同一计费帐户的组织中的其他人可能已订阅。如果这是意外情况，或者您需要此订阅的详细信息，请联系您的 NetApp 销售团队。
 +
 image:screenshot_gcp_green_marketplace.png["已接受授权的屏幕截图。"]
 
-.. 如果订单显示时钟和 * 待定 * 状态，请返回到 Marketplace 页面并选择 * 在提供商上管理 * 以完成上述流程。
+** 如果订单显示时钟和 * 待定 * 状态，请返回到 Marketplace 页面并选择 * 在提供商上管理 * 以完成上述流程。
 +
 image:screenshot_gcp_pending_marketplace.png["待定市场授权的屏幕截图。"]
 

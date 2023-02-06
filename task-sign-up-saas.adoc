@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: task-sign-up-saas.html 
+keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account 
+summary: 当您开始使用BlueXP时、第一步是注册。您可以选择创建帐户、但如果您受邀加入现有帐户、则可以跳过该步骤。 
+---
+= 注册到BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+当您开始使用BlueXP时、第一步是注册。您可以选择创建帐户、但如果您受邀加入现有帐户、则可以跳过该步骤。
+
+.有关政府地区的说明
+如果您需要从政府区域或无法访问出站Internet的站点访问BlueXP、则需要创建一个Connector并登录到在Connector本地运行的BlueXP用户界面。 link:task-managing-connectors.html#access-the-local-ui["了解如何在Connector上访问本地UI"]。
+
+.注册选项
+您可以通过基于SaaS的用户界面从Web浏览器访问BlueXP。
+
+您可以使用以下选项之一注册到BlueXP：
+
+* 您的现有NetApp 支持站点 (NSS)凭据
+* 通过指定您的电子邮件地址和密码来登录NetApp云
+
+
+这两个选项都支持联合连接、从而可以使用公司目录中的凭据(联合身份)进行单点登录。注册后、您可以从设置联合连接 https://cloud.netapp.com/help-center["BlueXP帮助中心"^] 选择* Cloud Central登录选项*。
+
+.步骤
+. 打开Web浏览器并转到 https://console.bluexp.netapp.com["BlueXP控制台"^]
+. 在*登录*页面上、选择*注册*。
++
+
+TIP: 如果您计划使用现有的NSS凭据、则可以跳过注册页面并直接在登录页面中输入电子邮件地址。BlueXP将在此首次登录过程中为您注册。
+
+. 在*注册*页面上、选择一个登录选项：
++
+** 如果您已有NetApp 支持站点 (NSS)帐户、请选择*使用您的NetApp 支持站点 凭据注册*。
++
+使用此选项时、您的NetApp 支持站点 (NSS)凭据不会添加到支持信息板中的BlueXP中。 link:task-adding-nss-accounts.html["了解如何将NSS凭据添加到支持信息板以启用关键工作流"]。
+
+** 如果您没有NSS帐户且尚未创建NetApp云凭据、请输入所需信息以创建NetApp云登录。
++
+请注意、注册表单中仅允许使用英文字符。
+
+
+
+. 出现提示时、请查看最终用户许可协议并接受条款。
+. 在*欢迎*页面上、输入帐户的名称。
++
+如果您的企业已有帐户、而您希望加入该帐户、则应跳过此步骤并要求所有者将您与该帐户关联。所有者将您添加到后、您可以登录并访问此帐户。 link:task-managing-netapp-accounts.html#adding-users["了解如何向现有帐户添加成员"]。
+
++
+帐户是NetApp身份平台的顶级要素。通过它、您可以添加和管理用户、角色、权限和工作环境。
+
++
+image:screenshot-account-selection.png["使用不属于某个帐户的新帐户登录时显示的欢迎页面的屏幕截图。"]
+
+. 选择 * 创建帐户 * 。
+
+
+.结果
+现在、您已拥有一个BlueXP登录名和一个帐户。在大多数情况下、下一步是创建一个连接器、将BlueXP的服务连接到您的混合云环境。

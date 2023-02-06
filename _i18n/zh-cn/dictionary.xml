@@ -179,7 +179,6 @@
   <block id="fe001b474268cb9300af19ba4c12edd8" category="list-text">单击一组凭据的操作菜单，然后选择 * 关联订阅 * 。</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">一组现有凭据的操作菜单屏幕截图。</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a47f53881d8adf66979b7824c6871988" category="list-text">从下拉列表中选择现有订阅或单击 * 添加订阅 * ，然后按照步骤创建新订阅。</block>
   <block id="c98f8dfd7e317cb87d057d9e065d71d4" category="section-title">编辑凭据</block>
   <block id="608e5d2c6ae29eafd4acefb54d76730a" category="admonition">您不能编辑与 Connector 实例关联的实例配置文件的凭据。</block>
   <block id="be92f90840924f8fb669257f558527d1" category="list-text">单击一组凭据的操作菜单，然后选择 * 编辑凭据 * 。</block>
@@ -313,7 +312,6 @@
   <block id="5026faf22ad07ea6356957ba78cd71f2" category="section-title">取消通知</block>
   <block id="e438ae665566728a83af19e41ac9ac6d" category="paragraph">如果您不再需要查看通知，可以从页面中删除这些通知。您可以一次性取消所有通知，也可以取消单个通知。</block>
   <block id="ca1c9774b98be72a0f55d88b3579e19c" category="inline-image-macro">显示通知菜单的屏幕截图，用于选择设置并取消所有选项。</block>
-  <block id="169974c04efd5d0f65ab0cf4fc3a8939" category="paragraph">要取消所有通知，请在通知中心中单击 <block ref="7fad804aeb2163ef7cf5d7bac2acba8b" category="inline-image-macro-rx" type="image"></block> 并选择 * 全部取消 * 。<block ref="e49bd0cb9810a0678258a0ab07786c5e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e94ce578d759d7ee56ab163db1168d4" category="inline-image-macro">显示如何取消单个通知的屏幕截图。</block>
   <block id="15993a193bb692f21f638b2b59581171" category="paragraph">要取消单个通知，请将光标悬停在通知上方，然后单击 * 取消 * 。<block ref="1932261efa358e221b5ec460a7384dc2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="32d01e2ee6eb96c809aad8205457b728" category="section-title">审核帐户中的用户活动</block>
@@ -528,8 +526,6 @@
   <block id="cc3442ccd0009ca72e8dcc3cf6077229" category="section-title">将 Azure Marketplace 订阅与凭据关联</block>
   <block id="086754afbe30b09d7f6a643dd6e05800" category="list-text">您希望将现有 Azure Marketplace 订阅替换为新订阅。</block>
   <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b86938912fe1dfce153836270d6c53ea" category="list-text">从下拉列表中选择订阅或单击 * 添加订阅 * ，然后按照步骤创建新订阅。</block>
-  <block id="5f5e29b0ef69aac086f8623314c61c8b" category="paragraph">以下视频从工作环境向导的上下文中启动，但在您单击 * 添加订阅 * 后显示相同的工作流：</block>
   <block id="f237b70f3f3799f90d3acf9d0c78e108" category="section-title">编辑凭据</block>
   <block id="65a39e4477ac1c2ee4e6f7ab03f80f8b" category="inline-link">在 GCP 中创建角色</block>
   <block id="270b7569730a90507cf88195b5a8a7ee" category="inline-link">创建 GCP 服务帐户并应用刚刚创建的自定义角色</block>
@@ -962,7 +958,6 @@
   <block id="fff6f5125be05a94543d2e88dbd30b27" category="inline-image-macro">为 Google Cloud 凭据选择的 Google Cloud 项目和订阅的屏幕截图。</block>
   <block id="cab980518d03aa36afc924b709828a6e" category="paragraph"><block ref="cab980518d03aa36afc924b709828a6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c3692898f95f79b425ac8b50f45bb06" category="list-text">如果您尚未订阅，请单击 * 添加订阅 * ，然后按照以下步骤创建新订阅。</block>
-  <block id="49c43770df63f7099c5f01292d0e24e2" category="list-text">查看订阅步骤并单击 * 继续 * 。</block>
   <block id="e34e3eb07d03eff321019c85029cb441" category="inline-image-macro">订阅弹出窗口的屏幕截图。</block>
   <block id="1c258a9e8501efe4f4ce95f3fd83a245" category="paragraph"><block ref="1c258a9e8501efe4f4ce95f3fd83a245" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8b5c3e503fd0da73cc8d1592a1ccbb6e" category="inline-image-macro">GCP CVO Marketplace 页面的屏幕截图。</block>
@@ -974,8 +969,6 @@
   <block id="ca4f48bdc60c2a16dd59109486af30ee" category="paragraph">此步骤会将您的传输请求发送给 NetApp 。</block>
   <block id="e3d03a33db92a9024d72af3cae4684fd" category="inline-image-macro">注册弹出窗口的屏幕截图。</block>
   <block id="6373a7d66fb33193565645f81635ec0c" category="paragraph"><block ref="6373a7d66fb33193565645f81635ec0c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f4c056c11ef2563cc898db48d406c84e" category="inline-image-macro">将 GCP 订阅映射到 NetApp 帐户的屏幕截图。</block>
-  <block id="2a085e42ac25547701a033cd0ebb75be" category="paragraph"><block ref="2a085e42ac25547701a033cd0ebb75be" category="inline-image-macro-rx" type="image"></block></block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">订阅分配页面的屏幕截图。</block>
   <block id="60d2ed6f6e1774535b6e69274800381d" category="paragraph"><block ref="60d2ed6f6e1774535b6e69274800381d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6ba5648366edaa0f05013bb6010f477e" category="section-title">对 Marketplace 订阅过程进行故障排除</block>
@@ -1188,7 +1181,6 @@
   <block id="bb535485e7b97661af60ecc59e655498" category="list-text">输入实例的名称。</block>
   <block id="edda80be79ac3f7cac925a65c6a3e5b5" category="list-text">向实例添加自定义标记（元数据）。</block>
   <block id="bc08dffbc581e8fd57ce1bac9b369e13" category="list-text">选择是否要对 Connector 的 EBS 磁盘进行加密。您可以选择使用默认加密密钥或自定义密钥。</block>
-  <block id="d091f5f5ef56e437171dce81de151778" category="summary">如果您需要对连接器进行故障排除，了解其配置方式可能会有所帮助。</block>
   <block id="6e8114a6676a5923599d8d78479d23d8" category="doc">Connector 的默认配置</block>
   <block id="87047facc49847cec237f6d055d56b31" category="section-title">具有 Internet 访问权限的默认配置</block>
   <block id="953e61420be6157aa122dfd3475d4070" category="paragraph">操作系统不包含 GUI 。您必须使用终端访问系统。</block>
@@ -1385,8 +1377,6 @@
   <block id="2027473f3ca71543274163d3bb9dd8e1" category="list-text"><block ref="2027473f3ca71543274163d3bb9dd8e1" category="inline-link-rx"></block></block>
   <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">了解ONTAP 内部集群增强功能</block>
   <block id="f0aff813a70ef2591adfbb6a1a06b553" category="list-text"><block ref="f0aff813a70ef2591adfbb6a1a06b553" category="inline-link-rx"></block></block>
-  <block id="d91c9747b757db55982f71a386bfd0d6" category="cell">—compute.instanceGroups.get—compute.addresses。get</block>
-  <block id="e6896223c5f9bd9bbdd1b0c9eac6686f" category="cell">在HA对上创建和管理Storage VM。</block>
   <block id="bea9d9e1b3f9260b5dafbfee794aead7" category="summary">您可以在无法访问 Internet 的内部 Linux 主机上安装 Connector 。然后、您可以发现内部ONTAP 集群、在它们之间复制数据、使用Cloud Backup备份卷、并使用Cloud Data sense对其进行扫描。</block>
   <block id="89b945901df4999cfbb07b91df7f3e83" category="inline-link">使用云备份将内部ONTAP 卷数据备份到StorageGRID</block>
   <block id="0ef5e09df96e6b4d97470a69c3a5bb03" category="list-text"><block ref="0ef5e09df96e6b4d97470a69c3a5bb03" category="inline-link-rx"></block></block>
@@ -1400,8 +1390,6 @@
   <block id="47d69a1f17128c359904338c3502fe31" category="section-title">使用NetApp凭据登录</block>
   <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">当新用户注册到Cloud Central时、他们现在可以选择*使用NetApp*登录选项以使用其NetApp支持站点凭据登录。这是输入电子邮件地址和密码的替代方法。</block>
   <block id="f27b2370dfece83354cbb560bf251abc" category="admonition">使用电子邮件地址和密码的现有登录需要继续使用该登录方法。注册的新用户可以使用"Log in with NetApp"选项。</block>
-  <block id="decc333898509c715afbf4242e91a6fc" category="list-text">如果您通过输入电子邮件和密码进行注册、则每次登录时都需要输入这些凭据。</block>
-  <block id="13a0adeb2b159ac19c415adb2a302ac7" category="list-text">如果您通过使用NetApp支持站点凭据登录进行注册、则每次都需要使用该登录选项。</block>
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
   <block id="dbb3531fc9f461de7f3beb2624712465" category="section-title">连接器3.9.20</block>
   <block id="d62eba143e9a6b4f6e0d6902d78ea096" category="list-text">我们引入了一种新方法来导航到Cloud Manager界面中不断增长的功能列表。现在、将鼠标悬停在左侧面板上即可轻松找到所有熟悉的Cloud Manager功能。</block>
@@ -2014,21 +2002,9 @@
   <block id="8fa7e084836ae35d976f6f572a47e804" category="paragraph">如果您要从政府区域或无法访问出站Internet的站点访问BlueXP、则需要登录到在Connector本地运行的BlueXP用户界面。 <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
   <block id="d168984ba5f06fd829697588a7bfa38c" category="paragraph">您可以使用以下选项之一登录到BlueXP：</block>
   <block id="19df8bb4b5a805b23aeac731605bdf21" category="list-text">您的现有NetApp 支持站点 (NSS)凭据</block>
-  <block id="d4a9f9b97db61be5fe92f3ac1eb2b99f" category="inline-link-macro">了解如何将NSS凭据添加到BlueXP</block>
-  <block id="c84b60bfaa10c18f34667a07c9422a47" category="paragraph">使用此选项时、您的NetApp 支持站点 (NSS)凭据不会添加到支持信息板中的BlueXP中。要为Cloud Volumes ONTAP 启用关键工作流、需要将NSS凭据添加到BlueXP。 <block ref="d3c005e09d65fc19351c4de2d73c488b" category="inline-link-macro-rx"></block>。</block>
   <block id="691be8e1993c2535e4afe5834afe3b01" category="list-text">使用您的电子邮件地址和密码登录NetApp云</block>
   <block id="36c40fc323b30ac7c63a4ad0ca63d488" category="inline-link">BlueXP帮助中心</block>
-  <block id="2611f7eb65cf3359137dafdfb95483ae" category="paragraph">此选项支持联合连接。您可以使用单点登录使用公司目录中的凭据（联合身份）登录。要了解更多信息，请转到<block ref="4281905c7145d3afc1e5083b48ba043f" category="inline-link-rx"></block> 然后单击*登录选项*。</block>
-  <block id="dcc1672f59b5dd25758f8f44fe7f04cd" category="paragraph">每次登录时、您都需要使用与首次登录时相同的选项。</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link">BlueXP控制台</block>
-  <block id="b6f593055aa7e0982c84cef15bca2d4a" category="paragraph">此时将显示NetApp BlueXP登录页面。</block>
-  <block id="2d9d1cf392d46cf284c202c45ca6710f" category="inline-image-macro">BlueXP的登录页面。</block>
-  <block id="d1458c5f683deb76200e00ee241652dd" category="paragraph"><block ref="d1458c5f683deb76200e00ee241652dd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9adc5d79168a4f6fe5dd0fcf70c16475" category="list-text">选择一个登录选项：</block>
-  <block id="4505e1a9383d05ecfa12dbc235eb5329" category="list-text">如果您之前创建了NetApp云凭据、请使用您的电子邮件和密码登录。</block>
-  <block id="141fe8ab65ca39501902b608f4303617" category="list-text">如果您没有云凭据、但已有NetApp 支持站点 (NSS)帐户、请选择*使用您的NetApp 支持站点 凭据登录*。</block>
-  <block id="bb501d2843c655901a71a82a7ee49692" category="list-text">如果您没有NSS帐户且尚未创建NetApp云凭据、请单击*注册*以创建NetApp云登录。</block>
-  <block id="e35134037761a63173898591344fceff" category="paragraph">注册后、您将收到NetApp发送的电子邮件。单击电子邮件中的链接以验证您的电子邮件地址、然后登录。</block>
   <block id="0cdc0aaedcc5278681de9de08217447f" category="paragraph">您现在已登录、可以开始使用BlueXP管理混合多云基础架构。</block>
   <block id="1cc2f617f426fbf9060a71767fca6e4d" category="summary">开始使用BlueXP (以前称为Cloud Manager)、以便您可以开始使用NetApp的云服务跨混合多云管理数据。设置完成后，您可以管理您的 NetApp 帐户，连接器，云提供商帐户等。</block>
   <block id="f12aeeed0f164c86af69a57fddb01689" category="doc">设置和管理BlueXP</block>
@@ -2288,9 +2264,7 @@
   <block id="cdcf076c3fd3e62a3c7e3691d02894db" category="inline-link">Google Cloud Marketplace上的NetApp BlueXP页面</block>
   <block id="b7e7a20500f8489bfa6b8a559c74a1d4" category="list-text">重定向到后<block ref="d9d3d72c24d9b3446210d5b539c6bbf5" category="inline-link-rx"></block>，确保在顶部导航菜单中选择了正确的项目。</block>
   <block id="10e61096cba50402ef6cb31c1b17e8ae" category="list-text">在弹出对话框中、单击*向NetApp、Inc.注册*以重定向到NetApp BlueXP网站。</block>
-  <block id="3654f8874077bf13f59590812bd85494" category="list-text">重定向到BlueXP后、登录或注册、然后单击*完成*继续。</block>
   <block id="4314e9e91f1c1e76df01e49490b3367e" category="inline-link">BlueXP网站上的Cloud Volumes ONTAP 页面</block>
-  <block id="289bd5956a254b6fa364eac8856b1768" category="admonition">如果贵组织的某个用户已从您的计费帐户订阅NetApp BlueXP订阅、则您将重定向到<block ref="03328ba9e09d435ba77b020263fc11e5" category="inline-link-rx"></block> 而是。如果这是意外情况，请联系您的 NetApp 销售团队。Google 仅为每个 Google 计费帐户启用一个订阅。</block>
   <block id="5894b1931d65e9796cc25db1bb6fd566" category="list-text">完成此过程后、导航回BlueXP中的凭据页面并选择此新订阅。</block>
   <block id="9da5b2b6ec24e29a79e40e816340c98d" category="paragraph">有时、通过Google云市场订阅Cloud Volumes ONTAP 可能会由于权限不正确或在重定向到BlueXP网站后意外地变得支离破碎。如果发生这种情况，请按照以下步骤完成订阅过程。</block>
   <block id="152bc1c9eb7bc2fdb6af0ef5eaec4cd3" category="list-text">导航到<block ref="d9d3d72c24d9b3446210d5b539c6bbf5" category="inline-link-rx"></block> 以检查订单的状态。如果页面显示 * 在提供商上管理 * ，请向下滚动并单击 * 管理订单 * 。</block>
@@ -2680,7 +2654,6 @@
   <block id="3b9dafc67ff049020d09b9ebd18aaa5d" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 创建Connector</block>
   <block id="5ccc745272c52ce1868d5bcf2b07705a" category="section-title">管理Workspace Admin的工作空间</block>
   <block id="1cf32fb78afaf111cd4c8421dc8592a6" category="section-title">管理Connector的工作空间</block>
-  <block id="c558073ec27a1686dce5ebbe5da43092" category="paragraph-title">登录选项</block>
   <block id="25fd4db5a75c387fe3fd85258810fcad" category="list-text">如果您选择在自己的Linux主机上手动安装Connector (而不是直接从BlueXP界面安装)、则Connector的安装程序需要在安装过程中访问多个端点：</block>
   <block id="d225210f36f5d8518fad068e89f2d1c3" category="inline-link-macro">查看端点列表</block>
   <block id="c0355dfc890e268b51bb88722cb448a9" category="paragraph"><block ref="12b2338905766fe009fef0e6c52eb82d" category="inline-link-macro-rx"></block>。</block>
@@ -2778,7 +2751,6 @@
   <block id="ef67c5eab6f3bfee1596c3f8734a88c7" category="paragraph">虽然直接发现内部ONTAP 集群不需要连接器、但如果要利用其他BlueXP功能、则需要连接器。</block>
   <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">了解有关内部ONTAP 集群的发现和管理选项的更多信息</block>
   <block id="7a5dd38f95e02bff17a0b6c794d9ce2b" category="paragraph"><block ref="7a5dd38f95e02bff17a0b6c794d9ce2b" category="inline-link-rx"></block></block>
-  <block id="82e02d499effaa5b28aba8ede321e414" category="list-text">目前、只有Cloud Sync 、云备份和勒索软件保护部门通过电子邮件发送通知。未来版本将添加其他服务。</block>
   <block id="8fb23cdc1bc8f3ca6d2863041a4364b5" category="list-text">如果您要跨多个项目部署Cloud Volumes ONTAP 、请确保Connector能够访问这些项目。</block>
   <block id="c17e95cb1967072e9156ac6ad6f7c033" category="paragraph"><block ref="02f20f4e9af364f73c72b808dd1224d3" category="inline-xref-macro-rx"></block>。</block>
   <block id="8e791012319a6cc33e02b9f65f0eb71d" category="paragraph">根据您的配置、您可能还需要完成以下步骤：</block>
@@ -2797,7 +2769,6 @@
   <block id="2dbb2a35f48f58340e040cb41a1d70b1" category="section-title">将Marketplace订阅与Google Cloud凭据关联</block>
   <block id="72a31d53edf5989e236535eb541ee755" category="paragraph">在Google Cloud中部署Connector时、BlueXP会创建一组与Connector VM实例关联的默认凭据。这些凭据是BlueXP用于部署Cloud Volumes ONTAP 的凭据。</block>
   <block id="80d154feb16cf91b0edec06497c1ceaa" category="admonition">要将Google Cloud订阅链接到您的NetApp帐户、必须完成此步骤。只有在从此页面重定向并登录到BlueXP后、链接订阅的过程才会完成。</block>
-  <block id="3ef651256a22c79667581299224bf5b3" category="paragraph">Google Cloud订阅将链接到与您的用户登录关联的所有NetApp帐户。如果您需要限制对新订阅的访问权限、可以从数字电子钱包管理与订阅关联的NetApp帐户。 <block ref="b8248518be94d54d622f572d1d196b86" category="inline-link-macro-rx"></block>。</block>
   <block id="cc328ccddf672987f092ca6f44c9f9cf" category="cell">https://management.azure.com https://login.microsoftonline.com</block>
   <block id="068395f3cd26ca40ad905de3790c9435" category="cell">管理Azure公共区域中的资源。</block>
   <block id="6696e65cc873b2af9823ebafd2e332a8" category="cell">https://management.usgovcloudapi.net \https://login.microsoftonline.us</block>
@@ -2852,4 +2823,98 @@
   <block id="5b2b679cfd4361d102ffc80defe9709e" category="list-text">*网络*：指定实例的VPC、子网和密钥对、选择是否启用公共IP地址、并可选择指定代理配置(支持HTTP和HTTPS)。</block>
   <block id="6bd6b829c865d2a64a85e79355655e12" category="cell">9060、9061</block>
   <block id="971da77efd7f98f0cb0eeb45103b5b77" category="cell">能够在政府云部署中启用和使用云数据感知和云备份。如果您在BlueXP帐户中禁用SaaS接口、则Cloud Backup也需要这些端口。</block>
+  <block id="35189ab5714b42941b6c22320f395243" category="list-text">要将凭据与现有订阅关联、请从下拉列表中选择此订阅、然后单击*关联*。</block>
+  <block id="7f024bcfe9b965209454c94e48004d5d" category="list-text">要将凭据与新订阅关联、请单击*添加订阅&gt;继续*、然后按照Azure Marketplace中的步骤进行操作：</block>
+  <block id="7dffa6296286b12f66d638f53340316c" category="list-text">如果出现提示、请登录到您的Azure帐户。</block>
+  <block id="229d7258c60456f36a718cd138813888" category="list-text">填写表单并单击*订阅*。</block>
+  <block id="a6f968ccb979a102bb5ce0538b9f2456" category="list-text">单击*通知*、然后单击通知中的链接以配置您的帐户。</block>
+  <block id="daa4df96e26fea6c1270d01a4426eab1" category="list-text">单击*配置帐户*。</block>
+  <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">您将重定向到BlueXP网站。</block>
+  <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">在*订阅分配*页面中：</block>
+  <block id="761b37459e9daab0f25c3e9b5edfd370" category="list-text">选择要与此订阅关联的NetApp帐户。</block>
+  <block id="e0c62276bada3b5536cceb070664c871" category="list-text">在*替换现有订阅*字段中、选择是否要将一个帐户的现有订阅自动替换为此新订阅。</block>
+  <block id="23d838dbd51becc56367e6d9358b446e" category="paragraph">此新订阅将取代帐户中所有凭据的现有订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。</block>
+  <block id="b4676b03cb1388f474b207b449af0dc2" category="paragraph">对于所有其他帐户、您需要重复上述步骤来手动关联订阅。</block>
+  <block id="ef545e4a852035275622b3ad9df636de" category="inline-image-macro">订阅分配页面的屏幕截图、可用于将此订阅与一个或多个帐户关联、并选择替换其中一个帐户的现有订阅。</block>
+  <block id="56884c9225391e21aea7cf42dd6f7bd5" category="paragraph"><block ref="56884c9225391e21aea7cf42dd6f7bd5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4a4cfdd3c4b047c552e6626beca055d3" category="summary">当您开始使用BlueXP时、第一步是注册。您可以选择创建帐户、但如果您受邀加入现有帐户、则可以跳过该步骤。</block>
+  <block id="156c302d186fc36d9d944c5d74b971af" category="doc">注册到BlueXP</block>
+  <block id="a6da179f46168e9455ae7e15202c1a47" category="paragraph-title">有关政府地区的说明</block>
+  <block id="c26e6228331f8b9fa1978950800424ee" category="paragraph">如果您需要从政府区域或无法访问出站Internet的站点访问BlueXP、则需要创建一个Connector并登录到在Connector本地运行的BlueXP用户界面。 <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>。</block>
+  <block id="213954d7bdaa5b2d9eab4ee897a935d3" category="paragraph-title">注册选项</block>
+  <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">您可以使用以下选项之一注册到BlueXP：</block>
+  <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">通过指定您的电子邮件地址和密码来登录NetApp云</block>
+  <block id="521c7a764fe6fa451475e20f1742173e" category="paragraph">这两个选项都支持联合连接、从而可以使用公司目录中的凭据(联合身份)进行单点登录。注册后、您可以从设置联合连接<block ref="4281905c7145d3afc1e5083b48ba043f" category="inline-link-rx"></block> 选择* Cloud Central登录选项*。</block>
+  <block id="9f1b84fa92d950a165d75ff20ea339ef" category="list-text">在*登录*页面上、选择*注册*。</block>
+  <block id="c838c41871c4f726a74cecb65930bcdd" category="admonition">如果您计划使用现有的NSS凭据、则可以跳过注册页面并直接在登录页面中输入电子邮件地址。BlueXP将在此首次登录过程中为您注册。</block>
+  <block id="9a076f8e1167c7f54e717f3312d9be22" category="list-text">在*注册*页面上、选择一个登录选项：</block>
+  <block id="eb7dc3949c534285123f407b97df88ce" category="list-text">如果您已有NetApp 支持站点 (NSS)帐户、请选择*使用您的NetApp 支持站点 凭据注册*。</block>
+  <block id="a67ec4292dbbae18fa7d903a5925529f" category="inline-link-macro">了解如何将NSS凭据添加到支持信息板以启用关键工作流</block>
+  <block id="f36fff08cce9f284672696a03c3af986" category="paragraph">使用此选项时、您的NetApp 支持站点 (NSS)凭据不会添加到支持信息板中的BlueXP中。 <block ref="6dd91a7e65a4b86508888798b6f600ec" category="inline-link-macro-rx"></block>。</block>
+  <block id="5185f2e203db6dcf60732c4adcccbd15" category="list-text">如果您没有NSS帐户且尚未创建NetApp云凭据、请输入所需信息以创建NetApp云登录。</block>
+  <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">出现提示时、请查看最终用户许可协议并接受条款。</block>
+  <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">在*欢迎*页面上、输入帐户的名称。</block>
+  <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">了解如何向现有帐户添加成员</block>
+  <block id="f0416cc7adfb705444d5a66527cb9ce5" category="paragraph">如果您的企业已有帐户、而您希望加入该帐户、则应跳过此步骤并要求所有者将您与该帐户关联。所有者将您添加到后、您可以登录并访问此帐户。 <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>。</block>
+  <block id="ecbca8245155432067c380b55b5146bb" category="paragraph">帐户是NetApp身份平台的顶级要素。通过它、您可以添加和管理用户、角色、权限和工作环境。</block>
+  <block id="a860f226d10bcd54ab238e5189d94747" category="inline-image-macro">使用不属于某个帐户的新帐户登录时显示的欢迎页面的屏幕截图。</block>
+  <block id="e079acaa326ddf3b1cb6ee167cce08f4" category="paragraph"><block ref="e079acaa326ddf3b1cb6ee167cce08f4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="20653d224bca9fb40181f3916e4f643d" category="list-text">选择 * 创建帐户 * 。</block>
+  <block id="2f0488f8a3ca91699637c323ed3b7ae7" category="paragraph">现在、您已拥有一个BlueXP登录名和一个帐户。在大多数情况下、下一步是创建一个连接器、将BlueXP的服务连接到您的混合云环境。</block>
+  <block id="c12be2d5c6d53ffeba2b81d18475c007" category="list-text">查看订阅步骤并单击*继续*。</block>
+  <block id="5f6337397041d9f655e961c010a87fdc" category="paragraph"><block ref="5f6337397041d9f655e961c010a87fdc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e5d34a7be7e3c957d955b41f31cc1b6b" category="admonition">如果贵组织的某个用户已从您的计费帐户订阅NetApp BlueXP订阅、则您将重定向到<block ref="35e104e3e4686d9ee172091b57b45bc0" category="inline-link-rx"></block> 而是。如果这是意外情况，请联系您的 NetApp 销售团队。Google 仅为每个 Google 计费帐户启用一个订阅。</block>
+  <block id="18ed152ca3e6d97795e3c62f29f14fa3" category="inline-link">了解BlueXP通知</block>
+  <block id="aea5351abe13a2ef43df184a5caed50e" category="paragraph">如果您的Connector已关闭14天或更长时间、BlueXP将通知您。<block ref="e16712c557ed9121be1392c11d3884a1" category="inline-link-rx"></block>。</block>
+  <block id="4bfec65bcbc9665c362f6c53301324c5" category="cell">—compute.instanceGroups.get—compute.addresses。get—compute.instances.updateNetworkInterface</block>
+  <block id="c5338aa09d091a71f3080053c9a0edc0" category="cell">在Cloud Volumes ONTAP HA对上创建和管理Storage VM。</block>
+  <block id="00e6f4ddf63e81c5de84a3913163d11d" category="section-title">2023年2月6日</block>
+  <block id="26e9753e85fc2c13a9569cd1345a5b06" category="paragraph">已为此策略添加以下权限：</block>
+  <block id="3503950ea6a1ba87d4be44e07b1a16c8" category="list-text">compute.instances.updateNetworkInterface</block>
+  <block id="0f30e2d10fca6f69c5f7a23bb2b30b1b" category="paragraph">Cloud Volumes ONTAP 需要此权限。</block>
+  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
+  <block id="d2ab99e3c8406089dca863337debb121" category="section-title">连接器3.9.26</block>
+  <block id="330ddcd0a3779c8729cfb2c56aeb33f5" category="list-text">现在、在*登录*页面上、系统会提示您输入与您的登录关联的电子邮件地址。单击*下一步*后、BlueXP将提示您使用与您的登录关联的身份验证方法进行身份验证：</block>
+  <block id="1baec3621cd37cfb63c78d95c414ca61" category="list-text">NetApp云凭据的密码</block>
+  <block id="1dca7678a1041ed05b6071c24454dfde" category="list-text">联合身份凭据</block>
+  <block id="9ec04e5ecf7230969f472cb3ba28f9d5" category="list-text">您的NetApp 支持站点 凭据</block>
+  <block id="95161959ea62121420b9e6e6553c5afa" category="inline-image-macro">BlueXP登录页面的屏幕截图、系统会提示您输入电子邮件地址。</block>
+  <block id="7fef862357cf2face17cb8062b1f051f" category="paragraph"><block ref="7fef862357cf2face17cb8062b1f051f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9cb7486a7e7f24abb51cfcc8bb6085db" category="list-text">如果您是BlueXP的新用户、并且已有NetApp 支持站点 (NSS)凭据、则可以跳过注册页面并直接在登录页面中输入您的电子邮件地址。BlueXP将在此首次登录过程中为您注册。</block>
+  <block id="845c6364e1c82b67190dc691538533e1" category="list-text">从云提供商的市场订阅BlueXP后、您可以选择将一个帐户的现有订阅替换为新订阅。</block>
+  <block id="79ee9d46f0018b3cb493ecfda60ffa4b" category="inline-image-macro">显示BlueXP帐户订阅分配的屏幕截图。</block>
+  <block id="cd56a207e786d73d9abfd43dd2202acd" category="paragraph"><block ref="cd56a207e786d73d9abfd43dd2202acd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f1b38e057f0b3e3f883f386f412fd0a9" category="inline-link">了解如何关联AWS订阅</block>
+  <block id="73f01c2e56cdb9b30f4fe33ce5bbdc20" category="list-text"><block ref="73f01c2e56cdb9b30f4fe33ce5bbdc20" category="inline-link-rx"></block></block>
+  <block id="72bfd3f607087d94f12332f83b700ab8" category="inline-link">了解如何关联Azure订阅</block>
+  <block id="58b7b647775bc09b6b8a9f45df71775b" category="list-text"><block ref="58b7b647775bc09b6b8a9f45df71775b" category="inline-link-rx"></block></block>
+  <block id="1c74f0a5753f74c783e970c346408b4a" category="inline-link">了解如何关联Google Cloud订阅</block>
+  <block id="896471f03a9a1e209bebabb5923d2b3e" category="list-text"><block ref="896471f03a9a1e209bebabb5923d2b3e" category="inline-link-rx"></block></block>
+  <block id="f906d086ca70101dd1f218ea0786aee8" category="list-text">如果您的Connector已关闭14天或更长时间、BlueXP将立即通知您。</block>
+  <block id="68f34edaf3c796f179fbe80b3df89f0c" category="list-text"><block ref="68f34edaf3c796f179fbe80b3df89f0c" category="inline-link-rx"></block></block>
+  <block id="752697882fd7ee73f8d5f60a6f8c02f5" category="inline-link">了解连接器为何应保持运行</block>
+  <block id="23f4e22cbf061f84ba77fd79e423d90f" category="list-text"><block ref="23f4e22cbf061f84ba77fd79e423d90f" category="inline-link-rx"></block></block>
+  <block id="1c8a63199471322e5b0fe67deb835f4b" category="list-text">我们更新了Google Cloud的连接器策略、其中包括在Cloud Volumes ONTAP HA对上创建和管理Storage VM所需的权限：</block>
+  <block id="67d29883f03468dc44eefc494f37473e" category="inline-link">查看Connector的Google Cloud权限</block>
+  <block id="cad0970fb2c4e3d28b046315bb4b7f02" category="paragraph"><block ref="ac22e421263f6f828d096313fa20e6a8" category="inline-link-rx"></block>。</block>
+  <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">此版本的连接器包含Cloud Volumes ONTAP 增强功能。</block>
+  <block id="e5fa209a01e6f968295b098866e0fcf5" category="paragraph"><block ref="e5fa209a01e6f968295b098866e0fcf5" category="inline-link-rx"></block></block>
+  <block id="2328f91c347cdd3538e6eec847331d2d" category="list-text">目前、系统会通过电子邮件发送有关以下BlueXP功能和服务的通知：连接器、Cloud Sync 、云备份和勒索软件保护。未来版本将添加其他服务。</block>
+  <block id="61130fb01406e968937613de0add552f" category="inline-image-macro">一个包含三个垂直点的图标</block>
+  <block id="86687429f8938a809fc671fe296b1bcc" category="paragraph">要取消所有通知，请在通知中心中单击 <block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> 并选择 * 全部取消 * 。<block ref="e49bd0cb9810a0678258a0ab07786c5e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0da34741c0fedd26eb889170d87be2c7" category="list-text">要将凭据与新订阅关联、请单击*添加订阅&gt;继续*、然后按照AWS Marketplace中的步骤进行操作：</block>
+  <block id="6ce481dcdc8134b6b4c81db0911f0267" category="list-text">单击 * 继续订阅 * 。</block>
+  <block id="c75b8cac68776a239e8da30928fbc723" category="list-text">单击*设置您的帐户*。</block>
+  <block id="1b71aaa72599faca0c9974618a3c749d" category="paragraph"><block ref="1b71aaa72599faca0c9974618a3c749d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2d362fb636ab4e2644720f00f02ddbfb" category="summary">注册到BlueXP后、您可以通过基于SaaS的用户界面从Web浏览器登录。</block>
+  <block id="f2209a6bc960d5dd3350ca4b5b662c18" category="inline-link-macro">了解如何注册到BlueXP并创建组织</block>
+  <block id="2a319fe0bd9ba8ece64b79d59a233b15" category="paragraph"><block ref="8c767825ada5127971c09f228e56d843" category="inline-link-macro-rx"></block>。</block>
+  <block id="0994880ff67f7251649b7fab82f0a166" category="paragraph-title">登录选项</block>
+  <block id="029351726760b5e014b1e49ec512b591" category="list-text">联合连接</block>
+  <block id="6c7ff2f2cb289c51829dcc82a760506b" category="paragraph">您可以使用单点登录使用公司目录中的凭据（联合身份）登录。要了解更多信息，请转到<block ref="4281905c7145d3afc1e5083b48ba043f" category="inline-link-rx"></block> 然后单击*登录选项*。</block>
+  <block id="03eb7e8aedd1ad900f6996ff1a9cf8dd" category="list-text">在*登录*页面上、输入与您的登录关联的电子邮件地址。</block>
+  <block id="784d4eeca11deaf4ee3f37735e4d0334" category="list-text">根据与您的登录关联的身份验证方法、系统将提示您输入凭据：</block>
+  <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">NetApp云凭据：输入密码</block>
+  <block id="a02705346febd77df5680fe2f12343a9" category="list-text">联合用户：输入您的联合身份凭据</block>
+  <block id="24bdc2b22d38abff9ff97a9c5b5e7966" category="list-text">NetApp 支持站点 帐户：输入您的NetApp 支持站点 凭据</block>
 </blocks>

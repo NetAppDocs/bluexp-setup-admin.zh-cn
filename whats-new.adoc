@@ -18,6 +18,54 @@ summary: '了解BlueXP (以前称为Cloud Manager)管理功能的新增功能：
 
 
 
+== 2023年2月5日
+
+
+
+=== 连接器3.9.26
+
+* 现在、在*登录*页面上、系统会提示您输入与您的登录关联的电子邮件地址。单击*下一步*后、BlueXP将提示您使用与您的登录关联的身份验证方法进行身份验证：
++
+** NetApp云凭据的密码
+** 联合身份凭据
+** 您的NetApp 支持站点 凭据
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-login.png["BlueXP登录页面的屏幕截图、系统会提示您输入电子邮件地址。"]
+
+* 如果您是BlueXP的新用户、并且已有NetApp 支持站点 (NSS)凭据、则可以跳过注册页面并直接在登录页面中输入您的电子邮件地址。BlueXP将在此首次登录过程中为您注册。
+* 从云提供商的市场订阅BlueXP后、您可以选择将一个帐户的现有订阅替换为新订阅。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["显示BlueXP帐户订阅分配的屏幕截图。"]
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["了解如何关联AWS订阅"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["了解如何关联Azure订阅"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["了解如何关联Google Cloud订阅"]
+
+
+* 如果您的Connector已关闭14天或更长时间、BlueXP将立即通知您。
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["了解BlueXP通知"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["了解连接器为何应保持运行"]
+
+
+* 我们更新了Google Cloud的连接器策略、其中包括在Cloud Volumes ONTAP HA对上创建和管理Storage VM所需的权限：
++
+compute.instances.updateNetworkInterface
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["查看Connector的Google Cloud权限"]。
+
+* 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["了解Cloud Volumes ONTAP 增强功能"^]
+
+
+
+
+
 == 2023年1月1日
 
 
