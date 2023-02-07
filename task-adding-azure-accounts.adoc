@@ -327,10 +327,9 @@ image:screenshot_azure_add_subscription.png["一组现有凭据的操作菜单�
 . 要将凭据与新订阅关联、请单击*添加订阅>继续*、然后按照Azure Marketplace中的步骤进行操作：
 +
 .. 如果出现提示、请登录到您的Azure帐户。
-.. 单击 * 创建 * 。
+.. 单击 * 订阅 * 。
 .. 填写表单并单击*订阅*。
-.. 单击*通知*、然后单击通知中的链接以配置您的帐户。
-.. 单击*配置帐户*。
+.. 订阅过程完成后、单击*立即配置帐户*。
 +
 您将重定向到BlueXP网站。
 
@@ -345,12 +344,14 @@ image:screenshot_azure_add_subscription.png["一组现有凭据的操作菜单�
 对于所有其他帐户、您需要重复上述步骤来手动关联订阅。
 
 *** 单击 * 保存 * 。
-
-
-
++
+以下视频显示了从Azure Marketplace订阅的步骤：
 
 +
-image:screenshot-azure-subscription.png["订阅分配页面的屏幕截图、可用于将此订阅与一个或多个帐户关联、并选择替换其中一个帐户的现有订阅。"]
+video::video_subscribing_azure.mp4[width=848,height=480]
+
+
+
 
 
 
