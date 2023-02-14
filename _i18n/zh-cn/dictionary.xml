@@ -1485,7 +1485,6 @@
   <block id="b18a2220ba0da795c31cbb6cd990fd49" category="list-text">公里：列表*</block>
   <block id="2101c43af42db107614da3d2faadb4dc" category="list-text">公里：描述*</block>
   <block id="53cfd5032381d05f65cbc6d64e0004f5" category="list-text">S3 ： GetObject</block>
-  <block id="9072562ed0b0a146d2eee12aaa27baf4" category="list-text">EC2：介绍VpcEndpoints</block>
   <block id="276e466538acff21910df6227231c79f" category="list-text">Kms：ListAliases</block>
   <block id="599a8ceed768fab9cc6e39dff7c9f215" category="list-text">S3 ： PutEncryptionConfiguration</block>
   <block id="21eddde0f415ffe52f38d432d14088c9" category="paragraph">在使用搜索和还原方法还原卷和文件时、Connector会发出以下API请求：</block>
@@ -2910,4 +2909,9 @@
   <block id="825c72d4114a9a71a355213f6b79c642" category="list-text">完成*订阅分配*页面上的步骤：</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">以下视频显示了从Google Cloud Marketplace订阅的步骤：</block>
   <block id="1c1c040e218e35ae634138db5c2055f4" category="list-text">单击*查看购买选项*。</block>
+  <block id="8258ac0fb8b015087851de720e92f796" category="list-text">EC2：Describe VpcEndpoints</block>
+  <block id="1be1ae3d277ebf372ecefda4d444dbbb" category="section-title">2023年2月14日</block>
+  <block id="fae746653dec0583228106493b15ac1a" category="paragraph">现在、Cloud Tiering需要以下权限：</block>
+  <block id="296337985ff5f0cc398e02f1aff0b176" category="paragraph">如果Connector安装在内部、则无法使用此身份验证方法。您必须使用AWS密钥。</block>
+  <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">如果Connector安装在内部、则必须使用此身份验证方法。您不能使用IAM角色。</block>
 </blocks>

@@ -183,7 +183,7 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
                 "cloudformation:DescribeStacks",
                 "kms:List*",
                 "kms:Describe*",
-                "ec2:describeVpcEndpoints",
+                "ec2:DescribeVpcEndpoints",
                 "kms:ListAliases",
                 "athena:StartQueryExecution",
                 "athena:GetQueryResults",
@@ -745,7 +745,7 @@ Connector会发出以下API请求来管理Amazon S3中的备份：
 * 公里：列表*
 * 公里：描述*
 * S3 ： GetObject
-* EC2：介绍VpcEndpoints
+* EC2：Describe VpcEndpoints
 * Kms：ListAliases
 * S3 ： PutEncryptionConfiguration
 
@@ -883,7 +883,10 @@ Connector发出以下API请求以部署Cloud Data sense实例：
 | S3 ： GetLifeycleConfiguration | 是的。 | 是的。 
 
 
-| EC2：Describe注册 | 是的。 | 是的。 
+| EC2：Describe注册 | 是的。 | 否 
+
+
+| EC2：Describe VpcEndpoints | 是的。 | 否 
 |===
 
 
@@ -1191,7 +1194,7 @@ Connector发出以下API请求来管理适用于ONTAP 的FSX：
 * EC2：Describe标记
 * EC2：Describe IamInstanceProfileAssociations
 * EC2：Describe保留实例服务
-* EC2：介绍VpcEndpoints
+* EC2：Describe VpcEndpoints
 * EC2：Describe
 * EC2：Describe卷修改
 * EC2：Describe PlacementGroup
@@ -1222,3 +1225,17 @@ Connector会发出以下API请求来发现和管理Amazon EKS集群：
 Connector会发出以下API请求来发现Amazon S3存储分段：
 
 S3 ： GetEncryptionConfiguration
+
+
+
+== 更改日志
+
+添加和删除权限后、我们将在以下各节中记录这些权限。
+
+
+
+=== 2023年2月14日
+
+现在、Cloud Tiering需要以下权限：
+
+EC2：Describe VpcEndpoints
