@@ -78,5 +78,8 @@ NOTE: 源 IP 地址是 Connector 主机。
 | API 调用和 AutoSupport | HTTPS | 443. | 出站 Internet 和 ONTAP 集群管理 LIF | API调用Azure和ONTAP 、云数据感知、勒索软件服务以及向NetApp发送AutoSupport 消息 
 
 
+| API 调用 | TCP | 8080 | 数据感知 | 在部署期间探测到数据感知实例 
+
+
 | DNS | UDP | 53. | DNS | 用于BlueXP的DNS解析 
 |===

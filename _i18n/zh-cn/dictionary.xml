@@ -1282,7 +1282,6 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
-  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">自助支持</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">这些选项每周 7 天，每天 24 小时免费提供：</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知识库</block>
   <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
@@ -1290,8 +1289,6 @@
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文档。</block>
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com （反馈电子邮件）</block>
-  <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp 支持</block>
-  <block id="f5052c65917d7341726235d4d4941461" category="list-text">在 "Technical Support" 下选择一个可用选项：</block>
   <block id="0c01b3b7191c43507ad9ca43d6443731" category="cell">提供从客户端 Web 浏览器到本地用户界面的 HTTPS 访问，以及从 Cloud Data sense 实例建立的连接</block>
   <block id="5c6b09600cdfc594130f9f3c053efecb" category="section-title">更改连接器的 IP 地址</block>
   <block id="a0dc112a414c5a75d4f2454974efc323" category="paragraph">如果您的业务需要，您可以更改云提供商自动分配的 Connector 实例的内部 IP 地址和公有 IP 地址。</block>
@@ -1836,7 +1833,6 @@
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">了解如何注册获取支持</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您要通过电话与某人通话、请单击*致电我们*。系统会将您定向到netapp.com上的一个页面、其中列出了您可以拨打的电话号码。</block>
-  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">单击*创建案例*、向NetApp支持专家开一个服务单：</block>
   <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">* NetApp 支持站点 Account*：选择与创建支持案例的人员关联的适用帐户。除下面提供的其他电子邮件外、此人还将是NetApp的主要联系人。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作环境*：如果适用于存储、请选择* Cloud Volumes ONTAP *或* on-Prem*、然后选择关联的工作环境。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例优先级*：选择案例的优先级、可以是"低"、"中"、"高"或"严重"。</block>
@@ -2178,7 +2174,6 @@
   <block id="190d3f654701a58653384f20c47c8ecf" category="list-text">在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。</block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="admonition">BlueXP不支持包含@字符的密码。</block>
   <block id="0e2ec8861e0eca9eed397572feaa87da" category="paragraph">如果您配置了代理服务器、则无需通过代理即可将API调用直接发送到BlueXP。在 AWS ， Azure 或 Google Cloud 中运行的 Connectors 支持此选项。</block>
-  <block id="81fdb7b2f8a92d7339906c3b7b4f736f" category="doc">管理BlueXP的Azure凭据和订阅</block>
   <block id="67cbb61f9d12c71b3b67153567963530" category="paragraph">可以通过两种方式在BlueXP中添加其他Azure订阅和凭据。</block>
   <block id="d6e059f3de26b29b7be6b2949eae8f3d" category="list-text">如果要使用不同的Azure凭据部署Cloud Volumes ONTAP 、请使用服务主体授予Azure权限、并将其凭据添加到BlueXP。</block>
   <block id="44b7efa00ab8e5ca07e5783fe3175bb3" category="paragraph">通过BlueXP、您可以选择要在其中部署Cloud Volumes ONTAP 的Azure凭据和Azure订阅。除非关联，否则您无法为托管身份配置文件选择其他 Azure 订阅<block ref="683de527faad104d75b2c83aceba6f01" category="inline-link-rx"></block> 这些订阅。</block>
@@ -2914,4 +2909,12 @@
   <block id="fae746653dec0583228106493b15ac1a" category="paragraph">现在、Cloud Tiering需要以下权限：</block>
   <block id="296337985ff5f0cc398e02f1aff0b176" category="paragraph">如果Connector安装在内部、则无法使用此身份验证方法。您必须使用AWS密钥。</block>
   <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">如果Connector安装在内部、则必须使用此身份验证方法。您不能使用IAM角色。</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自助支持选项</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">向NetApp支持部门创建案例</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在*资源*页面上、在技术支持下选择一个可用选项：</block>
+  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">单击*创建案例*、向NetApp支持专家开一个服务单：</block>
+  <block id="d4a973e303ec37692cc8923e3148eef7" category="cell">8080</block>
+  <block id="0773be92494e9aa5f52a2d6834a7c90f" category="cell">数据感知</block>
+  <block id="f1ec925a41746bf6e895d454b6a6eddb" category="cell">在部署期间探测到数据感知实例</block>
+  <block id="3cae1bb62504fde722824fee95046472" category="doc">管理BlueXP的Azure凭据和订阅</block>
 </blocks>
