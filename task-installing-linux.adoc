@@ -41,15 +41,8 @@ GCP 计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建
 支持的操作系统::
 +
 --
-* CentOS 7.6
-* CentOS 7.7
-* CentOS 7.8
-* CentOS 7.9
-* Red Hat Enterprise Linux 7.6
-* Red Hat Enterprise Linux 7.7
-* Red Hat Enterprise Linux 7.8
-* Red Hat Enterprise Linux 7.9
-* Red Hat Enterprise Linux 8.6
+* CentOS 7.6、7.7、7.8和7.9
+* Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 和8.7
 +
 Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果未注册，则在安装 Connector 期间，系统无法访问存储库来更新所需的第三方软件。
 

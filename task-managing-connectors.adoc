@@ -185,9 +185,9 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 
 
 
-== 在不访问 Internet 的情况下升级内部连接器
+== 在无法访问Internet的位置升级Connector
 
-如果您 link:task-install-connector-onprem-no-internet.html["已在无法访问 Internet 的内部主机上安装 Connector"]，您可以在 NetApp 支持站点上提供较新版本时升级 Connector 。
+如果您 link:task-install-connector-onprem-no-internet.html["已将连接器安装在无法访问Internet的位置"]，您可以在 NetApp 支持站点上提供较新版本时升级 Connector。
 
 在升级过程中， Connector 需要重新启动，因此用户界面在升级期间将不可用。
 
@@ -198,14 +198,20 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 +
 [source, cli]
 ----
-chmod +x /path/cloud-manager-connector-offline-v3.9.14
+chmod +x /path/cloud-manager-connector-offline-<version>
 ----
++
+其中、<version> 是您下载的连接器版本。
+
 . 运行安装脚本：
 +
 [source, cli]
 ----
-sudo /path/cloud-manager-connector-offline-v3.9.14
+sudo /path/cloud-manager-connector-offline-<version>
 ----
++
+其中、<version> 是您下载的连接器版本。
+
 . 升级完成后，您可以转到 * 帮助 > 支持 > 连接器 * 来验证连接器的版本。
 
 

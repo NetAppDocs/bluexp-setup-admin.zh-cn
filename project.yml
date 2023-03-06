@@ -69,7 +69,7 @@ sidebar:
           url: "/task-launching-azure-mktp.html"
         - title: 通过 Internet 在您自己的主机上安装
           url: "/task-installing-linux.html"
-        - title: 在不使用 Internet 的情况下在内部安装
+        - title: 在不使用Internet的主机上安装
           url: "/task-install-connector-onprem-no-internet.html"
       - title: 查找 Connector 的系统 ID
         url: "/task-finding-system-id.html"

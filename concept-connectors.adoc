@@ -119,7 +119,7 @@ BlueXP帐户管理员可以通过多种方式创建Connector：
 * 在您自己的 Linux 主机上手动安装软件
 +
 ** link:task-installing-linux.html["在可访问 Internet 的主机上"]
-** link:task-install-connector-onprem-no-internet.html["在无法访问 Internet 的内部主机上"]
+** link:task-install-connector-onprem-no-internet.html["位于无法访问Internet的位置的主机上"]
 
 
 * 来自云提供商的市场

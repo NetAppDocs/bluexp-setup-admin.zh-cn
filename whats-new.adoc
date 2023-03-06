@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: '了解BlueXP (以前称为Cloud Manager)管理功能的新增功能：NetApp帐户、连接器、云提供商凭据等。' 
+summary: 了解BlueXP管理功能的新增功能：NetApp帐户、连接器、云提供商凭据等。 
 ---
 = 新增功能
 :hardbreaks:
@@ -14,7 +14,47 @@ summary: '了解BlueXP (以前称为Cloud Manager)管理功能的新增功能：
 
 
 [role="lead"]
-了解BlueXP (以前称为Cloud Manager)管理功能的新增功能：NetApp帐户、连接器、云提供商凭据等。
+了解BlueXP管理功能的新增功能：NetApp帐户、连接器、云提供商凭据等。
+
+
+
+== 2023年3月5日
+
+
+
+=== 连接器3.9.27
+
+* 现在、您可以在BlueXP控制台中进行搜索。此时、您可以使用搜索功能来查找BlueXP服务和功能。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search.png["控制台顶部提供的BlueXP搜索的屏幕截图。"]
+
+* 您可以直接从BlueXP查看和管理活动的和已解决的支持案例。您可以管理与您的NSS帐户和公司关联的案例。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["了解如何管理支持案例"]。
+
+* 现在、运行Red Hat Enterprise Linux 8.7的主机支持Connector。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["查看 Connector 的系统要求"]。
+
+* 现在、任何与Internet完全隔离的云环境都支持Connector。然后、您可以使用Connector上运行的BlueXP控制台将Cloud Volumes ONTAP 部署在同一位置、并发现内部ONTAP 集群(如果您已从云环境连接到内部环境)。此类部署不支持任何其他BlueXP服务、但Digital Wallet除外。
++
+云区域可以是AWS C2S/SC2S、Azure IL6等美国安全机构或任何商业区域的区域。
+
++
+要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将您的BYOL许可证添加到数字电子钱包中、然后部署Cloud Volumes ONTAP。
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["将连接器安装在无法访问Internet的位置"^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["访问Connector上的BlueXP控制台"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["添加未分配的许可证"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["开始使用Cloud Volumes ONTAP"^]
+
+
+* 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["了解Cloud Volumes ONTAP 增强功能"^]
+
+
 
 
 

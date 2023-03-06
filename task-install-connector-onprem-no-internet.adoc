@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-connector-onprem-no-internet.html 
 keywords: connector, dark site, install dark site, install connector no internet, install connector on prem 
-summary: 您可以在无法访问 Internet 的内部 Linux 主机上安装 Connector 。然后、您可以发现内部ONTAP 集群、在它们之间复制数据、使用Cloud Backup备份卷、并使用Cloud Data sense对其进行扫描。 
+summary: 您可以将Connector安装在与Internet完全隔离的位置、无论是内部环境还是云区域。然后、您可以使用该环境中支持的BlueXP服务。 
 ---
-= 在不访问 Internet 的情况下在内部安装 Connector
+= 将连接器安装在无法访问Internet的位置
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,21 @@ summary: 您可以在无法访问 Internet 的内部 Linux 主机上安装 Conne
 
 
 [role="lead"]
-您可以在无法访问 Internet 的内部 Linux 主机上安装 Connector 。然后、您可以发现内部ONTAP 集群、在它们之间复制数据、使用Cloud Backup备份卷、并使用Cloud Data sense对其进行扫描。
+您可以将Connector安装在与Internet完全隔离的位置、无论是内部环境还是云区域。然后、您可以使用该环境中支持的BlueXP服务。
+
+
+
+== 内部环境概述
+
+在没有Internet的内部环境中、您可以使用BlueXP发现内部ONTAP 集群、在它们之间复制数据、使用Cloud Backup备份卷以及使用Cloud Data sense扫描这些集群。此类部署不支持任何其他BlueXP服务、但Digital Wallet除外。
+
+
+
+== 云概述
+
+在没有Internet的云区域中、您可以使用BlueXP部署Cloud Volumes ONTAP 系统并发现内部ONTAP 集群(如果您的云环境与内部环境建立了连接)。此类部署不支持任何其他BlueXP服务、但Digital Wallet除外。
+
+云区域可以是AWS C2S/SC2S、Azure IL6等美国安全机构或任何商业区域的区域。
 
 这些安装说明专门针对上述使用情形。 link:concept-connectors.html#how-to-create-a-connector["了解部署 Connector 的其他方法"]。
 
@@ -30,15 +44,8 @@ RAM:: 14 GB
 支持的操作系统::
 +
 --
-* CentOS 7.6
-* CentOS 7.7
-* CentOS 7.8
-* CentOS 7.9
-* Red Hat Enterprise Linux 7.6
-* Red Hat Enterprise Linux 7.7
-* Red Hat Enterprise Linux 7.8
-* Red Hat Enterprise Linux 7.9
-* Red Hat Enterprise Linux 8.6
+* CentOS 7.6、7.7、7.8和7.9
+* Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 和8.7
 +
 Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果未注册，则在安装 Connector 期间，系统无法访问存储库来更新所需的第三方软件。
 
@@ -71,20 +78,26 @@ Docker 引擎:: 在安装 Connector 之前，主机上需要安装 Docker 引擎
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
-. 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]
+. 从下载适用于不能访问Internet的受限网络的Connector安装程序 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]
 . 将安装程序复制到 Linux 主机。
 . 分配运行脚本的权限。
 +
 [source, cli]
 ----
-chmod +x /path/cloud-manager-connector-offline-v3.9.23
+chmod +x /path/Cloud-Manager-Connector-offline-<version>
 ----
++
+其中、<version> 是您下载的连接器版本。
+
 . 运行安装脚本：
 +
 [source, cli]
 ----
-sudo /path/cloud-manager-connector-offline-v3.9.23
+sudo /path/Cloud-Manager-Connector-offline-<version>
 ----
++
+其中、<version> 是您下载的连接器版本。
+
 . 打开 Web 浏览器并输入 https://_ipaddress_[] 其中 _ipaddress_ 是 Linux 主机的 IP 地址。
 +
 您应看到以下屏幕。
@@ -112,10 +125,14 @@ image:screenshot-onprem-darksite-details.png["系统详细信息页面的屏幕�
 现在已安装Connector、您可以开始使用非公开站点部署中提供的BlueXP功能。
 
 .下一步是什么？
+在内部环境中：
+
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["发现内部 ONTAP 集群"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["在内部 ONTAP 集群之间复制数据"^]
 * https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["使用云备份将内部ONTAP 卷数据备份到StorageGRID"^]
 * https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["使用云数据感知扫描内部ONTAP 卷数据"^]
 
+
+在云环境中、您可以 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["部署Cloud Volumes ONTAP"^]
 
 如果有新版本的 Connector 软件可用，则这些软件将发布到 NetApp 支持站点。 link:task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["了解如何升级 Connector"]。
