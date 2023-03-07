@@ -73,16 +73,16 @@ Connector需要与您要创建的工作环境类型以及计划启用的服务�
 | 端点 | 目的 
 
 
-| https://management.azure.com https://login.microsoftonline.com | 管理Azure公共区域中的资源。 
+| https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 管理Azure公共区域中的资源。 
 
 
-| https://management.usgovcloudapi.net \https://login.microsoftonline.us | 管理Azure政府区域中的资源。 
+| https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 管理Azure政府区域中的资源。 
 
 
-| https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud | 管理Azure IL6区域中的资源。 
+| https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | 管理Azure IL6区域中的资源。 
 
 
-| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | 管理Azure中国地区的资源。 
+| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 管理Azure中国地区的资源。 
 
 
 | https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 

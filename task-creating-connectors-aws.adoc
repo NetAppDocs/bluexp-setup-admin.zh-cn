@@ -219,7 +219,16 @@ Connector需要与您要创建的工作环境类型以及计划启用的服务�
 | 端点 | 目的 
 
 
-| \https：//https <region> ：//__LW_AT__.amazonaws.com | 管理AWS中的资源。 
+ a| 
+AWS 服务（ AmazonAWS.com ）：
+
+* 云形成
+* 弹性计算云（ EC2 ）
+* 密钥管理服务（ KMS ）
+* 安全令牌服务（ STS ）
+* 简单存储服务 (S3)
+
+| 管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^] 
 
 
 | https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 

@@ -32,7 +32,6 @@ summary: 使用此检查清单可了解在Connector具有出站Internet访问权
 AWS 服务（ AmazonAWS.com ）：
 
 * 云形成
-* Cognito
 * 弹性计算云（ EC2 ）
 * 密钥管理服务（ KMS ）
 * 安全令牌服务（ STS ）
@@ -75,19 +74,28 @@ Connector 的出站网络连接:: 登录到BlueXP后、BlueXP帐户管理员需�
 | 端点 | 目的 
 
 
-| \https：//https <region> ：//__LW_AT__.amazonaws.com | 管理AWS中的资源。 
+ a| 
+AWS 服务（ AmazonAWS.com ）：
+
+** 云形成
+** 弹性计算云（ EC2 ）
+** 密钥管理服务（ KMS ）
+** 安全令牌服务（ STS ）
+** 简单存储服务 (S3)
+
+| 管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^] 
 
 
-| https://management.azure.com https://login.microsoftonline.com | 管理Azure公共区域中的资源。 
+| https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 管理Azure公共区域中的资源。 
 
 
-| https://management.usgovcloudapi.net \https://login.microsoftonline.us | 管理Azure政府区域中的资源。 
+| https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 管理Azure政府区域中的资源。 
 
 
-| https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud | 管理Azure IL6区域中的资源。 
+| https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | 管理Azure IL6区域中的资源。 
 
 
-| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | 管理Azure中国地区的资源。 
+| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 管理Azure中国地区的资源。 
 
 
 | https://www.googleapis.com/compute/v1/\https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 在Google Cloud中管理资源。 

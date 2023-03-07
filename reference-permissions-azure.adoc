@@ -432,7 +432,7 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 | 目的 | Action | 用于部署？ | 用于日常操作？ | 用于删除？ 
 
 
-.12+| 创建VM、停止、启动、删除并获取系统状态 | Microsoft.Compute/locations/operations/read | 是的。 | 是的。 | 否 
+.14+| 创建和管理VM | Microsoft.Compute/locations/operations/read | 是的。 | 是的。 | 否 
 
 
 | Microsoft.Compute/locations/vmSizes/read | 是的。 | 是的。 | 否 
@@ -468,10 +468,16 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 | Microsoft.Compute/virtualMachines/write | 是的。 | 是的。 | 否 
 
 
+| Microsoft.Compute/virtualMachines/delete | 是的。 | 是的。 | 是的。 
+
+
+| microsoft.resources/deployments/delete | 是的。 | 否 | 否 
+
+
 | 启用从VHD部署 | Microsoft.Compute/images/read | 是的。 | 否 | 否 
 
 
-.3+| 在目标子网中创建和管理网络接口 | Microsoft.Network/networkInterfaces/read | 是的。 | 是的。 | 否 
+.4+| 在目标子网中创建和管理网络接口 | Microsoft.Network/networkInterfaces/read | 是的。 | 是的。 | 否 
 
 
 | Microsoft.Network/networkInterfaces/write | 是的。 | 是的。 | 否 
@@ -480,13 +486,19 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 | Microsoft.Network/networkInterfaces/join/action | 是的。 | 是的。 | 否 
 
 
-.3+| 创建预定义的网络安全组 | Microsoft.Network/networkSecurityGroups/read | 是的。 | 是的。 | 否 
+| Microsoft.Network/networkInterfaces/delete | 是的。 | 是的。 | 否 
+
+
+.4+| 创建和管理网络安全组 | Microsoft.Network/networkSecurityGroups/read | 是的。 | 是的。 | 否 
 
 
 | Microsoft.Network/networkSecurityGroups/write | 是的。 | 是的。 | 否 
 
 
 | Microsoft.Network/networkSecurityGroups/join/action | 是的。 | 否 | 否 
+
+
+| Microsoft.Network/networkSecurityGroups/delete | 否 | 是的。 | 是的。 
 
 
 .8+| 获取有关区域、目标vNet和子网的网络信息、并将VM添加到VNets | Microsoft.Network/locations/operationResults/read | 是的。 | 是的。 | 否 
@@ -618,7 +630,7 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 | Microsoft.Network/loadBalancers/delete | 否 | 是的。 | 是的。 
 
 
-| Microsoft.Network/loadBalancers/backendAddressPools/read | 是的。 | 是的。 | 否 
+| Microsoft.Network/loadBalancers/backendAddressPools/read | 是的。 | 否 | 否 
 
 
 | Microsoft.Network/loadBalancers/backendAddressPools/join/action | 是的。 | 否 | 否 
@@ -666,7 +678,7 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 | Microsoft.Network/privateDnsZones/virtualNetworkLinks/read | 是的。 | 是的。 | 否 
 
 
-| Azure在某些虚拟机部署中需要使用、具体取决于底层物理硬件 | microsoft.resources/deployments/operationStatuss/Read | 是的。 | 是的。 | 否 
+| 某些虚拟机部署需要此功能、具体取决于底层物理硬件 | microsoft.resources/deployments/operationStatuss/Read | 是的。 | 是的。 | 否 
 
 
 .2+| 如果部署失败或删除、请从资源组中删除资源 | Microsoft.Network/privateEndpoints/delete | 是的。 | 是的。 | 否 
@@ -690,7 +702,7 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 .6+| 为HA对配置应用程序安全组、以隔离HA互连和集群网络NIC | Microsoft.Network/applicationSecurityGroups/write | 否 | 是的。 | 否 
 
 
-| Microsoft.Network/applicationSecurityGroups/read | 否 | 是的。 | 是的。 
+| Microsoft.Network/applicationSecurityGroups/read | 否 | 是的。 | 否 
 
 
 | Microsoft.Network/applicationSecurityGroups/joinIpConfiguration/action | 否 | 是的。 | 否 
@@ -699,7 +711,7 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 | Microsoft.Network/networkSecurityGroups/securityRules/write | 是的。 | 是的。 | 否 
 
 
-| Microsoft.Network/applicationSecurityGroups/delete | 否 | 是的。 | 否 
+| Microsoft.Network/applicationSecurityGroups/delete | 否 | 是的。 | 是的。 
 
 
 | Microsoft.Network/networkSecurityGroups/securityRules/delete | 否 | 是的。 | 是的。 
