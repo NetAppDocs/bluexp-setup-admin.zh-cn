@@ -4,7 +4,7 @@ permalink: task-viewing-amazon-s3.html
 keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
 summary: 在AWS中安装Connector后、BlueXP可以自动发现有关安装此Connector的AWS帐户中的Amazon S3存储分段的信息。Amazon S3工作环境已添加到Canvas中、您可以查看此信息。 
 ---
-= 查看 Amazon S3 存储分段
+= 管理Amazon S3存储分段
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,31 +16,8 @@ summary: 在AWS中安装Connector后、BlueXP可以自动发现有关安装此Co
 [role="lead"]
 在AWS中安装Connector后、BlueXP可以自动发现有关安装此Connector的AWS帐户中的Amazon S3存储分段的信息。Amazon S3工作环境已添加到Canvas中、您可以查看此信息。
 
+image:screenshot-amazon-s3-we.png["Amazon S3 工作环境的屏幕截图。"]
+
 您可以查看有关S3存储分段的详细信息、包括区域、访问策略、帐户、总容量和已用容量等。这些存储分段可用作云备份、云分层或Cloud Sync 操作的目标。此外、您还可以使用Cloud Data sense扫描这些分段。
 
-.步骤
-. link:task-creating-connectors-aws.html["安装连接器"] 在要查看 Amazon S3 存储分段的 AWS 帐户中。
-. 从导航菜单中、选择*存储>画布*。
-+
-之后不久，您将自动看到 Amazon S3 工作环境。
-
-+
-image:screenshot_s3_we.gif["Amazon S3 工作环境的屏幕截图。"]
-
-. 单击工作环境，然后从右窗格中选择一项操作。
-+
-image:screenshot_s3_actions.gif["选择 Amazon S3 工作环境后显示操作窗格的屏幕截图。此窗格显示有关S3的信息：分段数量和可用服务。"]
-
-. 单击*同步数据*以同步与S3存储分段之间的数据。
-+
-有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Cloud Sync 服务概述"^]。
-
-. 如果您希望Cloud Data sense扫描S3存储分段中的个人和敏感数据、请单击*启用*。
-+
-有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-s3.html["Amazon S3 云数据感知入门"^]。
-
-. 单击*进入工作环境*以查看有关AWS帐户中S3分段的详细信息。
-+
-image:screenshot_amazon_s3.gif["显示Amazon S3工作环境详细信息的屏幕截图：存储分段总数和区域总数、然后显示有关每个S3存储分段的详细信息的表。"]
-
-
+现在、您可以通过新添加的功能创建和编辑S3存储分段。 https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["请访问此处、了解如何使用BlueXP查看、创建和管理S3存储分段。"]

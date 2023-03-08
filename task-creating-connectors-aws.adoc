@@ -324,7 +324,7 @@ TIP: 如果选择 * 承担角色 * ，则可以从 Connector 部署向导创建�
 
 
 .完成后
-如果您在创建Connector的同一AWS帐户中有Amazon S3存储分段、则会在Canvas上自动显示Amazon S3工作环境。 link:task-viewing-amazon-s3.html["详细了解如何使用此工作环境"]。
+如果您在创建Connector的同一AWS帐户中有Amazon S3存储分段、则会在Canvas上自动显示Amazon S3工作环境。 https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["详细了解如何使用此工作环境"]。
 
 
 

@@ -50,6 +50,10 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.ht
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["开始使用Cloud Volumes ONTAP"^]
 
 
+* 现在、您可以通过Connector从BlueXP添加和管理Amazon S3存储分段。
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["了解如何从BlueXP在AWS帐户中添加新的Amazon S3存储分段"^]。
+
 * 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
 +
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["了解Cloud Volumes ONTAP 增强功能"^]

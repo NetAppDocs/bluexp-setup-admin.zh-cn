@@ -812,15 +812,9 @@
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">启用直接 API 流量</block>
   <block id="a10c3460c01965af15b02ac3cd407880" category="list-text">在 * 常规 * 下，单击 * 支持直接 API 流量 * 。</block>
   <block id="46a12b9bf87a6fc814d2fc24ac4a41f4" category="list-text">单击复选框以启用此选项，然后单击 * 保存 * 。</block>
-  <block id="f7099ec977551c0bfc4264472c0bf927" category="doc">查看 Amazon S3 存储分段</block>
   <block id="9c626900b015a97ee8e428d66dd7d5d1" category="inline-link-macro">安装连接器</block>
-  <block id="0d6fec8d76a7754ac76ae4d48310ed99" category="list-text"><block ref="d950cee94b130c47fc349a9ce27609ba" category="inline-link-macro-rx"></block> 在要查看 Amazon S3 存储分段的 AWS 帐户中。</block>
-  <block id="52b8ffdf03daa97daa3970bb3a4247ff" category="paragraph">之后不久，您将自动看到 Amazon S3 工作环境。</block>
   <block id="620734ddcf438083fa8f2f7a7550fbbf" category="inline-image-macro">Amazon S3 工作环境的屏幕截图。</block>
-  <block id="7458becc274c80c36e850edbc1f6337e" category="paragraph"><block ref="7458becc274c80c36e850edbc1f6337e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f0e4d0f6a6a8bae74ed62ce4759c8e3a" category="list-text">单击工作环境，然后从右窗格中选择一项操作。</block>
-  <block id="c1c42f8ba1dae80cacf28e68dae0ee46" category="inline-link">Amazon S3 云数据感知入门</block>
-  <block id="dea958812841439df90399efabd7d9ca" category="paragraph">有关详细信息，请参见<block ref="8bc61ddf61abb52b2869fa75574cd87f" category="inline-link-rx"></block>。</block>
   <block id="5b13c2584f8e7be6ddae81fa76b103bc" category="doc">入门检查清单</block>
   <block id="b59e275c4ece2430dff67db92845ab7f" category="list-text">从 Web 浏览器到多个端点的网络访问</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端点</block>
@@ -1672,13 +1666,6 @@
   <block id="8d0d51d4047979af669daac866df81ec" category="inline-link-macro">详细了解如何使用此工作环境</block>
   <block id="3a87e6ba2e9a6adf84612ff7e5ce977c" category="paragraph">如果您在创建Connector的同一Azure帐户中使用Azure Blob存储、则会在Canvas上自动显示Azure Blob工作环境。 <block ref="1554e33833508aa8ae7d5d6aebee0d7e" category="inline-link-macro-rx"></block>。</block>
   <block id="5d1144c70f9657fe3fbc8d4918974ddb" category="paragraph">如果您在创建Connector的同一AWS帐户中有Amazon S3存储分段、则会在Canvas上自动显示Amazon S3工作环境。 <block ref="24e8a034d6d6fc16941efffc954c2b3b" category="inline-link-macro-rx"></block>。</block>
-  <block id="bf9799ea7692475c7cf9755a148ec201" category="paragraph">您可以查看有关S3存储分段的详细信息、包括区域、访问策略、帐户、总容量和已用容量等。这些存储分段可用作云备份、云分层或Cloud Sync 操作的目标。此外、您还可以使用Cloud Data sense扫描这些分段。</block>
-  <block id="3664079914496ab0ee90209b4ace936f" category="inline-image-macro">选择 Amazon S3 工作环境后显示操作窗格的屏幕截图。此窗格显示有关S3的信息：分段数量和可用服务。</block>
-  <block id="b9b2b40a667ab16249d63fc7e435d7f8" category="paragraph"><block ref="b9b2b40a667ab16249d63fc7e435d7f8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a4fefa0676fbe2ed6dbd32159183f6d1" category="list-text">如果您希望Cloud Data sense扫描S3存储分段中的个人和敏感数据、请单击*启用*。</block>
-  <block id="51ae836da5531e750c5dcf0f62f2dd18" category="list-text">单击*进入工作环境*以查看有关AWS帐户中S3分段的详细信息。</block>
-  <block id="9e2485669a43b6702c2aedabfee812a6" category="inline-image-macro">显示Amazon S3工作环境详细信息的屏幕截图：存储分段总数和区域总数、然后显示有关每个S3存储分段的详细信息的表。</block>
-  <block id="d6e5e99b5ad8371c45f8879b9381a020" category="paragraph"><block ref="d6e5e99b5ad8371c45f8879b9381a020" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60c5f52d2a1d91eb3d9cc28c497c50d5" category="doc">查看Azure Blob帐户</block>
   <block id="8038b7f4543340933f0702ca9be2c9c5" category="paragraph">您可以查看有关Azure存储帐户的详细信息、包括位置、资源组、总容量和已用容量等。这些帐户可用作云备份、云分层或Cloud Sync 操作的目标。</block>
   <block id="d62a82d07f9a8474b6e149206712157a" category="list-text"><block ref="8a881211fef5d9da1cb01ccc356312a3" category="inline-link-macro-rx"></block> 在要查看Azure存储帐户的Azure帐户中。</block>
@@ -1707,7 +1694,6 @@
   <block id="14738180b3115b94f504ce48bf25a31a" category="paragraph"><block ref="14738180b3115b94f504ce48bf25a31a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a7901982205b7bb3f9e615cc8b6e29af" category="paragraph">如果您在创建Connector的同一Google Cloud帐户中有Google Cloud Storage存储分段、则会在Canvas上自动显示Google Cloud Storage工作环境。 <block ref="3be67402f92aecc3ed5f8761be46eca8" category="inline-link-macro-rx"></block>。</block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">已发现云存储</block>
-  <block id="e11597621f115e17031710501eefedbc" category="sidebar">查看Amazon S3存储分段</block>
   <block id="bce447551b8153911559a7a705721ffe" category="sidebar">查看Azure Blob帐户</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="sidebar">查看Google Cloud存储分段</block>
   <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022年7月15日</block>
@@ -1738,7 +1724,6 @@
   <block id="56148e3a5b597bf775527bf28e119033" category="paragraph"><block ref="56148e3a5b597bf775527bf28e119033" category="inline-link-rx"></block></block>
   <block id="a92dc2a225f00bb9e0d676f2e4ae484e" category="sidebar">使用"我的商机"进行发现</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">默认系统磁盘为100 GiB GP2磁盘。</block>
-  <block id="02bc515db3673d54b5989cdf43534729" category="list-text">单击*同步数据*以同步与S3存储分段之间的数据。</block>
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-4。</block>
   <block id="0964bfe0dd83b0d60f5d55fd4502a11b" category="list-text">VM实例为n2-standard-4。</block>
   <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">API调用Azure和ONTAP 、云数据感知、勒索软件服务以及向NetApp发送AutoSupport 消息</block>
@@ -2986,4 +2971,14 @@
   <block id="864338d2d7dc3c2738f45a0a8851b0cf" category="cell">创建和管理VM</block>
   <block id="fe4ddc4ad605bbd0c66fc946f65fb17c" category="cell">创建和管理网络安全组</block>
   <block id="7b82c8bb5f712b74fd5cab9947ae81fb" category="cell">某些虚拟机部署需要此功能、具体取决于底层物理硬件</block>
+  <block id="1c1b21ef0ec839f8c7f0c98a086d2319" category="doc">管理Amazon S3存储分段</block>
+  <block id="93850b8e1d97181700833dcae4c7e219" category="paragraph"><block ref="93850b8e1d97181700833dcae4c7e219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea59f5a18533f0723be7342656f4c831" category="paragraph">您可以查看有关S3存储分段的详细信息、包括区域、访问策略、帐户、总容量和已用容量等。这些存储分段可用作云备份、云分层或Cloud Sync 操作的目标。此外、您还可以使用Cloud Data sense扫描这些分段。</block>
+  <block id="55b5b30feffe912b6e65f29c34807a28" category="inline-link">请访问此处、了解如何使用BlueXP查看、创建和管理S3存储分段。</block>
+  <block id="bd94fd8efc4371afd7a3af9e7a08b50e" category="paragraph">现在、您可以通过新添加的功能创建和编辑S3存储分段。<block ref="c9e42eab5c6f6e6e35f844a7123dd423" category="inline-link-rx"></block></block>
+  <block id="10a7432528d1253e1f27cd183ae759a7" category="paragraph">如果您在创建Connector的同一AWS帐户中有Amazon S3存储分段、则会在Canvas上自动显示Amazon S3工作环境。<block ref="eb59da80ee57b828e1255dafd1c2c796" category="inline-link-rx"></block>。</block>
+  <block id="d564f41f7e0ffa3f9e8bc7a809230f94" category="list-text">现在、您可以通过Connector从BlueXP添加和管理Amazon S3存储分段。</block>
+  <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">了解如何从BlueXP在AWS帐户中添加新的Amazon S3存储分段</block>
+  <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>。</block>
+  <block id="a4f513306c1a0ead14679ffb7c282460" category="sidebar">管理Amazon S3存储分段</block>
 </blocks>
