@@ -273,31 +273,3 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["详�
 . 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
 . 在 * 概述 * 选项卡中，启用 * 允许第三方服务 * 设置。
 
-
-
-
-== 禁用 SaaS 平台
-
-除非您需要遵守公司的安全策略，否则我们不建议禁用 SaaS 平台。禁用 SaaS 平台会限制您使用 NetApp 集成云服务的能力。
-
-如果禁用SaaS平台、则无法从BlueXP获得以下服务：
-
-* 云备份
-+
-禁用SaaS平台时、政府区域支持Cloud Backup、但禁用SaaS平台时、商业区域则不支持Cloud Backup
-
-* 云数据感知
-* Kubernetes
-* 云分层
-* 全局文件缓存
-
-
-如果禁用 SaaS 平台，则需要从执行所有任务 link:task-managing-connectors.html#access-the-local-ui["Connector 上提供的本地用户界面"]。
-
-
-CAUTION: 此操作不可逆、将阻止您使用BlueXP SaaS平台。您需要从本地连接器执行操作。您将无法使用 NetApp 的许多集成云服务，重新启用 SaaS 平台需要 NetApp 支持的帮助。
-
-.步骤
-. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
-. 在概述选项卡中，切换选项以禁用 SaaS 平台。
-

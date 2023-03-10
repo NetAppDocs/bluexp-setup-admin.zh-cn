@@ -65,7 +65,11 @@ NOTE: BlueXP不支持包含@字符的密码。
 
 == 启用直接 API 流量
 
-如果您配置了代理服务器、则无需通过代理即可将API调用直接发送到BlueXP。在 AWS ， Azure 或 Google Cloud 中运行的 Connectors 支持此选项。
+如果您将Connector配置为使用代理服务器、则可以在Connector上启用直接API流量、以便在不通过代理的情况下直接向云提供商服务发送API调用。在 AWS ， Azure 或 Google Cloud 中运行的 Connectors 支持此选项。
+
+如果您禁用了在Cloud Volumes ONTAP 中使用Azure专用链路、而是使用服务端点、则必须启用直接API流量。否则、流量将无法正确路由。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["了解有关将Azure专用链路或服务端点与Cloud Volumes ONTAP 结合使用的更多信息"]
 
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。

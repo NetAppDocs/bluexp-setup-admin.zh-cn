@@ -270,14 +270,10 @@
   <block id="b48299c449bac839819763792d4aff22" category="list-text">在 * 概述 * 选项卡中，启用 * 允许私有预览 * 设置。</block>
   <block id="e288a6b2e6cc2fbb00bd407bda387c90" category="section-title">允许第三方服务</block>
   <block id="90837faa596ab1d28c90a381b6997722" category="list-text">在 * 概述 * 选项卡中，启用 * 允许第三方服务 * 设置。</block>
-  <block id="4b52ca01dd550f3fab5c378895fbfd60" category="section-title">禁用 SaaS 平台</block>
-  <block id="fa7043a1853c2b6854490998db361dca" category="paragraph">除非您需要遵守公司的安全策略，否则我们不建议禁用 SaaS 平台。禁用 SaaS 平台会限制您使用 NetApp 集成云服务的能力。</block>
   <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="list-text">云数据感知</block>
   <block id="30136395f01879792198317c11831ea4" category="list-text">Kubernetes</block>
   <block id="92d2b6aba6afa3f690540cf3dba9b633" category="list-text">云分层</block>
   <block id="24e6e2f6171b43a847fe194a9a9b5cd0" category="list-text">全局文件缓存</block>
-  <block id="8ea5339a59d1a6a15d2ad2629fa9dd33" category="inline-link-macro">Connector 上提供的本地用户界面</block>
-  <block id="bd24a7e9d8368897df823b65a8960e61" category="list-text">在概述选项卡中，切换选项以禁用 SaaS 平台。</block>
   <block id="0384f4ba39f6a15ffd9b42bfb03b8d83" category="doc">Google Cloud 项目，权限和帐户</block>
   <block id="3fb6500db5f2cccec7627a9cb9fbd38d" category="paragraph">在 Google Cloud 中部署 Cloud Volumes ONTAP 之前，必须先在 Google Cloud 项目中部署 Connector 。Connector 不能在您的内部环境或其他云提供商中运行。</block>
   <block id="1c3efa7cf0b87cbb078fe955b2c587a5" category="inline-link">服务帐户</block>
@@ -1231,7 +1227,6 @@
   <block id="6dc6b060b761d145366b9ed041137917" category="sidebar">管理 AWS 凭据</block>
   <block id="c135c603177e58023474a65f829c0fd3" category="sidebar">管理 Azure 凭据</block>
   <block id="15f599d5c4282f662b38657a0b5c5739" category="sidebar">管理 Google Cloud 凭据</block>
-  <block id="736683b36559de9a86788ab6e33c00d8" category="paragraph">如果禁用 SaaS 平台，则需要从执行所有任务 <block ref="d248ae1d8e530aaf57663e2d920abe18" category="inline-link-macro-rx"></block>。</block>
   <block id="42719a12f66c2c272af903550dd96abe" category="paragraph"><block ref="3d5e26c44503b9c3759d0014c33a4b1a" category="inline-link-macro-rx"></block>。</block>
   <block id="cf1d9ac600892a9c03d7ebca3ca130cb" category="paragraph"><block ref="1a1e214f52d56e3240a2456ee3e051fc" category="inline-link-macro-rx"></block>。</block>
   <block id="0992dccda336100add15ce23fc9702f3" category="list-text"><block ref="0992dccda336100add15ce23fc9702f3" category="inline-link-rx"></block></block>
@@ -2126,14 +2121,11 @@
   <block id="e98ed4965158505163fc6b7ffa9ba9b0" category="paragraph">您需要将Connector与工作空间关联、以便Workspace管理员可以从BlueXP访问这些工作空间。</block>
   <block id="735a598daa91e3f877c73aa4e5e72dca" category="paragraph">允许在您的帐户中进行私有预览、以访问在BlueXP中预览的新NetApp云服务。</block>
   <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">允许您帐户中的第三方服务访问BlueXP中提供的第三方服务。第三方服务是指与 NetApp 提供的服务类似的云服务，但它们由第三方公司管理和支持。</block>
-  <block id="41f2e26a5f1f980cf07709ccd461458a" category="paragraph">如果禁用SaaS平台、则无法从BlueXP获得以下服务：</block>
-  <block id="1ce82671debd0854eab737731870ba89" category="admonition">此操作不可逆、将阻止您使用BlueXP SaaS平台。您需要从本地连接器执行操作。您将无法使用 NetApp 的许多集成云服务，重新启用 SaaS 平台需要 NetApp 支持的帮助。</block>
   <block id="47e1359a022ca3afaefd4c4135f630ab" category="inline-link-macro">登录到BlueXP SaaS界面</block>
   <block id="53cd2d53a0bbb4596900dbf8dc2f1193" category="list-text"><block ref="5cdb1ce54f5091c2b2ed720c94b4f10e" category="inline-link-macro-rx"></block> 从已通过网络连接到 Connector 实例的计算机。</block>
   <block id="b50274362874150065bf00a8be70b751" category="paragraph">在Connector上运行的BlueXP界面将加载到新的浏览器选项卡中。</block>
   <block id="190d3f654701a58653384f20c47c8ecf" category="list-text">在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。</block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="admonition">BlueXP不支持包含@字符的密码。</block>
-  <block id="0e2ec8861e0eca9eed397572feaa87da" category="paragraph">如果您配置了代理服务器、则无需通过代理即可将API调用直接发送到BlueXP。在 AWS ， Azure 或 Google Cloud 中运行的 Connectors 支持此选项。</block>
   <block id="67cbb61f9d12c71b3b67153567963530" category="paragraph">可以通过两种方式在BlueXP中添加其他Azure订阅和凭据。</block>
   <block id="d6e059f3de26b29b7be6b2949eae8f3d" category="list-text">如果要使用不同的Azure凭据部署Cloud Volumes ONTAP 、请使用服务主体授予Azure权限、并将其凭据添加到BlueXP。</block>
   <block id="44b7efa00ab8e5ca07e5783fe3175bb3" category="paragraph">通过BlueXP、您可以选择要在其中部署Cloud Volumes ONTAP 的Azure凭据和Azure订阅。除非关联，否则您无法为托管身份配置文件选择其他 Azure 订阅<block ref="683de527faad104d75b2c83aceba6f01" category="inline-link-rx"></block> 这些订阅。</block>
@@ -2730,7 +2722,6 @@
   <block id="46f3c2b17cd41da44d4022428c48ec74" category="list-text">Kubernetes集群</block>
   <block id="aa2a9593bd535a1923acb9053fd7788b" category="paragraph">您可以将 Connector 与多个 NetApp 云数据服务结合使用。例如、如果您正在使用连接器管理Cloud Volumes ONTAP 、则可以将同一个连接器与云分层等其他服务结合使用。</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">如果您的公司策略要求您使用代理服务器进行与Internet的所有通信、则需要将您的连接器配置为使用该代理服务器。如果您未将Connector配置为在安装期间使用代理服务器、则可以将Connector配置为随时使用该代理服务器。</block>
-  <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">禁用SaaS平台时、政府区域支持Cloud Backup、但禁用SaaS平台时、商业区域则不支持Cloud Backup</block>
   <block id="a8c35528b3f05016e72e71694bb679ee" category="list-text">有关代理服务器的详细信息、如果从Connector访问Internet需要代理。支持HTTP和HTTPS。</block>
   <block id="16c184ab0a5376cef0ecef7f0da93ac2" category="list-text">如果在主机上设置了_http_proxy_或_https_proxy_系统变量、请将其删除：</block>
   <block id="15c8f910fc596ecb4a8b91027b56de66" category="paragraph">如果不删除这些系统变量、安装将失败。</block>
@@ -2981,4 +2972,8 @@
   <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">了解如何从BlueXP在AWS帐户中添加新的Amazon S3存储分段</block>
   <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>。</block>
   <block id="a4f513306c1a0ead14679ffb7c282460" category="sidebar">管理Amazon S3存储分段</block>
+  <block id="6282017b43dee5b3762b81c0124c425c" category="paragraph">如果您将Connector配置为使用代理服务器、则可以在Connector上启用直接API流量、以便在不通过代理的情况下直接向云提供商服务发送API调用。在 AWS ， Azure 或 Google Cloud 中运行的 Connectors 支持此选项。</block>
+  <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">如果您禁用了在Cloud Volumes ONTAP 中使用Azure专用链路、而是使用服务端点、则必须启用直接API流量。否则、流量将无法正确路由。</block>
+  <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">了解有关将Azure专用链路或服务端点与Cloud Volumes ONTAP 结合使用的更多信息</block>
+  <block id="bfa340d153d70df3ad6af8db39b45e8e" category="paragraph"><block ref="bfa340d153d70df3ad6af8db39b45e8e" category="inline-link-rx"></block></block>
 </blocks>
