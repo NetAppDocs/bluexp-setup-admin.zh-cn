@@ -26,7 +26,7 @@ summary: 您可以将Connector安装在与Internet完全隔离的位置、无论
 
 == 云概述
 
-在没有Internet的云区域中、您可以使用BlueXP部署Cloud Volumes ONTAP 系统并发现内部ONTAP 集群(如果您的云环境与内部环境建立了连接)。此类部署不支持任何其他BlueXP服务、但Digital Wallet除外。
+在没有Internet的云区域中、您可以使用BlueXP部署Cloud Volumes ONTAP 系统并发现内部ONTAP 集群(如果您的云环境与内部环境建立了连接)。您还可以使用云备份在AWS和Azure商业区域备份Cloud Volumes ONTAP 卷(目前AWS和Azure机密区域不支持备份)。此类部署不支持任何其他BlueXP服务、但Digital Wallet除外。
 
 云区域可以是AWS C2S/SC2S、Azure IL6等美国安全机构或任何商业区域的区域。
 
