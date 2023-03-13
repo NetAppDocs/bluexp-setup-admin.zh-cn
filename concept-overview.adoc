@@ -97,9 +97,24 @@ https://cloud.netapp.com["BlueXP网站"^] 提供一个用于访问和管理的�
 
 === 连接器
 
-在大多数情况下、BlueXP客户管理员需要在云或内部网络中部署_Connector_。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。
+在大多数情况下、BlueXP客户管理员需要在云或内部网络中部署_Connector_。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。 link:concept-connectors.html["详细了解何时需要连接器及其工作原理"]。
 
-link:concept-connectors.html["详细了解何时需要连接器及其工作原理"]。
+
+
+==== 连接器必须始终正常运行
+
+连接器是NetApp BlueXP服务架构的基本组成部分。您有责任确保相关连接器始终正常运行且可访问。虽然此服务旨在克服连接器可用性短暂中断的问题、但您必须在需要时立即采取措施来修复基础架构故障。
+
+本文档受EULA约束。如果本产品未按照文档进行操作、则可能会对本产品的功能和运行以及您在EULA下的权利产生不利影响。
+
+
+
+==== 连接器可用性如何影响Cloud Volumes ONTAP
+
+连接器是Cloud Volumes ONTAP 运行状况和运行的关键组件。如果某个连接器已关闭、则Cloud Volumes ONTAP PAYGO系统和基于容量的BYOL系统将在与某个连接器的通信中断14天后关闭。发生这种情况的原因是、Connector每天都会刷新系统上的许可。
+
+
+NOTE: 如果您的Cloud Volumes ONTAP 系统具有基于节点的BYOL许可证、则该系统会在14天后保持运行、因为该许可证已安装在Cloud Volumes ONTAP 系统上。
 
 
 
