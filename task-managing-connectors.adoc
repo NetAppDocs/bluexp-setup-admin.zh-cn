@@ -113,15 +113,35 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 .步骤
 . 访问 Connector 主机上的命令行界面 Shell 。
-. 使用提升的权限运行以下命令：
+. 确定主机上是否存在以下目录：
++
+/opt/application/netapp/service-manager-2.
+
++
+2022年下半年之后创建的连接器应包含此目录。
+
+. 根据该目录是否存在、运行命令以更新操作系统：
++
+** 如果此目录存在、请使用提升的权限运行以下命令：
 +
 [source, cli]
 ----
 sudo -s
 service netapp-service-manager stop
-yum -y update –-security
+yum -y update --security
 service netapp-service-manager start
 ----
+** 如果目录_does_不存在、请使用提升的权限运行以下命令：
++
+[source, cli]
+----
+sudo -s
+service service-manager stop
+yum -y update --security
+service service-manager start
+----
+
+
 
 
 

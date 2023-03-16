@@ -667,7 +667,6 @@
   <block id="bb036d72177ab633d83cf7c11f211546" category="section-title">应用安全更新</block>
   <block id="fce63be6a5df1b8f029ff105a6d48616" category="paragraph">在 Connector 上更新操作系统，以确保使用最新的安全更新对其进行修补。</block>
   <block id="1208149fe3ebe603e8d12495099b22e4" category="list-text">访问 Connector 主机上的命令行界面 Shell 。</block>
-  <block id="065ff36e9f63c035ca95dbe0bff46bfe" category="list-text">使用提升的权限运行以下命令：</block>
   <block id="e2729464f9bccb35f8d10ba5019f3955" category="paragraph">添加并删除 Connector 的 URI 。</block>
   <block id="5e6a0548d1a9b870a897fd2b63da39c6" category="list-text">单击 * 管理连接器 * 。</block>
   <block id="184412530c50886985d099a0d5cedd16" category="list-text">单击 Connector 的操作菜单，然后单击 * 编辑 URIs* 。</block>
@@ -2976,4 +2975,10 @@
   <block id="8dffc8a152aadc1b397171c4248bd97b" category="section-title">连接器可用性如何影响Cloud Volumes ONTAP</block>
   <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">连接器是Cloud Volumes ONTAP 运行状况和运行的关键组件。如果某个连接器已关闭、则Cloud Volumes ONTAP PAYGO系统和基于容量的BYOL系统将在与某个连接器的通信中断14天后关闭。发生这种情况的原因是、Connector每天都会刷新系统上的许可。</block>
   <block id="e7da4bd68a22b069bcff5c88157199b4" category="paragraph">在大多数情况下、BlueXP客户管理员需要在云或内部网络中部署_Connector_。借助此连接器、BlueXP可以管理公有 云环境中的资源和流程。 <block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>。</block>
+  <block id="7889e734551361eda836c7c7bb098d0f" category="list-text">确定主机上是否存在以下目录：</block>
+  <block id="8a5f2dc93753049d63d32fca4e868454" category="paragraph">/opt/application/netapp/service-manager-2.</block>
+  <block id="1d356cb442bdf9a28522842dc7a5fc3f" category="paragraph">2022年下半年之后创建的连接器应包含此目录。</block>
+  <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">根据该目录是否存在、运行命令以更新操作系统：</block>
+  <block id="d18a6912830b95dcae293a053dd50838" category="list-text">如果此目录存在、请使用提升的权限运行以下命令：</block>
+  <block id="7239793e251456f2e73133f34ccc957d" category="list-text">如果目录_does_不存在、请使用提升的权限运行以下命令：</block>
 </blocks>
