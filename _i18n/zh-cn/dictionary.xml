@@ -1942,7 +1942,6 @@
   <block id="d168984ba5f06fd829697588a7bfa38c" category="paragraph">您可以使用以下选项之一登录到BlueXP：</block>
   <block id="19df8bb4b5a805b23aeac731605bdf21" category="list-text">您的现有NetApp 支持站点 (NSS)凭据</block>
   <block id="691be8e1993c2535e4afe5834afe3b01" category="list-text">使用您的电子邮件地址和密码登录NetApp云</block>
-  <block id="36c40fc323b30ac7c63a4ad0ca63d488" category="inline-link">BlueXP帮助中心</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link">BlueXP控制台</block>
   <block id="0cdc0aaedcc5278681de9de08217447f" category="paragraph">您现在已登录、可以开始使用BlueXP管理混合多云基础架构。</block>
   <block id="1cc2f617f426fbf9060a71767fca6e4d" category="summary">开始使用BlueXP (以前称为Cloud Manager)、以便您可以开始使用NetApp的云服务跨混合多云管理数据。设置完成后，您可以管理您的 NetApp 帐户，连接器，云提供商帐户等。</block>
@@ -2747,7 +2746,6 @@
   <block id="213954d7bdaa5b2d9eab4ee897a935d3" category="paragraph-title">注册选项</block>
   <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">您可以使用以下选项之一注册到BlueXP：</block>
   <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">通过指定您的电子邮件地址和密码来登录NetApp云</block>
-  <block id="521c7a764fe6fa451475e20f1742173e" category="paragraph">这两个选项都支持联合连接、从而可以使用公司目录中的凭据(联合身份)进行单点登录。注册后、您可以从设置联合连接<block ref="4281905c7145d3afc1e5083b48ba043f" category="inline-link-rx"></block> 选择* Cloud Central登录选项*。</block>
   <block id="9f1b84fa92d950a165d75ff20ea339ef" category="list-text">在*登录*页面上、选择*注册*。</block>
   <block id="c838c41871c4f726a74cecb65930bcdd" category="admonition">如果您计划使用现有的NSS凭据、则可以跳过注册页面并直接在登录页面中输入电子邮件地址。BlueXP将在此首次登录过程中为您注册。</block>
   <block id="9a076f8e1167c7f54e717f3312d9be22" category="list-text">在*注册*页面上、选择一个登录选项：</block>
@@ -2809,7 +2807,6 @@
   <block id="2a319fe0bd9ba8ece64b79d59a233b15" category="paragraph"><block ref="8c767825ada5127971c09f228e56d843" category="inline-link-macro-rx"></block>。</block>
   <block id="0994880ff67f7251649b7fab82f0a166" category="paragraph-title">登录选项</block>
   <block id="029351726760b5e014b1e49ec512b591" category="list-text">联合连接</block>
-  <block id="6c7ff2f2cb289c51829dcc82a760506b" category="paragraph">您可以使用单点登录使用公司目录中的凭据（联合身份）登录。要了解更多信息，请转到<block ref="4281905c7145d3afc1e5083b48ba043f" category="inline-link-rx"></block> 然后单击*登录选项*。</block>
   <block id="03eb7e8aedd1ad900f6996ff1a9cf8dd" category="list-text">在*登录*页面上、输入与您的登录关联的电子邮件地址。</block>
   <block id="784d4eeca11deaf4ee3f37735e4d0334" category="list-text">根据与您的登录关联的身份验证方法、系统将提示您输入凭据：</block>
   <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">NetApp云凭据：输入密码</block>
@@ -2981,4 +2978,92 @@
   <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">根据该目录是否存在、运行命令以更新操作系统：</block>
   <block id="d18a6912830b95dcae293a053dd50838" category="list-text">如果此目录存在、请使用提升的权限运行以下命令：</block>
   <block id="7239793e251456f2e73133f34ccc957d" category="list-text">如果目录_does_不存在、请使用提升的权限运行以下命令：</block>
+  <block id="91d6fce5ad295f4c49b5ab17ad293e4c" category="summary">身份联合支持使用BlueXP进行单点登录、以便用户可以使用您公司身份中的凭据进行登录。在与身份提供程序建立连接之前、您应了解BlueXP如何支持身份联合。</block>
+  <block id="5a94ee93b1a4f42d5f889b53b576b4f0" category="doc">将身份联合与BlueXP结合使用</block>
+  <block id="694b3afac14ef0d070817c7ae79c1199" category="section-title">身份联合的工作原理</block>
+  <block id="e4f3bdd29d08f22be201dfa18bf12273" category="paragraph">设置身份联合会在BlueXP的身份验证服务提供程序(auth0)与您自己的身份管理提供程序之间创建信任连接。</block>
+  <block id="1c02ebd5b42ffd51f43e9e1999e816c6" category="paragraph">下图展示了身份联合如何与BlueXP配合使用：</block>
+  <block id="b92fe45cc758eb55110c7cc104646651" category="inline-image-macro">一个示意图、其中显示了使用BlueXP进行身份验证的用户、以及BlueXP与身份提供程序之间的连接、用于对用户进行身份验证。</block>
+  <block id="a15274bd5ac488ac4d633fe751da2ff3" category="paragraph"><block ref="a15274bd5ac488ac4d633fe751da2ff3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a23d15d256e1d62e32d26224787a9a3e" category="list-text">用户在BlueXP登录页面上输入其电子邮件地址。</block>
+  <block id="a13915d18d494fb32707e3b2a5c9ba9e" category="list-text">BlueXP会确定电子邮件域是联合连接的一部分、并使用可信连接将身份验证请求发送给身份提供程序。</block>
+  <block id="515958a7181ce3bc32c89204b02ae1bc" category="paragraph">设置联合连接时、BlueXP始终使用该联合连接进行身份验证。</block>
+  <block id="22ca6558e5b48604ca4e6d9d3fe9809c" category="list-text">用户使用公司目录中的凭据进行身份验证。</block>
+  <block id="c009072a875c9cb65f76f94f4ad103b3" category="list-text">您的身份提供程序将对用户的身份进行身份验证、用户将登录到BlueXP。</block>
+  <block id="15a8e497f7a36766fdae59431a58e682" category="paragraph">身份联合使用开放标准、例如安全断言标记语言2.0 (SAML)和OpenID Connect (OIDC)。</block>
+  <block id="f1a3fd4ef355aad263b4de618c67166b" category="section-title">支持的身份提供程序</block>
+  <block id="7d141767127fe81f539e933e77b452bf" category="paragraph">BlueXP支持以下身份提供程序：</block>
+  <block id="a07e97604d6d44417ed607f955f75bb4" category="list-text">安全断言标记语言(SAML)身份提供程序</block>
+  <block id="6ed3014fadd3eec5c63b090c750c1377" category="list-text">Microsoft Azure Active Directory (AD)</block>
+  <block id="00f7a7902fa21b12c977cbf65a600530" category="list-text">Active Directory 联合身份验证服务（ ADFS ）</block>
+  <block id="8be692f2d7f8fe746b9e4a80e973c3ab" category="list-text">PingFederate</block>
+  <block id="b3a90c39fbb2a07cca4a396cdcfbcda7" category="paragraph">BlueXP仅支持服务提供商启动(SP启动)的SSO。不支持身份提供程序启动(IdP启动)的SSO。</block>
+  <block id="2867eaf4d1bb2c7bca72acfc58e90e99" category="section-title">设置过程概述</block>
+  <block id="9bdf36a50e22492fdcf035a228537c14" category="paragraph">在BlueXP与身份管理提供程序之间建立连接之前、您应了解需要执行的步骤、以便能够进行相应的准备。</block>
+  <block id="7994951112a259112c25d6b6556149a5" category="section-title">SAML身份提供程序</block>
+  <block id="f55a9b624a2373bae08878c0181a1092" category="paragraph">概括地说、在BlueXP和SAML身份提供程序之间设置联合连接包括以下步骤：</block>
+  <block id="3fa1942dfddcdac97191c621480a5ded" category="cell">完成者</block>
+  <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1.</block>
+  <block id="2e227b32919705455ef0fe6fd61b669d" category="cell">AD管理员</block>
+  <block id="7402250b00e852b3f4ea20ff6cf99ece" category="paragraph">根据auth0文档中的准则配置SAML身份提供程序。</block>
+  <block id="80723e7f2abf44c346356b58de5584bf" category="paragraph">查看SAML身份提供程序的说明：</block>
+  <block id="657ddf7370b0d5eff54a335127a66282" category="inline-link">ADFS</block>
+  <block id="c33ddb3734db9918c602b8a73eb3854a" category="list-text"><block ref="c33ddb3734db9918c602b8a73eb3854a" category="inline-link-rx"></block></block>
+  <block id="9eddef35bc6181a35b1e146b9fbf2579" category="inline-link">Okta</block>
+  <block id="2619f78e3f38e67ac152c0efcc61ca3d" category="list-text"><block ref="2619f78e3f38e67ac152c0efcc61ca3d" category="inline-link-rx"></block></block>
+  <block id="8b0462fd7af8f1da87014a1daa3319c6" category="inline-link">OneLogin</block>
+  <block id="d8543be54a4507e484f66e71d76ac57a" category="list-text"><block ref="d8543be54a4507e484f66e71d76ac57a" category="inline-link-rx"></block></block>
+  <block id="8b4801b0a2e5acb957a1eb9a5865893e" category="list-text"><block ref="8b4801b0a2e5acb957a1eb9a5865893e" category="inline-link-rx"></block></block>
+  <block id="6391fa72874cbb87eccb79e2fcb2cd5c" category="inline-link">Salesforce</block>
+  <block id="82b805f6a7d8b50e7cf82e8f59f7f40e" category="list-text"><block ref="82b805f6a7d8b50e7cf82e8f59f7f40e" category="inline-link-rx"></block></block>
+  <block id="b2ab9e36a31c68cc5a0abc6b9f7e6052" category="inline-link">SiteMinder</block>
+  <block id="93e1bb7fc338909c843a3179fcc558ea" category="list-text"><block ref="93e1bb7fc338909c843a3179fcc558ea" category="inline-link-rx"></block></block>
+  <block id="c1e831a160e67d1ff6bfbd7f1e326ea6" category="inline-link">SSOcircle</block>
+  <block id="e784439ab583dc6269222d988a21051a" category="list-text"><block ref="e784439ab583dc6269222d988a21051a" category="inline-link-rx"></block></block>
+  <block id="685a1bb94de19c84d18952bbd724e718" category="inline-link">请按照以下通用说明进行操作</block>
+  <block id="e1b2d18c713df40e0da0fb45bad9d9de" category="paragraph">如果您的身份提供程序未显示在上述列表中、<block ref="7e20de1bde53a2c364dc941f7f4f716f" category="inline-link-rx"></block></block>
+  <block id="5cad18854556867a3dd05cfaa49bcda2" category="admonition">Do _not_ complete the steps that describe how to create a connection with auth0。您将在下一步中创建此连接。</block>
+  <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2.</block>
+  <block id="9c9a7aca54b3b1227c02037ae00098e1" category="cell">BlueXP管理员</block>
+  <block id="1dd36b1c601a7192a0dbb196db0dae1b" category="inline-link">NetApp联合设置页面</block>
+  <block id="5876b7c2025f98810f3aceb0f477492f" category="paragraph">转至<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block> 并创建与BlueXP的连接。</block>
+  <block id="b86474abbb77ac0e71e576bfff42cc23" category="paragraph">要完成此步骤、您需要从AD管理员处获取有关身份提供程序的以下信息：</block>
+  <block id="e71fdf330ff74d0fdbe7b4b72bdd4fa3" category="list-text">登录URL</block>
+  <block id="d42b45203591ce26ca6f367d3af6d372" category="list-text">X509签名证书(PEM或CERs格式)</block>
+  <block id="a310970f60e93893530d31ccf2574d6b" category="list-text">注销URL (可选)</block>
+  <block id="91306fbf01cd483884c64bd2f573aa2f" category="paragraph">使用此信息创建连接后、"Federation Setup"页面将列出可发送给AD管理员以在下一步完成配置的参数。</block>
+  <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="cell">3.</block>
+  <block id="95df8937201a4d449c13b1649e9ba46d" category="cell">完成步骤2后、使用"Federation Setup"页面上显示的参数在身份提供程序上完成配置。</block>
+  <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4.</block>
+  <block id="77515c9e6cbb6a15e2cb738105271642" category="cell">从测试并启用连接<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block>请注意、此页面会在测试连接和启用连接之间刷新。</block>
+  <block id="6e9feb3d8b1d2610e025f8bd1e048c93" category="section-title">Microsoft Azure AD</block>
+  <block id="fa292d75bd72ae1e1506c8f6c8e39fa3" category="paragraph">总体而言、在BlueXP和Azure AD之间设置联合连接包括以下步骤：</block>
+  <block id="f803510b253eb6863659ac394a94c9b4" category="paragraph">在Azure Active Directory中创建一个新应用程序以及客户端密钥。</block>
+  <block id="a2c2d074b529efb4b812b96b74e02f33" category="inline-link">查看将应用程序注册到Azure AD的说明</block>
+  <block id="8f916695f0c02d47ca7caf627294b5b2" category="paragraph"><block ref="8f916695f0c02d47ca7caf627294b5b2" category="inline-link-rx"></block></block>
+  <block id="ef64c252ec5198cd24bcab0c5b591d8c" category="paragraph">要完成此步骤、您需要从AD管理员处获取以下信息：</block>
+  <block id="76525f0f34b48475e5ca33f71d296f3b" category="list-text">客户端 ID</block>
+  <block id="797685b539958d3786d560ae97430767" category="list-text">客户端密钥值</block>
+  <block id="a5ebf29140e5a70af04c991816638085" category="list-text">Microsoft Azure AD域</block>
+  <block id="bcaf1c3aeb49ac35fd670bdcd8cd4946" category="cell">完成步骤2后、使用"Federation Setup"页面上显示的参数完成Azure AD中的配置。</block>
+  <block id="d39660f3085c958967d8d820464b4974" category="paragraph">总体而言、在BlueXP和ADFS之间设置联合连接包括以下步骤：</block>
+  <block id="d37e669914774ef1ff275b462c890f08" category="paragraph">配置ADFS服务器以启用与BlueXP的身份联合。</block>
+  <block id="f1b98402afda515a4e3b322603f457af" category="inline-link">查看使用auth0配置ADFS服务器的说明</block>
+  <block id="774bae219d61ddaa3803a99b79315467" category="paragraph"><block ref="774bae219d61ddaa3803a99b79315467" category="inline-link-rx"></block></block>
+  <block id="ea984b58d998a6393b5a21a789c7b789" category="paragraph">要完成此步骤、您需要从AD管理员处获取以下内容：ADFS服务器的URL或联合元数据文件。</block>
+  <block id="8d4a0cfaae04a0d29dc491b71ab5dcb1" category="cell">完成步骤2后、使用"Federation Setup"页面上显示的参数完成ADFS服务器上的配置。</block>
+  <block id="9340450967aba985f2ce16f324a6284a" category="paragraph">概括地说、在BlueXP和PingFederate服务器之间设置联合连接包括以下步骤：</block>
+  <block id="1ed12178ba0d0aded4c5a306f3150570" category="paragraph">按照auth0文档中的准则配置PingFederate服务器。</block>
+  <block id="bb6800676df1891c64f4c92dd2cf1c7e" category="inline-link">查看有关创建连接的说明</block>
+  <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
+  <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">PingFederate服务器的URL</block>
+  <block id="512527e34bba36a42c42f1febf1b5404" category="cell">完成步骤2后、使用"Federation Setup"页面上显示的参数在PingFederate服务器上完成配置。</block>
+  <block id="5b8ff6609e9eeeaa9e1acfdab0eabf9f" category="section-title">更新联合连接</block>
+  <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">在BlueXP管理员启用连接后、管理员可以随时从更新此连接<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
+  <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">例如、您可能需要通过上传新证书来更新连接。</block>
+  <block id="dbc6f5b69f3e88c308c302b2a186606c" category="paragraph">创建连接的BlueXP管理员是唯一可以更新连接的授权用户。如果您要添加其他管理员、可以通过产品内聊天与我们联系。</block>
+  <block id="4cd9dd3aeeaff4f9e2ee0a8b309b6856" category="inline-link-macro">了解如何在BlueXP中使用身份联合</block>
+  <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">您可以使用单点登录使用公司目录中的凭据（联合身份）登录。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="66721b55faa00316d484082879eed67d" category="paragraph">这两个选项都支持联合连接、从而可以使用公司目录中的凭据(联合身份)进行单点登录。您可以在注册后设置联合连接。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">身份联合</block>
 </blocks>

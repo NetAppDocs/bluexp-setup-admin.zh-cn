@@ -28,7 +28,7 @@ summary: 当您开始使用BlueXP时、第一步是注册。您可以选择创�
 * 通过指定您的电子邮件地址和密码来登录NetApp云
 
 
-这两个选项都支持联合连接、从而可以使用公司目录中的凭据(联合身份)进行单点登录。注册后、您可以从设置联合连接 https://cloud.netapp.com/help-center["BlueXP帮助中心"^] 选择* Cloud Central登录选项*。
+这两个选项都支持联合连接、从而可以使用公司目录中的凭据(联合身份)进行单点登录。您可以在注册后设置联合连接。 link:concept-federation.html["了解如何在BlueXP中使用身份联合"]。
 
 .步骤
 . 打开Web浏览器并转到 https://console.bluexp.netapp.com["BlueXP控制台"^]

@@ -27,7 +27,7 @@ link:task-sign-up-saas.html["了解如何注册到BlueXP并创建组织"]。
 * 使用您的电子邮件地址和密码登录NetApp云
 * 联合连接
 +
-您可以使用单点登录使用公司目录中的凭据（联合身份）登录。要了解更多信息，请转到 https://cloud.netapp.com/help-center["BlueXP帮助中心"^] 然后单击*登录选项*。
+您可以使用单点登录使用公司目录中的凭据（联合身份）登录。 link:concept-federation.html["了解如何在BlueXP中使用身份联合"]。
 
 
 
