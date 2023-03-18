@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-federation.html 
 keywords: identity federation, federation, federated identity, set up identity federation, set up federated connection, federated connection 
-summary: 身份联合支持使用BlueXP进行单点登录、以便用户可以使用您公司身份中的凭据进行登录。在与身份提供程序建立连接之前、您应了解BlueXP如何支持身份联合。 
+summary: 身份联合支持使用BlueXP进行单点登录、以便用户可以使用您公司身份中的凭据进行登录。首先、了解身份联合如何与BlueXP配合使用、然后查看设置过程概述。 
 ---
 = 将身份联合与BlueXP结合使用
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 身份联合支持使用BlueXP进行单点登录、以便用户可以�
 
 
 [role="lead"]
-身份联合支持使用BlueXP进行单点登录、以便用户可以使用您公司身份中的凭据进行登录。在与身份提供程序建立连接之前、您应了解BlueXP如何支持身份联合。
+_Identity Federation_支持使用BlueXP进行单点登录、以便用户可以使用您公司身份的凭据进行登录。首先、了解身份联合如何与BlueXP配合使用、然后查看设置过程概述。
 
 
 
@@ -68,7 +68,7 @@ BlueXP仅支持服务提供商启动(SP启动)的SSO。不支持身份提供程�
 | 步骤 | 完成者 | Description 
 
 
-| 1. | AD管理员  a| 
+| 1. | Active Directory (AD)管理员  a| 
 根据auth0文档中的准则配置SAML身份提供程序。
 
 查看SAML身份提供程序的说明：

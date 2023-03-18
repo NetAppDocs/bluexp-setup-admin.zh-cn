@@ -2978,7 +2978,6 @@
   <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">根据该目录是否存在、运行命令以更新操作系统：</block>
   <block id="d18a6912830b95dcae293a053dd50838" category="list-text">如果此目录存在、请使用提升的权限运行以下命令：</block>
   <block id="7239793e251456f2e73133f34ccc957d" category="list-text">如果目录_does_不存在、请使用提升的权限运行以下命令：</block>
-  <block id="91d6fce5ad295f4c49b5ab17ad293e4c" category="summary">身份联合支持使用BlueXP进行单点登录、以便用户可以使用您公司身份中的凭据进行登录。在与身份提供程序建立连接之前、您应了解BlueXP如何支持身份联合。</block>
   <block id="5a94ee93b1a4f42d5f889b53b576b4f0" category="doc">将身份联合与BlueXP结合使用</block>
   <block id="694b3afac14ef0d070817c7ae79c1199" category="section-title">身份联合的工作原理</block>
   <block id="e4f3bdd29d08f22be201dfa18bf12273" category="paragraph">设置身份联合会在BlueXP的身份验证服务提供程序(auth0)与您自己的身份管理提供程序之间创建信任连接。</block>
@@ -3058,7 +3057,6 @@
   <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
   <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">PingFederate服务器的URL</block>
   <block id="512527e34bba36a42c42f1febf1b5404" category="cell">完成步骤2后、使用"Federation Setup"页面上显示的参数在PingFederate服务器上完成配置。</block>
-  <block id="5b8ff6609e9eeeaa9e1acfdab0eabf9f" category="section-title">更新联合连接</block>
   <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">在BlueXP管理员启用连接后、管理员可以随时从更新此连接<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
   <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">例如、您可能需要通过上传新证书来更新连接。</block>
   <block id="dbc6f5b69f3e88c308c302b2a186606c" category="paragraph">创建连接的BlueXP管理员是唯一可以更新连接的授权用户。如果您要添加其他管理员、可以通过产品内聊天与我们联系。</block>
@@ -3066,4 +3064,8 @@
   <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">您可以使用单点登录使用公司目录中的凭据（联合身份）登录。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
   <block id="66721b55faa00316d484082879eed67d" category="paragraph">这两个选项都支持联合连接、从而可以使用公司目录中的凭据(联合身份)进行单点登录。您可以在注册后设置联合连接。 <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>。</block>
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">身份联合</block>
+  <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">身份联合支持使用BlueXP进行单点登录、以便用户可以使用您公司身份中的凭据进行登录。首先、了解身份联合如何与BlueXP配合使用、然后查看设置过程概述。</block>
+  <block id="dca3cd1676cfe384fbb50f39c2e26eb4" category="paragraph">_Identity Federation_支持使用BlueXP进行单点登录、以便用户可以使用您公司身份的凭据进行登录。首先、了解身份联合如何与BlueXP配合使用、然后查看设置过程概述。</block>
+  <block id="6c3d838359f74f39c9ee994a4c202763" category="cell">Active Directory (AD)管理员</block>
+  <block id="38354362734b03037ea9de3dd0ec048c" category="section-title">更新联合连接</block>
 </blocks>
