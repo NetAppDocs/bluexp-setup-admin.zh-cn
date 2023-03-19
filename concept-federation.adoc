@@ -69,7 +69,7 @@ BlueXP仅支持服务提供商启动(SP启动)的SSO。不支持身份提供程�
 
 
 | 1. | Active Directory (AD)管理员  a| 
-根据auth0文档中的准则配置SAML身份提供程序。
+配置SAML身份提供程序以启用与BlueXP的身份联合。
 
 查看SAML身份提供程序的说明：
 
@@ -85,7 +85,7 @@ BlueXP仅支持服务提供商启动(SP启动)的SSO。不支持身份提供程�
 如果您的身份提供程序未显示在上述列表中、 https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["请按照以下通用说明进行操作"^]
 
 
-TIP: Do _not_ complete the steps that describe how to create a connection with auth0。您将在下一步中创建此连接。
+TIP: Do _not_ complete the steps that describe how to create a connection in auth0。您将在下一步中创建此连接。
 
 
 
@@ -120,12 +120,12 @@ TIP: Do _not_ complete the steps that describe how to create a connection with a
 
 
 | 1. | AD管理员  a| 
-在Azure Active Directory中创建一个新应用程序以及客户端密钥。
+配置Azure Active Directory以启用与BlueXP的身份联合。
 
 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["查看将应用程序注册到Azure AD的说明"^]
 
 
-TIP: Do _not_ complete the steps that describe how to create a connection with auth0。您将在下一步中创建此连接。
+TIP: Do _not_ complete the steps that describe how to create a connection in auth0。您将在下一步中创建此连接。
 
 
 
@@ -192,12 +192,12 @@ https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-provi
 
 
 | 1. | AD管理员  a| 
-按照auth0文档中的准则配置PingFederate服务器。
+配置PingFederate服务器以启用与BlueXP的身份联合。
 
 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["查看有关创建连接的说明"^]
 
 
-TIP: Do _not_ complete the steps that describe how to create a connection with auth0。您将在下一步中创建此连接。
+TIP: Do _not_ complete the steps that describe how to create a connection in auth0。您将在下一步中创建此连接。
 
 
 
@@ -227,4 +227,4 @@ TIP: Do _not_ complete the steps that describe how to create a connection with a
 
 例如、您可能需要通过上传新证书来更新连接。
 
-创建连接的BlueXP管理员是唯一可以更新连接的授权用户。如果您要添加其他管理员、可以通过产品内聊天与我们联系。
+创建连接的BlueXP管理员是唯一可以更新连接的授权用户。如果您要添加其他管理员、请联系NetApp支持部门。
