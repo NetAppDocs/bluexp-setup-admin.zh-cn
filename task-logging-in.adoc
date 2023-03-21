@@ -16,7 +16,7 @@ summary: 注册到BlueXP后、您可以通过基于SaaS的用户界面从Web浏�
 [role="lead"]
 注册到BlueXP后、您可以通过基于SaaS的用户界面从Web浏览器登录。
 
-link:task-sign-up-saas.html["了解如何注册到BlueXP并创建组织"]。
+link:task-sign-up-saas.html["了解如何注册到BlueXP并创建帐户"]。
 
 如果您要从政府区域或无法访问出站Internet的站点访问BlueXP、则需要登录到在Connector本地运行的BlueXP用户界面。 link:task-managing-connectors.html#access-the-local-ui["了解如何在Connector上访问本地UI"]。
 
