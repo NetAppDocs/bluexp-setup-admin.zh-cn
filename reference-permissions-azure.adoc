@@ -321,9 +321,6 @@ Connector为备份和还原操作发出以下API请求：
 | microsoft.Storage/storageAccounts"或"write" | 是的。 | 否 
 
 
-| microsoft.Storage/storageAccounts"或"delete" | 否 | 是的。 
-
-
 | microsoft.Storage/storageAccounts"(存储帐户)/blobServices/containers/read | 是的。 | 是的。 
 
 
@@ -764,6 +761,14 @@ Connector发出以下API请求、以发现和管理Azure Kubernetes Service (AKS
 == 更改日志
 
 添加和删除权限后、我们将在以下各节中记录这些权限。
+
+
+
+=== 2023年3月23日
+
+Cloud Data sense不再需要"microsoft.Storage/storageAccounts/delete"权限。
+
+Cloud Volumes ONTAP 仍需要此权限。
 
 
 
