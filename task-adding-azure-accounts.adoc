@@ -272,7 +272,7 @@ image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中�
 +
 image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
-. 单击 * 添加凭据 * ，然后按照向导中的步骤进行操作。
+. 在*帐户凭据*页面上、单击*添加凭据*、然后按照向导中的步骤进行操作。
 +
 .. * 凭据位置 * ：选择 * Microsoft Azure > Connector* 。
 .. * 定义凭据 * ：输入有关授予所需权限的 Azure Active Directory 服务主体的信息：
@@ -319,7 +319,7 @@ image:screenshot_accounts_switch_azure.gif["一个屏幕截图，显示在单击
 
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 单击一组凭据的操作菜单，然后选择 * 关联订阅 * 。
+. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*关联订阅*。
 +
 image:screenshot_azure_add_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
 
@@ -363,7 +363,7 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 单击一组凭据的操作菜单，然后选择 * 编辑凭据 * 。
+. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*编辑凭据*。
 . 进行所需的更改，然后单击 * 应用 * 。
 
 
@@ -375,6 +375,6 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 单击一组凭据的操作菜单，然后选择 * 删除凭据 * 。
+. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*删除凭据*。
 . 单击 * 删除 * 进行确认。
 

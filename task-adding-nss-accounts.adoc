@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: '为您的NetApp 支持站点 (NSS)帐户提供凭据、以注册支持、为Cloud Volumes ONTAP 启用关键工作流等。' 
+summary: '为您的NetApp 支持站点 (NSS)帐户提供凭据、以注册支持、为Cloud Volumes ONTAP 启用关键工作流等。这些NSS凭据与整个BlueXP帐户相关联。' 
 ---
-= 在BlueXP中管理NetApp 支持站点 帐户
+= 管理与BlueXP帐户关联的NSS凭据
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,25 +14,14 @@ summary: '为您的NetApp 支持站点 (NSS)帐户提供凭据、以注册支持
 
 
 [role="lead"]
-为您的NetApp 支持站点 (NSS)帐户提供凭据、以注册支持、为Cloud Volumes ONTAP 启用关键工作流等。
+为您的NetApp 支持站点 (NSS)帐户提供凭据、以注册支持、为Cloud Volumes ONTAP 启用关键工作流等。这些NSS凭据与整个BlueXP帐户相关联。
+
+
+NOTE: 此外、BlueXP还支持为每个BlueXP用户关联一个NSS帐户。 link:task-manage-user-credentials.html["了解如何管理用户级别的凭据"]。
 
 
 
 == 概述
-
-BlueXP支持将一个NSS帐户与每个BlueXP用户关联、并将一个或多个NSS帐户与您的BlueXP帐户关联。
-
-
-
-=== 每个BlueXP用户的NSS凭据
-
-要访问您的Digital Advisor帐户并通过BlueXP管理支持案例、需要您的单个NSS凭据。这些凭据仅对登录到BlueXP的人员可见。可以根据需要删除和更新这些凭据。
-
-<<Manage NSS credentials per BlueXP user,了解如何管理每个BlueXP用户的NSS凭据>>。
-
-
-
-=== BlueXP帐户的NSS凭据
 
 要在BlueXP中启用以下任务、需要将NetApp 支持站点 凭据与您的特定BlueXP帐户ID关联：
 
@@ -51,52 +40,9 @@ BlueXP支持将一个NSS帐户与每个BlueXP用户关联、并将一个或多�
 
 这些凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持> NSS管理*访问这些凭据。
 
-<<管理BlueXP帐户的NSS凭据,了解如何管理BlueXP帐户的NSS凭据>>。
 
 
-
-== 管理BlueXP登录的NSS凭据
-
-通过与您的BlueXP登录关联的NSS凭据、您可以访问Digital Advisor和案例管理功能。
-
-* 在BlueXP中访问Digital Advisor时、系统会提示您输入NSS凭据以登录到Digital Advisor。输入NSS凭据后、您将看到此NSS帐户列在"NSS管理"页面顶部。然后、您可以根据需要管理这些凭据。
-* 访问*支持>案例管理*时、系统会提示您输入NSS凭据(如果尚未输入)。此页面将向您显示与您的NSS帐户和公司关联的支持案例。
-
-
-请注意以下有关此NSS帐户的信息：
-
-* 此帐户在用户级别进行管理、这意味着其他登录用户无法查看它。
-* 此帐户不能用于任何其他BlueXP功能：不能用于Cloud Volumes ONTAP 创建、许可或支持案例创建。
-* 每个用户只能有一个与Digital Advisor和案例管理关联的NSS帐户。
-
-
-.步骤
-. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["帮助菜单的屏幕截图，其中列出的第一个选项为支持"]
-
-. 单击 * NSS 管理 * 。
-. 在*您的NSS凭据*下、单击*操作*并选择以下任一选项：
-+
-** *关联NSS用户*：添加NetApp 支持站点 帐户的凭据。
-** *更新现有凭据*：更新NetApp 支持站点 帐户的凭据。
-** *删除*：删除与您的BlueXP用户帐户关联的帐户。
-
-
-
-
-.结果
-BlueXP会更新您的NSS凭据。访问Digital Advisor或"Case Management"页面时、这些更改将反映出来。
-
-
-
-== 管理BlueXP帐户的NSS凭据
-
-管理与您的BlueXP帐户关联的NSS凭据、以便您可以注册获取支持、创建支持案例并为Cloud Volumes ONTAP 启用关键工作流。
-
-
-
-=== 添加 NSS 帐户
+== 添加 NSS 帐户
 
 通过支持信息板、您可以在BlueXP帐户级别添加和管理用于BlueXP的NetApp 支持站点 帐户。
 
@@ -153,7 +99,7 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 
 
 
-=== 更新新身份验证方法的 NSS 帐户
+== 更新新身份验证方法的 NSS 帐户
 
 从 2021 年 11 月开始， NetApp 现在使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。由于此更新、BlueXP将提示您更新先前添加的任何现有帐户的凭据。
 
@@ -179,7 +125,7 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 
 
 
-=== 更新 NSS 凭据
+== 更新 NSS 凭据
 
 发生以下任一情况时、您需要在BlueXP中更新NSS帐户的凭据：
 
@@ -203,7 +149,7 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 
 
 
-=== 将工作环境附加到其他 NSS 帐户
+== 将工作环境附加到其他 NSS 帐户
 
 如果您的组织有多个 NetApp 支持站点帐户，则可以更改与 Cloud Volumes ONTAP 系统关联的帐户。
 
@@ -227,7 +173,7 @@ image:screenshot-nss-change-account.png["屏幕截图显示了与 NetApp 支持�
 
 
 
-=== 显示 NSS 帐户的电子邮件地址
+== 显示 NSS 帐户的电子邮件地址
 
 既然NetApp 支持站点 帐户使用Microsoft Azure Active Directory进行身份验证服务、则在BlueXP中显示的NSS用户名通常是由Azure AD生成的标识符。因此，您可能无法立即知道与该帐户关联的电子邮件地址。但是、BlueXP可以选择向您显示关联的电子邮件地址。
 
@@ -248,7 +194,7 @@ BlueXP将显示NetApp 支持站点 用户名和关联的电子邮件地址。您
 
 
 
-=== 删除 NSS 帐户
+== 删除 NSS 帐户
 
 删除您不想再用于BlueXP的任何NSS帐户。
 

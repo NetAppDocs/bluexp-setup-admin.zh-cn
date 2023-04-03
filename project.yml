@@ -83,6 +83,30 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: 默认配置
         url: "/reference-connector-default-config.html"
+    - title: 凭据
+      entries:
+      - title: 管理 AWS 凭据
+        entries:
+        - title: 概述
+          url: "/concept-accounts-aws.html"
+        - title: 管理凭据和订阅
+          url: "/task-adding-aws-accounts.html"
+      - title: 管理 Azure 凭据
+        entries:
+        - title: 概述
+          url: "/concept-accounts-azure.html"
+        - title: 管理凭据和订阅
+          url: "/task-adding-azure-accounts.html"
+      - title: 管理 Google Cloud 凭据
+        entries:
+        - title: 概述
+          url: "/concept-accounts-gcp.html"
+        - title: 管理凭据和订阅
+          url: "/task-adding-gcp-accounts.html"
+      - title: 管理与BlueXP帐户关联的NSS凭据
+        url: "/task-adding-nss-accounts.html"
+      - title: 管理与您的BlueXP登录关联的凭据
+        url: "/task-manage-user-credentials.html"
     - title: 订阅
       url: "/task-manage-subscriptions.html"
     - title: 已发现云存储
@@ -93,26 +117,6 @@ sidebar:
         url: "/task-viewing-azure-blob.html"
       - title: 查看Google Cloud存储分段
         url: "/task-viewing-gcp-storage.html"
-    - title: AWS 凭据
-      entries:
-      - title: 概述
-        url: "/concept-accounts-aws.html"
-      - title: 管理凭据和订阅
-        url: "/task-adding-aws-accounts.html"
-    - title: Azure credentials
-      entries:
-      - title: 概述
-        url: "/concept-accounts-azure.html"
-      - title: 管理凭据和订阅
-        url: "/task-adding-azure-accounts.html"
-    - title: Google Cloud 凭据
-      entries:
-      - title: 概述
-        url: "/concept-accounts-gcp.html"
-      - title: 管理凭据和订阅
-        url: "/task-adding-gcp-accounts.html"
-    - title: NetApp 支持站点帐户
-      url: "/task-adding-nss-accounts.html"
     - title: 使用"我的商机"进行发现
       url: "/concept-my-opportunities.html"
   - title: 参考

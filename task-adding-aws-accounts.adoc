@@ -132,7 +132,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 +
 image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
-. 单击 * 添加凭据 * ，然后按照向导中的步骤进行操作。
+. 在*帐户凭据*页面上、单击*添加凭据*、然后按照向导中的步骤进行操作。
 +
 .. * 凭据位置 * ：选择 * Amazon Web Services > Connector* 。
 .. * 定义凭据 * ：提供可信 IAM 角色的 ARN （ Amazon 资源名称），或者输入 AWS 访问密钥和机密密钥。
@@ -199,7 +199,7 @@ IAM 角色现在具有所需的权限。 <<add-the-credentials-2,现在、您可
 +
 image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
-. 单击 * 添加凭据 * ，然后按照向导中的步骤进行操作。
+. 在*帐户凭据*页面上、单击*添加凭据*、然后按照向导中的步骤进行操作。
 +
 .. *凭据位置*：选择* Amazon Web Services > BlueX*。
 .. * 定义凭据 * ：提供 IAM 角色的 ARN （ Amazon 资源名称）。
@@ -228,7 +228,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 单击一组凭据的操作菜单，然后选择 * 关联订阅 * 。
+. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*关联订阅*。
 +
 image:screenshot_associate_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
 
@@ -274,7 +274,7 @@ TIP: 您不能编辑与 Connector 实例关联的实例配置文件的凭据。
 
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 单击一组凭据的操作菜单，然后选择 * 编辑凭据 * 。
+. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*编辑凭据*。
 . 进行所需的更改，然后单击 * 应用 * 。
 
 
@@ -289,6 +289,6 @@ TIP: 您不能删除与 Connector 实例关联的实例配置文件的凭据。
 
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 单击一组凭据的操作菜单，然后选择 * 删除凭据 * 。
+. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*删除凭据*。
 . 单击 * 删除 * 进行确认。
 

@@ -163,7 +163,6 @@
   <block id="7c04a15d03a827f3e932f6ea885fb875" category="list-text"><block ref="7c04a15d03a827f3e932f6ea885fb875" category="inline-link-rx"></block></block>
   <block id="36bc52aaebad43ec3e49ed9a0efacd43" category="section-title">添加凭据</block>
   <block id="0fcafd12d45dbcf0e60c3aba44fe49a1" category="paragraph">在为 AWS 帐户提供所需权限后，您可以将该帐户的凭据添加到现有 Connector 。这样，您就可以使用同一个连接器在该帐户中启动 Cloud Volumes ONTAP 系统了。</block>
-  <block id="11832df968cbb4cdb8e45984c11a77d0" category="list-text">单击 * 添加凭据 * ，然后按照向导中的步骤进行操作。</block>
   <block id="5e15e451ab1dcb5e3bfae55f8b58e524" category="list-text">* 凭据位置 * ：选择 * Amazon Web Services &gt; Connector* 。</block>
   <block id="a1418a1fbbbe1aec52c1618b6cc4b381" category="list-text">* 定义凭据 * ：提供可信 IAM 角色的 ARN （ Amazon 资源名称），或者输入 AWS 访问密钥和机密密钥。</block>
   <block id="dc6e318a413899b5467eabc5f69ad366" category="list-text">* 市场订阅 * ：通过立即订阅或选择现有订阅，将市场订阅与这些凭据相关联。</block>
@@ -176,16 +175,13 @@
   <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">关联 AWS 订阅</block>
   <block id="dbaf1a33cea4faeebcb91c3b7d479cc9" category="list-text">您希望将现有 AWS Marketplace 订阅替换为新订阅。</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">了解如何创建 Connector</block>
-  <block id="fe001b474268cb9300af19ba4c12edd8" category="list-text">单击一组凭据的操作菜单，然后选择 * 关联订阅 * 。</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">一组现有凭据的操作菜单屏幕截图。</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c98f8dfd7e317cb87d057d9e065d71d4" category="section-title">编辑凭据</block>
   <block id="608e5d2c6ae29eafd4acefb54d76730a" category="admonition">您不能编辑与 Connector 实例关联的实例配置文件的凭据。</block>
-  <block id="be92f90840924f8fb669257f558527d1" category="list-text">单击一组凭据的操作菜单，然后选择 * 编辑凭据 * 。</block>
   <block id="34159dbbf51f083cde5521a26697cbfa" category="list-text">进行所需的更改，然后单击 * 应用 * 。</block>
   <block id="030914a6fb8d93761dc666e5e31bd6bd" category="section-title">正在删除凭据</block>
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">您不能删除与 Connector 实例关联的实例配置文件的凭据。</block>
-  <block id="16c6fa81afb88d058842087a5734f874" category="list-text">单击一组凭据的操作菜单，然后选择 * 删除凭据 * 。</block>
   <block id="e66ca765497b1a570afc1443e2e6de1b" category="list-text">单击 * 删除 * 进行确认。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
   <block id="e97f2d246afe934ce73e145389529b37" category="doc">管理您的 NetApp 帐户</block>
@@ -1181,11 +1177,7 @@
   <block id="4d23d12ce4b0de2019310ec73c45d09b" category="sidebar">查找 Connector 的系统 ID</block>
   <block id="dd6f576fe34949ea5c3d4b196b2c626d" category="sidebar">管理现有连接器</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">默认配置</block>
-  <block id="2c4eed705dd3e0adf6e7194858d8dff7" category="sidebar">AWS 凭据</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">管理凭据和订阅</block>
-  <block id="71cf9cd60037f691ceec3200a6f0acf1" category="sidebar">Azure credentials</block>
-  <block id="0b3519eda2c4dfc6d4beaa747492c09a" category="sidebar">Google Cloud 凭据</block>
-  <block id="41a3f8399b4901b2c572d51d83f4b79a" category="sidebar">NetApp 支持站点帐户</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考</block>
   <block id="a1dc2e55a815bd7f430fab36f4c28784" category="sidebar">Connector 的 AWS 权限</block>
   <block id="94864bc66faf9702eb87f3ddb6665c2c" category="sidebar">Connector 的 Azure 权限</block>
@@ -2242,13 +2234,8 @@
   <block id="4b8d6d1554d22a2bda6470094c227037" category="paragraph">默认情况下、在为Cloud Volumes ONTAP 创建新工作环境时、BlueXP会选择以下Azure凭据：</block>
   <block id="79f0e2a1f0b9a07786aae7969fdf941c" category="paragraph">您可以这样做 <block ref="fdb068e0f25207f010bf6b52e6d7dd53" category="inline-link-macro-rx"></block> 提供有关 AD 服务主体的详细信息。</block>
   <block id="4ac30ed8a8abb75a74c2afca163c3250" category="paragraph">以上各节介绍了BlueXP中建议的Connector部署方法。您也可以从在 Azure 中部署 Connector <block ref="42416828ae8ae7a901a48c71094e7a44" category="inline-link-macro-rx"></block>，您可以 <block ref="562eb722c78878c7a1bcbac21fbdef4a" category="inline-link-macro-rx"></block>。</block>
-  <block id="333c244077c4c3df40d39cbb97f94995" category="paragraph">为您的NetApp 支持站点 (NSS)帐户提供凭据、以注册支持、为Cloud Volumes ONTAP 启用关键工作流等。</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">需要提供您的NSS帐户、以便BlueXP可以上传您的许可证密钥并为您购买的期限启用订阅。这包括自动更新期限续订。</block>
-  <block id="b34d01d56d89281c69c44eaef7460a79" category="paragraph">在BlueXP中访问Digital Advisor时、系统会提示您输入NSS凭据以登录到Digital Advisor。输入NSS凭据后、您将看到此NSS帐户列在"NSS管理"页面顶部。然后、您可以根据需要管理这些凭据。</block>
-  <block id="60f184ee8b252ec5284ca4bfc102c193" category="paragraph">请注意以下有关此NSS帐户的信息：</block>
   <block id="37cb0cdf24a1597d838bc5f1699b9e5a" category="list-text">此帐户在用户级别进行管理、这意味着其他登录用户无法查看它。</block>
-  <block id="3793cae33028a6b75ab0ca8130ca6a9d" category="list-text">在*您的NSS凭据*下、单击*操作*并选择以下任一选项：</block>
-  <block id="fe11914cdc8e174bef64d941a9b88b00" category="list-text">*更新现有凭据*：更新NetApp 支持站点 帐户的凭据。</block>
   <block id="5d7e9ca2f0be827f29d91dca2f767f7f" category="paragraph">现在、用户可以在创建新Cloud Volumes ONTAP 系统、注册现有Cloud Volumes ONTAP 系统以及注册支持时选择帐户。</block>
   <block id="759f5e4f5dca6e6753e9254efed21ea1" category="paragraph">从 2021 年 11 月开始， NetApp 现在使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。由于此更新、BlueXP将提示您更新先前添加的任何现有帐户的凭据。</block>
   <block id="90488de845793cd541dd12866e86b44a" category="paragraph">发生以下任一情况时、您需要在BlueXP中更新NSS帐户的凭据：</block>
@@ -2795,7 +2782,6 @@
   <block id="cad0970fb2c4e3d28b046315bb4b7f02" category="paragraph"><block ref="ac22e421263f6f828d096313fa20e6a8" category="inline-link-rx"></block>。</block>
   <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">此版本的连接器包含Cloud Volumes ONTAP 增强功能。</block>
   <block id="e5fa209a01e6f968295b098866e0fcf5" category="paragraph"><block ref="e5fa209a01e6f968295b098866e0fcf5" category="inline-link-rx"></block></block>
-  <block id="2328f91c347cdd3538e6eec847331d2d" category="list-text">目前、系统会通过电子邮件发送有关以下BlueXP功能和服务的通知：连接器、Cloud Sync 、云备份和勒索软件保护。未来版本将添加其他服务。</block>
   <block id="61130fb01406e968937613de0add552f" category="inline-image-macro">一个包含三个垂直点的图标</block>
   <block id="86687429f8938a809fc671fe296b1bcc" category="paragraph">要取消所有通知，请在通知中心中单击 <block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> 并选择 * 全部取消 * 。<block ref="e49bd0cb9810a0678258a0ab07786c5e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0da34741c0fedd26eb889170d87be2c7" category="list-text">要将凭据与新订阅关联、请单击*添加订阅&gt;继续*、然后按照AWS Marketplace中的步骤进行操作：</block>
@@ -2847,13 +2833,6 @@
   <block id="559e00158f66ad338da1ff42475d15d4" category="paragraph">在内部环境中：</block>
   <block id="ddc27aae141cdde9ebf1781f29405e62" category="inline-link">部署Cloud Volumes ONTAP</block>
   <block id="d4e942d34e603f30d4aa65123ee69ac5" category="paragraph">在云环境中、您可以<block ref="00153078c5cb58fb46fb6b9817a49af6" category="inline-link-rx"></block></block>
-  <block id="3c64f2e1d3b86927fc25494420d8e69e" category="doc">在BlueXP中管理NetApp 支持站点 帐户</block>
-  <block id="8b12e6f38f8b47f363480ac1d3b8327f" category="paragraph">BlueXP支持将一个NSS帐户与每个BlueXP用户关联、并将一个或多个NSS帐户与您的BlueXP帐户关联。</block>
-  <block id="e6cee5a5293cdefddf2eea3f6f8e63a0" category="section-title">每个BlueXP用户的NSS凭据</block>
-  <block id="9f16a5e3343035191419f8ff9c2e5969" category="paragraph">要访问您的Digital Advisor帐户并通过BlueXP管理支持案例、需要您的单个NSS凭据。这些凭据仅对登录到BlueXP的人员可见。可以根据需要删除和更新这些凭据。</block>
-  <block id="d0c8c4e397d970dc8543d75be500735a" category="inline-xref">了解如何管理每个BlueXP用户的NSS凭据</block>
-  <block id="67d6e3f20ef7fa11673f57da719e30a4" category="paragraph"><block ref="7ba791bb5a4402182b386f894b67a43b" category="inline-xref-macro-rx"></block>。</block>
-  <block id="86b693fcb28e522569eb6bcbe22e1048" category="section-title">BlueXP帐户的NSS凭据</block>
   <block id="4a2f661974665defd7d188133a1ab48b" category="paragraph">要在BlueXP中启用以下任务、需要将NetApp 支持站点 凭据与您的特定BlueXP帐户ID关联：</block>
   <block id="15c2fed71e5ff16c335e2d40bc485e1e" category="list-text">注册以获得支持</block>
   <block id="1ca6b2b8383e207951356457a77708e7" category="list-text">创建支持案例</block>
@@ -2861,18 +2840,9 @@
   <block id="a3b3ed2f72536d95b268a4a67722c55d" category="list-text">注册按需购买Cloud Volumes ONTAP 系统</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">将Cloud Volumes ONTAP 软件升级到最新版本</block>
   <block id="a86ad85ddb4228477c624e47ab659180" category="paragraph">这些凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持&gt; NSS管理*访问这些凭据。</block>
-  <block id="0080504e9313f9b154660cf9d3a82d90" category="inline-xref">了解如何管理BlueXP帐户的NSS凭据</block>
-  <block id="c8ab27a714bbad7b5a28e63b8123aae5" category="paragraph"><block ref="04ed260555c7204bedee595d1a22139b" category="inline-xref-macro-rx"></block>。</block>
-  <block id="d9307c659c4370870dcc89d984d908e2" category="section-title">管理BlueXP登录的NSS凭据</block>
   <block id="5a201f4198ac7b46778a727f32bd6203" category="paragraph">通过与您的BlueXP登录关联的NSS凭据、您可以访问Digital Advisor和案例管理功能。</block>
-  <block id="79dce1fafa49d0b2bbe06423f13f9d58" category="list-text">访问*支持&gt;案例管理*时、系统会提示您输入NSS凭据(如果尚未输入)。此页面将向您显示与您的NSS帐户和公司关联的支持案例。</block>
   <block id="d4b8ea0f438d980b900fa0c72d88710f" category="list-text">此帐户不能用于任何其他BlueXP功能：不能用于Cloud Volumes ONTAP 创建、许可或支持案例创建。</block>
   <block id="37ab7585b9575599c51022bd3b09813a" category="list-text">每个用户只能有一个与Digital Advisor和案例管理关联的NSS帐户。</block>
-  <block id="78eefce62993605d332b1408d42256d7" category="list-text">*关联NSS用户*：添加NetApp 支持站点 帐户的凭据。</block>
-  <block id="bb003c773133044d9d8666f477a36cfe" category="list-text">*删除*：删除与您的BlueXP用户帐户关联的帐户。</block>
-  <block id="65fb057ff5fa0f79f9e974fbbf20b1b4" category="paragraph">BlueXP会更新您的NSS凭据。访问Digital Advisor或"Case Management"页面时、这些更改将反映出来。</block>
-  <block id="ce3a367043c4a6897ab7ccbfa40ad329" category="section-title">管理BlueXP帐户的NSS凭据</block>
-  <block id="2a99a7f02260cc6c2b4aa3815cee53ec" category="paragraph">管理与您的BlueXP帐户关联的NSS凭据、以便您可以注册获取支持、创建支持案例并为Cloud Volumes ONTAP 启用关键工作流。</block>
   <block id="9a030ad8abbc9b1e402feade38bdec50" category="paragraph">通过支持信息板、您可以在BlueXP帐户级别添加和管理用于BlueXP的NetApp 支持站点 帐户。</block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS帐户必须是客户级别的帐户(而不是来宾或临时帐户)。您可以拥有多个客户级别的NSS帐户。</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">如果此帐户是合作伙伴级别的帐户、则只能有一个NSS帐户。如果您尝试添加客户级别的NSS帐户、并且存在合作伙伴级别的帐户、则会收到以下错误消息：</block>
@@ -2909,7 +2879,6 @@
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">包含三个点的图标、显示在表的最后一列中</block>
   <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">单击以管理现有案例 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 并选择一个可用选项：</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*查看案例*：查看有关特定案例的完整详细信息。</block>
-  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*更新案例注释*：提供有关您的问题的更多详细信息。</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*关闭案例*：提供关闭案例的详细信息、然后单击*关闭案例*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">屏幕截图、显示在表的最后一列中选择菜单后可以执行的操作。</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
@@ -3074,4 +3043,58 @@
   <block id="43908e244f944d05ab87a4987453f7bc" category="paragraph">Cloud Data sense不再需要"microsoft.Storage/storageAccounts/delete"权限。</block>
   <block id="47e8280c2cd82cf2f49537bfd5661b15" category="paragraph">Cloud Volumes ONTAP 仍需要此权限。</block>
   <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">如果需要、您可以使用IAM来限制IAM策略<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> Element。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
+  <block id="81fa6885ef2dca44d4868d3d8ea203c9" category="summary">根据您在BlueXP中执行的操作、您可能已将ONTAP 凭据和NetApp 支持站点 NSS凭据与您的BlueXP用户登录相关联。关联这些凭据后、您可以在BlueXP中查看和管理这些凭据。例如、如果您更改了这些凭据的密码、则需要在BlueXP中更新此密码。</block>
+  <block id="e3884a4ce043ad31217e0098c7c0537f" category="doc">管理与您的BlueXP登录关联的凭据</block>
+  <block id="5a66a53c80f94aa60f854872b432d82d" category="paragraph">根据您在BlueXP中执行的操作、您可能已将ONTAP 凭据和NetApp 支持站点 (NSS)凭据与您的BlueXP用户登录相关联。关联这些凭据后、您可以在BlueXP中查看和管理这些凭据。例如、如果您更改了这些凭据的密码、则需要在BlueXP中更新此密码。</block>
+  <block id="823a6e1d7fe661be55dd3af05f972b11" category="section-title">ONTAP 凭据</block>
+  <block id="b82af7a7b96d34942cadb7921514f408" category="paragraph">如果您在不使用连接器的情况下直接发现内部ONTAP 集群、则系统会提示您输入此集群的ONTAP 凭据。这些凭据在用户级别进行管理、这意味着其他登录用户无法查看这些凭据。</block>
+  <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">NSS凭据</block>
+  <block id="fb81cc600c8251372b08f0797c3abdd7" category="list-text">在BlueXP中访问Digital Advisor时、系统会提示您输入NSS凭据以登录到Digital Advisor。</block>
+  <block id="64470ba450382b851139073aed09c635" category="list-text">访问*支持&gt;案例管理*时、系统会提示您输入NSS凭据(如果尚未输入)。通过此页面、您可以管理与您的NSS帐户和公司关联的支持案例。</block>
+  <block id="276e2bd44117ba4b3317de4a352235b2" category="paragraph">请注意以下有关NSS帐户的信息：</block>
+  <block id="af8b5ac7f9c7fe53fa31652162a91c6e" category="paragraph">NetApp 支持站点 凭据还与您所属的BlueXP帐户相关联。您可以通过NSS帐户级别凭据注册支持、在自带许可证(BYOL)时部署Cloud Volumes ONTAP 等。</block>
+  <block id="db0f1f3e531a1a1c690b42c9a6daae35" category="inline-link-macro">了解有关将NSS凭据与您的BlueXP帐户结合使用的更多信息</block>
+  <block id="dacf2f246c2efb276c3709c141985f7c" category="paragraph"><block ref="4734e8f3bab5a9c00aebb286a2f16deb" category="inline-link-macro-rx"></block>。</block>
+  <block id="cc96a4cc30e50577aa6671b076af72e1" category="section-title">管理您的用户凭据</block>
+  <block id="fa6e9e9d0c238d856c9d80111986b0b1" category="paragraph">通过更新用户名和密码或删除凭据来管理您的用户凭据。</block>
+  <block id="41e1e3cff4a07ce2ecc08e6c09f11092" category="list-text">单击*用户凭据*。</block>
+  <block id="9afc8b6b41174c0836030fc8ac89ce5a" category="list-text">如果您还没有任何用户凭据、可以选择*添加NSS凭据*以添加NetApp 支持站点 帐户。</block>
+  <block id="f89f00feaba2fad2b55607ff15acc121" category="list-text">通过选择以下选项来管理现有凭据：</block>
+  <block id="73877140c9191100114cf829d4df1aa5" category="list-text">*更新凭据*：更新帐户的用户名和密码。</block>
+  <block id="fc15340823a1f5df29ca8938cb5aca15" category="list-text">*删除凭据*：删除与您的BlueXP用户帐户关联的帐户。</block>
+  <block id="9d7731be7d930a1152dbf528e9a20972" category="inline-image-macro">屏幕截图显示了NSS凭据和ONTAP 凭据、并可从操作菜单中选择更新凭据和删除凭据</block>
+  <block id="a4ecb2be579cb0376c3938220c6db5bf" category="paragraph"><block ref="a4ecb2be579cb0376c3938220c6db5bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="64286300f4b2d20b21751b700c210a03" category="paragraph">BlueXP会更新您的凭据。访问ONTAP 集群、数字顾问或案例管理页面时、这些更改将反映出来。</block>
+  <block id="5d93a8788cf1a23c80bc3e6304d9b87f" category="summary">为您的NetApp 支持站点 (NSS)帐户提供凭据、以注册支持、为Cloud Volumes ONTAP 启用关键工作流等。这些NSS凭据与整个BlueXP帐户相关联。</block>
+  <block id="8c79ce7ab82c8c7e3fb9c6e8a73f8960" category="doc">管理与BlueXP帐户关联的NSS凭据</block>
+  <block id="3d41446101a1daf0639146f4555b623b" category="inline-link-macro">了解如何管理用户级别的凭据</block>
+  <block id="45b496845c319f5bc16fa44745aea5f0" category="admonition">此外、BlueXP还支持为每个BlueXP用户关联一个NSS帐户。 <block ref="92ab4e1c25ae34810f6c6d2ede81f4ab" category="inline-link-macro-rx"></block>。</block>
+  <block id="d6e5647a322b53644cabe536bfdb7f29" category="list-text">在*帐户凭据*页面上、单击*添加凭据*、然后按照向导中的步骤进行操作。</block>
+  <block id="20724e8d26839906dc872ed7a379a173" category="list-text">在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*关联订阅*。</block>
+  <block id="3d214e0293b46f81700e2b6fbbd385ef" category="list-text">在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*编辑凭据*。</block>
+  <block id="8ce4a1ee477e89ddf51474c4388f851b" category="list-text">在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*删除凭据*。</block>
+  <block id="05c6578f55ba6f40e6bb7dd1d07e0243" category="list-text">目前、系统会通过电子邮件发送有关以下BlueXP功能和服务的通知：连接器、Cloud Sync 、云备份、数字电子钱包和勒索软件保护。未来版本将添加其他服务。</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
+  <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">连接器3.9.28</block>
+  <block id="a08572617e25a61e8569807ac103ab07" category="list-text">现在、Digital Wallet支持电子邮件通知。</block>
+  <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">如果您配置了通知设置、则在BYOL许可证即将过期("警告"通知)或已过期("错误"通知)时、您可以收到电子邮件通知。</block>
+  <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">了解如何设置电子邮件通知</block>
+  <block id="e16804d7658f4d3132a1170b8cec7c7e" category="paragraph"><block ref="9ce9eb475c326d02a5c224ef8589bc0a" category="inline-link-rx"></block>。</block>
+  <block id="1ba259cc1a092c9c30c1a18ccc612c75" category="list-text">现在、连接器在Google Cloud Turin区域受支持。</block>
+  <block id="e9c35e9b853bc286e0f3b1a7ee2e338a" category="list-text">现在、您可以在BlueXP中发现VMware vCenter Server。</block>
+  <block id="a5b1ab8743c3279fbcf5a93dcd6de23d" category="paragraph">发现在AWS或内部运行的VMware vCenter Server后、您可以打开工作环境以查看与该服务器关联的数据存储库和虚拟机的详细信息。</block>
+  <block id="10cc8c1f48423a72bf1e617861999cae" category="paragraph">唯一的要求是连接到运行7.0或更高版本的VMware vCenter Server的Connector。</block>
+  <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">要开始使用、请选择*添加工作环境*、选择* Amazon Web Services*或*内部部署*、然后选择* VMware vCenter Server*。输入服务器的域名或IP地址、然后输入管理员用户的用户名和密码。</block>
+  <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">现在、您可以管理与您的BlueXP登录关联的用户凭据：ONTAP 凭据和NetApp 支持站点 (NSS)凭据。</block>
+  <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">转到*设置&gt;凭据*时、您可以查看凭据、更新凭据并将其删除。例如、如果您更改了这些凭据的密码、则需要在BlueXP中更新此密码。</block>
+  <block id="b74c77e09b66a8f63b22e9ec3917cbbc" category="inline-link-macro">了解如何管理用户凭据</block>
+  <block id="43cddfbd5a5e952fa3a0613068b01922" category="paragraph"><block ref="f57f6e52027d92bbfed90d112fcd8715" category="inline-link-macro-rx"></block>。</block>
+  <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">现在、您可以在创建支持案例或更新现有支持案例的案例备注时上传附件。</block>
+  <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">了解如何创建和管理支持案例</block>
+  <block id="6d69140f9b878e098eb9bfcd623c9dbd" category="paragraph"><block ref="7f3b2cbcf14ed0f5a85962e6b9e3eba8" category="inline-link-rx"></block>。</block>
+  <block id="e19c064fcb68059e563bb5bfdd31cac1" category="list-text"><block ref="e19c064fcb68059e563bb5bfdd31cac1" category="inline-link-rx"></block></block>
+  <block id="9e8ad418161e776fb398db9af34585c3" category="list-text"><block ref="9e8ad418161e776fb398db9af34585c3" category="inline-link-rx"></block></block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*附件(可选)*：一次最多上传五个附件。</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">每个文件的附件数限制为25 MB。支持以下文件扩展名：txt、log、pdf、jp6/jpeu、rtf、 doc/docx、xls/xlsx和csv。</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*更新案例注释*：提供有关您的问题的更多详细信息、或者选择*上传文件*最多附加五个文件。</block>
 </blocks>

@@ -98,7 +98,7 @@ image:screenshot_notification_filters.png["显示通知中心中可用的两种�
 
 [NOTE]
 ====
-* 目前、系统会通过电子邮件发送有关以下BlueXP功能和服务的通知：连接器、Cloud Sync 、云备份和勒索软件保护。未来版本将添加其他服务。
+* 目前、系统会通过电子邮件发送有关以下BlueXP功能和服务的通知：连接器、Cloud Sync 、云备份、数字电子钱包和勒索软件保护。未来版本将添加其他服务。
 * 如果Connector安装在无法访问Internet的站点上、则不支持发送电子邮件通知。
 
 
