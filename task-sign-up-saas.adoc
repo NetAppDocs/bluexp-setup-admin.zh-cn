@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-sign-up-saas.html 
-keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account 
-summary: 当您开始使用BlueXP时、第一步是注册。您可以选择创建帐户、但如果您受邀加入现有帐户、则可以跳过该步骤。 
+keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
+summary: 开始使用BlueXP时、第一步是使用现有NetApp 支持站点 凭据或创建NetApp云登录来注册。 
 ---
 = 注册到BlueXP
 :hardbreaks:
@@ -14,14 +14,9 @@ summary: 当您开始使用BlueXP时、第一步是注册。您可以选择创�
 
 
 [role="lead"]
-当您开始使用BlueXP时、第一步是注册。您可以选择创建帐户、但如果您受邀加入现有帐户、则可以跳过该步骤。
-
-.有关政府地区的说明
-如果您需要从政府区域或无法访问出站Internet的站点访问BlueXP、则需要创建一个Connector并登录到在Connector本地运行的BlueXP用户界面。 link:task-managing-connectors.html#access-the-local-ui["了解如何在Connector上访问本地UI"]。
+您可以从基于Web的控制台访问BlueXP。开始使用BlueXP时、第一步是使用现有NetApp 支持站点 凭据或创建NetApp云登录来注册。
 
 .注册选项
-您可以通过基于SaaS的用户界面从Web浏览器访问BlueXP。
-
 您可以使用以下选项之一注册到BlueXP：
 
 * 您的现有NetApp 支持站点 (NSS)凭据

@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: task-provide-permissions-google.html 
+keywords: google cloud permissions, permissions, gcp permissions, service account, gcp service account 
+summary: 如果您在自己的Linux主机上手动安装了Connector软件、则需要为BlueXP提供先前设置的权限。 
+---
+= 为BlueXP提供Google Cloud权限
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您在自己的Linux主机上手动安装了Connector软件、则需要为BlueXP提供先前设置的权限。
+
+link:task-set-up-permissions-google.html["了解如何设置这些权限"]。
+
+如果您直接从BlueXP或使用gcloud部署了Connector、则这些步骤不适用。
+
+.步骤
+. 转到Google Cloud门户、并将服务帐户分配给Connector VM实例。
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud文档：更改实例的服务帐户和访问范围"^]
+
+. 如果要在其他项目中部署Cloud Volumes ONTAP 、请通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限。您需要对每个项目重复此步骤。
+
+
+.结果
+现在、BlueXP拥有代表您在Google Cloud中执行操作所需的权限。

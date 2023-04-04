@@ -22,7 +22,12 @@ BlueXP需要在Google Cloud中执行操作的权限。这些权限包含在NetAp
 
 下面显示的自定义角色提供了Connector在Google Cloud网络中管理资源和进程所需的权限。
 
-您需要将此自定义角色应用于连接到Connector VM的服务帐户。 link:task-creating-connectors-gcp.html["查看分步说明"]。
+您需要将此自定义角色应用于连接到Connector VM的服务帐户。
+
+* link:task-set-up-permissions-google.html["设置标准模式的权限"]
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["设置受限模式的权限"]
+* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["设置私有模式的权限"]
+
 
 您还需要确保角色是最新的、因为在后续版本中添加了新权限。
 

@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-private-mode.html 
+keywords: private mode quick start, quick start 
+summary: 在私有模式下、只需几个步骤即可开始使用BlueXP。 
+---
+= 在专用模式下快速启动BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在私有模式下、只需几个步骤即可开始使用BlueXP。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 准备部署
+[role="quick-margin-list"]
+. 准备一个满足CPU、RAM、磁盘空间、Docker引擎等要求的专用Linux主机。
+. 设置网络以访问目标网络。
+. 对于云部署、请在云提供商中设置权限、以便您可以在安装软件后将这些权限与Connector相关联。
+
+
+[role="quick-margin-para"]
+link:task-prepare-private-mode.html["了解如何为部署做准备"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 部署连接器
+[role="quick-margin-list"]
+. 在您自己的Linux主机上安装Connector软件。
+. 打开Web浏览器并输入Linux主机的IP地址、以设置BlueXP。
+. 对于云部署、为BlueXP提供您先前设置的权限。
+
+
+[role="quick-margin-para"]
+link:task-install-private-mode.html["了解如何部署Connector"]。

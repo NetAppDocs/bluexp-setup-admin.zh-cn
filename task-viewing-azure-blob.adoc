@@ -19,7 +19,7 @@ summary: 在Azure中安装Connector后、BlueXP可以自动发现安装此Connec
 您可以查看有关Azure存储帐户的详细信息、包括位置、资源组、总容量和已用容量等。这些帐户可用作云备份、云分层或Cloud Sync 操作的目标。
 
 .步骤
-. link:task-creating-connectors-azure.html["安装连接器"] 在要查看Azure存储帐户的Azure帐户中。
+. 在要查看Azure存储帐户的Azure帐户中安装Connector。
 . 从导航菜单中、选择*存储>画布*。
 +
 之后不久、您将自动看到Azure Blob工作环境。
@@ -27,15 +27,15 @@ summary: 在Azure中安装Connector后、BlueXP可以自动发现安装此Connec
 +
 image:screenshot-azure-blob-we.png["Azure Blob工作环境的屏幕截图。"]
 
-. 单击工作环境，然后从右窗格中选择一项操作。
+. 选择工作环境、然后从右窗格中选择一项操作。
 +
 image:screenshot-azure-actions.png["选择Azure Blob工作环境后显示操作窗格的屏幕截图。此窗格将显示存储帐户的总数以及使用Sync服务的操作。"]
 
-. 单击*同步数据*可将数据与Azure Blob存储同步或与Azure Blob存储同步。
+. 选择*同步数据*可将数据与Azure Blob存储同步或与Azure Blob存储同步。
 +
-有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Cloud Sync 服务概述"^]。
+有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Cloud Sync 服务概述"^]
 
-. 单击*进入工作环境*以查看有关Azure Blob中Azure存储帐户的详细信息。
+. 选择*进入工作环境*可查看有关Azure Blob中Azure存储帐户的详细信息。
 +
 image:screenshot-azure-blob-details.png["显示Azure Blob工作环境详细信息的屏幕截图：存储帐户总数、位置总数、资源组、总容量和已用容量等。"]
 

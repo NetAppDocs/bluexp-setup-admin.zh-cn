@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
-keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, tiering, data tiering, account for data tiering, account for tiering, project, projects, add project, select new project, gcp project, google project, google cloud project 
-summary: 通过服务帐户、BlueXP可以部署和管理与Connector位于同一项目或不同项目中的Cloud Volumes ONTAP 系统。 
+keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
+summary: 您应了解BlueXP如何使用Google Cloud凭据和权限、以便管理一个或多个Google Cloud项目的凭据。 
 ---
 = Google Cloud 项目，权限和帐户
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 通过服务帐户、BlueXP可以部署和管理与Connector位于同�
 
 
 [role="lead"]
-通过服务帐户、BlueXP可以部署和管理与Connector位于同一项目或不同项目中的Cloud Volumes ONTAP 系统。
+您应了解BlueXP如何使用Google Cloud凭据和权限、以便管理一个或多个Google Cloud项目的凭据。
 
 
 
 == BlueXP的项目和权限
 
-在 Google Cloud 中部署 Cloud Volumes ONTAP 之前，必须先在 Google Cloud 项目中部署 Connector 。Connector 不能在您的内部环境或其他云提供商中运行。
+在使用BlueXP管理Google Cloud项目中的资源之前、必须先部署Connector。Connector 不能在您的内部环境或其他云提供商中运行。
 
 在直接从BlueXP部署Connector之前、必须具有两组权限：
 
@@ -28,11 +28,16 @@ summary: 通过服务帐户、BlueXP可以部署和管理与Connector位于同�
 . 部署 Connector 时，系统会提示您选择 https://cloud.google.com/iam/docs/service-accounts["服务帐户"^] VM 实例。BlueXP可从服务帐户获得代表您创建和管理Cloud Volumes ONTAP 系统的权限。权限可通过将自定义角色附加到服务帐户来提供。
 
 
-我们设置了两个 YAML 文件，其中包括用户和服务帐户所需的权限。 link:task-creating-connectors-gcp.html["了解如何使用 YAML 文件设置权限"]。
-
 下图显示了上面编号 1 和 2 中所述的权限要求：
 
 image:diagram_permissions_gcp.png["一个概念映像、用于描述用于部署Cloud Volumes ONTAP 的Google和服务帐户的权限要求。"]
+
+要了解如何设置权限、请参见以下页面：
+
+* link:task-set-up-permissions-google.html["为标准模式设置Google Cloud权限"]
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["为受限模式设置云权限"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["为私有模式设置云权限"]
+
 
 
 
@@ -41,5 +46,5 @@ image:diagram_permissions_gcp.png["一个概念映像、用于描述用于部署
 Cloud Volumes ONTAP 可以与 Connector 位于同一项目中，也可以位于不同项目中。要在其他项目中部署 Cloud Volumes ONTAP ，您需要先将 Connector 服务帐户和角色添加到该项目中。
 
 * link:task-creating-connectors-gcp.html#setting-up-gcp-permissions-to-create-a-connector["了解如何设置服务帐户"]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["了解如何在 GCP 中部署 Cloud Volumes ONTAP 并选择项目"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["了解如何在Google Cloud中部署Cloud Volumes ONTAP 并选择项目"^]
 

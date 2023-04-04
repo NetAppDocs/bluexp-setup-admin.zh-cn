@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-connector-azure.html 
+keywords: quick start, connector quick start, azure quick start 
+summary: 通过选择安装选项、设置网络连接、准备权限等在Azure中创建Connector。 
+---
+= 快速开始在Azure中创建Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+通过选择安装选项、设置网络连接、准备权限等在Azure中创建Connector。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 了解您的安装选项
+[role="quick-margin-para"]
+在Azure中创建Connector的标准方式直接来自BlueXP、但您也可以从Azure Marketplace创建它、或者也可以在已有的Linux主机上手动安装此软件。
+
+[role="quick-margin-para"]
+link:concept-install-options-azure.html["了解有关安装选项的更多信息"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 设置网络
+[role="quick-margin-para"]
+为连接器准备以下内容：
+
+[role="quick-margin-list"]
+* vNet和子网
+* 与您计划创建和管理工作环境的网络的网络连接
+* 对特定端点的出站Internet访问、用于日常操作
+* 如果出站Internet需要代理服务器、则为代理服务器提供IP地址、凭据和HTTPS证书
+
+
+[role="quick-margin-para"]
+link:task-set-up-networking-azure.html["详细了解网络要求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 查看主机要求
+[role="quick-margin-para"]
+连接器软件必须在满足特定要求的主机上运行。如果您计划在自己的Linux主机上手动安装Connector软件、则应确保主机满足这些要求。如果您要从BlueXP或Azure Marketplace创建Connector、则会注意这些要求、因为软件是从映像部署的。
+
+[role="quick-margin-para"]
+主要要求如下：
+
+[role="quick-margin-list"]
+* 运行CentOS或Red Hat Enterprise Linux的专用主机
+* 4 个 CPU
+* 14 GB RAM
+* Docker 引擎
+
+
+[role="quick-margin-para"]
+link:reference-host-requirements-azure.html["详细了解这些主机要求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 设置Azure权限
+[role="quick-margin-para"]
+为计划使用的安装选项设置Azure权限：
+
+[role="quick-margin-list"]
+* *从BlueXp*安装：创建自定义角色、然后将其应用于您的Azure帐户或Azure AD服务主体。BlueXP使用Azure进行身份验证、并使用这些权限代表您创建Connector实例。
+* *从Azure Marketplace安装*：创建可与Connector VM实例或Azure AD服务主体关联的自定义角色。
+* *手动安装*：创建可与Connector VM实例或Azure AD服务主体关联的自定义角色。
+
+
+[role="quick-margin-para"]
+link:task-set-up-permissions-azure.html["按照每个选项的分步说明进行操作"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五个"] 创建Connector
+[role="quick-margin-para"]
+使用以下可用安装选项之一创建Connector：
+
+[role="quick-margin-list"]
+* *从BlueX*：单击Connector下拉列表、选择*添加连接器*并按照提示进行操作。
+* *从Azure Marketplace *：转到 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Azure Marketplace中的NetApp Connector VM页面"^] 并按照提示创建Connector VM。
+* *手动安装*：从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"] 并运行安装脚本。
+
+
+[role="quick-margin-para"]
+link:task-install-connector-azure.html["按照每个选项的分步说明进行操作"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六个"] 为BlueXP提供权限
+[role="quick-margin-para"]
+如果您从Azure Marketplace创建了Connector或手动安装了软件、则需要为BlueXP提供先前设置的权限。
+
+[role="quick-margin-para"]
+link:task-provide-permissions-azure.html["按照分步说明进行操作"]。

@@ -4,7 +4,7 @@ permalink: task-installing-https-cert.html
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
 summary: 默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS访问。您可以安装由证书颁发机构（ CA ）签名的证书、该证书提供比自签名证书更好的安全保护。 
 ---
-= 管理 HTTPS 证书以实现安全访问
+= 安装HTTPS证书以确保安全访问
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -29,7 +29,7 @@ summary: 默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS
 安装由 CA 签名的证书以确保安全访问。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择* HTTPS设置*。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择* HTTPS设置*。
 +
 image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
@@ -41,7 +41,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 
 
 | 生成 CSR  a| 
-.. 输入 Connector 主机的主机名或 DNS （其公用名），然后单击 * 生成 CSR* 。
+.. 输入Connector主机的主机名或DNS (其公用名)、然后选择*生成CSR*。
 +
 BlueXP将显示证书签名请求。
 
@@ -49,14 +49,14 @@ BlueXP将显示证书签名请求。
 +
 证书必须使用 Privacy Enhanced Mail （ PEM ） Base － 64 编码的 X.509 格式。
 
-.. 上传证书文件，然后单击 * 安装 * 。
+.. 上传证书文件、然后选择*安装*。
 
 
 
 
 | 安装您自己的 CA 签名证书  a| 
 .. 选择 * 安装 CA 签名证书 * 。
-.. 加载证书文件和私钥，然后单击 * 安装 * 。
+.. 加载证书文件和私钥、然后选择*安装*。
 +
 证书必须使用 Privacy Enhanced Mail （ PEM ） Base － 64 编码的 X.509 格式。
 
@@ -77,11 +77,11 @@ image:screenshot_https_cert.gif["屏幕截图：在安装签名证书后显示 H
 您应在BlueXP HTTPS证书到期之前续订该证书、以确保对BlueXP控制台的安全访问。如果您未在证书过期之前续订证书、则在用户使用HTTPS访问Web控制台时会显示一条警告。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择* HTTPS设置*。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择* HTTPS设置*。
 +
 此时将显示有关BlueXP证书的详细信息、包括到期日期。
 
-. 单击 * 更改证书 * ，然后按照以下步骤生成 CSR 或安装您自己的 CA 签名证书。
+. 选择*更改证书*、然后按照以下步骤生成CSR或安装您自己的CA签名证书。
 
 
 .结果

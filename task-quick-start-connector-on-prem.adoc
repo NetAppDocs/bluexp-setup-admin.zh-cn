@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-connector-on-prem.html 
+keywords: quick start, connector quick start, on prem quick start 
+summary: 通过设置网络、准备主机、准备云权限等在内部创建Connector。 
+---
+= 快速开始在内部创建Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+通过设置网络、准备主机、准备云权限等在内部创建Connector。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 设置网络
+[role="quick-margin-para"]
+为连接器准备以下内容：
+
+[role="quick-margin-list"]
+* 计划安装Connector的网络位置
+* 与您计划创建和管理工作环境的网络的网络连接
+* 对特定端点的出站Internet访问、用于日常操作
+* 如果出站Internet需要代理服务器、则为代理服务器提供IP地址、凭据和HTTPS证书
+
+
+[role="quick-margin-para"]
+link:task-set-up-networking-on-prem.html["详细了解网络要求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 查看主机要求
+[role="quick-margin-para"]
+连接器软件必须在满足特定要求的主机上运行。主要要求如下：
+
+[role="quick-margin-list"]
+* 运行CentOS或Red Hat Enterprise Linux的专用主机
+* 4 个 CPU
+* 14 GB RAM
+* Docker 引擎
+
+
+[role="quick-margin-para"]
+link:reference-host-requirements-on-prem.html["详细了解这些主机要求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 设置云权限
+[role="quick-margin-para"]
+为云提供商设置权限、以便使用BlueXP管理云中的存储：
+
+[role="quick-margin-list"]
+* * AWS *：创建IAM策略并将此策略附加到IAM用户。安装后、您需要为BlueXP提供该IAM用户的访问密钥。
+* * Azure *：在Azure Active Directory中设置包含所需权限的服务主体。安装后、您需要为BlueXP提供服务主体的凭据。
+
+
+[role="quick-margin-para"]
+如果在您的内部环境中安装了Connector、则它无法在Google Cloud中管理存储或数据。必须在Google Cloud中安装Connector、才能管理驻留在该处的任何存储或数据。
+
+[role="quick-margin-para"]
+link:task-set-up-permissions-on-prem.html["按照每个选项的分步说明进行操作"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 安装Connector软件
+[role="quick-margin-para"]
+从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"] 并运行安装脚本。
+
+[role="quick-margin-para"]
+link:task-install-connector-on-prem.html["按照分步说明进行操作"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五个"] 为BlueXP提供权限
+[role="quick-margin-para"]
+安装并设置Connector后、您需要添加云凭据、以便BlueXP具有在AWS或Azure中执行操作所需的权限。
+
+[role="quick-margin-para"]
+link:task-provide-permissions-on-prem.html["按照分步说明进行操作"]。

@@ -1,0 +1,133 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-networking-on-prem.html 
+keywords: networking, on prem networking, endpoints, urls, ports, ip address, proxy, proxy server, connections 
+summary: 设置您的网络、以便Connector可以管理混合云环境中的资源和流程。 
+---
+= 设置内部网络
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+设置您的网络、以便Connector可以管理混合云环境中的资源和流程。
+
+
+
+== 连接到目标网络
+
+Connector需要与您要创建的工作环境类型以及计划启用的服务建立网络连接。
+
+例如、如果要在云中启动Cloud Volumes ONTAP 、则必须设置从企业网络到要启动Cloud Volumes ONTAP 的虚拟网络的VPN连接。
+
+
+
+== 出站 Internet 访问
+
+部署 Connector 的网络位置必须具有出站 Internet 连接。
+
+
+
+=== 在手动安装期间访问的端点
+
+在您自己的Linux主机上手动安装Connector时、Connector安装程序需要在安装过程中访问以下URL：
+
+* https://support.netapp.com
+* https://mysupport.netapp.com
+* https://cloudmanager.cloud.netapp.com/tenancy
+* https://stream.cloudmanager.cloud.netapp.com
+* https://cloudmanagerinfraprod.azurecr.io
+* https://production-artifacts.cloudmanager.cloud.netapp.com
+* https://*.blob.core.windows.net
+
+
+主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。
+
+
+
+=== 联系端点进行日常操作
+
+连接器需要通过出站 Internet 访问来联系以下端点，以便管理公有云环境中的资源和流程。
+
+[cols="2*"]
+|===
+| 端点 | 目的 
+
+
+ a| 
+AWS 服务（ AmazonAWS.com ）：
+
+* 云形成
+* 弹性计算云（ EC2 ）
+* 身份和访问管理(IAM)
+* 密钥管理服务（ KMS ）
+* 安全令牌服务（ STS ）
+* 简单存储服务 (S3)
+
+| 管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^] 
+
+
+| https://management.azure.com https://login.microsoftonline.com | 管理Azure公共区域中的资源。 
+
+
+| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | 管理Azure中国地区的资源。 
+
+
+| https://www.googleapis.com/compute/v1/\https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 在Google Cloud中管理资源。 
+
+
+| https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
+
+
+ a| 
+https://*.api.bluexp.netapp.com
+
+https://api.bluexp.netapp.com
+
+https://*.cloudmanager.cloud.netapp.com
+
+https://cloudmanager.cloud.netapp.com
+ a| 
+在BlueXP中提供SaaS功能和服务。
+
+
+NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。
+
+
+
+| https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
+|===
+.相关链接
+link:reference-networking-saas-console.html["为用户访问BlueXP控制台准备网络连接"]
+
+
+
+== 代理服务器
+
+如果您的组织要求为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息：
+
+* IP 地址
+* 凭据
+* HTTPS证书
+
+
+
+
+== 端口
+
+没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。
+
+* 通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。
+* 只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。
+* 如果您在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。
+
+
+
+
+== IP地址限制
+
+可能与172范围内的IP地址冲突。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["了解有关此限制的更多信息"]。

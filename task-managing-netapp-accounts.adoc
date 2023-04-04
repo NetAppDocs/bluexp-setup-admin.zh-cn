@@ -4,7 +4,7 @@ permalink: task-managing-netapp-accounts.html
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, member, remove user, remove users, remove, delete, account, user account, user accounts, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector, service account 
 summary: 执行初始设置后、您可以稍后通过管理用户、服务帐户、工作空间和连接器来管理帐户设置。 
 ---
-= 管理您的 NetApp 帐户
+= 管理您的BlueXP帐户
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 执行初始设置后、您可以稍后通过管理用户、服务帐�
 
 
 [role="lead"]
-link:task-setting-up-netapp-accounts.html["执行初始设置后"]、您可以稍后通过管理用户、服务帐户、工作空间和连接器来管理帐户设置。
+您可以通过管理用户、服务帐户、工作空间和连接器来管理您的帐户。
 
-link:concept-netapp-accounts.html["详细了解 NetApp 客户的工作原理"]。
+link:concept-netapp-accounts.html["详细了解BlueXP帐户的工作原理"]。
 
 
 
-== 使用租户 API 管理您的帐户
+== 使用租户API管理您的帐户
 
 如果要通过发送 API 请求来管理帐户设置，则需要使用 _租 户 API 。此API与用于创建和管理Cloud Volumes ONTAP 工作环境的BlueXP API不同。
 
@@ -30,38 +30,37 @@ https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["�
 
 == 创建和管理用户
 
-您帐户中的用户可以访问管理帐户工作空间中的资源。
+您帐户中的用户可以访问和管理特定工作空间中的资源。
 
 
 
 === 添加用户
 
-将用户与您的NetApp帐户关联、以便这些用户可以在BlueXP中创建和管理工作环境。
+将用户与您的BlueXP帐户关联、以便这些用户可以在BlueXP中创建和管理工作环境。
 
 .步骤
-. 如果用户尚未执行此操作，请让用户转到 https://cloud.netapp.com["NetApp BlueXP网站"^] 并注册。
-. 从BlueXP顶部、单击*帐户*下拉列表。
+. 如果用户尚未执行此操作，请让用户转到 https://bluexp.netapp.com/["NetApp BlueXP网站"^] 并注册。
+. 从BlueXP顶部、选择*帐户*下拉列表。
 +
 image:screenshot-account-settings-menu.png["一个屏幕截图、显示了BlueXP顶部横幅中的Account Settings选项。"]
 
-. 单击当前选定帐户旁边的 * 管理帐户 * 。
+. 选择当前选定帐户旁边的*管理帐户*。
 +
 image:screenshot-manage-account-settings.png["显示 \" 帐户 \" 下拉列表中的 \" 管理帐户设置 \" 选项的屏幕截图。"]
 
-. 在成员选项卡中，单击 * 关联用户 * 。
+. 从成员选项卡中、选择*关联用户*。
 . 输入用户的电子邮件地址并为用户选择一个角色：
 +
 ** *帐户管理员*：可以在BlueXP中执行任何操作。
 ** * 工作空间管理员 * ：可以在分配的工作空间中创建和管理资源。
 ** * 合规性查看器 * ：只能查看 Cloud Data sense 合规性信息，并为其有权访问的工作空间生成报告。
-** * SnapCenter Admin* ：可以使用 SnapCenter 服务创建应用程序一致的备份并使用这些备份还原数据。_ 此服务当前处于测试阶段。 _
 
 
 . 如果选择了 Workspace Admin 或 Compliance Viewer ，请选择一个或多个要与该用户关联的工作空间。
 +
 image:screenshot_associate_user.gif["屏幕截图显示了如何通过选择角色和关联工作空间来关联用户。"]
 
-. 单击 * 关联 * 。
+. 选择*关联*。
 
 
 .结果
@@ -71,22 +70,22 @@ image:screenshot_associate_user.gif["屏幕截图显示了如何通过选择角�
 
 === 删除用户
 
-解除用户关联后，用户将无法再访问 NetApp 帐户中的资源。
+解除用户关联后、用户将无法再访问BlueXP帐户中的资源。
 
 .步骤
-. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
+. 从BlueXP顶部、选择*帐户*下拉列表并选择*管理帐户*。
 +
 image:screenshot-manage-account-settings.png["显示 \" 帐户 \" 下拉列表中的 \" 管理帐户设置 \" 选项的屏幕截图。"]
 
-. 在成员选项卡中，单击与用户对应的行中的操作菜单。
+. 从成员选项卡中、选择与用户对应的行中的操作菜单。
 +
 image:screenshot_associate_user_workspace.png["屏幕截图，显示将鼠标悬停在 Users 表中用户名上方时可用的操作菜单。"]
 
-. 单击 * 解除关联用户 * ，然后单击 * 解除关联 * 进行确认。
+. 选择*解除关联用户*并选择*解除关联*进行确认。
 
 
 .结果
-用户无法再访问此 NetApp 帐户中的资源。
+用户无法再访问此BlueXP帐户中的资源。
 
 
 
@@ -95,16 +94,16 @@ image:screenshot_associate_user_workspace.png["屏幕截图，显示将鼠标悬
 您可以随时将 Workspace Admins 与工作空间关联和解除关联。通过关联用户，用户可以在该工作空间中创建和查看工作环境。
 
 .步骤
-. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
+. 从BlueXP顶部、选择*帐户*下拉列表并选择*管理帐户*。
 +
 image:screenshot-manage-account-settings.png["显示 \" 帐户 \" 下拉列表中的 \" 管理帐户设置 \" 选项的屏幕截图。"]
 
-. 在成员选项卡中，单击与用户对应的行中的操作菜单。
+. 从成员选项卡中、选择与用户对应的行中的操作菜单。
 +
 image:screenshot_associate_user_workspace.png["屏幕截图，显示将鼠标悬停在 Users 表中用户名上方时可用的操作菜单。"]
 
-. 单击 * 管理工作空间 * 。
-. 选择要与用户关联的工作空间，然后单击 * 应用 * 。
+. 选择*管理工作空间*。
+. 选择要与用户关联的工作空间、然后选择*应用*。
 
 
 .结果
@@ -127,22 +126,22 @@ image:screenshot_associate_user_workspace.png["屏幕截图，显示将鼠标悬
 根据需要创建尽可能多的服务帐户来管理工作环境中的资源。
 
 .步骤
-. 从BlueXP顶部、单击*帐户*下拉列表。
+. 从BlueXP顶部、选择*帐户*下拉列表。
 +
 image:screenshot-account-settings-menu.png["一个屏幕截图、显示了BlueXP顶部横幅中的Account Settings选项。"]
 
-. 单击当前选定帐户旁边的 * 管理帐户 * 。
+. 选择当前选定帐户旁边的*管理帐户*。
 +
 image:screenshot-manage-account-settings.png["显示 \" 帐户 \" 下拉列表中的 \" 管理帐户设置 \" 选项的屏幕截图。"]
 
-. 在成员选项卡中，单击 * 创建服务帐户 * 。
+. 从成员选项卡中、选择*创建服务帐户*。
 . 输入名称并选择角色。如果您选择的角色不是帐户管理员，请选择要与此服务帐户关联的工作空间。
-. 单击 * 创建 * 。
+. 选择 * 创建 * 。
 . 复制或下载客户端 ID 和客户端密钥。
 +
 客户端密钥只能显示一次、不会由BlueXP存储在任何位置。复制或下载密钥并将其安全存储。
 
-. 单击 * 关闭 * 。
+. 选择 * 关闭 * 。
 
 
 
@@ -155,37 +154,37 @@ https://docs.netapp.com/us-en/cloud-manager-automation/platform/create_service_t
 
 
 
-=== 正在复制客户端 ID
+=== 复制客户端ID
 
 您可以随时复制服务帐户的客户端 ID 。
 
 .步骤
-. 在成员选项卡中，单击与服务帐户对应的行中的操作菜单。
+. 从成员选项卡中、选择与服务帐户对应的行中的操作菜单。
 +
 image:screenshot_service_account_actions.gif["屏幕截图，显示将鼠标悬停在 Users 表中用户名上方时可用的操作菜单。"]
 
-. 单击 * 客户端 ID* 。
+. 选择*客户端ID*。
 . 此 ID 将复制到剪贴板。
 
 
 
 
-=== 正在重新创建密钥
+=== 重新创建密钥
 
 重新创建此密钥将删除此服务帐户的现有密钥，然后创建新密钥。您将无法使用上一个密钥。
 
 .步骤
-. 在成员选项卡中，单击与服务帐户对应的行中的操作菜单。
+. 从成员选项卡中、选择与服务帐户对应的行中的操作菜单。
 +
 image:screenshot_service_account_actions.gif["屏幕截图，显示将鼠标悬停在 Users 表中用户名上方时可用的操作菜单。"]
 
-. 单击 * 重新创建密钥 * 。
-. 单击 * 重新创建 * 进行确认。
+. 选择*重新创建密钥*。
+. 选择*重新创建*进行确认。
 . 复制或下载客户端 ID 和客户端密钥。
 +
 客户端密钥只能显示一次、不会由BlueXP存储在任何位置。复制或下载密钥并将其安全存储。
 
-. 单击 * 关闭 * 。
+. 选择 * 关闭 * 。
 
 
 
@@ -195,12 +194,12 @@ image:screenshot_service_account_actions.gif["屏幕截图，显示将鼠标悬�
 如果不再需要使用某个服务帐户，请将其删除。
 
 .步骤
-. 在成员选项卡中，单击与服务帐户对应的行中的操作菜单。
+. 从成员选项卡中、选择与服务帐户对应的行中的操作菜单。
 +
 image:screenshot_service_account_actions.gif["屏幕截图，显示将鼠标悬停在 Users 表中用户名上方时可用的操作菜单。"]
 
-. 单击 * 删除 * 。
-. 再次单击 * 删除 * 进行确认。
+. 选择 * 删除 * 。
+. 再次选择*删除*进行确认。
 
 
 
@@ -210,13 +209,13 @@ image:screenshot_service_account_actions.gif["屏幕截图，显示将鼠标悬�
 通过创建，重命名和删除工作空间来管理工作空间。请注意，如果某个工作空间包含任何资源，则无法将其删除。必须为空。
 
 .步骤
-. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
-. 单击 * 工作空间 * 。
+. 从BlueXP顶部、选择*帐户*下拉列表并选择*管理帐户*。
+. 选择*工作空间*。
 . 选择以下选项之一：
 +
-** 单击 * 添加新工作空间 * 以创建新工作空间。
-** 单击 * 重命名 * 以重命名工作空间。
-** 单击 * 删除 * 以删除此工作空间。
+** 选择*添加新工作空间*以创建新工作空间。
+** 选择*重命名*以重命名工作空间。
+** 选择*删除*以删除此工作空间。
 
 
 
@@ -232,34 +231,34 @@ image:screenshot_service_account_actions.gif["屏幕截图，显示将鼠标悬�
 link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["详细了解用户，工作空间和连接器"]。
 
 .步骤
-. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
-. 单击 * 连接器 * 。
-. 单击要关联的 Connector 的 * 管理工作空间 * 。
-. 选择要与 Connector 关联的工作空间，然后单击 * 应用 * 。
+. 从BlueXP顶部、选择*帐户*下拉列表并选择*管理帐户*。
+. 选择*连接器*。
+. 为要关联的连接器选择*管理工作空间*。
+. 选择要与Connector关联的工作空间、然后选择*应用*。
 
 
 
 
-== 更改帐户名称
+== 更改您的帐户名称
 
-随时更改您的帐户名称，将其更改为对您有意义的名称。
+随时更改您的帐户名称、将其更改为对您有意义的名称。
 
 .步骤
-. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
-. 在 * 概述 * 选项卡中，单击帐户名称旁边的编辑图标。
-. 键入新帐户名称并单击 * 保存 * 。
+. 从BlueXP顶部、选择*帐户*下拉列表并选择*管理帐户*。
+. 在*概述*选项卡中、选择帐户名称旁边的编辑图标。
+. 键入新帐户名称并选择*保存*。
 
 
 
 
 == 允许私有预览
 
-允许在您的帐户中进行私有预览、以访问在BlueXP中预览的新NetApp云服务。
+允许在您的帐户中进行私有预览、以访问在BlueXP中预览的新服务。
 
 私有预览中的服务无法保证按预期运行，并且可能会持续中断并缺少功能。
 
 .步骤
-. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
+. 从BlueXP顶部、选择*帐户*下拉列表并选择*管理帐户*。
 . 在 * 概述 * 选项卡中，启用 * 允许私有预览 * 设置。
 
 
@@ -270,6 +269,6 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["详�
 允许您帐户中的第三方服务访问BlueXP中提供的第三方服务。第三方服务是指与 NetApp 提供的服务类似的云服务，但它们由第三方公司管理和支持。
 
 .步骤
-. 从BlueXP顶部、单击*帐户*下拉列表、然后单击*管理帐户*。
+. 从BlueXP顶部、选择*帐户*下拉列表并选择*管理帐户*。
 . 在 * 概述 * 选项卡中，启用 * 允许第三方服务 * 设置。
 

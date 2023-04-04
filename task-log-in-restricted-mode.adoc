@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task-log-in-restricted-mode.html 
+keywords: logging in, log in, sign in, signing in, restricted mode, restricted mode log in, local log in, connector log in, log in connector 
+summary: 在受限模式下使用BlueXP时、您需要从Connector本地运行的用户界面登录到BlueXP控制台。 
+---
+= 登录到BlueXP (受限模式)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在受限模式下使用BlueXP时、您需要从Connector本地运行的用户界面登录到BlueXP控制台。
+
+.登录选项
+当您的帐户设置为受限模式时、BlueXP支持使用以下选项之一登录：
+
+* 使用您的电子邮件地址和密码登录NetApp云
+* 联合连接
++
+您可以使用单点登录使用公司目录中的凭据（联合身份）登录。 link:concept-federation.html["了解如何在BlueXP中使用身份联合"]。
+
+
+
+.步骤
+. 打开 Web 浏览器并输入以下 URL ：
++
+https://_ipaddress_[]
+
++
+_ipaddress_可以是localhost、专用IP地址或公共IP地址、具体取决于安装Connector的主机的配置。例如、您可能需要输入与Connector主机连接的主机的专用IP地址。
+
+. 输入您的用户名和密码以登录。
+
+
+.结果
+您现在已登录、可以开始使用BlueXP管理混合多云基础架构。

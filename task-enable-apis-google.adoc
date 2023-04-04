@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: task-enable-apis-google.html 
+keywords: aws networking, networking, connector networking, ports, proxy server, outbound internet, endpoints, urls, permissions, cloud permission, aws permissions, iam role, keys, aws keys, aws marketplace, marketplace install, manuall install, connector installer 
+summary: 在AWS中部署Connector、以便BlueXP可以管理公共云环境中的资源和流程。 
+---
+= 启用 Google Cloud API
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要在Google Cloud中部署Connector和Cloud Volumes ONTAP 、需要使用多个API。
+
+.步骤
+. 在项目中启用以下Google Cloud API：
++
+** Cloud Deployment Manager V2 API
+** 云日志记录 API
+** Cloud Resource Manager API
+** 计算引擎 API
+** 身份和访问管理（ IAM ） API
+
+
+
+
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud文档：启用API"^]

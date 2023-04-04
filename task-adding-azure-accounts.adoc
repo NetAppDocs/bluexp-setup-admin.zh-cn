@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-azure-accounts.html 
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
-summary: '创建 Cloud Volumes ONTAP 系统时，您需要选择要用于该系统的 Azure 凭据和 Marketplace 订阅。如果您管理多个 Azure Marketplace 订阅，则可以从 " 凭据 " 页面将其中每个订阅分配给不同的 Azure 凭据。' 
+summary: '添加和管理Azure凭据、以便BlueXP拥有在Azure订阅中部署和管理云资源所需的权限。如果您管理多个 Azure Marketplace 订阅，则可以从 " 凭据 " 页面将其中每个订阅分配给不同的 Azure 凭据。' 
 ---
 = 管理BlueXP的Azure凭据和订阅
 :hardbreaks:
@@ -14,7 +14,13 @@ summary: '创建 Cloud Volumes ONTAP 系统时，您需要选择要用于该系�
 
 
 [role="lead"]
-创建 Cloud Volumes ONTAP 系统时，您需要选择要用于该系统的 Azure 凭据。如果您使用的是按需购买许可，则还需要选择 Marketplace 订阅。如果您需要使用多个 Azure 凭据或多个适用于 Cloud Volumes ONTAP 的 Azure Marketplace 订阅，请按照此页面上的步骤进行操作。
+添加和管理Azure凭据、以便BlueXP拥有在Azure订阅中部署和管理云资源所需的权限。如果您管理多个 Azure Marketplace 订阅，则可以从 " 凭据 " 页面将其中每个订阅分配给不同的 Azure 凭据。
+
+如果您需要使用多个 Azure 凭据或多个适用于 Cloud Volumes ONTAP 的 Azure Marketplace 订阅，请按照此页面上的步骤进行操作。
+
+
+
+== 概述
 
 可以通过两种方式在BlueXP中添加其他Azure订阅和凭据。
 
@@ -24,7 +30,7 @@ summary: '创建 Cloud Volumes ONTAP 系统时，您需要选择要用于该系�
 
 
 
-== 将其他 Azure 订阅与受管身份关联
+== 将其他Azure订阅与托管身份关联
 
 通过BlueXP、您可以选择要在其中部署Cloud Volumes ONTAP 的Azure凭据和Azure订阅。除非关联，否则您无法为托管身份配置文件选择其他 Azure 订阅 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["托管身份"^] 这些订阅。
 
@@ -34,9 +40,9 @@ summary: '创建 Cloud Volumes ONTAP 系统时，您需要选择要用于该系�
 .步骤
 . 登录 Azure 门户。
 . 打开 * 订阅 * 服务，然后选择要部署 Cloud Volumes ONTAP 的订阅。
-. 单击 * 访问控制（ IAM ） * 。
+. 选择*访问控制(IAM)*。
 +
-.. 单击 * 添加 * > * 添加角色分配 * ，然后添加权限：
+.. 选择*添加*>*添加角色分配*、然后添加权限：
 +
 *** 选择* BlueXP操作员*角色。
 +
@@ -46,7 +52,7 @@ NOTE: BlueXP操作员是Connector策略中提供的默认名称。如果您为�
 *** 分配对 * 虚拟机 * 的访问权限。
 *** 选择创建 Connector 虚拟机的订阅。
 *** 选择 Connector 虚拟机。
-*** 单击 * 保存 * 。
+*** 选择 * 保存 * 。
 
 
 
@@ -72,7 +78,7 @@ TIP: 如果在现有系统上手动安装 Connector 软件，则不会添加一�
 
 
 
-=== 使用服务主体授予 Azure 权限
+=== 使用服务主体授予Azure权限
 
 BlueXP需要在Azure中执行操作的权限。您可以通过在Azure Active Directory中创建和设置服务主体以及获取BlueXP所需的Azure凭据来为Azure帐户授予所需权限。
 
@@ -82,11 +88,11 @@ BlueXP需要在Azure中执行操作的权限。您可以通过在Azure Active Di
 image:diagram_azure_authentication.png["概念映像、显示BlueXP在进行API调用之前从Azure Active Directory获取身份验证和授权。在Active Directory中、BlueXP角色定义权限。它与一个或多个 Azure 订阅以及一个表示 Cloud Manger 应用程序的服务主体对象相关联。"]
 
 .步骤
-. <<创建 Azure Active Directory 应用程序,创建 Azure Active Directory 应用程序>>。
-. <<将应用程序分配给角色,将应用程序分配给角色>>。
-. <<添加 Windows Azure 服务管理 API 权限,添加 Windows Azure 服务管理 API 权限>>。
-. <<获取应用程序 ID 和目录 ID,获取应用程序 ID 和目录 ID>>。
-. <<创建客户端密钥,创建客户端密钥>>。
+. <<创建 Azure Active Directory 应用程序>>。
+. <<将应用程序分配给角色>>。
+. <<添加 Windows Azure 服务管理 API 权限>>。
+. <<获取应用程序 ID 和目录 ID>>。
+. <<创建客户端密钥>>。
 
 
 
@@ -103,8 +109,8 @@ image:diagram_azure_authentication.png["概念映像、显示BlueXP在进行API�
 +
 image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory 服务。"]
 
-. 在菜单中，单击 * 应用程序注册 * 。
-. 单击 * 新建注册 * 。
+. 在菜单中、选择*应用程序注册*。
+. 选择*新建注册*。
 . 指定有关应用程序的详细信息：
 +
 ** * 名称 * ：输入应用程序的名称。
@@ -112,7 +118,7 @@ image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory
 ** * 重定向 URI* ：可以将此字段留空。
 
 
-. 单击 * 注册 * 。
+. 选择 * 注册 * 。
 
 
 .结果
@@ -170,12 +176,12 @@ az role definition create --role-definition Connector_Policy.json
 +
 .. 从 Azure 门户中，打开 * 订阅 * 服务。
 .. 选择订阅。
-.. 单击 * 访问控制（ IAM ） > 添加 > 添加角色分配 * 。
-.. 在*角色*选项卡中、选择* BlueXP操作员*角色、然后单击*下一步*。
+.. 选择*访问控制(IAM)>添加>添加角色分配*。
+.. 在*角色*选项卡中、选择* BlueXP操作员*角色、然后选择*下一步*。
 .. 在 * 成员 * 选项卡中，完成以下步骤：
 +
 *** 保持选中 * 用户，组或服务主体 * 。
-*** 单击 * 选择成员 * 。
+*** 选择*选择成员*。
 +
 image:screenshot-azure-service-principal-role.png["Azure 门户的屏幕截图，显示向应用程序添加角色时的成员选项卡。"]
 
@@ -186,11 +192,11 @@ image:screenshot-azure-service-principal-role.png["Azure 门户的屏幕截图�
 +
 image:screenshot_azure_service_principal_role.png["Azure 门户的屏幕截图，其中显示了 Azure 门户中的添加角色分配表。"]
 
-*** 选择应用程序并单击 * 选择 * 。
-*** 单击 * 下一步 * 。
+*** 选择应用程序并选择*选择*。
+*** 选择 * 下一步 * 。
 
 
-.. 单击 * 审核 + 分配 * 。
+.. 选择*审核+分配*。
 +
 现在，服务主体具有部署 Connector 所需的 Azure 权限。
 
@@ -208,13 +214,13 @@ image:screenshot_azure_service_principal_role.png["Azure 门户的屏幕截图�
 服务主体必须具有 "Windows Azure 服务管理 API" 权限。
 
 .步骤
-. 在 * Azure Active Directory* 服务中，单击 * 应用程序注册 * 并选择应用程序。
-. 单击 * API 权限 > 添加权限 * 。
+. 在* Azure Active Directory*服务中、选择*应用程序注册*并选择应用程序。
+. 选择* API权限>添加权限*。
 . 在 * Microsoft APIs* 下，选择 * Azure Service Management* 。
 +
 image:screenshot_azure_service_mgmt_apis.gif["Azure 门户的屏幕截图，其中显示了 Azure 服务管理 API 权限。"]
 
-. 单击 * 以组织用户身份访问 Azure 服务管理 * ，然后单击 * 添加权限 * 。
+. 选择*以组织用户身份访问Azure服务管理*、然后选择*添加权限*。
 +
 image:screenshot_azure_service_mgmt_apis_add.gif["Azure 门户的屏幕截图，显示如何添加 Azure 服务管理 API 。"]
 
@@ -227,7 +233,7 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure 门户的屏幕截图，
 将Azure帐户添加到BlueXP时、您需要提供应用程序(客户端) ID和目录(租户) ID。BlueXP使用ID以编程方式登录。
 
 .步骤
-. 在 * Azure Active Directory* 服务中，单击 * 应用程序注册 * 并选择应用程序。
+. 在* Azure Active Directory*服务中、选择*应用程序注册*并选择应用程序。
 . 复制 * 应用程序（客户端） ID* 和 * 目录（租户） ID* 。
 +
 image:screenshot_azure_app_ids.gif["显示 Azure Active Directory 中某个应用程序的应用程序（客户端） ID 和目录（租户） ID 的屏幕截图。"]
@@ -242,10 +248,10 @@ image:screenshot_azure_app_ids.gif["显示 Azure Active Directory 中某个应�
 
 .步骤
 . 打开 * Azure Active Directory* 服务。
-. 单击 * 应用程序注册 * 并选择您的应用程序。
-. 单击 * 证书和密码 > 新客户端密钥 * 。
+. 选择*应用程序注册*并选择您的应用程序。
+. 选择*证书和机密>新客户端机密*。
 . 提供密钥和持续时间的问题描述。
-. 单击 * 添加 * 。
+. 选择 * 添加 * 。
 . 复制客户端密钥的值。
 +
 image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中显示了 Azure AD 服务主体的客户端密钥。"]
@@ -268,11 +274,11 @@ image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中�
 您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
 +
 image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
-. 在*帐户凭据*页面上、单击*添加凭据*、然后按照向导中的步骤进行操作。
+. 在*帐户凭据*页面上、选择*添加凭据*、然后按照向导中的步骤进行操作。
 +
 .. * 凭据位置 * ：选择 * Microsoft Azure > Connector* 。
 .. * 定义凭据 * ：输入有关授予所需权限的 Azure Active Directory 服务主体的信息：
@@ -286,7 +292,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 +
 要按每小时费率（ PAYGO ）购买 Cloud Volumes ONTAP ，这些 Azure 凭据必须与 Azure Marketplace 中的订阅相关联。
 
-.. * 查看 * ：确认有关新凭据的详细信息，然后单击 * 添加 * 。
+.. *查看*：确认有关新凭据的详细信息、然后选择*添加*。
 
 
 
@@ -294,7 +300,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 .结果
 现在，您可以从 " 详细信息和凭据 " 页面切换到不同的凭据集 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["创建新的工作环境时"^]
 
-image:screenshot_accounts_switch_azure.gif["一个屏幕截图，显示在单击 Details  ； Credentials 页面中的 Edit Credentials 后在凭据之间进行选择的情况。"]
+image:screenshot_accounts_switch_azure.gif["屏幕截图、显示在详细信息和amp；凭据页面中选择编辑凭据后在凭据之间进行选择的情况。"]
 
 
 
@@ -304,9 +310,9 @@ image:screenshot_accounts_switch_azure.gif["一个屏幕截图，显示在单击
 
 
 
-=== 将 Azure Marketplace 订阅与凭据关联
+=== 将Azure Marketplace订阅与凭据关联
 
-将Azure凭据添加到BlueXP后、您可以将Azure Marketplace订阅与这些凭据相关联。通过订阅，您可以创建按需购买的 Cloud Volumes ONTAP 系统并使用其他 NetApp 云服务。
+将Azure凭据添加到BlueXP后、您可以将Azure Marketplace订阅与这些凭据相关联。通过订阅、您可以创建按需购买的Cloud Volumes ONTAP 系统并使用其他BlueXP服务。
 
 在以下两种情况下、您可能会在将凭据添加到BlueXP后关联Azure Marketplace订阅：
 
@@ -318,24 +324,24 @@ image:screenshot_accounts_switch_azure.gif["一个屏幕截图，显示在单击
 您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*关联订阅*。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+. 在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*关联订阅*。
 +
 image:screenshot_azure_add_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
 
-. 要将凭据与现有订阅关联、请从下拉列表中选择此订阅、然后单击*关联*。
-. 要将凭据与新订阅关联、请单击*添加订阅>继续*、然后按照Azure Marketplace中的步骤进行操作：
+. 要将凭据与现有订阅关联、请从下拉列表中选择此订阅、然后选择*关联*。
+. 要将凭据与新订阅关联、请选择*添加订阅>继续*、然后按照Azure Marketplace中的步骤进行操作：
 +
 .. 如果出现提示、请登录到您的Azure帐户。
-.. 单击 * 订阅 * 。
-.. 填写表单并单击*订阅*。
-.. 订阅过程完成后、单击*立即配置帐户*。
+.. 选择*订阅*。
+.. 填写表单并选择*订阅*。
+.. 订阅过程完成后、选择*立即配置帐户*。
 +
 您将重定向到BlueXP网站。
 
 .. 在*订阅分配*页面中：
 +
-*** 选择要与此订阅关联的NetApp帐户。
+*** 选择要与此订阅关联的BlueXP帐户。
 *** 在*替换现有订阅*字段中、选择是否要将一个帐户的现有订阅自动替换为此新订阅。
 +
 此新订阅将取代帐户中所有凭据的现有订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。
@@ -343,7 +349,7 @@ image:screenshot_azure_add_subscription.png["一组现有凭据的操作菜单�
 +
 对于所有其他帐户、您需要重复上述步骤来手动关联订阅。
 
-*** 单击 * 保存 * 。
+*** 选择 * 保存 * 。
 +
 以下视频显示了从Azure Marketplace订阅的步骤：
 
@@ -362,19 +368,19 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 通过修改Azure服务凭据的详细信息、在BlueXP中编辑Azure凭据。例如，如果为服务主体应用程序创建了新密钥，则可能需要更新客户端密钥。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*编辑凭据*。
-. 进行所需的更改，然后单击 * 应用 * 。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+. 在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*编辑凭据*。
+. 进行所需更改、然后选择*应用*。
 
 
 
 
-=== 正在删除凭据
+=== 删除凭据
 
 如果您不再需要一组凭据、可以从BlueXP中删除这些凭据。您只能删除与工作环境无关的凭据。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*删除凭据*。
-. 单击 * 删除 * 进行确认。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+. 在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*删除凭据*。
+. 选择*删除*进行确认。
 

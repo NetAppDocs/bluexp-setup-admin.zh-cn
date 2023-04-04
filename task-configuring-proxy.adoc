@@ -28,31 +28,20 @@ BlueXP支持HTTP和HTTPS。代理服务器可以位于云中或网络中。
 
 在将 Connector 配置为使用代理服务器时，该连接器及其管理的 Cloud Volumes ONTAP 系统（包括任何 HA 调解器）都会使用代理服务器。
 
-请注意，此操作将重新启动 Connector 。继续操作前，请确保 Connector 未执行任何操作。
+请注意，此操作将重新启动 Connector 。在继续操作之前、请确保Connector未执行任何操作。
 
 .步骤
-. link:task-logging-in.html["登录到BlueXP SaaS界面"^] 从已通过网络连接到 Connector 实例的计算机。
-+
-如果此连接器没有公有 IP 地址，您需要 VPN 连接，或者您需要从与此连接器位于同一网络的跳转主机进行连接。
-
-. 单击 * 连接器 * 下拉列表，然后单击 * 转到特定连接器的本地 UID* 。
-+
-image:screenshot_connector_local_ui.gif["标题中显示 Connector 图标和 Go to Local UI 操作的屏幕截图。"]
-
-+
-在Connector上运行的BlueXP界面将加载到新的浏览器选项卡中。
-
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*连接器设置*。
 +
 image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
-. 在 * 常规 * 下，单击 * HTTP 代理配置 * 。
+. 在*常规*下、选择* HTTP代理配置*。
 . 设置代理：
 +
-.. 单击 * 启用代理 * 。
+.. 选择*启用代理*。
 .. 使用语法指定服务器 http://_address:port_[] 或 https://_address:port_[]
 .. 如果服务器需要基本身份验证，请指定用户名和密码
-.. 单击 * 保存 * 。
+.. 选择 * 保存 * 。
 +
 
 NOTE: BlueXP不支持包含@字符的密码。
@@ -69,13 +58,13 @@ NOTE: BlueXP不支持包含@字符的密码。
 
 如果您禁用了在Cloud Volumes ONTAP 中使用Azure专用链路、而是使用服务端点、则必须启用直接API流量。否则、流量将无法正确路由。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["了解有关将Azure专用链路或服务端点与Cloud Volumes ONTAP 结合使用的更多信息"]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["了解有关将Azure专用链路或服务端点与Cloud Volumes ONTAP 结合使用的更多信息"^]
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*连接器设置*。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*连接器设置*。
 +
 image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
-. 在 * 常规 * 下，单击 * 支持直接 API 流量 * 。
-. 单击复选框以启用此选项，然后单击 * 保存 * 。
+. 在*常规*下、选择*支持直接API流量*。
+. 选中此复选框以启用此选项、然后选择*保存*。
 

@@ -4,7 +4,7 @@ permalink: task-finding-system-id.html
 keywords: system id, id, BlueXP system id, connector system id 
 summary: 为了帮助您入门， NetApp 代表可能会要求您提供 Connector 的系统 ID 。此 ID 通常用于许可和故障排除目的。 
 ---
-= 查找连接器的系统 ID
+= 查找 Connector 的系统 ID
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -17,8 +17,8 @@ summary: 为了帮助您入门， NetApp 代表可能会要求您提供 Connecto
 为了帮助您入门， NetApp 代表可能会要求您提供 Connector 的系统 ID 。此 ID 通常用于许可和故障排除目的。
 
 .步骤
-. 在BlueXP控制台的右上角、单击帮助图标。
-. 单击 * 支持 > 连接器 * 。
+. 在BlueXP控制台的右上角、选择帮助图标。
+. 选择*支持>连接器*。
 +
 系统 ID 显示在顶部。
 

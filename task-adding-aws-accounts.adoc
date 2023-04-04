@@ -14,7 +14,7 @@ summary: 添加和管理AWS凭据、以便BlueXP拥有在AWS帐户中部署和�
 
 
 [role="lead"]
-添加和管理AWS凭据、以便BlueXP拥有在AWS帐户中部署和管理云资源所需的权限。如果您管理多个 AWS 订阅，则可以从凭据页面将其中每个订阅分配给不同的 AWS 凭据。
+添加和管理AWS凭据、以便BlueXP拥有在AWS帐户中部署和管理云资源所需的权限。如果您管理多个AWS Marketplace订阅、则可以从"凭据"页面将其中每个订阅分配给不同的AWS凭据。
 
 
 
@@ -24,7 +24,7 @@ summary: 添加和管理AWS凭据、以便BlueXP拥有在AWS帐户中部署和�
 
 * 向现有Connector添加其他AWS凭据
 +
-将AWS凭据添加到现有连接器可提供在公有 云环境中管理资源和进程所需的权限。 <<向 Connector 添加凭据,了解如何将 AWS 凭据添加到 Connector>>。
+将AWS凭据添加到现有连接器可提供在公有 云环境中管理资源和进程所需的权限。 <<Add credentials to a Connector,了解如何将 AWS 凭据添加到 Connector>>。
 
 * 将AWS凭据添加到BlueXP以创建Connector
 +
@@ -48,9 +48,11 @@ summary: 添加和管理AWS凭据、以便BlueXP拥有在AWS帐户中部署和�
 
 
 
-== 向 Connector 添加凭据
+== 向Connector添加其他凭据
 
-将AWS凭据添加到Connector、以便其拥有在公有 云环境中管理资源和流程所需的权限。您可以在其他帐户中提供 IAM 角色的 ARN ，也可以提供 AWS 访问密钥。
+将其他AWS凭据添加到Connector、以便其拥有管理公共云环境中的资源和流程所需的权限。您可以在其他帐户中提供 IAM 角色的 ARN ，也可以提供 AWS 访问密钥。
+
+如果您刚刚开始使用BlueXP、 link:concept-accounts-aws.html["了解BlueXP如何使用AWS凭据和权限"]。
 
 
 
@@ -77,7 +79,7 @@ NOTE: 如果您从BlueXP部署了Connector、则BlueXP会自动为部署此Conne
 
 .步骤
 . 转到要为Connector提供权限的目标帐户中的IAM控制台。
-. 在访问管理下，单击 * 角色 > 创建角色 * ，然后按照步骤创建角色。
+. 在访问管理下、选择*角色>创建角色*、然后按照步骤创建角色。
 +
 请务必执行以下操作：
 
@@ -128,11 +130,11 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AW
 
 .步骤
 . 确保当前在BlueXP中选择了正确的Connector。
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
 +
 image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
-. 在*帐户凭据*页面上、单击*添加凭据*、然后按照向导中的步骤进行操作。
+. 在*帐户凭据*页面上、选择*添加凭据*、然后按照向导中的步骤进行操作。
 +
 .. * 凭据位置 * ：选择 * Amazon Web Services > Connector* 。
 .. * 定义凭据 * ：提供可信 IAM 角色的 ARN （ Amazon 资源名称），或者输入 AWS 访问密钥和机密密钥。
@@ -140,7 +142,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 +
 要按每小时费率（ PAYGO ）或按年度合同支付 Cloud Volumes ONTAP 费用， AWS 凭据必须与 AWS Marketplace 中的 Cloud Volumes ONTAP 订阅相关联。
 
-.. * 查看 * ：确认有关新凭据的详细信息，然后单击 * 添加 * 。
+.. *查看*：确认有关新凭据的详细信息、然后选择*添加*。
 
 
 
@@ -148,7 +150,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 .结果
 现在，在创建新的工作环境时，您可以从 " 详细信息和凭据 " 页面切换到另一组凭据：
 
-image:screenshot_accounts_switch_aws.png["单击详细信息和 amp ；凭据页面中的切换帐户后，显示在云提供商帐户之间进行选择的屏幕截图。"]
+image:screenshot_accounts_switch_aws.png["屏幕截图、显示在详细信息和amp；凭据页面中选择切换帐户后在云提供商帐户之间进行选择的情况。"]
 
 
 
@@ -160,11 +162,11 @@ image:screenshot_accounts_switch_aws.png["单击详细信息和 amp ；凭据页
 
 === 设置 IAM 角色
 
-设置一个IAM角色、使BlueXP SaaS能够承担此角色。
+设置一个IAM角色、使BlueXP SaaS层能够承担此角色。
 
 .步骤
 . 转到目标帐户中的 IAM 控制台。
-. 在访问管理下，单击 * 角色 > 创建角色 * ，然后按照步骤创建角色。
+. 在访问管理下、选择*角色>创建角色*、然后按照步骤创建角色。
 +
 请务必执行以下操作：
 
@@ -174,7 +176,7 @@ image:screenshot_accounts_switch_aws.png["单击详细信息和 amp ；凭据页
 ** 创建包含创建Connector所需权限的策略。
 +
 *** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["查看适用于 ONTAP 的 FSX 所需的权限"^]
-*** link:task-creating-connectors-aws.html#create-an-iam-policy["查看连接器部署策略"]
+*** link:task-set-up-permissions-aws.html["查看连接器部署策略"]
 
 
 
@@ -195,15 +197,15 @@ IAM 角色现在具有所需的权限。 <<add-the-credentials-2,现在、您可
 如果您刚刚创建了 IAM 角色，则可能需要几分钟的时间，直到这些角色可用为止。请等待几分钟、然后再将凭据添加到BlueXP。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
 +
 image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
-. 在*帐户凭据*页面上、单击*添加凭据*、然后按照向导中的步骤进行操作。
+. 在*帐户凭据*页面上、选择*添加凭据*、然后按照向导中的步骤进行操作。
 +
 .. *凭据位置*：选择* Amazon Web Services > BlueX*。
 .. * 定义凭据 * ：提供 IAM 角色的 ARN （ Amazon 资源名称）。
-.. * 查看 * ：确认有关新凭据的详细信息，然后单击 * 添加 * 。
+.. *查看*：确认有关新凭据的详细信息、然后选择*添加*。
 
 
 
@@ -213,9 +215,15 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 
 
 
+== 向BlueXP for Amazon FSX for ONTAP 添加凭据
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["适用于ONTAP 的Amazon FSX的BlueXP文档"^]
+
+
+
 == 关联 AWS 订阅
 
-将AWS凭据添加到BlueXP后、您可以将AWS Marketplace订阅与这些凭据相关联。通过订阅，您可以按每小时费率（ PAYGO ）或使用年度合同为 Cloud Volumes ONTAP 付费，并使用其他 NetApp 云服务。
+将AWS凭据添加到BlueXP后、您可以将AWS Marketplace订阅与这些凭据相关联。通过订阅、您可以按每小时费率(PAYGO)或使用年度合同为Cloud Volumes ONTAP 付费、并使用其他BlueXP服务。
 
 在以下两种情况下、您可能会在将凭据添加到BlueXP后关联AWS Marketplace订阅：
 
@@ -227,23 +235,23 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何创建 Connector"]。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*关联订阅*。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+. 在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*关联订阅*。
 +
 image:screenshot_associate_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
 
-. 要将凭据与现有订阅关联、请从下拉列表中选择此订阅、然后单击*关联*。
-. 要将凭据与新订阅关联、请单击*添加订阅>继续*、然后按照AWS Marketplace中的步骤进行操作：
+. 要将凭据与现有订阅关联、请从下拉列表中选择此订阅、然后选择*关联*。
+. 要将凭据与新订阅关联、请选择*添加订阅>继续*、然后按照AWS Marketplace中的步骤进行操作：
 +
-.. 单击*查看购买选项*。
-.. 单击 * 订阅 * 。
-.. 单击*设置您的帐户*。
+.. 选择*查看购买选项*。
+.. 选择*订阅*。
+.. 选择*设置您的帐户*。
 +
 您将重定向到BlueXP网站。
 
 .. 在*订阅分配*页面中：
 +
-*** 选择要与此订阅关联的NetApp帐户。
+*** 选择要与此订阅关联的BlueXP帐户。
 *** 在*替换现有订阅*字段中、选择是否要将一个帐户的现有订阅自动替换为此新订阅。
 +
 此新订阅将取代帐户中所有凭据的现有订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。
@@ -251,7 +259,7 @@ image:screenshot_associate_subscription.png["一组现有凭据的操作菜单�
 +
 对于所有其他帐户、您需要重复上述步骤来手动关联订阅。
 
-*** 单击 * 保存 * 。
+*** 选择 * 保存 * 。
 +
 以下视频显示了从Google Cloud Marketplace订阅的步骤：
 
@@ -273,14 +281,14 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 TIP: 您不能编辑与 Connector 实例关联的实例配置文件的凭据。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*编辑凭据*。
-. 进行所需的更改，然后单击 * 应用 * 。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+. 在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*编辑凭据*。
+. 进行所需更改、然后选择*应用*。
 
 
 
 
-== 正在删除凭据
+== 删除凭据
 
 如果您不再需要一组凭据、可以从BlueXP中删除这些凭据。您只能删除与工作环境无关的凭据。
 
@@ -288,7 +296,7 @@ TIP: 您不能编辑与 Connector 实例关联的实例配置文件的凭据。
 TIP: 您不能删除与 Connector 实例关联的实例配置文件的凭据。
 
 .步骤
-. 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
-. 在*帐户凭据*页面上、单击一组凭据的操作菜单、然后选择*删除凭据*。
-. 单击 * 删除 * 进行确认。
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+. 在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*删除凭据*。
+. 选择*删除*进行确认。
 

@@ -1,0 +1,405 @@
+---
+sidebar: sidebar 
+permalink: concept-modes.html 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region 
+summary: BlueXP提供了多种部署模式、使您能够以满足业务和安全要求的方式使用BlueXP。标准模式可利用BlueXP SaaS层提供完整功能、而受限模式和专用模式可供具有连接限制的组织使用。 
+---
+= BlueXP部署模式
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP提供了多种部署模式_、使您能够以满足业务和安全要求的方式使用BlueXP。_Standard mode"利用BlueXP SaaS层提供完整功能、而_restricted mode"和_private mode"则可供具有连接限制的组织使用。
+
+虽然在使用受限模式或私有模式时、BlueXP会禁止流量、通信和数据的流动、但您有责任确保您的环境(内部环境和云环境)符合要求的法规。
+
+
+
+== 概述
+
+BlueXP为您的帐户提供了以下部署模式。每个模式在出站连接要求、部署位置、安装过程、身份验证方法、可用数据和存储服务以及收费方法方面都有所不同。
+
+标准模式:: 用户可以从基于Web的控制台以云服务的形式访问BlueXP。根据您计划使用的BlueXP服务、BlueXP管理员会创建一个或多个连接器来管理混合云环境中的数据。
++
+--
+此模式使用通过公共Internet进行加密数据传输。
+
+--
+受限模式:: BlueXP Connector安装在云中(在政府区域、主权云区域或商业区域)、并且与BlueXP SaaS层的出站连接有限。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
++
+--
+此模式通常由州和地方政府以及受监管公司使用。
+
+<<受限模式,详细了解与SaaS层的出站连接>>。
+
+--
+私有模式:: BlueXP Connector安装在内部或云(在安全区域、主权云区域或商业区域)中、并且与BlueXP SaaS层具有_no_连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
++
+--
+安全区域包括 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S和SC2S"^] 和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
+
+--
+
+
+下表对这些模式进行了比较。
+
+[cols="16h,28,28,28"]
+|===
+|  | 标准模式 | 受限模式 | 私有模式 
+
+
+| 是否需要连接到BlueXP SaaS层？ | 是的。 | 仅出站 | 否 
+
+
+| 是否需要连接到您的云提供商？ | 是的。 | 是、在区域内 | 是、在区域内(如果使用Cloud Volumes ONTAP) 
+
+
+| 连接器安装 | 从BlueXP、云市场或手动安装 | 云市场或手动安装 | 手动安装 
+
+
+| 连接器升级 | 自动升级NetApp Connector软件 | 自动升级NetApp Connector软件 | 需要手动升级 
+
+
+| UI访问 | 从BlueXP SaaS层 | 从Connector VM本地访问 | 从Connector VM本地访问 
+
+
+| API endpoint | BlueXP SaaS层 | BlueXP SaaS层 | 连接器 
+
+
+| 身份验证 | 通过SaaS使用auth0、NSS登录或身份联合 | 通过SaaS使用auth0或身份联合 | 本地用户身份验证 
+
+
+| 存储和数据服务 | 支持所有这些功能 | 支持许多 | 支持多个 
+
+
+| 许可选项 | Marketplace订阅和BYOL | Marketplace订阅和BYOL | BYOL 
+|===
+通读以下各节、了解有关这些模式的更多信息、包括支持哪些BlueXP功能和服务。
+
+
+
+== 标准模式
+
+下图显示了标准模式部署的示例。
+
+image:diagram-standard-mode.png["一个概念映像、用于显示可使用基于Web的控制台、SaaS层和auth0身份验证的公共互联网、一个运行Connector的云中的虚拟网络、以及在内部数据中心中管理Cloud Volumes ONTAP 和AFF 集群。"]
+
+BlueXP在标准模式下的工作原理如下：
+
+出站通信:: 需要从Connector连接到BlueXP SaaS层、云提供商的公共可用资源以及日常运营所需的其他基本组件。
++
+--
+* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Connector在AWS中联系的端点"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Connector在Azure中联系的端点"]
+* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Connector在Google Cloud中联系的端点"]
+
+
+--
+支持的连接器位置:: 在标准模式下、云或内部环境支持Connector。
+连接器安装:: 可以通过BlueXP中的设置向导、AWS或Azure Marketplace或使用安装程序在数据中心或云中您自己的Linux主机上手动安装Connector。
+连接器升级:: 您可以从BlueXP自动升级Connector软件、每月更新一次。
+用户界面访问:: 用户界面可从通过SaaS层提供的基于Web的控制台访问。
+API endpoint:: API调用会调用以下端点：\https://cloudmanager.cloud.netapp.com
+身份验证:: 身份验证通过使用auth0或NetApp 支持站点 (NSS)登录的BlueXP云服务提供。身份联合可用。
+支持的BlueXP服务:: 所有BlueXP服务均可供用户使用。
+支持的许可选项:: 标准模式支持Marketplace订阅和BYOL；但是、支持的许可选项取决于您正在使用的BlueXP服务。查看每个服务的文档、了解有关可用许可选项的更多信息。
+如何开始使用标准模式:: 转至 https://console.bluexp.netapp.com["基于Web的BlueXP控制台"^] 并注册。
++
+--
+link:task-quick-start-standard-mode.html["了解如何开始使用标准模式"]。
+
+--
+
+
+
+
+== 受限模式
+
+下图显示了受限模式部署的示例。
+
+image:diagram-restricted-mode.png["一个概念映像、用于显示可用SaaS层和auth0身份验证的公共互联网、运行Connector并提供对基于Web的控制台的访问的云中的虚拟网络、以及在内部数据中心管理Cloud Volumes ONTAP 和AFF 集群。"]
+
+BlueXP在受限模式下的工作原理如下：
+
+出站通信:: 要使用BlueXP数据服务、启用Connector的自动软件升级、使用基于auth0的身份验证以及发送元数据以进行收费(Storage VM名称、已分配容量以及卷UUID、类型和IOPS)、需要从Connector到BlueXP SaaS层的出站连接。
++
+--
+BlueXP SaaS层不会启动与连接器的通信。所有通信均由Connector启动、它可以根据需要从SaaS层提取或推送到SaaS层。
+
+此外、还需要从区域内连接到云提供商资源。
+
+--
+支持的连接器位置:: 在受限模式下、云支持Connector：在政府区域、主权区域或商业区域。
+连接器安装:: 可以从AWS或Azure Marketplace安装连接器、也可以在您自己的Linux主机上手动安装连接器。
+连接器升级:: 您可以从BlueXP自动升级Connector软件、每月更新一次。
+用户界面访问:: 用户界面可从云区域中部署的Connector进行访问。
+API endpoint:: API调用会调用以下端点：\https://cloudmanager.cloud.netapp.com
+身份验证:: 身份验证通过使用auth0的BlueXP云服务提供。此外、还可以使用身份联合。
+支持的BlueXP服务:: 在受限模式下、BlueXP支持以下存储和数据服务：
++
+--
+[cols="2*"]
+|===
+| 支持的服务 | 注释： 
+
+
+| 适用于 ONTAP 的 Amazon FSX | 完全支持 
+
+
+| Azure NetApp Files | 完全支持 
+
+
+| 云备份 | 受限模式的政府区域和商业区域支持。受限模式的主权区域不支持。不支持以下功能：应用程序、虚拟机和Kubernetes。 
+
+
+| 云数据感知  a| 
+受限模式的政府区域支持。在商业区域或受限模式的主权区域不支持。
+
+存在以下限制：
+
+* 无法扫描OneDrive帐户、SharePoint帐户和Google Drive帐户。
+* 无法集成Microsoft Azure信息保护(AIP)标签功能。
+
+
+
+
+| Cloud Volumes ONTAP | 完全支持 
+
+
+| 数字电子钱包 | 对于受限模式、您可以将数字电子钱包与下面列出的受支持许可选项结合使用。 
+
+
+| 内部 ONTAP 集群 | 同时支持使用连接器进行发现和不使用连接器进行发现(直接发现)。如果您发现使用Connector的内部集群、则不支持高级视图(System Manager)。 
+
+
+| Replication | 受限模式的政府区域支持。在商业区域或受限模式的主权区域不支持。 
+|===
+--
+支持的许可选项:: 受限模式支持以下许可选项：
++
+--
+* 市场订阅(每小时和每年的合同)
++
+请注意以下事项：
+
++
+** 对于Cloud Volumes ONTAP 、仅支持基于容量的许可。
+** 在Azure中、政府区域不支持年度合同。
+
+
+* BYOL
++
+对于Cloud Volumes ONTAP 、BYOL既支持基于容量的许可、也支持基于节点的许可。
+
+
+
+--
+如何开始使用受限模式:: 创建BlueXP帐户时、您需要启用受限模式。
++
+--
+如果您还没有帐户、则在首次从手动安装的连接器或从云提供商的市场创建的连接器登录到BlueXP时、系统将提示您创建帐户并启用受限模式。
+
+如果您已有帐户、但要创建另一个帐户、则需要使用租户API。
+
+请注意、在BlueXP创建帐户后、您无法更改受限模式设置。您不能稍后启用受限模式、也不能稍后禁用它。必须在创建帐户时进行设置。
+
+* link:task-quick-start-restricted-mode.html["了解如何开始使用受限模式"]。
+* link:task-create-account.html["了解如何创建其他BlueXP帐户"]。
+
+
+--
+
+
+
+
+== 私有模式
+
+在私有模式下、您可以在内部或云中安装Connector、然后使用BlueXP管理混合云中的数据。无法连接到BlueXP SaaS层。
+
+下图显示了一个私有模式部署示例、其中、Connector安装在云中、并同时管理Cloud Volumes ONTAP 和内部ONTAP 集群。
+
+image:diagram-private-mode-cloud.png["一个概念图像、显示了运行Connector并提供对基于Web的控制台的访问权限的云中的虚拟网络、以及在内部数据中心中管理Cloud Volumes ONTAP 和AFF 集群。"]
+
+同时、第二张图显示了一个专用模式部署示例、其中、Connector安装在内部、管理内部ONTAP 集群并提供对受支持的BlueXP数据服务的访问。
+
+image:diagram-private-mode-onprem.png["一个概念图像、显示了一个内部数据中心、其中运行了一个Connector、并提供了对基于Web的控制台和BlueXP数据服务的访问权限、同时管理了内部数据中心中的AFF 集群。"]
+
+BlueXP在专用模式下的工作原理如下：
+
+出站通信:: 不需要出站连接。所有软件包、依赖项和基本组件均随Connector打包、并从本地计算机提供服务。只有在部署Cloud Volumes ONTAP 时、才需要连接到云提供商的公共可用资源。
+支持的连接器位置:: 在私有模式下、云或内部支持Connector。
+连接器安装:: 您自己的Linux主机支持在云端或内部环境中手动安装Connector。
+连接器升级:: 您需要手动升级Connector软件。连接器软件会按未定义的时间间隔发布到NetApp 支持站点。
+用户界面访问:: 用户界面可从部署在云区域或内部环境中的Connector进行访问。
+API endpoint:: API调用会调用Connector虚拟机。
+身份验证:: 身份验证通过本地用户管理和访问来提供。不通过BlueXP的云服务提供身份验证。
+在云部署中支持的BlueXP服务:: 在云中安装Connector时、BlueXP支持以下私有模式的存储和数据服务：
++
+--
+[cols="2*"]
+|===
+| 支持的服务 | 注释： 
+
+
+| 云备份 | 在AWS和Azure商业区域中受支持。在Google Cloud或中不受支持 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] 或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+
+
+| Cloud Volumes ONTAP | 由于无法访问Internet、因此无法使用以下功能：自动软件升级、AutoSupport 和AWS成本信息。 
+
+
+| 数字电子钱包 | 您可以将数字电子钱包与下面列出的受支持许可选项一起用于私有模式。 
+
+
+| 内部 ONTAP 集群 | 需要从安装了连接器的云连接到内部环境。不支持不使用连接器(直接发现)进行发现。 
+|===
+--
+在内部部署中支持的BlueXP服务:: 如果您的内部安装了Connector、则BlueXP支持以下私有模式存储和数据服务：
++
+--
+[cols="2*"]
+|===
+| 支持的服务 | 注释： 
+
+
+| 云备份 | 仅支持将内部ONTAP 卷备份和还原到StorageGRID 系统。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["了解如何将内部ONTAP 数据备份到StorageGRID"^] 
+
+
+| 云数据感知  a| 
+* 唯一支持的数据源是您可以在本地发现的数据源。
++
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["查看可在本地发现的源"^]
+
+* 不支持需要出站Internet访问的功能。
++
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations["查看功能限制"^]
+
+
+
+
+
+| 数字电子钱包 | 您可以将数字电子钱包与下面列出的受支持许可选项一起用于私有模式。 
+
+
+| 内部 ONTAP 集群 | 不支持不使用连接器(直接发现)进行发现。 
+
+
+| Replication | 完全支持 
+|===
+--
+支持的许可选项:: 专用模式仅支持BYOL。
++
+--
+对于Cloud Volumes ONTAP BYOL、仅支持基于节点的许可。不支持基于容量的许可。由于出站Internet连接不可用、您需要在数字电子钱包中手动上传Cloud Volumes ONTAP 许可文件。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["了解如何向数字电子钱包添加许可证"^]
+
+--
+如何开始使用专用模式:: 可通过从NetApp 支持站点 下载"脱机"安装程序来访问私有模式。
++
+--
+link:task-quick-start-private-mode.html["了解如何开始使用私有模式"]。
+
+--
+
+
+
+
+== 服务和功能比较
+
+下表可帮助您快速确定受限模式和专用模式支持的BlueXP服务和功能。
+
+请注意、某些服务可能受支持、但有一些限制。有关在受限模式和专用模式下如何支持这些服务的详细信息、请参阅上述部分。
+
+[cols="33h,33,33"]
+|===
+| BlueXP服务或功能 | 受限模式 | 私有模式 
+
+
+| 适用于 ONTAP 的 Amazon FSX | 是的。 | 否 
+
+
+| Amazon S3 | 否 | 否 
+
+
+| 应用程序模板 | 否 | 否 
+
+
+| Azure Blob | 否 | 否 
+
+
+| Azure NetApp Files | 是的。 | 否 
+
+
+| 云备份 | 是的。 | 是的。 
+
+
+| 云数据感知 | 是的。 | 是的。 
+
+
+| Cloud Sync | 否 | 否 
+
+
+| 云分层 | 否 | 否 
+
+
+| Cloud Volumes ONTAP | 是的。 | 是的。 
+
+
+| 适用于 Google Cloud 的 Cloud Volumes Service | 否 | 否 
+
+
+| 计算 | 否 | 否 
+
+
+| Digital Advisor | 否 | 否 
+
+
+| 数字电子钱包 | 是的。 | 是的。 
+
+
+| E 系列 | 否 | 否 
+
+
+| 经济效率 | 否 | 否 
+
+
+| 全局文件缓存 | 否 | 否 
+
+
+| Google Cloud 存储 | 否 | 否 
+
+
+| Kubernetes 集群 | 否 | 否 
+
+
+| 内部 ONTAP 集群 | 是的。 | 是的。 
+
+
+| 运营故障恢复能力 | 否 | 否 
+
+
+| 勒索软件保护 | 否 | 否 
+
+
+| Replication | 是的。 | 是的。 
+
+
+| StorageGRID | 否 | 否 
+
+
+| 凭据 | 是的。 | 是的。 
+
+
+| NSS帐户 | 是的。 | 否 
+
+
+| 通知 | 是的。 | 否 
+
+
+| 时间线 | 是的。 | 是的。 
+|===

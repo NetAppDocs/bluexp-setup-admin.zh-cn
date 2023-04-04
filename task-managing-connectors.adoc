@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-connectors.html 
-keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, go to local UI, local interface, local connector, local cloud manager 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager 
 summary: 创建一个或多个连接器后，您可以通过在连接器之间切换，连接到在连接器上运行的本地用户界面等方式来管理这些连接器。 
 ---
 = 管理现有连接器
@@ -14,7 +14,19 @@ summary: 创建一个或多个连接器后，您可以通过在连接器之间�
 
 
 [role="lead"]
-创建一个或多个连接器后，您可以通过在连接器之间切换，连接到在连接器上运行的本地用户界面等方式来管理这些连接器。
+创建一个或多个连接器后、您可以通过在连接器之间切换、升级软件等方式来管理这些连接器。
+
+
+
+== 操作系统和VM维护
+
+您应负责维护Connector主机上的操作系统。例如、您应按照公司的操作系统分发标准过程对Connector主机上的操作系统应用安全更新。
+
+请注意、在运行操作系统更新时、您无需停止Connector主机上的任何服务。
+
+如果您需要先停止并启动Connector VM、则应从云提供商的控制台或使用内部管理的标准过程来执行此操作。
+
+link:concept-connectors.html#connectors-must-be-operational-at-all-times["请注意、连接器必须始终正常运行"]。
 
 
 
@@ -25,31 +37,14 @@ summary: 创建一个或多个连接器后，您可以通过在连接器之间�
 例如，假设您正在多云环境中工作。您可能在 AWS 中有一个连接器，在 Google Cloud 中有另一个连接器。您需要在这些连接器之间进行切换，以管理在这些云中运行的 Cloud Volumes ONTAP 系统。
 
 .步骤
-. 单击 * 连接器 * 下拉列表，选择另一个连接器，然后单击 * 交换机 * 。
+. 选择*连接器*下拉列表、选择另一个连接器、然后选择*交换机*。
 +
 image:screenshot_connector_switch.gif["标题中显示 Connector 图标和 Switch 操作的屏幕截图。"]
 
-+
+
+
+.结果
 BlueXP将刷新并显示与选定连接器关联的工作环境。
-
-
-
-
-
-== 访问本地 UI
-
-虽然您应该从 SaaS 用户界面执行几乎所有任务，但连接器上仍提供本地用户界面。如果您要从政府区域或无法访问出站Internet的站点访问BlueXP、则需要使用Connector上运行的本地用户界面。
-
-.步骤
-. 打开 Web 浏览器并输入以下 URL ：
-+
-https://_ipaddress_[]
-
-+
-_ipaddress_ 可以是 localhost ，专用 IP 地址或公有 IP 地址，具体取决于主机的配置。例如，如果连接器位于公有云中且没有公有 IP 地址，则必须输入与连接器主机连接的主机的专用 IP 地址。
-
-. 输入您的用户名和密码以登录。
-
 
 
 
@@ -58,20 +53,19 @@ _ipaddress_ 可以是 localhost ，专用 IP 地址或公有 IP 地址，具体�
 如果您遇到问题， NetApp 人员可能会要求您向 NetApp 支持发送 AutoSupport 消息以进行故障排除。
 
 .步骤
-. 连接到连接器本地 UI ，如上一节所述。
-. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
+. 在BlueXP控制台的右上角、选择帮助图标、然后选择*支持*。
 +
 image:screenshot-help-support.png["帮助菜单的屏幕截图，其中列出的第一个选项为支持"]
 
-. 单击 * 连接器 * 。
+. 选择* BlueXP Connector*。
 . 根据向 NetApp 支持部门发送信息的方式，选择以下选项之一：
 +
 .. 选择选项以将 AutoSupport 消息下载到本地计算机。然后，您可以使用首选方法将其发送给 NetApp 支持部门。
-.. 单击 * 发送 NetApp* 以直接将消息发送给 AutoSupport 支持。
+.. 选择*发送NetApp*以直接将消息发送到AutoSupport 支持。
 
 
 +
-image:screenshot-connector-autosupport.png["支持信息板的屏幕截图、显示用户可以单击此处下载和发送AutoSupport 消息。"]
+image:screenshot-connector-autosupport.png["支持信息板的屏幕截图、显示用户可选择下载和发送AutoSupport 消息的位置。"]
 
 
 
@@ -81,135 +75,36 @@ image:screenshot-connector-autosupport.png["支持信息板的屏幕截图、显
 
 如果您需要连接到运行 Connector 的 Linux VM ，可以使用云提供商提供的连接选项来执行此操作。
 
-
-
-=== AWS
-
-在 AWS 中创建 Connector 实例时，您提供了 AWS 访问密钥和机密密钥。您可以使用此密钥对通过 SSH 连接到实例。
-
+AWS:: 在 AWS 中创建 Connector 实例时，您提供了 AWS 访问密钥和机密密钥。您可以使用此密钥对通过 SSH 连接到实例。
++
+--
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS 文档：连接到 Linux 实例"^]
 
-
-
-=== Azure 酒店
-
-在 Azure 中创建 Connector VM 时，您选择使用密码或 SSH 公有 密钥进行身份验证。使用您选择的身份验证方法连接到虚拟机。
-
+--
+Azure 酒店:: 在 Azure 中创建 Connector VM 时，您选择使用密码或 SSH 公有 密钥进行身份验证。使用您选择的身份验证方法连接到虚拟机。
++
+--
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure 文档：通过 SSH 连接到虚拟机"^]
 
-
-
-=== Google Cloud
-
-在 Google Cloud 中创建 Connector 时，无法指定身份验证方法。但是，您可以使用 Google Cloud Console 或 Google Cloud CLI （ gcloud ）连接到 Linux VM 实例。
-
+--
+Google Cloud:: 在 Google Cloud 中创建 Connector 时，无法指定身份验证方法。但是，您可以使用 Google Cloud Console 或 Google Cloud CLI （ gcloud ）连接到 Linux VM 实例。
++
+--
 https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs ：连接到 Linux VM"^]
 
-
-
-== 应用安全更新
-
-在 Connector 上更新操作系统，以确保使用最新的安全更新对其进行修补。
-
-.步骤
-. 访问 Connector 主机上的命令行界面 Shell 。
-. 确定主机上是否存在以下目录：
-+
-/opt/application/netapp/service-manager-2.
-
-+
-2022年下半年之后创建的连接器应包含此目录。
-
-. 根据该目录是否存在、运行命令以更新操作系统：
-+
-** 如果此目录存在、请使用提升的权限运行以下命令：
-+
-[source, cli]
-----
-sudo -s
-service netapp-service-manager stop
-yum -y update --security
-service netapp-service-manager start
-----
-** 如果目录_does_不存在、请使用提升的权限运行以下命令：
-+
-[source, cli]
-----
-sudo -s
-service service-manager stop
-yum -y update --security
-service service-manager start
-----
+--
 
 
 
 
+== 使用专用模式时升级Connector
+
+如果您在专用模式下使用的是BlueXP、则可以在NetApp 支持站点 提供了较新版本时升级此连接器。
+
+在升级过程中、Connector需要重新启动、因此在升级期间基于Web的控制台将不可用。
 
 
-== 更改连接器的 IP 地址
-
-如果您的业务需要，您可以更改云提供商自动分配的 Connector 实例的内部 IP 地址和公有 IP 地址。
-
-.步骤
-. 按照云提供商的说明更改连接器实例的本地 IP 地址或公有 IP 地址（或两者）。
-. 如果您更改了公有 IP地址、并且需要连接到在Connector上运行的本地用户界面、请重新启动Connector实例、以便向BlueXP注册新的IP地址。
-. 如果更改了专用 IP 地址，请更新 Cloud Volumes ONTAP 配置文件的备份位置，以便将备份发送到 Connector 上的新专用 IP 地址。
-+
-.. 从 Cloud Volumes ONTAP 命令行界面运行以下命令以删除当前备份目标：
-+
-[source, cli]
-----
-system configuration backup settings modify -destination ""
-----
-.. 转到BlueXP并打开工作环境。
-.. 单击菜单并选择 * 高级 > 配置备份 * 。
-.. 单击 * 设置备份目标 * 。
-
-
-
-
-
-
-== 编辑Connector的URI
-
-添加并删除 Connector 的 URI 。
-
-.步骤
-. 单击BlueXP标题中的*连接器*下拉列表。
-. 单击 * 管理连接器 * 。
-. 单击 Connector 的操作菜单，然后单击 * 编辑 URIs* 。
-. 添加并删除 URI ，然后单击 * 应用 * 。
-
-
-
-
-== 修复使用 Google Cloud NAT 网关时的下载失败问题
-
-连接器会自动下载 Cloud Volumes ONTAP 的软件更新。如果您的配置使用 Google Cloud NAT 网关，则下载可能会失败。您可以通过限制软件映像划分到的部件数来更正此问题描述。必须使用BlueXP API完成此步骤。
-
-.步骤
-. 使用以下 JSON 正文向 /occm/config 提交 PUT 请求：
-
-
-[source]
-----
-{
-  "maxDownloadSessions": 32
-}
-----
-maxDownloadSessions_ 的值可以是 1 或大于 1 的任意整数。如果值为 1 ，则下载的映像不会被拆分。
-
-请注意， 32 是一个示例值。应使用的值取决于 NAT 配置以及可以同时拥有的会话数。
-
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["了解有关 /ocem/config API 调用的更多信息"^]。
-
-
-
-== 在无法访问Internet的位置升级Connector
-
-如果您 link:task-install-connector-onprem-no-internet.html["已将连接器安装在无法访问Internet的位置"]，您可以在 NetApp 支持站点上提供较新版本时升级 Connector。
-
-在升级过程中， Connector 需要重新启动，因此用户界面在升级期间将不可用。
+NOTE: 在可访问Internet的主机上、只要能够通过出站Internet访问来获取软件更新、Connector就会自动将其软件更新到最新版本。
 
 .步骤
 . 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]。
@@ -235,11 +130,68 @@ sudo /path/cloud-manager-connector-offline-<version>
 . 升级完成后，您可以转到 * 帮助 > 支持 > 连接器 * 来验证连接器的版本。
 
 
-.可以访问 Internet 的主机上的软件升级又如何？
-****
-只要Connector能够通过出站Internet访问来获取软件更新、它就会自动将其软件更新到最新版本。
 
-****
+
+== 更改连接器的 IP 地址
+
+如果您的业务需要，您可以更改云提供商自动分配的 Connector 实例的内部 IP 地址和公有 IP 地址。
+
+.步骤
+. 按照云提供商的说明更改连接器实例的本地 IP 地址或公有 IP 地址（或两者）。
+. 如果您更改了公有 IP地址、并且需要连接到在Connector上运行的本地用户界面、请重新启动Connector实例、以便向BlueXP注册新的IP地址。
+. 如果更改了专用 IP 地址，请更新 Cloud Volumes ONTAP 配置文件的备份位置，以便将备份发送到 Connector 上的新专用 IP 地址。
++
+.. 从 Cloud Volumes ONTAP 命令行界面运行以下命令以删除当前备份目标：
++
+[source, cli]
+----
+system configuration backup settings modify -destination ""
+----
+.. 转到BlueXP并打开工作环境。
+.. 选择菜单并选择*高级>配置备份*。
+.. 选择*设置备份目标*。
+
+
+
+
+
+
+== 编辑Connector的URI
+
+添加并删除 Connector 的 URI 。
+
+.步骤
+. 从BlueXP标题中选择*连接器*下拉列表。
+. 选择*管理连接器*。
+. 选择Connector的操作菜单、然后选择*编辑URIs*。
+. 添加并删除URI、然后选择*应用*。
+
+
+
+
+== 修复使用 Google Cloud NAT 网关时的下载失败问题
+
+连接器会自动下载 Cloud Volumes ONTAP 的软件更新。如果您的配置使用 Google Cloud NAT 网关，则下载可能会失败。您可以通过限制软件映像划分到的部件数来更正此问题描述。必须使用BlueXP API完成此步骤。
+
+.步骤
+. 使用以下 JSON 正文向 /occm/config 提交 PUT 请求：
++
+[source]
+----
+{
+  "maxDownloadSessions": 32
+}
+----
++
+maxDownloadSessions_ 的值可以是 1 或大于 1 的任意整数。如果值为 1 ，则下载的映像不会被拆分。
+
++
+请注意， 32 是一个示例值。应使用的值取决于 NAT 配置以及可以同时拥有的会话数。
+
+
+
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["了解有关 /ocem/config API 调用的更多信息"^]
+
 
 
 == 从BlueXP中删除连接器
@@ -249,17 +201,17 @@ sudo /path/cloud-manager-connector-offline-<version>
 有关删除连接器，请注意以下事项：
 
 * 此操作不会删除虚拟机。
-* 无法还原此操作—从BlueXP中删除Connector后、便无法重新添加它
+* 无法还原此操作—从BlueXP中删除Connector后、便无法重新添加它。
 
 
 .步骤
-. 单击BlueXP标题中的*连接器*下拉列表。
-. 单击 * 管理连接器 * 。
-. 单击非活动连接器的操作菜单，然后单击 * 删除连接器 * 。
+. 从BlueXP标题中选择*连接器*下拉列表。
+. 选择*管理连接器*。
+. 选择非活动连接器的操作菜单、然后选择*删除连接器*。
 +
 image:screenshot_connector_remove.gif["Connector 小工具的屏幕截图，您可以在其中删除非活动的 Connector 。"]
 
-. 输入 Connector 的名称进行确认，然后单击删除。
+. 输入Connector的名称进行确认、然后选择*删除*。
 
 
 .结果
@@ -280,8 +232,10 @@ BlueXP会从其记录中删除Connector。
 .步骤
 . 在 Linux 主机上运行卸载脚本：
 +
-*/opt/application/netapp/service-manager-2/uninstall.sh [silent]*
-
+[source, cli]
+----
+/opt/application/netapp/service-manager-2/uninstall.sh [silent]
+----
 +
 _silent_ 运行此脚本，而不提示您进行确认。
 

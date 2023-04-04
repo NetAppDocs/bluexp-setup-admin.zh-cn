@@ -51,12 +51,12 @@ NOTE: 此外、BlueXP还支持为每个BlueXP用户关联一个NSS帐户。 link
 
 
 .步骤
-. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
+. 在BlueXP控制台的右上角、选择帮助图标、然后选择*支持*。
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["帮助菜单的屏幕截图，其中列出的第一个选项为支持"]
 
-. 单击 * NSS 管理 > 添加 NSS 帐户 * 。
-. 出现提示时，单击 * 继续 * 以重定向到 Microsoft 登录页面。
+. 选择* NSS管理>添加NSS帐户*。
+. 出现提示时、选择*继续*以重定向到Microsoft登录页面。
 +
 NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。
 
@@ -93,7 +93,7 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["在 AWS 中启动 Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["在 Azure 中启动 Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["在 GCP 中启动 Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["在 Google Cloud 中启动 Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html["注册按需购买的系统"^]
 
 
@@ -104,14 +104,14 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 从 2021 年 11 月开始， NetApp 现在使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。由于此更新、BlueXP将提示您更新先前添加的任何现有帐户的凭据。
 
 .步骤
-. 如果您尚未执行此操作， https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["创建一个 Microsoft Azure Active Directory B2C 帐户，此帐户将链接到您的当前 NetApp 帐户"^]。
-. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
-. 单击 * NSS 管理 * 。
-. 对于要更新的 NSS 帐户，请单击 * 更新帐户 * 。
+. 如果您尚未执行此操作， https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["创建一个Microsoft Azure Active Directory B2C帐户、此帐户将链接到您当前的BlueXP帐户"^]。
+. 在BlueXP控制台的右上角、选择帮助图标、然后选择*支持*。
+. 选择* NSS管理*。
+. 对于要更新的NSS帐户、请选择*更新帐户*。
 +
 image:screenshot-nss-update-account.png["显示更新帐户选项的屏幕截图"]
 
-. 出现提示时，单击 * 继续 * 以重定向到 Microsoft 登录页面。
+. 出现提示时、选择*继续*以重定向到Microsoft登录页面。
 +
 NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。
 
@@ -120,7 +120,7 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 此过程完成后，您更新的帐户现在应在表中列为 _new_ 帐户。此帐户的 _older_ 版本以及任何现有的工作环境关联仍列在表中。
 
 . 如果现有 Cloud Volumes ONTAP 工作环境已附加到旧版本的帐户，请按照以下步骤进行操作 <<将工作环境附加到其他 NSS 帐户,将这些工作环境附加到其他 NSS 帐户>>。
-. 转到旧版本的 NSS 帐户，然后单击 image:icon-action.png["一个由三个并排点组成的图标"] 然后选择 * 删除 * 。
+. 转至旧版本的NSS帐户、然后选择 image:icon-action.png["一个由三个并排点组成的图标"] 然后选择 * 删除 * 。
 
 
 
@@ -134,13 +134,13 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 
 
 .步骤
-. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
-. 单击 * NSS 管理 * 。
-. 对于要更新的 NSS 帐户，请单击 image:icon-action.png["一个由三个并排点组成的图标"] 然后选择 * 更新凭据 * 。
+. 在BlueXP控制台的右上角、选择帮助图标、然后选择*支持*。
+. 选择* NSS管理*。
+. 对于要更新的NSS帐户、请选择 image:icon-action.png["一个由三个并排点组成的图标"] 然后选择 * 更新凭据 * 。
 +
 image:screenshot-nss-update-credentials.png["屏幕截图显示了 NetApp 支持站点帐户的操作菜单，其中包括选择删除选项的功能。"]
 
-. 出现提示时，单击 * 继续 * 以重定向到 Microsoft 登录页面。
+. 出现提示时、选择*继续*以重定向到Microsoft登录页面。
 +
 NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。
 
@@ -153,20 +153,20 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 
 如果您的组织有多个 NetApp 支持站点帐户，则可以更改与 Cloud Volumes ONTAP 系统关联的帐户。
 
-只有配置为使用 NetApp 采用的 Microsoft Azure AD 进行身份管理的 NSS 帐户才支持此功能。在使用此功能之前，您需要单击 * 添加 NSS 帐户 * 或 * 更新帐户 * 。
+只有配置为使用 NetApp 采用的 Microsoft Azure AD 进行身份管理的 NSS 帐户才支持此功能。要使用此功能、您需要选择*添加NSS帐户*或*更新帐户*。
 
 .步骤
-. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
-. 单击 * NSS 管理 * 。
+. 在BlueXP控制台的右上角、选择帮助图标、然后选择*支持*。
+. 选择* NSS管理*。
 . 完成以下步骤以更改 NSS 帐户：
 +
 .. 展开当前与工作环境关联的 NetApp 支持站点帐户对应的行。
-.. 对于要更改关联的工作环境，请单击 image:icon-action.png["一个由三个并排点组成的图标"]
+.. 对于要更改关联的工作环境、请选择 image:icon-action.png["一个由三个并排点组成的图标"]
 .. 选择 * 更改为其他 NSS 帐户 * 。
 +
 image:screenshot-nss-change-account.png["屏幕截图显示了与 NetApp 支持站点帐户关联的工作环境的操作菜单。"]
 
-.. 选择帐户，然后单击 * 保存 * 。
+.. 选择帐户、然后选择*保存*。
 
 
 
@@ -181,9 +181,9 @@ image:screenshot-nss-change-account.png["屏幕截图显示了与 NetApp 支持�
 TIP: 转到"NSS管理"页面时、BlueXP会为表中的每个帐户生成一个令牌。此令牌包含有关关联电子邮件地址的信息。退出此页面后，此令牌将被删除。此信息永远不会缓存，这有助于保护您的隐私。
 
 .步骤
-. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
-. 单击 * NSS 管理 * 。
-. 对于要更新的 NSS 帐户，请单击 image:icon-action.png["一个由三个并排点组成的图标"] 然后选择 * 显示电子邮件地址 * 。
+. 在BlueXP控制台的右上角、选择帮助图标、然后选择*支持*。
+. 选择* NSS管理*。
+. 对于要更新的NSS帐户、请选择 image:icon-action.png["一个由三个并排点组成的图标"] 然后选择 * 显示电子邮件地址 * 。
 +
 image:screenshot-nss-display-email.png["屏幕截图显示了 NetApp 支持站点帐户的操作菜单，其中包括显示电子邮件地址的功能。"]
 
@@ -201,11 +201,11 @@ BlueXP将显示NetApp 支持站点 用户名和关联的电子邮件地址。您
 请注意，您不能删除当前与 Cloud Volumes ONTAP 工作环境关联的帐户。您首先需要 <<将工作环境附加到其他 NSS 帐户,将这些工作环境附加到其他 NSS 帐户>>。
 
 .步骤
-. 在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。
-. 单击 * NSS 管理 * 。
-. 对于要删除的 NSS 帐户，请单击 image:icon-action.png["一个由三个并排点组成的图标"] 然后选择 * 删除 * 。
+. 在BlueXP控制台的右上角、选择帮助图标、然后选择*支持*。
+. 选择* NSS管理*。
+. 对于要删除的NSS帐户、请选择 image:icon-action.png["一个由三个并排点组成的图标"] 然后选择 * 删除 * 。
 +
 image:screenshot-nss-delete.png["屏幕截图显示了 NetApp 支持站点帐户的操作菜单，其中包括选择删除选项的功能。"]
 
-. 单击 * 删除 * 进行确认。
+. 选择*删除*进行确认。
 

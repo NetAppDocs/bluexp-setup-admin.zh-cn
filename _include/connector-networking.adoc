@@ -63,7 +63,7 @@ AWS 服务（ AmazonAWS.com ）：
 | https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 管理Azure政府区域中的资源。 
 
 
-| \shtps：//management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | 管理Azure IL6区域中的资源。 
+| https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | 管理Azure IL6区域中的资源。 
 
 
 | https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 管理Azure中国地区的资源。 

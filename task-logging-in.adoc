@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: 注册到BlueXP后、您可以通过基于SaaS的用户界面从Web浏览器登录。 
+summary: 注册到BlueXP后、您可以通过基于Web的控制台从Web浏览器登录。 
 ---
-= 登录到BlueXP
+= 登录到BlueXP (标准模式)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,10 @@ summary: 注册到BlueXP后、您可以通过基于SaaS的用户界面从Web浏�
 
 
 [role="lead"]
-注册到BlueXP后、您可以通过基于SaaS的用户界面从Web浏览器登录。
-
-link:task-sign-up-saas.html["了解如何注册到BlueXP并创建帐户"]。
-
-如果您要从政府区域或无法访问出站Internet的站点访问BlueXP、则需要登录到在Connector本地运行的BlueXP用户界面。 link:task-managing-connectors.html#access-the-local-ui["了解如何在Connector上访问本地UI"]。
+注册到BlueXP后、您可以从基于Web的控制台登录。
 
 .登录选项
-您可以使用以下选项之一登录到BlueXP：
+您可以使用以下选项之一登录到基于BlueXP Web的控制台：
 
 * 您的现有NetApp 支持站点 (NSS)凭据
 * 使用您的电子邮件地址和密码登录NetApp云

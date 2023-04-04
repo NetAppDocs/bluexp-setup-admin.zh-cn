@@ -53,7 +53,7 @@ summary: 帐户管理员，工作空间管理员，合规性查看器和 SnapCen
 | 创建连接器 | 是的。 | 否 | 否 | 否 
 
 
-| 管理 NetApp 帐户 | 是的。 | 否 | 否 | 否 
+| 管理BlueXP帐户 | 是的。 | 否 | 否 | 否 
 
 
 | 管理凭据 | 是的。 | 否 | 否 | 否 
@@ -69,11 +69,8 @@ summary: 帐户管理员，工作空间管理员，合规性查看器和 SnapCen
 
 
 | 安装 HTTPS 证书 | 是的。 | 否 | 否 | 否 
-
-
-| 使用 SnapCenter 服务 | 是的。 | 是的。 | 否 | 是的。 
 |===
 .相关链接
-* link:task-setting-up-netapp-accounts.html["在 NetApp 帐户中设置工作空间和用户"]
-* link:task-managing-netapp-accounts.html["管理 NetApp 帐户中的工作空间和用户"]
+* link:task-setting-up-netapp-accounts.html["在BlueXP帐户中设置工作空间和用户"]
+* link:task-managing-netapp-accounts.html["在BlueXP帐户中管理工作空间和用户"]
 

@@ -26,6 +26,12 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
 
 如果您从Azure Marketplace部署Connector、或者在Linux主机上手动安装Connector、则需要您自己设置自定义角色。
 
+* link:task-set-up-permissions-azure.html["在Azure中设置Connector安装权限(标准模式)"]
+* link:task-set-up-permissions-on-prem.html["为内部安装Connector设置权限(标准模式)"]
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["设置受限模式的权限"]
+* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["设置私有模式的权限"]
+
+
 您还需要确保角色是最新的、因为在后续版本中添加了新权限。
 
 [source, json]
@@ -169,7 +175,7 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
 
 == 如何使用Azure权限
 
-以下各节介绍了如何对每个NetApp云服务使用权限。如果您的公司策略规定仅在需要时提供权限、则此信息会很有用。
+以下各节介绍了如何对每个BlueXP服务使用权限。如果您的公司策略规定仅在需要时提供权限、则此信息会很有用。
 
 
 

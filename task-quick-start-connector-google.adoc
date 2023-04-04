@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-connector-google.html 
+keywords: quick start, connector quick start, google cloud quick start, gcp quick start 
+summary: 通过选择安装选项、设置网络连接、准备权限等在Google Cloud中创建Connector。 
+---
+= 快速开始在Google Cloud中创建Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+通过选择安装选项、设置网络连接、准备权限等在Google Cloud中创建Connector。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 了解您的安装选项
+[role="quick-margin-para"]
+在Google Cloud中创建Connector的标准方式是直接从BlueXP创建、但您也可以使用gcloud或在已有的Linux主机上手动安装此软件来创建连接器。
+
+[role="quick-margin-para"]
+link:concept-install-options-google.html["了解有关安装选项的更多信息"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 设置网络
+[role="quick-margin-para"]
+为连接器准备以下内容：
+
+[role="quick-margin-list"]
+* VPC和子网
+* 与您计划创建和管理工作环境的网络的网络连接
+* 对特定端点的出站Internet访问、用于日常操作
+* 如果出站Internet需要代理服务器、则为代理服务器提供IP地址、凭据和HTTPS证书
+
+
+[role="quick-margin-para"]
+link:task-set-up-networking-google.html["详细了解网络要求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 查看主机要求
+[role="quick-margin-para"]
+连接器软件必须在满足特定要求的主机上运行。如果您计划在自己的Linux主机上手动安装Connector软件、则应确保主机满足这些要求。如果您要从BlueXP或使用gcloud创建Connector、则需要满足这些要求、因为软件是从映像部署的。
+
+[role="quick-margin-para"]
+主要要求如下：
+
+[role="quick-margin-list"]
+* 运行CentOS或Red Hat Enterprise Linux的专用主机
+* 4 个 CPU
+* 14 GB RAM
+* Docker 引擎
+
+
+[role="quick-margin-para"]
+link:reference-host-requirements-google.html["详细了解这些主机要求"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 设置Google Cloud权限
+[role="quick-margin-para"]
+为您计划使用的安装选项设置Google Cloud权限：
+
+[role="quick-margin-list"]
+* *从BlueXP或gcloud安装*：创建自定义角色并将其附加到要部署Connector的用户。创建另一个自定义角色并将其分配给Connector VM实例的服务帐户。
+* *手动安装*：创建自定义角色并将其分配给Connector VM实例的服务帐户。
+
+
+[role="quick-margin-para"]
+link:task-set-up-permissions-google.html["按照每个选项的分步说明进行操作"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五个"] 启用 Google Cloud API
+[role="quick-margin-para"]
+要在Google Cloud中部署Connector和Cloud Volumes ONTAP 、需要使用多个API。
+
+[role="quick-margin-list"]
+* Cloud Deployment Manager V2 API
+* 云日志记录 API
+* Cloud Resource Manager API
+* 计算引擎 API
+* 身份和访问管理（ IAM ） API
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六个"] 创建Connector
+[role="quick-margin-para"]
+使用以下可用安装选项之一创建Connector：
+
+[role="quick-margin-list"]
+* *从BlueX*：单击Connector下拉列表、选择*添加连接器*并按照提示进行操作。
+* *使用gloud*：使用 `gcloud compute instances create` 命令：
+* *手动安装*：从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"] 并运行安装脚本。
+
+
+[role="quick-margin-para"]
+link:task-install-connector-google.html["按照每个选项的分步说明进行操作"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["七个"] 为BlueXP提供权限
+[role="quick-margin-para"]
+如果您在自己的Linux主机上手动安装了Connector软件、则需要为BlueXP提供先前设置的权限。
+
+[role="quick-margin-para"]
+link:task-provide-permissions-google.html["按照分步说明进行操作"]。

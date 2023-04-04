@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 了解BlueXP管理功能的新增功能：NetApp帐户、连接器、云提供商凭据等。 
+summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、云提供商凭据等。 
 ---
 = 新增功能
 :hardbreaks:
@@ -14,7 +14,27 @@ summary: 了解BlueXP管理功能的新增功能：NetApp帐户、连接器、�
 
 
 [role="lead"]
-了解BlueXP管理功能的新增功能：NetApp帐户、连接器、云提供商凭据等。
+了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、云提供商凭据等。
+
+
+
+== 2023年4月4日
+
+
+
+=== 部署模式
+
+借助BlueXP _deployment modes_、您可以根据业务和安全要求使用BlueXP。您可以选择三种模式：
+
+* 标准模式
+* 受限模式
+* 私有模式
+
+
+link:concept-modes.html["详细了解这些部署模式"]。
+
+
+NOTE: 受限模式的引入取代了启用或禁用SaaS平台的选项。您可以在创建帐户时启用受限模式。稍后无法启用或禁用它。
 
 
 
@@ -303,7 +323,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * 现在、Azure West US 3区域支持Connector。
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
 
 * 此版本的连接器还包括Cloud Volumes ONTAP 增强功能。
 +
@@ -335,7 +355,7 @@ NOTE: 使用电子邮件地址和密码的现有登录需要继续使用该登�
 * 现在、AWS雅加达地区(亚太地区东南部3)支持Connector。
 * 现在、Azure巴西东南部地区支持Connector。
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
 
 * 此版本的Connector还包括Cloud Volumes ONTAP 增强功能和内部ONTAP 集群增强功能。
 +
@@ -372,7 +392,7 @@ https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的�
 
 
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
 
 * 当您选择要与Connector结合使用的Google Cloud服务帐户时、Cloud Manager现在会显示与每个服务帐户关联的电子邮件地址。通过查看电子邮件地址、可以更轻松地区分同名服务帐户。
 +
@@ -559,7 +579,7 @@ link:task-installing-linux.html["查看 Connector 的系统要求"]。
 
 * link:task-creating-connectors-aws.html["在 AWS 中创建连接器"]
 * link:task-creating-connectors-azure.html["在 Azure 中创建连接器"]
-* link:task-creating-connectors-gcp.html["在 GCP 中创建连接器"]
+* link:task-creating-connectors-gcp.html["在 Google Cloud 中创建 Connector"]
 
 
 

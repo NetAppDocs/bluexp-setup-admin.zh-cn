@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next-private-mode.html 
+keywords: private mode, what you can do 
+summary: 在专用模式下启动和运行BlueXP后、您可以开始使用私有模式支持的BlueXP服务。 
+---
+= 接下来可以执行的操作(专用模式)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在专用模式下启动和运行BlueXP后、您可以开始使用私有模式支持的BlueXP服务。
+
+要获得帮助、请参见以下文档：
+
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["创建Cloud Volumes ONTAP 系统"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["发现内部ONTAP 集群"^]
+* https://docs.netapp.com/us-en/cloud-manager-replication/index.html["复制数据"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["使用云数据感知扫描内部ONTAP 卷数据"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["使用云备份将内部ONTAP 卷数据备份到StorageGRID"^]
+

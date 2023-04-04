@@ -34,7 +34,7 @@ Digital Wallet提供了有关与您的BlueXP帐户和Astra (Astra使用BlueXP的
 +
 image:screenshot-subscriptions-expand.png["数字电子邮件中订阅选项卡的屏幕截图、您可以在其中选择行末尾的箭头将其展开。"]
 
-** 单击 image:icon-column-selector.png["表标题末尾的加号图标"] 可选择表中显示的列。
+** 选择 ... image:icon-column-selector.png["表标题末尾的加号图标"] 可选择表中显示的列。
 +
 请注意、默认情况下不会显示"术语"和"自动续订"列。自动续订列仅显示Azure合同的续订信息。
 
@@ -70,9 +70,9 @@ Start date:: 开始日期是您成功将订阅与您的帐户关联并开始计�
 .步骤
 . 从BlueXP导航菜单中、选择*监管>数字电子钱包*。
 . 选择*订阅*。
-. 单击与要管理的订阅对应的行中的操作菜单。
+. 在与要管理的订阅对应的行中选择操作菜单。
 +
 image:screenshot-subscription-menu.png["订阅的操作菜单的屏幕截图。"]
 
-. 选择重命名订阅或管理与订阅关联的NetApp帐户。
+. 选择重命名订阅或管理与订阅关联的BlueXP帐户。
 

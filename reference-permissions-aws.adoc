@@ -22,13 +22,21 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 
 下面提供的IAM策略为Connector提供了根据您的AWS区域管理公有 云环境中的资源和流程所需的权限。
 
-如果需要、您可以使用IAM来限制IAM策略 `Condition` Element。 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS文档：条件元素"^]
+如果需要、您可以使用IAM来限制IAM策略 `Condition` Element。 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS文档：条件元素"^]如果需要、您可以使用IAM来限制IAM策略 `Condition` Element。 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS文档：条件元素"^]
 
-请注意以下事项：
+请注意以下事项：请注意以下事项：
 
 * 如果您直接从BlueXP在标准AWS区域中创建Connector、则BlueXP会自动将策略应用到Connector。在这种情况下、您无需执行任何操作。
 * 如果您从AWS Marketplace部署Connector、在Linux主机上手动安装Connector或要向BlueXP添加其他AWS凭据、则需要自行设置策略。
 * 此外、您还需要确保在后续版本中添加新权限时策略保持最新。
+* 要查看使用这些策略的分步说明、请参见以下页面：
++
+** link:task-set-up-permissions-aws.html["在AWS中设置Connector安装权限(标准模式)"]
+** link:task-set-up-permissions-on-prem.html["为内部安装Connector设置权限(标准模式)"]
+** link:task-prepare-restricted-mode.html#prepare-cloud-permissions["设置受限模式的权限"]
+** https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["设置私有模式的权限"]
+
+
 
 
 选择您所在的区域以查看所需的策略：
@@ -62,6 +70,7 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 [source, json]
 ----
 {
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Action": [
@@ -344,6 +353,7 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 [source, json]
 ----
 {
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Action": [
@@ -690,7 +700,7 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 
 == 如何使用AWS权限
 
-以下各节介绍了如何对每个NetApp云服务使用权限。如果您的公司策略规定仅在需要时提供权限、则此信息会很有用。
+以下各节介绍了如何对每个BlueXP服务使用权限。如果您的公司策略规定仅在需要时提供权限、则此信息会很有用。
 
 
 
