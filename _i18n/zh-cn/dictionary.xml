@@ -3112,8 +3112,6 @@
   <block id="870a261de0f18a65c1ce93a292943250" category="paragraph">从云提供商的市场订阅BlueXP、按小时费率(PAYGO)或按年合同支付BlueXP服务费用。</block>
   <block id="26cb38ef7d9165cb6c60daa782ddf448" category="inline-link-macro">了解如何订阅BlueXP</block>
   <block id="81c3313ea95d8c6400b4938a484d7c52" category="paragraph"><block ref="6def5e6c9f414f70f3dcb72b211d5120" category="inline-link-macro-rx"></block>。</block>
-  <block id="80470a7e4abea9303c2da15c4bf9dd95" category="paragraph">如果需要、您可以使用IAM来限制IAM策略<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> Element。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block>如果需要、您可以使用IAM来限制IAM策略<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> Element。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
-  <block id="01565a73da2e1b22e8f52dbae4f47dff" category="paragraph">请注意以下事项：请注意以下事项：</block>
   <block id="5e7e2fc7d83311cfc7311fe5dec48480" category="list-text">要查看使用这些策略的分步说明、请参见以下页面：</block>
   <block id="0e056226cf0c491e9f8541fa39bd442d" category="inline-link-macro">在AWS中设置Connector安装权限(标准模式)</block>
   <block id="ba958418e2417e3848579844570a221c" category="list-text"><block ref="ba958418e2417e3848579844570a221c" category="inline-link-macro-rx"></block></block>
@@ -3603,4 +3601,5 @@
   <block id="421e0ee20fb73cf162f2c03955c94f24" category="sidebar">在Google Cloud中创建连接器(标准模式)</block>
   <block id="a80c3e3d3461039581490c3b665e6c55" category="sidebar">在内部创建连接器(标准模式)</block>
   <block id="5287995c403f34c9ff0e79af4e8e7c9d" category="sidebar">管理帐户的NSS凭据</block>
+  <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="paragraph">如果需要、您可以使用IAM来限制IAM策略<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> Element。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
 </blocks>
