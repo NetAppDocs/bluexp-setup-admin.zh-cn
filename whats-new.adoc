@@ -31,7 +31,7 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 * 私有模式
 
 
-link:concept-modes.html["详细了解这些部署模式"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["详细了解这些部署模式"]。
 
 
 NOTE: 受限模式的引入取代了启用或禁用SaaS平台的选项。您可以在创建帐户时启用受限模式。稍后无法启用或禁用它。
