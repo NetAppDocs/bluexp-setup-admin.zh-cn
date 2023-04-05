@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-connector-aws.html 
 keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector 
-summary: 直接从基于Web的BlueXP控制台、AWS Marketplace或在您自己的Linux主机上安装此软件、在AWS中安装Connector。 
+summary: 直接从基于Web的BlueXP控制台、AWS Marketplace或通过在您自己的Linux主机上安装软件来创建Connector。 
 ---
-= 在AWS中创建连接器
+= 在 AWS 中创建连接器
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

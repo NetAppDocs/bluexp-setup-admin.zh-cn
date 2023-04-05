@@ -4,7 +4,7 @@ permalink: task-install-connector-azure.html
 keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, azure marketplace, manual install, create connector 
 summary: 直接从基于Web的BlueXP控制台、Azure Marketplace或通过在您自己的Linux主机上安装软件来创建Connector。 
 ---
-= 在Azure中创建Connector
+= 在 Azure 中创建连接器
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
