@@ -3602,4 +3602,7 @@
   <block id="f53835e0f369158c476f99fda577e700" category="sidebar">设置和管理文档</block>
   <block id="22e332a6ecd5f345a3f720b11f7cf805" category="list-text"><block ref="22e332a6ecd5f345a3f720b11f7cf805" category="inline-link-macro-rx"></block></block>
   <block id="d56f297cb566b98a6b65a6dea3038531" category="list-text"><block ref="d56f297cb566b98a6b65a6dea3038531" category="inline-link-macro-rx"></block></block>
+  <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">经济效益^1^</block>
+  <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">运营弹性^1^</block>
+  <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">^1^虽然您可以在没有连接器的情况下访问这些服务、但要从这些服务启动操作、需要使用连接器。</block>
 </blocks>

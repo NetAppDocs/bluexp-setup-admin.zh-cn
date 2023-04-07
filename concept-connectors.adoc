@@ -65,12 +65,16 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 * 云分层
 * Cloud Volumes ONTAP
 * E系列系统
+* 经济效益^1^
 * 全局文件缓存
 * Google Cloud Storage发现
 * Kubernetes 集群
 * 与BlueXP数据服务的内部ONTAP 集群集成
+* 运营弹性^1^
 * StorageGRID
 
+
+^1^虽然您可以在没有连接器的情况下访问这些服务、但要从这些服务启动操作、需要使用连接器。
 
 
 
