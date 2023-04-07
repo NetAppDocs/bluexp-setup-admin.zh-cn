@@ -130,7 +130,7 @@ BlueXP客户管理员可以直接从BlueXP、云提供商的市场或在您自�
 
 == 权限
 
-直接从BlueXP创建Connector需要特定权限、而Connector实例本身也需要另一组权限。如果您直接从BlueXP在AWS或Azure中创建Connector、则BlueXP将使用所需权限创建Connector。您无需执行任何其他操作。
+直接从BlueXP创建Connector需要特定权限、而Connector实例本身也需要另一组权限。如果您直接从BlueXP在AWS或Azure中创建Connector、则BlueXP将使用所需权限创建Connector。
 
 要了解如何设置权限、请参见以下页面：
 
@@ -161,7 +161,7 @@ BlueXP客户管理员可以直接从BlueXP、云提供商的市场或在您自�
 
 只要Connector能够通过出站Internet访问来获取软件更新、它就会自动将其软件更新到最新版本。如果您正在私有模式下使用BlueXP、则需要手动升级Connector。
 
-link:task-managing-connectors.html["了解如何手动升级Connector软件"]
+link:task-managing-connectors.html["了解如何手动升级Connector软件"]。
 
 
 

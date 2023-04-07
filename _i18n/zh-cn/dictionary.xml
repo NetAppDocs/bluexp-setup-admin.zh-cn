@@ -491,7 +491,6 @@
   <block id="fa25ff644bc82c03a613715d969f788d" category="paragraph">在 Google Cloud 中创建 Connector 时，无法指定身份验证方法。但是，您可以使用 Google Cloud Console 或 Google Cloud CLI （ gcloud ）连接到 Linux VM 实例。</block>
   <block id="b60097f9f3ac90a5ce4fd69c66be0717" category="inline-link">Google Cloud Docs ：连接到 Linux VM</block>
   <block id="b80f2820ec689140e03615f3240fde24" category="paragraph"><block ref="b80f2820ec689140e03615f3240fde24" category="inline-link-rx"></block></block>
-  <block id="e2729464f9bccb35f8d10ba5019f3955" category="paragraph">添加并删除 Connector 的 URI 。</block>
   <block id="fb6890fd99d108eeb3627b961bdfb529" category="section-title">修复使用 Google Cloud NAT 网关时的下载失败问题</block>
   <block id="123919fc420bd58c9e773df9431e7089" category="list-text">使用以下 JSON 正文向 /occm/config 提交 PUT 请求：</block>
   <block id="cd8e208bdf0e89ff2e888104b2d9c769" category="paragraph">maxDownloadSessions_ 的值可以是 1 或大于 1 的任意整数。如果值为 1 ，则下载的映像不会被拆分。</block>
@@ -835,7 +834,6 @@
   <block id="a15b1a7954f2d926c5ee7f261a97b4d2" category="paragraph">/var/lib/docker/volumes/ds_occmdata/_data/log</block>
   <block id="590b2ea5933ad8ead3c9a15a914f1a9c" category="list-text">所有服务均在 Docker 容器中运行</block>
   <block id="f76b4c57c56377745199382d59cdeed3" category="paragraph">这些服务取决于运行的 Docker 运行时服务</block>
-  <block id="b7117438679aa668508b75822322c225" category="sidebar">设置和管理文档</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="sidebar">限制</block>
@@ -894,7 +892,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">这些选项每周 7 天，每天 24 小时免费提供：</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知识库</block>
-  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社区</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文档。</block>
@@ -1465,7 +1462,6 @@
   <block id="691be8e1993c2535e4afe5834afe3b01" category="list-text">使用您的电子邮件地址和密码登录NetApp云</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link">BlueXP控制台</block>
   <block id="0cdc0aaedcc5278681de9de08217447f" category="paragraph">您现在已登录、可以开始使用BlueXP管理混合多云基础架构。</block>
-  <block id="f12aeeed0f164c86af69a57fddb01689" category="doc">设置和管理BlueXP</block>
   <block id="a9e454ea444248fbc35956644d9980ab" category="paragraph">BlueXP将刷新并显示与选定连接器关联的工作环境。</block>
   <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">在BlueXP控制台的右上角、单击帮助图标、然后选择*支持*。</block>
   <block id="db56ea1b582b55a06a12a4267a2c8d20" category="list-text">如果您更改了公有 IP地址、并且需要连接到在Connector上运行的本地用户界面、请重新启动Connector实例、以便向BlueXP注册新的IP地址。</block>
@@ -3149,13 +3145,11 @@
   <block id="ce6d43255d920acadadb7e3862aee0b0" category="list-text"><block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block></block>
   <block id="2d9421fac12c9ac9462f27b55d118c68" category="list-text"><block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block></block>
   <block id="ba356dfc51631fb5a0371fea940de345" category="list-text"><block ref="ba356dfc51631fb5a0371fea940de345" category="inline-link-macro-rx"></block></block>
-  <block id="d1aefcf060d35fe9add58217931dc24a" category="paragraph">直接从BlueXP创建Connector需要特定权限、而Connector实例本身也需要另一组权限。如果您直接从BlueXP在AWS或Azure中创建Connector、则BlueXP将使用所需权限创建Connector。您无需执行任何其他操作。</block>
   <block id="e914e731bb669784ea88e9ad697407fb" category="inline-link-macro">设置Google Cloud权限</block>
   <block id="f068c113e0f68966d3264976bff4de1a" category="list-text"><block ref="f068c113e0f68966d3264976bff4de1a" category="inline-link-macro-rx"></block></block>
   <block id="1e419112f48a13d6b30178e127d0a445" category="paragraph">要查看Connector所需的确切权限、请参见以下页面：</block>
   <block id="8c03e33a988ffb4175368e0784ca1ff5" category="paragraph">只要Connector能够通过出站Internet访问来获取软件更新、它就会自动将其软件更新到最新版本。如果您正在私有模式下使用BlueXP、则需要手动升级Connector。</block>
   <block id="ed0b87049db36af81b1e2989ce889651" category="inline-link-macro">了解如何手动升级Connector软件</block>
-  <block id="079398d71b1e343d69f7a6ed5f005eb2" category="paragraph"><block ref="079398d71b1e343d69f7a6ed5f005eb2" category="inline-link-macro-rx"></block></block>
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>。</block>
   <block id="3feb0795a14e1cc974940057fc75d0e7" category="section-title">多个工作环境</block>
   <block id="c6d129878583320db44cb10e4daa0ffc" category="section-title">多个连接器</block>
@@ -3602,4 +3596,10 @@
   <block id="5287995c403f34c9ff0e79af4e8e7c9d" category="sidebar">管理帐户的NSS凭据</block>
   <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="paragraph">如果需要、您可以使用IAM来限制IAM策略<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> Element。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
   <block id="10b9ce0cb6b2f607e0c7df6e246cfe67" category="paragraph"><block ref="8a7bc1e5ebe0f732b7f8c57cc7b088b6" category="inline-link-rx"></block>。</block>
+  <block id="7390f55a27add10ddc1a6c765b8a67c7" category="doc">BlueXP设置和管理文档</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">直接从BlueXP创建Connector需要特定权限、而Connector实例本身也需要另一组权限。如果您直接从BlueXP在AWS或Azure中创建Connector、则BlueXP将使用所需权限创建Connector。</block>
+  <block id="c6793bcdb1eae6a26c6e9cb42e6b2f31" category="paragraph"><block ref="079398d71b1e343d69f7a6ed5f005eb2" category="inline-link-macro-rx"></block>。</block>
+  <block id="c160cffd96a1bb98161a7add244e274f" category="paragraph">添加并删除Connector的统一资源标识符(Uniform Resource Identifier、URI)。</block>
+  <block id="f53835e0f369158c476f99fda577e700" category="sidebar">设置和管理文档</block>
 </blocks>

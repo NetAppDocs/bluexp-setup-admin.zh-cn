@@ -158,7 +158,7 @@ system configuration backup settings modify -destination ""
 
 == 编辑Connector的URI
 
-添加并删除 Connector 的 URI 。
+添加并删除Connector的统一资源标识符(Uniform Resource Identifier、URI)。
 
 .步骤
 . 从BlueXP标题中选择*连接器*下拉列表。

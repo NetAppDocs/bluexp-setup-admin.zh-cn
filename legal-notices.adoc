@@ -47,5 +47,4 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。
 
-* link:media/notice.pdf["BlueXP通知"^]
-
+link:media/notice.pdf["BlueXP通知"^]
