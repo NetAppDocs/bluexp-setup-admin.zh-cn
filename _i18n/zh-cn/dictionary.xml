@@ -2702,7 +2702,6 @@
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">了解如何向现有Connector添加AWS凭据。</block>
   <block id="51c8ce8bb23533cdcf692a4e99f34896" category="paragraph"><block ref="51c8ce8bb23533cdcf692a4e99f34896" category="inline-link-macro-rx"></block></block>
   <block id="a3d00aa90b48860260586c7be1bec2e8" category="inline-link-macro">了解如何将AWS凭据添加到适用于Amazon FSX for ONTAP 的BlueXP中</block>
-  <block id="ffd3bdebca0018358cdaaa5dc117c198" category="list-text"><block ref="ffd3bdebca0018358cdaaa5dc117c198" category="inline-link-macro-rx"></block></block>
   <block id="3e9d4cd6e63ede4decfd24e1cd55b4f5" category="inline-link-macro">了解如何向BlueXP添加AWS凭据以创建Connector</block>
   <block id="d53482083698aad0c56365a4b9848a94" category="list-text"><block ref="d53482083698aad0c56365a4b9848a94" category="inline-link-macro-rx"></block></block>
   <block id="3551bffff472d33de9e274227109232f" category="paragraph">以上各节介绍了BlueXP中建议的Connector部署方法。您还可以从AWS Marketplace在AWS中部署Connector、并在您自己的Linux主机上手动安装Connector软件。</block>
@@ -3063,7 +3062,6 @@
   <block id="cb3ffce0d4b8f43b3d9f183b558cca41" category="inline-link-macro">设置受限模式的权限</block>
   <block id="df4564942ae0e0bd6f202d613e944ba1" category="list-text"><block ref="df4564942ae0e0bd6f202d613e944ba1" category="inline-link-macro-rx"></block></block>
   <block id="fad45f664f0478b74c9485a0b1f6d781" category="inline-link">设置私有模式的权限</block>
-  <block id="d73ec6441206aebb4242a98961271e64" category="list-text"><block ref="d73ec6441206aebb4242a98961271e64" category="inline-link-rx"></block></block>
   <block id="815957003313e5f9581718376c2c472f" category="paragraph">以下各节介绍了如何对每个BlueXP服务使用权限。如果您的公司策略规定仅在需要时提供权限、则此信息会很有用。</block>
   <block id="b3a595111956cd206b5fcd5e77bee895" category="summary">注册到BlueXP后、系统会提示您为组织创建帐户。此帐户可能是您所需的全部帐户、但如果您的企业需要多个帐户、则需要使用租户API创建其他帐户。</block>
   <block id="6c45b1e5876b4865e0208a9ade3da041" category="doc">创建另一个BlueXP帐户</block>
@@ -3602,4 +3600,6 @@
   <block id="c6793bcdb1eae6a26c6e9cb42e6b2f31" category="paragraph"><block ref="079398d71b1e343d69f7a6ed5f005eb2" category="inline-link-macro-rx"></block>。</block>
   <block id="c160cffd96a1bb98161a7add244e274f" category="paragraph">添加并删除Connector的统一资源标识符(Uniform Resource Identifier、URI)。</block>
   <block id="f53835e0f369158c476f99fda577e700" category="sidebar">设置和管理文档</block>
+  <block id="22e332a6ecd5f345a3f720b11f7cf805" category="list-text"><block ref="22e332a6ecd5f345a3f720b11f7cf805" category="inline-link-macro-rx"></block></block>
+  <block id="d56f297cb566b98a6b65a6dea3038531" category="list-text"><block ref="d56f297cb566b98a6b65a6dea3038531" category="inline-link-macro-rx"></block></block>
 </blocks>

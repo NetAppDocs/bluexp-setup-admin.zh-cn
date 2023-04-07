@@ -26,7 +26,7 @@ BlueXP需要在Google Cloud中执行操作的权限。这些权限包含在NetAp
 
 * link:task-set-up-permissions-google.html["设置标准模式的权限"]
 * link:task-prepare-restricted-mode.html#prepare-cloud-permissions["设置受限模式的权限"]
-* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["设置私有模式的权限"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["设置私有模式的权限"]
 
 
 您还需要确保角色是最新的、因为在后续版本中添加了新权限。
