@@ -18,6 +18,18 @@ _Identity Federation_支持使用BlueXP进行单点登录、以便用户可以�
 
 
 
+== 使用NSS凭据的身份联合
+
+如果您使用NetApp 支持站点 (NSS)凭据登录到BlueXP、则不应按照此页面上的说明设置身份联合。您应改为执行以下操作：
+
+* 下载并完成 https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["NetApp联合申请表"^]
+* 将此表单提交到表单中指定的电子邮件地址
+
+
+NetApp身份和访问管理团队将审核您的请求。
+
+
+
 == 身份联合的工作原理
 
 设置身份联合会在BlueXP的身份验证服务提供程序(auth0)与您自己的身份管理提供程序之间创建信任连接。
@@ -56,6 +68,8 @@ BlueXP仅支持服务提供商启动(SP启动)的SSO。不支持身份提供程�
 == 设置过程概述
 
 在BlueXP与身份管理提供程序之间建立连接之前、您应了解需要执行的步骤、以便能够进行相应的准备。
+
+这些步骤特定于使用NetApp云登录登录到BlueXP的用户。如果使用NSS凭据登录到BlueXP、 <<使用NSS凭据的身份联合,了解如何使用NSS凭据设置身份联合>>。
 
 
 

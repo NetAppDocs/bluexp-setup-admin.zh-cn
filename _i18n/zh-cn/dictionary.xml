@@ -3605,4 +3605,12 @@
   <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">经济效益^1^</block>
   <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">运营弹性^1^</block>
   <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">^1^虽然您可以在没有连接器的情况下访问这些服务、但要从这些服务启动操作、需要使用连接器。</block>
+  <block id="f570b8386694ba0d5563a8784f3135e5" category="section-title">使用NSS凭据的身份联合</block>
+  <block id="e906028a6376600a0f505777b7c3af9f" category="paragraph">如果您使用NetApp 支持站点 (NSS)凭据登录到BlueXP、则不应按照此页面上的说明设置身份联合。您应改为执行以下操作：</block>
+  <block id="0a3bde973847d35b12a69e1debea9ca9" category="inline-link">NetApp联合申请表</block>
+  <block id="8c992ea897689b69e58371da6a8ae5e6" category="list-text">下载并完成<block ref="82f36446881e14fa28b945cd41d2b383" category="inline-link-rx"></block></block>
+  <block id="78080f8885ea72672a94d1643801d9cb" category="list-text">将此表单提交到表单中指定的电子邮件地址</block>
+  <block id="2ffd4295ac6fb250f496a1c2b7840422" category="paragraph">NetApp身份和访问管理团队将审核您的请求。</block>
+  <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">了解如何使用NSS凭据设置身份联合</block>
+  <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">这些步骤特定于使用NetApp云登录登录到BlueXP的用户。如果使用NSS凭据登录到BlueXP、 <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>。</block>
 </blocks>
