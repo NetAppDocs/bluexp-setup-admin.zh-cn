@@ -187,8 +187,6 @@ sidebar:
         url: "/task-adding-nss-accounts.html"
       - title: 管理与您的BlueXP登录关联的凭据
         url: "/task-manage-user-credentials.html"
-    - title: 订阅
-      url: "/task-manage-subscriptions.html"
     - title: 已发现云存储
       entries:
       - title: 管理Amazon S3存储分段
