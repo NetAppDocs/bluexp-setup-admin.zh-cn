@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations.html 
-keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running 
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, httpstokens 
 summary: 已知限制确定了本产品版本不支持的平台、设备或功能、或者这些平台、设备或功能无法与产品正确交互操作。仔细审查这些限制。 
 ---
 = 已知限制
@@ -21,6 +21,18 @@ summary: 已知限制确定了本产品版本不支持的平台、设备或功�
 
 
 == 连接器限制
+
+
+
+=== 不应更改默认EC2实例设置
+
+在AWS中部署Connector时、默认情况下会配置以下EC2实例设置：
+
+* IMDSv2设置为可选
+* HttpTokens设置为可选
+
+
+这些设置不应更改为必需。将这些设置更改为所需会影响连接器和Cloud Volumes ONTAP 的可用性。
 
 
 

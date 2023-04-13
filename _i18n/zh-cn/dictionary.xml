@@ -3583,4 +3583,9 @@
   <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">了解如何使用NSS凭据设置身份联合</block>
   <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">这些步骤特定于使用NetApp云登录登录到BlueXP的用户。如果使用NSS凭据登录到BlueXP、 <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>。</block>
   <block id="47bf230a49ecee72c3b36a37f9758812" category="cell">https://www.googleapis.com/compute/v1/\https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
+  <block id="cf4525e15b866700f10e91573643ba54" category="section-title">不应更改默认EC2实例设置</block>
+  <block id="505d2a7358228b26711e097c3ca6dc24" category="paragraph">在AWS中部署Connector时、默认情况下会配置以下EC2实例设置：</block>
+  <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2设置为可选</block>
+  <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokens设置为可选</block>
+  <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">这些设置不应更改为必需。将这些设置更改为所需会影响连接器和Cloud Volumes ONTAP 的可用性。</block>
 </blocks>
