@@ -21,7 +21,7 @@ summary: 当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它�
 | 端点 | 目的 
 
 
-| https://console.bluexp.netapp.com | 使用基于Web的控制台时、Web浏览器会联系此URL。 
+| https://console.bluexp.netapp.com \https://*.console.bluexp.netapp.com | 使用BlueXP基于Web的控制台时、Web浏览器会联系这些URL。 
 
 
  a| 
@@ -57,8 +57,9 @@ AWS 服务（ AmazonAWS.com ）：
 | https://widget.intercom.io | 用于与 NetApp 云专家交流的产品内聊天。 
 |===
 .相关链接
-* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Connector在AWS中联系的端点"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Connector在Azure中联系的端点"]
-* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Connector在Google Cloud中联系的端点"]
-* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["在手动安装连接器期间访问的端点"]
+* link:task-prepare-restricted-mode.html#prepare-networking-for-user-access-to-bluexp-console["准备网络以供用户访问BlueXP控制台(受限模式)"]
+* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Connector在AWS中连接的端点(标准模式)"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Connector在Azure中联系的端点(标准模式)"]
+* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Connector在Google Cloud中联系的端点(标准模式)"]
+* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["在手动安装连接器(标准模式)期间连接的端点"]
 

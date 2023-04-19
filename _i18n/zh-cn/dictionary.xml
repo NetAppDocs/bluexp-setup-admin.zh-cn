@@ -1887,7 +1887,6 @@
   <block id="e9c8bdcc91d25115e46e6c43d23fe563" category="paragraph">Cloud Backup和Cloud Tiering需要此权限。</block>
   <block id="175e0c32b0d1e82352dde70ca6ad31a2" category="paragraph">Cloud Backup需要此权限。</block>
   <block id="1ff61a19534f16f8c2b0aa752b13fb0a" category="paragraph">已从JSON策略中删除以下权限、因为不再需要这些权限：</block>
-  <block id="03275fa7fd8487800900fe5ed21b50b4" category="cell">https://console.bluexp.netapp.com</block>
   <block id="3a9d5bd356ec8e4fc31c11150128b7ac" category="list-text">打开Web浏览器并转到<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block></block>
   <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022年12月4日</block>
   <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">连接器3.9.24</block>
@@ -3017,9 +3016,6 @@
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">删除凭据</block>
   <block id="79c33710e10337a79e50227860ebf59a" category="list-text">在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*删除凭据*。</block>
   <block id="26b956db62dfb9e45d6132f9e41a9d73" category="summary">当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它会与多个端点联系以完成数据管理任务。运行Web浏览器的计算机必须连接到这些端点。</block>
-  <block id="b49cf226526bec08997a8b7c5adba39c" category="cell">使用基于Web的控制台时、Web浏览器会联系此URL。</block>
-  <block id="1ecee0edf351652fe1d2dfd06c45adab" category="inline-link-macro">在手动安装连接器期间访问的端点</block>
-  <block id="28654ae42df3aaae083bad0a7d52a508" category="list-text"><block ref="28654ae42df3aaae083bad0a7d52a508" category="inline-link-macro-rx"></block></block>
   <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">安装HTTPS证书以确保安全访问</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">在BlueXP控制台的右上角、选择设置图标、然后选择* HTTPS设置*。</block>
   <block id="6af98f64f202dba04d4bee35778042a2" category="list-text">输入Connector主机的主机名或DNS (其公用名)、然后选择*生成CSR*。</block>
@@ -3588,4 +3584,16 @@
   <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2设置为可选</block>
   <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokens设置为可选</block>
   <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">这些设置不应更改为必需。将这些设置更改为所需会影响连接器和Cloud Volumes ONTAP 的可用性。</block>
+  <block id="ca514cc7f92949257244bf6c32d47ea3" category="cell">https://console.bluexp.netapp.com \https://*.console.bluexp.netapp.com</block>
+  <block id="7926588c37032e15e3fdc15831f4bbb5" category="cell">使用BlueXP基于Web的控制台时、Web浏览器会联系这些URL。</block>
+  <block id="bfb1a8284652de834f7e5f10d70d1b28" category="inline-link-macro">准备网络以供用户访问BlueXP控制台(受限模式)</block>
+  <block id="bbeb91503e087c169e5b9723b8e20883" category="list-text"><block ref="bbeb91503e087c169e5b9723b8e20883" category="inline-link-macro-rx"></block></block>
+  <block id="2860cec66f88d15f252631c132ac68ce" category="inline-link-macro">Connector在AWS中连接的端点(标准模式)</block>
+  <block id="c5671cdad008988d217498ffee18763f" category="list-text"><block ref="c5671cdad008988d217498ffee18763f" category="inline-link-macro-rx"></block></block>
+  <block id="f30c2ab09bb92e952f9dc522c1d59a4b" category="inline-link-macro">Connector在Azure中联系的端点(标准模式)</block>
+  <block id="befb6b1b01e0761a5d0ce6f028c4edd2" category="list-text"><block ref="befb6b1b01e0761a5d0ce6f028c4edd2" category="inline-link-macro-rx"></block></block>
+  <block id="51592248285ea432f62366d3bb873cd2" category="inline-link-macro">Connector在Google Cloud中联系的端点(标准模式)</block>
+  <block id="6de9f5682041f68bedd20c6f93964068" category="list-text"><block ref="6de9f5682041f68bedd20c6f93964068" category="inline-link-macro-rx"></block></block>
+  <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">在手动安装连接器(标准模式)期间连接的端点</block>
+  <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
 </blocks>
