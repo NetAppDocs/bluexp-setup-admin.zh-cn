@@ -154,10 +154,10 @@ API endpoint:: API调用会调用以下端点：\https://cloudmanager.cloud.neta
 | Azure NetApp Files | 完全支持 
 
 
-| 云备份 | 受限模式的政府区域和商业区域支持。受限模式的主权区域不支持。不支持以下功能：应用程序、虚拟机和Kubernetes。 
+| 备份和恢复 | 受限模式的政府区域和商业区域支持。受限模式的主权区域不支持。不支持以下功能：应用程序、虚拟机和Kubernetes。 
 
 
-| 云数据感知  a| 
+| 分类  a| 
 受限模式的政府区域支持。在商业区域或受限模式的主权区域不支持。
 
 存在以下限制：
@@ -171,7 +171,7 @@ API endpoint:: API调用会调用以下端点：\https://cloudmanager.cloud.neta
 | Cloud Volumes ONTAP | 完全支持 
 
 
-| 数字电子钱包 | 对于受限模式、您可以将数字电子钱包与下面列出的受支持许可选项结合使用。 
+| 数字电子钱包 | 您可以在受限模式下将电子钱包与下面列出的受支持许可选项结合使用。 
 
 
 | 内部 ONTAP 集群 | 同时支持使用连接器进行发现和不使用连接器进行发现(直接发现)。如果您发现使用Connector的内部集群、则不支持高级视图(System Manager)。 
@@ -246,13 +246,13 @@ API endpoint:: API调用会调用Connector虚拟机。
 | 支持的服务 | 注释： 
 
 
-| 云备份 | 在AWS和Azure商业区域中受支持。在Google Cloud或中不受支持 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] 或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+| 备份和恢复 | 在AWS和Azure商业区域中受支持。在Google Cloud或中不受支持 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] 或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
 
 
 | Cloud Volumes ONTAP | 由于无法访问Internet、因此无法使用以下功能：自动软件升级、AutoSupport 和AWS成本信息。 
 
 
-| 数字电子钱包 | 您可以将数字电子钱包与下面列出的受支持许可选项一起用于私有模式。 
+| 数字电子钱包 | 您可以将数字钱包与下面列出的受支持许可选项结合使用、用于私有模式。 
 
 
 | 内部 ONTAP 集群 | 需要从安装了连接器的云连接到内部环境。不支持不使用连接器(直接发现)进行发现。 
@@ -266,10 +266,10 @@ API endpoint:: API调用会调用Connector虚拟机。
 | 支持的服务 | 注释： 
 
 
-| 云备份 | 仅支持将内部ONTAP 卷备份和还原到StorageGRID 系统。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["了解如何将内部ONTAP 数据备份到StorageGRID"^] 
+| 备份和恢复 | 仅支持将内部ONTAP 卷备份和还原到StorageGRID 系统。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["了解如何将内部ONTAP 数据备份到StorageGRID"^] 
 
 
-| 云数据感知  a| 
+| 分类  a| 
 * 唯一支持的数据源是您可以在本地发现的数据源。
 +
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["查看可在本地发现的源"^]
@@ -282,7 +282,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 
 
 
-| 数字电子钱包 | 您可以将数字电子钱包与下面列出的受支持许可选项一起用于私有模式。 
+| 数字电子钱包 | 您可以将数字钱包与下面列出的受支持许可选项结合使用、用于私有模式。 
 
 
 | 内部 ONTAP 集群 | 不支持不使用连接器(直接发现)进行发现。 
@@ -294,9 +294,9 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 支持的许可选项:: 专用模式仅支持BYOL。
 +
 --
-对于Cloud Volumes ONTAP BYOL、仅支持基于节点的许可。不支持基于容量的许可。由于出站Internet连接不可用、您需要在数字电子钱包中手动上传Cloud Volumes ONTAP 许可文件。
+对于Cloud Volumes ONTAP BYOL、仅支持基于节点的许可。不支持基于容量的许可。由于出站Internet连接不可用、您需要手动将Cloud Volumes ONTAP 许可文件上传到BlueXP电子钱包中。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["了解如何向数字电子钱包添加许可证"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["了解如何将许可证添加到BlueXP电子钱包中"^]
 
 --
 如何开始使用专用模式:: 可通过从NetApp 支持站点 下载"脱机"安装程序来访问私有模式。
@@ -315,18 +315,15 @@ link:task-quick-start-private-mode.html["了解如何开始使用私有模式"]�
 
 请注意、某些服务可能受支持、但有一些限制。有关在受限模式和专用模式下如何支持这些服务的详细信息、请参阅上述部分。
 
-[cols="33h,33,33"]
+[cols="19,27,27,27"]
 |===
-| BlueXP服务或功能 | 受限模式 | 私有模式 
+| 产品区域 | BlueXP服务或功能 | 受限模式 | 私有模式 
 
 
-| 适用于 ONTAP 的 Amazon FSX | 是的。 | 否 
+.11+| *工作环境* | 适用于 ONTAP 的 Amazon FSX | 是的。 | 否 
 
 
 | Amazon S3 | 否 | 否 
-
-
-| 应用程序模板 | 否 | 否 
 
 
 | Azure Blob | 否 | 否 
@@ -335,40 +332,10 @@ link:task-quick-start-private-mode.html["了解如何开始使用私有模式"]�
 | Azure NetApp Files | 是的。 | 否 
 
 
-| 云备份 | 是的。 | 是的。 
-
-
-| 云数据感知 | 是的。 | 是的。 
-
-
-| Cloud Sync | 否 | 否 
-
-
-| 云分层 | 否 | 否 
-
-
 | Cloud Volumes ONTAP | 是的。 | 是的。 
 
 
 | 适用于 Google Cloud 的 Cloud Volumes Service | 否 | 否 
-
-
-| 计算 | 否 | 否 
-
-
-| Digital Advisor | 否 | 否 
-
-
-| 数字电子钱包 | 是的。 | 是的。 
-
-
-| E 系列 | 否 | 否 
-
-
-| 经济效率 | 否 | 否 
-
-
-| 全局文件缓存 | 否 | 否 
 
 
 | Google Cloud 存储 | 否 | 否 
@@ -380,19 +347,52 @@ link:task-quick-start-private-mode.html["了解如何开始使用私有模式"]�
 | 内部 ONTAP 集群 | 是的。 | 是的。 
 
 
+| E 系列 | 否 | 否 
+
+
+| StorageGRID | 否 | 否 
+
+
+.13+| * 服务 * | 备份和恢复 | 是的。 | 是的。 
+
+
+| 分类 | 是的。 | 是的。 
+
+
+| 云运营 | 否 | 否 
+
+
+| 复制和同步 | 否 | 否 
+
+
+| 数字顾问 | 否 | 否 
+
+
+| 数字电子钱包 | 是的。 | 是的。 
+
+
+| 经济效率 | 否 | 否 
+
+
+| 边缘缓存 | 否 | 否 
+
+
 | 运营故障恢复能力 | 否 | 否 
 
 
 | 勒索软件保护 | 否 | 否 
 
 
+| 修复 | 否 | 否 
+
+
 | Replication | 是的。 | 是的。 
 
 
-| StorageGRID | 否 | 否 
+| 分层 | 否 | 否 
 
 
-| 凭据 | 是的。 | 是的。 
+.4+| *功能* | 凭据 | 是的。 | 是的。 
 
 
 | NSS帐户 | 是的。 | 否 

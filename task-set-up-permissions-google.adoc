@@ -222,7 +222,7 @@ link:reference-permissions-gcp.html["连接器服务帐户策略"]
 * storage.admin
 * 成员：BlueXP服务帐户serviceAccount.user
 
-| 不适用 | （可选）适用于数据分层和 Cloud Backup 
+| 不适用 | (可选)用于数据分层和BlueXP备份和恢复 
 
 
 | Google API 服务代理 | Google Cloud | 服务项目  a| 

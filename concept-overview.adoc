@@ -40,33 +40,33 @@ BlueXP平台提供了数据管理的四大要素：存储、移动性、保护�
 ** StorageGRID 系统
 
 
+* 流程编排和保护 https://bluexp.netapp.com/solutions/kubernetes["Kubbernetes持久数据"^]
 
 
 --
 移动性:: 通过同步、复制、分层和缓存数据、将数据移动到需要的位置。
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["Cloud Sync"^]
-* https://bluexp.netapp.com/cloud-tiering["云分层"^]
-* https://bluexp.netapp.com/global-file-cache["全局文件缓存"^]
+* https://bluexp.netapp.com/cloud-sync-service["复制和同步"^]
+* https://bluexp.netapp.com/global-file-cache["边缘缓存"^]
+* https://bluexp.netapp.com/cloud-tiering["分层"^]
 
 
 --
 保护:: 使用自动化保护机制保护数据免受数据丢失、计划外中断、勒索软件和其他网络威胁的影响。
 +
 --
-* https://bluexp.netapp.com/cloud-backup["云备份"^]
+* https://bluexp.netapp.com/cloud-backup["备份和恢复"^]
 * https://bluexp.netapp.com/replication["Replication"^]
-* https://bluexp.netapp.com/ransomware-protection["勒索软件保护"^]
-* https://bluexp.netapp.com/k8s["Kubernetes"^]
 
 
 --
 分析和控制:: 使用工具监控、映射和优化数据存储和基础架构。
 +
 --
-* https://bluexp.netapp.com/netapp-cloud-data-sense["云数据感知"^]
-* https://bluexp.netapp.com/digital-advisor["Digital Advisor"^]
+* https://bluexp.netapp.com/netapp-cloud-data-sense["分类"^]
+* https://bluexp.netapp.com/digital-advisor["数字顾问"^]
+* https://bluexp.netapp.com/ransomware-protection["勒索软件保护"^]
 
 
 --
@@ -126,6 +126,6 @@ link:concept-modes.html["详细了解BlueXP部署模式"]。
 
 == SOC 2 类型 2 认证
 
-一家独立的认证公有 会计师事务所和服务审计师对BlueXP、Cloud Sync 、云分层、云数据感知和云备份(BlueXP平台)进行了检查、并确认他们已根据适用的信任服务标准获得SOC 2类型2报告。
+一家独立的注册会计师事务所和服务审计师对BlueXP进行了检查、并确认它根据适用的信任服务标准获得了SOC 2类型2报告。
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["查看 NetApp 的 SOC 2 报告"^]

@@ -53,7 +53,7 @@ image:screenshot-manage-account-settings.png["显示 \" 帐户 \" 下拉列表�
 +
 ** *帐户管理员*：可以在BlueXP中执行任何操作。
 ** * 工作空间管理员 * ：可以在分配的工作空间中创建和管理资源。
-** * 合规性查看器 * ：只能查看 Cloud Data sense 合规性信息，并为其有权访问的工作空间生成报告。
+** *合规性查看器*：只能查看BlueXP分类的合规性信息、并为其有权访问的工作空间生成报告。
 
 
 . 如果选择了 Workspace Admin 或 Compliance Viewer ，请选择一个或多个要与该用户关联的工作空间。

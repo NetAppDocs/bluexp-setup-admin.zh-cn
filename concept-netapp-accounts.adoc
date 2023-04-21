@@ -44,7 +44,7 @@ link:concept-modes.html["详细了解BlueXP部署模式"]。
 
 * _Account Admin_：可以在BlueXP中执行任何操作。
 * _Workspace Admin_ ：可以在分配的工作空间中创建和管理资源。
-* _Compliance Viewer_ ：只能查看 Cloud Data 感知合规性信息，并为其有权访问的系统生成报告。
+* _Compliance Viewer_：只能查看BlueXP分类的合规性信息、并为其有权访问的工作空间生成报告。
 
 
 link:reference-user-roles.html["详细了解这些角色"]。
@@ -70,7 +70,7 @@ link:task-setting-up-netapp-accounts.html["了解如何添加工作空间"]。
 
 Connector执行BlueXP管理数据基础架构所需执行的操作。连接器在云提供商中部署的虚拟机实例上运行、或者在您配置的内部主机上运行。
 
-您可以将Connector与多个BlueXP服务结合使用。例如、如果您正在使用连接器管理Cloud Volumes ONTAP 、则可以将同一个连接器与云分层等其他服务结合使用。
+您可以将Connector与多个BlueXP服务结合使用。例如、如果您使用连接器管理Cloud Volumes ONTAP 、则可以将同一个连接器与另一项服务(如BlueXP分层)结合使用。
 
 link:concept-connectors.html["了解有关连接器的更多信息"]。
 

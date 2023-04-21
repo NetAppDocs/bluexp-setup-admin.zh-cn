@@ -179,20 +179,6 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
 
 
 
-=== AppTemplate标记
-
-在使用AppTemplate标记服务时、Connector会发出以下API请求来管理Azure资源上的标记：
-
-* microsoft.resources/resources/read
-* microsoft.resources/subscriptions/operationresults/read
-* microsoft.resources/subscriptions/resources/read
-* microsoft.resources/subscriptions/resources/resources/read
-* microsoft.resources/tags或read
-* microsoft.resources/tags或write
-
-
-
-
 === Azure NetApp Files
 
 Connector发出以下API请求来管理Azure NetApp Files 工作环境：
@@ -206,9 +192,9 @@ Connector发出以下API请求来管理Azure NetApp Files 工作环境：
 
 
 
-=== 云备份
+=== 备份和恢复
 
-Connector为备份和还原操作发出以下API请求：
+Connector会发出以下API请求以进行BlueXP备份和恢复：
 
 * Microsoft.Compute/virtualMachines/read
 * Microsoft.Compute/virtualMachines/start/action
@@ -261,9 +247,9 @@ Connector为备份和还原操作发出以下API请求：
 
 
 
-=== 云数据感知
+=== 分类
 
-在使用Cloud Data sense时、Connector会发出以下API请求。
+使用BlueXP分类时、Connector会发出以下API请求。
 
 [cols="3*"]
 |===
@@ -404,26 +390,6 @@ Connector为备份和还原操作发出以下API请求：
 
 | microsoft.resources/subscriptions/resources/write | 是的。 | 否 
 |===
-
-
-=== 云分层
-
-在设置Cloud Tiering时、Connector会发出以下API请求。
-
-* microsoft.Storage/storageAccounts"/列表项/操作
-* microsoft.resources/subscriptions/resources/read
-* microsoft.resources/subscriptions/locations/read
-
-
-Connector会为日常操作发出以下API请求。
-
-* microsoft.Storage/storageAccounts"(存储帐户)/blobServices/containers/read
-* microsoft.Storage/storageAccounts"(存储帐户)/blobServices/容器/写入
-* microsoft.Storage/storageAccounts/managementPolicies/Read
-* microsoft.Storage/storageAccounts/managementPolicies/write
-* microsoft.Storage/storageAccounts"或"Read"
-
-
 
 
 === Cloud Volumes ONTAP
@@ -733,9 +699,9 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 |===
 
 
-=== 全局文件缓存
+=== 边缘缓存
 
-使用全局文件缓存时、Connector会发出以下API请求：
+使用BlueXP边缘缓存时、Connector会发出以下API请求：
 
 * microsoft.Insights /指标/读取
 * Microsoft.Compute/virtualMachines/extensions/write
@@ -764,6 +730,40 @@ Connector发出以下API请求、以发现和管理Azure Kubernetes Service (AKS
 
 
 
+=== 修复
+
+使用BlueXP修复时、Connector会发出以下API请求来管理Azure资源上的标记：
+
+* microsoft.resources/resources/read
+* microsoft.resources/subscriptions/operationresults/read
+* microsoft.resources/subscriptions/resources/read
+* microsoft.resources/subscriptions/resources/resources/read
+* microsoft.resources/tags或read
+* microsoft.resources/tags或write
+
+
+
+
+=== 分层
+
+在设置BlueXP层时、Connector会发出以下API请求。
+
+* microsoft.Storage/storageAccounts"/列表项/操作
+* microsoft.resources/subscriptions/resources/read
+* microsoft.resources/subscriptions/locations/read
+
+
+Connector会为日常操作发出以下API请求。
+
+* microsoft.Storage/storageAccounts"(存储帐户)/blobServices/containers/read
+* microsoft.Storage/storageAccounts"(存储帐户)/blobServices/容器/写入
+* microsoft.Storage/storageAccounts/managementPolicies/Read
+* microsoft.Storage/storageAccounts/managementPolicies/write
+* microsoft.Storage/storageAccounts"或"Read"
+
+
+
+
 == 更改日志
 
 添加和删除权限后、我们将在以下各节中记录这些权限。
@@ -772,7 +772,7 @@ Connector发出以下API请求、以发现和管理Azure Kubernetes Service (AKS
 
 === 2023年3月23日
 
-Cloud Data sense不再需要"microsoft.Storage/storageAccounts/delete"权限。
+BlueXP分类不再需要"Microsoft.Storage/StorageAccounts/delete"权限。
 
 Cloud Volumes ONTAP 仍需要此权限。
 
@@ -785,7 +785,7 @@ Cloud Volumes ONTAP 仍需要此权限。
 * microsoft.Storage/storageAccounts/ListAccountSAS/操作
 * microsoft.Synape/workworkworks/privateEndpointConnectionsApproval/操作
 +
-Cloud Backup需要这些权限。
+BlueXP备份和恢复需要这些权限。
 
 * Microsoft.Network/loadBalancers/backendAddressPools/join/action
 +
@@ -801,11 +801,11 @@ Cloud Volumes ONTAP 部署需要此权限。
 
 * microsoft.Storage/storageAccounts"(存储帐户)/blobServices/容器/写入
 +
-Cloud Backup和Cloud Tiering需要此权限。
+BlueXP备份和恢复以及BlueXP层需要此权限。
 
 * Microsoft.Network/publicIPAddresses/delete
 +
-Cloud Backup需要此权限。
+BlueXP备份和恢复需要此权限。
 
 
 

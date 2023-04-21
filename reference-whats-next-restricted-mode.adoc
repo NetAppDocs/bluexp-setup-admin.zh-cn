@@ -20,8 +20,8 @@ summary: 在受限模式下启动和运行BlueXP后、您可以开始使用受�
 
 * https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html["Amazon FSX for ONTAP 文档"^]
 * https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html["Azure NetApp Files 文档"^]
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html["Cloud Backup 文档"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html["Cloud Data sense 文档"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html["备份和恢复文档"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html["分类文档"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP 文档"^]
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["内部ONTAP 集群文档"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/index.html["复制文档"^]

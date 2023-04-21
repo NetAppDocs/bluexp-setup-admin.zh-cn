@@ -47,19 +47,19 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 
 第一个策略为以下服务提供权限：
 
-* 云备份
-* 云数据感知
-* 云分层
+* Amazon S3 存储分段发现
+* 备份和恢复
+* 分类
 * Cloud Volumes ONTAP
 * 适用于 ONTAP 的 FSX
-* S3存储分段发现
+* 分层
 
 
 第二个策略为以下服务提供权限：
 
-* 附加模板标记
-* 全局文件缓存
+* 边缘缓存
 * Kubernetes
+* 修复
 
 
 [role="tabbed-block"]
@@ -703,25 +703,53 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 
 
 
-=== AppTemplate标记
+=== 适用于 ONTAP 的 Amazon FSX
 
-在使用AppTemplate标记服务时、Connector会发出以下API请求来管理AWS资源上的标记：
+连接器发出以下API请求来管理Amazon FSx for ONTAP ：
 
+* EC2：Describe实例
+* EC2：Describe实例状态
+* EC2：Describe实例属性
+* EC2：Describe RouteTables
+* EC2：Describe
 * EC2：CreateTags
-* EC2：DeleteTags
+* EC2：Describe卷
+* EC2：Describe安全性组
+* EC2：Describe网络接口
+* EC2：Describe子网
+* EC2：Describe
+* EC2：Describe DhcpOptions
+* EC2：Describe Snapshot
+* EC2：Describe KeyPairs
+* EC2：Describe注册
 * EC2：Describe标记
-* 标记：getResources
-* 标记：getTag密钥
-* 标记：getTagValues
-* 标记：标记资源
-* 标记：未标记资源
+* EC2：Describe IamInstanceProfileAssociations
+* EC2：Describe保留实例服务
+* EC2：Describe VpcEndpoints
+* EC2：Describe
+* EC2：Describe卷修改
+* EC2：Describe PlacementGroup
+* 公里：列表*
+* 公里：描述*
+* 公里：CreateGrant
+* Kms：ListAliases
+* FSX：描述*
+* FSX：List*
 
 
 
 
-=== 云备份
+=== Amazon S3 存储分段发现
 
-Connector会发出以下API请求来部署Cloud Backup的还原实例：
+Connector会发出以下API请求来发现Amazon S3存储分段：
+
+S3 ： GetEncryptionConfiguration
+
+
+
+=== 备份和恢复
+
+Connector发出以下API请求来部署还原实例以进行BlueXP备份和恢复：
 
 * EC2：StartInstances
 * EC2：StopInstances
@@ -825,9 +853,9 @@ Connector会发出以下API请求来管理Amazon S3中的备份：
 
 
 
-=== 云数据感知
+=== 分类
 
-Connector发出以下API请求以部署Cloud Data sense实例：
+Connector发出以下API请求以部署BlueXP分类实例：
 
 * EC2：Describe实例
 * EC2：Describe实例状态
@@ -855,7 +883,7 @@ Connector发出以下API请求以部署Cloud Data sense实例：
 * EC2：Describe IamInstanceProfileAssociations
 
 
-在使用Cloud Data sense时、Connector会发出以下API请求来扫描S3存储分段：
+使用BlueXP分类时、Connector会发出以下API请求来扫描S3分段：
 
 * IAM：AddRoleToInstanceProfile
 * EC2：AssociateIamInstanceProfile
@@ -875,31 +903,6 @@ Connector发出以下API请求以部署Cloud Data sense实例：
 * STS：AssumeRole
 
 
-
-
-=== 云分层
-
-在使用Cloud Tiering时、Connector会发出以下API请求、将数据分层到Amazon S3。
-
-[cols="3*"]
-|===
-| Action | 用于设置？ | 用于日常操作？ 
-
-
-| S3 ： CreateBucket | 是的。 | 否 
-
-
-| S3 ： PutLifeycleConfiguration | 是的。 | 否 
-
-
-| S3 ： GetLifeycleConfiguration | 是的。 | 是的。 
-
-
-| EC2：Describe注册 | 是的。 | 否 
-
-
-| EC2：Describe VpcEndpoints | 是的。 | 否 
-|===
 
 
 === Cloud Volumes ONTAP
@@ -1173,49 +1176,13 @@ Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes 
 |===
 
 
-=== 全局文件缓存
+=== 边缘缓存
 
-Connector会发出以下API请求、以便在部署期间部署全局文件缓存实例：
+Connector会发出以下API请求、以便在部署期间部署BlueXP边缘缓存实例：
 
 * CloudFormation：Describe堆栈
 * CloudWatch：GetMetricStatistics
 * CloudFormation：ListStack
-
-
-
-
-=== 适用于 ONTAP 的 FSX
-
-Connector发出以下API请求来管理适用于ONTAP 的FSX：
-
-* EC2：Describe实例
-* EC2：Describe实例状态
-* EC2：Describe实例属性
-* EC2：Describe RouteTables
-* EC2：Describe
-* EC2：CreateTags
-* EC2：Describe卷
-* EC2：Describe安全性组
-* EC2：Describe网络接口
-* EC2：Describe子网
-* EC2：Describe
-* EC2：Describe DhcpOptions
-* EC2：Describe Snapshot
-* EC2：Describe KeyPairs
-* EC2：Describe注册
-* EC2：Describe标记
-* EC2：Describe IamInstanceProfileAssociations
-* EC2：Describe保留实例服务
-* EC2：Describe VpcEndpoints
-* EC2：Describe
-* EC2：Describe卷修改
-* EC2：Describe PlacementGroup
-* 公里：列表*
-* 公里：描述*
-* 公里：CreateGrant
-* Kms：ListAliases
-* FSX：描述*
-* FSX：List*
 
 
 
@@ -1232,11 +1199,19 @@ Connector会发出以下API请求来发现和管理Amazon EKS集群：
 
 
 
-=== S3存储分段发现
+=== 修复
 
-Connector会发出以下API请求来发现Amazon S3存储分段：
+使用BlueXP修复时、Connector会发出以下API请求来管理AWS资源上的标记：
 
-S3 ： GetEncryptionConfiguration
+* EC2：CreateTags
+* EC2：DeleteTags
+* EC2：Describe标记
+* 标记：getResources
+* 标记：getTag密钥
+* 标记：getTagValues
+* 标记：标记资源
+* 标记：未标记资源
+
 
 
 
@@ -1248,6 +1223,6 @@ S3 ： GetEncryptionConfiguration
 
 === 2023年2月14日
 
-现在、Cloud Tiering需要以下权限：
+现在、BlueXP层需要以下权限：
 
 EC2：Describe VpcEndpoints

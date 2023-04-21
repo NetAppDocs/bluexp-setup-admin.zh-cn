@@ -16,7 +16,7 @@ summary: 在Google Cloud中安装Connector后、BlueXP可以自动发现有关�
 [role="lead"]
 在Google Cloud中安装Connector后、BlueXP可以自动发现有关安装Connector的Google帐户中的Google Cloud存储分段的信息。Google Cloud Storage工作环境已添加到Canvas中、您可以查看此信息。
 
-您可以查看有关Google Cloud存储分段的详细信息、包括位置、访问状态、存储类、总容量和已用容量等。这些存储分段可用作云备份、云分层或Cloud Sync 操作的目标。
+您可以查看有关Google Cloud存储分段的详细信息、包括位置、访问状态、存储类、总容量和已用容量等。这些分段可用作BlueXP备份和恢复、BlueXP分层或BlueXP复制和同步操作的目标。
 
 .步骤
 . 在要查看Google Cloud存储分段的Google帐户中安装Connector。
@@ -33,7 +33,7 @@ image:screenshot-gcp-cloud-storage-actions.png["选择Google Cloud Storage工作
 
 . 选择*同步数据*可将数据与Google Cloud存储分段同步或与Google Cloud Storage分段同步。
 +
-有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Cloud Sync 服务概述"^]
+有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["BlueXP复制和同步概述"^]
 
 . 选择*进入工作环境*可查看有关Google帐户中各个存储分段的详细信息。
 +
