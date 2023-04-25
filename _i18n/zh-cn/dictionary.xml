@@ -3554,7 +3554,6 @@
   <block id="c8a11657cad4105099bd9eb0d4bdbaec" category="paragraph">使用BlueXP修复时、Connector会发出以下API请求来管理AWS资源上的标记：</block>
   <block id="bf9c7c9727a11f040da47cdd589f7ea6" category="paragraph">现在、BlueXP层需要以下权限：</block>
   <block id="54301079e01fc865e928c6fe22deeeef" category="paragraph">您可以查看有关S3存储分段的详细信息、包括区域、访问策略、帐户、总容量和已用容量等。这些分段可用作BlueXP备份和恢复、BlueXP分层或BlueXP复制和同步操作的目标。此外、您还可以使用BlueXP分类来扫描这些分段。</block>
-  <block id="e97440eb1bbaa6bbe8778090ce381499" category="summary">您应了解BlueXP如何使用Azure凭据和权限、以便管理一个或多个Azure订阅的凭据。例如、您可能希望了解如何向BlueXP添加其他Azure凭据。</block>
   <block id="672184337bf12286628179253519271e" category="paragraph"><block ref="672184337bf12286628179253519271e" category="inline-link-macro-rx"></block></block>
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">您可以通过关联市场订阅并对订阅过程进行故障排除来管理与Connector VM实例关联的Google Cloud凭据。这两项任务都可以确保您可以使用市场订阅来支付BlueXP服务费用。</block>
   <block id="285c4c5f9756d9707fc1afed457a8b43" category="summary">Connector的Azure安全组需要入站和出站规则。从BlueXP创建Connector时、BlueXP会自动创建此安全组。您需要为所有其他安装选项设置此安全组。</block>
@@ -3595,7 +3594,6 @@
   <block id="d82a01de8fc043d47b50211e2437d663" category="paragraph">通过准备环境、部署Connector和订阅BlueXP、在受限模式下开始使用BlueXP。</block>
   <block id="ebed13b527202f35f3ec91ab58b5a4c2" category="paragraph">您可能希望在部署连接器之前了解有关其配置的更多信息、或者需要对任何问题进行故障排除。</block>
   <block id="c68ce7f660a6741b838bea908ac88f81" category="summary">必须先启用多个Google Cloud API、然后才能在Google Cloud中部署Connector和Cloud Volumes ONTAP。</block>
-  <block id="7e9f2a9703b554788d8d241081d992e9" category="summary">您应了解BlueXP如何使用AWS凭据和权限、以便管理一个或多个AWS帐户的凭据。例如、您可能希望了解如何向BlueXP添加其他AWS凭据。</block>
   <block id="b1bf8e5320cdd219124de4b848049533" category="summary">如果您在自己的Linux主机上手动安装了Connector软件、则需要为BlueXP提供先前设置的权限。通过提供权限、BlueXP可以在Google Cloud中管理数据和存储基础架构。</block>
   <block id="9816c573c33f4a6c99fc578d678ba65a" category="summary">Connector的Google Cloud防火墙规则需要入站和出站规则。从BlueXP创建Connector时、BlueXP会自动创建此安全组。您需要为所有其他安装选项设置此安全组。</block>
   <block id="9a4eb6738f043a9d449205f3ee2089f1" category="summary">如果您在自己的Linux主机上手动安装了Connector软件、则需要为BlueXP提供先前设置的权限。通过提供权限、BlueXP可以在AWS中管理数据和存储基础架构。</block>
@@ -3611,7 +3609,9 @@
   <block id="9370643895ad52c4da3ddf50c1e24a82" category="summary">帐户管理员，工作空间管理员，合规性查看器和 SnapCenter 管理员角色可为用户提供特定权限。在将新用户与BlueXP帐户关联时、您可以分配这些角色之一。</block>
   <block id="2ba2174aabffe3eb7a1b296e02063736" category="summary">在受限模式下使用BlueXP时、您需要从连接器本地运行的用户界面登录到BlueXP控制台。</block>
   <block id="4453e7502515d4db1f3a4a1c28c48f13" category="summary">连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。如果您计划手动安装Connector、则应确保主机满足这些要求。在安装连接器之前、请确保主机满足这些要求。</block>
-  <block id="43dd9ffda6ee5eff1f85b5f003c898b3" category="summary">了解BlueXP如何使用Google Cloud凭据和权限来管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。</block>
   <block id="47ca16329494467c539bde558f0ae632" category="list-text">部署 Connector 时，系统会提示您选择<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> VM 实例。BlueXP从服务帐户中获取代表您创建和管理Cloud Volumes ONTAP 系统等的权限。权限可通过将自定义角色附加到服务帐户来提供。</block>
   <block id="52be9a779a7de2bea0867d1d993e7f07" category="summary">连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。在安装连接器之前、请确保主机满足这些要求。</block>
+  <block id="467ab02e35d0adba413e3be72e9c49a8" category="summary">了解BlueXP如何使用Azure凭据和权限、以便您可以管理一个或多个Azure订阅的凭据。例如、您可能希望了解如何向BlueXP添加其他Azure凭据。</block>
+  <block id="3c0eb878d2cb71d8ced9c8198a3d9f1d" category="summary">了解BlueXP如何使用AWS凭据和权限来管理一个或多个AWS帐户的凭据。例如、您可能希望了解如何向BlueXP添加其他AWS凭据。</block>
+  <block id="8054ab9ced76d417f5267da91e77acb2" category="summary">了解BlueXP如何使用Google Cloud凭据和权限来管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。</block>
 </blocks>
