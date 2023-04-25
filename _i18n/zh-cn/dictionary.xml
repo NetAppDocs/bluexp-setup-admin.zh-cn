@@ -3611,7 +3611,7 @@
   <block id="4453e7502515d4db1f3a4a1c28c48f13" category="summary">连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。如果您计划手动安装Connector、则应确保主机满足这些要求。在安装连接器之前、请确保主机满足这些要求。</block>
   <block id="47ca16329494467c539bde558f0ae632" category="list-text">部署 Connector 时，系统会提示您选择<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> VM 实例。BlueXP从服务帐户中获取代表您创建和管理Cloud Volumes ONTAP 系统等的权限。权限可通过将自定义角色附加到服务帐户来提供。</block>
   <block id="52be9a779a7de2bea0867d1d993e7f07" category="summary">连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。在安装连接器之前、请确保主机满足这些要求。</block>
-  <block id="467ab02e35d0adba413e3be72e9c49a8" category="summary">了解BlueXP如何使用Azure凭据和权限、以便您可以管理一个或多个Azure订阅的凭据。例如、您可能希望了解如何向BlueXP添加其他Azure凭据。</block>
-  <block id="3c0eb878d2cb71d8ced9c8198a3d9f1d" category="summary">了解BlueXP如何使用AWS凭据和权限来管理一个或多个AWS帐户的凭据。例如、您可能希望了解如何向BlueXP添加其他AWS凭据。</block>
-  <block id="8054ab9ced76d417f5267da91e77acb2" category="summary">了解BlueXP如何使用Google Cloud凭据和权限来管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。</block>
+  <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">了解BlueXP如何使用Azure凭据和权限代表您执行操作。了解这些详细信息有助于您管理一个或多个Azure订阅的凭据。例如、您可能希望了解何时向BlueXP添加其他Azure凭据。</block>
+  <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">了解BlueXP如何使用AWS凭据和权限代表您执行操作。了解这些详细信息有助于您在BlueXP中管理一个或多个AWS帐户的凭据。例如、您可能希望了解何时向BlueXP添加其他AWS凭据。</block>
+  <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">了解BlueXP如何使用Google Cloud凭据和权限代表您执行操作。了解这些详细信息有助于您管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。</block>
 </blocks>
