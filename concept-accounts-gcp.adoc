@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: 您应了解BlueXP如何使用Google Cloud凭据和权限、以便管理一个或多个Google Cloud项目的凭据。 
+summary: 了解BlueXP如何使用Google Cloud凭据和权限来管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。 
 ---
 = Google Cloud 项目，权限和帐户
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您应了解BlueXP如何使用Google Cloud凭据和权限、以便管�
 
 
 [role="lead"]
-您应了解BlueXP如何使用Google Cloud凭据和权限、以便管理一个或多个Google Cloud项目的凭据。
+了解BlueXP如何使用Google Cloud凭据和权限来管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。
 
 
 
@@ -25,7 +25,7 @@ summary: 您应了解BlueXP如何使用Google Cloud凭据和权限、以便管�
 在直接从BlueXP部署Connector之前、必须具有两组权限：
 
 . 您需要使用有权从BlueXP启动Connector VM实例的Google帐户部署Connector。
-. 部署 Connector 时，系统会提示您选择 https://cloud.google.com/iam/docs/service-accounts["服务帐户"^] VM 实例。BlueXP可从服务帐户获得代表您创建和管理Cloud Volumes ONTAP 系统的权限。权限可通过将自定义角色附加到服务帐户来提供。
+. 部署 Connector 时，系统会提示您选择 https://cloud.google.com/iam/docs/service-accounts["服务帐户"^] VM 实例。BlueXP从服务帐户中获取代表您创建和管理Cloud Volumes ONTAP 系统等的权限。权限可通过将自定义角色附加到服务帐户来提供。
 
 
 下图显示了上面编号 1 和 2 中所述的权限要求：

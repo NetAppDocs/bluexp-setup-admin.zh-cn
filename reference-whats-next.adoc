@@ -17,3 +17,6 @@ summary: 现在、您已登录并在标准模式下设置了BlueXP、用户可�
 现在、您已登录并在标准模式下设置了BlueXP、用户可以创建和发现工作环境并使用BlueXP数据服务。
 
 要获得帮助、请转到 https://docs.netapp.com/us-en/cloud-manager-family/["BlueXP文档的主页"^] 查看所有BlueXP服务的文档。
+
+.相关链接
+link:concept-modes.html["BlueXP部署模式"]

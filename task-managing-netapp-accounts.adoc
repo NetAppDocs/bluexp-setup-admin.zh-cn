@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-netapp-accounts.html 
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, member, remove user, remove users, remove, delete, account, user account, user accounts, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector, service account 
-summary: 执行初始设置后、您可以稍后通过管理用户、服务帐户、工作空间和连接器来管理帐户设置。 
+summary: 创建BlueXP帐户时、该帐户仅包含一个管理员用户和一个工作区。您可以通过添加用户、创建服务帐户以实现自动化以及添加工作空间等方式来管理帐户、以满足组织的需求。 
 ---
 = 管理您的BlueXP帐户
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: 执行初始设置后、您可以稍后通过管理用户、服务帐�
 
 
 [role="lead"]
-您可以通过管理用户、服务帐户、工作空间和连接器来管理您的帐户。
+创建BlueXP帐户时、该帐户仅包含一个管理员用户和一个工作区。您可以通过添加用户、创建服务帐户以实现自动化以及添加工作空间等方式来管理帐户、以满足组织的需求。
 
-link:concept-netapp-accounts.html["详细了解BlueXP帐户的工作原理"]。
+link:concept-netapp-accounts.html["了解BlueXP帐户的工作原理"]。
 
 
 

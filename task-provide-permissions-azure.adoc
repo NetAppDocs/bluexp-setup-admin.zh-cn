@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-provide-permissions-azure.html 
 keywords: azure permissions, connector permissions, custom role, azure custom role, service principal, how to provide azure permissions, set up azure permissions, provide azure permissions, permissions 
-summary: 如果您从Azure Marketplace创建了Connector或手动安装了软件、则需要为BlueXP提供先前设置的权限。 
+summary: 如果您从Azure Marketplace创建了Connector或手动安装了软件、则需要为BlueXP提供先前设置的权限。通过提供权限、BlueXP可以在Azure中管理数据和存储基础架构。 
 ---
 = 为BlueXP提供Azure权限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 如果您从Azure Marketplace创建了Connector或手动安装了软件
 
 
 [role="lead"]
-如果您从Azure Marketplace创建了Connector或手动安装了软件、则需要为BlueXP提供先前设置的权限。
+如果您从Azure Marketplace创建了Connector或手动安装了软件、则需要为BlueXP提供先前设置的权限。通过提供权限、BlueXP可以在Azure中管理数据和存储基础架构。
 
 link:task-set-up-permissions-azure.html["了解如何设置这些权限"]。
 

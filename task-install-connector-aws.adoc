@@ -65,7 +65,10 @@ TIP: 如果选择 * 承担角色 * ，则可以从 Connector 部署向导创建�
 +
 确保您具有可用于Connector的正确密钥对。如果没有密钥对、您将无法访问Connector虚拟机。
 
-** * 安全组 * ：选择是创建新的安全组，还是选择允许入站 HTTP ， HTTPS 和 SSH 访问的现有安全组。
+** *安全组*：选择是创建新安全组还是选择允许所需入站和出站规则的现有安全组。
++
+link:reference-ports-aws.html["查看AWS的安全组规则"]。
+
 ** * 审核 * ：查看您选择的内容，确认您的设置正确无误。
 
 
@@ -84,11 +87,11 @@ TIP: 如果选择 * 承担角色 * ，则可以从 Connector 部署向导创建�
 .您需要的内容
 * 满足网络连接要求的VPC和子网。
 +
-link:task-set-up-networking-aws.html["了解网络连接要求"]
+link:task-set-up-networking-aws.html["了解网络连接要求"]。
 
 * 一个IAM角色、其附加策略包括Connector所需的权限。
 +
-link:task-set-up-permissions-aws.html["了解如何设置AWS权限"]
+link:task-set-up-permissions-aws.html["了解如何设置AWS权限"]。
 
 * 为IAM用户订阅和取消订阅AWS Marketplace的权限。
 * EC2实例的密钥对。
@@ -119,6 +122,12 @@ link:reference-host-requirements-aws.html["查看实例要求"]。
 *** 选择所需的VPC和子网。
 *** 指定实例是否应具有公有 IP地址。
 *** 指定防火墙设置、以便为Connector实例启用所需的连接方法：SSH、HTTP和HTTPS。
++
+对于特定配置、还需要一些规则。
+
++
+link:reference-ports-aws.html["查看AWS的安全组规则"]。
+
 
 
 ** *配置存储*：保留默认存储选项。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-gcp-accounts.html 
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: 您可以管理与Connector VM实例关联的Google Cloud凭据。 
+summary: 您可以通过关联市场订阅并对订阅过程进行故障排除来管理与Connector VM实例关联的Google Cloud凭据。这两项任务都可以确保您可以使用市场订阅来支付BlueXP服务费用。 
 ---
 = 管理BlueXP的Google Cloud凭据和订阅
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您可以管理与Connector VM实例关联的Google Cloud凭据。
 
 
 [role="lead"]
-您可以管理与Connector VM实例关联的Google Cloud凭据。
+您可以通过关联市场订阅并对订阅过程进行故障排除来管理与Connector VM实例关联的Google Cloud凭据。这两项任务都可以确保您可以使用市场订阅来支付BlueXP服务费用。
 
 
 

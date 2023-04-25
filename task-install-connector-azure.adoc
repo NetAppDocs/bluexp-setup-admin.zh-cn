@@ -76,7 +76,10 @@ link:task-set-up-permissions-azure.html["了解如何为服务主体获取这些
 请注意，您可以选择与此角色关联的订阅。您选择的每个订阅都为 Connector 提供了在这些订阅中部署 Cloud Volumes ONTAP 的权限。
 
 ** * 网络 * ：选择 vNet 和子网，是否启用公有 IP 地址，并可选择指定代理配置。
-** * 安全组 * ：选择是创建新的安全组，还是选择允许入站 HTTP ， HTTPS 和 SSH 访问的现有安全组。
+** *安全组*：选择是创建新安全组还是选择允许所需入站和出站规则的现有安全组。
++
+link:reference-ports-azure.html["查看Azure的安全组规则"]。
+
 ** * 审核 * ：查看您选择的内容，确认您的设置正确无误。
 
 
@@ -108,9 +111,9 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 +
 link:reference-host-requirements-azure["查看虚拟机要求"]。
 
-** 对于网络安全组， Connector 需要使用 SSH ， HTTP 和 HTTPS 进行入站连接。
+** 对于网络安全组， Connector 需要使用 SSH ， HTTP 和 HTTPS 进行入站连接。对于特定配置、还需要一些规则。
 +
-link:reference-ports-azure.html["详细了解 Connector 的安全组规则"]。
+link:reference-ports-azure.html["查看Azure的安全组规则"]。
 
 ** 在*管理*下、通过选择*启用*系统分配的托管身份*来为Connector VM启用。
 +

@@ -14,7 +14,7 @@ summary: 如果要将AWS或Azure中的BlueXP服务与内部连接器结合使用
 
 
 [role="lead"]
-如果要将AWS或Azure中的BlueXP服务与内部连接器结合使用、则需要在云提供商中设置权限、以便在安装此连接器后将凭据添加到其中。
+如果要将AWS或Azure中的BlueXP服务与内部部署的Connector结合使用、则需要在云提供程序中设置权限、以便可以在安装Connector后将凭据添加到Connector。
 
 
 TIP: 为什么不选择Google Cloud？如果在您的内部安装了Connector、则它无法在Google Cloud中管理您的资源。必须在Google Cloud中安装Connector、才能管理驻留在其中的任何资源。

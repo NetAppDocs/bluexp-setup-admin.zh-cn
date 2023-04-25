@@ -14,7 +14,7 @@ summary: 设置Google Cloud权限、以便您可以使用BlueXP在Google Cloud�
 
 
 [role="lead"]
-设置Google Cloud权限、以便您可以使用BlueXP在Google Cloud中管理数据和存储基础架构。
+在Google Cloud中设置权限、以便您可以使用管理数据和存储基础架构所需的权限部署Connector。
 
 您需要按如下所示设置Google Cloud权限：
 

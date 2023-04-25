@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: 注册到BlueXP后、您可以通过基于Web的控制台从Web浏览器登录。 
+summary: 注册BlueXP后、您可以从基于Web的控制台登录、开始管理数据和存储基础架构。 
 ---
 = 登录到BlueXP (标准模式)
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 注册到BlueXP后、您可以通过基于Web的控制台从Web浏览�
 
 
 [role="lead"]
-注册到BlueXP后、您可以从基于Web的控制台登录。
+注册BlueXP后、您可以从基于Web的控制台登录、开始管理数据和存储基础架构。
 
 .登录选项
 您可以使用以下选项之一登录到基于BlueXP Web的控制台：

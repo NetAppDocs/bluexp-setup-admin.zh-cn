@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-prepare-restricted-mode.html 
 keywords: restricted mode requirements, requirements, install options, restricted mode networking, dark site, restricted mode permissions, permissions for restricted mode, networking for restricted mode 
-summary: 您应了解在受限模式下开始使用BlueXP所需的资源、以便为您的环境做好准备。 
+summary: 在受限模式下部署BlueXP之前、请准备好您的环境。例如、您需要查看主机要求、准备网络连接、设置权限等。 
 ---
 = 准备在受限模式下部署
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您应了解在受限模式下开始使用BlueXP所需的资源、以�
 
 
 [role="lead"]
-您应了解在受限模式下开始使用BlueXP所需的资源、以便为您的环境做好准备。
+在受限模式下部署BlueXP之前、请准备好您的环境。例如、您需要查看主机要求、准备网络连接、设置权限等。
 
 
 

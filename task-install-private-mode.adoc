@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-private-mode.html 
 keywords: install dark site, deploy dark site, install private mode, deploy private mode, install connector dark site, connector dark site, dark site, private mode, no internet 
-summary: 要在专用模式下设置BlueXP、您需要安装Connector、通过访问Connector上运行的用户界面来设置BlueXP、然后提供云权限。 
+summary: 在私有模式下部署Connector、以便在使用BlueXP时无需与BlueXP SaaS层建立出站连接。要开始使用、请安装Connector、通过访问Connector上运行的用户界面来设置BlueXP、然后提供您先前设置的云权限。 
 ---
 = 在专用模式下部署连接器
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 要在专用模式下设置BlueXP、您需要安装Connector、通过�
 
 
 [role="lead"]
-要在专用模式下设置BlueXP、您需要安装Connector、通过访问Connector上运行的用户界面来设置BlueXP、然后提供云权限。
+在私有模式下部署Connector、以便在使用BlueXP时无需与BlueXP SaaS层建立出站连接。要开始使用、请安装Connector、通过访问Connector上运行的用户界面来设置BlueXP、然后提供您先前设置的云权限。
 
 
 

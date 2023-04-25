@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-log-in-restricted-mode.html 
 keywords: logging in, log in, sign in, signing in, restricted mode, restricted mode log in, local log in, connector log in, log in connector 
-summary: 在受限模式下使用BlueXP时、您需要从Connector本地运行的用户界面登录到BlueXP控制台。 
+summary: 在受限模式下使用BlueXP时、您需要从连接器本地运行的用户界面登录到BlueXP控制台。 
 ---
 = 登录到BlueXP (受限模式)
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 在受限模式下使用BlueXP时、您需要从Connector本地运行�
 
 
 [role="lead"]
-在受限模式下使用BlueXP时、您需要从Connector本地运行的用户界面登录到BlueXP控制台。
+在受限模式下使用BlueXP时、您需要从连接器本地运行的用户界面登录到BlueXP控制台。
 
 .登录选项
 当您的帐户设置为受限模式时、BlueXP支持使用以下选项之一登录：

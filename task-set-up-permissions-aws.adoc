@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-set-up-permissions-aws.html 
 keywords: aws permissions, set up permissions, set up aws permissions, permissions, iam role, iam policy, json, policy, role, credentials 
-summary: 设置AWS权限、以便您可以使用BlueXP在AWS中管理数据和存储基础架构。如何设置权限取决于您计划使用的安装选项。 
+summary: 在AWS中设置权限、以便您可以使用管理数据和存储基础架构所需的权限部署Connector。如何设置和提供权限取决于您计划使用的安装选项。 
 ---
 = 设置AWS权限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 设置AWS权限、以便您可以使用BlueXP在AWS中管理数据和�
 
 
 [role="lead"]
-设置AWS权限、以便您可以使用BlueXP在AWS中管理数据和存储基础架构。如何设置权限取决于您计划使用的安装选项。
+在AWS中设置权限、以便您可以使用管理数据和存储基础架构所需的权限部署Connector。如何设置和提供权限取决于您计划使用的安装选项。
 
 您可以从以下安装选项中进行选择：
 

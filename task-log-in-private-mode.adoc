@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-log-in-private-mode.html 
 keywords: logging in, log in, sign in, signing in, private mode, private mode log in, local log in, connector log in, log in connector 
-summary: 在专用模式下使用BlueXP时、您需要从Connector本地运行的用户界面登录到BlueXP控制台。 
+summary: 在专用模式下使用BlueXP时、您需要从连接器本地运行的用户界面登录到BlueXP控制台。 
 ---
 = 登录到BlueXP (专用模式)
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 在专用模式下使用BlueXP时、您需要从Connector本地运行�
 
 
 [role="lead"]
-在专用模式下使用BlueXP时、您需要从Connector本地运行的用户界面登录到BlueXP控制台。
+在专用模式下使用BlueXP时、您需要从连接器本地运行的用户界面登录到BlueXP控制台。
 
 .登录选项
 专用模式支持本地用户管理和访问。不通过BlueXP的云服务提供身份验证。

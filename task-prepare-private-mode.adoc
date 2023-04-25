@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-prepare-private-mode.html 
 keywords: private mode requirements, requirements, install options, private mode networking, dark site, private mode permissions, permissions for private mode, networking for private mode 
-summary: 您应了解在私有模式下启动和运行BlueXP所需的资源、以便为您的环境做好准备。 
+summary: 在私有模式下部署BlueXP之前、请准备好您的环境。例如、您需要查看主机要求、准备网络连接、设置权限等。 
 ---
 = 准备在专用模式下部署
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 您应了解在私有模式下启动和运行BlueXP所需的资源、�
 
 
 [role="lead"]
-您应了解在私有模式下开始使用BlueXP所需的资源、以便为您的环境做好准备。
+在私有模式下部署BlueXP之前、请准备好您的环境。例如、您需要查看主机要求、准备网络连接、设置权限等。
 
 
 NOTE: 如果要在中使用BlueXP https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial Cloud Services (C2S)环境"^] 然后、您应按照单独的说明进行操作、以说明如何准备、安装连接器和启动Cloud Volumes ONTAP。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["了解如何在AWS C2S环境中开始使用Cloud Volumes ONTAP"^]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-quick-start-standard-mode.html 
 keywords: quick start, standard mode quick start 
-summary: 只需几步即可在标准模式下开始使用BlueXP。 
+summary: '通过从BlueXP控制台注册、(可选)创建Connector并订阅BlueXP、开始在标准模式下使用BlueXP。' 
 ---
 = 标准模式下的BlueXP快速入门
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 只需几步即可在标准模式下开始使用BlueXP。
 
 
 [role="lead"]
-只需几步即可在标准模式下开始使用BlueXP。
+通过从BlueXP控制台注册、(可选)创建Connector并订阅BlueXP、开始在标准模式下使用BlueXP。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 注册并创建帐户
 [role="quick-margin-para"]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-on-prem.html 
 keywords: networking, network, requirements, ports, on-prem, linux, http, https 
-summary: 在内部Linux主机上手动安装时、Connector会使用以下入站端口。 
+summary: 当连接器手动安装在内部Linux主机上时、它会使用入站端口。在进行规划时、您可能需要引用这些端口。 
 ---
 = 内部连接器的端口
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 在内部Linux主机上手动安装时、Connector会使用以下入站
 
 
 [role="lead"]
-在内部 Linux 主机上手动安装时， Connector 会使用以下 _inbound_ 端口。
+当在内部Linux主机上手动安装时、Connector会使用_inbound端口。在进行规划时、您可能需要引用这些端口。
 
 这些入站规则适用于所有BlueXP部署模式。
 

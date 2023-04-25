@@ -26,3 +26,6 @@ summary: 在受限模式下启动和运行BlueXP后、您可以开始使用受�
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["内部ONTAP 集群文档"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/index.html["复制文档"^]
 
+
+.相关链接
+link:concept-modes.html["BlueXP部署模式"]

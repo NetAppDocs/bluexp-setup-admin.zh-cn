@@ -14,7 +14,7 @@ summary: '为您的NetApp 支持站点 (NSS)帐户提供凭据、以注册支持
 
 
 [role="lead"]
-为您的NetApp 支持站点 (NSS)帐户提供凭据、以注册支持、为Cloud Volumes ONTAP 启用关键工作流等。这些NSS凭据与整个BlueXP帐户相关联。
+为BlueXP提供NetApp 支持站点 (NSS)帐户的凭据、以注册支持、为Cloud Volumes ONTAP 启用关键工作流等。这些NSS凭据与整个BlueXP帐户相关联。
 
 
 NOTE: 此外、BlueXP还支持为每个BlueXP用户关联一个NSS帐户。 link:task-manage-user-credentials.html["了解如何管理用户级别的凭据"]。

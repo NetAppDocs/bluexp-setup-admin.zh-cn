@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-host-requirements-google.html 
 keywords: cpu requirements, ram requirements, google cloud requirements, google cloud host requirements, connector host requirements, gcp machine type, machine type 
-summary: 连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。如果您计划手动安装Connector、则应确保主机满足这些要求。 
+summary: 连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。如果您计划手动安装Connector、则应确保主机满足这些要求。在安装连接器之前、请确保主机满足这些要求。 
 ---
 = 查看Google Cloud安装的Connector主机要求
 :hardbreaks:

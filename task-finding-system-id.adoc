@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-finding-system-id.html 
 keywords: system id, id, BlueXP system id, connector system id 
-summary: 为了帮助您入门， NetApp 代表可能会要求您提供 Connector 的系统 ID 。此 ID 通常用于许可和故障排除目的。 
+summary: 为了帮助您快速入门、NetApp代表可能会要求您提供Connector的系统ID。此 ID 通常用于许可和故障排除目的。 
 ---
 = 查找 Connector 的系统 ID
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 为了帮助您入门， NetApp 代表可能会要求您提供 Connecto
 
 
 [role="lead"]
-为了帮助您入门， NetApp 代表可能会要求您提供 Connector 的系统 ID 。此 ID 通常用于许可和故障排除目的。
+为了帮助您快速入门、NetApp代表可能会要求您提供Connector的系统ID。此 ID 通常用于许可和故障排除目的。
 
 .步骤
 . 在BlueXP控制台的右上角、选择帮助图标。
