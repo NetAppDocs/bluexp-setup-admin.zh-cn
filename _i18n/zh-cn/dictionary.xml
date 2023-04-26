@@ -47,7 +47,6 @@
   <block id="02a8c4a4e553694e2236fd17bb20b197" category="list-text">选择 * Microsoft Azure* 作为云提供商。</block>
   <block id="b0e1a0461b32155d621f46d8d6f39569" category="list-text">按照向导中的步骤创建 Connector ：</block>
   <block id="e0f74d06e87b3ad6fc9f3b3cfc573c38" category="paragraph">此表由 Microsoft 拥有和托管。您的凭据不会提供给 NetApp 。</block>
-  <block id="ec444652764a4ae69cee1fdb97fdab30" category="list-text">* 虚拟机身份验证 * ：选择 Azure 订阅，位置，新资源组或现有资源组，然后选择身份验证方法。</block>
   <block id="a6100ac4fa5cb7bbb1c49e95165b96b2" category="inline-link">所需权限</block>
   <block id="e1ca9b0274808b9c445718fa4b9a5d26" category="paragraph">请注意，您可以选择与此角色关联的订阅。您选择的每个订阅都为 Connector 提供了在这些订阅中部署 Cloud Volumes ONTAP 的权限。</block>
   <block id="316cce18546001b2f1149ed17a4d3900" category="list-text">* 网络 * ：选择 vNet 和子网，是否启用公有 IP 地址，并可选择指定代理配置。</block>
@@ -1967,13 +1966,6 @@
   <block id="213954d7bdaa5b2d9eab4ee897a935d3" category="paragraph-title">注册选项</block>
   <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">您可以使用以下选项之一注册到BlueXP：</block>
   <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">通过指定您的电子邮件地址和密码来登录NetApp云</block>
-  <block id="9f1b84fa92d950a165d75ff20ea339ef" category="list-text">在*登录*页面上、选择*注册*。</block>
-  <block id="c838c41871c4f726a74cecb65930bcdd" category="admonition">如果您计划使用现有的NSS凭据、则可以跳过注册页面并直接在登录页面中输入电子邮件地址。BlueXP将在此首次登录过程中为您注册。</block>
-  <block id="9a076f8e1167c7f54e717f3312d9be22" category="list-text">在*注册*页面上、选择一个登录选项：</block>
-  <block id="eb7dc3949c534285123f407b97df88ce" category="list-text">如果您已有NetApp 支持站点 (NSS)帐户、请选择*使用您的NetApp 支持站点 凭据注册*。</block>
-  <block id="a67ec4292dbbae18fa7d903a5925529f" category="inline-link-macro">了解如何将NSS凭据添加到支持信息板以启用关键工作流</block>
-  <block id="f36fff08cce9f284672696a03c3af986" category="paragraph">使用此选项时、您的NetApp 支持站点 (NSS)凭据不会添加到支持信息板中的BlueXP中。 <block ref="6dd91a7e65a4b86508888798b6f600ec" category="inline-link-macro-rx"></block>。</block>
-  <block id="5185f2e203db6dcf60732c4adcccbd15" category="list-text">如果您没有NSS帐户且尚未创建NetApp云凭据、请输入所需信息以创建NetApp云登录。</block>
   <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">出现提示时、请查看最终用户许可协议并接受条款。</block>
   <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">在*欢迎*页面上、输入帐户的名称。</block>
   <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">了解如何向现有帐户添加成员</block>
@@ -3311,7 +3303,6 @@
   <block id="74a4ede1451c1e5d5746c24e1fc77924" category="paragraph"><block ref="7a5209a3744a7cace63a040ed3f3ce07" category="inline-link-macro-rx"></block>。</block>
   <block id="b7ffaf906b575603b3ec9613a0b6ea30" category="paragraph">您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。通过Connector、您可以管理内部环境和云环境中的资源和流程。需要使用Cloud Volumes ONTAP 和其他数据服务。</block>
   <block id="0b2713c18a328b85808183d496d2d28c" category="paragraph">在具有安全和连接限制的环境中也支持BlueXP。您可以使用_restricted mode"或_private mode"来限制与BlueXP SaaS层的出站连接。</block>
-  <block id="ba2f0b6169ae38b10d24f0818c4c9d17" category="summary">开始使用BlueXP时、第一步是使用现有NetApp 支持站点 凭据或创建NetApp云登录来注册。</block>
   <block id="ae140c7a1104ac99f1a01b18e5dc3ed8" category="paragraph">您可以从基于Web的控制台访问BlueXP。开始使用BlueXP时、第一步是使用现有NetApp 支持站点 凭据或创建NetApp云登录来注册。</block>
   <block id="b829f1a930ae603edd16b249b070f4c9" category="doc">在受限模式下部署连接器</block>
   <block id="5cadd29a69b0be5bc8b482cfc2e89adb" category="open-title">AWS商业市场</block>
@@ -3614,4 +3605,13 @@
   <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">了解BlueXP如何使用Azure凭据和权限代表您执行操作。了解这些详细信息有助于您管理一个或多个Azure订阅的凭据。例如、您可能希望了解何时向BlueXP添加其他Azure凭据。</block>
   <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">了解BlueXP如何使用AWS凭据和权限代表您执行操作。了解这些详细信息有助于您在BlueXP中管理一个或多个AWS帐户的凭据。例如、您可能希望了解何时向BlueXP添加其他AWS凭据。</block>
   <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">了解BlueXP如何使用Google Cloud凭据和权限代表您执行操作。了解这些详细信息有助于您管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。</block>
+  <block id="647051cbb24da89d3b791c11978a8b90" category="list-text">SSH公共密钥(如果要对Connector虚拟机使用该身份验证方法)。身份验证方法的另一个选项是使用密码。</block>
+  <block id="94fc3421a7ccbcb57366109daea19aed" category="inline-link">了解如何在Azure中连接到Linux VM</block>
+  <block id="51efa34484491a2cd1e24f30b14fc68a" category="paragraph"><block ref="51efa34484491a2cd1e24f30b14fc68a" category="inline-link-rx"></block></block>
+  <block id="c3e1d8cd2a4fddc661ad823da98d5fa7" category="list-text">*VM身份验证*：选择Azure订阅、位置、新资源组或现有资源组，然后为要创建的Connector虚拟机选择身份验证方法。</block>
+  <block id="52f3863b6256b8ae764628f74442ca5c" category="paragraph">虚拟机的身份验证方法可以是密码或SSH公共密钥。</block>
+  <block id="3587d9f2b48c4f0c9c40433731329a21" category="list-text">如果您有NetApp 支持站点 帐户，请直接在*Log In*页面上输入与您的NSS帐户关联的电子邮件地址。</block>
+  <block id="61bd9c463723beb495c6ca6a1a35e0eb" category="paragraph">如果您有NSS帐户、则可以跳过注册页面。BlueXP将在此首次登录过程中为您注册。</block>
+  <block id="7c74a9177ae92ae3e635c6ec91ce1d71" category="list-text">如果您没有NSS帐户、但要通过创建NetApp云登录来注册、请选择*注册*。</block>
+  <block id="9c27b53d053eec29dd123f70f05c5d03" category="list-text">在*注册*页面上、输入创建NetApp云登录所需的信息。</block>
 </blocks>

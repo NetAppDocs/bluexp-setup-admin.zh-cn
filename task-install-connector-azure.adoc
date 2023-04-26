@@ -30,6 +30,10 @@ summary: 直接从基于Web的BlueXP控制台、Azure Marketplace或通过在您
 ** HTTPS证书
 
 
+* SSH公共密钥(如果要对Connector虚拟机使用该身份验证方法)。身份验证方法的另一个选项是使用密码。
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["了解如何在Azure中连接到Linux VM"^]
+
 * 如果您不希望BlueXP自动为Connector创建Azure角色、则需要创建您自己的角色 link:reference-permissions-azure.html["使用此页面上的策略"]。
 +
 这些权限适用于 Connector 实例本身。它是一组与您先前设置的权限不同的权限，只需部署 Connector 即可。
@@ -70,7 +74,13 @@ link:task-set-up-permissions-azure.html["了解如何为服务主体获取这些
 
 . 按照向导中的步骤创建 Connector ：
 +
-** * 虚拟机身份验证 * ：选择 Azure 订阅，位置，新资源组或现有资源组，然后选择身份验证方法。
+** *VM身份验证*：选择Azure订阅、位置、新资源组或现有资源组，然后为要创建的Connector虚拟机选择身份验证方法。
++
+虚拟机的身份验证方法可以是密码或SSH公共密钥。
+
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["了解如何在Azure中连接到Linux VM"^]
+
 ** *详细信息*：输入实例的名称、指定标记、然后选择是希望BlueXP创建具有所需权限的新角色、还是要选择使用设置的现有角色 link:reference-permissions-azure.html["所需权限"]。
 +
 请注意，您可以选择与此角色关联的订阅。您选择的每个订阅都为 Connector 提供了在这些订阅中部署 Cloud Volumes ONTAP 的权限。
