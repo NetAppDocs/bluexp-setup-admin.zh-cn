@@ -32,7 +32,15 @@ Connector需要与您计划创建和管理工作环境的位置建立网络连�
 
 == 出站 Internet 访问
 
-部署 Connector 的网络位置必须具有出站 Internet 连接。
+部署 Connector 的网络位置必须具有出站 Internet 连接。从BlueXP控制台部署Connector时、还需要从Web浏览器进行出站Internet访问。
+
+
+
+=== 从BlueXP控制台访问的端点
+
+当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它会与多个端点联系以完成数据管理任务。这包括从BlueXP控制台部署Connector所需访问的端点。
+
+link:reference-networking-saas-console.html["从BlueXP控制台查看已联系的端点列表"]。
 
 
 
@@ -53,9 +61,9 @@ Connector需要与您计划创建和管理工作环境的位置建立网络连�
 
 
 
-=== 联系端点进行日常操作
+=== 从连接器连接的端点
 
-连接器需要通过出站 Internet 访问来联系以下端点，以便管理公有云环境中的资源和流程。
+Connector需要通过出站Internet访问与以下端点联系、以便管理公共云环境中的资源和流程、以实现日常运营。
 
 [cols="2*"]
 |===
@@ -96,9 +104,6 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 | https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
 |===
-.相关链接
-link:reference-networking-saas-console.html["为用户访问BlueXP控制台准备网络连接"]
-
 
 
 == 代理服务器
