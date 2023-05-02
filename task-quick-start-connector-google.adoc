@@ -76,6 +76,10 @@ link:task-set-up-permissions-google.html["按照每个选项的分步说明进�
 * Cloud Resource Manager API
 * 计算引擎 API
 * 身份和访问管理（ IAM ） API
+* 云密钥管理服务(KMS) API
++
+(仅当您计划将BlueXP备份和恢复与客户管理的加密密钥(CMDK)结合使用时才需要)
+
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六个"] 创建Connector
