@@ -1,22 +1,12 @@
----
-sidebar: sidebar 
-permalink: reference-host-requirements-azure.html 
-keywords: cpu requirements, ram requirements, azure requirements, azure host requirements, connector host requirements, azure vm size, vm size 
-summary: 连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。如果您计划手动安装Connector、则应确保主机满足这些要求。 
----
-= 查看Azure安装的Connector主机要求
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
-[role="lead"]
-连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。如果您计划手动安装Connector、则应确保主机满足这些要求。
+* 运行Ubuntu 22.04、CentOS 7.6到7.9或RHEL 7.6到7.9的专用主机
+* 4 个 CPU
+* 14 GB RAM
+* Docker Engine 19.3.1或更高版本
 
-从BlueXP或Azure Marketplace部署Connector时、此映像包含所需的操作系统和软件组件。
 
 专用主机:: 与其他应用程序共享的主机不支持此连接器。主机必须是专用主机。
 支持的操作系统::
@@ -42,7 +32,25 @@ https://access.redhat.com/certified-hypervisors["Red Hat 解决方案：哪些�
 --
 CPU:: 4 个核心或 4 个 vCPU
 RAM:: 14 GB
+
+
+AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 T3.xlarge 。
+
+
+密钥对:: 从BlueXP或AWS Marketplace创建Connector时、您需要选择一个EC2密钥对以用于实例。
+
+
 Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 DS3 v2 。
+
+
+Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-4。
++
+--
+在具有支持的操作系统的VM实例上、Google Cloud支持Connector https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["屏蔽VM功能"^]
+
+--
+
+
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
 /var 中的磁盘空间:: 必须有 20 GiB 的可用空间
 Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]

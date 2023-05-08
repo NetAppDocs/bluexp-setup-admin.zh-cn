@@ -309,10 +309,6 @@
   <block id="b965147e511dac4e3aebd73ea41829e3" category="section-title">已添加新的通知服务</block>
   <block id="3c1b23b324258ff4cbade594bf9bba9d" category="inline-link-macro">了解如何监控帐户中的操作</block>
   <block id="e2945895b2a6a405c218350491024401" category="paragraph">通知服务已推出，因此您可以查看在当前登录会话期间启动的 Cloud Manager 操作的状态。您可以验证操作是否成功或失败。 <block ref="f47b918ef0cfcb851278e7a8f756b776" category="inline-link-macro-rx"></block>。</block>
-  <block id="81de4fabd4db5e6833366e4bcef85f1e" category="section-title">Connector 支持 RHEL 7.9</block>
-  <block id="a95742b809057568fda07a87694945f1" category="paragraph">现在，运行 Red Hat Enterprise Linux 7.9 的主机支持 Connector 。</block>
-  <block id="2a75ac250c22787b79b100a2a614a4e2" category="inline-link-macro">查看 Connector 的系统要求</block>
-  <block id="3d3993351431dd156dcaa0d507b8983f" category="paragraph"><block ref="bee2a520a8b2c506ca8f5164283ec407" category="inline-link-macro-rx"></block>。</block>
   <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021 年 7 月 7 日</block>
   <block id="087ea838180b315ad53e36db764cd8d2" category="section-title">添加连接器向导的增强功能</block>
   <block id="49b04ecdbf78ac3e84e01d5ad6dcb05f" category="paragraph">我们重新设计了 * 添加连接器 * 向导，以添加新选项并使其更易于使用。现在，您可以添加标记，指定角色（对于 AWS 或 Azure ），上传代理服务器的根证书，查看 Terraform 自动化的代码，查看进度详细信息等。</block>
@@ -836,7 +832,6 @@
   <block id="0c8656a54bb3c58b8facb7ba72092bdc" category="section-title">2021 年 11 月 4 日</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
-  <block id="9e27c4a53794e4f6cfc9949de58e5091" category="section-title">2021 年 8 月 1 日</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021 年 4 月 11 日</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021 年 2 月 9 日</block>
   <block id="0e78dc7220ea8b6abafe6ef7aaad9998" category="list-text">转到目标帐户中的 AWS IAM 控制台。</block>
@@ -911,11 +906,9 @@
   <block id="2fc22405cb36e8596d9bdb7b52cbf10c" category="paragraph">您可能希望在部署连接器之前或需要对任何问题进行故障排除时了解有关连接器的更多信息。</block>
   <block id="5eeca886fa07462826a9ea747483f528" category="section-title">AWS详细信息</block>
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">EC2实例类型为T3.xlarge。</block>
-  <block id="1c4a1f461d9d9ab860d5238735bbfa23" category="list-text">此映像的操作系统为Red Hat Enterprise Linux 7.6 (HVM)。</block>
   <block id="09572768e7bd2d34b2a051ebb8774173" category="list-text">EC2 Linux实例的用户名为EC2-user。</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Azure详细信息</block>
   <block id="82e44dd5e94a855110f9dea154fed0ed" category="list-text">VM类型为DS3 v2。</block>
-  <block id="6b20346212b35fa23c8778f7b40af243" category="list-text">映像的操作系统为CentOS 7.6。</block>
   <block id="474a089504b47eb34ee00ee62f121108" category="list-text">默认系统磁盘为100 GiB高级SSD磁盘。</block>
   <block id="f246cf5f23e765f0a7ebed4a6c1d923a" category="section-title">Google Cloud详细信息</block>
   <block id="6cb5fb9b61376b8ee3092321445fdea4" category="list-text">默认系统磁盘为100 GiB SSD永久性磁盘。</block>
@@ -1793,7 +1786,6 @@
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">连接器3.9.23</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">了解如何管理您的订阅</block>
   <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
-  <block id="9683999221dec5e41e35756b2a8aee04" category="list-text">此映像的操作系统为Red Hat Enterprise Linux 8.6。</block>
   <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
   <block id="cc337b5a93c54f8a59d4731866297bf2" category="list-text"><block ref="cc337b5a93c54f8a59d4731866297bf2" category="inline-link-rx"></block></block>
   <block id="2e5620a6569fc852b94b7e03a147a125" category="paragraph">将AWS凭据添加到现有连接器可提供在公有 云环境中管理资源和进程所需的权限。 <block ref="568ce14d3cdae759e790bc127b222228" category="inline-xref-macro-rx"></block>。</block>
@@ -2038,7 +2030,6 @@
   <block id="d4a973e303ec37692cc8923e3148eef7" category="cell">8080</block>
   <block id="3cae1bb62504fde722824fee95046472" category="doc">管理BlueXP的Azure凭据和订阅</block>
   <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6、7.7、7.8和7.9</block>
-  <block id="fe342f4d7fb16d9eddf02f4c613dfb19" category="list-text">Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 和8.7</block>
   <block id="643a877b7c306b1bcece42c8f03bebfb" category="paragraph">其中、&lt;version&gt; 是您下载的连接器版本。</block>
   <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">云区域可以是AWS C2S/SC2S、Azure IL6等美国安全机构或任何商业区域的区域。</block>
   <block id="4a2f661974665defd7d188133a1ab48b" category="paragraph">要在BlueXP中启用以下任务、需要将NetApp 支持站点 凭据与您的特定BlueXP帐户ID关联：</block>
@@ -2097,8 +2088,6 @@
   <block id="4be68bdee3a27bc0218c6188d192fc95" category="paragraph"><block ref="4be68bdee3a27bc0218c6188d192fc95" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">了解如何管理支持案例</block>
   <block id="796ced97a72330e5ce3c0935b7b09f45" category="paragraph"><block ref="622b6e7f4143df2aca06b538ee1d864e" category="inline-link-rx"></block>。</block>
-  <block id="dd9b32305d0c33f8845bee1cdfcfc85a" category="list-text">现在、运行Red Hat Enterprise Linux 8.7的主机支持Connector。</block>
-  <block id="9954c00cefacf69f28fa1994e949ff83" category="paragraph"><block ref="1c471069dafa2d25f3a632cea0250222" category="inline-link-rx"></block>。</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">将连接器安装在无法访问Internet的位置</block>
   <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
   <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">访问Connector上的BlueXP控制台</block>
@@ -2256,10 +2245,6 @@
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">了解如何设置电子邮件通知</block>
   <block id="e16804d7658f4d3132a1170b8cec7c7e" category="paragraph"><block ref="9ce9eb475c326d02a5c224ef8589bc0a" category="inline-link-rx"></block>。</block>
   <block id="1ba259cc1a092c9c30c1a18ccc612c75" category="list-text">现在、连接器在Google Cloud Turin区域受支持。</block>
-  <block id="e9c35e9b853bc286e0f3b1a7ee2e338a" category="list-text">现在、您可以在BlueXP中发现VMware vCenter Server。</block>
-  <block id="a5b1ab8743c3279fbcf5a93dcd6de23d" category="paragraph">发现在AWS或内部运行的VMware vCenter Server后、您可以打开工作环境以查看与该服务器关联的数据存储库和虚拟机的详细信息。</block>
-  <block id="10cc8c1f48423a72bf1e617861999cae" category="paragraph">唯一的要求是连接到运行7.0或更高版本的VMware vCenter Server的Connector。</block>
-  <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">要开始使用、请选择*添加工作环境*、选择* Amazon Web Services*或*内部部署*、然后选择* VMware vCenter Server*。输入服务器的域名或IP地址、然后输入管理员用户的用户名和密码。</block>
   <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">现在、您可以管理与您的BlueXP登录关联的用户凭据：ONTAP 凭据和NetApp 支持站点 (NSS)凭据。</block>
   <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">转到*设置&gt;凭据*时、您可以查看凭据、更新凭据并将其删除。例如、如果您更改了这些凭据的密码、则需要在BlueXP中更新此密码。</block>
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">现在、您可以在创建支持案例或更新现有支持案例的案例备注时上传附件。</block>
@@ -2342,9 +2327,7 @@
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">详细了解网络要求</block>
   <block id="587b8633f80536ad1f87ba680eaf93e0" category="paragraph"><block ref="48e0e005bc28fbf668fbd01539cd6de0" category="inline-link-macro-rx"></block>。</block>
   <block id="41c4e1e04e36e331e0bc8306e8c462e4" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 查看主机要求</block>
-  <block id="8cf82bb665e40bb25d9a540e444e36b3" category="paragraph">连接器软件必须在满足特定要求的主机上运行。如果您计划在自己的Linux主机上手动安装Connector软件、则应确保主机满足这些要求。如果您要从BlueXP或Azure Marketplace创建Connector、则会注意这些要求、因为软件是从映像部署的。</block>
   <block id="c0cf348e555529bd637208dfcf54a870" category="paragraph">主要要求如下：</block>
-  <block id="8d870988502027508b00629d082d4d40" category="list-text">运行CentOS或Red Hat Enterprise Linux的专用主机</block>
   <block id="fd7f01f6e4333c9d37efa65b264ff2a2" category="list-text">4 个 CPU</block>
   <block id="ccdc6c134c96d6c386d088a2301d4f2b" category="list-text">14 GB RAM</block>
   <block id="6cfd8f6d3354ebd55131c33afd96d4f1" category="inline-link-macro">详细了解这些主机要求</block>
@@ -2427,7 +2410,6 @@
   <block id="512bfa3bd93d6398b4e5010a77b6b397" category="paragraph">从BlueXP或AWS Marketplace部署Connector时、此映像包含所需的操作系统和软件组件。</block>
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">专用主机</block>
   <block id="24dfedb0d4bd46f0cd823d4e245f7642" category="paragraph">主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。</block>
-  <block id="6e1a44ecc6a3c7f575a069cf7334fbae" category="list-text">需要经过认证可运行CentOS或Red Hat Enterprise Linux的裸机或托管虚拟机管理程序。<block ref="e9e3991507328b97d5307322157c9608" category="inline-link-rx"></block></block>
   <block id="6cd56a4cc4ddbbfd2bc9d57de5d788aa" category="list-text">密钥对</block>
   <block id="58b11c8ddf3d2ba8e39859b658696729" category="list-text">从BlueXP或AWS Marketplace创建Connector时、您需要选择一个EC2密钥对以用于实例。</block>
   <block id="d27c20ffdc2a86f7372d5fe1b59e028f" category="summary">通过设置网络、准备主机、准备云权限等在内部创建Connector。</block>
@@ -3130,7 +3112,6 @@
   <block id="a56be8fcf9cdfe04c839d8381b610ad9" category="paragraph"><block ref="ade0887db526f72ed0d1d6c5708f3e13" category="inline-link-macro-rx"></block>。</block>
   <block id="bcbc9fff8d4487788c2d9340f7d3f30a" category="list-text">VPC和子网</block>
   <block id="b2f11e007fbc7abca64e5c1d6c2b7128" category="paragraph"><block ref="8e7b3f5f067e9282c1888d205cec32d1" category="inline-link-macro-rx"></block>。</block>
-  <block id="6349ee97072121bbd5a4507bac2e8735" category="paragraph">连接器软件必须在满足特定要求的主机上运行。如果您计划在自己的Linux主机上手动安装Connector软件、则应确保主机满足这些要求。如果您要从BlueXP或AWS Marketplace创建Connector、则会注意这些要求、因为软件是从映像部署的。</block>
   <block id="a210968d517dd722bb07b30a19848aba" category="paragraph"><block ref="a0def2bb90da07c3ee565e52d86737eb" category="inline-link-macro-rx"></block>。</block>
   <block id="9b2016503a2a16403edd8e4505d62007" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 设置AWS权限</block>
   <block id="c405be6f63207e29490377f138661fe6" category="paragraph">根据您计划使用的安装选项设置AWS权限：</block>
@@ -3192,7 +3173,6 @@
   <block id="7a396f953e409fc4113a3eeb3714978c" category="paragraph">在Google Cloud中创建Connector的标准方式是直接从BlueXP创建、但您也可以使用gcloud或在已有的Linux主机上手动安装此软件来创建连接器。</block>
   <block id="d6b2edc88b04bf885cb72e8cf0bdb02e" category="paragraph"><block ref="7faab28792959edccdd5bb629174a43b" category="inline-link-macro-rx"></block>。</block>
   <block id="6d117b41618cb9d361db392dd6ff151b" category="paragraph"><block ref="10b8794b5b9549957094545036a01876" category="inline-link-macro-rx"></block>。</block>
-  <block id="2d1ed7591f7f80cfce8c5b951e513704" category="paragraph">连接器软件必须在满足特定要求的主机上运行。如果您计划在自己的Linux主机上手动安装Connector软件、则应确保主机满足这些要求。如果您要从BlueXP或使用gcloud创建Connector、则需要满足这些要求、因为软件是从映像部署的。</block>
   <block id="3633aaf72e18b72ee7d2e915e82be0c6" category="paragraph"><block ref="2d4899440637ad0f9b80e78751923630" category="inline-link-macro-rx"></block>。</block>
   <block id="7a48e91302c9dc7f85920f518f25f1d7" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 设置Google Cloud权限</block>
   <block id="f7b1947038df0eb1bf72eca001af4938" category="paragraph">为您计划使用的安装选项设置Google Cloud权限：</block>
@@ -3244,7 +3224,6 @@
   <block id="df7114b91c38b799f7e55c741aae2b74" category="list-text">*手动安装*：创建IAM策略并将其附加到IAM角色或IAM用户。</block>
   <block id="d427acae4bc956af9fed6c72fb68b12a" category="paragraph"><block ref="b2113e9e3a9e0e0062402d34fe3bdc2d" category="inline-xref-macro-rx"></block>。</block>
   <block id="8098dd228e3c3acafd4ab6231ee02a5b" category="paragraph">无论选择哪种方案、第一步都是创建IAM策略。此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。</block>
-  <block id="475ac26bd29a47d7852c43b6768e1e79" category="admonition">当BlueXP创建Connector时、它会将一组新的权限应用于Connector实例、从而使Connector能够访问AWS资源。</block>
   <block id="1bd08699c526c66f71094b5ff54dc839" category="list-text">将策略附加到BlueXP可以承担的IAM角色或IAM用户、以便您可以为BlueXP提供访问密钥：</block>
   <block id="87b8ba43578311804ba14d80f6c8cb89" category="list-text">(选项1)设置一个可由BlueXP承担的IAM角色：</block>
   <block id="bf10cb047f4db72713407e74d30df1e9" category="list-text">(选项2)为IAM用户设置权限、以便为BlueXP提供访问密钥：</block>
@@ -3621,4 +3600,26 @@
   <block id="31dec7fbef975d09b76f499ef8abfb62" category="list-text"><block ref="31dec7fbef975d09b76f499ef8abfb62" category="inline-link-macro-rx"></block></block>
   <block id="b86699cce9d5045d0f0bc82298a74e55" category="list-text">云密钥管理服务(KMS) API</block>
   <block id="5cb2601217dd646515fe8e7cba8643b1" category="paragraph">(仅当您计划将BlueXP备份和恢复与客户管理的加密密钥(CMDK)结合使用时才需要)</block>
+  <block id="e5051949dc3a37f9077e85df0f1c8a21" category="list-text">Ubuntu 22.04</block>
+  <block id="eaf5618d0182a88179ac8580cc418219" category="list-text">Red Hat Enterprise Linux 7.6、7.7、7.8和7.9</block>
+  <block id="0791add814d036f56d1303750c34ee31" category="list-text">需要一个经过认证可运行Ubuntu、CentOS或Red Hat Enterprise Linux的裸机或托管虚拟机管理程序。</block>
+  <block id="394349da65ddd77a10f3cdb6426b7439" category="paragraph"><block ref="394349da65ddd77a10f3cdb6426b7439" category="inline-link-rx"></block></block>
+  <block id="c1e102579945406fac37126823f71dd7" category="paragraph">如果要在自己的Linux主机上手动安装Connector软件、则应确保主机满足特定要求。如果您要从BlueXP或Azure Marketplace创建Connector、则会注意这些要求、因为软件是从映像部署的。</block>
+  <block id="458ff6a54977b54b851374a784615658" category="list-text">运行Ubuntu 22.04、CentOS 7.6到7.9或RHEL 7.6到7.9的专用主机</block>
+  <block id="3140bd3be2a4f9fe830514ff5b18be1f" category="list-text">Docker Engine 19.3.1或更高版本</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023年5月7日</block>
+  <block id="d13015f8ae4fd0f7f263eba9f81f4caa" category="section-title">连接器3.9.29</block>
+  <block id="05263fcc56b50972b2dfe4be20698328" category="list-text">当您从BlueXP或云提供商的市场部署Connector时、Ubuntu 22.04是适用于Connector的新操作系统。</block>
+  <block id="9ab8f4fa1e0839b1101d04c9cd4e1bae" category="paragraph">您还可以选择在运行Ubuntu 22.04的自己的Linux主机上手动安装Connector。</block>
+  <block id="dfcaca26de191f6219819bb7091c9ebe" category="list-text">新的Connector部署不再支持Red Hat Enterprise Linux 8.6和8.7。</block>
+  <block id="2f5617aecec1df3805ada7f05da46bde" category="paragraph">新部署不支持这些版本、因为Red Hat不再支持Docker、而Docker是Connector所必需的。如果现有Connector运行的是RHEL 8.6或8.7、则NetApp将继续支持您的配置。</block>
+  <block id="470821fb08a53bb45ecda66d23c58d6f" category="paragraph">Red Hat 7.6、7.7、7.8和7.9仍支持新的和现有的连接器。</block>
+  <block id="a2619f6db1e9fa217b857129c75384ab" category="list-text">现在、卡塔尔地区的Google Cloud支持Connector。</block>
+  <block id="368c64d1828dfb51f85a6ad8427db46c" category="list-text">Microsoft Azure中的瑞典中部地区也支持Connector。</block>
+  <block id="cff120b14e79d2501e83070f59bb2387" category="paragraph"><block ref="cff120b14e79d2501e83070f59bb2387" category="inline-link-rx"></block></block>
+  <block id="a12b9d09313df9b379fff76f6080b543" category="paragraph">如果要在自己的Linux主机上手动安装Connector软件、则应确保主机满足特定要求。如果您要从BlueXP或AWS Marketplace创建Connector、则会注意这些要求、因为软件是从映像部署的。</block>
+  <block id="8a9983b753881349972a7c0a24378110" category="paragraph">如果要在自己的Linux主机上手动安装Connector软件、则应确保主机满足特定要求。如果您要从BlueXP或使用gcloud创建Connector、则需要满足这些要求、因为软件是从映像部署的。</block>
+  <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">该映像的操作系统为Ubuntu 22.04。</block>
+  <block id="ba5aa0edf5aca9e505ac70fc6e55851d" category="paragraph">如果您是从BlueXP部署连接器的、请注意以下事项：</block>
+  <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">在BlueXP创建Connector时、它会将一组新权限应用于Connector实例、以使Connector能够管理AWS资源。</block>
 </blocks>

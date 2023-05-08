@@ -35,10 +35,10 @@ link:task-set-up-networking-on-prem.html["详细了解网络要求"]。
 连接器软件必须在满足特定要求的主机上运行。主要要求如下：
 
 [role="quick-margin-list"]
-* 运行CentOS或Red Hat Enterprise Linux的专用主机
+* 运行Ubuntu 22.04、CentOS 7.6到7.9或RHEL 7.6到7.9的专用主机
 * 4 个 CPU
 * 14 GB RAM
-* Docker 引擎
+* Docker Engine 19.3.1或更高版本
 
 
 [role="quick-margin-para"]

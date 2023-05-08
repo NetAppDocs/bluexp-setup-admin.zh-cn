@@ -39,16 +39,16 @@ link:task-set-up-networking-aws.html["详细了解网络要求"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 查看主机要求
 [role="quick-margin-para"]
-连接器软件必须在满足特定要求的主机上运行。如果您计划在自己的Linux主机上手动安装Connector软件、则应确保主机满足这些要求。如果您要从BlueXP或AWS Marketplace创建Connector、则会注意这些要求、因为软件是从映像部署的。
+如果要在自己的Linux主机上手动安装Connector软件、则应确保主机满足特定要求。如果您要从BlueXP或AWS Marketplace创建Connector、则会注意这些要求、因为软件是从映像部署的。
 
 [role="quick-margin-para"]
 主要要求如下：
 
 [role="quick-margin-list"]
-* 运行CentOS或Red Hat Enterprise Linux的专用主机
+* 运行Ubuntu 22.04、CentOS 7.6到7.9或RHEL 7.6到7.9的专用主机
 * 4 个 CPU
 * 14 GB RAM
-* Docker 引擎
+* Docker Engine 19.3.1或更高版本
 
 
 [role="quick-margin-para"]

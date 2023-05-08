@@ -22,8 +22,9 @@ summary: 连接器软件必须在满足特定操作系统要求， RAM 要求，
 支持的操作系统::
 +
 --
+* Ubuntu 22.04
 * CentOS 7.6、7.7、7.8和7.9
-* Red Hat Enterprise Linux 7.6、7.7、7.8、7.9、8.6、 和8.7
+* Red Hat Enterprise Linux 7.6、7.7、7.8和7.9
 +
 主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
 
@@ -33,7 +34,12 @@ summary: 连接器软件必须在满足特定操作系统要求， RAM 要求，
 
 
 --
-虚拟机管理程序:: 需要经过认证可运行CentOS或Red Hat Enterprise Linux的裸机或托管虚拟机管理程序。 https://access.redhat.com/certified-hypervisors["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
+虚拟机管理程序:: 需要一个经过认证可运行Ubuntu、CentOS或Red Hat Enterprise Linux的裸机或托管虚拟机管理程序。
++
+--
+https://access.redhat.com/certified-hypervisors["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
+
+--
 CPU:: 4 个核心或 4 个 vCPU
 RAM:: 14 GB
 Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-4。

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-connector-default-config.html 
-keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log 
+keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log, ubuntu 
 summary: 您可能希望在部署连接器之前或需要对任何问题进行故障排除时了解有关连接器的更多信息。 
 ---
 = Connector 的默认配置
@@ -29,7 +29,7 @@ summary: 您可能希望在部署连接器之前或需要对任何问题进行�
 如果您从BlueXP或云提供商的市场部署了Connector、请注意以下事项：
 
 * EC2实例类型为T3.xlarge。
-* 此映像的操作系统为Red Hat Enterprise Linux 7.6 (HVM)。
+* 该映像的操作系统为Ubuntu 22.04。
 +
 操作系统不包含 GUI 。您必须使用终端访问系统。
 
@@ -44,7 +44,7 @@ summary: 您可能希望在部署连接器之前或需要对任何问题进行�
 如果您从BlueXP或云提供商的市场部署了Connector、请注意以下事项：
 
 * VM类型为DS3 v2。
-* 映像的操作系统为CentOS 7.6。
+* 该映像的操作系统为Ubuntu 22.04。
 +
 操作系统不包含 GUI 。您必须使用终端访问系统。
 
@@ -55,10 +55,10 @@ summary: 您可能希望在部署连接器之前或需要对任何问题进行�
 
 === Google Cloud详细信息
 
-如果您从BlueXP或云提供商的市场部署了Connector、请注意以下事项：
+如果您是从BlueXP部署连接器的、请注意以下事项：
 
 * VM实例为n2-standard-4。
-* 此映像的操作系统为Red Hat Enterprise Linux 8.6。
+* 该映像的操作系统为Ubuntu 22.04。
 +
 操作系统不包含 GUI 。您必须使用终端访问系统。
 

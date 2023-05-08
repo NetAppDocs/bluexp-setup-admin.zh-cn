@@ -18,6 +18,36 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
+== 2023年5月7日
+
+
+
+=== 连接器3.9.29
+
+* 当您从BlueXP或云提供商的市场部署Connector时、Ubuntu 22.04是适用于Connector的新操作系统。
++
+您还可以选择在运行Ubuntu 22.04的自己的Linux主机上手动安装Connector。
+
+* 新的Connector部署不再支持Red Hat Enterprise Linux 8.6和8.7。
++
+新部署不支持这些版本、因为Red Hat不再支持Docker、而Docker是Connector所必需的。如果现有Connector运行的是RHEL 8.6或8.7、则NetApp将继续支持您的配置。
+
++
+Red Hat 7.6、7.7、7.8和7.9仍支持新的和现有的连接器。
+
+* 现在、卡塔尔地区的Google Cloud支持Connector。
+* Microsoft Azure中的瑞典中部地区也支持Connector。
++
+https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
+
+* 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["了解Cloud Volumes ONTAP 增强功能"^]
+
+
+
+
+
 == 2023年4月4日
 
 
@@ -55,16 +85,6 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 +
 https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
 
-* 现在、您可以在BlueXP中发现VMware vCenter Server。
-+
-发现在AWS或内部运行的VMware vCenter Server后、您可以打开工作环境以查看与该服务器关联的数据存储库和虚拟机的详细信息。
-
-+
-唯一的要求是连接到运行7.0或更高版本的VMware vCenter Server的Connector。
-
-+
-要开始使用、请选择*添加工作环境*、选择* Amazon Web Services*或*内部部署*、然后选择* VMware vCenter Server*。输入服务器的域名或IP地址、然后输入管理员用户的用户名和密码。
-
 * 现在、您可以管理与您的BlueXP登录关联的用户凭据：ONTAP 凭据和NetApp 支持站点 (NSS)凭据。
 +
 转到*设置>凭据*时、您可以查看凭据、更新凭据并将其删除。例如、如果您更改了这些凭据的密码、则需要在BlueXP中更新此密码。
@@ -99,10 +119,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 * 您可以直接从BlueXP查看和管理活动的和已解决的支持案例。您可以管理与您的NSS帐户和公司关联的案例。
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["了解如何管理支持案例"]。
-
-* 现在、运行Red Hat Enterprise Linux 8.7的主机支持Connector。
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["查看 Connector 的系统要求"]。
 
 * 现在、任何与Internet完全隔离的云环境都支持Connector。然后、您可以使用Connector上运行的BlueXP控制台将Cloud Volumes ONTAP 部署在同一位置、并发现内部ONTAP 集群(如果您已从云环境连接到内部环境)。您还可以使用BlueXP备份和恢复来备份AWS和Azure商业区域中的Cloud Volumes ONTAP 卷。此类部署不支持任何其他BlueXP服务、但BlueXP电子钱包除外。
 +
@@ -554,18 +570,6 @@ link:task-creating-connectors-azure.html#create-a-connector-using-a-service-prin
 === 已添加新的通知服务
 
 通知服务已推出，因此您可以查看在当前登录会话期间启动的 Cloud Manager 操作的状态。您可以验证操作是否成功或失败。 link:task-monitor-cm-operations.html["了解如何监控帐户中的操作"]。
-
-
-
-== 2021 年 8 月 1 日
-
-
-
-=== Connector 支持 RHEL 7.9
-
-现在，运行 Red Hat Enterprise Linux 7.9 的主机支持 Connector 。
-
-link:task-installing-linux.html["查看 Connector 的系统要求"]。
 
 
 
