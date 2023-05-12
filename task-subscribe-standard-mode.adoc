@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-subscribe-standard-mode.html 
 keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
-summary: 从云提供商的市场订阅BlueXP、按小时费率或按年合同支付BlueXP服务费用。如果您从NetApp购买了许可证、则还需要订阅此市场产品。您的许可证始终会首先收费、但如果超出许可容量或许可证期限到期、则会按小时收费。 
+summary: 30f0924c2b9792580922ba2bb932268a 
 ---
 = 订阅BlueXP (标准模式)
 :hardbreaks:
@@ -14,18 +14,7 @@ summary: 从云提供商的市场订阅BlueXP、按小时费率或按年合同�
 
 
 [role="lead"]
-从云提供商的市场订阅BlueXP、按小时费率(PAYGO)或按年合同支付BlueXP服务费用。如果您从NetApp (BYOL)购买了许可证、则还需要订阅市场产品。您的许可证始终会首先收费、但如果超出许可容量或许可证期限到期、则会按小时收费。
-
-市场订阅支持对以下BlueXP服务收费：
-
-* 备份和恢复
-* 分类
-* Cloud Volumes ONTAP
-* 分层
-
-
-.开始之前
-订阅BlueXP涉及将市场订阅与与Connector关联的云凭据相关联。如果您按照"开始使用标准模式"工作流进行操作、则您应该已经有一个Connector。要了解更多信息、请查看 link:task-quick-start-standard-mode.html["标准模式下的BlueXP快速入门"]。
+28737e110ddfecf7a0ee4cf74dc11735
 
 [role="tabbed-block"]
 ====
@@ -34,9 +23,6 @@ summary: 从云提供商的市场订阅BlueXP、按小时费率或按年合同�
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
 . 单击一组凭据的操作菜单，然后选择 * 关联订阅 * 。
-+
-您必须选择与连接器关联的凭据。您不能将商城订阅与BlueXP关联的凭据关联。
-
 +
 image:screenshot_associate_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
 
@@ -77,9 +63,6 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
 . 单击一组凭据的操作菜单，然后选择 * 关联订阅 * 。
-+
-您必须选择与连接器关联的凭据。您不能将商城订阅与BlueXP关联的凭据关联。
-
 +
 image:screenshot_azure_add_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
 
@@ -183,10 +166,3 @@ image:screenshot_gcp_associate.gif["订阅分配页面的屏幕截图。"]
 
 --
 ====
-.相关链接
-* https://["管理Cloud Volumes ONTAP 的BYOL基于容量的许可证"^]
-* https://["管理BlueXP数据服务的BYOL许可证"^]
-* https://["管理BlueXP的AWS凭据和订阅"]
-* https://["管理BlueXP的Azure凭据和订阅"]
-* https://["管理BlueXP的Google Cloud凭据和订阅"]
-
