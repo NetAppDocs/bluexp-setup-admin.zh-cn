@@ -25,54 +25,54 @@ BlueXP平台提供了数据管理的四大要素：存储、移动性、保护�
 存储:: 发现、部署和管理存储、无论存储位于AWS、Azure、Google Cloud还是内部。
 +
 --
-* 设置和使用 https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 跨云实现高效的多协议数据管理。
+* 设置和使用 https://["Cloud Volumes ONTAP"^] 跨云实现高效的多协议数据管理。
 * 设置和使用云文件存储服务：
 +
-** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
-** https://bluexp.netapp.com/fsx-for-ontap["适用于 ONTAP 的 Amazon FSX"^]
-** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["适用于 Google Cloud 的 Cloud Volumes Service"^]
+** https://["Azure NetApp Files"^]
+** https://["适用于 ONTAP 的 Amazon FSX"^]
+** https://["适用于 Google Cloud 的 Cloud Volumes Service"^]
 
 
-* 发现和管理 https://bluexp.netapp.com/netapp-on-premises["内部存储"^]：
+* 发现和管理 https://["内部存储"^]：
 +
 ** E系列系统
 ** ONTAP 集群
 ** StorageGRID 系统
 
 
-* 流程编排和保护 https://bluexp.netapp.com/solutions/kubernetes["Kubbernetes持久数据"^]
+* 流程编排和保护 https://["Kubbernetes持久数据"^]
 
 
 --
 移动性:: 通过同步、复制、分层和缓存数据、将数据移动到需要的位置。
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["复制和同步"^]
-* https://bluexp.netapp.com/global-file-cache["边缘缓存"^]
-* https://bluexp.netapp.com/cloud-tiering["分层"^]
+* https://["复制和同步"^]
+* https://["边缘缓存"^]
+* https://["分层"^]
 
 
 --
 保护:: 使用自动化保护机制保护数据免受数据丢失、计划外中断、勒索软件和其他网络威胁的影响。
 +
 --
-* https://bluexp.netapp.com/cloud-backup["备份和恢复"^]
-* https://bluexp.netapp.com/replication["Replication"^]
+* https://["备份和恢复"^]
+* https://["Replication"^]
 
 
 --
 分析和控制:: 使用工具监控、映射和优化数据存储和基础架构。
 +
 --
-* https://bluexp.netapp.com/netapp-cloud-data-sense["分类"^]
-* https://bluexp.netapp.com/digital-advisor["数字顾问"^]
-* https://bluexp.netapp.com/ransomware-protection["勒索软件保护"^]
+* https://["分类"^]
+* https://["数字顾问"^]
+* https://["勒索软件保护"^]
 
 
 --
 
 
-https://bluexp.netapp.com/["详细了解如何使用BlueXP帮助您的组织"^]
+https://["详细了解如何使用BlueXP帮助您的组织"^]
 
 
 
@@ -84,7 +84,7 @@ https://bluexp.netapp.com/["详细了解如何使用BlueXP帮助您的组织"^]
 
 == 成本
 
-BlueXP的定价取决于您计划使用的服务。 https://bluexp.netapp.com/pricing["了解有关BlueXP定价的信息"^]
+BlueXP的定价取决于您计划使用的服务。 https://["了解有关BlueXP定价的信息"^]
 
 
 
@@ -96,7 +96,7 @@ BlueXP包括一个通过SaaS层提供的基于Web的控制台、提供多租户�
 
 === 软件即服务
 
-BlueXP可通过访问 https://console.bluexp.netapp.com["基于Web的控制台"^] 和 API 。通过这种SaaS体验、您可以在最新功能发布后自动访问这些功能、并轻松地在您的BlueXP帐户和连接器之间切换。
+BlueXP可通过访问 https://["基于Web的控制台"^] 和 API 。通过这种SaaS体验、您可以在最新功能发布后自动访问这些功能、并轻松地在您的BlueXP帐户和连接器之间切换。
 
 
 
@@ -128,4 +128,4 @@ link:concept-modes.html["详细了解BlueXP部署模式"]。
 
 一家独立的注册会计师事务所和服务审计师对BlueXP进行了检查、并确认它根据适用的信任服务标准获得了SOC 2类型2报告。
 
-https://www.netapp.com/company/trust-center/compliance/soc-2/["查看 NetApp 的 SOC 2 报告"^]
+https://["查看 NetApp 的 SOC 2 报告"^]

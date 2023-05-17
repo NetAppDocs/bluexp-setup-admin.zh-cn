@@ -41,7 +41,7 @@ BlueXP为您的帐户提供了以下部署模式。每个模式在出站连接�
 私有模式:: BlueXP Connector安装在内部或云(在安全区域、主权云区域或商业区域)中、并且与BlueXP SaaS层具有_no_连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
 +
 --
-安全区域包括 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S和SC2S"^] 和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
+安全区域包括 https://["AWS C2S和SC2S"^] 和 https://["Azure IL6"^]
 
 --
 
@@ -108,7 +108,7 @@ API endpoint:: API调用会调用以下端点：\https://cloudmanager.cloud.neta
 身份验证:: 身份验证通过使用auth0或NetApp 支持站点 (NSS)登录的BlueXP云服务提供。身份联合可用。
 支持的BlueXP服务:: 所有BlueXP服务均可供用户使用。
 支持的许可选项:: 标准模式支持Marketplace订阅和BYOL；但是、支持的许可选项取决于您正在使用的BlueXP服务。查看每个服务的文档、了解有关可用许可选项的更多信息。
-如何开始使用标准模式:: 转至 https://console.bluexp.netapp.com["基于Web的BlueXP控制台"^] 并注册。
+如何开始使用标准模式:: 转至 https://["基于Web的BlueXP控制台"^] 并注册。
 +
 --
 link:task-quick-start-standard-mode.html["了解如何开始使用标准模式"]。
@@ -246,7 +246,7 @@ API endpoint:: API调用会调用Connector虚拟机。
 | 支持的服务 | 注释： 
 
 
-| 备份和恢复 | 在AWS和Azure商业区域中受支持。在Google Cloud或中不受支持 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] 或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+| 备份和恢复 | 在AWS和Azure商业区域中受支持。在Google Cloud或中不受支持 https://["AWS C2S/SC2S"^] 或 https://["Azure IL6"^] 
 
 
 | Cloud Volumes ONTAP | 由于无法访问Internet、因此无法使用以下功能：自动软件升级、AutoSupport 和AWS成本信息。 
@@ -266,17 +266,17 @@ API endpoint:: API调用会调用Connector虚拟机。
 | 支持的服务 | 注释： 
 
 
-| 备份和恢复 | 仅支持将内部ONTAP 卷备份和还原到StorageGRID 系统。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["了解如何将内部ONTAP 数据备份到StorageGRID"^] 
+| 备份和恢复 | 仅支持将内部ONTAP 卷备份和还原到StorageGRID 系统。https://["了解如何将内部ONTAP 数据备份到StorageGRID"^] 
 
 
 | 分类  a| 
 * 唯一支持的数据源是您可以在本地发现的数据源。
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["查看可在本地发现的源"^]
+https://["查看可在本地发现的源"^]
 
 * 不支持需要出站Internet访问的功能。
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations["查看功能限制"^]
+https://["查看功能限制"^]
 
 
 
@@ -296,7 +296,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 --
 对于Cloud Volumes ONTAP BYOL、仅支持基于节点的许可。不支持基于容量的许可。由于出站Internet连接不可用、您需要手动将Cloud Volumes ONTAP 许可文件上传到BlueXP电子钱包中。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["了解如何将许可证添加到BlueXP电子钱包中"^]
+https://["了解如何将许可证添加到BlueXP电子钱包中"^]
 
 --
 如何开始使用专用模式:: 可通过从NetApp 支持站点 下载"脱机"安装程序来访问私有模式。

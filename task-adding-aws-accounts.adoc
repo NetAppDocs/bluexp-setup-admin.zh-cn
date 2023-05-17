@@ -32,7 +32,7 @@ summary: 添加和管理AWS凭据、以便BlueXP拥有在AWS帐户中部署和�
 
 * 将AWS凭据添加到BlueXP for FSX for ONTAP
 +
-向BlueXP添加新的AWS凭据可为BlueXP提供创建和管理适用于ONTAP 的FSX所需的权限。 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["了解如何为适用于 ONTAP 的 FSX 设置权限"^]
+向BlueXP添加新的AWS凭据可为BlueXP提供创建和管理适用于ONTAP 的FSX所需的权限。 https://["了解如何为适用于 ONTAP 的 FSX 设置权限"^]
 
 
 
@@ -106,12 +106,12 @@ NOTE: 如果您从BlueXP部署了Connector、则BlueXP会自动为部署此Conne
 .步骤
 . 在IAM控制台中、通过复制和粘贴内容来创建策略 link:reference-permissions-aws.html["Connector的IAM策略"]。
 +
-https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["AWS 文档：创建 IAM 策略"^]
+https://["AWS 文档：创建 IAM 策略"^]
 
 . 将策略附加到IAM角色或IAM用户。
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 文档：创建 IAM 角色"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文档：添加和删除 IAM 策略"^]
+** https://["AWS 文档：创建 IAM 角色"^]
+** https://["AWS 文档：添加和删除 IAM 策略"^]
 
 
 
@@ -175,7 +175,7 @@ image:screenshot_accounts_switch_aws.png["屏幕截图、显示在详细信息�
 ** 选择*其他AWS帐户*、然后输入BlueXP SaaS的ID：952013314444
 ** 创建包含创建Connector所需权限的策略。
 +
-*** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["查看适用于 ONTAP 的 FSX 所需的权限"^]
+*** https://["查看适用于 ONTAP 的 FSX 所需的权限"^]
 *** link:task-set-up-permissions-aws.html["查看连接器部署策略"]
 
 
@@ -217,7 +217,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 
 == 向BlueXP for Amazon FSX for ONTAP 添加凭据
 
-有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["适用于ONTAP 的Amazon FSX的BlueXP文档"^]
+有关详细信息，请参见 https://["适用于ONTAP 的Amazon FSX的BlueXP文档"^]
 
 
 

@@ -17,7 +17,7 @@ summary: 在私有模式下部署BlueXP之前、请准备好您的环境。例�
 在私有模式下部署BlueXP之前、请准备好您的环境。例如、您需要查看主机要求、准备网络连接、设置权限等。
 
 
-NOTE: 如果要在中使用BlueXP https://aws.amazon.com/federal/us-intelligence-community/["AWS Commercial Cloud Services (C2S)环境"^] 然后、您应按照单独的说明进行操作、以说明如何准备、安装连接器和启动Cloud Volumes ONTAP。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["了解如何在AWS C2S环境中开始使用Cloud Volumes ONTAP"^]
+NOTE: 如果要在中使用BlueXP https://["AWS Commercial Cloud Services (C2S)环境"^] 然后、您应按照单独的说明进行操作、以说明如何准备、安装连接器和启动Cloud Volumes ONTAP。 https://["了解如何在AWS C2S环境中开始使用Cloud Volumes ONTAP"^]
 
 
 
@@ -64,7 +64,7 @@ link:concept-modes.html["了解私有模式的工作原理"]。
 虚拟机管理程序:: 需要一个经过认证可运行Ubuntu、CentOS或Red Hat Enterprise Linux的裸机或托管虚拟机管理程序。
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
+https://["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
 
 --
 CPU:: 4 个核心或 4 个 vCPU
@@ -74,12 +74,12 @@ Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。我们�
 Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-4。
 +
 --
-在具有支持的操作系统的VM实例上、Google Cloud支持Connector https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["屏蔽VM功能"^]
+在具有支持的操作系统的VM实例上、Google Cloud支持Connector https://["屏蔽VM功能"^]
 
 --
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
 /var 中的磁盘空间:: 必须有 20 GiB 的可用空间
-Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]
+Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。 https://["查看安装说明"^]
 
 
 
@@ -115,7 +115,7 @@ AWS 服务（ AmazonAWS.com ）：
 * 安全令牌服务（ STS ）
 * 简单存储服务 (S3)
 
-| 管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^] 
+| 管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://["有关详细信息、请参见AWS文档"^] 
 
 
 | https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 管理Azure公共区域中的资源。 
@@ -152,7 +152,7 @@ image:screenshot-azure-sku.png["在Azure中创建新IP地址的屏幕截图、�
 
 如果改用标准SKU IP地址、则BlueXP将使用Connector的_private_ IP地址、而不是公共IP。如果用于访问BlueXP控制台的计算机无法访问该专用IP地址、则BlueXP控制台的操作将失败。
 
-https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azure文档：公共IP SKU"^]
+https://["Azure文档：公共IP SKU"^]
 
 
 
@@ -223,8 +223,8 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 . 将策略附加到IAM用户。
 +
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 文档：创建 IAM 角色"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文档：添加和删除 IAM 策略"^]
+** https://["AWS 文档：创建 IAM 角色"^]
+** https://["AWS 文档：添加和删除 IAM 策略"^]
 
 
 . 确保用户具有可在安装Connector后添加到BlueXP中的访问密钥。
@@ -241,7 +241,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 .步骤
 . 在计划安装Connector的虚拟机上启用系统分配的托管身份、以便您可以通过自定义角色提供所需的Azure权限。
 +
-https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azure文档：使用Azure门户为虚拟机上的Azure资源配置托管身份"^]
+https://["Microsoft Azure文档：使用Azure门户为虚拟机上的Azure资源配置托管身份"^]
 
 . 复制的内容 link:reference-permissions-azure.html["Connector的自定义角色权限"] 并将其保存在JSON文件中。
 . 通过将 Azure 订阅 ID 添加到可分配范围来修改 JSON 文件。
@@ -264,7 +264,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 以下步骤介绍如何在 Azure Cloud Shell 中使用 Bash 创建角色。
 
 +
-.. start https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 并选择 Bash 环境。
+.. start https://["Azure Cloud Shell"^] 并选择 Bash 环境。
 .. 上传 JSON 文件。
 +
 image:screenshot_azure_shell_upload.png["Azure Cloud Shell 的屏幕截图，您可以在其中选择上传文件的选项。"]
@@ -290,7 +290,7 @@ az role definition create --role-definition Connector_Policy.json
 .创建Azure Active Directory应用程序以进行基于角色的访问控制
 . 确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。
 +
-有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]。
+有关详细信息，请参见 https://["Microsoft Azure 文档：所需权限"^]。
 
 . 从 Azure 门户中，打开 * Azure Active Directory* 服务。
 +
@@ -406,7 +406,7 @@ image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中�
 gcloud iam roles create connector --project=myproject --file=connector.yaml
 ----
 +
-https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud文档：创建和管理自定义角色"^]
+https://["Google Cloud文档：创建和管理自定义角色"^]
 
 
 
@@ -417,7 +417,7 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 .. 选择刚刚创建的角色。
 .. 完成其余步骤以创建角色。
 +
-https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloud文档：创建服务帐户"^]
+https://["Google Cloud文档：创建服务帐户"^]
 
 
 
@@ -435,7 +435,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 要在Google Cloud中部署Cloud Volumes ONTAP 、需要使用多个API。
 
 .步骤
-. https://cloud.google.com/apis/docs/getting-started#enabling_apis["在项目中启用以下 Google Cloud API"^]
+. https://["在项目中启用以下 Google Cloud API"^]
 +
 ** Cloud Deployment Manager V2 API
 ** 云日志记录 API

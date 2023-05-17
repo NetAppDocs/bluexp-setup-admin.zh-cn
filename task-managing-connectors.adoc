@@ -80,19 +80,19 @@ image:screenshot-connector-autosupport.png["支持信息板的屏幕截图、显
 AWS:: 在 AWS 中创建 Connector 实例时，您提供了 AWS 访问密钥和机密密钥。您可以使用此密钥对通过 SSH 连接到实例。
 +
 --
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS 文档：连接到 Linux 实例"^]
+https://["AWS 文档：连接到 Linux 实例"^]
 
 --
 Azure 酒店:: 在 Azure 中创建 Connector VM 时，您选择使用密码或 SSH 公有 密钥进行身份验证。使用您选择的身份验证方法连接到虚拟机。
 +
 --
-https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure 文档：通过 SSH 连接到虚拟机"^]
+https://["Azure 文档：通过 SSH 连接到虚拟机"^]
 
 --
 Google Cloud:: 在 Google Cloud 中创建 Connector 时，无法指定身份验证方法。但是，您可以使用 Google Cloud Console 或 Google Cloud CLI （ gcloud ）连接到 Linux VM 实例。
 +
 --
-https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs ：连接到 Linux VM"^]
+https://["Google Cloud Docs ：连接到 Linux VM"^]
 
 --
 
@@ -109,7 +109,7 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 NOTE: 在可访问Internet的主机上、只要能够通过出站Internet访问来获取软件更新、Connector就会自动将其软件更新到最新版本。
 
 .步骤
-. 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]。
+. 从下载Connector软件 https://["NetApp 支持站点"^]。
 . 将安装程序复制到 Linux 主机。
 . 分配运行脚本的权限。
 +
@@ -192,7 +192,7 @@ maxDownloadSessions_ 的值可以是 1 或大于 1 的任意整数。如果值�
 
 
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["了解有关 /ocem/config API 调用的更多信息"^]
+https://["了解有关 /ocem/config API 调用的更多信息"^]
 
 
 

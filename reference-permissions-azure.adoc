@@ -86,7 +86,6 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Storage/storageAccounts/delete",
                     "Microsoft.Storage/storageAccounts/write",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/read",
-                    "Microsoft.Storage/storageAccounts/blobServices/containers/write",
                     "Microsoft.Storage/storageAccounts/listAccountSas/action",
                     "Microsoft.Storage/usages/read",
                     "Microsoft.Compute/snapshots/write",
@@ -161,9 +160,10 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Synapse/workspaces/firewallRules/read",
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
-                    "Microsoft.Network/publicIPAddresses/delete",
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
-                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
+                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+                    "Microsoft.Compute/images/write",
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -226,8 +226,6 @@ Connector会发出以下API请求以进行BlueXP备份和恢复：
 * Microsoft.Network/networkInterfaces/delete
 * Microsoft.Network/networkSecurityGroups/delete
 * microsoft.resources/deployments/delete
-* Microsoft.Network/publicIPAddresses/delete
-* microsoft.Storage/storageAccounts"(存储帐户)/blobServices/容器/写入
 * microsoft.ManagedIdentity/userAssignedIdentities/assign/action
 
 
@@ -443,7 +441,10 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 | microsoft.resources/deployments/delete | 是的。 | 否 | 否 
 
 
-| 启用从VHD部署 | Microsoft.Compute/images/read | 是的。 | 否 | 否 
+.2+| 启用从VHD部署 | Microsoft.Compute/images/read | 是的。 | 否 | 否 
+
+
+| Microsoft.Compute/images/write | 是的。 | 否 | 否 
 
 
 .4+| 在目标子网中创建和管理网络接口 | Microsoft.Network/networkInterfaces/read | 是的。 | 是的。 | 否 
@@ -590,7 +591,7 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 | microsoft.MarketplaceOrered/OfferTypes/Publishers/Offers/Plans/agreements/write | 是的。 | 是的。 | 否 
 
 
-.8+| 管理HA对的负载平衡器 | Microsoft.Network/loadBalancers/read | 是的。 | 是的。 | 否 
+.9+| 管理HA对的负载平衡器 | Microsoft.Network/loadBalancers/read | 是的。 | 是的。 | 否 
 
 
 | Microsoft.Network/loadBalancers/write | 是的。 | 否 | 否 
@@ -603,6 +604,9 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 
 
 | Microsoft.Network/loadBalancers/backendAddressPools/join/action | 是的。 | 否 | 否 
+
+
+| Microsoft.Network/loadBalancers/frontendIPConfigurations/read | 是的。 | 是的。 | 否 
 
 
 | Microsoft.Network/loadBalancers/loadBalancingRules/read | 是的。 | 否 | 否 
@@ -756,7 +760,6 @@ Connector发出以下API请求、以发现和管理Azure Kubernetes Service (AKS
 Connector会为日常操作发出以下API请求。
 
 * microsoft.Storage/storageAccounts"(存储帐户)/blobServices/containers/read
-* microsoft.Storage/storageAccounts"(存储帐户)/blobServices/容器/写入
 * microsoft.Storage/storageAccounts/managementPolicies/Read
 * microsoft.Storage/storageAccounts/managementPolicies/write
 * microsoft.Storage/storageAccounts"或"Read"
@@ -767,6 +770,22 @@ Connector会为日常操作发出以下API请求。
 == 更改日志
 
 添加和删除权限后、我们将在以下各节中记录这些权限。
+
+
+
+=== 2023年5月12日
+
+以下权限已添加到JSON策略中、因为Cloud Volumes ONTAP 管理需要这些权限：
+
+* Microsoft.Compute/images/write
+* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
+
+
+已从JSON策略中删除以下权限、因为不再需要这些权限：
+
+* microsoft.Storage/storageAccounts"(存储帐户)/blobServices/容器/写入
+* Microsoft.Network/publicIPAddresses/delete
+
 
 
 
@@ -791,27 +810,4 @@ BlueXP备份和恢复需要这些权限。
 +
 Cloud Volumes ONTAP 部署需要此权限。
 
-
-
-
-
-=== 2022年12月1日
-
-已向JSON策略添加以下权限：
-
-* microsoft.Storage/storageAccounts"(存储帐户)/blobServices/容器/写入
-+
-BlueXP备份和恢复以及BlueXP层需要此权限。
-
-* Microsoft.Network/publicIPAddresses/delete
-+
-BlueXP备份和恢复需要此权限。
-
-
-
-已从JSON策略中删除以下权限、因为不再需要这些权限：
-
-* Microsoft.Compute/images/write
-* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
-* microsoft.Storage/storageAccounts/重新 生成密钥/操作
 

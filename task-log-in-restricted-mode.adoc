@@ -29,7 +29,7 @@ summary: 在受限模式下使用BlueXP时、您需要从连接器本地运行�
 .步骤
 . 打开 Web 浏览器并输入以下 URL ：
 +
-https://_ipaddress_[]
+https://[]
 
 +
 _ipaddress_可以是localhost、专用IP地址或公共IP地址、具体取决于安装Connector的主机的配置。例如、您可能需要输入与Connector主机连接的主机的专用IP地址。

@@ -73,8 +73,8 @@ link:task-set-up-permissions-azure.html["按照每个选项的分步说明进行
 
 [role="quick-margin-list"]
 * *从BlueX*：单击Connector下拉列表、选择*添加连接器*并按照提示进行操作。
-* *从Azure Marketplace *：转到 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Azure Marketplace中的NetApp Connector VM页面"^] 并按照提示创建Connector VM。
-* *手动安装*：从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"] 并运行安装脚本。
+* *从Azure Marketplace *：转到 https://["Azure Marketplace中的NetApp Connector VM页面"^] 并按照提示创建Connector VM。
+* *手动安装*：从下载Connector软件 https://["NetApp 支持站点"] 并运行安装脚本。
 
 
 [role="quick-margin-para"]

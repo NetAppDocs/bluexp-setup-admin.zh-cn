@@ -138,7 +138,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 如果您是现有的NetApp客户、拥有现有许可证和序列号、但拥有_no_ NSS帐户、则只需创建一个NSS帐户即可。
 
 .步骤
-. 完成以创建NetApp 支持站点 帐户 https://mysupport.netapp.com/site/user/registration["NetApp 支持站点 用户注册表"^]
+. 完成以创建NetApp 支持站点 帐户 https://["NetApp 支持站点 用户注册表"^]
 +
 .. 请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。
 .. 请务必复制上面用于序列号字段的BlueXP帐户序列号(960xxxx)。这样可以加快帐户处理速度。
@@ -161,7 +161,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png["帮助菜单的屏幕截图，其中列出的第一个选项为支持"]
 
-. 导航到 https://register.netapp.com["NetApp的支持注册站点"^] 并选择*我不是NetApp注册客户*。
+. 导航到 https://["NetApp的支持注册站点"^] 并选择*我不是NetApp注册客户*。
 . 填写必填字段(带有红色星号的字段)。
 . 在*产品线*字段中、选择*云管理器*、然后选择适用的计费提供商。
 . 复制上述第2步中的帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。
@@ -172,7 +172,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 +
 确认将向NetApp提交您的请求、并建议您创建NetApp 支持站点 帐户。
 
-. 完成以创建NetApp 支持站点 帐户 https://mysupport.netapp.com/site/user/registration["NetApp 支持站点 用户注册表"^]
+. 完成以创建NetApp 支持站点 帐户 https://["NetApp 支持站点 用户注册表"^]
 +
 .. 请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。
 .. 请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这样可以加快帐户处理速度。

@@ -68,7 +68,7 @@ AWS 服务（ AmazonAWS.com ）：
 * 安全令牌服务（ STS ）
 * 简单存储服务 (S3)
 
-| 管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^] 
+| 管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://["有关详细信息、请参见AWS文档"^] 
 
 
 | https://management.azure.com https://login.microsoftonline.com | 管理Azure公共区域中的资源。 
@@ -130,4 +130,4 @@ link:reference-networking-saas-console.html["为用户访问BlueXP控制台准�
 
 == IP地址限制
 
-可能与172范围内的IP地址冲突。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["了解有关此限制的更多信息"]。
+可能与172范围内的IP地址冲突。 https://["了解有关此限制的更多信息"]。

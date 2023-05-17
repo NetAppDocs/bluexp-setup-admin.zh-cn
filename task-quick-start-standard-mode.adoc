@@ -18,7 +18,7 @@ summary: '通过从BlueXP控制台注册、(可选)创建Connector并订阅BlueX
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 注册并创建帐户
 [role="quick-margin-para"]
-转至 https://console.bluexp.netapp.com["BlueXP控制台"^] 并注册。您可以选择创建帐户、但如果您受邀加入现有帐户、则可以跳过该步骤。
+转至 https://["BlueXP控制台"^] 并注册。您可以选择创建帐户、但如果您受邀加入现有帐户、则可以跳过该步骤。
 
 [role="quick-margin-para"]
 此时、您已登录并可以开始使用多种BlueXP服务、例如Digital Advisor、Amazon FSX for ONTAP 、Azure NetApp Files 等。 link:concept-connectors.html["了解没有Connector可以执行的操作"]。

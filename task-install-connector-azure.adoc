@@ -32,7 +32,7 @@ summary: 直接从基于Web的BlueXP控制台、Azure Marketplace或通过在您
 
 * SSH公共密钥(如果要对Connector虚拟机使用该身份验证方法)。身份验证方法的另一个选项是使用密码。
 +
-https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["了解如何在Azure中连接到Linux VM"^]
+https://["了解如何在Azure中连接到Linux VM"^]
 
 * 如果您不希望BlueXP自动为Connector创建Azure角色、则需要创建您自己的角色 link:reference-permissions-azure.html["使用此页面上的策略"]。
 +
@@ -79,7 +79,7 @@ link:task-set-up-permissions-azure.html["了解如何为服务主体获取这些
 虚拟机的身份验证方法可以是密码或SSH公共密钥。
 
 +
-https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["了解如何在Azure中连接到Linux VM"^]
+https://["了解如何在Azure中连接到Linux VM"^]
 
 ** *详细信息*：输入实例的名称、指定标记、然后选择是希望BlueXP创建具有所需权限的新角色、还是要选择使用设置的现有角色 link:reference-permissions-azure.html["所需权限"]。
 +
@@ -108,7 +108,7 @@ link:reference-ports-azure.html["查看Azure的安全组规则"]。
 .步骤
 . 转到Azure Marketplace中的NetApp Connector VM页面。
 +
-https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["适用于商业区域的Azure Marketplace页面"^]
+https://["适用于商业区域的Azure Marketplace页面"^]
 
 . 单击 * 立即获取 * ，然后单击 * 继续 * 。
 . 在 Azure 门户中，单击 * 创建 * ，然后按照步骤配置虚拟机。
@@ -127,7 +127,7 @@ link:reference-ports-azure.html["查看Azure的安全组规则"]。
 
 ** 在*管理*下、通过选择*启用*系统分配的托管身份*来为Connector VM启用。
 +
-此设置非常重要，因为托管身份允许 Connector 虚拟机在不提供任何凭据的情况下向 Azure Active Directory 标识自己。完成后、您需要将创建的自定义角色分配给 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["详细了解 Azure 资源的托管身份"^]。
+此设置非常重要，因为托管身份允许 Connector 虚拟机在不提供任何凭据的情况下向 Azure Active Directory 标识自己。完成后、您需要将创建的自定义角色分配给 https://["详细了解 Azure 资源的托管身份"^]。
 
 
 
@@ -137,7 +137,7 @@ Azure 使用指定的设置部署虚拟机。虚拟机和 Connector 软件应在
 
 . 从已连接到 Connector 虚拟机的主机打开 Web 浏览器，然后输入以下 URL ：
 +
-https://_ipaddress_[]
+https://[]
 
 . 登录后，设置 Connector ：
 +
@@ -169,7 +169,7 @@ link:task-provide-permissions-azure.html["为BlueXP提供您先前设置的权�
 * CA签名证书、如果代理服务器使用HTTPS或代理是截获代理。
 * 在Azure中的虚拟机上启用的托管身份、以便您可以通过自定义角色提供所需的Azure权限。
 +
-https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azure文档：使用Azure门户为虚拟机上的Azure资源配置托管身份"^]
+https://["Microsoft Azure文档：使用Azure门户为虚拟机上的Azure资源配置托管身份"^]
 
 
 
@@ -198,7 +198,7 @@ unset https_proxy
 +
 如果不删除这些系统变量、安装将失败。
 
-. 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
+. 从下载Connector软件 https://["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
 +
 您应下载用于您的网络或云中的"联机"Connector安装程序。Connector可以使用单独的"脱机"安装程序、但只有专用模式部署才支持此安装程序。
 
@@ -247,7 +247,7 @@ chmod +x OnCommandCloudManager-<version>
 
 . 从已连接到 Connector 虚拟机的主机打开 Web 浏览器，然后输入以下 URL ：
 +
-https://_ipaddress_[]
+https://[]
 
 . 登录后，设置 Connector ：
 +
