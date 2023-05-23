@@ -153,7 +153,7 @@ kms-key-path:: （可选）添加 KMS 密钥以加密连接器的磁盘（还需
 
 . 从已连接到 Connector 实例的主机打开 Web 浏览器，然后输入以下 URL ：
 +
-https://[]
+https://_ipaddress_[]
 
 . 登录后，设置 Connector ：
 +
@@ -169,7 +169,7 @@ link:concept-netapp-accounts.html["了解有关BlueXP帐户的信息"]。
 .结果
 现在、您可以使用BlueXP帐户安装并设置Connector。
 
-打开Web浏览器并转到 https://["BlueXP控制台"^] 开始将Connector与BlueXP结合使用。
+打开Web浏览器并转到 https://console.bluexp.netapp.com["BlueXP控制台"^] 开始将Connector与BlueXP结合使用。
 
 --
 .手动安装
@@ -208,7 +208,7 @@ unset https_proxy
 +
 如果不删除这些系统变量、安装将失败。
 
-. 从下载Connector软件 https://["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
+. 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
 +
 您应下载用于您的网络或云中的"联机"Connector安装程序。Connector可以使用单独的"脱机"安装程序、但只有专用模式部署才支持此安装程序。
 
@@ -257,7 +257,7 @@ chmod +x OnCommandCloudManager-<version>
 
 . 从已连接到 Connector 虚拟机的主机打开 Web 浏览器，然后输入以下 URL ：
 +
-https://[]
+https://_ipaddress_[]
 
 . 登录后，设置 Connector ：
 +

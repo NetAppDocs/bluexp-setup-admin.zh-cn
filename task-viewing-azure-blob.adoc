@@ -33,7 +33,7 @@ image:screenshot-azure-actions.png["选择Azure Blob工作环境后显示操作�
 
 . 选择*同步数据*可将数据与Azure Blob存储同步或与Azure Blob存储同步。
 +
-有关详细信息，请参见 https://["BlueXP复制和同步概述"^]
+有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["BlueXP复制和同步概述"^]
 
 . 选择*进入工作环境*可查看有关Azure Blob中Azure存储帐户的详细信息。
 +

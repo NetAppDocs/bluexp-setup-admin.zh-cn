@@ -33,7 +33,7 @@ AWS 服务（ AmazonAWS.com ）：
 * 安全令牌服务（ STS ）
 * 简单存储服务 (S3)
 
-| 在AWS中从BlueXP部署连接器时需要此功能。确切的端点取决于部署 Connector 的区域。 https://["有关详细信息，请参阅 AWS 文档。"^] 
+| 在AWS中从BlueXP部署连接器时需要此功能。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息，请参阅 AWS 文档。"^] 
 
 
 | https://management.azure.com https://login.microsoftonline.com | 在大多数Azure地区从BlueXP部署连接器时需要此功能。 

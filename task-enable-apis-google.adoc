@@ -32,4 +32,4 @@ summary: 必须先启用多个Google Cloud API、然后才能在Google Cloud中�
 
 
 
-https://["Google Cloud文档：启用API"^]
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud文档：启用API"^]

@@ -115,13 +115,13 @@ includedPermissions:
 gcloud iam角色用于创建connectorDeployment -project=MyProject -file=connector-deployment.yaml
 
 +
-https://["Google Cloud文档：创建和管理自定义角色"^]
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud文档：创建和管理自定义角色"^]
 
 
 
 . 将此自定义角色分配给要从BlueXP或使用gcloud部署Connector的用户。
 +
-https://["Google Cloud文档：授予单个角色"^]
+https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud文档：授予单个角色"^]
 
 
 
@@ -148,7 +148,7 @@ Google Cloud用户现在具有创建Connector所需的权限。
 gcloud iam角色创建连接器-project=MyProject -file=connector.yaml
 
 +
-https://["Google Cloud文档：创建和管理自定义角色"^]
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud文档：创建和管理自定义角色"^]
 
 
 
@@ -159,7 +159,7 @@ https://["Google Cloud文档：创建和管理自定义角色"^]
 .. 选择刚刚创建的角色。
 .. 完成其余步骤以创建角色。
 +
-https://["Google Cloud文档：创建服务帐户"^]
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloud文档：创建服务帐户"^]
 
 
 
@@ -187,7 +187,7 @@ https://["Google Cloud文档：创建服务帐户"^]
 
 
 
-有关详细信息，请参见 https://["Google Cloud文档"^]
+有关详细信息，请参见 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud文档"^]
 
 
 

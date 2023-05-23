@@ -23,7 +23,7 @@ link:task-set-up-permissions-google.html["了解如何设置这些权限"]。
 .步骤
 . 转到Google Cloud门户、并将服务帐户分配给Connector VM实例。
 +
-https://["Google Cloud文档：更改实例的服务帐户和访问范围"^]
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud文档：更改实例的服务帐户和访问范围"^]
 
 . 如果要在其他项目中部署Cloud Volumes ONTAP 、请通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限。您需要对每个项目重复此步骤。
 

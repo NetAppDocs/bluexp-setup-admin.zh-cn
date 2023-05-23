@@ -142,7 +142,7 @@ NOTE: 此策略仅包含从BlueXP在Azure中启动Connector VM所需的权限。
 以下步骤介绍如何在 Azure Cloud Shell 中使用 Bash 创建角色。
 
 +
-.. start https://["Azure Cloud Shell"^] 并选择 Bash 环境。
+.. start https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 并选择 Bash 环境。
 .. 上传 JSON 文件。
 +
 image:screenshot_azure_shell_upload.png["Azure Cloud Shell 的屏幕截图，您可以在其中选择上传文件的选项。"]
@@ -203,7 +203,7 @@ Azure用户现在具有从BlueXP部署Connector所需的权限。
 .创建Azure Active Directory应用程序以进行基于角色的访问控制
 . 确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。
 +
-有关详细信息，请参见 https://["Microsoft Azure 文档：所需权限"^]。
+有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]。
 
 . 从 Azure 门户中，打开 * Azure Active Directory* 服务。
 +
@@ -317,7 +317,7 @@ image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中�
 .步骤
 . 如果您计划在自己的主机上手动安装软件、请在虚拟机上启用系统分配的托管身份、以便您可以通过自定义角色提供所需的Azure权限。
 +
-https://["Microsoft Azure文档：使用Azure门户为虚拟机上的Azure资源配置托管身份"^]
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azure文档：使用Azure门户为虚拟机上的Azure资源配置托管身份"^]
 
 . 复制的内容 link:reference-permissions-azure.html["Connector的自定义角色权限"] 并将其保存在JSON文件中。
 . 通过将 Azure 订阅 ID 添加到可分配范围来修改 JSON 文件。
@@ -340,7 +340,7 @@ https://["Microsoft Azure文档：使用Azure门户为虚拟机上的Azure资源
 以下步骤介绍如何在 Azure Cloud Shell 中使用 Bash 创建角色。
 
 +
-.. start https://["Azure Cloud Shell"^] 并选择 Bash 环境。
+.. start https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 并选择 Bash 环境。
 .. 上传 JSON 文件。
 +
 image:screenshot_azure_shell_upload.png["Azure Cloud Shell 的屏幕截图，您可以在其中选择上传文件的选项。"]
@@ -368,7 +368,7 @@ link:task-provide-permissions-azure.html["了解如何为BlueXP提供这些权�
 .创建Azure Active Directory应用程序以进行基于角色的访问控制
 . 确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。
 +
-有关详细信息，请参见 https://["Microsoft Azure 文档：所需权限"^]。
+有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]。
 
 . 从 Azure 门户中，打开 * Azure Active Directory* 服务。
 +

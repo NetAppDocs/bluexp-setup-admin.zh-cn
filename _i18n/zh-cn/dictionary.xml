@@ -3620,4 +3620,18 @@
   <block id="c8e8c3b324197dbdad9e21df5a435a35" category="paragraph">以下权限已添加到JSON策略中、因为Cloud Volumes ONTAP 管理需要这些权限：</block>
   <block id="c7e8dc746d7263609202186d1ac75c65" category="inline-link-macro">连接器实例所需的查看权限</block>
   <block id="5a25157670ec0b889a34ec2b3905bc26" category="paragraph">请注意、此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。 <block ref="e99a10e3be28ba86573878700d04f6c5" category="inline-link-macro-rx"></block>。</block>
+  <block id="60a24477cd4bc1d96c88b21629d8cd7c" category="summary">从云提供商的市场订阅BlueXP、按小时费率或按年合同支付BlueXP服务费用。如果您从NetApp购买了许可证、则还需要订阅此市场产品。您的许可证始终会首先收费、但如果超出许可容量或许可证期限到期、则会按小时收费。</block>
+  <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">从云提供商的市场订阅BlueXP、按小时费率(PAYGO)或按年合同支付BlueXP服务费用。如果您从NetApp (BYOL)购买了许可证、则还需要订阅市场产品。您的许可证始终会首先收费、但如果超出许可容量或许可证期限到期、则会按小时收费。</block>
+  <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">市场订阅支持对以下BlueXP服务收费：</block>
+  <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">订阅BlueXP涉及将市场订阅与与Connector关联的云凭据相关联。如果您按照"开始使用标准模式"工作流进行操作、则您应该已经有一个Connector。要了解更多信息、请查看 <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>。</block>
+  <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">您必须选择与连接器关联的凭据。您不能将商城订阅与BlueXP关联的凭据关联。</block>
+  <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">管理Cloud Volumes ONTAP 的BYOL基于容量的许可证</block>
+  <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
+  <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">管理BlueXP数据服务的BYOL许可证</block>
+  <block id="49056b2966eae66ee0345bbf80d6b8d6" category="list-text"><block ref="49056b2966eae66ee0345bbf80d6b8d6" category="inline-link-rx"></block></block>
+  <block id="a4821774f3941403655492bb82c492ca" category="list-text"><block ref="a4821774f3941403655492bb82c492ca" category="inline-link-rx"></block></block>
+  <block id="75c14ab09fd89f95714034d50258a6cc" category="list-text"><block ref="75c14ab09fd89f95714034d50258a6cc" category="inline-link-rx"></block></block>
+  <block id="95c435337a307137f163f5eb04ac01ad" category="list-text"><block ref="95c435337a307137f163f5eb04ac01ad" category="inline-link-rx"></block></block>
+  <block id="ba66b75d479f2289bcf99d989de6e0b1" category="paragraph">市场订阅支持在受限模式下对以下BlueXP服务收费：</block>
+  <block id="d639d0a55c1a57a909ac7ffab5f941c6" category="paragraph">订阅BlueXP涉及将市场订阅与与Connector关联的云凭据相关联。如果您按照"开始使用受限模式"工作流操作、则您应该已经拥有Connector。要了解更多信息、请查看 <block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block>。</block>
 </blocks>

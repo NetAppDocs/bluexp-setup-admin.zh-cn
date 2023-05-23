@@ -98,7 +98,7 @@ link:task-set-up-permissions-aws.html["了解如何设置AWS权限"]。
 
 
 .步骤
-. 转至 https://["AWS Marketplace上的BlueXP页面"^]
+. 转至 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP页面"^]
 . 在 Marketplace 页面上，单击 * 继续订阅 * ，然后单击 * 继续配置 * 。
 +
 image:screenshot-subscribe-aws.png["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
@@ -143,7 +143,7 @@ AWS 使用指定的设置启动软件。Connector 实例和软件应在大约五
 
 . 从已连接到 Connector 虚拟机的主机打开 Web 浏览器，然后输入以下 URL ：
 +
-https://[]
+https://_ipaddress_[]
 
 . 登录后，设置 Connector ：
 +
@@ -161,7 +161,7 @@ https://[]
 .结果
 现在、您可以使用BlueXP帐户安装并设置Connector。
 
-打开Web浏览器并转到 https://["BlueXP控制台"^] 开始将Connector与BlueXP结合使用。
+打开Web浏览器并转到 https://console.bluexp.netapp.com["BlueXP控制台"^] 开始将Connector与BlueXP结合使用。
 
 --
 .手动安装
@@ -200,7 +200,7 @@ unset https_proxy
 +
 如果不删除这些系统变量、安装将失败。
 
-. 从下载Connector软件 https://["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
+. 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
 +
 您应下载用于您的网络或云中的"联机"Connector安装程序。Connector可以使用单独的"脱机"安装程序、但只有专用模式部署才支持此安装程序。
 
@@ -249,7 +249,7 @@ chmod +x OnCommandCloudManager-<version>
 
 . 从已连接到 Connector 虚拟机的主机打开 Web 浏览器，然后输入以下 URL ：
 +
-https://[]
+https://_ipaddress_[]
 
 . 登录后，设置 Connector ：
 +

@@ -22,7 +22,7 @@ _Identity Federation_支持使用BlueXP进行单点登录、以便用户可以�
 
 如果您使用NetApp 支持站点 (NSS)凭据登录到BlueXP、则不应按照此页面上的说明设置身份联合。您应改为执行以下操作：
 
-* 下载并完成 https://["NetApp联合申请表"^]
+* 下载并完成 https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["NetApp联合申请表"^]
 * 将此表单提交到表单中指定的电子邮件地址
 
 
@@ -87,16 +87,16 @@ BlueXP仅支持服务提供商启动(SP启动)的SSO。不支持身份提供程�
 
 查看SAML身份提供程序的说明：
 
-* https://["ADFS"^]
-* https://["Okta"^]
-* https://["OneLogin"^]
-* https://["PingFederate"^]
-* https://["Salesforce"^]
-* https://["SiteMinder"^]
-* https://["SSOcircle"^]
+* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-adfs-saml-connections["ADFS"^]
+* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-okta-as-saml-identity-provider["Okta"^]
+* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-onelogin-as-saml-identity-provider["OneLogin"^]
+* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-pingfederate-as-saml-identity-provider["PingFederate"^]
+* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-salesforce-as-saml-identity-provider["Salesforce"^]
+* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-siteminder-as-saml-identity-provider["SiteMinder"^]
+* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-ssocircle-as-saml-identity-provider["SSOcircle"^]
 
 
-如果您的身份提供程序未显示在上述列表中、 https://["请按照以下通用说明进行操作"^]
+如果您的身份提供程序未显示在上述列表中、 https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["请按照以下通用说明进行操作"^]
 
 
 TIP: Do _not_ complete the steps that describe how to create a connection in auth0。您将在下一步中创建此连接。
@@ -104,7 +104,7 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 
 
 | 2. | BlueXP管理员  a| 
-转至 https://["NetApp联合设置页面"^] 并创建与BlueXP的连接。
+转至 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^] 并创建与BlueXP的连接。
 
 要完成此步骤、您需要从AD管理员处获取有关身份提供程序的以下信息：
 
@@ -120,7 +120,7 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 | 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数在身份提供程序上完成配置。 
 
 
-| 4. | BlueXP管理员 | 从测试并启用连接 https://["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
+| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
 |===
 
 
@@ -136,7 +136,7 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 | 1. | AD管理员  a| 
 配置Azure Active Directory以启用与BlueXP的身份联合。
 
-https://["查看将应用程序注册到Azure AD的说明"^]
+https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["查看将应用程序注册到Azure AD的说明"^]
 
 
 TIP: Do _not_ complete the steps that describe how to create a connection in auth0。您将在下一步中创建此连接。
@@ -144,7 +144,7 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 
 
 | 2. | BlueXP管理员  a| 
-转至 https://["NetApp联合设置页面"^] 并创建与BlueXP的连接。
+转至 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^] 并创建与BlueXP的连接。
 
 要完成此步骤、您需要从AD管理员处获取以下信息：
 
@@ -160,7 +160,7 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 | 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数完成Azure AD中的配置。 
 
 
-| 4. | BlueXP管理员 | 从测试并启用连接 https://["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
+| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
 |===
 
 
@@ -176,12 +176,12 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 | 1. | AD管理员  a| 
 配置ADFS服务器以启用与BlueXP的身份联合。
 
-https://["查看使用auth0配置ADFS服务器的说明"^]
+https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs["查看使用auth0配置ADFS服务器的说明"^]
 
 
 
 | 2. | BlueXP管理员  a| 
-转至 https://["NetApp联合设置页面"^] 并创建与BlueXP的连接。
+转至 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^] 并创建与BlueXP的连接。
 
 要完成此步骤、您需要从AD管理员处获取以下内容：ADFS服务器的URL或联合元数据文件。
 
@@ -192,7 +192,7 @@ https://["查看使用auth0配置ADFS服务器的说明"^]
 | 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数完成ADFS服务器上的配置。 
 
 
-| 4. | BlueXP管理员 | 从测试并启用连接 https://["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
+| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
 |===
 
 
@@ -208,7 +208,7 @@ https://["查看使用auth0配置ADFS服务器的说明"^]
 | 1. | AD管理员  a| 
 配置PingFederate服务器以启用与BlueXP的身份联合。
 
-https://["查看有关创建连接的说明"^]
+https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["查看有关创建连接的说明"^]
 
 
 TIP: Do _not_ complete the steps that describe how to create a connection in auth0。您将在下一步中创建此连接。
@@ -216,7 +216,7 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 
 
 | 2. | BlueXP管理员  a| 
-转至 https://["NetApp联合设置页面"^] 并创建与BlueXP的连接。
+转至 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^] 并创建与BlueXP的连接。
 
 要完成此步骤、您需要从AD管理员处获取以下信息：
 
@@ -231,13 +231,13 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 | 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数在PingFederate服务器上完成配置。 
 
 
-| 4. | BlueXP管理员 | 从测试并启用连接 https://["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
+| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
 |===
 
 
 == 更新联合连接
 
-在BlueXP管理员启用连接后、管理员可以随时从更新此连接 https://["NetApp联合设置页面"^]
+在BlueXP管理员启用连接后、管理员可以随时从更新此连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]
 
 例如、您可能需要通过上传新证书来更新连接。
 

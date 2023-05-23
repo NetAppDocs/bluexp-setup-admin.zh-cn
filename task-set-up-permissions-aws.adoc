@@ -44,7 +44,7 @@ BlueXP需要先向AWS进行身份验证、然后才能在VPC中部署Connector�
 
 无论选择哪种方案、第一步都是创建IAM策略。此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。
 
-如果需要、您可以使用IAM来限制IAM策略 `Condition` Element。 https://["AWS文档：条件元素"^]
+如果需要、您可以使用IAM来限制IAM策略 `Condition` Element。 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS文档：条件元素"^]
 
 
 TIP: 在BlueXP创建Connector时、它会将一组新权限应用于Connector实例、以使Connector能够管理AWS资源。
@@ -252,8 +252,8 @@ TIP: 在BlueXP创建Connector时、它会将一组新权限应用于Connector实
 
 . 将策略附加到IAM用户。
 +
-** https://["AWS 文档：创建 IAM 角色"^]
-** https://["AWS 文档：添加和删除 IAM 策略"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 文档：创建 IAM 角色"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文档：添加和删除 IAM 策略"^]
 
 
 . 确保用户具有可在安装Connector后添加到BlueXP的访问密钥。

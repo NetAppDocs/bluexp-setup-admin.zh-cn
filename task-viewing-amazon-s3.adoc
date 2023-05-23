@@ -20,4 +20,4 @@ image:screenshot-amazon-s3-we.png["Amazon S3 工作环境的屏幕截图。"]
 
 您可以查看有关S3存储分段的详细信息、包括区域、访问策略、帐户、总容量和已用容量等。这些分段可用作BlueXP备份和恢复、BlueXP分层或BlueXP复制和同步操作的目标。此外、您还可以使用BlueXP分类来扫描这些分段。
 
-现在、您可以通过新添加的功能创建和编辑S3存储分段。 https://["请访问此处、了解如何使用BlueXP查看、创建和管理S3存储分段"^]
+现在、您可以通过新添加的功能创建和编辑S3存储分段。 https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["请访问此处、了解如何使用BlueXP查看、创建和管理S3存储分段"^]

@@ -28,7 +28,7 @@ summary: 注册BlueXP后、您可以从基于Web的控制台登录、开始管�
 
 
 .步骤
-. 打开Web浏览器并转到 https://["BlueXP控制台"^]
+. 打开Web浏览器并转到 https://console.bluexp.netapp.com["BlueXP控制台"^]
 . 在*登录*页面上、输入与您的登录关联的电子邮件地址。
 . 根据与您的登录关联的身份验证方法、系统将提示您输入凭据：
 +

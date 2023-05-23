@@ -32,7 +32,7 @@ summary: '添加和管理Azure凭据、以便BlueXP拥有在Azure订阅中部署
 
 == 将其他Azure订阅与托管身份关联
 
-通过BlueXP、您可以选择要在其中部署Cloud Volumes ONTAP 的Azure凭据和Azure订阅。除非关联，否则您无法为托管身份配置文件选择其他 Azure 订阅 https://["托管身份"^] 这些订阅。
+通过BlueXP、您可以选择要在其中部署Cloud Volumes ONTAP 的Azure凭据和Azure订阅。除非关联，否则您无法为托管身份配置文件选择其他 Azure 订阅 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["托管身份"^] 这些订阅。
 
 .关于此任务
 托管身份为 link:concept-accounts-azure.html["初始 Azure 帐户"] 从BlueXP部署Connector时。部署Connector时、BlueXP创建了BlueXP操作员角色并将其分配给Connector虚拟机。
@@ -102,7 +102,7 @@ image:diagram_azure_authentication.png["概念映像、显示BlueXP在进行API�
 创建一个Azure Active Directory (AD)应用程序和服务主体、BlueXP可使用它进行基于角色的访问控制。
 
 .开始之前
-要创建 Active Directory 应用程序并将此应用程序分配给角色，您必须在 Azure 中拥有适当的权限。有关详细信息，请参见 https://["Microsoft Azure 文档：所需权限"^]。
+要创建 Active Directory 应用程序并将此应用程序分配给角色，您必须在 Azure 中拥有适当的权限。有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]。
 
 .步骤
 . 从 Azure 门户中，打开 * Azure Active Directory* 服务。
@@ -154,7 +154,7 @@ image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory
 以下步骤介绍如何在 Azure Cloud Shell 中使用 Bash 创建角色。
 
 +
-*** start https://["Azure Cloud Shell"^] 并选择 Bash 环境。
+*** start https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 并选择 Bash 环境。
 *** 上传 JSON 文件。
 +
 image:screenshot_azure_shell_upload.png["Azure Cloud Shell 的屏幕截图，您可以在其中选择上传文件的选项。"]
@@ -298,7 +298,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 
 
 .结果
-现在，您可以从 " 详细信息和凭据 " 页面切换到不同的凭据集 https://["创建新的工作环境时"^]
+现在，您可以从 " 详细信息和凭据 " 页面切换到不同的凭据集 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["创建新的工作环境时"^]
 
 image:screenshot_accounts_switch_azure.gif["屏幕截图、显示在详细信息和amp；凭据页面中选择编辑凭据后在凭据之间进行选择的情况。"]
 

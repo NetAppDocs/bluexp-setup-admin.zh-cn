@@ -43,8 +43,8 @@ TIP: 为什么不选择Google Cloud？如果在您的内部安装了Connector、
 
 . 将策略附加到IAM用户。
 +
-** https://["AWS 文档：创建 IAM 角色"^]
-** https://["AWS 文档：添加和删除 IAM 策略"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 文档：创建 IAM 角色"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文档：添加和删除 IAM 策略"^]
 
 
 . 确保用户具有可在安装Connector后添加到BlueXP中的访问密钥。
@@ -63,7 +63,7 @@ link:task-provide-permissions-on-prem.html["了解如何为BlueXP提供这些权
 .创建Azure Active Directory应用程序以进行基于角色的访问控制
 . 确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。
 +
-有关详细信息，请参见 https://["Microsoft Azure 文档：所需权限"^]。
+有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]。
 
 . 从 Azure 门户中，打开 * Azure Active Directory* 服务。
 +
@@ -108,7 +108,7 @@ image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory
 以下步骤介绍如何在 Azure Cloud Shell 中使用 Bash 创建角色。
 
 +
-*** start https://["Azure Cloud Shell"^] 并选择 Bash 环境。
+*** start https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 并选择 Bash 环境。
 *** 上传 JSON 文件。
 +
 image:screenshot_azure_shell_upload.png["Azure Cloud Shell 的屏幕截图，您可以在其中选择上传文件的选项。"]

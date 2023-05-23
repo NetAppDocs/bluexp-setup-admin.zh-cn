@@ -54,7 +54,7 @@ AWS 服务（ AmazonAWS.com ）：
 * 安全令牌服务（ STS ）
 * 简单存储服务 (S3)
 
-| 管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://["有关详细信息、请参见AWS文档"^] 
+| 管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^] 
 
 
 | https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 管理Azure公共区域中的资源。 
@@ -86,10 +86,10 @@ AWS 服务（ AmazonAWS.com ）：
 
 === 安全组
 
-没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。HTTP 和 HTTPS 可用于访问 https://["本地 UI"]，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。
+没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。HTTP 和 HTTPS 可用于访问 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#the-local-user-interface["本地 UI"]，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。
 
 
 
 === IP地址限制
 
-可能与172范围内的IP地址冲突。 https://["了解有关此限制的更多信息"]。
+可能与172范围内的IP地址冲突。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["了解有关此限制的更多信息"]。
