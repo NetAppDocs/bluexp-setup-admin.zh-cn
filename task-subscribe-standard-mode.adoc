@@ -186,7 +186,7 @@ image:screenshot_gcp_associate.gif["订阅分配页面的屏幕截图。"]
 .相关链接
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["管理Cloud Volumes ONTAP 的BYOL基于容量的许可证"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["管理BlueXP数据服务的BYOL许可证"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["管理BlueXP的AWS凭据和订阅"]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["管理BlueXP的Azure凭据和订阅"]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["管理BlueXP的Google Cloud凭据和订阅"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["管理BlueXP的AWS凭据和订阅"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["管理BlueXP的Azure凭据和订阅"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["管理BlueXP的Google Cloud凭据和订阅"]
 

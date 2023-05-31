@@ -33,7 +33,7 @@ image:screenshot-gcp-cloud-storage-actions.png["选择Google Cloud Storage工作
 
 . 选择*同步数据*可将数据与Google Cloud存储分段同步或与Google Cloud Storage分段同步。
 +
-有关详细信息，请参见 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["BlueXP复制和同步概述"^]
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["BlueXP复制和同步概述"^]
 
 . 选择*进入工作环境*可查看有关Google帐户中各个存储分段的详细信息。
 +

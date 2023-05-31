@@ -34,7 +34,7 @@ Connector的AWS安全组需要入站和出站规则。从BlueXP创建Connector�
 | HTTPS | 443. | 提供从客户端Web浏览器到本地用户界面的HTTPS访问、以及从BlueXP分类实例进行的连接 
 
 
-| TCP | 3128 | 为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。您必须在部署后手动打开此端口。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["了解如何将连接器用作AutoSupport 消息的代理"^] 
+| TCP | 3128 | 为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。您必须在部署后手动打开此端口。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["了解如何将连接器用作AutoSupport 消息的代理"^] 
 
 
 | TCP | 9060、9061 | 能够在政府地区启用和使用BlueXP分类以及BlueXP备份和恢复。 

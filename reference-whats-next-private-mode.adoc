@@ -18,11 +18,11 @@ summary: 在专用模式下启动和运行BlueXP后、您可以开始使用私�
 
 要获得帮助、请参见以下文档：
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["创建Cloud Volumes ONTAP 系统"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["发现内部ONTAP 集群"^]
-* https://docs.netapp.com/us-en/cloud-manager-replication/index.html["复制数据"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["使用BlueXP分类扫描内置ONTAP 卷数据"^]
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["使用BlueXP备份和恢复将ONTAP 卷数据备份到StorageGRID"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["创建Cloud Volumes ONTAP 系统"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["发现内部ONTAP 集群"^]
+* https://docs.netapp.com/us-en/bluexp-replication/index.html["复制数据"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["使用BlueXP分类扫描内置ONTAP 卷数据"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["使用BlueXP备份和恢复将ONTAP 卷数据备份到StorageGRID"^]
 
 
 .相关链接

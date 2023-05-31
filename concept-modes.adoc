@@ -266,17 +266,19 @@ API endpoint:: API调用会调用Connector虚拟机。
 | 支持的服务 | 注释： 
 
 
-| 备份和恢复 | 仅支持将内部ONTAP 卷备份和还原到StorageGRID 系统。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["了解如何将内部ONTAP 数据备份到StorageGRID"^] 
+| 备份和恢复 | 仅支持将内部ONTAP 卷备份和还原到StorageGRID 系统。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["了解如何将内部ONTAP 数据备份到StorageGRID"^] 
 
 
 | 分类  a| 
 * 唯一支持的数据源是您可以在本地发现的数据源。
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["查看可在本地发现的源"^]
+https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html#supported-data-sources["查看可在本地发现的源"^]
 
 * 不支持需要出站Internet访问的功能。
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations["查看功能限制"^]
+https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html#limitations["查看功能限制"^]
 
 
 
@@ -296,7 +298,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 --
 对于Cloud Volumes ONTAP BYOL、仅支持基于节点的许可。不支持基于容量的许可。由于出站Internet连接不可用、您需要手动将Cloud Volumes ONTAP 许可文件上传到BlueXP电子钱包中。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["了解如何将许可证添加到BlueXP电子钱包中"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["了解如何将许可证添加到BlueXP电子钱包中"^]
 
 --
 如何开始使用专用模式:: 可通过从NetApp 支持站点 下载"脱机"安装程序来访问私有模式。

@@ -130,4 +130,4 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 == IP地址限制
 
-可能与172范围内的IP地址冲突。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["了解有关此限制的更多信息"]。
+可能与172范围内的IP地址冲突。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["了解有关此限制的更多信息"]。

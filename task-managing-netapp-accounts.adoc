@@ -24,7 +24,7 @@ link:concept-netapp-accounts.html["了解BlueXP帐户的工作原理"]。
 
 如果要通过发送 API 请求来管理帐户设置，则需要使用 _租 户 API 。此API与用于创建和管理Cloud Volumes ONTAP 工作环境的BlueXP API不同。
 
-https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["查看租户 API 的端点"^]
+https://docs.netapp.com/us-en/bluexp-automation/tenancy/overview.html["查看租户 API 的端点"^]
 
 
 
@@ -148,9 +148,9 @@ image:screenshot-manage-account-settings.png["显示 \" 帐户 \" 下拉列表�
 
 === 获取服务帐户的令牌
 
-以便对进行 API 调用 https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["租户 API"^]，您需要为服务帐户获取一个不带标志。
+以便对进行 API 调用 https://docs.netapp.com/us-en/bluexp-automation/tenancy/overview.html["租户 API"^]，您需要为服务帐户获取一个不带标志。
 
-https://docs.netapp.com/us-en/cloud-manager-automation/platform/create_service_token.html["了解如何创建服务帐户令牌"^]
+https://docs.netapp.com/us-en/bluexp-automation/platform/create_service_token.html["了解如何创建服务帐户令牌"^]
 
 
 

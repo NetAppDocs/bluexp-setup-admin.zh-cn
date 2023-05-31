@@ -192,7 +192,7 @@ maxDownloadSessions_ 的值可以是 1 或大于 1 的任意整数。如果值�
 
 
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["了解有关 /ocem/config API 调用的更多信息"^]
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig["了解有关 /ocem/config API 调用的更多信息"^]
 
 
 
