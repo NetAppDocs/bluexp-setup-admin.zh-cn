@@ -36,7 +36,7 @@ image:screenshot_accounts_select_azure.gif["屏幕截图，显示 \"Details\" �
 
 == 为受管身份订阅其他 Azure
 
-分配给Connector VM的系统分配的受管身份与启动Connector的订阅相关联。如果要选择其他 Azure 订阅，则需要 link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["将托管身份与这些订阅相关联"]。
+分配给Connector VM的系统分配的受管身份与启动Connector的订阅相关联。如果要选择其他 Azure 订阅，则需要 link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity["将托管身份与这些订阅相关联"]。
 
 
 
@@ -46,7 +46,7 @@ image:screenshot_accounts_select_azure.gif["屏幕截图，显示 \"Details\" �
 
 image:diagram_permissions_multiple_azure.png["显示初始 Azure 帐户（通过自定义角色和托管身份接收权限）以及通过自定义角色和服务主体接收权限的其他两个帐户的概念映像。"]
 
-您可以这样做 link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["将帐户凭据添加到BlueXP"] 提供有关 AD 服务主体的详细信息。
+您可以这样做 link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["将帐户凭据添加到BlueXP"] 提供有关 AD 服务主体的详细信息。
 
 例如、在创建新的Cloud Volumes ONTAP 工作环境时、您可以在凭据之间切换：
 

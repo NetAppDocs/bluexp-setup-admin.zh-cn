@@ -119,7 +119,7 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 ** 此连接器可以对HDD或SSD磁盘执行最佳性能。
 ** 选择满足 CPU 和 RAM 要求的 VM 大小。我们建议使用 DS3 v2 。
 +
-link:reference-host-requirements-azure["查看虚拟机要求"]。
+link:reference-host-requirements-azure.html["查看虚拟机要求"]。
 
 ** 对于网络安全组， Connector 需要使用 SSH ， HTTP 和 HTTPS 进行入站连接。对于特定配置、还需要一些规则。
 +

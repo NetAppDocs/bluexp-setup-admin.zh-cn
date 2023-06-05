@@ -116,6 +116,9 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 使用此信息创建连接后、"Federation Setup"页面将列出可发送给AD管理员以在下一步完成配置的参数。
 
 
+NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新证书_Before _、它将过期。这是您的责任。BlueXP不会跟踪到期日期。最好与您的广告团队合作、以便及时收到警报。
+
+
 
 | 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数在身份提供程序上完成配置。 
 
@@ -156,6 +159,9 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 使用此信息创建连接后、"Federation Setup"页面将列出可发送给AD管理员以在下一步完成配置的参数。
 
 
+NOTE: 记下机密密钥的到期日期。您需要返回到"联盟设置"页面并更新证书_Before _、它将过期。这是您的责任。BlueXP不会跟踪到期日期。最好与您的广告团队合作、以便及时收到警报。
+
+
 
 | 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数完成Azure AD中的配置。 
 
@@ -186,6 +192,9 @@ https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-provi
 要完成此步骤、您需要从AD管理员处获取以下内容：ADFS服务器的URL或联合元数据文件。
 
 使用此信息创建连接后、"Federation Setup"页面将列出可发送给AD管理员以在下一步完成配置的参数。
+
+
+NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新证书_Before _、它将过期。这是您的责任。BlueXP不会跟踪到期日期。最好与您的广告团队合作、以便及时收到警报。
 
 
 
@@ -225,6 +234,9 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 
 
 使用此信息创建连接后、"Federation Setup"页面将列出可发送给AD管理员以在下一步完成配置的参数。
+
+
+NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新证书_Before _、它将过期。这是您的责任。BlueXP不会跟踪到期日期。最好与您的广告团队合作、以便及时收到警报。
 
 
 

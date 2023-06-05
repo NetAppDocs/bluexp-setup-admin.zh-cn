@@ -58,7 +58,7 @@ image:diagram_permissions_multiple_aws.png["一个概念映像，显示另外两
 
 image:screenshot_accounts_switch_aws.png["单击详细信息和 amp ；凭据页面中的切换帐户后，显示在云提供商帐户之间进行选择的屏幕截图。"]
 
-link:task-adding-aws-accounts.html#add-credentials-to-a-connector["了解如何向现有Connector添加AWS凭据。"]
+link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["了解如何向现有Connector添加AWS凭据。"]
 
 
 
@@ -67,7 +67,7 @@ link:task-adding-aws-accounts.html#add-credentials-to-a-connector["了解如何�
 向BlueXP添加新的AWS凭据可提供创建和管理适用于ONTAP 的FSX工作环境或创建连接器所需的权限。
 
 * link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["了解如何将AWS凭据添加到适用于Amazon FSX for ONTAP 的BlueXP中"^]
-* link:task-adding-aws-accounts.html#add-credentials-to-a-connector["了解如何向BlueXP添加AWS凭据以创建Connector"]
+* link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["了解如何向BlueXP添加AWS凭据以创建Connector"]
 
 
 
