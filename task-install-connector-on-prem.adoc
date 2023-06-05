@@ -94,6 +94,9 @@ chmod +x OnCommandCloudManager-<version>
 ** http://username:password@address:port
 ** https://address:port
 ** https://username:password@address:port
++
+用户必须是本地用户。不支持域用户。
+
 
 
 +

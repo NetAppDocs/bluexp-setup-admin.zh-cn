@@ -167,7 +167,8 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
                 "ce:GetCostAndUsage",
                 "ce:GetTags",
                 "fsx:Describe*",
-                "fsx:List*"
+                "fsx:List*",
+                "kms:GenerateDataKeyWithoutPlaintext"
             ],
             "Resource": "*",
             "Effect": "Allow",
@@ -1133,7 +1134,7 @@ Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes 
 | S3 ： ListBucket | 否 | 是的。 | 否 
 
 
-.4+| 使用AWS密钥管理服务(KMS)对Cloud Volumes ONTAP 启用数据加密 | 公里：列表* | 是的。 | 是的。 | 否 
+.5+| 使用AWS密钥管理服务(KMS)对Cloud Volumes ONTAP 启用数据加密 | 公里：列表* | 是的。 | 是的。 | 否 
 
 
 | kms：重新加密* | 是的。 | 否 | 否 
@@ -1143,6 +1144,9 @@ Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes 
 
 
 | 公里：CreateGrant | 是的。 | 是的。 | 否 
+
+
+| Kms：GenerateDataKeyWithoutPlaintext | 是的。 | 是的。 | 否 
 
 
 .4+| 获取Cloud Volumes ONTAP 的AWS成本数据 | CE：GetReservationUtilization | 否 | 是的。 | 否 
@@ -1218,6 +1222,14 @@ Connector会发出以下API请求来发现和管理Amazon EKS集群：
 == 更改日志
 
 添加和删除权限后、我们将在以下各节中记录这些权限。
+
+
+
+=== 2023年6月6日
+
+现在、Cloud Volumes ONTAP需要以下权限：
+
+Kms：GenerateDataKeyWithoutPlaintext
 
 
 

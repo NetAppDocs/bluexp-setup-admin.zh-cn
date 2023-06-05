@@ -3667,4 +3667,8 @@
 如果您从市场启动Connector、手动安装Connector、或者您需要自行设置此策略 <block ref="c5a34c273ba791769e2c0edbb9c79dc0" category="inline-link-macro-rx"></block>。
 
 此外、您还需要确保在后续版本中添加新权限时策略是最新的。</block>
+  <block id="b9a11b90960ff803269429887ab4cff3" category="paragraph">用户必须是本地用户。不支持域用户。</block>
+  <block id="8773d2d5904a6b33e1f92e729d81f86b" category="cell">Kms：GenerateDataKeyWithoutPlaintext</block>
+  <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">2023年6月6日</block>
+  <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">现在、Cloud Volumes ONTAP需要以下权限：</block>
 </blocks>
