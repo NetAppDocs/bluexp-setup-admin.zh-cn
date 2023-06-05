@@ -1265,7 +1265,6 @@
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">了解如何注册获取支持</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您要通过电话与某人通话、请单击*致电我们*。系统会将您定向到netapp.com上的一个页面、其中列出了您可以拨打的电话号码。</block>
-  <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">* NetApp 支持站点 Account*：选择与创建支持案例的人员关联的适用帐户。除下面提供的其他电子邮件外、此人还将是NetApp的主要联系人。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作环境*：如果适用于存储、请选择* Cloud Volumes ONTAP *或* on-Prem*、然后选择关联的工作环境。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例优先级*：选择案例的优先级、可以是"低"、"中"、"高"或"严重"。</block>
   <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">要了解有关这些优先级的更多详细信息、请将鼠标悬停在字段名称旁边的信息图标上。</block>
@@ -1301,21 +1300,10 @@
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支持注册概述</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">激活支持授权有两种形式的注册：</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在云提供商的市场中注册与订阅关联的Cloud Volumes ONTAP 序列号(即20位909201xxxxxxxx序列号)。</block>
-  <block id="98bc603dcb6d5a57d540b13b541fa41a" category="paragraph">您的注册方式取决于您是新客户还是现有客户或合作伙伴。</block>
-  <block id="e5646198d2e01aab2cec9ef946f9c53a" category="list-text">现有客户或合作伙伴</block>
-  <block id="4e6af37fb81d50483d832d4de6e2b26a" category="inline-xref">了解如何添加NSS帐户</block>
-  <block id="1c91f3adc957364cb01d33e100ee1ea3" category="list-text">NetApp新手</block>
-  <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">了解如何向NetApp注册</block>
-  <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">请注意以下事项：</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">由三个水平点组成的图标</block>
-  <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">向NetApp注册</block>
-  <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">具有NSS帐户的现有客户</block>
-  <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">在*资源*页面上、单击*注册支持*。</block>
-  <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">显示帐户序列号和注册支持选项的屏幕截图</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">现有客户、但无NSS帐户</block>
-  <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">如果您是现有的NetApp客户、拥有现有许可证和序列号、但拥有_no_ NSS帐户、则只需创建一个NSS帐户即可。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp 支持站点 用户注册表</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">完成以创建NetApp 支持站点 帐户<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。</block>
@@ -1403,12 +1391,9 @@
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">加入BlueXP社区、关注正在进行的讨论或创建新的讨论。</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">您当前正在查看的BlueXP文档。</block>
   <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">我们非常重视您的反馈意见。提交反馈以帮助我们改进BlueXP。</block>
-  <block id="1012a287397c66025d7748edf06a36e2" category="paragraph">要使用*创建案例*功能、您必须先一次性注册您的BlueXP帐户ID序列号(即960xxxx)。 <block ref="3349e4b3d05f646f2f1421bee7c2ad26" category="inline-link-macro-rx"></block>。</block>
   <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">在BlueXP中、单击*帮助&gt;支持*。</block>
-  <block id="d950fb930d7f7e6bfdda1b91b4639a02" category="paragraph">如果您未看到NSS帐户、则可以导航到BlueXP支持部分中的* NSS管理*选项卡以将其添加到该选项卡中。</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服务*：选择与问题描述 关联的服务。例如、当特定于技术支持问题描述 时、如果服务中包含工作流或功能、则为BlueXP。</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作环境列表属于您在服务顶部横幅中选择的BlueXP帐户、工作空间和Connector的范围。</block>
-  <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">此错误可能意味着NSS帐户及其关联的记录公司与BlueXP帐户序列号(即960xxxx)或工作环境序列号。您可以查看*创建案例*表顶部的NSS帐户列表以找到正确的匹配项、也可以使用以下选项之一寻求帮助：</block>
   <block id="c568c61bf8e9e5a305fc06655cdac862" category="paragraph">我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然BlueXP平台中的大多数服务和功能均通过基于SaaS的软件提供、但有几项特性和功能取决于Connector的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。</block>
   <block id="4102d173f8e2253a011fe9286a6db2a3" category="paragraph">一个Connector可以在BlueXP中管理多个工作环境。一个 Connector 应管理的最大工作环境数因情况而异。具体取决于工作环境的类型，卷数量，要管理的容量以及用户数量。</block>
   <block id="11eeac25dab3c53540d3f299755ecf62" category="inline-link">将现有Cloud Volumes ONTAP 系统添加到BlueXP</block>
@@ -1530,20 +1515,12 @@
   <block id="4314e9e91f1c1e76df01e49490b3367e" category="inline-link">BlueXP网站上的Cloud Volumes ONTAP 页面</block>
   <block id="5894b1931d65e9796cc25db1bb6fd566" category="list-text">完成此过程后、导航回BlueXP中的凭据页面并选择此新订阅。</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">在向NetApp技术支持部门创建支持案例之前、您需要向BlueXP添加一个NetApp 支持站点 帐户、然后注册获取支持。</block>
-  <block id="8bf30fadf784022b073adb9233678a71" category="paragraph">在向NetApp技术支持部门创建支持案例之前、您需要向BlueXP添加NetApp 支持站点 (NSS)帐户、然后注册获取支持。</block>
   <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">注册您的BlueXP帐户ID支持订阅(您的20位960xxxxxxxxx序列号、位于BlueXP的支持资源页面上)。</block>
   <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">这是您在BlueXP中使用的任何服务的单一支持订阅ID。必须注册每个BlueXP帐户级别的支持订阅。</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">这些序列号通常称为_PAYGO序列号、并由BlueXP在部署Cloud Volumes ONTAP 时生成。</block>
-  <block id="9d4125dc88bb9db6eb4be939905761ce" category="paragraph">注册这两种类型的序列号可实现打开支持服务单和自动生成案例等功能。</block>
-  <block id="76928f97884b4332b83c5be9b99d93d3" category="paragraph">作为现有NetApp客户或合作伙伴、您可以使用NetApp 支持站点 (NSS) SSO帐户执行上述注册。在支持信息板中、BlueXP提供了一个* NSS管理*页面、您可以在其中添加NSS帐户。添加NSS帐户后、BlueXP会自动为您注册这些序列号。</block>
-  <block id="8d80298f51b7ff2da78e26e60195c7a3" category="paragraph"><block ref="cbec7c1a4a2acff5e84457dd449ac01d" category="inline-xref-macro-rx"></block>。</block>
-  <block id="679f2cae4657f177cc89458d49c97e5f" category="paragraph">如果您是NetApp的新用户、则必须在NetApp的支持注册站点上一次性注册您的BlueXP帐户ID序列号。完成此注册并创建新的NSS帐户后、您可以在BlueXP中使用此帐户进行自动注册。</block>
-  <block id="a92ec860f505b318fd0f0eba6165d607" category="section-title">将NSS帐户添加到BlueXP</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">通过这些操作、BlueXP可以使用您的NSS帐户执行许可证下载、软件升级验证和未来支持注册等操作。</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是拥有NSS帐户的NetApp客户、则只需通过BlueXP注册支持即可。</block>
-  <block id="25b94e7b58140f12be91fa8fd935fa59" category="list-text">如果您尚未将NSS帐户添加到BlueXP、请执行此操作。</block>
   <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">请务必复制上面用于序列号字段的BlueXP帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
-  <block id="1c0e45ef07d0dbc13ca2394d5e285fd7" category="paragraph">拥有NetApp 支持站点 帐户后、您可以导航到BlueXP以添加此NSS帐户以供将来注册。</block>
   <block id="d7cea5f953c31662cd13f98b3b7d8608" category="cell">修改BlueXP设置</block>
   <block id="309a17e5c03cbe61700c1e46eb38532f" category="cell">从BlueXP中删除工作环境</block>
   <block id="8747c846ccf20f1b6f26f06f38406ffa" category="admonition">此策略仅包含从BlueXP在Azure中启动Connector VM所需的权限。请勿在其他情况下使用此策略。当BlueXP创建Connector时、它会将一组新的权限应用于Connector VM、从而使Connector能够管理公有 云环境中的资源。</block>
@@ -1559,7 +1536,6 @@
   <block id="79f0e2a1f0b9a07786aae7969fdf941c" category="paragraph">您可以这样做 <block ref="fdb068e0f25207f010bf6b52e6d7dd53" category="inline-link-macro-rx"></block> 提供有关 AD 服务主体的详细信息。</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">需要提供您的NSS帐户、以便BlueXP可以上传您的许可证密钥并为您购买的期限启用订阅。这包括自动更新期限续订。</block>
   <block id="37cb0cdf24a1597d838bc5f1699b9e5a" category="list-text">此帐户在用户级别进行管理、这意味着其他登录用户无法查看它。</block>
-  <block id="5d7e9ca2f0be827f29d91dca2f767f7f" category="paragraph">现在、用户可以在创建新Cloud Volumes ONTAP 系统、注册现有Cloud Volumes ONTAP 系统以及注册支持时选择帐户。</block>
   <block id="759f5e4f5dca6e6753e9254efed21ea1" category="paragraph">从 2021 年 11 月开始， NetApp 现在使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。由于此更新、BlueXP将提示您更新先前添加的任何现有帐户的凭据。</block>
   <block id="90488de845793cd541dd12866e86b44a" category="paragraph">发生以下任一情况时、您需要在BlueXP中更新NSS帐户的凭据：</block>
   <block id="d7fb44c1919b66d02d93dc18ebb82756" category="list-text">您可以更改帐户的凭据</block>
@@ -1768,7 +1744,6 @@
   <block id="ac692d638162a1dc479fa6a76fb4e114" category="list-text">Microsoft.Compute/images/write</block>
   <block id="61d40b12dddcd9e571bbe7a89b0fbae8" category="list-text">Microsoft.Network/loadBalancers/backendAddressPools/join/action</block>
   <block id="7c90682779ddf616c80c90bad703eddd" category="list-text">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</block>
-  <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">通过支持信息板、您可以添加和管理用于BlueXP的NetApp 支持站点 帐户。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您拥有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户同时添加。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">从支持注册页面找到您的帐户ID序列号。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">复制上述第2步中的帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。</block>
@@ -1863,7 +1838,6 @@
   <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">管理Azure IL6区域中的资源。</block>
   <block id="232055d452a21264f8d549e50d695b18" category="cell">管理Azure中国地区的资源。</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支持云提供商解决方案</block>
-  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">有关已集成到BlueXP中的以下云提供商解决方案的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
   <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">在Google Cloud中管理资源。</block>
   <block id="4ce604ab4b6f3184f26713f30bde1bbe" category="cell">—cloudkms.encryptoKeys.get—cloudkms.encryptoKeys.getIamPolicy—cloudkms.encryptoKeys.list—cloudkms.cryptoKeys.setIamPolicy—cloudkms.keyrings.get—cloudkms.keyrings.getIamPolicy—cloudkms.keyrings.list—cloudkms.keyRings.setIamPolicy</block>
   <block id="8988a38ba3aaf6cb48e549dc3babd50e" category="section-title">2023年1月27日</block>
@@ -1970,13 +1944,10 @@
   <block id="643a877b7c306b1bcece42c8f03bebfb" category="paragraph">其中、&lt;version&gt; 是您下载的连接器版本。</block>
   <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">云区域可以是AWS C2S/SC2S、Azure IL6等美国安全机构或任何商业区域的区域。</block>
   <block id="4a2f661974665defd7d188133a1ab48b" category="paragraph">要在BlueXP中启用以下任务、需要将NetApp 支持站点 凭据与您的特定BlueXP帐户ID关联：</block>
-  <block id="15c2fed71e5ff16c335e2d40bc485e1e" category="list-text">注册以获得支持</block>
-  <block id="1ca6b2b8383e207951356457a77708e7" category="list-text">创建支持案例</block>
   <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">自带许可证时部署Cloud Volumes ONTAP (BYOL)</block>
   <block id="a3b3ed2f72536d95b268a4a67722c55d" category="list-text">注册按需购买Cloud Volumes ONTAP 系统</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">将Cloud Volumes ONTAP 软件升级到最新版本</block>
   <block id="a86ad85ddb4228477c624e47ab659180" category="paragraph">这些凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持&gt; NSS管理*访问这些凭据。</block>
-  <block id="5a201f4198ac7b46778a727f32bd6203" category="paragraph">通过与您的BlueXP登录关联的NSS凭据、您可以访问Digital Advisor和案例管理功能。</block>
   <block id="d4b8ea0f438d980b900fa0c72d88710f" category="list-text">此帐户不能用于任何其他BlueXP功能：不能用于Cloud Volumes ONTAP 创建、许可或支持案例创建。</block>
   <block id="37ab7585b9575599c51022bd3b09813a" category="list-text">每个用户只能有一个与Digital Advisor和案例管理关联的NSS帐户。</block>
   <block id="9a030ad8abbc9b1e402feade38bdec50" category="paragraph">通过支持信息板、您可以在BlueXP帐户级别添加和管理用于BlueXP的NetApp 支持站点 帐户。</block>
@@ -2142,9 +2113,7 @@
   <block id="b82af7a7b96d34942cadb7921514f408" category="paragraph">如果您在不使用连接器的情况下直接发现内部ONTAP 集群、则系统会提示您输入此集群的ONTAP 凭据。这些凭据在用户级别进行管理、这意味着其他登录用户无法查看这些凭据。</block>
   <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">NSS凭据</block>
   <block id="fb81cc600c8251372b08f0797c3abdd7" category="list-text">在BlueXP中访问Digital Advisor时、系统会提示您输入NSS凭据以登录到Digital Advisor。</block>
-  <block id="64470ba450382b851139073aed09c635" category="list-text">访问*支持&gt;案例管理*时、系统会提示您输入NSS凭据(如果尚未输入)。通过此页面、您可以管理与您的NSS帐户和公司关联的支持案例。</block>
   <block id="276e2bd44117ba4b3317de4a352235b2" category="paragraph">请注意以下有关NSS帐户的信息：</block>
-  <block id="af8b5ac7f9c7fe53fa31652162a91c6e" category="paragraph">NetApp 支持站点 凭据还与您所属的BlueXP帐户相关联。您可以通过NSS帐户级别凭据注册支持、在自带许可证(BYOL)时部署Cloud Volumes ONTAP 等。</block>
   <block id="db0f1f3e531a1a1c690b42c9a6daae35" category="inline-link-macro">了解有关将NSS凭据与您的BlueXP帐户结合使用的更多信息</block>
   <block id="dacf2f246c2efb276c3709c141985f7c" category="paragraph"><block ref="4734e8f3bab5a9c00aebb286a2f16deb" category="inline-link-macro-rx"></block>。</block>
   <block id="cc96a4cc30e50577aa6671b076af72e1" category="section-title">管理您的用户凭据</block>
@@ -2157,7 +2126,6 @@
   <block id="9d7731be7d930a1152dbf528e9a20972" category="inline-image-macro">屏幕截图显示了NSS凭据和ONTAP 凭据、并可从操作菜单中选择更新凭据和删除凭据</block>
   <block id="a4ecb2be579cb0376c3938220c6db5bf" category="paragraph"><block ref="a4ecb2be579cb0376c3938220c6db5bf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="64286300f4b2d20b21751b700c210a03" category="paragraph">BlueXP会更新您的凭据。访问ONTAP 集群、数字顾问或案例管理页面时、这些更改将反映出来。</block>
-  <block id="5d93a8788cf1a23c80bc3e6304d9b87f" category="summary">为您的NetApp 支持站点 (NSS)帐户提供凭据、以注册支持、为Cloud Volumes ONTAP 启用关键工作流等。这些NSS凭据与整个BlueXP帐户相关联。</block>
   <block id="8c79ce7ab82c8c7e3fb9c6e8a73f8960" category="doc">管理与BlueXP帐户关联的NSS凭据</block>
   <block id="3d41446101a1daf0639146f4555b623b" category="inline-link-macro">了解如何管理用户级别的凭据</block>
   <block id="45b496845c319f5bc16fa44745aea5f0" category="admonition">此外、BlueXP还支持为每个BlueXP用户关联一个NSS帐户。 <block ref="92ab4e1c25ae34810f6c6d2ede81f4ab" category="inline-link-macro-rx"></block>。</block>
@@ -3424,7 +3392,6 @@
   <block id="771e18f961335c5b2ae045b3fefc3e80" category="summary">Connector的AWS安全组需要入站和出站规则。从BlueXP创建Connector时、BlueXP会自动创建此安全组。您需要为所有其他安装选项设置此安全组。</block>
   <block id="5dba83ec70c57d2bf0180e542772a92f" category="summary">注册BlueXP后、您可以从基于Web的控制台登录、开始管理数据和存储基础架构。</block>
   <block id="ee88a6eb4f7c0c45ebac21244e471cac" category="summary">设置您的网络、以便Connector可以管理混合云环境中的资源和流程。例如、您需要确保目标网络可以连接、并且可以访问出站Internet。</block>
-  <block id="200d2ff9fb65f8d3999759fe6bc5a21b" category="paragraph">为BlueXP提供NetApp 支持站点 (NSS)帐户的凭据、以注册支持、为Cloud Volumes ONTAP 启用关键工作流等。这些NSS凭据与整个BlueXP帐户相关联。</block>
   <block id="834c88c0bca4a9bc1dfadd5390b4c388" category="summary">为了帮助您快速入门、NetApp代表可能会要求您提供Connector的系统ID。此 ID 通常用于许可和故障排除目的。</block>
   <block id="56e1e624f64034081fc607cc1b1f8f79" category="summary">如果您从Azure Marketplace创建了Connector或手动安装了软件、则需要为BlueXP提供先前设置的权限。通过提供权限、BlueXP可以在Azure中管理数据和存储基础架构。</block>
   <block id="0e73a4809ffc38dd69c7199f7f3b9bf2" category="summary">在专用模式下使用BlueXP时、您需要从连接器本地运行的用户界面登录到BlueXP控制台。</block>
@@ -3538,7 +3505,6 @@
   <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">这是系统生成的ID、映射到您的电子邮件。在* NSS Management*页面上、您可以从显示电子邮件 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
   <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要刷新登录凭据令牌、则中还会提供一个*更新凭据*选项 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 菜单。</block>
-  <block id="1bb5620ed3998fd776980cad36e22c9a" category="paragraph"><block ref="1bb5620ed3998fd776980cad36e22c9a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4adf4d16c2d6834c1fd4e6d734491457" category="cell">为Cloud Volumes ONTAP 提供Internet访问权限、以便向NetApp支持部门发送AutoSupport 消息。您必须在部署后手动打开此端口。<block ref="87dc2640943962c980325d425ed3a75b" category="inline-link-rx"></block></block>
   <block id="cdaa40a72c6d3044b5345516c0e4e251" category="paragraph">没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。HTTP 和 HTTPS 可用于访问<block ref="cf3f5d195cacf9f3415f4c81082e9d29" category="inline-link-rx"></block>，在极少数情况下使用。只有在需要连接到主机进行故障排除时，才需要使用 SSH 。</block>
@@ -3636,4 +3602,61 @@
   <block id="634c5d39383447a348842c01b2483754" category="list-text"><block ref="634c5d39383447a348842c01b2483754" category="inline-link-rx"></block></block>
   <block id="eb14ba8446024f1dd902949682a561b2" category="list-text"><block ref="eb14ba8446024f1dd902949682a561b2" category="inline-link-rx"></block></block>
   <block id="c60a13b5352c81dedc5a2bed03d2f76a" category="list-text"><block ref="c60a13b5352c81dedc5a2bed03d2f76a" category="inline-link-rx"></block></block>
+  <block id="8b2f4a40ac1aa19f2dc2b3da3efe4ffc" category="summary">将NetApp 支持站点 帐户与BlueXP帐户关联以启用Cloud Volumes ONTAP的关键工作流。这些NSS凭据与整个BlueXP帐户相关联。</block>
+  <block id="71e32bbdd672e63bea65d67ecaa9f394" category="paragraph">现在、用户可以在创建新Cloud Volumes ONTAP系统和注册现有Cloud Volumes ONTAP系统时选择帐户。</block>
+  <block id="282252a29e0d06c01483bbd34c2304a0" category="paragraph">通过与BlueXP登录关联的NSS凭据、可以访问Digital Advisor并支持注册和案例管理功能。</block>
+  <block id="f57a365a74c463e64fe68cc99fbed5f5" category="list-text">当您访问*支持&gt;资源*并注册支持时，系统会提示您将NSS凭据与BlueXP登录关联。</block>
+  <block id="b5d4819a4e8d73d085630d52e025ce10" category="paragraph">此操作将注册BlueXP帐户以获得支持、并激活支持授权。您的BlueXP帐户中只有一个用户必须将NetApp 支持站点 帐户与其BlueXP登录名关联、才能注册支持并激活支持授权。完成此操作后，“资源”页面将显示您的帐户已注册支持。</block>
+  <block id="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="paragraph"><block ref="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="inline-link-rx"></block></block>
+  <block id="1f41c927d23b7f472c07e8cefaaa4155" category="list-text">访问*支持&gt;案例管理*时、系统会提示您输入NSS凭据(如果尚未输入)。通过此页面、您可以创建和管理与您的NSS帐户和公司关联的支持案例。</block>
+  <block id="455362b49d80ddf5f9cd87d0f39e81ab" category="paragraph">NetApp 支持站点 凭据还与您所属的BlueXP帐户相关联。通过NSS帐户级凭据、您可以在自带许可证(BYOL)等时部署Cloud Volumes ONTAP。</block>
+  <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">了解如何管理与BlueXP登录关联的凭据</block>
+  <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">要使用*创建案例*功能、您必须先将NetApp 支持站点 凭据与BlueXP登录名关联起来。<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>。</block>
+  <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">如果您为具有序列号的ONTAP系统创建案例、则您的NSS帐户必须与该系统的序列号相关联。</block>
+  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">此错误可能意味着NSS帐户及其关联的记录公司与BlueXP帐户序列号(即960xxxx)或工作环境序列号。您可以使用以下选项之一寻求帮助：</block>
+  <block id="381c003443d0dbcf14a51f216a4e01dc" category="section-title">2023年6月4日</block>
+  <block id="5440676d566a261de836cdd1b9ea4e50" category="section-title">连接器3.9.30</block>
+  <block id="390bbe3d279d4d842ce6e1afdbef9cac" category="list-text">现在、当您从支持信息板创建NetApp支持案例时、BlueXP将使用与您的BlueXP登录名关联的NetApp 支持站点 帐户创建此案例。BlueXP以前使用与整个BlueXP帐户关联的NetApp 支持站点 帐户。</block>
+  <block id="cf4de1590dec786ba89a784b76abf972" category="paragraph">作为此更改的一部分、BlueXP帐户的支持注册现在通过与用户BlueXP登录关联的NetApp 支持站点 帐户完成。以前、支持注册是通过与整个BlueXP帐户关联的NSS帐户完成的。因此、如果其他BlueXP用户未将NetApp 支持站点 帐户与其BlueXP登录关联、则他们将看不到相同的支持注册状态。如果您之前注册了BlueXP帐户以获得支持、则您的注册状态仍然有效。只需添加用户级NSS帐户即可查看状态。</block>
+  <block id="d0b3c9ce9c494292be2aeea8cdac5477" category="inline-link">了解如何通过NetApp支持创建案例</block>
+  <block id="250213b0170f8e0eeb3d961c487c6b3a" category="list-text"><block ref="250213b0170f8e0eeb3d961c487c6b3a" category="inline-link-rx"></block></block>
+  <block id="6f8efc0a43a600cb013d99abebf16ab9" category="list-text"><block ref="6f8efc0a43a600cb013d99abebf16ab9" category="inline-link-rx"></block></block>
+  <block id="bb61baa9c30235edb535db843a463603" category="list-text"><block ref="bb61baa9c30235edb535db843a463603" category="inline-link-rx"></block></block>
+  <block id="1f6fb1fa08cb08df7303b38688c4c6b3" category="list-text">现在、您可以在BlueXP中搜索文档。搜索结果现在可提供docs.netapp.com和kb.netapp.com上内容的链接、这可能有助于问题解答解答您的问题。</block>
+  <block id="ab5bec8a233948d36856ccc404fd3c23" category="paragraph"><block ref="ab5bec8a233948d36856ccc404fd3c23" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11df2099d9f6c939c0429c564ec675f4" category="list-text">现在、以下AWS地区支持此连接器：</block>
+  <block id="8f234407e396ab34fbd89b8c5353cb7b" category="list-text">(ap-s南部-2)</block>
+  <block id="f8d001ab701ae408b7ff0bc7d7b4512e" category="list-text">墨尔本(亚太东南部-4)</block>
+  <block id="6f54a802584839b859866ceb5261cb0e" category="list-text">西班牙(欧盟南部-2)</block>
+  <block id="dd6d0b9c4a235603cc3dfd4485247c08" category="list-text">阿联酋(ME-Central 1)</block>
+  <block id="4a23b3b65c9e625c9c42d143e90f5ac1" category="list-text">苏黎世(欧盟中部2)</block>
+  <block id="076b622c9d5055ea3d4f198f43cf14ae" category="list-text">现在、以下Azure地区支持Connector：</block>
+  <block id="47b9af39407829080e9cfeee3607c39c" category="list-text">巴西南部</block>
+  <block id="e43a7f2cdea7d32ec2a39ac3429f6b21" category="list-text">法国南部</block>
+  <block id="325f36b59bf936f690e2f1bb30dd035e" category="list-text">JIO印度中部</block>
+  <block id="e1b23a90559a8f5be2ef065bba5568bc" category="list-text">JIO印度西部</block>
+  <block id="26b4bdc11dfead08029a688129c42cf9" category="list-text">波兰中部</block>
+  <block id="055ffb1451e38deb0c8ac651e32d77ec" category="list-text">卡塔尔中部</block>
+  <block id="db760e7471192daa123eed31bfba312d" category="list-text">哥伦布(美国-东5)</block>
+  <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">达拉斯(美国-南1)</block>
+  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">您的BlueXP帐户和各个Cloud Volumes ONTAP系统都需要注册支持。</block>
+  <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">注册这两种类型的序列号可实现打开支持服务单和自动生成案例等功能。要完成注册、请按如下所述将NetApp 支持站点(NSS)帐户添加到BlueXP中。</block>
+  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">有关以下云提供商解决方案的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
+  <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">注册BlueXP帐户以获得NetApp支持</block>
+  <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">要注册支持并激活支持授权、BlueXP帐户中的一个用户必须将NetApp 支持站点 帐户与其BlueXP登录名关联。如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
+  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">选择*添加NSS凭证*，然后按照NetApp 支持站点(NSS)鉴定提示进行操作。</block>
+  <block id="8c916e828e9e5a3592c8cac4e25928be" category="list-text">要确认注册过程是否成功，请单击帮助图标，然后选择*Support*。</block>
+  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">“资源”页面应显示您的帐户已注册支持。</block>
+  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">屏幕截图、显示帐户序列号、绿色复选框以及注册支持的文本。</block>
+  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">请注意、其他BlueXP用户如果没有将NetApp 支持站点 帐户与其BlueXP登录关联、则不会看到此相同的支持注册状态。但是、这并不意味着您的BlueXP帐户未注册支持。只要帐户中有一个用户执行了这些步骤、您的帐户即已注册。</block>
+  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是现有许可证和序列号但拥有_no_ nss帐户的现有NetApp客户、则需要创建一个NSS帐户并将其与BlueXP登录关联。</block>
+  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">完成下的步骤、将新的NSS帐户与BlueXP登录关联起来 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">拥有NetApp 支持站点 帐户后、通过完成下的步骤将帐户与BlueXP登录关联起来 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">关联Cloud Volumes ONTAP支持的NSS凭据</block>
+  <block id="d8f0da67cbab6e43f6d266bdab68cdc8" category="paragraph">要为Cloud Volumes ONTAP启用以下关键工作流、需要将NetApp 支持站点 凭据与BlueXP帐户相关联：</block>
+  <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">注册按需购买Cloud Volumes ONTAP系统以获得支持</block>
+  <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">将NSS凭据与BlueXP帐户关联与与与BlueXP用户登录关联的NSS帐户不同。</block>
+  <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">这些NSS凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持&gt; NSS管理*访问这些凭据。</block>
+  <block id="13348442cc6a27032d2b4aa28b75a5d3" category="cell">搜索</block>
 </blocks>

@@ -18,6 +18,58 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
+== 2023年6月4日
+
+
+
+=== 连接器3.9.30
+
+* 现在、当您从支持信息板创建NetApp支持案例时、BlueXP将使用与您的BlueXP登录名关联的NetApp 支持站点 帐户创建此案例。BlueXP以前使用与整个BlueXP帐户关联的NetApp 支持站点 帐户。
++
+作为此更改的一部分、BlueXP帐户的支持注册现在通过与用户BlueXP登录关联的NetApp 支持站点 帐户完成。以前、支持注册是通过与整个BlueXP帐户关联的NSS帐户完成的。因此、如果其他BlueXP用户未将NetApp 支持站点 帐户与其BlueXP登录关联、则他们将看不到相同的支持注册状态。如果您之前注册了BlueXP帐户以获得支持、则您的注册状态仍然有效。只需添加用户级NSS帐户即可查看状态。
+
++
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["了解如何通过NetApp支持创建案例"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["了解如何管理与BlueXP登录关联的凭据"]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-support-registration.html["了解如何注册获取支持"]
+
+
+* 现在、您可以在BlueXP中搜索文档。搜索结果现在可提供docs.netapp.com和kb.netapp.com上内容的链接、这可能有助于问题解答解答您的问题。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["控制台顶部提供的BlueXP搜索的屏幕截图。"]
+
+* 现在、以下AWS地区支持此连接器：
++
+** (ap-s南部-2)
+** 墨尔本(亚太东南部-4)
+** 西班牙(欧盟南部-2)
+** 阿联酋(ME-Central 1)
+** 苏黎世(欧盟中部2)
+
+
+* 现在、以下Azure地区支持Connector：
++
+** 巴西南部
+** 法国南部
+** JIO印度中部
+** JIO印度西部
+** 波兰中部
+** 卡塔尔中部
+
+
+* 现在、以下Google Cloud地区支持Connector：
++
+** 哥伦布(美国-东5)
+** 达拉斯(美国-南1)
+
+
++
+https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
+
+
+
+
+
 == 2023年5月7日
 
 
