@@ -58,20 +58,22 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 在标准模式下使用BlueXP时、需要使用Connector才能在BlueXP中实现以下功能和服务：
 
 * 适用于 ONTAP 的 Amazon FSX 管理功能
-* Amazon S3发现
-* Azure Blob发现
+* Amazon S3存储
+* Azure Blb存储
 * 备份和恢复
 * 分类
 * Cloud Volumes ONTAP
 * E系列系统
 * 经济效益^1^
 * 边缘缓存
-* Google Cloud Storage发现
+* Google Cloud存储分段
 * Kubernetes 集群
+* 迁移报告
 * 与BlueXP数据服务的内部ONTAP 集群集成
 * 运营弹性^1^
 * StorageGRID 系统
 * 分层
+* 卷缓存
 
 
 ^1^虽然您可以在没有连接器的情况下访问这些服务、但要从这些服务启动操作、需要使用连接器。
