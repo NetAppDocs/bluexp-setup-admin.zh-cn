@@ -191,7 +191,7 @@ sidebar:
       entries:
       - title: 管理Amazon S3存储分段
         url: "/task-viewing-amazon-s3.html"
-      - title: 查看Azure Blob帐户
+      - title: 管理您的Azure Blb帐户
         url: "/task-viewing-azure-blob.html"
       - title: 查看Google Cloud存储分段
         url: "/task-viewing-gcp-storage.html"

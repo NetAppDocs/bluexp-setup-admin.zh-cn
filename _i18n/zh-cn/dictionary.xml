@@ -1175,13 +1175,8 @@
   <block id="823b2e7894c2b52c1e9adc9ea10b9be5" category="section-title">如何使用Google Cloud权限</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">权限摘要</block>
   <block id="abc9b009fdeb5b04ca7bcd60cdae2434" category="section-title">如何使用AWS权限</block>
-  <block id="4fa9fc9591ffa247eeef55070b3327a0" category="paragraph">之后不久、您将自动看到Azure Blob工作环境。</block>
   <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Azure Blob工作环境的屏幕截图。</block>
   <block id="33b5e081bfc2a4ff553d44178d68dda0" category="paragraph"><block ref="33b5e081bfc2a4ff553d44178d68dda0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ddf1211c4efc09073771de2cfb4c8add" category="inline-image-macro">选择Azure Blob工作环境后显示操作窗格的屏幕截图。此窗格将显示存储帐户的总数以及使用Sync服务的操作。</block>
-  <block id="ff6037c85b586250d2e3426572b132dc" category="paragraph"><block ref="ff6037c85b586250d2e3426572b132dc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="60c144c7df7b8788c579926f83c506f9" category="inline-image-macro">显示Azure Blob工作环境详细信息的屏幕截图：存储帐户总数、位置总数、资源组、总容量和已用容量等。</block>
-  <block id="b8fb2daac759c86243cf205eec39b222" category="paragraph"><block ref="b8fb2daac759c86243cf205eec39b222" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18fe44f15840f7116c5288c8e5b736da" category="paragraph">之后、您应很快自动看到Google Cloud Storage工作环境。</block>
   <block id="21b1bc909131728ad1b5d3d05c538f6b" category="inline-image-macro">Google Cloud Storage工作环境的屏幕截图。</block>
   <block id="94bd1056e53b5ba66af1269a83d9d853" category="paragraph"><block ref="94bd1056e53b5ba66af1269a83d9d853" category="inline-image-macro-rx" type="image"></block></block>
@@ -1190,7 +1185,6 @@
   <block id="b008bc9f769ee3b6c8813b19052b43a6" category="inline-image-macro">显示Google Cloud Storage工作环境详细信息的屏幕截图：分段、容量和位置总数、然后显示每个分段详细信息的表。</block>
   <block id="14738180b3115b94f504ce48bf25a31a" category="paragraph"><block ref="14738180b3115b94f504ce48bf25a31a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">已发现云存储</block>
-  <block id="bce447551b8153911559a7a705721ffe" category="sidebar">查看Azure Blob帐户</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="sidebar">查看Google Cloud存储分段</block>
   <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022年7月15日</block>
   <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">策略更改</block>
@@ -2345,10 +2339,7 @@
   <block id="e48cc2b8b425580d8ee1508fd8a29ab2" category="paragraph">现在、Connector已安装完毕、并已使用您的BlueXP帐户进行设置。</block>
   <block id="ba997697bddbedc57faeb5fdc16c15a6" category="inline-link-macro">为BlueXP提供您先前设置的权限</block>
   <block id="263bf141eee327cfdfe08fdc96fb32bc" category="paragraph"><block ref="53f6e9b699374851a8086ab8319c48f4" category="inline-link-macro-rx"></block>。</block>
-  <block id="dee8aad8e11608028ff3bcbb674cdcde" category="list-text">在要查看Azure存储帐户的Azure帐户中安装Connector。</block>
   <block id="f0574ea9efbf61e3005311c1ed736537" category="list-text">选择工作环境、然后从右窗格中选择一项操作。</block>
-  <block id="1b4dd0d5e9a98e510340de3c3938e7c5" category="list-text">选择*同步数据*可将数据与Azure Blob存储同步或与Azure Blob存储同步。</block>
-  <block id="9e6c19e48717319b0b71ece6d5735a24" category="list-text">选择*进入工作环境*可查看有关Azure Blob中Azure存储帐户的详细信息。</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">设置内部网络</block>
   <block id="caf7fd71047bbc17e23e603d7a448234" category="paragraph">例如、如果要在云中启动Cloud Volumes ONTAP 、则必须设置从企业网络到要启动Cloud Volumes ONTAP 的虚拟网络的VPN连接。</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">在您自己的Linux主机上手动安装Connector时、Connector安装程序需要在安装过程中访问以下URL：</block>
@@ -3671,4 +3662,10 @@
   <block id="bff35f79163f07f1c3724cc46b19c1f3" category="paragraph">请注意以下有关与BlueXP登录关联的NSS帐户的信息：</block>
   <block id="7919f3886eb3f79725465a41663fb32e" category="list-text">如果您尝试将NetApp 支持站点 帐户与Cloud Volumes ONTAP工作环境关联、则只能从添加到您所属BlueXP帐户的NSS帐户中进行选择。</block>
   <block id="a91658662405c5ec223c95cc1036afce" category="paragraph">NSS帐户级别的凭据与与BlueXP登录关联的NSS帐户不同。通过NSS帐户级凭据、您可以在自带许可证(BYOL)、注册PAYGO系统以及升级Cloud Volumes ONTAP软件时部署Cloud Volumes ONTAP。</block>
+  <block id="70c85793f0a33ef534a67f193287a992" category="doc">管理您的Azure Blb帐户</block>
+  <block id="bbea79834217efc10b46f4ce874042e0" category="inline-link">转到此处、了解如何使用BlueXP查看、创建和管理Azure存储帐户</block>
+  <block id="925b4bfac5efe2fd0e529d00b71f77ab" category="paragraph">现在、您可以通过新增的功能创建和编辑Azure存储帐户。<block ref="3ed7f712e1a5045237f8df14106ff39a" category="inline-link-rx"></block>。</block>
+  <block id="26e3ab611e399c831d813cdff5745975" category="list-text">现在、您可以通过Connector从BlueXP添加和管理Azure存储帐户。</block>
+  <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">了解如何从BlueXP在Azure订阅中添加新的Azure存储帐户</block>
+  <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>。</block>
 </blocks>
