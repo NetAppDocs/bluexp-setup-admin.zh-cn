@@ -147,22 +147,36 @@ includedPermissions:
 | 操作 | 目的 
 
 
-| — compute.disks.create — compute.disks.createSnapshot — compute.disks.delete — compute.disks.get — compute.disks.list — compute.disks.setLabels — compute.disks.use | 为 Cloud Volumes ONTAP 创建和管理磁盘。 
+| - compute。disks.create
+- compute。disks.createSnapshot
+- compute.disks.delete
+- compute。disks.get
+- compute。disks.list
+- compute.disks.setLabels
+- compute.disks.use. | 为 Cloud Volumes ONTAP 创建和管理磁盘。 
 
 
-| — compute.v防火墙 创建— compute.firewalls.delete — compute.v防火墙 .get — compute.v防火墙 列表 | 为 Cloud Volumes ONTAP 创建防火墙规则。 
+| - compute。Firew防火墙.create
+- compute.firewalls.delete
+- compute。Firew防火墙.get
+- compute。Firew防火墙.list | 为 Cloud Volumes ONTAP 创建防火墙规则。 
 
 
 | — compute.globalOperations.get | 以获取操作状态。 
 
 
-| — compute.images.get — compute.images.getFromFamily — compute.images.list — compute.images.useReadOnly | 为 VM 实例获取映像。 
+| - compute。images。get
+- compute。images.getFromFamily
+- compute。images.list
+- compute.images.useReadOnly | 为 VM 实例获取映像。 
 
 
-| — compute.instances.attachDisk — compute.instances.detachDisk | 将磁盘连接和断开与 Cloud Volumes ONTAP 的连接。 
+| - compute.instances.attachDisk
+- compute.instances.detachDisk | 将磁盘连接和断开与 Cloud Volumes ONTAP 的连接。 
 
 
-| — compute.instances.create — compute.instances.delete | 创建和删除 Cloud Volumes ONTAP VM 实例。 
+| - compute.instances.create
+- compute.instances.delete | 创建和删除 Cloud Volumes ONTAP VM 实例。 
 
 
 | — compute.instances.get | 列出 VM 实例。 
@@ -180,7 +194,8 @@ includedPermissions:
 | — compute.instances.setLabels | 以添加标签。 
 
 
-| — compute.instances.setMachineType — compute.instances.setMinCpuPlatform | 更改 Cloud Volumes ONTAP 的计算机类型。 
+| — compute.instances.setMachineType
+- compute.instances.setMinCpuPlatform | 更改 Cloud Volumes ONTAP 的计算机类型。 
 
 
 | — compute.instances.setMetadata | 以添加元数据。 
@@ -189,7 +204,9 @@ includedPermissions:
 | — compute.instances.setTags | 为防火墙规则添加标记。 
 
 
-| — compute.instances.start — compute.instances.stop — compute.instances.updateDisplayDevice | 启动和停止 Cloud Volumes ONTAP 。 
+| - compute.instances.start
+- compute.instances.stop
+- compute.instances.updateDisplayDevice | 启动和停止 Cloud Volumes ONTAP 。 
 
 
 | — compute.machineTypes.get | 获取要检查 qoutas 的核心数。 
@@ -198,52 +215,108 @@ includedPermissions:
 | — compute.projects.get | 以支持多个项目。 
 
 
-| — compute.snapshots.create — compute.snapshots.delete — compute.snapshots.get — compute.snapshots.list — compute.snapshots.setLabels | 创建和管理永久性磁盘快照。 
+| - compute。Snap照。create
+- compute.snapshots.delete
+- compute。Snap照。get
+- compute。Snapses.list
+- compute.snapshots.setLabels | 创建和管理永久性磁盘快照。 
 
 
-| — compute.networks.get — compute.networks.list — compute.regions.get — compute.regions.list — compute.subnetworks.get — compute.subnetworks.list — compute.zoneOperations.get — compute.zones.get — compute.zones.list | 获取创建新 Cloud Volumes ONTAP 虚拟机实例所需的网络信息。 
+| - compute.networks.get
+- compute.networks.list
+- compute。regions.get
+- compute。regions.list
+- compute。subnetworks。get
+- compute。subnetworks.list
+- compute。zoneOperations.get
+- compute。zones。get
+- compute。zones。list | 获取创建新 Cloud Volumes ONTAP 虚拟机实例所需的网络信息。 
 
 
-| - deploymentmanager.compositeTypes.get - deploymentmanager.compositeTypes.list - deploymentmanager.deployments.create - deploymentmanager.deployments.delete - deploymentmanager.deployments.get - deploymentmanager.deployments.list - deploymentmanager.manifes.get - deploymentmanager.manifes.list - deploymentmanager.operations.get - deploymentmanager.resources.get - deploymentmanager.resources.list - deploymentmanager.typeProvider.get - deploymentmanager.typeProvider.get - deploymentmanager.typeProvider.list - get | 使用 Google Cloud 部署管理器部署 Cloud Volumes ONTAP 虚拟机实例。 
+| - deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+—部署管理器.清单.get
+-部署管理器.清单.list
+-部署管理器.operizes.get
+-部署管理器.operizes.list
+-部署管理器.Resents.get
+-部署管理器.Resents.list
+-部署管理器.typeProvider.get
+-部署管理器.typeProvider.list
+-部署管理器。types.get
+-部署管理器。types.list | 使用 Google Cloud 部署管理器部署 Cloud Volumes ONTAP 虚拟机实例。 
 
 
-| — logging.logEnrees.list — logging.privateLogEnrees.list | 获取堆栈日志驱动器。 
+| - loging.logEntrs.list
+- loging.privateLogEntrives.list | 获取堆栈日志驱动器。 
 
 
 | — resourcemanager.projects.get | 以支持多个项目。 
 
 
-| — storage.buctions.create — storage.buckets.delete — storage.buctions.get — storage.buctions.list — storage.buctions.update | 创建和管理用于数据分层的 Google Cloud Storage 存储分段。 
+| - storage.t分 段.create
+- storage.buckets.delete
+- storage.bBucbes.get
+- storage.t分 段.list
+- storage.bedb铲。update | 创建和管理用于数据分层的 Google Cloud Storage 存储分段。 
 
 
-| — cloudkms.cryptoKeyVersions.useToEncrypt — cloudkms.encryptoKeys.get — cloudkms.encryptoKeys.list — cloudkms.keyrings.list | 将云密钥管理服务中由客户管理的加密密钥与 Cloud Volumes ONTAP 结合使用。 
+| - cloudkms.cryptoKeyVersions.useToEncrypt
+-云公里。cryptoKeys.get
+-云公里。cryptoKeys.list
+-云公里.keyrings.list | 将云密钥管理服务中由客户管理的加密密钥与 Cloud Volumes ONTAP 结合使用。 
 
 
-| — compute.instances.setServiceAccount — iam.serviceAccounts.actAs — iam.serviceAccounts.getIamPolicy — iam.serviceAccounts.list — storage.objects.get — storage.objects.list | 在 Cloud Volumes ONTAP 实例上设置服务帐户。此服务帐户提供将数据分层到 Google Cloud Storage 存储分段的权限。 
+| - compute.instances.setServiceAccount
+- iam.serviceAccounts.actAs
+- iam.serviceAccounts.getIamPolicy
+- iam.serviceAccounts.list
+- storage.objects.get
+- storage.objects.list | 在 Cloud Volumes ONTAP 实例上设置服务帐户。此服务帐户提供将数据分层到 Google Cloud Storage 存储分段的权限。 
 
 
 | —compute.addresses。list | 在部署HA对时检索区域中的地址。 
 
 
-| —compute.backendServices.create—compute.regionBackendServices.create—compute.regionBackendServices.get—compute.regionBackendServices.list | 配置后端服务以分布HA对中的流量。 
+| - compute。backendServices。create
+- compute。regionBackendServices.create
+- compute。regionBackendServices.get
+- compute。regionBackendServices.list | 配置后端服务以分布HA对中的流量。 
 
 
 | —compute.networks.updatePolicy | 在HA对的vPC和子网上应用防火墙规则。 
 
 
-| — compute.subnetworks.use — compute.subnetworks.useExternalIp — compute.instances.addAccessConfig | 启用BlueXP分类。 
+| - compute.subnetworks.use.
+- compute.subnetworks.useExternalIp
+- compute.instances.addAccessConfig | 启用BlueXP分类。 
 
 
-| — container.clusters 。 get — container.clusters 。 list | 发现在 Google Kubernetes Engine 中运行的 Kubernetes 集群。 
+| - container.Clusters。get
+- container.Clusters。list | 发现在 Google Kubernetes Engine 中运行的 Kubernetes 集群。 
 
 
-| —compute.instanceGroups.get—compute.addresses。get—compute.instances.updateNetworkInterface | 在Cloud Volumes ONTAP HA对上创建和管理Storage VM。 
+| - compute.instanceGroups.get
+- compute。addresses.get
+- compute.instances.updateNetworkInterface | 在Cloud Volumes ONTAP HA对上创建和管理Storage VM。 
 
 
-| —monitoration.timesery.list—storage.bames.getIamPolicy | 了解有关Google Cloud存储分段的信息。 
+| - monitoring.timeseres.list
+- storage.tampeds.getIamPolicy | 了解有关Google Cloud存储分段的信息。 
 
 
-| —cloudkms.encryptoKeys.get—cloudkms.encryptoKeys.getIamPolicy—cloudkms.encryptoKeys.list—cloudkms.cryptoKeys.setIamPolicy—cloudkms.keyrings.get—cloudkms.keyrings.getIamPolicy—cloudkms.keyrings.list—cloudkms.keyRings.setIamPolicy | 在BlueXP备份和恢复激活向导中选择您自己的客户管理密钥、而不是使用默认的Google管理加密密钥。 
+| -云公里。cryptoKeys.get
+-云公里.cryptoKeys.getIamPolicy
+-云公里。cryptoKeys.list
+- cloudkms.cryptoKeys.setIamPolicy
+-云公里.keyrings.get
+-云公里.keyrings.getIamPolicy
+-云公里.keyrings.list
+- cloudkms.keyRings.setIamPolicy | 在BlueXP备份和恢复激活向导中选择您自己的客户管理密钥、而不是使用默认的Google管理加密密钥。 
 |===
 
 

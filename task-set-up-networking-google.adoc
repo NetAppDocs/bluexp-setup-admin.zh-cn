@@ -48,13 +48,13 @@ link:reference-networking-saas-console.html["从BlueXP控制台查看已联系�
 
 如果您计划在自己的Linux主机上手动安装Connector、则Connector安装程序需要在安装过程中访问以下URL：
 
-* https://support.netapp.com
-* https://mysupport.netapp.com
-* https://cloudmanager.cloud.netapp.com/tenancy
-* https://stream.cloudmanager.cloud.netapp.com
-* https://cloudmanagerinfraprod.azurecr.io
-* https://production-artifacts.cloudmanager.cloud.netapp.com
-* https://*.blob.core.windows.net
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://cloudmanagerinfraprod.azurecr.io
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
 
 
 主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。
@@ -70,20 +70,28 @@ Connector需要通过出站Internet访问与以下端点联系、以便管理公
 | 端点 | 目的 
 
 
-| https://www.googleapis.com/compute/v1/\https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 在Google Cloud中管理资源。 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | 在Google Cloud中管理资源。 
 
 
-| https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
+| \https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
 
 
  a| 
-https://*.api.bluexp.netapp.com
+\https://*.api.bluexp.netapp.com
 
-https://api.bluexp.netapp.com
+\https://api.bluexp.netapp.com
 
-https://*.cloudmanager.cloud.netapp.com
+\https://*.cloudmanager.cloud.netapp.com
 
-https://cloudmanager.cloud.netapp.com
+\https://cloudmanager.cloud.netapp.com
  a| 
 在BlueXP中提供SaaS功能和服务。
 
@@ -92,7 +100,9 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 
 
-| https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
 |===
 
 

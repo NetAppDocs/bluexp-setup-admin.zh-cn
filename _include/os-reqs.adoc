@@ -43,7 +43,7 @@ AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们�
 Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 DS3 v2 。
 
 
-Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-4。
+Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。建议使用n2-standard-4。
 +
 --
 在具有支持的操作系统的VM实例上、Google Cloud支持Connector https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["屏蔽VM功能"^]
@@ -52,6 +52,6 @@ Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。�
 
 
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
-/var 中的磁盘空间:: 必须有 20 GiB 的可用空间
+/var 中的磁盘空间:: 必须有20 GiB的可用空间
 Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]
 

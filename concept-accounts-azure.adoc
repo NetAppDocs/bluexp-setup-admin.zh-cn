@@ -28,7 +28,7 @@ image:diagram_permissions_initial_azure.png["一个概念映像、显示了BlueX
 
 默认情况下、在为Cloud Volumes ONTAP 创建新工作环境时、BlueXP会选择以下Azure凭据：
 
-image:screenshot_accounts_select_azure.gif["屏幕截图，显示 \"Details\" 和 \"amp\" ； \"Credentials\" 页面中的 \"Switch Account\" 选项。"]
+image:screenshot_accounts_select_azure.gif["显示详细信息和凭据页面中的切换帐户选项的屏幕截图()。"]
 
 您可以使用初始 Azure 凭据部署所有 Cloud Volumes ONTAP 系统，也可以添加其他凭据。
 
@@ -50,7 +50,7 @@ image:diagram_permissions_multiple_azure.png["显示初始 Azure 帐户（通过
 
 例如、在创建新的Cloud Volumes ONTAP 工作环境时、您可以在凭据之间切换：
 
-image:screenshot_accounts_switch_azure.gif["单击详细信息和 amp ；凭据页面中的切换帐户后，显示在云提供商帐户之间进行选择的屏幕截图。"]
+image:screenshot_accounts_switch_azure.gif["显示在\"详细信息和凭据\"页面中单击\"切换帐户\"后在云提供商帐户之间进行选择的屏幕截图。"]
 
 
 

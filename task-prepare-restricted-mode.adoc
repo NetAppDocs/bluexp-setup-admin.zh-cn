@@ -73,14 +73,14 @@ CPU:: 4 个核心或 4 个 vCPU
 RAM:: 14 GB
 AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 T3.xlarge 。
 Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 DS3 v2 。
-Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-4。
+Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。建议使用n2-standard-4。
 +
 --
 在具有支持的操作系统的VM实例上、Google Cloud支持Connector https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["屏蔽VM功能"^]
 
 --
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
-/var 中的磁盘空间:: 必须有 20 GiB 的可用空间
+/var 中的磁盘空间:: 必须有20 GiB的可用空间
 Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]
 
 
@@ -102,13 +102,13 @@ Connector必须与您计划管理存储的位置建立网络连接。例如、�
 
 如果您计划在自己的Linux主机上手动安装Connector、则Connector安装程序需要在安装过程中访问以下URL：
 
-* https://support.netapp.com
-* https://mysupport.netapp.com
-* https://cloudmanager.cloud.netapp.com/tenancy
-* https://stream.cloudmanager.cloud.netapp.com
-* https://cloudmanagerinfraprod.azurecr.io
-* https://production-artifacts.cloudmanager.cloud.netapp.com
-* https://*.blob.core.windows.net
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://cloudmanagerinfraprod.azurecr.io
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
 
 
 主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。
@@ -137,29 +137,46 @@ AWS 服务（ AmazonAWS.com ）：
 | 管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^] 
 
 
-| https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | 管理Azure公共区域中的资源。 
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net | 管理Azure公共区域中的资源。 
 
 
-| https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | 管理Azure政府区域中的资源。 
+| \https://management.usgovcloudapi.net
+\https://login.microsoftonline.us
+\https://blob.core.usgovcloudapi.net
+\https://core.usgovcloudapi.net | 管理Azure政府区域中的资源。 
 
 
-| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | 管理Azure中国地区的资源。 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn | 管理Azure中国地区的资源。 
 
 
-| https://www.googleapis.com/compute/v1/\https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 在Google Cloud中管理资源。 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | 在Google Cloud中管理资源。 
 
 
-| https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
+| \https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
 
 
  a| 
-https://*.api.bluexp.netapp.com
+\https://*.api.bluexp.netapp.com
 
-https://api.bluexp.netapp.com
+\https://api.bluexp.netapp.com
 
-https://*.cloudmanager.cloud.netapp.com
+\https://*.cloudmanager.cloud.netapp.com
 
-https://cloudmanager.cloud.netapp.com
+\https://cloudmanager.cloud.netapp.com
  a| 
 在BlueXP中提供SaaS功能和服务。
 
@@ -168,7 +185,9 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 
 
-| https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
 |===
 
 
@@ -214,13 +233,17 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 | 端点 | 目的 
 
 
-| https://signin.b2c.netapp.com | 需要更新NetApp 支持站点 (NSS)凭据或向BlueXP添加新的NSS凭据。 
+| \https://signin.b2c.netapp.com | 需要更新NetApp 支持站点 (NSS)凭据或向BlueXP添加新的NSS凭据。 
 
 
-| https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | 您的Web浏览器连接到这些端点、以便通过BlueXP集中进行用户身份验证。 
+| \https://netapp-cloud-account.auth0.com
+
+\https://cdn.auth0.com
+
+\https://services.cloud.netapp.com | 您的Web浏览器连接到这些端点、以便通过BlueXP集中进行用户身份验证。 
 
 
-| https://widget.intercom.io | 用于与 NetApp 云专家交流的产品内聊天。 
+| \https://widget.intercom.io | 用于与 NetApp 云专家交流的产品内聊天。 
 |===
 
 

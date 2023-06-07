@@ -35,7 +35,7 @@ BlueXP帐户管理员可以在云或内部网络中创建Connector。
 
 [role="quick-margin-list"]
 * link:concept-connectors.html["详细了解何时需要连接器及其工作原理"]
-* link:task-quick-start-connector-aws.html["了解如何在 AWS 中创建连接器"]
+* link:task-quick-start-connector-aws.html["了解如何在AWS中创建Connector"]
 * link:task-quick-start-connector-azure.html["了解如何在 Azure 中创建 Connector"]
 * link:task-quick-start-connector-google.html["了解如何在 Google Cloud 中创建 Connector"]
 * link:task-quick-start-connector-on-prem.html["了解如何在内部创建Connector"]

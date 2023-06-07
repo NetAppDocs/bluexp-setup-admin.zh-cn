@@ -20,7 +20,7 @@ summary: 了解BlueXP如何使用AWS凭据和权限代表您执行操作。了�
 
 == 初始 AWS 凭据
 
-从BlueXP部署Connector时、您需要为IAM用户提供IAM角色的ARN或访问密钥。您使用的身份验证方法必须具有在 AWS 中部署 Connector 实例所需的权限。中列出了所需的权限 link:task-set-up-permissions-aws.html["AWS 的连接器部署策略"]。
+从BlueXP部署Connector时、您需要为IAM用户提供IAM角色的ARN或访问密钥。您使用的身份验证方法必须具有在 AWS 中部署 Connector 实例所需的权限。中列出了所需的权限 link:task-set-up-permissions-aws.html["适用于AWS的Connector部署策略"]。
 
 当BlueXP在AWS中启动Connector实例时、它会为此实例创建IAM角色和实例配置文件。此外，它还会附加一个策略，为 Connector 提供管理该 AWS 帐户中资源和进程的权限。 link:reference-permissions-aws.html["查看BlueXP如何使用权限"]。
 
@@ -28,7 +28,7 @@ image:diagram_permissions_initial_aws.png["一个概念映像、显示了BlueXP�
 
 默认情况下、在为Cloud Volumes ONTAP 创建新工作环境时、BlueXP会选择以下AWS凭据：
 
-image:screenshot_accounts_select_aws.gif["屏幕截图，显示 \"Details\" 和 \"amp\" ； \"Credentials\" 页面中的 \"Switch Account\" 选项。"]
+image:screenshot_accounts_select_aws.gif["显示详细信息和凭据页面中的切换帐户选项的屏幕截图()。"]
 
 您可以使用初始 AWS 凭据部署所有 Cloud Volumes ONTAP 系统，也可以添加其他凭据。
 
@@ -56,7 +56,7 @@ image:diagram_permissions_multiple_aws.png["一个概念映像，显示另外两
 
 添加另一组凭据后，您可以在创建新的工作环境时切换到这些凭据：
 
-image:screenshot_accounts_switch_aws.png["单击详细信息和 amp ；凭据页面中的切换帐户后，显示在云提供商帐户之间进行选择的屏幕截图。"]
+image:screenshot_accounts_switch_aws.png["显示在\"详细信息和凭据\"页面中单击\"切换帐户\"后在云提供商帐户之间进行选择的屏幕截图。"]
 
 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["了解如何向现有Connector添加AWS凭据。"]
 

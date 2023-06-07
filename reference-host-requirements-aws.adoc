@@ -45,6 +45,6 @@ RAM:: 14 GB
 AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 T3.xlarge 。
 密钥对:: 从BlueXP或AWS Marketplace创建Connector时、您需要选择一个EC2密钥对以用于实例。
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
-/var 中的磁盘空间:: 必须有 20 GiB 的可用空间
+/var 中的磁盘空间:: 必须有20 GiB的可用空间
 Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]
 

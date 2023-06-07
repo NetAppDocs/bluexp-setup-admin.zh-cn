@@ -237,10 +237,10 @@ chmod +x OnCommandCloudManager-<version>
 -proxy会将Connector配置为使用以下格式之一的HTTP或HTTPS代理服务器：
 
 +
-** http://address:port
-** http://username:password@address:port
-** https://address:port
-** https://username:password@address:port
+** \http://address:port
+** \http://username:password@address:port
+** \https://address:port
+** \https://username:password@address:port
 +
 用户必须是本地用户。不支持域用户。
 

@@ -123,7 +123,9 @@ NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新
 | 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数在身份提供程序上完成配置。 
 
 
-| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
+| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]
+
+请注意、此页面会在测试连接和启用连接之间刷新。 
 |===
 
 
@@ -166,7 +168,9 @@ NOTE: 记下机密密钥的到期日期。您需要返回到"联盟设置"页面
 | 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数完成Azure AD中的配置。 
 
 
-| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
+| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]
+
+请注意、此页面会在测试连接和启用连接之间刷新。 
 |===
 
 
@@ -201,7 +205,9 @@ NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新
 | 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数完成ADFS服务器上的配置。 
 
 
-| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
+| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]
+
+请注意、此页面会在测试连接和启用连接之间刷新。 
 |===
 
 
@@ -243,7 +249,9 @@ NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新
 | 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数在PingFederate服务器上完成配置。 
 
 
-| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]请注意、此页面会在测试连接和启用连接之间刷新。 
+| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]
+
+请注意、此页面会在测试连接和启用连接之间刷新。 
 |===
 
 

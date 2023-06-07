@@ -21,7 +21,8 @@ summary: 当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它�
 | 端点 | 目的 
 
 
-| https://console.bluexp.netapp.com \https://*.console.bluexp.netapp.com | 使用BlueXP基于Web的控制台时、Web浏览器会联系这些URL。 
+| \https://console.bluexp.netapp.com
+\https://*.console.bluexp.netapp.com | 使用BlueXP基于Web的控制台时、Web浏览器会联系这些URL。 
 
 
  a| 
@@ -36,25 +37,35 @@ AWS 服务（ AmazonAWS.com ）：
 | 在AWS中从BlueXP部署连接器时需要此功能。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息，请参阅 AWS 文档。"^] 
 
 
-| https://management.azure.com https://login.microsoftonline.com | 在大多数Azure地区从BlueXP部署连接器时需要此功能。 
+| \https://management.azure.com
+
+\https://login.microsoftonline.com | 在大多数Azure地区从BlueXP部署连接器时需要此功能。 
 
 
-| https://management.microsoftazure.de https://login.microsoftonline.de | 在Azure德国地区从BlueXP部署连接器时需要此功能。 
+| \https://management.microsoftazure.de
+
+\https://login.microsoftonline.de | 在Azure德国地区从BlueXP部署连接器时需要此功能。 
 
 
-| https://management.usgovcloudapiNet https://login.microsoftonline.com | 在Azure US Gov地区从BlueXP部署连接器时需要此功能。 
+| \https://management.usgovcloudapi.net
+
+\https://login.microsoftonline.com | 在Azure US Gov地区从BlueXP部署连接器时需要此功能。 
 
 
-| https://www.googleapis.com | 在Google Cloud中从BlueXP部署Connector时需要此功能。 
+| \https://www.googleapis.com | 在Google Cloud中从BlueXP部署Connector时需要此功能。 
 
 
-| https://signin.b2c.netapp.com | 需要更新NetApp 支持站点 (NSS)凭据或向BlueXP添加新的NSS凭据。 
+| \https://signin.b2c.netapp.com | 需要更新NetApp 支持站点 (NSS)凭据或向BlueXP添加新的NSS凭据。 
 
 
-| https://netapp-cloud-account.auth0.com \https://cdn.auth0.com \https://services.cloud.netapp.com | 您的Web浏览器连接到这些端点、以便通过BlueXP集中进行用户身份验证。 
+| \https://netapp-cloud-account.auth0.com
+
+\https://cdn.auth0.com
+
+\https://services.cloud.netapp.com | 您的Web浏览器连接到这些端点、以便通过BlueXP集中进行用户身份验证。 
 
 
-| https://widget.intercom.io | 用于与 NetApp 云专家交流的产品内聊天。 
+| \https://widget.intercom.io | 用于与 NetApp 云专家交流的产品内聊天。 
 |===
 .相关链接
 * link:task-prepare-restricted-mode.html#prepare-networking-for-user-access-to-bluexp-console["准备网络以供用户访问BlueXP控制台(受限模式)"]

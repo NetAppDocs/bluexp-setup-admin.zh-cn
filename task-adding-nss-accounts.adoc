@@ -123,7 +123,7 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 
 
 
-== 更新 NSS 凭据
+== 更新NSS凭据
 
 发生以下任一情况时、您需要在BlueXP中更新NSS帐户的凭据：
 

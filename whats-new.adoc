@@ -353,7 +353,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#31-july-
 
 === 策略更改
 
-我们通过直接在文档中添加Cloud Manager策略来更新文档。这意味着您现在可以查看Connector和Cloud Volumes ONTAP 所需的权限以及说明如何设置这些权限的步骤。以前可以从NetApp支持站点上的页面访问这些策略。
+我们通过直接在文档中添加Cloud Manager策略来更新文档。这意味着您现在可以查看Connector和Cloud Volumes ONTAP 所需的权限以及说明如何设置这些权限的步骤。以前可以从 NetApp 支持站点上的页面访问这些策略。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html#create-an-iam-policy["以下示例显示了用于创建Connector的AWS IAM角色权限"]。
 
@@ -411,7 +411,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-july-2
 
 === 使用NetApp凭据登录
 
-当新用户注册到Cloud Central时、他们现在可以选择*使用NetApp*登录选项以使用其NetApp支持站点凭据登录。这是输入电子邮件地址和密码的替代方法。
+当新用户注册到 Cloud Central 时，他们现在可以选择 *使用 NetApp 帐号* 登录选项以使用其 NetApp 支持站点凭据登录。这是输入电子邮件地址和密码的替代方法。
 
 
 NOTE: 使用电子邮件地址和密码的现有登录需要继续使用该登录方法。注册的新用户可以使用"Log in with NetApp"选项。
@@ -492,7 +492,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 
 
-== 2022 年 4 月 3 日
+== 2022年4月3日
 
 
 
@@ -507,7 +507,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 
 
-== 2022 年 2 月 27 日
+== 2022年2月27日
 
 
 
@@ -519,7 +519,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 
 
-== 2022 年 1 月 30 日
+== 2022年1月30日
 
 
 
@@ -529,7 +529,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.ht
 
 
 
-== 2022 年 1 月 2 日
+== 2022年1月2日
 
 
 
@@ -557,13 +557,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 
 
-== 2021 年 11 月 28 日
+== 2021年11月28日
 
 
 
 === NetApp 支持站点帐户需要更新
 
-从 2021 年 12 月开始， NetApp 现在使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。执行此更新后， Cloud Manager 将提示您更新先前添加的任何现有 NetApp 支持站点帐户的凭据。
+从 2021 年 12 月开始， NetApp 现在使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。执行此更新后，Cloud Manager 将提示您更新先前添加的任何现有 NetApp 支持站点帐户的凭据。
 
 如果您尚未将 NSS 帐户迁移到 IDaaS ，则首先需要迁移此帐户，然后在 Cloud Manager 中更新凭据。
 
@@ -581,7 +581,7 @@ link:task-adding-nss-accounts.html#attach-a-working-environment-to-a-different-n
 
 
 
-== 2021 年 11 月 4 日
+== 2021年11月4日
 
 
 
@@ -601,7 +601,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport
 
 
 
-== 2021 年 10 月 31 日
+== 2021年10月31日
 
 
 
@@ -619,7 +619,7 @@ link:task-creating-connectors-azure.html#create-a-connector-using-a-service-prin
 
 
 
-== 2021 年 9 月 2 日
+== 2021年9月2日
 
 
 
@@ -646,7 +646,7 @@ link:task-creating-connectors-azure.html#create-a-connector-using-a-service-prin
 
 === 通过支持信息板管理 NSS 帐户
 
-现在， NetApp 支持站点（ NSS ）帐户可通过支持信息板进行管理，而不是从设置菜单进行管理。通过此更改，可以更轻松地从一个位置查找和管理所有与支持相关的信息。
+现在，NetApp 支持站点 (NSS) 帐户可通过支持信息板进行管理，而不是从设置菜单进行管理。通过此更改，可以更轻松地从一个位置查找和管理所有与支持相关的信息。
 
 link:task-adding-nss-accounts.html["了解如何管理 NSS 帐户"]。
 
@@ -666,7 +666,7 @@ link:task-monitor-cm-operations.html#auditing-user-activity-in-your-account["了
 
 
 
-== 2021 年 4 月 11 日
+== 2021年4月11日
 
 
 
@@ -704,7 +704,7 @@ link:task-managing-netapp-accounts.html#allowing-third-party-services["了解有
 
 
 
-== 2021 年 2 月 9 日
+== 2021年2月9日
 
 
 

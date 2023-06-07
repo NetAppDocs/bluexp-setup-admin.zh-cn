@@ -300,7 +300,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 .结果
 现在，您可以从 " 详细信息和凭据 " 页面切换到不同的凭据集 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["创建新的工作环境时"^]
 
-image:screenshot_accounts_switch_azure.gif["屏幕截图、显示在详细信息和amp；凭据页面中选择编辑凭据后在凭据之间进行选择的情况。"]
+image:screenshot_accounts_switch_azure.gif["屏幕截图、显示在详细信息和凭据页面中选择编辑凭据后在凭据之间进行选择。"]
 
 
 

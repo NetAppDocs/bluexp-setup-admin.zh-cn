@@ -36,13 +36,13 @@ Connector需要与您要创建的工作环境类型以及计划启用的服务�
 
 在您自己的Linux主机上手动安装Connector时、Connector安装程序需要在安装过程中访问以下URL：
 
-* https://support.netapp.com
-* https://mysupport.netapp.com
-* https://cloudmanager.cloud.netapp.com/tenancy
-* https://stream.cloudmanager.cloud.netapp.com
-* https://cloudmanagerinfraprod.azurecr.io
-* https://production-artifacts.cloudmanager.cloud.netapp.com
-* https://*.blob.core.windows.net
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://cloudmanagerinfraprod.azurecr.io
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
 
 
 主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。
@@ -71,26 +71,36 @@ AWS 服务（ AmazonAWS.com ）：
 | 管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^] 
 
 
-| https://management.azure.com https://login.microsoftonline.com | 管理Azure公共区域中的资源。 
+| \https://management.azure.com
+\https://login.microsoftonline.com | 管理Azure公共区域中的资源。 
 
 
-| https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | 管理Azure中国地区的资源。 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn | 管理Azure中国地区的资源。 
 
 
-| https://www.googleapis.com/compute/v1/\https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | 在Google Cloud中管理资源。 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | 在Google Cloud中管理资源。 
 
 
-| https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
+| \https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
 
 
  a| 
-https://*.api.bluexp.netapp.com
+\https://*.api.bluexp.netapp.com
 
-https://api.bluexp.netapp.com
+\https://api.bluexp.netapp.com
 
-https://*.cloudmanager.cloud.netapp.com
+\https://*.cloudmanager.cloud.netapp.com
 
-https://cloudmanager.cloud.netapp.com
+\https://cloudmanager.cloud.netapp.com
  a| 
 在BlueXP中提供SaaS功能和服务。
 
@@ -99,7 +109,9 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 
 
-| https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
 |===
 .相关链接
 link:reference-networking-saas-console.html["为用户访问BlueXP控制台准备网络连接"]

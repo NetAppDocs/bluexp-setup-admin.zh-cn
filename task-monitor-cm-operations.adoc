@@ -143,9 +143,11 @@ image:screenshot-add-email-recipient.png["显示如何为警报和通知添加�
 
 如果您不再需要查看通知，可以从页面中删除这些通知。您可以一次性取消所有通知，也可以取消单个通知。
 
-要取消所有通知、请在通知中心中选择 image:button_3_vert_dots.png["一个包含三个垂直点的图标"] 并选择 * 全部取消 * 。image:screenshot_notification_menu.png["显示通知菜单的屏幕截图，用于选择设置并取消所有选项。"]
+要取消所有通知、请在通知中心中选择 image:button_3_vert_dots.png["一个包含三个垂直点的图标"] 并选择 * 全部取消 * 。
+image:screenshot_notification_menu.png["显示通知菜单的屏幕截图，用于选择设置并取消所有选项。"]
 
-要取消单个通知、请将光标悬停在通知上方并选择*取消*。image:screenshot_notification_dismiss1.png["显示如何取消单个通知的屏幕截图。"]
+要取消单个通知、请将光标悬停在通知上方并选择*取消*。
+image:screenshot_notification_dismiss1.png["显示如何取消单个通知的屏幕截图。"]
 
 
 

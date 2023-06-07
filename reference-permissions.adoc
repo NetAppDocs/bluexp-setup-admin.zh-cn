@@ -71,5 +71,7 @@ link:reference-permissions-azure.html["Connector 的 Azure 权限"]
 | 连接器部署 | 从BlueXP部署Connector的Google Cloud用户需要特定权限才能在Google Cloud中部署Connector。 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["设置部署Connector的权限"] 
 
 
-| 连接器操作 | Connector VM实例的服务帐户必须具有执行日常操作的特定权限。在从BlueXP部署服务帐户时、您需要将其与Connector相关联。此外、您还需要确保在后续版本中添加新权限时策略是最新的。 | link:reference-permissions-gcp.html["适用于 Connector 的 Google Cloud 权限"] 
+| 连接器操作 | Connector VM实例的服务帐户必须具有执行日常操作的特定权限。在从BlueXP部署服务帐户时、您需要将其与Connector相关联。
+
+此外、您还需要确保在后续版本中添加新权限时策略是最新的。 | link:reference-permissions-gcp.html["适用于 Connector 的 Google Cloud 权限"] 
 |===

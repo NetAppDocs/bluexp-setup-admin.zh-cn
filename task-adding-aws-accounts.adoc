@@ -150,7 +150,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 .结果
 现在，在创建新的工作环境时，您可以从 " 详细信息和凭据 " 页面切换到另一组凭据：
 
-image:screenshot_accounts_switch_aws.png["屏幕截图、显示在详细信息和amp；凭据页面中选择切换帐户后在云提供商帐户之间进行选择的情况。"]
+image:screenshot_accounts_switch_aws.png["显示在\"详细信息和凭据\"页面中选择\"切换帐户\"后在云提供商帐户之间进行选择的屏幕截图。"]
 
 
 
