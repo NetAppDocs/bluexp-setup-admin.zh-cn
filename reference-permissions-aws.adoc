@@ -750,27 +750,6 @@ S3 ： GetEncryptionConfiguration
 
 === 备份和恢复
 
-Connector发出以下API请求来部署还原实例以进行BlueXP备份和恢复：
-
-* EC2：StartInstances
-* EC2：StopInstances
-* EC2：Describe实例
-* EC2：Describe实例状态
-* EC2：RunInstances
-* EC2：终端状态
-* EC2：Describe实例属性
-* EC2：Describe
-* EC2：CreateTags
-* EC2：CreateVolume
-* EC2：CreateSecurityGroup
-* EC2：Describe子网
-* EC2：Describe
-* EC2：Describe注册
-* CloudFormation：CreateStack
-* CloudFormation：DeleteStack
-* CloudFormation：Describe堆栈
-
-
 Connector会发出以下API请求来管理Amazon S3中的备份：
 
 * S3 ： GetBucketLocation
