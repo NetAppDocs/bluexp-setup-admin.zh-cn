@@ -3792,4 +3792,23 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="cell">可持续性</block>
+  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023年7月2日</block>
+  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">连接器3.9.31</block>
+  <block id="9f1d24d5ab10dd326cb52dffc172eea5" category="list-text">现在、您可以从*我的资产*选项卡(以前称为*我的商机*)中发现内部ONTAP集群</block>
+  <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">从我的资产页面了解如何发现集群</block>
+  <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>。</block>
+  <block id="6bdb2baa8fe05cff12c22f9f6f8e9e7f" category="list-text">如果您在Azure政府区域中使用Connector、则应确保Connector可以联系以下端点：</block>
+  <block id="1f29f58c7cdabd46095c6ad242933991" category="paragraph">\https://occmclientinfragov.azurecr.us</block>
+  <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">要手动安装Connector以及升级Connector及其Docker组件、需要使用此端点。</block>
+  <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">由于此更改、Azure政府区域中的Connector不再与以下端点联系：</block>
+  <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">请注意、所有其他受限模式配置和标准模式仍需要此端点。</block>
+  <block id="b7e5db85ee5e5c349f5841d09bf19cbe" category="paragraph">在Azure政府地区不需要此端点。</block>
+  <block id="8e1098945acc0cdc1dade8505d9ce607" category="paragraph">只有Azure政府区域才需要此端点。</block>
+  <block id="2ecb939d80f14a8df5cdeee557b8a6a2" category="cell">\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+在Azure政府地区不需要此端点。
+
+\https://occmclientinfragov.azurecr.us
+只有Azure政府区域才需要此端点。</block>
 </blocks>
