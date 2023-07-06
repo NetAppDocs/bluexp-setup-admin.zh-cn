@@ -98,7 +98,7 @@ Connector必须与您计划管理存储的位置建立网络连接。例如、�
 
 === 用于日常操作的端点
 
-Connector会联系以下端点、以便在公共云环境中部署和管理Cloud Volumes ONTAP。
+Connector会与以下端点联系、以管理公有云环境中的资源和流程。
 
 [cols="2*"]
 |===
@@ -178,8 +178,6 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 除非您启动 Connector ，否则不会向其传入流量。
 
 通过HTTP (80)和HTTPS (443)可以访问BlueXP控制台。只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。
-
-如果您在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
 
 
 

@@ -397,7 +397,7 @@ NOTE: BlueXP操作员是BlueXP策略中提供的默认名称。如果您为角�
 .. 单击 * 选择 * 。
 .. 单击 * 下一步 * 。
 .. 单击 * 审核 + 分配 * 。
-.. 如果要从其他订阅部署 Cloud Volumes ONTAP 、请切换到该订阅，然后重复这些步骤。
+.. 如果要管理其他订阅中的资源、请切换到该订阅、然后重复这些步骤。
 
 
 
@@ -445,7 +445,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 +
 https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud文档：更改实例的服务帐户和访问范围"^]
 
-. 如果要在其他项目中部署Cloud Volumes ONTAP 、请通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限。您需要对每个项目重复此步骤。
+. 如果要管理其他项目中的资源、请通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限。您需要对每个项目重复此步骤。
 
 
 .结果

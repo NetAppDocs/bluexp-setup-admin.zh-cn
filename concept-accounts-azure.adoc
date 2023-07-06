@@ -26,7 +26,7 @@ summary: 了解BlueXP如何使用Azure凭据和权限代表您执行操作。了
 
 image:diagram_permissions_initial_azure.png["一个概念映像、显示了BlueXP在Azure帐户和订阅中部署Connector。系统分配的受管身份将被启用、并为Connector虚拟机分配自定义角色。"]
 
-默认情况下、在为Cloud Volumes ONTAP 创建新工作环境时、BlueXP会选择以下Azure凭据：
+如果为Cloud Volumes ONTAP创建新的工作环境、则BlueXP会默认选择以下Azure凭据：
 
 image:screenshot_accounts_select_azure.gif["显示详细信息和凭据页面中的切换帐户选项的屏幕截图()。"]
 

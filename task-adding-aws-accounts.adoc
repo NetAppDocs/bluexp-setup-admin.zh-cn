@@ -140,7 +140,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 .. * 定义凭据 * ：提供可信 IAM 角色的 ARN （ Amazon 资源名称），或者输入 AWS 访问密钥和机密密钥。
 .. * 市场订阅 * ：通过立即订阅或选择现有订阅，将市场订阅与这些凭据相关联。
 +
-要按每小时费率（ PAYGO ）或按年度合同支付 Cloud Volumes ONTAP 费用， AWS 凭据必须与 AWS Marketplace 中的 Cloud Volumes ONTAP 订阅相关联。
+要按小时费率(PAYGO)或按年度合同支付BlueXP服务费用、AWS凭据必须与AWS Marketplace订阅相关联。
 
 .. *查看*：确认有关新凭据的详细信息、然后选择*添加*。
 

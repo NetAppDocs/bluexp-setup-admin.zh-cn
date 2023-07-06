@@ -26,7 +26,7 @@ summary: 了解BlueXP如何使用AWS凭据和权限代表您执行操作。了�
 
 image:diagram_permissions_initial_aws.png["一个概念映像、显示了BlueXP在AWS帐户中部署Connector。IAM策略会分配给一个IAM角色、该角色会附加到BlueXP实例。"]
 
-默认情况下、在为Cloud Volumes ONTAP 创建新工作环境时、BlueXP会选择以下AWS凭据：
+如果为Cloud Volumes ONTAP创建新的工作环境、则BlueXP会默认选择以下AWS凭据：
 
 image:screenshot_accounts_select_aws.gif["显示详细信息和凭据页面中的切换帐户选项的屏幕截图()。"]
 

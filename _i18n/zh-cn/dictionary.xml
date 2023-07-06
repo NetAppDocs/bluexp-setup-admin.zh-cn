@@ -146,7 +146,6 @@
   <block id="52f3863b6256b8ae764628f74442ca5c" category="paragraph">虚拟机的身份验证方法可以是密码或SSH公共密钥。</block>
   <block id="a6100ac4fa5cb7bbb1c49e95165b96b2" category="inline-link-macro">所需权限</block>
   <block id="45e2f16f488dd77ea28e4cc6a50751e5" category="list-text">*详细信息*：输入实例的名称、指定标记、然后选择是希望BlueXP创建具有所需权限的新角色、还是要选择使用设置的现有角色 <block ref="b569336f779a413e2d7fa8c0ccb0306d" category="inline-link-macro-rx"></block>。</block>
-  <block id="e1ca9b0274808b9c445718fa4b9a5d26" category="paragraph">请注意，您可以选择与此角色关联的订阅。您选择的每个订阅都为 Connector 提供了在这些订阅中部署 Cloud Volumes ONTAP 的权限。</block>
   <block id="316cce18546001b2f1149ed17a4d3900" category="list-text">* 网络 * ：选择 vNet 和子网，是否启用公有 IP 地址，并可选择指定代理配置。</block>
   <block id="90eac3cf24d6ad4fdd59cac1fb153a63" category="list-text">*安全组*：选择是创建新安全组还是选择允许所需入站和出站规则的现有安全组。</block>
   <block id="ffcf64d34f1dcc41900c7060705863c1" category="inline-link-macro">查看Azure的安全组规则</block>
@@ -522,7 +521,6 @@
   <block id="356334a26d74c400a5e0a69f237ba73e" category="paragraph">在直接从BlueXP部署Connector之前、必须具有两组权限：</block>
   <block id="7e1224e2fd0f204a7cd31b8672f1b63d" category="list-text">您需要使用有权从BlueXP启动Connector VM实例的Google帐户部署Connector。</block>
   <block id="1c3efa7cf0b87cbb078fe955b2c587a5" category="inline-link">服务帐户</block>
-  <block id="47ca16329494467c539bde558f0ae632" category="list-text">部署 Connector 时，系统会提示您选择<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> VM 实例。BlueXP从服务帐户中获取代表您创建和管理Cloud Volumes ONTAP 系统等的权限。权限可通过将自定义角色附加到服务帐户来提供。</block>
   <block id="fee2d29ad57ecb4f5309060016b4495c" category="paragraph">下图显示了上面编号 1 和 2 中所述的权限要求：</block>
   <block id="1b33affeaa41a09a9f3a99d38d14376f" category="inline-image-macro">一个概念映像、用于描述用于部署Cloud Volumes ONTAP 的Google和服务帐户的权限要求。</block>
   <block id="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="paragraph"><block ref="61ed3f7479580c6ad0ce86e9e6f3dd8d" category="inline-image-macro-rx" type="image"></block></block>
@@ -539,9 +537,7 @@
   <block id="2846d36d7005f43bc3cc15749f932ff7" category="list-text"><block ref="2846d36d7005f43bc3cc15749f932ff7" category="inline-link-macro-rx"></block></block>
   <block id="4ec920ccbe2fc417ccd7dcd957eb9653" category="inline-link">了解如何在Google Cloud中部署Cloud Volumes ONTAP 并选择项目</block>
   <block id="486db18d2aa67b603506d28b5425dc88" category="list-text"><block ref="486db18d2aa67b603506d28b5425dc88" category="inline-link-rx"></block></block>
-  <block id="894183ce1a3e115b89d0e6b0726cfff2" category="summary">BlueXP帐户为您的组织提供多租户功能、使您能够在隔离的工作空间中组织用户和资源。例如、一组用户可以在其他用户不可见的工作空间中部署和管理Cloud Volumes ONTAP 系统。</block>
   <block id="389368f5d98ef09e3dca047f7f72f270" category="doc">了解有关BlueXP帐户的信息</block>
-  <block id="b9a1d81f39a3e0be85108ee4eee92e56" category="paragraph">BlueXP account_为您的组织提供多租户功能、使您能够在隔离的_workspace中组织用户和资源。例如、一组用户可以在其他用户不可见的工作空间中部署和管理Cloud Volumes ONTAP 系统。</block>
   <block id="684ef065a6596c929baa4364adca2e52" category="paragraph">首次访问BlueXP时、系统会提示您选择或创建帐户。例如、如果您还没有帐户、则会显示以下屏幕：</block>
   <block id="21ad8a394fd878b4f709af241e04c2fc" category="inline-image-macro">BlueXP设置向导的屏幕截图、提示您输入要在其中创建BlueXP的BlueXP帐户。</block>
   <block id="f735901c47be672686b9be997d3bf0d7" category="paragraph"><block ref="f735901c47be672686b9be997d3bf0d7" category="inline-image-macro-rx" type="image"></block></block>
@@ -1239,7 +1235,6 @@
   <block id="d47be244f383106c84a24b1e4ba4fea6" category="paragraph">当BlueXP在Azure中部署Connector虚拟机时、它会启用<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> 在虚拟机上，创建自定义角色并将其分配给虚拟机。此角色为BlueXP提供了管理该Azure订阅中的资源和进程所需的权限。 <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>。</block>
   <block id="825a028e49bfdd88d5c17500e011aaf5" category="inline-image-macro">一个概念映像、显示了BlueXP在Azure帐户和订阅中部署Connector。系统分配的受管身份将被启用、并为Connector虚拟机分配自定义角色。</block>
   <block id="4ba8970a06f2fd9f7ce2b5459745a3f0" category="paragraph"><block ref="4ba8970a06f2fd9f7ce2b5459745a3f0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4b8d6d1554d22a2bda6470094c227037" category="paragraph">默认情况下、在为Cloud Volumes ONTAP 创建新工作环境时、BlueXP会选择以下Azure凭据：</block>
   <block id="98c16c747c940667876d314b6eb47dba" category="inline-image-macro">显示详细信息和凭据页面中的切换帐户选项的屏幕截图(&amp;A)。</block>
   <block id="d640a03c3d2fca2ca36870e7954e48cc" category="paragraph"><block ref="a864416fc969bfbd6c4c8b4ff646cd2f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="61d31e18d80b565c39bc938c02808e6f" category="paragraph">您可以使用初始 Azure 凭据部署所有 Cloud Volumes ONTAP 系统，也可以添加其他凭据。</block>
@@ -1821,7 +1816,6 @@
   <block id="858c852a1a4696d4e56295d4b4b0ea20" category="paragraph">当BlueXP在AWS中启动Connector实例时、它会为此实例创建IAM角色和实例配置文件。此外，它还会附加一个策略，为 Connector 提供管理该 AWS 帐户中资源和进程的权限。 <block ref="9d2ef148313eb953f656b8efd4016e8c" category="inline-link-macro-rx"></block>。</block>
   <block id="87905dffb8ffacc115ce029071ecc843" category="inline-image-macro">一个概念映像、显示了BlueXP在AWS帐户中部署Connector。IAM策略会分配给一个IAM角色、该角色会附加到BlueXP实例。</block>
   <block id="c234f29a81f1d5eb1c1e71c54ce5a0e7" category="paragraph"><block ref="c234f29a81f1d5eb1c1e71c54ce5a0e7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1845774a539e719af2ff230adb01acc9" category="paragraph">默认情况下、在为Cloud Volumes ONTAP 创建新工作环境时、BlueXP会选择以下AWS凭据：</block>
   <block id="e39fac9d22fb901a8fb8b7118de8c4e7" category="paragraph"><block ref="e4d4efd6d9bbb3c296b1c319bd5c65f5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="109a76aa4a30822be3d0a4a6162bbc73" category="paragraph">您可以使用初始 AWS 凭据部署所有 Cloud Volumes ONTAP 系统，也可以添加其他凭据。</block>
   <block id="59cf740f037c70fa5f9d43001aabf6b9" category="section-title">其他 AWS 凭据</block>
@@ -3213,7 +3207,6 @@
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">创建Connector时、需要指定此Connector应驻留的vNet和子网。</block>
   <block id="0b21fb3864d43aad91ca35b2b5d2354d" category="section-title">Azure 区域</block>
   <block id="573514d5de621ecfe56c91e7c665d73d" category="inline-link">Azure 区域对</block>
-  <block id="0e4b0391e50169d97fc505f0c73a94ba" category="paragraph">此连接器应部署在与其管理的 Cloud Volumes ONTAP 系统所在的同一 Azure 区域或中<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 对于 Cloud Volumes ONTAP 系统。此要求可确保在 Cloud Volumes ONTAP 与其关联存储帐户之间使用 Azure 专用链路连接。</block>
   <block id="6882deeb4b60915fc6b7a36d03f329e3" category="inline-link">了解 Cloud Volumes ONTAP 如何使用 Azure 专用链路</block>
   <block id="f09d4eba567a9e2b031517b472055a69" category="paragraph"><block ref="f09d4eba567a9e2b031517b472055a69" category="inline-link-rx"></block></block>
   <block id="d0d67dd335747b3a00234d869cd08267" category="summary">在受限模式下部署Connector、以便使用与BlueXP SaaS层的出站连接有限的BlueXP。要开始使用、请安装Connector、通过访问Connector上运行的用户界面来设置BlueXP、然后提供您先前设置的云权限。</block>
@@ -3413,7 +3406,6 @@
   <block id="36bc52aaebad43ec3e49ed9a0efacd43" category="section-title">添加凭据</block>
   <block id="0fcafd12d45dbcf0e60c3aba44fe49a1" category="paragraph">在为 AWS 帐户提供所需权限后，您可以将该帐户的凭据添加到现有 Connector 。这样，您就可以使用同一个连接器在该帐户中启动 Cloud Volumes ONTAP 系统了。</block>
   <block id="a1418a1fbbbe1aec52c1618b6cc4b381" category="list-text">* 定义凭据 * ：提供可信 IAM 角色的 ARN （ Amazon 资源名称），或者输入 AWS 访问密钥和机密密钥。</block>
-  <block id="1e65c796a2058f2e006fb33cdd7e9879" category="paragraph">要按每小时费率（ PAYGO ）或按年度合同支付 Cloud Volumes ONTAP 费用， AWS 凭据必须与 AWS Marketplace 中的 Cloud Volumes ONTAP 订阅相关联。</block>
   <block id="59c42111c120e2a009a663d366f4914f" category="paragraph">现在，在创建新的工作环境时，您可以从 " 详细信息和凭据 " 页面切换到另一组凭据：</block>
   <block id="21eadec2055a6f0a03fad1207bdeece7" category="inline-image-macro">显示在"详细信息和凭据"页面中选择"切换帐户"后在云提供商帐户之间进行选择的屏幕截图。</block>
   <block id="670a8a47b7b3908f997fce0320ebba4d" category="paragraph"><block ref="516be10b96635b1f3aefce4dcd4540dd" category="inline-image-macro-rx" type="image"></block></block>
@@ -3462,7 +3454,6 @@
   <block id="ba7c13ef3e78a348949ddfd6f17e4f18" category="paragraph">在私有模式下、您可以通过在自己的Linux主机上手动安装Connector在内部或云中安装Connector。</block>
   <block id="fb04864667c4668b6288df7ac7f6f40b" category="paragraph">如果要在Google Cloud中创建Cloud Volumes ONTAP 系统、则Connector必须在Google Cloud中运行、它不能在内部运行。</block>
   <block id="c3d3f783d267d1bd41b2e7f8639a5865" category="section-title">用于日常操作的端点</block>
-  <block id="838ec2871c40a93d892b2ebb5ec4ae58" category="paragraph">Connector会联系以下端点、以便在公共云环境中部署和管理Cloud Volumes ONTAP。</block>
   <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">\https://management.azure.microsoft.scloud
 \https://login.microsoftonline.microsoft.scloud
 \https://blob.core.microsoft.scloud
@@ -3811,4 +3802,19 @@
 
 \https://occmclientinfragov.azurecr.us
 只有Azure政府区域才需要此端点。</block>
+  <block id="297a49f6150dc8dc8d45620c0f09f393" category="list-text">如果要管理其他Google Cloud项目中的资源、请通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限。您需要对每个项目重复此步骤。</block>
+  <block id="1f7d098197ba2def0ffc66c388b2aa6c" category="paragraph">如果为Cloud Volumes ONTAP创建新的工作环境、则BlueXP会默认选择以下AWS凭据：</block>
+  <block id="1c16bd0b2377f4460ae56ecb40a419ae" category="paragraph">请注意、您可以选择与此角色关联的Azure订阅。您选择的每个订阅都提供连接器权限、用于管理该订阅中的资源(例如Cloud Volumes ONTAP)。</block>
+  <block id="55a733edf0d6d526d9ebeda09e38bdd1" category="summary">BlueXP帐户为您的组织提供多租户功能、使您能够在隔离的工作空间中组织用户和资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP系统、而在另一个工作空间中管理不同类型工作环境的其他用户则看不到该工作空间。</block>
+  <block id="e96a7b63d6df3633f05aea7438dd616e" category="paragraph">BlueXP account_为您的组织提供多租户功能、使您能够在隔离的_workspace中组织用户和资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP系统、而在另一个工作空间中管理不同类型工作环境的其他用户则看不到该工作空间。</block>
+  <block id="d90aceadc99dce46d7d593ee18ab0d90" category="paragraph">Connector会与以下端点联系、以管理公有云环境中的资源和流程。</block>
+  <block id="91499b479a6f9fe14de575cded8e2ab6" category="paragraph">如果要管理多个Azure订阅中的资源、则必须将服务主体绑定到其中每个订阅。例如、通过BlueXP、您可以选择要在部署Cloud Volumes ONTAP时使用的订阅。</block>
+  <block id="6258a889f12d08d6da95cf4059f67498" category="paragraph">您应添加要用于BlueXP的每个Azure订阅的ID。</block>
+  <block id="4f700fdc55105ee1225978e0ecbf1046" category="paragraph">如果您使用Cloud Volumes ONTAP、则连接器应部署在与所管理的Cloud Volumes ONTAP系统相同的Azure区域或中<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> 对于 Cloud Volumes ONTAP 系统。此要求可确保在 Cloud Volumes ONTAP 与其关联存储帐户之间使用 Azure 专用链路连接。</block>
+  <block id="ddc3be173496396ad174fa34013f6165" category="list-text">如果要管理其他Azure订阅中的资源、请切换到该订阅、然后重复这些步骤。</block>
+  <block id="89297fbbf3c86991163b7008fe105840" category="paragraph">要按小时费率(PAYGO)或按年度合同支付BlueXP服务费用、AWS凭据必须与AWS Marketplace订阅相关联。</block>
+  <block id="4047ebfdbd8672d8c7471db55440e35a" category="list-text">如果要管理其他订阅中的资源、请切换到该订阅、然后重复这些步骤。</block>
+  <block id="cb4a26e3cea7ec3938d93961d212ef39" category="list-text">如果要管理其他项目中的资源、请通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限。您需要对每个项目重复此步骤。</block>
+  <block id="c063b725387c641804ed10699362a645" category="list-text">部署 Connector 时，系统会提示您选择<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> VM 实例。BlueXP从服务帐户中获得创建和管理Cloud Volumes ONTAP系统、使用BlueXP备份和恢复管理备份等的权限。权限可通过将自定义角色附加到服务帐户来提供。</block>
+  <block id="4196d70b52fef46e6943a70842908897" category="paragraph">如果为Cloud Volumes ONTAP创建新的工作环境、则BlueXP会默认选择以下Azure凭据：</block>
 </blocks>
