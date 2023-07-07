@@ -3034,13 +3034,10 @@
   <block id="5c61dbbb22810fcf5149eb1192885607" category="cell">可以通过电子邮件向帐户用户和其他人发送通知</block>
   <block id="e92861fef775acb8c5a64f8d282a8b80" category="cell">无电子邮件功能</block>
   <block id="d1e2d8530c09fe28c2a817289491bd01" category="section-title">使用通知中心监控活动</block>
-  <block id="1e687a002fd0b9a542bf652069246ebb" category="paragraph">通知可跟踪您在BlueXP中启动的操作的进度、以便您可以验证操作是否成功。您可以通过它们查看当前登录会话期间启动的许多BlueXP操作的状态。目前、并非所有服务都会将信息报告到通知中心。</block>
   <block id="40da6f1400e45d080a97992a6a539894" category="inline-image-macro">通知铃</block>
   <block id="5cf9ecbcae765efe1cb17d1c802e39cb" category="paragraph">您可以通过单击通知铃(<block ref="df7c8a71ca3da4359e40e121f18f87b9" category="inline-image-macro-rx" type="image"></block>）。铃中小气泡的颜色表示处于活动状态的最高级别严重性通知。因此，如果您看到红色气泡，则表示您应查看一条重要通知。</block>
   <block id="d59387ab05a2cbd005866b74628417a0" category="inline-image-macro">显示通知中心中当前通知列表的屏幕截图。</block>
   <block id="e24c5199eee665d8e879dc72dc56c667" category="paragraph"><block ref="e24c5199eee665d8e879dc72dc56c667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6c836fac6db418cb1aa7dbc3dbd8ff62" category="inline-xref">设置电子邮件通知设置</block>
-  <block id="4d45f6ca89e32d46a11c304cf274697c" category="paragraph">此外、您还可以将BlueXP配置为通过电子邮件发送通知、以便即使未登录到系统、您也能了解重要的系统活动。您可以将电子邮件发送给您的BlueXP帐户中的任何用户、也可以发送给需要了解某些类型的系统活动的任何其他收件人。请参见 <block ref="2fb0285882e9333d924eb054161cd903" category="inline-xref-macro-rx"></block> 。</block>
   <block id="2a4be390687f80c7cdf976afca0fe778" category="section-title">通知类型</block>
   <block id="0ebfeb3212b9bb4b152ea82a5877a33b" category="paragraph">通知分为以下几类：</block>
   <block id="9e89e978c220a2a733d027866cb12907" category="cell">通知类型</block>
@@ -3057,15 +3054,12 @@
   <block id="505a83f220c02df2f85c3810cd9ceb38" category="cell">success</block>
   <block id="ae75ef51af35154ca4a9e6d19fb16774" category="cell">操作或进程已成功完成。</block>
   <block id="e457faf451b04c78c6b2c6bc25491ad1" category="section-title">筛选通知</block>
-  <block id="f3ac04608c1c767bc38258edb6feb320" category="paragraph">默认情况下，您将看到所有通知。您可以筛选通知中心中显示的通知，以便仅显示对您重要的通知。您可以按BlueX"服务"和通知"类型"进行筛选。</block>
   <block id="3ad97ba753a3f0d27266b3d174a47648" category="inline-image-macro">显示通知中心中可用的两种筛选器类型的屏幕截图。</block>
   <block id="86a2197cbddea56be1e7cc24be3d4916" category="paragraph"><block ref="86a2197cbddea56be1e7cc24be3d4916" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4815e02c8d3314e19dd0c9f88070f95e" category="paragraph">例如、如果您只想查看BlueXP操作的"错误"和"警告"通知、请选择这些条目、您将只看到这些类型的通知。</block>
   <block id="def7f3eac7eed1dada5cdcd2951ede36" category="section-title">设置电子邮件通知设置</block>
   <block id="f8e2d638417ba643bd67781e67c8ff5f" category="paragraph">您可以通过电子邮件发送特定类型的通知、以便即使未登录到BlueXP、您也能了解重要的系统活动。您可以将电子邮件发送给您的BlueXP帐户中的任何用户、也可以发送给需要了解某些类型的系统活动的任何其他收件人。</block>
-  <block id="46cbe9208ff114439409f262e659f93e" category="list-text">此时、系统会通过电子邮件发送有关以下BlueXP功能和服务的通知：连接器、BlueXP复制和同步、BlueXP备份和恢复、BlueXP数字钱包和BlueXP勒索软件保护。未来版本将添加其他服务。</block>
   <block id="5fd245f2aeee830efb92d081af6a0e22" category="list-text">如果Connector安装在无法访问Internet的站点上、则不支持发送电子邮件通知。</block>
-  <block id="95542c2d2bb8f536e459ea1a4e6e77b7" category="paragraph">默认情况下、BlueXP客户管理员将收到所有"严重"和"建议"通知的电子邮件。默认情况下、所有其他用户和收件人都配置为不接收任何通知电子邮件。</block>
   <block id="f6cf378d25bc2bcaeedbdbd322fec41b" category="paragraph">您必须是帐户管理员才能自定义通知设置。</block>
   <block id="8d7a9434573819ca2918a0be28a97671" category="list-text">从BlueXP菜单栏中、选择*设置&gt;警报和通知设置*。</block>
   <block id="dffb0ae952f619b638efb5dbc37b121a" category="inline-image-macro">显示如何显示警报和通知设置页面的屏幕截图。</block>
@@ -3817,4 +3811,11 @@
   <block id="cb4a26e3cea7ec3938d93961d212ef39" category="list-text">如果要管理其他项目中的资源、请通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限。您需要对每个项目重复此步骤。</block>
   <block id="c063b725387c641804ed10699362a645" category="list-text">部署 Connector 时，系统会提示您选择<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> VM 实例。BlueXP从服务帐户中获得创建和管理Cloud Volumes ONTAP系统、使用BlueXP备份和恢复管理备份等的权限。权限可通过将自定义角色附加到服务帐户来提供。</block>
   <block id="4196d70b52fef46e6943a70842908897" category="paragraph">如果为Cloud Volumes ONTAP创建新的工作环境、则BlueXP会默认选择以下Azure凭据：</block>
+  <block id="9704e328148ed91b7f98eb143244edd7" category="paragraph">通知可跟踪您在BlueXP中启动的操作的进度、以便您可以验证操作是否成功。您可以通过它们查看当前登录会话期间启动的许多BlueXP操作的状态。此时并非所有BlueXP服务都会将信息报告到通知中心。</block>
+  <block id="8efb4a247c34c0ca71ba217009352182" category="inline-xref">设置电子邮件通知设置</block>
+  <block id="5e703ffd4a02b69f95fc98818e5f3919" category="paragraph">您还可以将BlueXP配置为通过电子邮件发送特定类型的通知、以便即使您未登录到系统、也可以获得重要系统活动的通知。您可以将电子邮件发送给您的BlueXP帐户中的任何用户、也可以发送给需要了解某些类型的系统活动的任何其他收件人。请参见操作说明 <block ref="a148e670707e0255b9681ed2a38729bc" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">默认情况下、您将在"通知中心"中看到所有活动通知。您可以筛选您看到的通知、以便仅显示对您重要的通知。您可以按BlueX"服务"和通知"类型"进行筛选。</block>
+  <block id="9a4a8fa1cd4f878ff0d3a810b77cddd2" category="list-text">此时、系统将通过电子邮件发送有关以下BlueXP功能和服务的通知：Connector、BlueXP复制和同步、BlueXP备份和恢复、BlueXP数字钱包和BlueXP勒索软件保护。未来版本将添加其他服务。</block>
+  <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">您在"通知中心"中设置的筛选器并不能确定您将通过电子邮件接收的通知类型。默认情况下、BlueXP客户管理员将收到所有"严重"和"建议"通知的电子邮件。这些通知适用于所有服务-您不能选择仅接收特定服务的通知、例如Connectors或BlueXP备份和恢复。</block>
+  <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">所有其他用户和收件人都配置为不接收任何通知电子邮件、因此您需要为任何其他用户配置通知设置。</block>
 </blocks>
