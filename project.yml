@@ -193,7 +193,7 @@ sidebar:
         url: "/task-viewing-amazon-s3.html"
       - title: 管理您的Azure Blb帐户
         url: "/task-viewing-azure-blob.html"
-      - title: 查看Google Cloud存储分段
+      - title: 管理您的Google云存储分段
         url: "/task-viewing-gcp-storage.html"
   - title: 参考
     entries:

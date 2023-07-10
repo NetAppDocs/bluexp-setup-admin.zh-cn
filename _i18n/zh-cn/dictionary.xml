@@ -1473,20 +1473,8 @@
   <block id="82f74539a8232efa9fe9d44fbb820377" category="doc">查看Google Cloud存储分段</block>
   <block id="e952b1c060b2dc1be5663131351e06a5" category="paragraph">在Google Cloud中安装Connector后、BlueXP可以自动发现有关安装Connector的Google帐户中的Google Cloud存储分段的信息。Google Cloud Storage工作环境已添加到Canvas中、您可以查看此信息。</block>
   <block id="4a5a2cb37f05953f58468c7fed5af846" category="paragraph">您可以查看有关Google Cloud存储分段的详细信息、包括位置、访问状态、存储类、总容量和已用容量等。这些分段可用作BlueXP备份和恢复、BlueXP分层或BlueXP复制和同步操作的目标。</block>
-  <block id="aaaa45300f726e0be12017066c3b12e8" category="list-text">在要查看Google Cloud存储分段的Google帐户中安装Connector。</block>
-  <block id="69e6c31f6140607f08425260f2faecb5" category="list-text">从导航菜单中、选择*存储&gt;画布*。</block>
-  <block id="18fe44f15840f7116c5288c8e5b736da" category="paragraph">之后、您应很快自动看到Google Cloud Storage工作环境。</block>
   <block id="21b1bc909131728ad1b5d3d05c538f6b" category="inline-image-macro">Google Cloud Storage工作环境的屏幕截图。</block>
   <block id="94bd1056e53b5ba66af1269a83d9d853" category="paragraph"><block ref="94bd1056e53b5ba66af1269a83d9d853" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f0574ea9efbf61e3005311c1ed736537" category="list-text">选择工作环境、然后从右窗格中选择一项操作。</block>
-  <block id="dda5d91ac092d5a2808c7b76b6686167" category="inline-image-macro">选择Google Cloud Storage工作环境后显示操作窗格的屏幕截图。此窗格将显示分段总数以及使用Sync服务的操作。</block>
-  <block id="15d37262e72beba7163abfd70b5bfa25" category="paragraph"><block ref="15d37262e72beba7163abfd70b5bfa25" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2d08106578502b2089149e27907c689b" category="list-text">选择*同步数据*可将数据与Google Cloud存储分段同步或与Google Cloud Storage分段同步。</block>
-  <block id="6beafc0ddd3d2d40e91fd1f10beca6f6" category="inline-link">BlueXP复制和同步概述</block>
-  <block id="e0e6f4b8b0641d976b8e099c1fe32756" category="paragraph">有关详细信息，请参见<block ref="fb520091925060688384bbe43ee465fa" category="inline-link-rx"></block></block>
-  <block id="1a2a90dcdbeaa1a29ed61b2e814f7fc6" category="list-text">选择*进入工作环境*可查看有关Google帐户中各个存储分段的详细信息。</block>
-  <block id="b008bc9f769ee3b6c8813b19052b43a6" category="inline-image-macro">显示Google Cloud Storage工作环境详细信息的屏幕截图：分段、容量和位置总数、然后显示每个分段详细信息的表。</block>
-  <block id="14738180b3115b94f504ce48bf25a31a" category="paragraph"><block ref="14738180b3115b94f504ce48bf25a31a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c7c7fe81ff2afbb7f657e592f9871125" category="summary">在受限模式下启动和运行BlueXP后、您可以开始使用受限模式支持的BlueXP服务。</block>
   <block id="d279ef9d3fa427882e45e653bc7b1949" category="doc">下一步可以执行的操作(受限模式)</block>
   <block id="9ed3d93e6149b9255047c4f345ace3ed" category="paragraph">要获得帮助、请参见以下服务的文档：</block>
@@ -3195,7 +3183,6 @@
   <block id="93850b8e1d97181700833dcae4c7e219" category="paragraph"><block ref="93850b8e1d97181700833dcae4c7e219" category="inline-image-macro-rx" type="image"></block></block>
   <block id="54301079e01fc865e928c6fe22deeeef" category="paragraph">您可以查看有关S3存储分段的详细信息、包括区域、访问策略、帐户、总容量和已用容量等。这些分段可用作BlueXP备份和恢复、BlueXP分层或BlueXP复制和同步操作的目标。此外、您还可以使用BlueXP分类来扫描这些分段。</block>
   <block id="1f96aa045f6500e7c58cc5f50ea21ffd" category="inline-link">请访问此处、了解如何使用BlueXP查看、创建和管理S3存储分段</block>
-  <block id="8ca79a150bd523c9a9a82fb5420fee36" category="paragraph">现在、您可以通过新添加的功能创建和编辑S3存储分段。<block ref="c4481f66e0558788424eb34d61e736ff" category="inline-link-rx"></block></block>
   <block id="08533087d95fb07c92ed0773080a65d4" category="doc">设置Azure网络</block>
   <block id="1387f52f9e1a700036780a5bf567fab3" category="section-title">vNet和子网</block>
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">创建Connector时、需要指定此Connector应驻留的vNet和子网。</block>
@@ -3818,4 +3805,8 @@
   <block id="9a4a8fa1cd4f878ff0d3a810b77cddd2" category="list-text">此时、系统将通过电子邮件发送有关以下BlueXP功能和服务的通知：Connector、BlueXP复制和同步、BlueXP备份和恢复、BlueXP数字钱包和BlueXP勒索软件保护。未来版本将添加其他服务。</block>
   <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">您在"通知中心"中设置的筛选器并不能确定您将通过电子邮件接收的通知类型。默认情况下、BlueXP客户管理员将收到所有"严重"和"建议"通知的电子邮件。这些通知适用于所有服务-您不能选择仅接收特定服务的通知、例如Connectors或BlueXP备份和恢复。</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">所有其他用户和收件人都配置为不接收任何通知电子邮件、因此您需要为任何其他用户配置通知设置。</block>
+  <block id="00fba3f8242dff426927884c6521757a" category="paragraph">现在、您可以通过新添加的功能创建和编辑S3存储分段。<block ref="c4481f66e0558788424eb34d61e736ff" category="inline-link-rx"></block>。</block>
+  <block id="238db521ba5110fd4f7c460de28dd0c8" category="inline-link">转到此处、了解如何使用BlueXP查看、创建和管理云存储分段</block>
+  <block id="8bc5e348bcf49d1543e86fd28ce45f86" category="paragraph">现在、您可以使用新增的功能创建和编辑Google Cloud Storage分段。<block ref="640cf64376886268ca971c71c762f644" category="inline-link-rx"></block>。</block>
+  <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">管理您的Google云存储分段</block>
 </blocks>
