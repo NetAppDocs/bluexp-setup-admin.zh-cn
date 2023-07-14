@@ -20,7 +20,9 @@ summary: 直接从基于Web的BlueXP控制台、AWS Marketplace或通过在您�
 ====
 .BlueXP
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * AWS身份验证方法：IAM角色或具有所需权限的IAM用户的访问密钥。
 +
 link:task-set-up-permissions-aws.html["了解如何设置AWS权限"]
@@ -84,7 +86,9 @@ link:reference-ports-aws.html["查看AWS的安全组规则"]。
 --
 .AWS Marketplace
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * 满足网络连接要求的VPC和子网。
 +
 link:task-set-up-networking-aws.html["了解网络连接要求"]。
@@ -94,6 +98,10 @@ link:task-set-up-networking-aws.html["了解网络连接要求"]。
 link:task-set-up-permissions-aws.html["了解如何设置AWS权限"]。
 
 * 为IAM用户订阅和取消订阅AWS Marketplace的权限。
+* 了解实例的CPU和RAM要求。
++
+link:reference-host-requirements-aws.html["查看实例要求"]。
+
 * EC2实例的密钥对。
 
 
@@ -112,10 +120,7 @@ image:screenshot-subscribe-aws.png["屏幕截图显示了 AWS Marketplace 上的
 +
 ** *名称和标记*：输入实例的名称和标记。
 ** *应用程序和操作系统映像*：跳过此部分。已选择连接器AMI。
-** *实例类型*：根据区域可用性、选择支持的实例类型之一(建议使用T3.xlarge)。
-+
-link:reference-host-requirements-aws.html["查看实例要求"]。
-
+** *实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(建议使用T3.x大 容量)。
 ** *密钥对(login)*：选择要用于安全连接到实例的密钥对。
 ** *网络设置*：根据需要编辑网络设置：
 +
@@ -132,9 +137,6 @@ link:reference-ports-aws.html["查看AWS的安全组规则"]。
 
 ** *配置存储*：保留默认存储选项。
 ** *高级详细信息*：在* IAM实例配置文件*下、选择包含Connector所需权限的IAM角色。
-+
-link:task-set-up-permissions-aws.html["了解如何设置AWS权限"]。
-
 ** *摘要*：查看摘要、然后单击*启动实例*。
 
 
@@ -166,7 +168,9 @@ https://_ipaddress_[]
 --
 .手动安装
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * 安装Connector的root权限。
 * 有关代理服务器的详细信息、如果从Connector访问Internet需要代理。
 +

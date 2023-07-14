@@ -28,6 +28,7 @@ _Connector_是在云网络或内部网络中运行的NetApp软件。它会执行
 +
 虽然创建工作环境不需要使用Connector、但需要使用它来创建和管理卷、复制数据以及将FSx for ONTAP 与BlueXP分类和BlueXP复制和同步等服务集成。
 
+* 自动化目录
 * Azure NetApp Files
 +
 虽然设置和管理Azure NetApp Files 不需要使用连接器、但如果要使用BlueXP分类扫描Azure NetApp Files 数据、则需要使用连接器。
@@ -49,6 +50,7 @@ _Connector_是在云网络或内部网络中运行的NetApp软件。它会执行
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["了解有关内部ONTAP 集群的发现和管理选项的更多信息"^]
 
+* 可持续性
 
 
 

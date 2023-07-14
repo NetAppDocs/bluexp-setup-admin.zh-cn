@@ -20,7 +20,9 @@ summary: 直接从基于Web的BlueXP控制台、使用gcloud或在您自己的Li
 ====
 .BlueXP
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * 为Connector VM创建Connector和服务帐户所需的Google Cloud权限。
 +
 link:task-set-up-permissions-google.html["了解如何设置Google Cloud权限"]
@@ -72,7 +74,9 @@ link:reference-ports-gcp.html["Google Cloud中的防火墙规则"]
 --
 .云
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * 为Connector VM创建Connector和服务帐户所需的Google Cloud权限。
 +
 link:task-set-up-permissions-google.html["了解如何设置Google Cloud权限"]
@@ -174,7 +178,9 @@ link:concept-netapp-accounts.html["了解有关BlueXP帐户的信息"]。
 --
 .手动安装
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * 安装Connector的root权限。
 * 有关代理服务器的详细信息、如果从Connector访问Internet需要代理。
 +

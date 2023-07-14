@@ -1,0 +1,11 @@
+= 
+:allow-uri-read: 
+
+
+如果要对Azure中的Connector VM使用公共IP地址、则此IP地址必须使用基本SKU以确保BlueXP使用此公共IP地址。
+
+image:screenshot-azure-sku.png["在Azure中创建新IP地址的屏幕截图、可用于在SKU字段的下选择基本。"]
+
+如果改用标准SKU IP地址、则BlueXP将使用Connector的_private_ IP地址、而不是公共IP。如果用于访问BlueXP控制台的计算机无法访问该专用IP地址、则BlueXP控制台的操作将失败。
+
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azure文档：公共IP SKU"^]

@@ -26,7 +26,9 @@ summary: 在受限模式下部署Connector、以便使用与BlueXP SaaS层的出
 ====
 .AWS商业市场
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * 满足网络连接要求的VPC和子网。
 +
 link:task-prepare-restricted-mode.html["了解网络连接要求"]
@@ -36,6 +38,10 @@ link:task-prepare-restricted-mode.html["了解网络连接要求"]
 link:task-prepare-restricted-mode.html#prepare-cloud-permissions["了解如何设置AWS权限"]
 
 * 为IAM用户订阅和取消订阅AWS Marketplace的权限。
+* 了解实例的CPU和RAM要求。
++
+link:task-prepare-restricted-mode.html#review-host-requirements["查看实例要求"]。
+
 * EC2实例的密钥对。
 
 
@@ -54,23 +60,23 @@ image:screenshot-subscribe-aws.png["屏幕截图显示了 AWS Marketplace 上的
 +
 ** *名称和标记*：输入实例的名称和标记。
 ** *应用程序和操作系统映像*：跳过此部分。已选择连接器AMI。
-** *实例类型*：根据区域可用性、选择支持的实例类型之一(建议使用T3.xlarge)。
-+
-link:task-prepare-restricted-mode.html["查看实例要求"]。
-
+** *实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(建议使用T3.x大 容量)。
 ** *密钥对(login)*：选择要用于安全连接到实例的密钥对。
 ** *网络设置*：根据需要编辑网络设置：
 +
 *** 选择所需的VPC和子网。
 *** 指定实例是否应具有公有 IP地址。
 *** 指定防火墙设置、以便为Connector实例启用所需的连接方法：SSH、HTTP和HTTPS。
++
+对于特定配置、还需要一些规则。
+
++
+link:reference-ports-aws.html["查看AWS的安全组规则"]。
+
 
 
 ** *配置存储*：保留默认存储选项。
 ** *高级详细信息*：在* IAM实例配置文件*下、选择包含Connector所需权限的IAM角色。
-+
-link:task-prepare-restricted-mode.html["了解如何设置AWS权限"]。
-
 ** *摘要*：查看摘要、然后单击*启动实例*。
 
 
@@ -85,7 +91,9 @@ AWS 使用指定的设置启动软件。Connector 实例和软件应在大约五
 --
 .AWS Gov Marketplace
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * 满足网络连接要求的VPC和子网。
 +
 link:task-prepare-restricted-mode.html["了解网络连接要求"]
@@ -137,7 +145,9 @@ AWS 使用指定的设置启动软件。Connector 实例和软件应在大约五
 --
 .Azure Marketplace
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * 满足网络连接要求的vNet和子网。
 +
 link:task-prepare-restricted-mode.html["了解网络连接要求"]
@@ -175,7 +185,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 ** *网络安全组*：Connector需要使用SSH、HTTP和HTTPS进行入站连接。
 +
-link:task-prepare-restricted-mode.html["了解网络连接要求"]。
+link:reference-ports-azure.html["查看Azure的安全组规则"]。
 
 ** *身份*：在*管理*下、选择*启用系统分配的受管身份*。
 +
@@ -195,7 +205,9 @@ Azure 使用指定的设置部署虚拟机。虚拟机和 Connector 软件应在
 --
 .手动安装
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * 安装Connector的root权限。
 * 有关代理服务器的详细信息、如果从Connector访问Internet需要代理。
 +
@@ -268,7 +280,7 @@ chmod +x OnCommandCloudManager-<version>
 
 
 +
--cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。H
+-cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。只有在指定HTTPS代理服务器或代理为截获代理时、才需要此参数。
 
 
 
@@ -359,7 +371,6 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["了解如何�
 为BlueXP提供具有所需权限的IAM用户的AWS访问密钥。
 
 .步骤
-. 确保当前在BlueXP中选择了正确的Connector。
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
 +
 image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
@@ -397,7 +408,7 @@ NOTE: BlueXP操作员是BlueXP策略中提供的默认名称。如果您为角�
 .. 单击 * 选择 * 。
 .. 单击 * 下一步 * 。
 .. 单击 * 审核 + 分配 * 。
-.. 如果要管理其他订阅中的资源、请切换到该订阅、然后重复这些步骤。
+.. 如果要管理其他Azure订阅中的资源、请切换到该订阅、然后重复这些步骤。
 
 
 
@@ -411,7 +422,6 @@ NOTE: BlueXP操作员是BlueXP策略中提供的默认名称。如果您为角�
 为BlueXP提供您先前设置的Azure服务主体的凭据。
 
 .步骤
-. 转至 https://console.bluexp.netapp.com["BlueXP控制台"^] 并登录。
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
 +
 image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]

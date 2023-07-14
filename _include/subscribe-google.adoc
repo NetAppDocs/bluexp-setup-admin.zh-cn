@@ -1,26 +1,6 @@
----
-sidebar: sidebar 
-permalink: task-adding-gcp-accounts.html 
-keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: 您可以通过关联市场订阅并对订阅过程进行故障排除来管理与Connector VM实例关联的Google Cloud凭据。这两项任务都可以确保您可以使用市场订阅来支付BlueXP服务费用。 
----
-= 管理BlueXP的Google Cloud凭据和订阅
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
-
-[role="lead"]
-您可以通过关联市场订阅并对订阅过程进行故障排除来管理与Connector VM实例关联的Google Cloud凭据。这两项任务都可以确保您可以使用市场订阅来支付BlueXP服务费用。
-
-
-
-== 将Marketplace订阅与Google Cloud凭据关联
-
-在Google Cloud中部署Connector时、BlueXP会创建一组与Connector VM实例关联的默认凭据。您可以随时更改与这些凭据关联的 Marketplace 订阅。通过订阅、您可以创建按需购买的Cloud Volumes ONTAP 系统并使用其他BlueXP服务。
 
 .步骤
 . 在BlueXP控制台的右上角、单击设置图标、然后选择*凭据*。
@@ -80,30 +60,6 @@ video::video-subscribing-google-cloud.mp4[width=848,height=480]
 .. 完成此过程后、导航回BlueXP中的凭据页面并选择此新订阅。
 +
 image:screenshot_gcp_associate.gif["订阅分配页面的屏幕截图。"]
-
-
-
-
-
-
-
-== 对Marketplace订阅过程进行故障排除
-
-有时、通过Google Cloud Marketplace订阅BlueXP可能会由于权限不正确或在重定向到BlueXP网站后意外地变得支离破碎。如果发生这种情况，请按照以下步骤完成订阅过程。
-
-.步骤
-. 导航到 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace上的NetApp BlueXP页面"^] 以检查订单的状态。如果页面显示*在提供商上管理*、请向下滚动并选择*管理订单*。
-+
-image:screenshot_gcp_manage_orders.png["订阅后的 Marketplace 页面的屏幕截图。"]
-
-+
-** 如果订单显示绿色复选标记，这是意外的，则使用同一计费帐户的组织中的其他人可能已订阅。如果这是意外情况，或者您需要此订阅的详细信息，请联系您的 NetApp 销售团队。
-+
-image:screenshot_gcp_green_marketplace.png["已接受授权的屏幕截图。"]
-
-** 如果订单显示时钟和 * 待定 * 状态，请返回到 Marketplace 页面并选择 * 在提供商上管理 * 以完成上述流程。
-+
-image:screenshot_gcp_pending_marketplace.png["待定市场授权的屏幕截图。"]
 
 
 

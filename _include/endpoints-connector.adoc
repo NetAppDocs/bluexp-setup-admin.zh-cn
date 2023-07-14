@@ -1,0 +1,87 @@
+= 
+:allow-uri-read: 
+
+
+| AWS服务(amazonaws.com):
+
+* 云形成
+* 弹性计算云（ EC2 ）
+* 身份和访问管理(IAM)
+* 密钥管理服务（ KMS ）
+* 安全令牌服务（ STS ）
+* 简单存储服务 (S3)
+
+
+|管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^]
+
+|\https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net
+
+|以管理Azure公共区域中的资源。
+
+我们可以为您提供
+\https://management.azure.microsoft.scloud
+\https://login.microsoftonline.microsoft.scloud
+\https://blob.core.microsoft.scloud
+\https://core.microsoft.scloud
+
+|以管理Azure IL6区域中的资源。
+
+|\https://management.usgovcloudapi.net
+\https://login.microsoftonline.us
+\https://blob.core.usgovcloudapi.net
+\https://core.usgovcloudapi.net
+
+|以管理Azure政府区域中的资源。
+
+|\https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn
+
+|管理Azure中国地区的资源。
+
+|\https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects
+
+|管理Google Cloud中的资源。
+
+|\https://support.netapp.com |用于获取许可信息并向NetApp支持发送AutoSupport消息。
+
+|\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+|在BlueXP中提供SaaS功能和服务。
+
+
+NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。
+
+|\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+
+|升级Connector及其Docker组件。
+
+|\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+在Azure政府地区不需要此端点。
+
+\https://occmclientinfragov.azurecr.us
+只有Azure政府区域才需要此端点。
+
+|升级Connector及其Docker组件。

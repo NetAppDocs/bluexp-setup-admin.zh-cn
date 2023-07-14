@@ -203,7 +203,7 @@ Azure用户现在具有从BlueXP部署Connector所需的权限。
 .创建Azure Active Directory应用程序以进行基于角色的访问控制
 . 确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。
 +
-有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]。
+有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]
 
 . 从 Azure 门户中，打开 * Azure Active Directory* 服务。
 +
@@ -368,7 +368,7 @@ link:task-provide-permissions-azure.html["了解如何为BlueXP提供这些权�
 .创建Azure Active Directory应用程序以进行基于角色的访问控制
 . 确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。
 +
-有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]。
+有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]
 
 . 从 Azure 门户中，打开 * Azure Active Directory* 服务。
 +
@@ -389,35 +389,80 @@ image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory
 
 
 
-.为应用程序分配自定义角色
-. 从 Azure 门户中，打开 * 订阅 * 服务。
-. 选择订阅。
-. 单击 * 访问控制（ IAM ） > 添加 > 添加角色分配 * 。
-. 在*角色*选项卡中、选择* BlueXP操作员*角色、然后单击*下一步*。
-. 在 * 成员 * 选项卡中，完成以下步骤：
+.将应用程序分配给角色
+. 创建自定义角色：
 +
-.. 保持选中 * 用户，组或服务主体 * 。
-.. 单击 * 选择成员 * 。
+.. 复制的内容 link:reference-permissions-azure.html["Connector的自定义角色权限"] 并将其保存在JSON文件中。
+.. 通过将 Azure 订阅 ID 添加到可分配范围来修改 JSON 文件。
++
+您应该为每个 Azure 订阅添加 ID 、用户将从中创建 Cloud Volumes ONTAP 系统。
+
++
+* 示例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. 使用 JSON 文件在 Azure 中创建自定义角色。
++
+以下步骤介绍如何在 Azure Cloud Shell 中使用 Bash 创建角色。
+
++
+*** start https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 并选择 Bash 环境。
+*** 上传 JSON 文件。
++
+image:screenshot_azure_shell_upload.png["Azure Cloud Shell 的屏幕截图，您可以在其中选择上传文件的选项。"]
+
+*** 使用Azure命令行界面创建自定义角色：
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+现在、您应该拥有一个名为BlueXP操作员的自定义角色、可以将该角色分配给Connector虚拟机。
+
+
+
+
+
+. 将应用程序分配给角色：
++
+.. 从 Azure 门户中，打开 * 订阅 * 服务。
+.. 选择订阅。
+.. 单击 * 访问控制（ IAM ） > 添加 > 添加角色分配 * 。
+.. 在*角色*选项卡中、选择* BlueXP操作员*角色、然后单击*下一步*。
+.. 在 * 成员 * 选项卡中，完成以下步骤：
++
+*** 保持选中 * 用户，组或服务主体 * 。
+*** 单击 * 选择成员 * 。
 +
 image:screenshot-azure-service-principal-role.png["Azure 门户的屏幕截图，显示向应用程序添加角色时的成员选项卡。"]
 
-.. 搜索应用程序的名称。
+*** 搜索应用程序的名称。
 +
 以下是一个示例：
 
 +
 image:screenshot_azure_service_principal_role.png["Azure 门户的屏幕截图，其中显示了 Azure 门户中的添加角色分配表。"]
 
-.. 选择应用程序并单击 * 选择 * 。
-.. 单击 * 下一步 * 。
+*** 选择应用程序并单击 * 选择 * 。
+*** 单击 * 下一步 * 。
 
 
-. 单击 * 审核 + 分配 * 。
+.. 单击 * 审核 + 分配 * 。
 +
 现在，服务主体具有部署 Connector 所需的 Azure 权限。
 
 +
-如果要管理多个Azure订阅中的资源、则必须将服务主体绑定到其中每个订阅。例如、通过BlueXP、您可以选择要在部署Cloud Volumes ONTAP时使用的订阅。
+如果要从多个 Azure 订阅部署 Cloud Volumes ONTAP ，则必须将服务主体绑定到每个订阅。通过BlueXP、您可以选择要在部署Cloud Volumes ONTAP 时使用的订阅。
+
+
 
 
 

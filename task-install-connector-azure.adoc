@@ -20,7 +20,9 @@ summary: 直接从基于Web的BlueXP控制台、Azure Marketplace或通过在您
 ====
 .BlueXP
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * Azure 订阅。
 * 您选择的 Azure 区域中的 vNet 和子网。
 * 有关代理服务器的详细信息、如果您的组织需要代理来处理所有传出Internet流量：
@@ -116,18 +118,15 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 配置虚拟机时，请注意以下事项：
 
 +
-** 此连接器可以对HDD或SSD磁盘执行最佳性能。
-** 选择满足 CPU 和 RAM 要求的 VM 大小。我们建议使用 DS3 v2 。
-+
-link:reference-host-requirements-azure.html["查看虚拟机要求"]。
-
-** 对于网络安全组， Connector 需要使用 SSH ， HTTP 和 HTTPS 进行入站连接。对于特定配置、还需要一些规则。
+** *虚拟机大小*：选择满足CPU和RAM要求的虚拟机大小。我们建议使用 DS3 v2 。
+** *磁盘*：此连接器可以对HDD或SSD磁盘执行最佳性能。
+** *网络安全组*：Connector需要使用SSH、HTTP和HTTPS进行入站连接。
 +
 link:reference-ports-azure.html["查看Azure的安全组规则"]。
 
-** 在*管理*下、通过选择*启用*系统分配的托管身份*来为Connector VM启用。
+** *身份*：在*管理*下、选择*启用系统分配的受管身份*。
 +
-此设置非常重要，因为托管身份允许 Connector 虚拟机在不提供任何凭据的情况下向 Azure Active Directory 标识自己。完成后、您需要将创建的自定义角色分配给 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["详细了解 Azure 资源的托管身份"^]。
+此设置非常重要，因为托管身份允许 Connector 虚拟机在不提供任何凭据的情况下向 Azure Active Directory 标识自己。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["详细了解 Azure 资源的托管身份"^]。
 
 
 
@@ -160,7 +159,9 @@ link:task-provide-permissions-azure.html["为BlueXP提供您先前设置的权�
 --
 .手动安装
 --
-.您需要的内容
+.开始之前
+您应具备以下条件：
+
 * 安装Connector的root权限。
 * 有关代理服务器的详细信息、如果从Connector访问Internet需要代理。
 +

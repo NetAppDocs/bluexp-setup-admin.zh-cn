@@ -1,0 +1,40 @@
+= 
+:allow-uri-read: 
+
+
+.步骤
+. 转至 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP页面"^]
+. 在 Marketplace 页面上，单击 * 继续订阅 * ，然后单击 * 继续配置 * 。
++
+image:screenshot-subscribe-aws.png["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
+
+. 更改任何默认选项，然后单击 * 继续启动 * 。
+. 在 * 选择操作 * 下，选择 * 通过 EC2 启动 * ，然后单击 * 启动 * 。
++
+以下步骤介绍了如何从EC2控制台启动实例、因为控制台允许您将IAM角色附加到Connector实例。使用 * 从网站启动 * 操作无法实现这一点。
+
+. 按照提示配置和部署实例：
++
+** *名称和标记*：输入实例的名称和标记。
+** *应用程序和操作系统映像*：跳过此部分。已选择连接器AMI。
+** *实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(建议使用T3.x大 容量)。
+** *密钥对(login)*：选择要用于安全连接到实例的密钥对。
+** *网络设置*：根据需要编辑网络设置：
++
+*** 选择所需的VPC和子网。
+*** 指定实例是否应具有公有 IP地址。
+*** 指定防火墙设置、以便为Connector实例启用所需的连接方法：SSH、HTTP和HTTPS。
++
+对于特定配置、还需要一些规则。
+
++
+link:reference-ports-aws.html["查看AWS的安全组规则"]。
+
+
+
+** *配置存储*：保留默认存储选项。
+** *高级详细信息*：在* IAM实例配置文件*下、选择包含Connector所需权限的IAM角色。
+** *摘要*：查看摘要、然后单击*启动实例*。
+
+
+

@@ -1,67 +1,7 @@
----
-sidebar: sidebar 
-permalink: task-set-up-permissions-on-prem.html 
-keywords: set up permissions, cloud permissions, aws permissions, azure permissions, on prem permissions, connector permissions 
-summary: 如果要将AWS或Azure中的BlueXP服务与内部连接器结合使用、则需要在云提供商中设置权限、以便在安装此连接器后将凭据添加到其中。 
----
-= 为内部部署设置云权限
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
-[role="lead"]
-如果要将AWS或Azure中的BlueXP服务与内部部署的Connector结合使用、则需要在云提供程序中设置权限、以便可以在安装Connector后将凭据添加到Connector。
-
-
-TIP: 为什么不选择Google Cloud？如果在您的内部安装了Connector、则它无法在Google Cloud中管理您的资源。必须在Google Cloud中安装Connector、才能管理驻留在其中的任何资源。
-
-[role="tabbed-block"]
-====
-.AWS
---
-在内部安装Connector时、您需要通过为具有所需权限的IAM用户添加访问密钥来为BlueXP提供AWS权限。
-
-如果Connector安装在内部、则必须使用此身份验证方法。您不能使用IAM角色。
-
-.步骤
-. 登录到AWS控制台并导航到IAM服务。
-. 创建策略：
-+
-.. 单击*策略>创建策略*。
-.. 选择*。JSON*、然后复制并粘贴的内容 link:reference-permissions-aws.html["Connector的IAM策略"]。
-.. 完成其余步骤以创建策略。
-+
-根据您计划使用的BlueXP服务、您可能需要创建第二个策略。
-
-+
-对于标准区域、权限会分布在两个策略中。由于AWS中受管策略的字符大小上限、因此需要使用两个策略。 link:reference-permissions-aws.html["详细了解Connector的IAM策略"]。
-
-
-
-. 将策略附加到IAM用户。
-+
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 文档：创建 IAM 角色"^]
-** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文档：添加和删除 IAM 策略"^]
-
-
-. 确保用户具有可在安装Connector后添加到BlueXP的访问密钥。
-
-
-.结果
-现在、您应该拥有具有所需权限的IAM用户的访问密钥。安装Connector后、您需要将这些凭据与BlueXP中的Connector相关联。
-
-link:task-provide-permissions-on-prem.html["了解如何为BlueXP提供这些权限"]。
-
---
-.Azure 酒店
---
-在内部安装Connector时、您需要通过在Azure Active Directory中设置服务主体并获取BlueXP所需的Azure凭据来为BlueXP提供Azure权限。
-
-.创建Azure Active Directory应用程序以进行基于角色的访问控制
 . 确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。
 +
 有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]
@@ -85,7 +25,6 @@ image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory
 
 
 
-.将应用程序分配给角色
 . 创建自定义角色：
 +
 .. 复制的内容 link:reference-permissions-azure.html["Connector的自定义角色权限"] 并将其保存在JSON文件中。
@@ -162,7 +101,6 @@ image:screenshot_azure_service_principal_role.png["Azure 门户的屏幕截图�
 
 
 
-.添加 Windows Azure 服务管理 API 权限
 . 在 * Azure Active Directory* 服务中，单击 * 应用程序注册 * 并选择应用程序。
 . 单击 * API 权限 > 添加权限 * 。
 . 在 * Microsoft APIs* 下，选择 * Azure Service Management* 。
@@ -175,7 +113,6 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure 门户的屏幕截图，
 
 
 
-.获取应用程序的应用程序ID和目录ID
 . 在 * Azure Active Directory* 服务中，单击 * 应用程序注册 * 并选择应用程序。
 . 复制 * 应用程序（客户端） ID* 和 * 目录（租户） ID* 。
 +
@@ -186,7 +123,6 @@ image:screenshot_azure_app_ids.gif["显示 Azure Active Directory 中某个应�
 
 
 
-.创建客户端密钥
 . 打开 * Azure Active Directory* 服务。
 . 单击 * 应用程序注册 * 并选择您的应用程序。
 . 单击 * 证书和密码 > 新客户端密钥 * 。
@@ -200,11 +136,3 @@ image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中�
 您现在拥有一个客户端密钥、BlueXP可以使用它向Azure AD进行身份验证。
 
 
-
-.结果
-此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。安装Connector后、您需要将这些凭据与BlueXP中的Connector相关联。
-
-link:task-provide-permissions-on-prem.html["了解如何为BlueXP提供这些权限"]。
-
---
-====

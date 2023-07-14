@@ -46,15 +46,15 @@ link:reference-networking-saas-console.html["从BlueXP控制台查看已联系�
 
 === 在手动安装期间访问的端点
 
-如果您计划在自己的Linux主机上手动安装Connector、则Connector安装程序需要在安装过程中访问以下URL：
+在您自己的Linux主机上手动安装Connector时、Connector安装程序需要在安装过程中访问以下URL：
 
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
 
 
 主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。
@@ -65,12 +65,13 @@ link:reference-networking-saas-console.html["从BlueXP控制台查看已联系�
 
 Connector需要通过出站Internet访问与以下端点联系、以便管理公共云环境中的资源和流程、以实现日常运营。
 
-[cols="2*"]
+[cols="2a,1a"]
 |===
 | 端点 | 目的 
 
 
-| \https://www.googleapis.com/compute/v1/
+ a| 
+\https://www.googleapis.com/compute/v1/
 \https://compute.googleapis.com/compute/v1
 \https://cloudresourcemanager.googleapis.com/v1/projects
 \https://www.googleapis.com/compute/beta
@@ -78,10 +79,17 @@ Connector需要通过出站Internet访问与以下端点联系、以便管理公
 \https://www.googleapis.com/storage/v1
 \https://iam.googleapis.com/v1
 \https://cloudkms.googleapis.com/v1
-\https://www.googleapis.com/deploymentmanager/v2/projects | 在Google Cloud中管理资源。 
+\https://www.googleapis.com/deploymentmanager/v2/projects
+ a| 
+在Google Cloud中管理资源。
 
 
-| \https://support.netapp.com | 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。 
+
+ a| 
+\https://support.netapp.com
+ a| 
+获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。
+
 
 
  a| 
@@ -100,9 +108,13 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io
+ a| 
+\https://*.blob.core.windows.net
 
-\https://*.blob.core.windows.net | 升级 Connector 及其 Docker 组件。 
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+升级 Connector 及其 Docker 组件。
+
 |===
 
 
@@ -115,15 +127,20 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 * HTTPS证书
 
 
+您需要在安装期间提供此信息。
+
 
 
 == 端口
 
-没有传入到连接器的流量、除非您启动该流量、或者该连接器用作AutoSupport 消息的代理。
+除非您启动连接器或将连接器用作代理将AutoSupport消息从Cloud Volumes ONTAP发送到NetApp支持、否则不会有传入连接器的流量。
 
 * 通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。
 * 只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。
-* 如果您在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
+* 如果您在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。
++
+如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
+
 
 
 

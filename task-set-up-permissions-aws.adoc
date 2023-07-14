@@ -55,7 +55,7 @@ TIP: 在BlueXP创建Connector时、它会将一组新权限应用于Connector实
 . 单击*。JSON*。
 . 复制并粘贴以下策略：
 +
-请注意、此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。 link:reference-permissions-aws.html["连接器实例所需的查看权限"]。
+请注意、此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。 link:reference-permissions-aws.html["连接器实例本身所需的查看权限"]。
 
 +
 [source, json]
@@ -163,27 +163,25 @@ TIP: 在BlueXP创建Connector时、它会将一组新权限应用于Connector实
 
 == 在从AWS Marketplace部署时设置Connector的权限
 
-在AWS中创建IAM策略并将其附加到IAM角色。从AWS Marketplace创建Connector时、系统将提示您选择此IAM角色。
+要为市场部署做准备、请在AWS中创建IAM策略并将其附加到IAM角色。从AWS Marketplace创建Connector时、系统将提示您选择此IAM角色。
 
 .步骤
-. 从IAM控制台中、创建策略：
+. 登录到AWS控制台并导航到IAM服务。
+. 创建策略：
 +
 .. 单击*策略>创建策略*。
 .. 选择*。JSON*、然后复制并粘贴的内容 link:reference-permissions-aws.html["Connector的IAM策略"]。
 .. 完成其余步骤以创建策略。
 +
-根据您计划使用的BlueXP服务、您可能需要创建第二个策略。
-
-+
-对于标准区域、权限会分布在两个策略中。由于AWS中受管策略的字符大小上限、因此需要使用两个策略。
+根据您计划使用的BlueXP服务、您可能需要创建第二个策略。对于标准区域、权限会分布在两个策略中。由于AWS中受管策略的字符大小上限、因此需要使用两个策略。 link:reference-permissions-aws.html["详细了解Connector的IAM策略"]。
 
 
 
-. 返回IAM控制台、创建IAM角色：
+. 创建IAM角色：
 +
 .. 单击*角色>创建角色*。
 .. 选择* AWS服务> EC2*。
-.. 通过附加上一步创建的策略来添加权限。
+.. 通过附加刚刚创建的策略来添加权限。
 .. 完成其余步骤以创建角色。
 
 
@@ -196,7 +194,7 @@ TIP: 在BlueXP创建Connector时、它会将一组新权限应用于Connector实
 
 == 设置手动安装后要分配的权限
 
-如果您在AWS的自有Linux主机上手动安装Connector软件、则可以通过以下方式提供权限：
+如果您计划在AWS中您自己的Linux主机上手动安装Connector软件、则可以通过以下方式提供权限：
 
 * 选项1：创建IAM策略并将这些策略附加到可以与EC2实例关联的IAM角色。
 * 选项2：为BlueXP提供具有所需权限的IAM用户的AWS访问密钥。
@@ -207,24 +205,22 @@ TIP: 在BlueXP创建Connector时、它会将一组新权限应用于Connector实
 .IAM角色
 --
 .步骤
-. 从IAM控制台中、创建策略：
+. 登录到AWS控制台并导航到IAM服务。
+. 创建策略：
 +
 .. 单击*策略>创建策略*。
 .. 选择*。JSON*、然后复制并粘贴的内容 link:reference-permissions-aws.html["Connector的IAM策略"]。
 .. 完成其余步骤以创建策略。
 +
-根据您计划使用的BlueXP服务、您可能需要创建第二个策略。
-
-+
-对于标准区域、权限会分布在两个策略中。由于AWS中受管策略的字符大小上限、因此需要使用两个策略。 link:reference-permissions-aws.html["详细了解Connector的IAM策略"]。
+根据您计划使用的BlueXP服务、您可能需要创建第二个策略。对于标准区域、权限会分布在两个策略中。由于AWS中受管策略的字符大小上限、因此需要使用两个策略。 link:reference-permissions-aws.html["详细了解Connector的IAM策略"]。
 
 
 
-. 返回IAM控制台、创建IAM角色：
+. 创建IAM角色：
 +
 .. 单击*角色>创建角色*。
 .. 选择* AWS服务> EC2*。
-.. 通过附加上一步创建的策略来添加权限。
+.. 通过附加刚刚创建的策略来添加权限。
 .. 完成其余步骤以创建角色。
 
 
@@ -237,7 +233,8 @@ TIP: 在BlueXP创建Connector时、它会将一组新权限应用于Connector实
 .AWS访问密钥
 --
 .步骤
-. 从IAM控制台中、创建策略：
+. 登录到AWS控制台并导航到IAM服务。
+. 创建策略：
 +
 .. 单击*策略>创建策略*。
 .. 选择*。JSON*、然后复制并粘贴的内容 link:reference-permissions-aws.html["Connector的IAM策略"]。

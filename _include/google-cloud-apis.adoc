@@ -1,0 +1,14 @@
+= 
+:allow-uri-read: 
+
+
+* Cloud Deployment Manager V2 API
+* 云日志记录 API
+* Cloud Resource Manager API
+* 计算引擎 API
+* 身份和访问管理（ IAM ） API
+* 云密钥管理服务(KMS) API
++
+(仅当您计划将BlueXP备份和恢复与客户管理的加密密钥(CMDK)结合使用时才需要)
+
+

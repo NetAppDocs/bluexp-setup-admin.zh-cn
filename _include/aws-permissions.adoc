@@ -1,0 +1,32 @@
+= 
+:allow-uri-read: 
+
+
+. 登录到AWS控制台并导航到IAM服务。
+. 创建策略：
++
+.. 单击*策略>创建策略*。
+.. 选择*。JSON*、然后复制并粘贴的内容 link:reference-permissions-aws.html["Connector的IAM策略"]。
+.. 完成其余步骤以创建策略。
+
+
+
+
+. 创建IAM角色：
++
+.. 单击*角色>创建角色*。
+.. 选择* AWS服务> EC2*。
+.. 通过附加刚刚创建的策略来添加权限。
+.. 完成其余步骤以创建角色。
+
+
+
+
+. 将策略附加到IAM用户。
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["AWS 文档：创建 IAM 角色"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["AWS 文档：添加和删除 IAM 策略"^]
+
+
+. 确保用户具有可在安装Connector后添加到BlueXP的访问密钥。
+

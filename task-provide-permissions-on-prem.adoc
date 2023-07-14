@@ -42,7 +42,9 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 
 
 .结果
-现在、BlueXP拥有代表您在AWS中执行操作所需的权限。现在、您可以转到 https://console.bluexp.netapp.com["BlueXP控制台"^] 开始将Connector与BlueXP结合使用。
+现在、BlueXP拥有代表您在AWS中执行操作所需的权限。
+
+现在、您可以转到 https://console.bluexp.netapp.com["BlueXP控制台"^] 开始将Connector与BlueXP结合使用。
 
 --
 .Azure 酒店
