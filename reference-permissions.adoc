@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions.html 
 keywords: permissions, actions 
-summary: 要使用BlueXP中的功能和服务、您需要提供权限、以便BlueXP能够在您的云环境中执行操作。使用此页面上的链接快速访问BlueXP中所需的权限。 
+summary: 要使用BlueXP功能和服务、您需要提供权限、以便BlueXP可以在云环境中执行操作。使用此页面上的链接可根据您的目标快速访问所需的权限。 
 ---
 = BlueXP的权限摘要
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 要使用BlueXP中的功能和服务、您需要提供权限、以便Bl
 
 
 [role="lead"]
-要使用BlueXP中的功能和服务、您需要提供权限、以便BlueXP能够在您的云环境中执行操作。使用此页面上的链接可根据您的目标快速访问所需的权限。
+要使用BlueXP功能和服务、您需要提供权限、以便BlueXP可以在云环境中执行操作。使用此页面上的链接可根据您的目标快速访问所需的权限。
 
 
 
@@ -41,13 +41,7 @@ summary: 要使用BlueXP中的功能和服务、您需要提供权限、以便Bl
 | 将内部ONTAP集群备份到Amazon S3 | 激活ONTAP卷上的备份时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["为备份设置S3权限"^] 
 
 
-| 将内部ONTAP集群备份到StorageGRID | 当您准备StorageGRID作为ONTAP集群的备份目标时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["准备StorageGRID作为备份目标"^] 
-
-
-| 将内部ONTAP集群分层到AWS | 在启用BlueXP分层到AWS时、此向导会提示您输入访问密钥和机密密钥。这些凭据将传递到ONTAP 集群、以便ONTAP 可以将数据分层到S3存储分段。 | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["设置用于层的S3权限"^] 
-
-
-| 将内部ONTAP集群分层到StorageGRID | 在将BlueXP分层设置为StorageGRID时、您需要为BlueXP分层提供S3访问密钥和机密密钥。BlueXP分层使用密钥访问您的存储分段。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["准备向StorageGRID进行层"^] 
+| 将内部ONTAP集群分层到Amazon S3 | 在启用BlueXP分层到AWS时、此向导会提示您输入访问密钥和机密密钥。这些凭据将传递到ONTAP 集群、以便ONTAP 可以将数据分层到S3存储分段。 | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["设置用于层的S3权限"^] 
 |===
 
 
@@ -102,4 +96,18 @@ link:reference-permissions-azure.html["Connector 的 Azure 权限"]
 
 
 | 将内部ONTAP集群备份到Google Cloud | 使用BlueXP备份和恢复来备份内置ONTAP集群时、您需要向连接器添加权限、才能使用"搜索和还原"功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["搜索和恢复功能的权限()"^] 
+|===
+
+
+== StorageGRID权限
+
+[cols="25,60,40"]
+|===
+| 目的 | Description | 链接。 
+
+
+| 将内部ONTAP集群备份到StorageGRID | 当您准备StorageGRID作为ONTAP集群的备份目标时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["准备StorageGRID作为备份目标"^] 
+
+
+| 将内部ONTAP集群分层到StorageGRID | 在将BlueXP分层设置为StorageGRID时、您需要为BlueXP分层提供S3访问密钥和机密密钥。BlueXP分层使用密钥访问您的存储分段。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["准备向StorageGRID进行层"^] 
 |===
