@@ -36,6 +36,18 @@ summary: 要使用BlueXP中的功能和服务、您需要提供权限、以便Bl
 
 
 | Cloud Volumes ONTAP 操作 | 必须将IAM角色附加到AWS中的每个Cloud Volumes ONTAP 节点。HA调解器也是如此。默认选项是让BlueXP为您创建IAM角色、但您可以使用自己的角色。 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["了解如何自己设置IAM角色"^] 
+
+
+| 将内部ONTAP集群备份到Amazon S3 | 激活ONTAP卷上的备份时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["为备份设置S3权限"^] 
+
+
+| 将内部ONTAP集群备份到StorageGRID | 当您准备StorageGRID作为ONTAP集群的备份目标时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["准备StorageGRID作为备份目标"^] 
+
+
+| 将内部ONTAP集群分层到AWS | 在启用BlueXP分层到AWS时、此向导会提示您输入访问密钥和机密密钥。这些凭据将传递到ONTAP 集群、以便ONTAP 可以将数据分层到S3存储分段。 | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["设置用于层的S3权限"^] 
+
+
+| 将内部ONTAP集群分层到StorageGRID | 在将BlueXP分层设置为StorageGRID时、您需要为BlueXP分层提供S3访问密钥和机密密钥。BlueXP分层使用密钥访问您的存储分段。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["准备向StorageGRID进行层"^] 
 |===
 
 
@@ -74,4 +86,20 @@ link:reference-permissions-azure.html["Connector 的 Azure 权限"]
 | 连接器操作 | Connector VM实例的服务帐户必须具有执行日常操作的特定权限。在从BlueXP部署服务帐户时、您需要将其与Connector相关联。
 
 此外、您还需要确保在后续版本中添加新权限时策略是最新的。 | link:reference-permissions-gcp.html["适用于 Connector 的 Google Cloud 权限"] 
+
+
+| 将 Cloud Volumes ONTAP 备份到 Google Cloud  a| 
+在以下情况下、使用BlueXP备份和恢复来备份Cloud Volumes ONTAP时、您需要向连接器添加权限：
+
+* 您希望使用"搜索和还原"功能
+* 您希望使用客户管理的加密密钥(CMDK)
+
+ a| 
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#verify-or-add-permissions-to-the-connector["搜索和恢复功能的权限()"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#required-information-for-using-customer-managed-encryption-keys-cmek["CMACK的权限"^]
+
+
+
+
+| 将内部ONTAP集群备份到Google Cloud | 使用BlueXP备份和恢复来备份内置ONTAP集群时、您需要向连接器添加权限、才能使用"搜索和还原"功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["搜索和恢复功能的权限()"^] 
 |===

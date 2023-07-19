@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reference-networking-saas-console.html 
-keywords: networking, urls, endpoints, web browser, console 
-summary: 当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它会与多个端点联系以完成数据管理任务。运行Web浏览器的计算机必须连接到这些端点。 
+keywords: networking, urls, endpoints, web browser, console, network, set up networking 
+summary: 开始使用BlueXP时、请确保您的网络允许从BlueXP控制台访问特定端点。根据您计划如何使用BlueXP、您可能还需要为Connector和特定BlueXP服务设置网络连接。 
 ---
-= 为用户访问BlueXP控制台准备网络连接
+= 准备网络连接
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,12 @@ summary: 当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它�
 
 
 [role="lead"]
+开始使用BlueXP时、请确保您的网络允许从BlueXP控制台访问特定端点。根据您计划如何使用BlueXP、您可能还需要为Connector和特定BlueXP服务设置网络连接。
+
+
+
+== 为用户访问BlueXP控制台准备网络连接
+
 当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它会与多个端点联系以完成数据管理任务。运行Web浏览器的计算机必须连接到这些端点。
 
 [cols="2*"]
@@ -67,10 +73,24 @@ AWS 服务（ AmazonAWS.com ）：
 
 | \https://widget.intercom.io | 用于与 NetApp 云专家交流的产品内聊天。 
 |===
-.相关链接
-* link:task-prepare-restricted-mode.html#prepare-networking-for-user-access-to-bluexp-console["准备网络以供用户访问BlueXP控制台(受限模式)"]
-* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector["Connector在AWS中连接的端点(标准模式)"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector["Connector在Azure中联系的端点(标准模式)"]
-* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector["Connector在Google Cloud中联系的端点(标准模式)"]
-* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["在手动安装连接器(标准模式)期间连接的端点"]
+除了这些端点之外、您还需要确保Connector可以通过出站Internet访问来联系特定端点以进行日常操作。您可以通过以下下一节中的链接找到这些端点的列表。
 
+
+
+== 为连接器准备网络连接
+
+如何为Connector准备网络取决于您计划将Connector安装在何处、可以安装在云中、也可以安装在内部环境中。有关连接器网络连接要求的详细信息、请参阅以下页面：
+
+* link:task-set-up-networking-aws.html["设置AWS网络"]
+* link:task-set-up-networking-azure.html["设置Azure网络"]
+* link:task-set-up-networking-google.html["设置Google Cloud网络"]
+* link:task-set-up-networking-on-prem.html["设置内部网络"]
+
+
+
+
+== 为BlueXP服务准备网络连接
+
+开始使用BlueXP时、您应确保满足计划使用的BlueXP服务的网络连接要求。有关详细信息、请参见每项服务的文档。
+
+https://docs.netapp.com/us-en/bluexp-family/["BlueXP文档"^]

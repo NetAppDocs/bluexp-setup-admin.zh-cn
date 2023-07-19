@@ -237,7 +237,7 @@ image:diagram-private-mode-onprem.png["一个概念图像、显示了一个内�
 
 BlueXP在专用模式下的工作原理如下：
 
-出站通信:: 不需要出站连接。所有软件包、依赖项和基本组件均随Connector打包、并从本地计算机提供服务。只有在部署Cloud Volumes ONTAP 时、才需要连接到云提供商的公共可用资源。
+出站通信:: 不需要与BlueXP SaaS层建立出站连接。所有软件包、依赖项和基本组件均随Connector打包、并从本地计算机提供服务。只有在部署Cloud Volumes ONTAP 时、才需要连接到云提供商的公共可用资源。
 支持的连接器位置:: 在私有模式下、云或内部支持Connector。
 连接器安装:: 您自己的Linux主机支持在云端或内部环境中手动安装Connector。
 连接器升级:: 您需要手动升级Connector软件。连接器软件会按未定义的时间间隔发布到NetApp 支持站点。

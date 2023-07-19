@@ -137,6 +137,9 @@ image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory
 .步骤
 . 创建自定义角色：
 +
+请注意、您可以使用Azure门户、Azure PowerShell、Azure命令行界面或REST API创建Azure自定义角色。以下步骤显示了如何使用Azure命令行界面创建角色。如果您希望使用其他方法、请参见 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure 文档"^]
+
++
 .. 复制的内容 link:reference-permissions-azure.html["Connector的自定义角色权限"] 并将其保存在JSON文件中。
 .. 通过将 Azure 订阅 ID 添加到可分配范围来修改 JSON 文件。
 +

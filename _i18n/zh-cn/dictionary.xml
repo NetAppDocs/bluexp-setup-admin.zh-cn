@@ -612,16 +612,6 @@
   <block id="abc66ca669cfbd9be590874c67e8d7ef" category="cell">\https://widget.intercom.io</block>
   <block id="30fe214f0e8ecaf9b895a0137cad8ce9" category="cell">用于与 NetApp 云专家交流的产品内聊天。</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">相关链接</block>
-  <block id="bfb1a8284652de834f7e5f10d70d1b28" category="inline-link-macro">准备网络以供用户访问BlueXP控制台(受限模式)</block>
-  <block id="bbeb91503e087c169e5b9723b8e20883" category="list-text"><block ref="bbeb91503e087c169e5b9723b8e20883" category="inline-link-macro-rx"></block></block>
-  <block id="2860cec66f88d15f252631c132ac68ce" category="inline-link-macro">Connector在AWS中连接的端点(标准模式)</block>
-  <block id="4904eb58ec6f09d17bea1bcb4209ac4b" category="list-text"><block ref="4904eb58ec6f09d17bea1bcb4209ac4b" category="inline-link-macro-rx"></block></block>
-  <block id="f30c2ab09bb92e952f9dc522c1d59a4b" category="inline-link-macro">Connector在Azure中联系的端点(标准模式)</block>
-  <block id="1a989b3502c194d5e9de1168533c7d28" category="list-text"><block ref="1a989b3502c194d5e9de1168533c7d28" category="inline-link-macro-rx"></block></block>
-  <block id="51592248285ea432f62366d3bb873cd2" category="inline-link-macro">Connector在Google Cloud中联系的端点(标准模式)</block>
-  <block id="ef12cf012477b5ad02d81be8ada8b95c" category="list-text"><block ref="ef12cf012477b5ad02d81be8ada8b95c" category="inline-link-macro-rx"></block></block>
-  <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">在手动安装连接器(标准模式)期间连接的端点</block>
-  <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
   <block id="96b84799107df797728622ab026d748b" category="summary">连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。如果您计划手动安装Connector、则应确保主机满足这些要求。</block>
   <block id="d5512feab068baeeddb3ea0cf10f8cca" category="doc">查看AWS安装的Connector主机要求</block>
   <block id="512bfa3bd93d6398b4e5010a77b6b397" category="paragraph">从BlueXP或AWS Marketplace部署Connector时、此映像包含所需的操作系统和软件组件。</block>
@@ -1582,7 +1572,6 @@
   <block id="b9ddada4de32510796065dc8e8165711" category="list-text">S3：PutBucketAcl</block>
   <block id="e24d90c482d00361a495cd937be3bb7b" category="list-text">S3 ： AbortMultipartUpload</block>
   <block id="9c6f56f3012c2178f15d4346495a0a67" category="list-text">S3 ： ListMultipartUploadPart</block>
-  <block id="7cd7eca4bb03196079ee9a9bde3115be" category="list-text">Athena：StartQueryExecutionc</block>
   <block id="95c87da99fc1ee2016d0e9c8cb02409d" category="list-text">Athena：GetQueryResults</block>
   <block id="f0fba07e47b7e372e7ac0e365ea7027a" category="list-text">Athena：GetQueryExecution</block>
   <block id="0c6b0369ea554dd3ec72e592055d373a" category="list-text">Athena：StopQueryExecution</block>
@@ -3491,7 +3480,6 @@
   <block id="abe210b497cdf1c7a95420fde5e0a084" category="inline-image-macro">一个概念图像、显示了一个内部数据中心、其中运行了一个Connector、并提供了对基于Web的控制台和BlueXP数据服务的访问权限、同时管理了内部数据中心中的AFF 集群。</block>
   <block id="f93e5962b5e90d7eb1d0880c090f849c" category="paragraph"><block ref="f93e5962b5e90d7eb1d0880c090f849c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="310027a7e917a90953e50ed1339f3406" category="paragraph">BlueXP在专用模式下的工作原理如下：</block>
-  <block id="a5bf6d8e8d31bd0e05715d6710d5cf96" category="list-text">不需要出站连接。所有软件包、依赖项和基本组件均随Connector打包、并从本地计算机提供服务。只有在部署Cloud Volumes ONTAP 时、才需要连接到云提供商的公共可用资源。</block>
   <block id="f3c1a94d2912b274af9305a55f3a5898" category="list-text">在私有模式下、云或内部支持Connector。</block>
   <block id="353a8aa5f642372473dec3b281845de2" category="list-text">您自己的Linux主机支持在云端或内部环境中手动安装Connector。</block>
   <block id="7de085033718a90f09298783df66d7f7" category="list-text">您需要手动升级Connector软件。连接器软件会按未定义的时间间隔发布到NetApp 支持站点。</block>
@@ -3639,7 +3627,6 @@
   <block id="9b945efebb006547a94415eadaa12921" category="sidebar">—帐户</block>
   <block id="7e99ea34b714387479c29a20b4a89752" category="sidebar">开始使用标准模式</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入门</block>
-  <block id="b6eaf46c3af8004a4733f11af5b7b7a4" category="sidebar">用于控制台访问的网络连接</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="sidebar">登录到BlueXP</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">创建连接器</block>
   <block id="ea206a7167c7e693d778525a7c87c869" category="sidebar">安装选项</block>
@@ -3783,4 +3770,49 @@
   <block id="06b41e54acce796724e94edceaa8bd8c" category="paragraph"><block ref="172f848c0eaf289ec1091e3eb6e7272a" category="inline-link-macro-rx"></block>。</block>
   <block id="faa2f324a4d310b356e12aa82056254e" category="paragraph"><block ref="c95ec05c4ecf0f3a1ae9ac9ed3381eba" prefix="" category="inline-code"></block></block>
   <block id="9a29204f81d065ca790be5e05be49951" category="paragraph">现在、您可以转到<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 开始将Connector与BlueXP结合使用。</block>
+  <block id="3cedfb797d3e1bc073ba2b0b4d2502cf" category="inline-link">Azure 文档</block>
+  <block id="5c5eae78661bfbe6d566f6e00a0b5a67" category="paragraph">请注意、您可以使用Azure门户、Azure PowerShell、Azure命令行界面或REST API创建Azure自定义角色。以下步骤显示了如何使用Azure命令行界面创建角色。如果您希望使用其他方法、请参见<block ref="9dee1d16cb9c40964c81f1bda0fd9839" category="inline-link-rx"></block></block>
+  <block id="5377c5407df56ba84e782b4e83f6c6ba" category="cell">将内部ONTAP集群备份到Amazon S3</block>
+  <block id="adfa465566f5539105be4291db1cc510" category="cell">激活ONTAP卷上的备份时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。</block>
+  <block id="ba37f89d4d4c6ea1b335169793666fbe" category="inline-link">为备份设置S3权限</block>
+  <block id="3a723efda81312f328c7de4a7741cb2c" category="cell"><block ref="3a723efda81312f328c7de4a7741cb2c" category="inline-link-rx"></block></block>
+  <block id="9f60318dba873b8aa280da655451eafb" category="cell">将内部ONTAP集群备份到StorageGRID</block>
+  <block id="649c5239d0163afb3411e36c5e857809" category="cell">当您准备StorageGRID作为ONTAP集群的备份目标时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。</block>
+  <block id="08cdeb7ce64fda06111111c8fea66510" category="inline-link">准备StorageGRID作为备份目标</block>
+  <block id="62d09ae20af8b1a53c08a95792d3bdb1" category="cell"><block ref="62d09ae20af8b1a53c08a95792d3bdb1" category="inline-link-rx"></block></block>
+  <block id="746562efc5b1b0667c7d322c1bda9554" category="cell">将内部ONTAP集群分层到AWS</block>
+  <block id="e6b202bba8f7c7c067b2137e58a41397" category="cell">在启用BlueXP分层到AWS时、此向导会提示您输入访问密钥和机密密钥。这些凭据将传递到ONTAP 集群、以便ONTAP 可以将数据分层到S3存储分段。</block>
+  <block id="827bb82562627531a1105788bd9826e6" category="inline-link">设置用于层的S3权限</block>
+  <block id="5f2c172dbfc6022aa5027029dc114852" category="cell"><block ref="5f2c172dbfc6022aa5027029dc114852" category="inline-link-rx"></block></block>
+  <block id="15160ee45cf43a64b4673fc1b3aa1643" category="cell">将内部ONTAP集群分层到StorageGRID</block>
+  <block id="723b7068534c515d953009f9999562b7" category="cell">在将BlueXP分层设置为StorageGRID时、您需要为BlueXP分层提供S3访问密钥和机密密钥。BlueXP分层使用密钥访问您的存储分段。</block>
+  <block id="7642cdcc7094ebeb3d2e2a2bb2bfa636" category="inline-link">准备向StorageGRID进行层</block>
+  <block id="d3e3e33f096d4100a0477da8e5e0fa16" category="cell"><block ref="d3e3e33f096d4100a0477da8e5e0fa16" category="inline-link-rx"></block></block>
+  <block id="b5b529e8dc821910caacb50b880d2487" category="cell">将 Cloud Volumes ONTAP 备份到 Google Cloud</block>
+  <block id="498541290e9165e5844d20ce7c56fdce" category="paragraph">在以下情况下、使用BlueXP备份和恢复来备份Cloud Volumes ONTAP时、您需要向连接器添加权限：</block>
+  <block id="963c1d6b60ef9ab217e4a2f0f2f4a47f" category="list-text">您希望使用"搜索和还原"功能</block>
+  <block id="0ce14c433ae57608c1aced4d631bc039" category="list-text">您希望使用客户管理的加密密钥(CMDK)</block>
+  <block id="3f4149dc5a7846817dd458a59e650f5f" category="inline-link">搜索和恢复功能的权限(&amp;A)</block>
+  <block id="aae920cbe0beab1a7b76937b223c2d92" category="list-text"><block ref="4b3b7e478cad27964ed24a4ab3fe4c45" category="inline-link-rx"></block></block>
+  <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">CMACK的权限</block>
+  <block id="73206ed184feb2313c9f626b7f266208" category="list-text"><block ref="73206ed184feb2313c9f626b7f266208" category="inline-link-rx"></block></block>
+  <block id="6e9436752850e460930666efdaf1e025" category="cell">将内部ONTAP集群备份到Google Cloud</block>
+  <block id="c37ee52df9a55f654f757f6a622c2ab8" category="cell">使用BlueXP备份和恢复来备份内置ONTAP集群时、您需要向连接器添加权限、才能使用"搜索和还原"功能。</block>
+  <block id="072b4c796b4a06820f943c41d4da3162" category="cell"><block ref="6a045f48523c0716d40c678a68c87636" category="inline-link-rx"></block></block>
+  <block id="7ffe8e26fad260dce8ed03b3e7fc57c8" category="summary">开始使用BlueXP时、请确保您的网络允许从BlueXP控制台访问特定端点。根据您计划如何使用BlueXP、您可能还需要为Connector和特定BlueXP服务设置网络连接。</block>
+  <block id="26ea1904ce9dbe48d4e4700d1357e591" category="doc">准备网络连接</block>
+  <block id="045416b62d2dbcb0a3156290bfb14bc5" category="paragraph">除了这些端点之外、您还需要确保Connector可以通过出站Internet访问来联系特定端点以进行日常操作。您可以通过以下下一节中的链接找到这些端点的列表。</block>
+  <block id="1227c418a40b8840e4c8a82551fe4b79" category="section-title">为连接器准备网络连接</block>
+  <block id="3f946e1b2eb47723c4cdafa491ff55a8" category="paragraph">如何为Connector准备网络取决于您计划将Connector安装在何处、可以安装在云中、也可以安装在内部环境中。有关连接器网络连接要求的详细信息、请参阅以下页面：</block>
+  <block id="8ba51ecb80ef097f62d41ff21811facd" category="list-text"><block ref="8ba51ecb80ef097f62d41ff21811facd" category="inline-link-macro-rx"></block></block>
+  <block id="caa5e6c77b861f1924e25b728934c86c" category="list-text"><block ref="caa5e6c77b861f1924e25b728934c86c" category="inline-link-macro-rx"></block></block>
+  <block id="e10d8dd0770b58818461a0254486dc85" category="list-text"><block ref="e10d8dd0770b58818461a0254486dc85" category="inline-link-macro-rx"></block></block>
+  <block id="b0922574fc254af5af9ea76293d3103a" category="list-text"><block ref="b0922574fc254af5af9ea76293d3103a" category="inline-link-macro-rx"></block></block>
+  <block id="33afe8d49ba0b54b76d44e7f5b190b53" category="section-title">为BlueXP服务准备网络连接</block>
+  <block id="e9b3a40645009b297636fbacdb5f7e76" category="paragraph">开始使用BlueXP时、您应确保满足计划使用的BlueXP服务的网络连接要求。有关详细信息、请参见每项服务的文档。</block>
+  <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP文档</block>
+  <block id="1c74bcfdef9917ce07420aafab8bce83" category="paragraph"><block ref="1c74bcfdef9917ce07420aafab8bce83" category="inline-link-rx"></block></block>
+  <block id="d1c50736002ef3676d1c143a04d4cc59" category="list-text">Athena：StartQueryExecution</block>
+  <block id="e7a0ee2f9390b4213bbeb8838f2d3896" category="list-text">不需要与BlueXP SaaS层建立出站连接。所有软件包、依赖项和基本组件均随Connector打包、并从本地计算机提供服务。只有在部署Cloud Volumes ONTAP 时、才需要连接到云提供商的公共可用资源。</block>
+  <block id="75dbd7f878d584e6e9f033b3806519ac" category="sidebar">准备网络连接</block>
 </blocks>

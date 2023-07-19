@@ -785,7 +785,7 @@ Connector会发出以下API请求来管理Amazon S3中的备份：
 * S3：PutBucketPublicAccessBlock
 * S3 ： AbortMultipartUpload
 * S3 ： ListMultipartUploadPart
-* Athena：StartQueryExecutionc
+* Athena：StartQueryExecution
 * Athena：GetQueryResults
 * Athena：GetQueryExecution
 * Athena：StopQueryExecution
