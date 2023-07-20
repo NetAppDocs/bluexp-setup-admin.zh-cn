@@ -1828,7 +1828,6 @@
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">目标</block>
   <block id="241b5fab8e737eaa79c543efe7307059" category="cell">API 调用和 AutoSupport</block>
   <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">出站 Internet 和 ONTAP 集群管理 LIF</block>
-  <block id="7863903e1b4b84391267ab5c4af6a68d" category="cell">API调用Google Cloud和ONTAP 、BlueXP分类、BlueXP勒索软件保护以及向NetApp发送AutoSupport 消息</block>
   <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">API 调用</block>
   <block id="e93028bdc1aacdfb3687181f2031765d" category="cell">3000</block>
   <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">ONTAP HA 调解器</block>
@@ -3815,4 +3814,7 @@
   <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">要使用BlueXP功能和服务、您需要提供权限、以便BlueXP可以在云环境中执行操作。使用此页面上的链接可根据您的目标快速访问所需的权限。</block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">将内部ONTAP集群分层到Amazon S3</block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">StorageGRID权限</block>
+  <block id="eb44d47feda5532d1121c79d84128d2e" category="cell">API调用AWS、ONTAP、BlueXP分类、BlueXP勒索软件保护、并向NetApp发送AutoSupport消息</block>
+  <block id="e671b39f5fdb18b38eb5c968b368b3aa" category="cell">API调用Azure、ONTAP、BlueXP分类、BlueXP勒索软件保护、并向NetApp发送AutoSupport消息</block>
+  <block id="8150638aa57d2b5755445cf3ab8eac20" category="cell">API调用Google Cloud、ONTAP、BlueXP分类、BlueXP勒索软件保护以及向NetApp发送AutoSupport消息</block>
 </blocks>

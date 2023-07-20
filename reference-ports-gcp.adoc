@@ -72,7 +72,7 @@ NOTE: 源 IP 地址是 Connector 主机。
 | 服务 | 协议 | Port | 目标 | 目的 
 
 
-| API 调用和 AutoSupport | HTTPS | 443 | 出站 Internet 和 ONTAP 集群管理 LIF | API调用Google Cloud和ONTAP 、BlueXP分类、BlueXP勒索软件保护以及向NetApp发送AutoSupport 消息 
+| API 调用和 AutoSupport | HTTPS | 443 | 出站 Internet 和 ONTAP 集群管理 LIF | API调用Google Cloud、ONTAP、BlueXP分类、BlueXP勒索软件保护以及向NetApp发送AutoSupport消息 
 
 
 | API 调用 | TCP | 8080 | BlueXP分类 | 部署期间探测到BlueXP分类实例 
