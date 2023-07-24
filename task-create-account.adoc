@@ -31,7 +31,7 @@ summary: 注册到BlueXP后、系统会提示您为组织创建帐户。此帐�
 
 NOTE: 在BlueXP创建帐户后、您无法更改受限模式设置。您不能稍后启用受限模式、也不能稍后禁用它。必须在创建帐户时进行设置。
 
-https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-.html["了解如何使用此API调用"^]
+https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-id.html["了解如何使用此API调用"^]
 
 .相关链接
 * link:concept-netapp-accounts.html["了解有关BlueXP帐户的信息"]
