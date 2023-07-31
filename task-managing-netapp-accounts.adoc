@@ -93,6 +93,9 @@ image:screenshot_associate_user_workspace.png["屏幕截图，显示将鼠标悬
 
 您可以随时将 Workspace Admins 与工作空间关联和解除关联。通过关联用户，用户可以在该工作空间中创建和查看工作环境。
 
+
+NOTE: 您还需要将Connector与工作空间关联起来、以便工作空间管理员可以从BlueXP访问这些工作空间。 link:task-managing-netapp-accounts.html#manage-a-connectors-workspaces["了解如何管理Connector的工作空间"]。
+
 .步骤
 . 从BlueXP顶部、选择*帐户*下拉列表并选择*管理帐户*。
 +
@@ -217,6 +220,9 @@ image:screenshot_service_account_actions.gif["屏幕截图，显示将鼠标悬�
 ** 选择*重命名*以重命名工作空间。
 ** 选择*删除*以删除此工作空间。
 
+
++
+如果创建了新的工作空间、则还必须将Connector添加到该工作空间。如果不添加Connector、则工作区管理员将无法访问工作区中的任何资源。有关详细信息、请参见下一节。
 
 
 

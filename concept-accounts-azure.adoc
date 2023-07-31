@@ -50,7 +50,7 @@ image:diagram_permissions_multiple_azure.png["显示初始 Azure 帐户（通过
 
 例如、在创建新的Cloud Volumes ONTAP 工作环境时、您可以在凭据之间切换：
 
-image:screenshot_accounts_switch_azure.gif["显示在\"详细信息和凭据\"页面中单击\"切换帐户\"后在云提供商帐户之间进行选择的屏幕截图。"]
+image:screenshot_accounts_switch_azure.gif["显示在\"详细信息和凭据\"页面中选择\"切换帐户\"后在云提供商帐户之间进行选择的屏幕截图。"]
 
 
 

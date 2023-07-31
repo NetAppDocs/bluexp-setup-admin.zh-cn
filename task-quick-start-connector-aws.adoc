@@ -72,7 +72,7 @@ link:task-set-up-permissions-aws.html["按照分步说明进行操作"]。
 使用以下可用安装选项之一创建Connector：
 
 [role="quick-margin-list"]
-* *从BlueX*：单击Connector下拉列表、选择*添加连接器*并按照提示进行操作。
+* *从BlueXP*：选择连接器下拉列表，选择*添加连接器*并按照提示进行操作。
 * *从AWS Marketplace *：转到 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP页面"^] 并按照提示通过EC2启动、以便您可以附加IAM角色。
 * *手动安装*：从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"] 并运行安装脚本。
 

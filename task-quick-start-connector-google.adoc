@@ -87,7 +87,7 @@ link:task-set-up-permissions-google.html["按照每个选项的分步说明进�
 使用以下可用安装选项之一创建Connector：
 
 [role="quick-margin-list"]
-* *从BlueX*：单击Connector下拉列表、选择*添加连接器*并按照提示进行操作。
+* *从BlueXP*：选择连接器下拉列表，选择*添加连接器*并按照提示进行操作。
 * *使用gloud*：使用 `gcloud compute instances create` 命令：
 * *手动安装*：从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"] 并运行安装脚本。
 

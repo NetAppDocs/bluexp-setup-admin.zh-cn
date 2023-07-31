@@ -97,7 +97,7 @@ https://_ipaddress_[]
 +
 您应始终禁用受限模式、因为这些步骤说明了如何在标准模式下使用BlueXP。只有在您拥有安全环境并希望将此帐户与BlueXP后端服务断开连接时、才应启用受限模式。如果是这种情况、 link:task-quick-start-restricted-mode.html["按照步骤在受限模式下开始使用BlueXP"]。
 
-.. 单击*我们开始*。
+.. 选择*开始*。
 
 
 

@@ -4,12 +4,12 @@
 
 .步骤
 . 转至 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP页面"^]
-. 在 Marketplace 页面上，单击 * 继续订阅 * ，然后单击 * 继续配置 * 。
+. 在Marketplace页面上，选择*继续订阅*，然后选择*继续配置*。
 +
 image:screenshot-subscribe-aws.png["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
 
-. 更改任何默认选项，然后单击 * 继续启动 * 。
-. 在 * 选择操作 * 下，选择 * 通过 EC2 启动 * ，然后单击 * 启动 * 。
+. 更改任何默认选项并选择*继续启动*。
+. 在*选择操作*下，选择*通过EC2*起动，然后选择*起动*。
 +
 以下步骤介绍了如何从EC2控制台启动实例、因为控制台允许您将IAM角色附加到Connector实例。使用 * 从网站启动 * 操作无法实现这一点。
 
@@ -34,7 +34,7 @@ link:reference-ports-aws.html["查看AWS的安全组规则"]。
 
 ** *配置存储*：保留默认存储选项。
 ** *高级详细信息*：在* IAM实例配置文件*下、选择包含Connector所需权限的IAM角色。
-** *摘要*：查看摘要、然后单击*启动实例*。
+** *摘要*：查看摘要并选择*启动实例*。
 
 
 

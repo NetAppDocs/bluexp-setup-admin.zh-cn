@@ -36,15 +36,15 @@ link:task-set-up-networking-aws.html["了解网络连接要求"]
 
 
 .步骤
-. 单击*连接器*下拉列表并选择*添加连接器*。
+. 选择*Connecter*下拉列表，然后选择*Add Connecter*。
 +
 image:screenshot_connector_add.gif["标题中显示 Connector 图标和 Add Connector 操作的屏幕截图。"]
 
-. 选择 * Amazon Web Services* 作为您的云提供商，然后单击 * 继续 * 。
+. 选择*Amazon Web Services*作为云提供商，然后选择*CONTINUO*。
 . 在*部署Connector*页面上、查看有关所需内容的详细信息。您有两种选择：
 +
-.. 单击*继续*以使用产品指南为部署做准备。产品指南中的每个步骤都包含文档本页中包含的信息。
-.. 如果您已按照此页面上的步骤做好准备、请单击*跳至部署*。
+.. 使用产品内置指南选择*继续*以准备部署。产品指南中的每个步骤都包含文档本页中包含的信息。
+.. 如果您已经按照本页上的步骤进行准备，请选择*跳至部署*。
 
 
 . 按照向导中的步骤创建 Connector ：
@@ -74,7 +74,7 @@ link:reference-ports-aws.html["查看AWS的安全组规则"]。
 ** * 审核 * ：查看您选择的内容，确认您的设置正确无误。
 
 
-. 单击 * 添加 * 。
+. 选择 * 添加 * 。
 +
 此实例应在大约 7 分钟后准备就绪。您应停留在页面上，直到此过程完成。
 
@@ -107,12 +107,12 @@ link:reference-host-requirements-aws.html["查看实例要求"]。
 
 .步骤
 . 转至 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP页面"^]
-. 在 Marketplace 页面上，单击 * 继续订阅 * ，然后单击 * 继续配置 * 。
+. 在Marketplace页面上，选择*继续订阅*，然后选择*继续配置*。
 +
 image:screenshot-subscribe-aws.png["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
 
-. 更改任何默认选项，然后单击 * 继续启动 * 。
-. 在 * 选择操作 * 下，选择 * 通过 EC2 启动 * ，然后单击 * 启动 * 。
+. 更改任何默认选项并选择*继续启动*。
+. 在*选择操作*下，选择*通过EC2*起动，然后选择*起动*。
 +
 以下步骤介绍了如何从EC2控制台启动实例、因为控制台允许您将IAM角色附加到Connector实例。使用 * 从网站启动 * 操作无法实现这一点。
 
@@ -137,7 +137,7 @@ link:reference-ports-aws.html["查看AWS的安全组规则"]。
 
 ** *配置存储*：保留默认存储选项。
 ** *高级详细信息*：在* IAM实例配置文件*下、选择包含Connector所需权限的IAM角色。
-** *摘要*：查看摘要、然后单击*启动实例*。
+** *摘要*：查看摘要并选择*启动实例*。
 
 
 +
@@ -155,7 +155,7 @@ https://_ipaddress_[]
 +
 您应始终禁用受限模式、因为这些步骤说明了如何在标准模式下使用BlueXP。只有在您拥有安全环境并希望将此帐户与BlueXP后端服务断开连接时、才应启用受限模式。如果是这种情况、 link:task-quick-start-restricted-mode.html["按照步骤在受限模式下开始使用BlueXP"]。
 
-.. 单击*我们开始*。
+.. 选择*开始*。
 
 
 
@@ -261,7 +261,7 @@ https://_ipaddress_[]
 +
 您应始终禁用受限模式、因为这些步骤说明了如何在标准模式下使用BlueXP。只有在您拥有安全环境并希望将此帐户与BlueXP后端服务断开连接时、才应启用受限模式。如果是这种情况、 link:task-quick-start-restricted-mode.html["按照步骤在受限模式下开始使用BlueXP"]。
 
-.. 单击*我们开始*。
+.. 选择*开始*。
 
 
 

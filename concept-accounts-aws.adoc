@@ -56,7 +56,7 @@ image:diagram_permissions_multiple_aws.png["一个概念映像，显示另外两
 
 添加另一组凭据后，您可以在创建新的工作环境时切换到这些凭据：
 
-image:screenshot_accounts_switch_aws.png["显示在\"详细信息和凭据\"页面中单击\"切换帐户\"后在云提供商帐户之间进行选择的屏幕截图。"]
+image:screenshot_accounts_switch_aws.png["显示在\"详细信息和凭据\"页面中选择\"切换帐户\"后在云提供商帐户之间进行选择的屏幕截图。"]
 
 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["了解如何向现有Connector添加AWS凭据。"]
 

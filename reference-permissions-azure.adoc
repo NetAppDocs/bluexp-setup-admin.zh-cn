@@ -181,7 +181,7 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
 
 === Azure NetApp Files
 
-Connector发出以下API请求来管理Azure NetApp Files 工作环境：
+在使用BlueXP分类扫描Azure NetApp Files数据时、连接器会发出以下API请求：
 
 * Microsoft.NetApp/netAppAccounts/read
 * Microsoft.NetApp/netAppAccounts/capacityPools/read

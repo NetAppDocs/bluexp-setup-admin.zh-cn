@@ -18,6 +18,32 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
+== 7月30日
+
+
+
+=== 连接器3.9.32
+
+* 现在、您可以使用BlueXP审核服务API导出审核日志。
++
+审核服务记录有关BlueXP服务执行的操作的信息。这包括源IP地址、工作空间、使用的连接器以及其他遥测数据。您可以使用此数据来确定执行了哪些操作、执行了哪些操作以及何时执行了这些操作。
+
++
+https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["详细了解如何使用审核服务API"^]
+
++
+请注意、此链接也可从BlueXP用户界面的Timeline页面访问。
+
+* 此版本的Connector还包括Cloud Volumes ONTAP 增强功能和内部ONTAP 集群增强功能。
++
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["了解Cloud Volumes ONTAP 增强功能"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["了解ONTAP 内部集群增强功能"^]
+
+
+
+
+
+
 == 2023年7月2日
 
 
@@ -238,7 +264,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-march-
 
 === 连接器3.9.26
 
-* 现在、在*登录*页面上、系统会提示您输入与您的登录关联的电子邮件地址。单击*下一步*后、BlueXP将提示您使用与您的登录关联的身份验证方法进行身份验证：
+* 现在、在*登录*页面上、系统会提示您输入与您的登录关联的电子邮件地址。选择*Next*后，BlueXP会提示您使用与登录关联的身份验证方法进行身份验证：
 +
 ** NetApp云凭据的密码
 ** 联合身份凭据
