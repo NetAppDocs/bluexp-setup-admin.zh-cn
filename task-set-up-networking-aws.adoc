@@ -103,8 +103,7 @@ AWS 服务（ AmazonAWS.com ）：
  a| 
 在BlueXP中提供SaaS功能和服务。
 
-
-NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。
+请注意、Connector目前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。
 
 
 
@@ -120,14 +119,12 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 
 == 代理服务器
 
-如果您的组织要求为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息：
+如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。
 
 * IP 地址
 * 凭据
 * HTTPS证书
 
-
-您需要在安装期间提供此信息。
 
 
 
@@ -139,7 +136,7 @@ NOTE: Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将�
 * 只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。
 * 如果您在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。
 +
-如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
+如果Cloud Volumes ONTAP系统没有用于发送AutoSupport消息的出站Internet连接、BlueXP会自动将这些系统配置为使用连接器附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
 
 
 

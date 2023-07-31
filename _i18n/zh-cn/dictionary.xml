@@ -273,10 +273,8 @@
   <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">\https://*.cloudmanager.cloud.netapp.com</block>
   <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
   <block id="23486ca53d499245ebae5460cf6d10ad" category="paragraph">在BlueXP中提供SaaS功能和服务。</block>
-  <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">Connector当前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">升级 Connector 及其 Docker 组件。</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">代理服务器</block>
-  <block id="dae5521ccadea1321150f5f74aad0a58" category="paragraph">如果您的组织要求为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息：</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">端口</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。</block>
@@ -3614,7 +3612,6 @@
   <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">管理您的Google云存储分段</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">您应具备以下条件：</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">有关详细信息，请参见<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
-  <block id="d6feb2cb4605dd3d35a1cfeb944fe219" category="paragraph">您需要在安装期间提供此信息。</block>
   <block id="1b6d3b3a89f4e066eb8bb8d481156cbb" category="list-text">*实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(建议使用T3.x大 容量)。</block>
   <block id="2ad37577d6b48e75deace7b9df85fa0f" category="paragraph">除非您启动连接器或将连接器用作代理将AutoSupport消息从Cloud Volumes ONTAP发送到NetApp支持、否则不会有传入连接器的流量。</block>
   <block id="46b7ac383833d40797a3c63596b781a1" category="list-text">如果您在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。</block>
@@ -3818,4 +3815,41 @@
   <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">选择*设置新BlueXP*并按照提示设置系统。</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">*Review *：查看详细信息，接受许可协议，然后选择*Set Up。</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">请注意、Connector目前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。</block>
+  <block id="2da6f1af030756bb235fd83baa6abd7b" category="paragraph">如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。</block>
+  <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">如果Cloud Volumes ONTAP系统没有用于发送AutoSupport消息的出站Internet连接、BlueXP会自动将这些系统配置为使用连接器附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。</block>
+  <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">从BlueXP在Azure中创建连接器</block>
+  <block id="5b943b0498231c38714aca470c3c0dab" category="paragraph">设置网络连接、准备Azure权限、然后从BlueXP在Azure中创建Connector。</block>
+  <block id="42f8643eb52a942747937327c72c8361" category="section-title">部署概述</block>
+  <block id="ac5d5b7ded11cc7f8b4df462f961d2e8" category="paragraph">以下步骤简要概括了您将在此页面上完成的任务。有关其中每个步骤的其他详细信息、请参见以下部分。</block>
+  <block id="2ef15946081a8510366177e6ee7e5111" category="paragraph">设置您的网络、以便Connector可以管理混合云环境中的资源和流程。例如、您需要一个具有出站Internet访问和目标网络网络连接的虚拟网络。</block>
+  <block id="c794110cfe04873f3ea19458fb48df3c" category="inline-xref">查看网络连接要求</block>
+  <block id="582b3a879115844ed6c92eedc860c81a" category="paragraph"><block ref="01fbc73f2f4d3ada99434a64c61d271f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="3cf3b3a2d331d9973e9029f5ee423d59" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 设置Azure权限</block>
+  <block id="1503a9f546164361607faf57c69eae56" category="paragraph">创建自定义角色、然后将其应用于Azure帐户或Azure AD服务主体。BlueXP使用Azure进行身份验证、并使用这些权限代表您创建Connector实例。</block>
+  <block id="e82d7f6d0b7a997d6eac1814ff1c2863" category="paragraph"><block ref="74b20113240190c7a71403f57a3cd8fc" category="inline-xref-macro-rx"></block>。</block>
+  <block id="aea46324800b152c6a50caff1d14e2fc" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 创建Connector</block>
+  <block id="985afe15de341c249321c6704172a4ea" category="paragraph">在BlueXP中，单击“Connector”(连接器)下拉列表，选择“*Add Connecter*”(*添加连接器*)，然后按照提示进行操作。</block>
+  <block id="1dc565e14b0401db0c6aee5f8e24ef79" category="paragraph"><block ref="450d1cb8d9a0a316433d14e18974a979" category="inline-xref-macro-rx"></block>。</block>
+  <block id="95643ce42bab17c218d7c19a0c0040bb" category="paragraph">确保您计划安装Connector的网络位置符合以下要求。</block>
+  <block id="83bb814dc9552aa2612588ab7ce9f0e9" category="list-text">Connector需要与您计划创建和管理工作环境的位置建立网络连接。例如、您计划在内部环境中创建Cloud Volumes ONTAP系统或存储的vNet。</block>
+  <block id="8e97b7d14c907dc59419c53c5e813e4d" category="list-text">您部署连接器的网络位置必须具有出站Internet连接才能联系特定端点、如以下各节所述。</block>
+  <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">从BlueXP创建Connector时、您需要提供一个登录名、以便BlueXP能够向Azure进行身份验证并部署虚拟机。您有两种选择：</block>
+  <block id="79a9c2b8e447685125856ec6046d8128" category="admonition">此自定义角色仅包含从BlueXP在Azure中启动Connector VM所需的权限。请勿在其他情况下使用此策略。当BlueXP创建Connector时、它会将一组新的权限应用于Connector VM、从而使Connector能够管理公有 云环境中的资源。</block>
+  <block id="00e80b4b164dd96954a27ed3236c9728" category="paragraph">要部署Connector、BlueXP需要向Azure进行身份验证。您可以选择两种Azure身份验证方法。</block>
+  <block id="6dc4f3e9aa2dada18f0a17189fa7d079" category="list-text">单击 * 访问控制（ IAM ） * 。</block>
+  <block id="761218505548d0e5a2977bd7c31de50a" category="list-text">单击 * 添加 * &gt; * 添加角色分配 * ，然后添加权限：</block>
+  <block id="407df91196b1a54a89a9911a8ac6a332" category="list-text">选择 * Azure SetupAsService* 角色，然后单击 * 下一步 * 。</block>
+  <block id="42cffe053a918fe3b27cd3bef2758b91" category="list-text">单击 * 选择成员 * ，选择您的用户帐户，然后单击 * 选择 * 。</block>
+  <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">单击 * 下一步 * 。</block>
+  <block id="e3bbb08034982e47da96f9df0529c14b" category="list-text">单击 * 审核 + 分配 * 。</block>
+  <block id="8174c4d89029818113468594f8347c70" category="list-text">单击 * 访问控制（ IAM ） &gt; 添加 &gt; 添加角色分配 * 。</block>
+  <block id="54b14f07c36bed41295c2086ea238332" category="list-text">在*角色*选项卡中、选择* BlueXP操作员*角色、然后单击*下一步*。</block>
+  <block id="e567d156455b03053b50302bf4ff266e" category="list-text">单击 * 选择成员 * 。</block>
+  <block id="e33ca9bd2b94654f882a0e0ed82dec19" category="list-text">选择应用程序并单击 * 选择 * 。</block>
+  <block id="16d491a352eff99aff3a3090f243e9a7" category="paragraph">直接从BlueXP基于Web的控制台创建Connector。</block>
+  <block id="38c0deaf9ce4435ad8d471fc04a21ac0" category="paragraph">这些权限适用于 Connector 实例本身。它是一组与您先前为部署Connector VM而设置的权限不同的权限。</block>
+  <block id="d2b74161d054c69894469355bb22cb63" category="list-text">如果要创建首个工作环境，请单击 * 添加工作环境 * 并按照提示进行操作。否则，请单击 * 连接器 * 下拉列表并选择 * 添加连接器 * 。</block>
+  <block id="7dafa3d9179efddb7b70ff753d853a0e" category="paragraph"><block ref="29949bbccf251af183678449a2465f09" category="inline-xref-macro-rx"></block>。</block>
+  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">单击 * 添加 * 。</block>
 </blocks>
