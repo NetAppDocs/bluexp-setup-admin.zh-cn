@@ -33,10 +33,11 @@ image:screenshot_azure_add_subscription.png["一组现有凭据的操作菜单�
 
 *** 选择 * 保存 * 。
 +
-以下视频显示了从Azure Marketplace订阅的步骤：
+以下视频显示了如何将凭据与新订阅相关联。
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.从Azure Marketplace订阅BlueXP
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 

@@ -51,10 +51,11 @@ NOTE: 如果贵组织的某个用户已从您的计费帐户订阅NetApp BlueXP�
 
 *** 选择 * 保存 * 。
 +
-以下视频显示了从Google Cloud Marketplace订阅的步骤：
+以下视频显示了如何将凭据与新订阅相关联。
 
 +
-video::video-subscribing-google-cloud.mp4[width=848,height=480]
+.从Google Cloud Marketplace订阅BlueXP
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 .. 完成此过程后、导航回BlueXP中的凭据页面并选择此新订阅。

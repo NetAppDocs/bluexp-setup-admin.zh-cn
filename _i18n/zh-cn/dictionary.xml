@@ -1429,7 +1429,6 @@
   <block id="23d838dbd51becc56367e6d9358b446e" category="paragraph">此新订阅将取代帐户中所有凭据的现有订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。</block>
   <block id="b4676b03cb1388f474b207b449af0dc2" category="paragraph">对于所有其他帐户、您需要重复上述步骤来手动关联订阅。</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">选择 * 保存 * 。</block>
-  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">以下视频显示了从Google Cloud Marketplace订阅的步骤：</block>
   <block id="5894b1931d65e9796cc25db1bb6fd566" category="list-text">完成此过程后、导航回BlueXP中的凭据页面并选择此新订阅。</block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">订阅分配页面的屏幕截图。</block>
   <block id="60d2ed6f6e1774535b6e69274800381d" category="paragraph"><block ref="60d2ed6f6e1774535b6e69274800381d" category="inline-image-macro-rx" type="image"></block></block>
@@ -3011,7 +3010,6 @@
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">如果出现提示、请登录到您的Azure帐户。</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">您将重定向到BlueXP网站。</block>
   <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">在*订阅分配*页面中：</block>
-  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">以下视频显示了从Azure Marketplace订阅的步骤：</block>
   <block id="c98f8dfd7e317cb87d057d9e065d71d4" category="section-title">编辑凭据</block>
   <block id="bf6a5b9863bb599dd7d76e43de882036" category="paragraph">通过修改Azure服务凭据的详细信息、在BlueXP中编辑Azure凭据。例如，如果为服务主体应用程序创建了新密钥，则可能需要更新客户端密钥。</block>
   <block id="c042156941649b9112145dc552484165" category="list-text">在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*编辑凭据*。</block>
@@ -3466,7 +3464,6 @@
   <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">市场订阅支持对以下BlueXP服务收费：</block>
   <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">订阅BlueXP涉及将市场订阅与与Connector关联的云凭据相关联。如果您按照"开始使用标准模式"工作流进行操作、则您应该已经有一个Connector。要了解更多信息、请查看 <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>。</block>
   <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">您必须选择与连接器关联的凭据。您不能将商城订阅与BlueXP关联的凭据关联。</block>
-  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">以下视频显示了从AWS Marketplace订阅的步骤：</block>
   <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">管理Cloud Volumes ONTAP 的BYOL基于容量的许可证</block>
   <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
   <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">管理BlueXP数据服务的BYOL许可证</block>
@@ -3879,4 +3876,8 @@
   <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">下面是一个示例。</block>
   <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">BlueXP帐户凭据页面的屏幕截图、其中显示AWS凭据、其中包含一个订阅字段、用于标识与这些凭据关联的订阅的名称。</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a19fbbab905f444316acc463c35da764" category="paragraph">以下视频显示了如何将凭据与新订阅相关联。</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">从Azure Marketplace订阅BlueXP</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">从Google Cloud Marketplace订阅BlueXP</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">从AWS Marketplace订阅BlueXP</block>
 </blocks>
