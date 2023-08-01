@@ -60,11 +60,10 @@ image:screenshot_associate_subscription.png["一组现有凭据的操作菜单�
 
 *** 选择 * 保存 * 。
 +
-以下视频显示了如何将凭据与新订阅相关联。
+以下视频显示了从AWS Marketplace订阅的步骤：
 
 +
-.从AWS Marketplace订阅BlueXP
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
+video::video_subscribing_aws.mp4[width=848,height=480]
 
 
 
@@ -105,11 +104,10 @@ image:screenshot_azure_add_subscription.png["一组现有凭据的操作菜单�
 
 *** 选择 * 保存 * 。
 +
-以下视频显示了如何将凭据与新订阅相关联。
+以下视频显示了从Azure Marketplace订阅的步骤：
 
 +
-.从Azure Marketplace订阅BlueXP
-video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
+video::video_subscribing_azure.mp4[width=848,height=480]
 
 
 
@@ -168,11 +166,10 @@ NOTE: 如果贵组织的某个用户已从您的计费帐户订阅NetApp BlueXP�
 
 *** 选择 * 保存 * 。
 +
-以下视频显示了如何将凭据与新订阅相关联。
+以下视频显示了从Google Cloud Marketplace订阅的步骤：
 
 +
-.从Google Cloud Marketplace订阅BlueXP
-video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
+video::video-subscribing-google-cloud.mp4[width=848,height=480]
 
 
 .. 完成此过程后、导航回BlueXP中的凭据页面并选择此新订阅。

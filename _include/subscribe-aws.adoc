@@ -32,11 +32,10 @@ image:screenshot_associate_subscription.png["一组现有凭据的操作菜单�
 
 *** 选择 * 保存 * 。
 +
-以下视频显示了如何将凭据与新订阅相关联。
+以下视频显示了从AWS Marketplace订阅的步骤：
 
 +
-.从AWS Marketplace订阅BlueXP
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
+video::video_subscribing_aws.mp4[width=848,height=480]
 
 
 
