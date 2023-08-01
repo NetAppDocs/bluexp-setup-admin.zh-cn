@@ -3852,4 +3852,31 @@
   <block id="d2b74161d054c69894469355bb22cb63" category="list-text">如果要创建首个工作环境，请单击 * 添加工作环境 * 并按照提示进行操作。否则，请单击 * 连接器 * 下拉列表并选择 * 添加连接器 * 。</block>
   <block id="7dafa3d9179efddb7b70ff753d853a0e" category="paragraph"><block ref="29949bbccf251af183678449a2465f09" category="inline-xref-macro-rx"></block>。</block>
   <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">单击 * 添加 * 。</block>
+  <block id="6f634a99f964ad704af4d4f3aaf6d261" category="section-title">将现有订阅与您的帐户关联</block>
+  <block id="18fdf9616b567e691b5890f032e3bba7" category="paragraph">从AWS Marketplace订阅BlueXP后、此过程的最后一步是将此订阅与BlueXP网站上的BlueXP帐户相关联。如果您未完成此步骤、则无法通过BlueXP帐户使用订阅。</block>
+  <block id="6fb458ce426e7a3b13d1d111785c2d01" category="paragraph">如果您从AWS Marketplace订阅了BlueXP、但错过了将订阅与您的帐户关联的步骤、请按照以下步骤进行操作。</block>
+  <block id="bb2c89244641e4e9b00203476e12f0fa" category="list-text">转到BlueXP数字钱包、确认您的订阅未与BlueXP帐户关联。</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">从BlueXP导航菜单中、选择*监管&gt;数字电子钱包*。</block>
+  <block id="8c3682e85d7f4dbe8a46485082335dec" category="list-text">选择*订阅*。</block>
+  <block id="ed6b397e0118acc4ce6973d71f8bf52b" category="list-text">确认未显示您的BlueXP订阅。</block>
+  <block id="0b63efe724268bea77154f68b732287f" category="paragraph">您将只看到与当前正在查看的帐户关联的订阅。如果您看不到您的订阅、请继续执行以下步骤。</block>
+  <block id="f059d36774fc7cb0f68cf549634c6649" category="list-text">登录到AWS控制台并导航到*AWS Marketplace订阅*。</block>
+  <block id="f8c6f0be8abb9f25513e90fc59a8022a" category="list-text">查找NetApp BlueXP订阅。</block>
+  <block id="a33c6ab064752da11797cc3fcb72c16c" category="inline-image-macro">显示NetApp BlueXP订阅的AWS Marketplace的屏幕截图。</block>
+  <block id="cd0345f5cc6a1039b0fb0404342bcf95" category="paragraph"><block ref="cd0345f5cc6a1039b0fb0404342bcf95" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5df82b79e0671efbca7c878a5dc6ff0c" category="list-text">选择*设置产品*。</block>
+  <block id="d322d34d737802e42885dcb924b50296" category="paragraph">订阅服务页面应加载到新的浏览器选项卡或窗口中。</block>
+  <block id="49ff8f7962f9a965de7b3ac21b54fa0c" category="inline-image-macro">显示NetApp BlueXP订阅和页面右上角显示的设置您的帐户选项的AWS Marketplace的屏幕截图。</block>
+  <block id="ed95a7891978e2cf8bdd5f3a968fadf8" category="paragraph"><block ref="ed95a7891978e2cf8bdd5f3a968fadf8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3973d17448cb9fb34230d9497124e62e" category="paragraph">netapp.com上的*订阅分配*页面应加载到新的浏览器选项卡或窗口中。</block>
+  <block id="2bd91e2097a924ebf8ed96f27e0e014b" category="paragraph">请注意、系统可能会提示您先登录BlueXP。</block>
+  <block id="ad06dac7d3f75caabc6bbf1ee222b5b1" category="inline-image-macro">"订阅分配"页面的屏幕截图、可用于选择要与此订阅关联的确切BlueXP帐户。</block>
+  <block id="f08dbbf2dcc1aaacd389964d9e1720e9" category="paragraph"><block ref="f08dbbf2dcc1aaacd389964d9e1720e9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab7f683bf33e15557d8b8c755ab6925d" category="list-text">转到BlueXP数字钱包、确认订阅与您的BlueXP帐户关联。</block>
+  <block id="3d202823d7d9b23ecb538a9e600a47f9" category="list-text">验证是否显示您的BlueXP订阅。</block>
+  <block id="b37f51b57881b03b6c52e06acb6edd87" category="list-text">确认订阅与您的AWS凭据关联。</block>
+  <block id="be7152363bc92639c82fcab79b823266" category="list-text">在*帐户凭据*页面上、验证订阅是否与您的AWS凭据关联。</block>
+  <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">下面是一个示例。</block>
+  <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">BlueXP帐户凭据页面的屏幕截图、其中显示AWS凭据、其中包含一个订阅字段、用于标识与这些凭据关联的订阅的名称。</block>
+  <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

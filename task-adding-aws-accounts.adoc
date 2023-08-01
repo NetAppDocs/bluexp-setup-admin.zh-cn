@@ -276,6 +276,80 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 
 
 
+== 将现有订阅与您的帐户关联
+
+从AWS Marketplace订阅BlueXP后、此过程的最后一步是将此订阅与BlueXP网站上的BlueXP帐户相关联。如果您未完成此步骤、则无法通过BlueXP帐户使用订阅。
+
+如果您从AWS Marketplace订阅了BlueXP、但错过了将订阅与您的帐户关联的步骤、请按照以下步骤进行操作。
+
+.步骤
+. 转到BlueXP数字钱包、确认您的订阅未与BlueXP帐户关联。
++
+.. 从BlueXP导航菜单中、选择*监管>数字电子钱包*。
+.. 选择*订阅*。
+.. 确认未显示您的BlueXP订阅。
++
+您将只看到与当前正在查看的帐户关联的订阅。如果您看不到您的订阅、请继续执行以下步骤。
+
+
+
+. 登录到AWS控制台并导航到*AWS Marketplace订阅*。
+. 查找NetApp BlueXP订阅。
++
+image:screenshot-aws-marketplace-bluexp-subscription.png["显示NetApp BlueXP订阅的AWS Marketplace的屏幕截图。"]
+
+. 选择*设置产品*。
++
+订阅服务页面应加载到新的浏览器选项卡或窗口中。
+
+. 选择*设置您的帐户*。
++
+image:screenshot-aws-marketplace-set-up-account.png["显示NetApp BlueXP订阅和页面右上角显示的设置您的帐户选项的AWS Marketplace的屏幕截图。"]
+
++
+netapp.com上的*订阅分配*页面应加载到新的浏览器选项卡或窗口中。
+
++
+请注意、系统可能会提示您先登录BlueXP。
+
+. 在*订阅分配*页面中：
++
+** 选择要与此订阅关联的BlueXP帐户。
+** 在*替换现有订阅*字段中、选择是否要将一个帐户的现有订阅自动替换为此新订阅。
++
+此新订阅将取代帐户中所有凭据的现有订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。
+
++
+对于所有其他帐户、您需要重复上述步骤来手动关联订阅。
+
++
+image:screenshot-subscription-assignment.png["\"订阅分配\"页面的屏幕截图、可用于选择要与此订阅关联的确切BlueXP帐户。"]
+
+
+
+. 转到BlueXP数字钱包、确认订阅与您的BlueXP帐户关联。
++
+.. 从BlueXP导航菜单中、选择*监管>数字电子钱包*。
+.. 选择*订阅*。
+.. 验证是否显示您的BlueXP订阅。
+
+
+. 确认订阅与您的AWS凭据关联。
++
+.. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+.. 在*帐户凭据*页面上、验证订阅是否与您的AWS凭据关联。
++
+下面是一个示例。
+
++
+image:screenshot-credentials-with-subscription.png["BlueXP帐户凭据页面的屏幕截图、其中显示AWS凭据、其中包含一个订阅字段、用于标识与这些凭据关联的订阅的名称。"]
+
+
+
+
+
+
+
 == 编辑凭据
 
 通过更改帐户类型(AWS密钥或承担角色)、编辑名称或更新凭据本身(密钥或角色ARN)、在BlueXP中编辑AWS凭据。
