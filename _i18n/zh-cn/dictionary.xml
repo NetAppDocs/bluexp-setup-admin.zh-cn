@@ -3879,4 +3879,9 @@
   <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">以下视频显示了从Azure Marketplace订阅的步骤：</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">以下视频显示了从Google Cloud Marketplace订阅的步骤：</block>
   <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">以下视频显示了从AWS Marketplace订阅的步骤：</block>
+  <block id="1250d880683e535bd4bbd8267aa3e5a1" category="summary">这些视频展示了如何从云提供商的市场订阅BlueXP。</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">从AWS Marketplace订阅BlueXP</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">从Azure Marketplace订阅BlueXP</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">从Google Cloud Marketplace订阅BlueXP</block>
+  <block id="4112588d5a54a8d1c620a772527cb267" category="section-title">我的文件夹</block>
 </blocks>
