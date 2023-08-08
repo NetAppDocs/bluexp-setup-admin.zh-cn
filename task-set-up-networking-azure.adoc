@@ -110,9 +110,13 @@ Connector需要通过出站Internet访问与以下端点联系、以便管理公
 
 \https://api.bluexp.netapp.com
 
+\https://api.cloud.netapp.com
+
 \https://*.cloudmanager.cloud.netapp.com
 
 \https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com/userinfo
  a| 
 在BlueXP中提供SaaS功能和服务。
 
