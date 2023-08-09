@@ -24,7 +24,7 @@ summary: 添加和管理AWS凭据、以便BlueXP拥有在AWS帐户中部署和�
 
 * 向现有Connector添加其他AWS凭据
 +
-将AWS凭据添加到现有连接器可提供在公有 云环境中管理资源和进程所需的权限。 <<Add credentials to a Connector,了解如何将 AWS 凭据添加到 Connector>>。
+将AWS凭据添加到现有连接器可提供在公有 云环境中管理资源和进程所需的权限。 <<向Connector添加其他凭据,了解如何将 AWS 凭据添加到 Connector>>。
 
 * 将AWS凭据添加到BlueXP以创建Connector
 +

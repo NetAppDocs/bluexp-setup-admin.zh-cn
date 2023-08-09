@@ -95,7 +95,7 @@ image:screenshot-onprem-darksite-details.png["系统详细信息页面的屏幕�
 .结果
 现在，已安装并设置 Connector 。
 
-如果有新版本的 Connector 软件可用，则这些软件将发布到 NetApp 支持站点。 link:task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["了解如何升级 Connector"]。
+如果有新版本的 Connector 软件可用，则这些软件将发布到 NetApp 支持站点。 link:task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["了解如何升级 Connector"]。
 
 .下一步是什么？
 为BlueXP提供您先前设置的权限。

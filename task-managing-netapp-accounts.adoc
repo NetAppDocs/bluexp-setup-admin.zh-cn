@@ -234,7 +234,7 @@ image:screenshot_service_account_actions.gif["屏幕截图，显示将鼠标悬�
 
 如果您只有帐户管理员，则不需要将 Connector 与工作空间相关联。默认情况下、帐户管理员可以访问BlueXP中的所有工作空间。
 
-link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["详细了解用户，工作空间和连接器"]。
+link:concept-netapp-accounts.html["详细了解用户，工作空间和连接器"]。
 
 .步骤
 . 从BlueXP顶部、选择*帐户*下拉列表并选择*管理帐户*。

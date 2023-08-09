@@ -665,7 +665,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport
 
 在 Microsoft Azure 中创建新的 Connector 时，您现在可以使用 Azure 服务主体进行身份验证，而不是使用 Azure 帐户凭据进行身份验证。
 
-link:task-creating-connectors-azure.html#create-a-connector-using-a-service-principal["了解如何使用 Azure 服务主体进行身份验证"]。
+link:task-creating-connectors-azure.html["了解如何使用 Azure 服务主体进行身份验证"]。
 
 
 
@@ -718,7 +718,7 @@ image:screenshot_nss_management.png["支持信息板中可添加 NSS 帐户的 N
 
 Cloud Manager 中的时间线现在显示与帐户管理相关的操作和事件。这些操作包括关联用户，创建工作空间和创建连接器等。如果您需要确定执行特定操作的人员，或者需要确定操作的状态，则检查时间线会很有帮助。
 
-link:task-monitor-cm-operations.html#auditing-user-activity-in-your-account["了解如何筛选租户服务的时间线"]。
+link:task-monitor-cm-operations.html#audit-user-activity-in-your-account["了解如何筛选租户服务的时间线"]。
 
 
 
@@ -740,7 +740,7 @@ link:task-configuring-proxy.html["了解有关此设置的更多信息"]。
 
 服务帐户充当 " 用户 " ，可以通过授权 API 调用 Cloud Manager 来实现自动化。这样可以更轻松地管理自动化，因为您不需要基于可以随时离开公司的真实用户帐户构建自动化脚本。如果您使用的是联合，则可以创建令牌，而无需从云生成刷新令牌。
 
-link:task-managing-netapp-accounts.html#creating-and-managing-service-accounts["了解有关使用服务帐户的更多信息"]。
+link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["了解有关使用服务帐户的更多信息"]。
 
 
 
@@ -748,7 +748,7 @@ link:task-managing-netapp-accounts.html#creating-and-managing-service-accounts["
 
 现在，您可以在帐户中允许进行私有预览，以便访问新的 NetApp 云服务，因为这些服务在 Cloud Manager 中作为预览版提供。
 
-link:task-managing-netapp-accounts.html#allowing-private-previews["了解有关此选项的更多信息"]。
+link:task-managing-netapp-accounts.html#allow-private-previews["了解有关此选项的更多信息"]。
 
 
 
@@ -756,7 +756,7 @@ link:task-managing-netapp-accounts.html#allowing-private-previews["了解有关�
 
 您还可以允许帐户中的第三方服务访问 Cloud Manager 中提供的第三方服务。
 
-link:task-managing-netapp-accounts.html#allowing-third-party-services["了解有关此选项的更多信息"]。
+link:task-managing-netapp-accounts.html#allow-third-party-services["了解有关此选项的更多信息"]。
 
 
 
