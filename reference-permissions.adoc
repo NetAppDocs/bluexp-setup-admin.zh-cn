@@ -20,25 +20,83 @@ summary: 要使用BlueXP功能和服务、您需要提供权限、以便BlueXP�
 
 == AWS权限
 
-[cols="25,60,40"]
+BlueXP需要对Connector和各个服务拥有AWS权限。
+
+
+
+=== 连接器
+
+[cols="20,60,20"]
 |===
-| 目的 | Description | 链接。 
+| 目标 | Description | 链接。 
 
 
-| 从BlueXP部署连接器 | 从BlueXP创建Connector的用户需要特定权限才能在AWS中部署实例。 | link:task-set-up-permissions-aws.html["设置AWS权限"] 
+| 从BlueXP部署Connector | 从BlueXP创建Connector的用户需要特定权限才能在AWS中部署实例。 | link:task-set-up-permissions-aws.html["设置AWS权限"] 
 
 
-| 连接器操作 | 当BlueXP启动Connector时、它会将一个策略附加到实例、该实例可提供管理AWS帐户中的资源和进程所需的权限。
+| 提供连接器的权限 | 当BlueXP启动Connector时、它会将一个策略附加到实例、该实例可提供管理AWS帐户中的资源和进程所需的权限。
 
-如果您从市场启动Connector、手动安装Connector、或者您需要自行设置此策略 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["向Connector添加更多AWS凭据"]。
+如果您从AWS Marketplace启动Connector、手动安装Connector或您需要自行设置策略 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["向Connector添加更多AWS凭据"]。
 
 此外、您还需要确保在后续版本中添加新权限时策略是最新的。 | link:reference-permissions-aws.html["Connector 的 AWS 权限"] 
+|===
 
 
-| Cloud Volumes ONTAP 操作 | 必须将IAM角色附加到AWS中的每个Cloud Volumes ONTAP 节点。HA调解器也是如此。默认选项是让BlueXP为您创建IAM角色、但您可以使用自己的角色。 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["了解如何自己设置IAM角色"^] 
+=== 备份和恢复
+
+[cols="20,60,20"]
+|===
+| 目标 | Description | 链接。 
 
 
 | 将内部ONTAP集群备份到Amazon S3 | 激活ONTAP卷上的备份时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["为备份设置S3权限"^] 
+|===
+
+
+=== Cloud Volumes ONTAP
+
+[cols="20,60,20"]
+|===
+| 目标 | Description | 链接。 
+
+
+| 为Cloud Volumes ONTAP节点提供权限 | 必须将IAM角色附加到AWS中的每个Cloud Volumes ONTAP 节点。HA调解器也是如此。默认选项是让BlueXP为您创建IAM角色、但您可以在创建工作环境时使用自己的角色。 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["了解如何自己设置IAM角色"^] 
+|===
+
+
+=== 复制和同步
+
+[cols="20,60,20"]
+|===
+| 目标 | Description | 链接。 
+
+
+| 在AWS中部署数据代理 | 用于部署数据代理的AWS用户帐户必须具有特定权限。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#permissions-required-to-deploy-the-data-broker-in-aws["在 AWS 中部署数据代理所需的权限"^] 
+
+
+| 提供数据代理的权限 | 在BlueXP复制和同步部署数据代理时、它会为数据代理实例创建一个IAM角色。如果您愿意，可以使用自己的 IAM 角色部署数据代理。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#requirements-to-use-your-own-iam-role-with-the-aws-data-broker["在 AWS 数据代理中使用您自己的 IAM 角色的要求"^] 
+
+
+| 为手动安装的数据代理启用AWS访问 | 如果您使用的数据代理具有包含S3存储分段的同步关系、则应准备Linux主机以进行AWS访问。安装数据代理时、您需要为具有编程访问权限和特定权限的IAM用户提供AWS密钥。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-aws["启用对 AWS 的访问"^] 
+|===
+
+
+=== 适用于 ONTAP 的 FSX
+
+[cols="20,60,20"]
+|===
+| 目标 | Description | 链接。 
+
+
+| 创建和管理FSx for ONTAP | 要创建或管理Amazon FSx for NetApp ONTAP工作环境、您需要通过提供IAM角色的ARN向BlueXP添加AWS凭据、从而为BlueXP提供创建工作环境所需的权限。 | https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["了解如何为FSx设置AWS凭据"^] 
+|===
+
+
+=== 分层
+
+[cols="20,60,20"]
+|===
+| 目标 | Description | 链接。 
 
 
 | 将内部ONTAP集群分层到Amazon S3 | 在启用BlueXP分层到AWS时、此向导会提示您输入访问密钥和机密密钥。这些凭据将传递到ONTAP 集群、以便ONTAP 可以将数据分层到S3存储分段。 | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["设置用于层的S3权限"^] 
@@ -47,18 +105,24 @@ summary: 要使用BlueXP功能和服务、您需要提供权限、以便BlueXP�
 
 == Azure权限
 
-[cols="25,60,40"]
+BlueXP需要对Connector和各个服务拥有Azure权限。
+
+
+
+=== 连接器
+
+[cols="20,60,20"]
 |===
-| 目的 | Description | 链接。 
+| 目标 | Description | 链接。 
 
 
-| 从BlueXP部署连接器 | 从BlueXP部署Connector时、您需要使用有权在Azure中部署Connector VM的Azure帐户或服务主体。 | link:task-set-up-permissions-azure.html["设置Azure权限"] 
+| 从BlueXP部署Connector | 从BlueXP部署Connector时、您需要使用有权在Azure中部署Connector VM的Azure帐户或服务主体。 | link:task-set-up-permissions-azure.html["设置Azure权限"] 
 
 
-| 连接器操作  a| 
+| 提供连接器的权限  a| 
 当BlueXP在Azure中部署Connector VM时、它会创建一个自定义角色、此角色可提供在该Azure订阅中管理资源和进程所需的权限。
 
-如果您从市场启动Connector、手动安装Connector、或者您需要自行设置此自定义角色 link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["向Connector添加更多Azure凭据"]。
+如果您从市场中启动Connector、手动安装Connector或您自己、则需要自行设置自定义角色 link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["向Connector添加更多Azure凭据"]。
 
 此外、您还需要确保在后续版本中添加新权限时策略是最新的。
  a| 
@@ -67,19 +131,44 @@ link:reference-permissions-azure.html["Connector 的 Azure 权限"]
 |===
 
 
+=== 复制和同步
+
+[cols="20,60,20"]
+|===
+| 目标 | Description | 链接。 
+
+
+| 在Azure中部署数据代理 | 用于部署数据代理的Azure用户帐户必须具有所需的权限。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#permissions-required-to-deploy-the-data-broker-in-azure["在Azure中部署数据代理所需的权限"^] 
+|===
+
+
 == Google Cloud权限
 
-[cols="25,60,40"]
+BlueXP需要对Connector和各个服务拥有Google Cloud权限。
+
+
+
+=== 连接器
+
+[cols="20,60,20"]
 |===
-| 目的 | Description | 链接。 
+| 目标 | Description | 链接。 
 
 
-| 连接器部署 | 从BlueXP部署Connector的Google Cloud用户需要特定权限才能在Google Cloud中部署Connector。 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["设置部署Connector的权限"] 
+| 从BlueXP部署Connector | 从BlueXP部署Connector的Google Cloud用户需要特定权限才能在Google Cloud中部署Connector。 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["设置部署Connector的权限"] 
 
 
-| 连接器操作 | Connector VM实例的服务帐户必须具有执行日常操作的特定权限。在从BlueXP部署服务帐户时、您需要将其与Connector相关联。
+| 提供连接器的权限 | Connector VM实例的服务帐户必须具有执行日常操作的特定权限。您需要在部署期间将服务帐户与连接器相关联。
 
 此外、您还需要确保在后续版本中添加新权限时策略是最新的。 | link:reference-permissions-gcp.html["适用于 Connector 的 Google Cloud 权限"] 
+|===
+
+
+=== 备份和恢复
+
+[cols="20,60,20"]
+|===
+| 目标 | Description | 链接。 
 
 
 | 将 Cloud Volumes ONTAP 备份到 Google Cloud  a| 
@@ -99,14 +188,53 @@ link:reference-permissions-azure.html["Connector 的 Azure 权限"]
 |===
 
 
+=== 适用于 Google Cloud 的 Cloud Volumes Service
+
+[cols="20,60,20"]
+|===
+| 目标 | Description | 链接。 
+
+
+| 了解适用于Google Cloud的Cloud Volumes Service | BlueXP需要通过Google云服务帐户访问Cloud Volumes Service API并获得适当的权限。 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/task-set-up-google-cloud.html["设置服务帐户"^] 
+|===
+
+
+=== 复制和同步
+
+[cols="20,60,20"]
+|===
+| 目标 | Description | 链接。 
+
+
+| 在Google Cloud中部署数据代理 | 确保部署数据代理的Google Cloud用户具有所需的权限。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#permissions-required-to-deploy-the-data-broker-in-google-cloud["在 Google Cloud 中部署数据代理所需的权限"^] 
+
+
+| 为手动安装的数据代理启用Google Cloud访问 | 如果您计划将数据代理与包含 Google Cloud 存储分段的同步关系结合使用，则应准备 Linux 主机以进行 Google Cloud 访问。安装数据代理时，您需要为具有特定权限的服务帐户提供一个密钥。 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-google-cloud["启用对 Google Cloud 的访问"^] 
+|===
+
+
 == StorageGRID权限
 
-[cols="25,60,40"]
+BlueXP需要对两项服务拥有StorageGRID权限。
+
+
+
+=== 备份和恢复
+
+[cols="20,60,20"]
 |===
-| 目的 | Description | 链接。 
+| 目标 | Description | 链接。 
 
 
 | 将内部ONTAP集群备份到StorageGRID | 当您准备StorageGRID作为ONTAP集群的备份目标时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["准备StorageGRID作为备份目标"^] 
+|===
+
+
+=== 分层
+
+[cols="20,60,20"]
+|===
+| 目标 | Description | 链接。 
 
 
 | 将内部ONTAP集群分层到StorageGRID | 在将BlueXP分层设置为StorageGRID时、您需要为BlueXP分层提供S3访问密钥和机密密钥。BlueXP分层使用密钥访问您的存储分段。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["准备向StorageGRID进行层"^] 
