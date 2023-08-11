@@ -77,13 +77,13 @@ image:screenshot-connector-autosupport.png["支持信息板的屏幕截图、显
 
 如果您需要连接到运行 Connector 的 Linux VM ，可以使用云提供商提供的连接选项来执行此操作。
 
-AWS:: 在 AWS 中创建 Connector 实例时，您提供了 AWS 访问密钥和机密密钥。您可以使用此密钥对通过 SSH 连接到实例。
+AWS:: 在 AWS 中创建 Connector 实例时，您提供了 AWS 访问密钥和机密密钥。您可以使用此密钥对通过 SSH 连接到实例。EC2 Linux实例的用户名为Ubuntu (对于2023年5月之前创建的连接器、用户名为EC2-user)。
 +
 --
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS 文档：连接到 Linux 实例"^]
 
 --
-Azure 酒店:: 在 Azure 中创建 Connector VM 时，您选择使用密码或 SSH 公有 密钥进行身份验证。使用您选择的身份验证方法连接到虚拟机。
+Azure 酒店:: 在Azure中创建Connector VM时、您指定了用户名并选择使用密码或SSH公共密钥进行身份验证。使用您选择的身份验证方法连接到虚拟机。
 +
 --
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure 文档：通过 SSH 连接到虚拟机"^]
