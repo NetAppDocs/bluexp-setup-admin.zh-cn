@@ -65,6 +65,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 * 备份和恢复
 * 分类
 * Cloud Volumes ONTAP
+* 灾难恢复
 * E系列系统
 * 经济效益^1^
 * 边缘缓存
