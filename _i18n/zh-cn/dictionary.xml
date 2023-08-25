@@ -3915,4 +3915,7 @@
   <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">在Azure中创建Connector VM时、您指定了用户名并选择使用密码或SSH公共密钥进行身份验证。使用您选择的身份验证方法连接到虚拟机。</block>
   <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
   <block id="80a43f3cb5826b8218d88da517c1e84b" category="list-text">此时、系统会通过电子邮件发送有关以下BlueXP功能和服务的通知：Connector、BlueXP数字钱包、BlueXP复制和同步、BlueXP备份和恢复、BlueXP分层、BlueXP迁移报告和BlueXP勒索软件保护。未来版本将添加其他服务。</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">从AWS Marketplace订阅BlueXP</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">从Azure Marketplace订阅BlueXP</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">从Google Cloud Marketplace订阅BlueXP</block>
 </blocks>
