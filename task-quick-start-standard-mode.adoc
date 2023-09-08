@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-quick-start-standard-mode.html 
 keywords: quick start, standard mode quick start 
-summary: '通过从BlueXP控制台注册、(可选)创建Connector并订阅BlueXP、开始在标准模式下使用BlueXP。' 
+summary: '通过为BlueXP控制台准备网络连接、注册和创建帐户、(可选)创建Connector以及订阅BlueXP、在标准模式下开始使用BlueXP。' 
 ---
-= 标准模式下的BlueXP快速入门
+= 入门工作流(标准模式)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,19 +14,22 @@ summary: '通过从BlueXP控制台注册、(可选)创建Connector并订阅BlueX
 
 
 [role="lead"]
-通过从BlueXP控制台注册、(可选)创建Connector并订阅BlueXP、开始在标准模式下使用BlueXP。
+通过为BlueXP控制台准备网络连接、注册和创建帐户、(可选)创建Connector以及订阅BlueXP、在标准模式下开始使用BlueXP。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 注册并创建帐户
+开始之前、您应了解 link:concept-netapp-accounts.html["BlueXP帐户"]， link:concept-connectors.html["连接器"]，和 link:concept-modes.html["部署模式"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] link:reference-networking-saas-console.html["准备网络以使用BlueXP控制台"]
+[role="quick-margin-para"]
+访问BlueXP控制台的计算机应连接到特定端点以完成一些管理任务。如果您的网络限制出站访问、则应确保允许这些端点。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] link:task-sign-up-saas.html["注册并创建帐户"]
 [role="quick-margin-para"]
 转至 https://console.bluexp.netapp.com["BlueXP控制台"^] 并注册。您可以选择创建帐户、但如果您受邀加入现有帐户、则可以跳过该步骤。
 
 [role="quick-margin-para"]
 此时、您已登录并可以开始使用多种BlueXP服务、例如Digital Advisor、Amazon FSX for ONTAP 、Azure NetApp Files 等。 link:concept-connectors.html["了解没有Connector可以执行的操作"]。
 
-[role="quick-margin-para"]
-link:task-sign-up-saas.html["了解如何注册和创建帐户"]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 创建连接器
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 创建连接器
 [role="quick-margin-para"]
 您无需使用Connector即可开始使用BlueXP、但您可以创建一个Connector来解锁所有BlueXP功能和服务。Connector是一款NetApp软件、可让BlueXP管理混合云环境中的资源和流程。
 
@@ -35,18 +38,15 @@ BlueXP帐户管理员可以在云或内部网络中创建Connector。
 
 [role="quick-margin-list"]
 * link:concept-connectors.html["详细了解何时需要连接器及其工作原理"]
-* link:task-quick-start-connector-aws.html["了解如何在AWS中创建Connector"]
-* link:task-quick-start-connector-azure.html["了解如何在 Azure 中创建 Connector"]
-* link:task-quick-start-connector-google.html["了解如何在 Google Cloud 中创建 Connector"]
-* link:task-quick-start-connector-on-prem.html["了解如何在内部创建Connector"]
+* link:concept-install-options-aws.html["了解如何在AWS中创建Connector"]
+* link:concept-install-options-azure.html["了解如何在 Azure 中创建 Connector"]
+* link:concept-install-options-google.html["了解如何在 Google Cloud 中创建 Connector"]
+* link:task-install-connector-on-prem.html["了解如何在内部创建Connector"]
 
 
 [role="quick-margin-para"]
 请注意、如果要使用BlueXP服务在Google Cloud中管理存储和数据、则Connector必须在Google Cloud中运行。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 订阅BlueXP
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] link:task-subscribe-standard-mode.html["订阅BlueXP"]
 [role="quick-margin-para"]
 从云提供商的市场订阅BlueXP、按小时费率(PAYGO)或按年合同支付BlueXP服务费用。
-
-[role="quick-margin-para"]
-link:task-subscribe-standard-mode.html["了解如何订阅BlueXP"]。

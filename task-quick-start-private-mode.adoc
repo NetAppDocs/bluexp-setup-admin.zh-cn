@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-quick-start-private-mode.html 
 keywords: private mode quick start, quick start 
-summary: 在私有模式下、只需几个步骤即可开始使用BlueXP。 
+summary: 通过准备您的环境并部署Connector、在私有模式下开始使用BlueXP。 
 ---
-= 在专用模式下快速启动BlueXP
+= 入门工作流(私有模式)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,22 +16,18 @@ summary: 在私有模式下、只需几个步骤即可开始使用BlueXP。
 [role="lead"]
 通过准备您的环境并部署Connector、在私有模式下开始使用BlueXP。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 准备部署
+开始之前、您应了解 link:concept-netapp-accounts.html["BlueXP帐户"]， link:concept-connectors.html["连接器"]，和 link:concept-modes.html["部署模式"]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] link:task-prepare-private-mode.html["准备部署"]
 [role="quick-margin-list"]
 . 准备一个满足CPU、RAM、磁盘空间、Docker引擎等要求的专用Linux主机。
 . 设置网络以访问目标网络。
 . 对于云部署、请在云提供商中设置权限、以便您可以在安装软件后将这些权限与Connector相关联。
 
 
-[role="quick-margin-para"]
-link:task-prepare-private-mode.html["了解如何为部署做准备"]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 部署连接器
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] link:task-install-private-mode.html["部署连接器"]
 [role="quick-margin-list"]
 . 在您自己的Linux主机上安装Connector软件。
 . 打开Web浏览器并输入Linux主机的IP地址、以设置BlueXP。
 . 对于云部署、为BlueXP提供您先前设置的权限。
 
-
-[role="quick-margin-para"]
-link:task-install-private-mode.html["了解如何部署Connector"]。

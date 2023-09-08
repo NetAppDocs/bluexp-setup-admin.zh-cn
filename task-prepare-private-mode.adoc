@@ -21,7 +21,7 @@ NOTE: 如果要在中使用BlueXP https://aws.amazon.com/federal/us-intelligence
 
 
 
-== 了解专用模式的工作原理
+== 第1步：了解私有模式的工作原理
 
 开始之前、您应了解BlueXP在专用模式下的工作原理。
 
@@ -33,7 +33,7 @@ link:concept-modes.html["了解私有模式的工作原理"]。
 
 
 
-== 查看安装选项
+== 第2步：查看安装选项
 
 在私有模式下、您可以通过在自己的Linux主机上手动安装Connector在内部或云中安装Connector。
 
@@ -41,7 +41,7 @@ link:concept-modes.html["了解私有模式的工作原理"]。
 
 
 
-== 查看主机要求
+== 第3步：查看主机要求
 
 连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。
 
@@ -84,22 +84,14 @@ Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3
 
 
 
-== 为连接器准备网络连接
+== 第4步：为连接器准备网络连接
 
 设置您的网络，以便 Connector 可以管理公有云环境中的资源和流程。除了为Connector提供虚拟网络和子网之外、您还需要确保满足以下要求。
 
-
-
-=== 连接到目标网络
-
-Connector必须与您计划管理存储的位置建立网络连接。例如、您计划部署Cloud Volumes ONTAP 的VPC或vNet、或者您的内部ONTAP 集群所在的数据中心。
-
-
-
-=== 用于日常操作的端点
-
-Connector会与以下端点联系、以管理公有云环境中的资源和流程。
-
+连接到目标网络:: Connector必须与您计划管理存储的位置建立网络连接。例如、您计划部署Cloud Volumes ONTAP 的VPC或vNet、或者您的内部ONTAP 集群所在的数据中心。
+用于日常操作的端点:: Connector会与以下端点联系、以管理公有云环境中的资源和流程。
++
+--
 [cols="2a,1a"]
 |===
 | 端点 | 目的 
@@ -116,7 +108,7 @@ AWS 服务（ AmazonAWS.com ）：
 * 简单存储服务 (S3)
 
  a| 
-管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^]
+管理AWS中的资源。确切的端点取决于您使用的AWS区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^]
 
 
 
@@ -164,42 +156,44 @@ AWS 服务（ AmazonAWS.com ）：
 在Google Cloud中管理资源。
 
 |===
+--
 
 
-=== 代理服务器
-
-如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。
-
-* IP 地址
-* 凭据
-* HTTPS证书
-
-
-在私有模式下、BlueXP只会向云提供商发送出站流量、以便创建Cloud Volumes ONTAP 系统。
-
-
-
-=== Azure中的公共IP地址
-
-如果要对Azure中的Connector VM使用公共IP地址、则此IP地址必须使用基本SKU以确保BlueXP使用此公共IP地址。
-
+Azure中的公共IP地址:: 如果要对Azure中的Connector VM使用公共IP地址、则此IP地址必须使用基本SKU以确保BlueXP使用此公共IP地址。
++
+--
 image:screenshot-azure-sku.png["在Azure中创建新IP地址的屏幕截图、可用于在SKU字段的下选择基本。"]
 
 如果改用标准SKU IP地址、则BlueXP将使用Connector的_private_ IP地址、而不是公共IP。如果用于访问BlueXP控制台的计算机无法访问该专用IP地址、则BlueXP控制台的操作将失败。
 
 https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Azure文档：公共IP SKU"^]
 
+--
 
 
-=== 端口
+代理服务器:: 如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。
++
+--
+* IP 地址
+* 凭据
+* HTTPS证书
++
+在私有模式下、BlueXP只会向云提供商发送出站流量、以便创建Cloud Volumes ONTAP 系统。
 
-除非您启动 Connector ，否则不会向其传入流量。
 
+
+--
+端口:: 除非您启动 Connector ，否则不会向其传入流量。
++
+--
 通过HTTP (80)和HTTPS (443)可以访问BlueXP控制台。只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。
 
+--
 
 
-== 准备云权限
+
+
+== 第5步：准备云权限
 
 如果您计划创建Cloud Volumes ONTAP 系统、则BlueXP需要云提供商的权限。您需要在云提供商中设置权限、然后在安装Connector实例后将这些权限与之关联。
 
@@ -514,7 +508,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 ====
 
 
-== 启用 Google Cloud API
+== 第6步：启用Google Cloud API
 
 要在Google Cloud中部署Cloud Volumes ONTAP 、需要使用多个API。
 

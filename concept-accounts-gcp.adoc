@@ -34,9 +34,9 @@ image:diagram_permissions_gcp.png["一个概念映像、用于描述用于部署
 
 要了解如何设置权限、请参见以下页面：
 
-* link:task-set-up-permissions-google.html["为标准模式设置Google Cloud权限"]
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["为受限模式设置云权限"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["为私有模式设置云权限"]
+* link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["为标准模式设置Google Cloud权限"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["设置受限模式的权限"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["设置私有模式的权限"]
 
 
 
@@ -45,6 +45,6 @@ image:diagram_permissions_gcp.png["一个概念映像、用于描述用于部署
 
 Cloud Volumes ONTAP 可以与 Connector 位于同一项目中，也可以位于不同项目中。要在其他项目中部署 Cloud Volumes ONTAP ，您需要先将 Connector 服务帐户和角色添加到该项目中。
 
-* link:task-set-up-permissions-google.html["了解如何设置服务帐户"]
+* link:task-install-connector-google-bluexp-gcloud.html#step-3-set-up-permissions-for-the-connector["了解如何设置服务帐户"]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["了解如何在Google Cloud中部署Cloud Volumes ONTAP 并选择项目"^]
 

@@ -2,13 +2,9 @@
 :allow-uri-read: 
 
 
-* 运行Ubuntu 22.04、CentOS 7.6到7.9或RHEL 7.6到7.9的专用主机
-* 4 个 CPU
-* 14 GB RAM
-* Docker Engine 19.3.1或更高版本
-
-
 专用主机:: 与其他应用程序共享的主机不支持此连接器。主机必须是专用主机。
+
+
 支持的操作系统::
 +
 --
@@ -24,12 +20,16 @@
 
 
 --
+
+
 虚拟机管理程序:: 需要一个经过认证可运行Ubuntu、CentOS或Red Hat Enterprise Linux的裸机或托管虚拟机管理程序。
 +
 --
 https://access.redhat.com/certified-hypervisors["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
 
 --
+
+
 CPU:: 4 个核心或 4 个 vCPU
 RAM:: 14 GB
 
@@ -37,7 +37,7 @@ RAM:: 14 GB
 AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 T3.xlarge 。
 
 
-密钥对:: 从BlueXP或AWS Marketplace创建Connector时、您需要选择一个EC2密钥对以用于实例。
+密钥对:: 创建连接器时、您需要选择要用于实例的EC2密钥对。
 
 
 Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 DS3 v2 。
@@ -53,5 +53,7 @@ Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。�
 
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
 /var 中的磁盘空间:: 必须有20 GiB的可用空间
+
+
 Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]
 

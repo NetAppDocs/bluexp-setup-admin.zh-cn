@@ -176,7 +176,7 @@ image:screenshot_accounts_switch_aws.png["显示在\"详细信息和凭据\"页�
 ** 创建包含创建Connector所需权限的策略。
 +
 *** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["查看适用于 ONTAP 的 FSX 所需的权限"^]
-*** link:task-set-up-permissions-aws.html["查看连接器部署策略"]
+*** link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["查看连接器部署策略"]
 
 
 

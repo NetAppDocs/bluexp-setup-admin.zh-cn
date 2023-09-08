@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-aws.html 
 keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
-summary: 在AWS中创建连接器有几种不同的方法。直接从BlueXP访问是最常见的方法。您选择的安装选项将决定您准备部署的方式。 
+summary: 在AWS中创建连接器有几种不同的方法。直接从BlueXP访问是最常见的方法。 
 ---
 = AWS中的连接器安装选项
 :hardbreaks:
@@ -14,21 +14,19 @@ summary: 在AWS中创建连接器有几种不同的方法。直接从BlueXP访�
 
 
 [role="lead"]
-在AWS中创建连接器有几种不同的方法。直接从BlueXP访问是最常见的方法。您选择的安装选项将决定您准备部署的方式。
+在AWS中创建连接器有几种不同的方法。直接从BlueXP访问是最常见的方法。
 
 可以使用以下安装选项：
 
-* 直接从BlueXP创建连接器(这是标准选项)
+* link:task-install-connector-aws-bluexp.html["直接从BlueXP创建连接器"] (这是标准选项)
 +
 此操作将在您选择的VPC中启动运行Linux和Connector软件的EC2实例。
 
-* 从 AWS Marketplace 创建 Connector
+* link:task-install-connector-aws-marketplace.html["从 AWS Marketplace 创建 Connector"]
 +
-此操作还会启动运行Linux和Connector软件的EC2实例。
+此操作还会启动运行Linux和Connector软件的EC2实例、但部署直接从AWS Marketplace启动、而不是从BlueXP启动。
 
-* 在您自己的Linux主机上下载并手动安装软件
+* link:task-install-connector-aws-manual.html["在您自己的Linux主机上下载并手动安装软件"]
 
 
 您选择的安装选项会影响您准备安装的方式。其中包括如何为BlueXP提供在AWS中对资源进行身份验证和管理所需的权限。
-
-link:task-install-connector-aws.html["了解如何在AWS中安装Connector"]。

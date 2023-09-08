@@ -1,0 +1,502 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-azure-marketplace.html 
+keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector, marketplace, azure marketplace 
+summary: 要从Azure Marketplace创建Connector、您需要设置网络连接、准备Azure权限、查看实例要求、然后创建Connector。 
+---
+= 从 Azure Marketplace 创建 Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要从Azure Marketplace创建Connector、您需要设置网络连接、准备Azure权限、查看实例要求、然后创建Connector。
+
+.开始之前
+您应查看 link:reference-limitations.html["连接器限制"]。
+
+
+
+== 第1步：设置网络
+
+确保您计划安装Connector的网络位置符合以下要求。满足这些要求后、Connector便可管理混合云环境中的资源和流程。
+
+Azure 区域:: 如果您使用Cloud Volumes ONTAP、则连接器应部署在与所管理的Cloud Volumes ONTAP系统相同的Azure区域或中 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 区域对"^] 对于 Cloud Volumes ONTAP 系统。此要求可确保在 Cloud Volumes ONTAP 与其关联存储帐户之间使用 Azure 专用链路连接。
++
+--
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["了解 Cloud Volumes ONTAP 如何使用 Azure 专用链路"^]
+
+--
+
+
+vNet和子网:: 创建Connector时、需要指定此Connector应驻留的vNet和子网。
+
+
+连接到目标网络:: Connector需要与您计划创建和管理工作环境的位置建立网络连接。例如、您计划在内部环境中创建Cloud Volumes ONTAP系统或存储系统的网络。
+
+
+出站 Internet 访问:: 部署连接器的网络位置必须具有出站Internet连接才能联系特定端点。
+
+
+从连接器连接的端点:: Connector需要通过出站Internet访问与以下端点联系、以便管理公共云环境中的资源和流程、以实现日常运营。
++
+--
+[cols="2a,1a"]
+|===
+| 端点 | 目的 
+
+
+ a| 
+\https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net
+ a| 
+管理Azure公共区域中的资源。
+
+
+
+ a| 
+\https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn
+ a| 
+管理Azure中国地区的资源。
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+在BlueXP中提供SaaS功能和服务。
+
+请注意、Connector目前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+升级 Connector 及其 Docker 组件。
+
+|===
+--
+
+
+代理服务器:: 如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。
++
+--
+* IP 地址
+* 凭据
+* HTTPS证书
+
+
+--
+
+
+端口:: 除非您启动连接器或将连接器用作代理将AutoSupport消息从Cloud Volumes ONTAP发送到NetApp支持、否则不会有传入连接器的流量。
++
+--
+* 通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。
+* 只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。
+* 如果您在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。
++
+如果Cloud Volumes ONTAP系统没有用于发送AutoSupport消息的出站Internet连接、BlueXP会自动将这些系统配置为使用连接器附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
+
+
+
+--
+
+
+
+
+== 第2步：查看虚拟机要求
+
+创建Connector时、您需要选择符合以下要求的虚拟机类型。
+
+CPU:: 4 个核心或 4 个 vCPU
+RAM:: 14 GB
+Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 DS3 v2 。
+
+
+
+
+== 第3步：设置权限
+
+您可以通过以下方式提供权限：
+
+* 选项1：使用系统分配的托管身份为Azure虚拟机分配自定义角色。
+* 选项2：为BlueXP提供具有所需权限的Azure服务主体的凭据。
+
+
+按照以下步骤设置BlueXP的权限。
+
+[role="tabbed-block"]
+====
+.自定义角色
+--
+请注意、您可以使用Azure门户、Azure PowerShell、Azure命令行界面或REST API创建Azure自定义角色。以下步骤显示了如何使用Azure命令行界面创建角色。如果您希望使用其他方法、请参见 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure 文档"^]
+
+.步骤
+. 如果您计划在自己的主机上手动安装软件、请在虚拟机上启用系统分配的托管身份、以便您可以通过自定义角色提供所需的Azure权限。
++
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Microsoft Azure文档：使用Azure门户为虚拟机上的Azure资源配置托管身份"^]
+
+. 复制的内容 link:reference-permissions-azure.html["Connector的自定义角色权限"] 并将其保存在JSON文件中。
+. 通过将 Azure 订阅 ID 添加到可分配范围来修改 JSON 文件。
++
+您应添加要用于BlueXP的每个Azure订阅的ID。
+
++
+* 示例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+. 使用 JSON 文件在 Azure 中创建自定义角色。
++
+以下步骤介绍如何在 Azure Cloud Shell 中使用 Bash 创建角色。
+
++
+.. start https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 并选择 Bash 环境。
+.. 上传 JSON 文件。
++
+image:screenshot_azure_shell_upload.png["Azure Cloud Shell 的屏幕截图，您可以在其中选择上传文件的选项。"]
+
+.. 使用Azure命令行界面创建自定义角色：
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
+
+
+
+
+.结果
+现在、您应该拥有一个名为BlueXP操作员的自定义角色、可以将该角色分配给Connector虚拟机。
+
+--
+.服务主体
+--
+在Azure Active Directory中创建和设置服务主体、并获取BlueXP所需的Azure凭据。
+
+.创建Azure Active Directory应用程序以进行基于角色的访问控制
+. 确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。
++
+有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]
+
+. 从 Azure 门户中，打开 * Azure Active Directory* 服务。
++
+image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory 服务。"]
+
+. 在菜单中、选择*应用程序注册*。
+. 选择*新建注册*。
+. 指定有关应用程序的详细信息：
++
+** * 名称 * ：输入应用程序的名称。
+** *帐户类型*：选择帐户类型(任何将适用于BlueXP)。
+** * 重定向 URI* ：可以将此字段留空。
+
+
+. 选择 * 注册 * 。
++
+您已创建 AD 应用程序和服务主体。
+
+
+
+.将应用程序分配给角色
+. 创建自定义角色：
++
+请注意、您可以使用Azure门户、Azure PowerShell、Azure命令行界面或REST API创建Azure自定义角色。以下步骤显示了如何使用Azure命令行界面创建角色。如果您希望使用其他方法、请参见 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure 文档"^]
+
++
+.. 复制的内容 link:reference-permissions-azure.html["Connector的自定义角色权限"] 并将其保存在JSON文件中。
+.. 通过将 Azure 订阅 ID 添加到可分配范围来修改 JSON 文件。
++
+您应该为每个 Azure 订阅添加 ID 、用户将从中创建 Cloud Volumes ONTAP 系统。
+
++
+* 示例 *
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. 使用 JSON 文件在 Azure 中创建自定义角色。
++
+以下步骤介绍如何在 Azure Cloud Shell 中使用 Bash 创建角色。
+
++
+*** start https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] 并选择 Bash 环境。
+*** 上传 JSON 文件。
++
+image:screenshot_azure_shell_upload.png["Azure Cloud Shell 的屏幕截图，您可以在其中选择上传文件的选项。"]
+
+*** 使用Azure命令行界面创建自定义角色：
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+现在、您应该拥有一个名为BlueXP操作员的自定义角色、可以将该角色分配给Connector虚拟机。
+
+
+
+
+
+. 将应用程序分配给角色：
++
+.. 从 Azure 门户中，打开 * 订阅 * 服务。
+.. 选择订阅。
+.. 选择*访问控制(IAM)>添加>添加角色分配*。
+.. 在*角色*选项卡中、选择* BlueXP操作员*角色、然后选择*下一步*。
+.. 在 * 成员 * 选项卡中，完成以下步骤：
++
+*** 保持选中 * 用户，组或服务主体 * 。
+*** 选择*选择成员*。
++
+image:screenshot-azure-service-principal-role.png["Azure 门户的屏幕截图，显示向应用程序添加角色时的成员选项卡。"]
+
+*** 搜索应用程序的名称。
++
+以下是一个示例：
+
++
+image:screenshot_azure_service_principal_role.png["Azure 门户的屏幕截图，其中显示了 Azure 门户中的添加角色分配表。"]
+
+*** 选择应用程序并选择*选择*。
+*** 选择 * 下一步 * 。
+
+
+.. 选择*审核+分配*。
++
+现在，服务主体具有部署 Connector 所需的 Azure 权限。
+
++
+如果要从多个 Azure 订阅部署 Cloud Volumes ONTAP ，则必须将服务主体绑定到每个订阅。通过BlueXP、您可以选择要在部署Cloud Volumes ONTAP 时使用的订阅。
+
+
+
+
+
+.添加 Windows Azure 服务管理 API 权限
+. 在* Azure Active Directory*服务中、选择*应用程序注册*并选择应用程序。
+. 选择* API权限>添加权限*。
+. 在 * Microsoft APIs* 下，选择 * Azure Service Management* 。
++
+image:screenshot_azure_service_mgmt_apis.gif["Azure 门户的屏幕截图，其中显示了 Azure 服务管理 API 权限。"]
+
+. 选择*以组织用户身份访问Azure服务管理*、然后选择*添加权限*。
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Azure 门户的屏幕截图，显示如何添加 Azure 服务管理 API 。"]
+
+
+
+.获取应用程序的应用程序ID和目录ID
+. 在* Azure Active Directory*服务中、选择*应用程序注册*并选择应用程序。
+. 复制 * 应用程序（客户端） ID* 和 * 目录（租户） ID* 。
++
+image:screenshot_azure_app_ids.gif["显示 Azure Active Directory 中某个应用程序的应用程序（客户端） ID 和目录（租户） ID 的屏幕截图。"]
+
++
+将Azure帐户添加到BlueXP时、您需要提供应用程序(客户端) ID和目录(租户) ID。BlueXP使用ID以编程方式登录。
+
+
+
+.创建客户端密钥
+. 打开 * Azure Active Directory* 服务。
+. 选择*应用程序注册*并选择您的应用程序。
+. 选择*证书和机密>新客户端机密*。
+. 提供密钥和持续时间的问题描述。
+. 选择 * 添加 * 。
+. 复制客户端密钥的值。
++
+image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中显示了 Azure AD 服务主体的客户端密钥。"]
+
++
+您现在拥有一个客户端密钥、BlueXP可以使用它向Azure AD进行身份验证。
+
+
+
+.结果
+此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。添加Azure帐户时、您需要在BlueXP中输入此信息。
+
+--
+====
+
+
+== 第4步：创建连接器
+
+直接从Azure Marketplace启动Connector。
+
+.关于此任务
+从Azure Marketplace创建Connector会使用默认配置在Azure中部署虚拟机。 link:reference-connector-default-config.html["了解Connector的默认配置"]。
+
+.开始之前
+您应具备以下条件：
+
+* Azure 订阅。
+* 您选择的 Azure 区域中的 vNet 和子网。
+* 有关代理服务器的详细信息、如果您的组织需要代理来处理所有传出Internet流量：
++
+** IP 地址
+** 凭据
+** HTTPS证书
+
+
+* SSH公共密钥(如果要对Connector虚拟机使用该身份验证方法)。身份验证方法的另一个选项是使用密码。
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["了解如何在Azure中连接到Linux VM"^]
+
+* 如果您不希望BlueXP自动为Connector创建Azure角色、则需要创建您自己的角色 link:reference-permissions-azure.html["使用此页面上的策略"]。
++
+这些权限适用于 Connector 实例本身。它是一组与您先前为部署Connector VM而设置的权限不同的权限。
+
+
+
+.步骤
+. 转到Azure Marketplace中的NetApp Connector VM页面。
++
+https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["适用于商业区域的Azure Marketplace页面"^]
+
+. 选择*立即获取*，然后选择*继续*。
+. 在Azure门户中、选择*创建*并按照以下步骤配置虚拟机。
++
+配置虚拟机时，请注意以下事项：
+
++
+** *虚拟机大小*：选择满足CPU和RAM要求的虚拟机大小。我们建议使用 DS3 v2 。
+** *磁盘*：此连接器可以对HDD或SSD磁盘执行最佳性能。
+** *网络安全组*：Connector需要使用SSH、HTTP和HTTPS进行入站连接。
++
+link:reference-ports-azure.html["查看Azure的安全组规则"]。
+
+** *身份*：在*管理*下、选择*启用系统分配的受管身份*。
++
+此设置非常重要，因为托管身份允许 Connector 虚拟机在不提供任何凭据的情况下向 Azure Active Directory 标识自己。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["详细了解 Azure 资源的托管身份"^]。
+
+
+
+. 在*Review + cree*页面上，查看您的选择并选择*Cree*以开始部署。
++
+Azure 使用指定的设置部署虚拟机。虚拟机和 Connector 软件应在大约五分钟内运行。
+
+. 从已连接到 Connector 虚拟机的主机打开 Web 浏览器，然后输入以下 URL ：
++
+https://_ipaddress_[]
+
+. 登录后，设置 Connector ：
++
+.. 指定要与Connector关联的BlueXP帐户。
+.. 输入系统名称。
+.. 在*是否在安全环境中运行？*下、保持禁用受限模式。
++
+您应始终禁用受限模式、因为这些步骤说明了如何在标准模式下使用BlueXP。只有在您拥有安全环境并希望将此帐户与BlueXP后端服务断开连接时、才应启用受限模式。如果是这种情况、 link:task-quick-start-restricted-mode.html["按照步骤在受限模式下开始使用BlueXP"]。
+
+.. 选择*开始*。
+
+
+
+
+现在、Connector已安装完毕、并已使用您的BlueXP帐户进行设置。
+
+
+
+== 第5步：为BlueXP提供权限
+
+创建连接器后、您需要为BlueXP提供先前设置的权限。通过提供权限、BlueXP可以在Azure中管理数据和存储基础架构。
+
+[role="tabbed-block"]
+====
+.自定义角色
+--
+转到Azure门户、为一个或多个订阅向Connector虚拟机分配Azure自定义角色。
+
+.步骤
+. 从Azure门户中、打开*订阅*服务并选择您的订阅。
+. 选择*访问控制(IA)*>*添加*>*添加角色指派*。
+. 在*角色*选项卡中、选择* BlueXP操作员*角色、然后选择*下一步*。
++
+
+NOTE: BlueXP操作员是BlueXP策略中提供的默认名称。如果您为角色选择了其他名称，请选择该名称。
+
+. 在 * 成员 * 选项卡中，完成以下步骤：
++
+.. 为 * 受管身份 * 分配访问权限。
+.. 选择*选择成员*，选择创建连接器虚拟机时使用的订阅，选择*虚拟机*，然后选择连接器虚拟机。
+.. 选择*选择*。
+.. 选择 * 下一步 * 。
+.. 选择*审核+分配*。
+.. 如果要管理其他Azure订阅中的资源、请切换到该订阅、然后重复这些步骤。
+
+
+
+
+.结果
+现在、BlueXP拥有代表您在Azure中执行操作所需的权限。
+
+.下一步是什么？
+转至 https://console.bluexp.netapp.com["BlueXP控制台"^] 开始将Connector与BlueXP结合使用。
+
+--
+.服务主体
+--
+.步骤
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
++
+image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
+
+. 选择*添加凭据*并按照向导中的步骤进行操作。
++
+.. * 凭据位置 * ：选择 * Microsoft Azure > Connector* 。
+.. * 定义凭据 * ：输入有关授予所需权限的 Azure Active Directory 服务主体的信息：
++
+*** 应用程序(客户端) ID
+*** 目录(租户) ID
+*** 客户端密钥
+
+
+.. * 市场订阅 * ：通过立即订阅或选择现有订阅，将市场订阅与这些凭据相关联。
+.. *查看*：确认有关新凭据的详细信息、然后选择*添加*。
+
+
+
+
+.结果
+现在、BlueXP拥有代表您在Azure中执行操作所需的权限。
+
+--
+====

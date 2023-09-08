@@ -1,0 +1,436 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-google-manual.html 
+keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, manual install, create connector, gcp installation, gcp connector 
+summary: 要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Google Cloud权限、启用Google Cloud API、安装Connector、然后提供您准备的权限。 
+---
+= 在Google Cloud中手动安装Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Google Cloud权限、启用Google Cloud API、安装Connector、然后提供您准备的权限。
+
+.开始之前
+您应查看 link:reference-limitations.html["连接器限制"]。
+
+
+
+== 第1步：查看主机要求
+
+连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。
+
+专用主机:: 与其他应用程序共享的主机不支持此连接器。主机必须是专用主机。
+支持的操作系统::
++
+--
+* Ubuntu 22.04
+* CentOS 7.6、7.7、7.8和7.9
+* Red Hat Enterprise Linux 7.6、7.7、7.8和7.9
++
+主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
+
++
+这些操作系统的英语版本支持 Connector 。
+
+
+
+--
+虚拟机管理程序:: 需要一个经过认证可运行Ubuntu、CentOS或Red Hat Enterprise Linux的裸机或托管虚拟机管理程序。
++
+--
+https://access.redhat.com/certified-hypervisors["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
+
+--
+CPU:: 4 个核心或 4 个 vCPU
+RAM:: 14 GB
+Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。建议使用n2-standard-4。
++
+--
+在具有支持的操作系统的VM实例上、Google Cloud支持Connector https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["屏蔽VM功能"^]
+
+--
+/opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
+/var 中的磁盘空间:: 必须有20 GiB的可用空间
+Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]
+
+
+
+
+== 第2步：设置网络
+
+设置您的网络、以便Connector可以管理混合云环境中的资源和流程。例如、您需要确保目标网络可以连接、并且可以访问出站Internet。
+
+连接到目标网络:: Connector需要与您计划创建和管理工作环境的位置建立网络连接。例如、您计划在内部环境中创建Cloud Volumes ONTAP系统或存储系统的网络。
+
+
+出站 Internet 访问:: 部署连接器的网络位置必须具有出站Internet连接才能联系特定端点。
+
+
+在手动安装期间访问的端点:: 在您自己的Linux主机上手动安装Connector时、Connector安装程序需要在安装过程中访问以下URL：
++
+--
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。
+
+
+
+--
+
+
+从连接器连接的端点:: Connector需要通过出站Internet访问与以下端点联系、以便管理公共云环境中的资源和流程、以实现日常运营。
++
+--
+[cols="2a,1a"]
+|===
+| 端点 | 目的 
+
+
+ a| 
+\https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects
+ a| 
+在Google Cloud中管理资源。
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+在BlueXP中提供SaaS功能和服务。
+
+请注意、Connector目前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+升级 Connector 及其 Docker 组件。
+
+|===
+--
+
+
+代理服务器:: 如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。
++
+--
+* IP 地址
+* 凭据
+* HTTPS证书
+
+
+--
+
+
+端口:: 除非您启动连接器或将连接器用作代理将AutoSupport消息从Cloud Volumes ONTAP发送到NetApp支持、否则不会有传入连接器的流量。
++
+--
+* 通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。
+* 只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。
+* 如果您在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。
++
+如果Cloud Volumes ONTAP系统没有用于发送AutoSupport消息的出站Internet连接、BlueXP会自动将这些系统配置为使用连接器附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
+
+
+
+--
+
+
+
+
+== 第3步：设置连接器的权限
+
+要为Connector提供BlueXP在Google Cloud中管理资源所需的权限、需要Google Cloud服务帐户。创建Connector时、您需要将此服务帐户与Connector VM关联起来。
+
+.步骤
+. 在Google Cloud中创建自定义角色：
++
+.. 创建包含内容的YAML文件 link:reference-permissions-gcp.html["Connector的服务帐户权限"]。
+.. 从Google Cloud激活Cloud Shell。
+.. 上传包含所需权限的YAML文件。
+.. 使用创建自定义角色 `gcloud iam roles create` 命令：
++
+以下示例将在项目级别创建一个名为"connector"的角色：
+
++
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Google Cloud文档：创建和管理自定义角色"^]
+
+
+
+. 在Google Cloud中创建一个服务帐户、并将此角色分配给此服务帐户：
++
+.. 从IAM和Admin服务中，选择*服务帐户>创建服务帐户*。
+.. 输入服务帐户详细信息，然后选择*创建并继续*。
+.. 选择刚刚创建的角色。
+.. 完成其余步骤以创建角色。
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Google Cloud文档：创建服务帐户"^]
+
+
+
+. 如果您计划将Cloud Volumes ONTAP 系统部署在与Connector所在项目不同的项目中、则需要为Connector的服务帐户提供对这些项目的访问权限。
++
+例如、假设Connector位于项目1中、而您希望在项目2中创建Cloud Volumes ONTAP 系统。您需要授予对项目2中服务帐户的访问权限。
+
++
+.. 从IAM和管理服务中、选择要创建Cloud Volumes ONTAP系统的Google Cloud项目。
+.. 在* IAM *页面上、选择*授予访问权限*并提供所需的详细信息。
++
+*** 输入Connector服务帐户的电子邮件。
+*** 选择Connector的自定义角色。
+*** 选择 * 保存 * 。
+
+
+
+
++
+有关详细信息，请参见 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud文档"^]
+
+
+
+.结果
+已设置Connector VM的服务帐户。
+
+
+
+== 第4步：设置共享VPC权限
+
+如果您使用共享VPC将资源部署到服务项目中、则需要准备您的权限。
+
+此表仅供参考，您的环境应在 IAM 配置完成后反映权限表。
+
+.查看共享VPC权限
+[%collapsible]
+====
+[cols="10,10,10,18,18,34"]
+|===
+| 身份 | 创建者 | 托管在中 | 服务项目权限 | 托管项目权限 | 目的 
+
+
+| 用于部署Connector的Google帐户 | 自定义 | 服务项目  a| 
+link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["连接器部署策略"]
+ a| 
+compute.networkUser
+| 在服务项目中部署Connector 
+
+
+| 连接器服务帐户 | 自定义 | 服务项目  a| 
+link:reference-permissions-gcp.html["连接器服务帐户策略"]
+| compute.networkUser
+
+deploymentmanager.editor | 在服务项目中部署和维护 Cloud Volumes ONTAP 和服务 
+
+
+| Cloud Volumes ONTAP 服务帐户 | 自定义 | 服务项目 | storage.admin
+
+成员：BlueXP服务帐户serviceAccount.user | 不适用 | (可选)用于数据分层和BlueXP备份和恢复 
+
+
+| Google API 服务代理 | Google Cloud | 服务项目  a| 
+（默认）编辑器
+ a| 
+compute.networkUser
+| 代表部署与Google Cloud API进行交互。允许BlueXP使用共享网络。 
+
+
+| Google Compute Engine 默认服务帐户 | Google Cloud | 服务项目  a| 
+（默认）编辑器
+ a| 
+compute.networkUser
+| 代表部署部署部署部署Google Cloud实例和计算基础架构。允许BlueXP使用共享网络。 
+|===
+注释：
+
+. 只有在未向部署传递防火墙规则并选择让BlueXP为您创建这些规则的情况下、主机项目才需要使用deploymentmanager.editor.如果未指定任何规则、BlueXP将在包含VPC0防火墙规则的主机项目中创建部署。
+. 只有当您不向部署传递防火墙规则并选择让BlueXP为您创建这些规则时、才需要firewall.create和firewall.delete。这些权限位于BlueXP帐户.YAML文件中。如果要使用共享 VPC 部署 HA 对，则会使用这些权限为 VC1 ， 2 和 3 创建防火墙规则。对于所有其他部署，这些权限还将用于为 VPC0 创建规则。
+. 对于数据分层，分层服务帐户必须在服务帐户上具有 serviceAccount.user 角色，而不仅仅是在项目级别。目前，如果您在项目级别分配 serviceAccount.user ，则在使用 getIAMPolicy 查询服务帐户时不会显示权限。
+
+
+====
+
+
+== 第5步：启用Google Cloud API
+
+在Google Cloud中部署Cloud Volumes ONTAP系统之前、必须启用多个Google Cloud API。
+
+.步骤
+. 在项目中启用以下Google Cloud API：
++
+** Cloud Deployment Manager V2 API
+** 云日志记录 API
+** Cloud Resource Manager API
+** 计算引擎 API
+** 身份和访问管理（ IAM ） API
+** 云密钥管理服务(KMS) API
++
+(仅当您计划将BlueXP备份和恢复与客户管理的加密密钥(CMDK)结合使用时才需要)
+
+
+
+
+
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud文档：启用API"^]
+
+
+
+== 第6步：安装连接器
+
+完成前提条件后、您可以在自己的Linux主机上手动安装软件。
+
+.开始之前
+您应具备以下条件：
+
+* 安装Connector的root权限。
+* 有关代理服务器的详细信息、如果从Connector访问Internet需要代理。
++
+您可以选择在安装后配置代理服务器、但这样做需要重新启动Connector。
+
+* CA签名证书、如果代理服务器使用HTTPS或代理是截获代理。
+
+
+.关于此任务
+NetApp 支持站点上提供的安装程序可能是早期版本。安装后，如果有新版本可用， Connector 会自动进行更新。
+
+.步骤
+. 验证 Docker 是否已启用且正在运行。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. 如果在主机上设置了_http_proxy_或_https_proxy_系统变量、请将其删除：
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+如果不删除这些系统变量、安装将失败。
+
+. 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]，然后将其复制到 Linux 主机。
++
+您应下载用于您的网络或云中的"联机"Connector安装程序。Connector可以使用单独的"脱机"安装程序、但只有专用模式部署才支持此安装程序。
+
+. 分配运行脚本的权限。
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+其中、<version> 是您下载的连接器版本。
+
+. 运行安装脚本。
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+-proxy和-cacert参数是可选的。如果您有代理服务器、则需要输入所示的参数。安装程序不会提示您提供有关代理的信息。
+
++
+以下是使用这两个可选参数的命令示例：
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+-proxy会将Connector配置为使用以下格式之一的HTTP或HTTPS代理服务器：
+
++
+** \http://address:port
+** \http://username:password@address:port
+** \https://address:port
+** \https://username:password@address:port
++
+用户必须是本地用户。不支持域用户。
+
+
+
++
+-cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。只有在指定HTTPS代理服务器或代理为截获代理时、才需要此参数。
+
+. 等待安装完成。
++
+在安装结束时、如果您指定了代理服务器、则Connector服务(occa)将重新启动两次。
+
+. 从已连接到 Connector 虚拟机的主机打开 Web 浏览器，然后输入以下 URL ：
++
+https://_ipaddress_[]
+
+. 登录后，设置 Connector ：
++
+.. 指定要与Connector关联的BlueXP帐户。
+.. 输入系统名称。
+.. 在*是否在安全环境中运行？*下、保持禁用受限模式。
++
+您应始终禁用受限模式、因为这些步骤说明了如何在标准模式下使用BlueXP。只有在您拥有安全环境并希望将此帐户与BlueXP后端服务断开连接时、才应启用受限模式。如果是这种情况、 link:task-quick-start-restricted-mode.html["按照步骤在受限模式下开始使用BlueXP"]。
+
+.. 选择*开始*。
+
+
+
+
+.结果
+现在、Connector已安装完毕、并已使用您的BlueXP帐户进行设置。
+
+
+
+== 第7步：为BlueXP提供权限
+
+您需要为BlueXP提供先前设置的Google Cloud权限。通过提供权限、BlueXP可以在Google Cloud中管理数据和存储基础架构。
+
+.步骤
+. 转到Google Cloud门户、并将服务帐户分配给Connector VM实例。
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Google Cloud文档：更改实例的服务帐户和访问范围"^]
+
+. 如果要管理其他Google Cloud项目中的资源、请通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限。您需要对每个项目重复此步骤。
+
+
+.结果
+现在、BlueXP拥有代表您在Google Cloud中执行操作所需的权限。

@@ -2,6 +2,9 @@
 :allow-uri-read: 
 
 
+从连接器连接的端点:: Connector需要通过出站Internet访问与以下端点联系、以便管理公共云环境中的资源和流程、以实现日常运营。
+
+
 | AWS服务(amazonaws.com):
 
 * 云形成
@@ -12,7 +15,7 @@
 * 简单存储服务 (S3)
 
 
-|管理AWS中的资源。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^]
+|管理AWS中的资源。确切的端点取决于您使用的AWS区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^]
 
 |\https://management.azure.com
 \https://login.microsoftonline.com

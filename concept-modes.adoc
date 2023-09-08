@@ -94,9 +94,9 @@ BlueXP在标准模式下的工作原理如下：
 出站通信:: 需要从Connector连接到BlueXP SaaS层、云提供商的公共可用资源以及日常运营所需的其他基本组件。
 +
 --
-* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector["Connector在AWS中联系的端点"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector["Connector在Azure中联系的端点"]
-* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector["Connector在Google Cloud中联系的端点"]
+* link:task-install-connector-aws-bluexp.html#step-1-set-up-networking["Connector在AWS中联系的端点"]
+* link:task-install-connector-azure-bluexp.html#step-1-set-up-networking["Connector在Azure中联系的端点"]
+* link:task-install-connector-google-bluexp-gcloud.html#step-1-set-up-networking["Connector在Google Cloud中联系的端点"]
 
 
 --

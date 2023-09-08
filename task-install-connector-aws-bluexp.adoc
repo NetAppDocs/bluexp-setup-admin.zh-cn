@@ -1,0 +1,319 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-aws-bluexp.html 
+keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, create connector 
+summary: 要从BlueXP在AWS中创建Connector、您需要设置网络连接、准备AWS权限、然后创建Connector。 
+---
+= 从BlueXP在AWS中创建连接器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要从BlueXP在AWS中创建Connector、您需要设置网络连接、准备AWS权限、然后创建Connector。
+
+.开始之前
+您应查看 link:reference-limitations.html["连接器限制"]。
+
+
+
+== 第1步：设置网络
+
+确保您计划安装Connector的网络位置符合以下要求。满足这些要求后、Connector便可管理混合云环境中的资源和流程。
+
+VPC和子网:: 创建Connector时、需要指定此Connector应驻留的VPC和子网。
+
+
+连接到目标网络:: Connector需要与您计划创建和管理工作环境的位置建立网络连接。例如、您计划在内部环境中创建Cloud Volumes ONTAP系统或存储系统的网络。
+
+
+出站 Internet 访问:: 部署连接器的网络位置必须具有出站Internet连接才能联系特定端点。
+
+
+从连接器连接的端点:: Connector需要通过出站Internet访问与以下端点联系、以便管理公共云环境中的资源和流程、以实现日常运营。
++
+--
+[cols="2a,1a"]
+|===
+| 端点 | 目的 
+
+
+ a| 
+AWS 服务（ AmazonAWS.com ）：
+
+* 云形成
+* 弹性计算云（ EC2 ）
+* 身份和访问管理(IAM)
+* 密钥管理服务（ KMS ）
+* 安全令牌服务（ STS ）
+* 简单存储服务 (S3)
+
+ a| 
+管理AWS中的资源。确切的端点取决于您使用的AWS区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息、请参见AWS文档"^]
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+在BlueXP中提供SaaS功能和服务。
+
+请注意、Connector目前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+升级 Connector 及其 Docker 组件。
+
+|===
+--
+
+
+从BlueXP控制台访问的端点:: 当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它会与多个端点联系以完成数据管理任务。这包括从BlueXP控制台部署Connector所需访问的端点。
++
+--
+link:reference-networking-saas-console.html["从BlueXP控制台查看已联系的端点列表"]。
+
+--
+
+
+代理服务器:: 如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。
++
+--
+* IP 地址
+* 凭据
+* HTTPS证书
+
+
+--
+
+
+端口:: 除非您启动连接器或将连接器用作代理将AutoSupport消息从Cloud Volumes ONTAP发送到NetApp支持、否则不会有传入连接器的流量。
++
+--
+* 通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。
+* 只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。
+* 如果您在出站Internet连接不可用的子网中部署Cloud Volumes ONTAP 系统、则需要通过端口3128进行入站连接。
++
+如果Cloud Volumes ONTAP系统没有用于发送AutoSupport消息的出站Internet连接、BlueXP会自动将这些系统配置为使用连接器附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
+
+
+
+--
+
+
+
+
+== 第2步：设置AWS权限
+
+BlueXP需要先向AWS进行身份验证、然后才能在VPC中部署Connector实例。您可以选择以下身份验证方法之一：
+
+* 让BlueXP承担具有所需权限的IAM角色
+* 为具有所需权限的IAM用户提供AWS访问密钥和机密密钥
+
+
+无论选择哪种方案、第一步都是创建IAM策略。此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。
+
+如果需要、您可以使用IAM来限制IAM策略 `Condition` Element。 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS文档：条件元素"^]
+
+
+TIP: 在BlueXP创建Connector时、它会将一组新权限应用于Connector实例、以使Connector能够管理AWS资源。
+
+.步骤
+. 转到AWS IAM控制台。
+. 选择*策略>创建策略*。
+. 选择*JSX*。
+. 复制并粘贴以下策略：
++
+请注意、此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。 link:reference-permissions-aws.html["连接器实例本身所需的查看权限"]。
+
++
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "iam:PassRole",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DescribeInstances",
+                "ec2:CreateTags",
+                "ec2:DescribeImages",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "iam:GetRole",
+                "iam:TagRole",
+                "iam:ListRoles",
+                "kms:ListAliases"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:TerminateInstances"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/OCCMInstance": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ]
+        }
+    ]
+}
+----
+. 如果需要，选择*Next*并添加标记。
+. 选择*Next*并输入名称和问题描述。
+. 选择*创建策略*。
+. 将策略附加到BlueXP可以承担的IAM角色或IAM用户、以便您可以为BlueXP提供访问密钥：
++
+** (选项1)设置一个可由BlueXP承担的IAM角色：
++
+... 转到目标帐户中的 AWS IAM 控制台。
+... 在访问管理下、选择*角色>创建角色*、然后按照步骤创建角色。
+... 在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。
+... 选择*其他AWS帐户*、然后输入BlueXP SaaS帐户的ID：952013314444
+... 选择在上一节中创建的策略。
+... 创建角色后、复制角色ARN、以便您可以在创建Connector时将其粘贴到BlueXP中。
+
+
+** (选项2)为IAM用户设置权限、以便为BlueXP提供访问密钥：
++
+... 从AWS IAM控制台中、选择*用户*、然后选择用户名。
+... 选择*添加权限>直接附加现有策略*。
+... 选择创建的策略。
+... 选择*下一步*，然后选择*添加权限*。
+... 确保您具有IAM用户的访问密钥和机密密钥。
+
+
+
+
+
+
+.结果
+现在、您应该拥有具有所需权限的IAM角色、或者拥有所需权限的IAM用户。从BlueXP创建Connector时、您可以提供有关角色或访问密钥的信息。
+
+
+
+== 第3步：创建接头
+
+直接从BlueXP基于Web的控制台创建Connector。
+
+.关于此任务
+从BlueXP创建连接器会使用默认配置在AWS中部署EC2实例。 link:reference-connector-default-config.html["了解Connector的默认配置"]。
+
+.开始之前
+您应具备以下条件：
+
+* AWS身份验证方法：IAM角色或具有所需权限的IAM用户的访问密钥。
+* 满足网络连接要求的VPC和子网。
+* EC2实例的密钥对。
+* 有关代理服务器的详细信息、如果从Connector访问Internet需要代理。
+
+
+.步骤
+. 选择*Connecter*下拉列表，然后选择*Add Connecter*。
++
+image:screenshot_connector_add.gif["标题中显示 Connector 图标和 Add Connector 操作的屏幕截图。"]
+
+. 选择*Amazon Web Services*作为云提供商，然后选择*CONTINUO*。
+. 在*部署Connector*页面上、查看有关所需内容的详细信息。您有两种选择：
++
+.. 使用产品内置指南选择*继续*以准备部署。产品指南中的每个步骤都包含文档本页中包含的信息。
+.. 如果您已经按照本页上的步骤进行准备，请选择*跳至部署*。
+
+
+. 按照向导中的步骤创建 Connector ：
++
+** * 准备就绪 * ：查看您需要的内容。
+** * AWS Credentials*：指定您的AWS区域、然后选择身份验证方法、即BlueXP可以承担的IAM角色或AWS访问密钥和机密密钥。
++
+
+TIP: 如果选择 * 承担角色 * ，则可以从 Connector 部署向导创建第一组凭据。必须从 " 凭据 " 页面创建任何其他凭据集。然后，这些文件将从向导的下拉列表中显示。 link:task-adding-aws-accounts.html["了解如何添加其他凭据"]。
+
+** * 详细信息 * ：提供有关连接器的详细信息。
++
+*** 输入实例的名称。
+*** 向实例添加自定义标记（元数据）。
+*** 选择是希望BlueXP创建具有所需权限的新角色、还是要选择使用设置的现有角色 link:reference-permissions-aws.html["所需权限"]。
+*** 选择是否要对 Connector 的 EBS 磁盘进行加密。您可以选择使用默认加密密钥或自定义密钥。
+
+
+** * 网络 * ：指定实例的 VPC ，子网和密钥对，选择是否启用公有 IP 地址，并可选择指定代理配置。
++
+确保您具有可用于Connector的正确密钥对。如果没有密钥对、您将无法访问Connector虚拟机。
+
+** *安全组*：选择是创建新安全组还是选择允许所需入站和出站规则的现有安全组。
++
+link:reference-ports-aws.html["查看AWS的安全组规则"]。
+
+** * 审核 * ：查看您选择的内容，确认您的设置正确无误。
+
+
+. 选择 * 添加 * 。
++
+此实例应在大约 7 分钟后准备就绪。您应停留在页面上，直到此过程完成。
+
+
+
+.结果
+此过程完成后、即可从BlueXP使用Connector。

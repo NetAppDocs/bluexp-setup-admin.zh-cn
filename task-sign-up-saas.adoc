@@ -16,7 +16,7 @@ summary: 您可以从基于Web的控制台访问BlueXP。开始使用BlueXP时�
 [role="lead"]
 您可以从基于Web的控制台访问BlueXP。开始使用BlueXP时、第一步是使用现有NetApp 支持站点 凭据或创建NetApp云登录来注册。
 
-.注册选项
+.关于此任务
 您可以使用以下选项之一注册到BlueXP：
 
 * 您的现有NetApp 支持站点 (NSS)凭据

@@ -141,18 +141,20 @@ BlueXP客户管理员可以直接从BlueXP、云提供商的市场或在您自�
 
 直接从BlueXP创建Connector需要特定权限、而Connector实例本身也需要另一组权限。如果您直接从BlueXP在AWS或Azure中创建Connector、则BlueXP将使用所需权限创建Connector。
 
-要了解如何设置权限、请参见以下页面：
+在标准模式下使用BlueXP时、如何提供权限取决于您计划如何创建Connector。
+
+要了解如何设置权限、请参见以下内容：
 
 * 标准模式
 +
-** link:task-set-up-permissions-aws.html["设置AWS权限"]
-** link:task-set-up-permissions-azure.html["设置Azure权限"]
-** link:task-set-up-permissions-google.html["设置Google Cloud权限"]
-** link:task-set-up-permissions-on-prem.html["为内部部署设置云权限"]
+** link:concept-install-options-aws.html["AWS中的连接器安装选项"]
+** link:concept-install-options-azure.html["Azure中的连接器安装选项"]
+** link:concept-install-options-google.html["Google Cloud中的连接器安装选项"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["为内部部署设置云权限"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["为受限模式设置云权限"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["为私有模式设置云权限"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["设置受限模式的权限"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["设置私有模式的权限"]
 
 
 要查看Connector所需的确切权限、请参见以下页面：

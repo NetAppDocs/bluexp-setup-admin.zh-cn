@@ -20,7 +20,7 @@ summary: 了解BlueXP如何使用AWS凭据和权限代表您执行操作。了�
 
 == 初始 AWS 凭据
 
-从BlueXP部署Connector时、您需要为IAM用户提供IAM角色的ARN或访问密钥。您使用的身份验证方法必须具有在 AWS 中部署 Connector 实例所需的权限。中列出了所需的权限 link:task-set-up-permissions-aws.html["适用于AWS的Connector部署策略"]。
+从BlueXP部署Connector时、您需要为IAM用户提供IAM角色的ARN或访问密钥。您使用的身份验证方法必须具有在 AWS 中部署 Connector 实例所需的权限。中列出了所需的权限 link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["适用于AWS的Connector部署策略"]。
 
 当BlueXP在AWS中启动Connector实例时、它会为此实例创建IAM角色和实例配置文件。此外，它还会附加一个策略，为 Connector 提供管理该 AWS 帐户中资源和进程的权限。 link:reference-permissions-aws.html["查看BlueXP如何使用权限"]。
 
@@ -84,12 +84,12 @@ link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["�
 
 * 标准模式
 +
-** link:task-set-up-permissions-aws.html["设置AWS权限"]
-** link:task-set-up-permissions-on-prem.html["为内部部署设置云权限"]
+** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["为AWS Marketplace部署设置权限"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["设置对内置部署的权限"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["为受限模式设置云权限"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["为私有模式设置云权限"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["设置受限模式的权限"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["设置私有模式的权限"]
 
 
 
