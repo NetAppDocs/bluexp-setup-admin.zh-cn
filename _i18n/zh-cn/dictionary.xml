@@ -3406,7 +3406,6 @@
   <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">要将凭据与新订阅关联、请选择*添加订阅&gt;继续*、然后按照AWS Marketplace中的步骤进行操作：</block>
   <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">选择*查看购买选项*。</block>
   <block id="0b45e429b84384fa541446c3364409c9" category="list-text">选择*设置您的帐户*。</block>
-  <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">7月30日</block>
   <block id="167693b239be0e2939d61376cd3a5487" category="section-title">连接器3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">现在、您可以使用BlueXP审核服务API导出审核日志。</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">详细了解如何使用审核服务API</block>
@@ -3773,4 +3772,11 @@ deploymentmanager.editor</block>
   <block id="490065fa675522d3a515cadb526d26f6" category="sidebar">从市场创建</block>
   <block id="655a3c90b399118b5d073277c90e6b0f" category="sidebar">手动安装</block>
   <block id="054df94b323e23fce659cffe65ef10ef" category="sidebar">从BlueXP或使用gCloud创建</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
+  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">连接器3.9.33</block>
+  <block id="d8465669650730f887acd3754f3dea9f" category="list-text">现在、在从BlueXP在AWS中创建Connector时、您可以在Key Pair字段中进行搜索、以便更轻松地找到要用于Connector实例的密钥对。</block>
+  <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">从BlueXP在AWS中创建连接器时、网络页面上显示的密钥对字段中的搜索选项的屏幕截图。</block>
+  <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">此更新还包括错误修复。</block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
 </blocks>
