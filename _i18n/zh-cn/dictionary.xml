@@ -1295,7 +1295,6 @@
   <block id="995c7db8420cf7c1d22ec979a1f735ba" category="open-title">策略1</block>
   <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">策略2</block>
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="example-title">GovCloud (美国)地区</block>
-  <block id="a8416eae2db8c97eb943559351fab358" category="example-title">C2S环境</block>
   <block id="abc9b009fdeb5b04ca7bcd60cdae2434" category="section-title">如何使用AWS权限</block>
   <block id="06be37baefaab50eae9f413a227fd74c" category="paragraph">连接器发出以下API请求来管理Amazon FSx for ONTAP ：</block>
   <block id="c8e20ceabac2b519b4f4eb301166c9bd" category="list-text">EC2：Describe实例</block>
@@ -1473,9 +1472,6 @@
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">在私有模式下部署Connector、以便在使用BlueXP时无需与BlueXP SaaS层建立出站连接。要开始使用、请安装Connector、通过访问Connector上运行的用户界面来设置BlueXP、然后提供您先前设置的云权限。</block>
   <block id="2f549fb867eb9c0be636782d32264aa6" category="doc">在专用模式下部署连接器</block>
   <block id="377655366b79df746cc3d0c01596ba86" category="paragraph">从NetApp 支持站点 下载产品安装程序、然后在您自己的Linux主机上手动安装连接器。</block>
-  <block id="c9ce61bb8ba26b9e777140e6bd34ee95" category="inline-link">AWS Commercial Cloud Services (C2S)环境</block>
-  <block id="76dc45fc0f678a65bdd98f708893456c" category="inline-link">了解如何在AWS C2S环境中开始使用Cloud Volumes ONTAP</block>
-  <block id="5091509329e4947abb15d886a22552f1" category="paragraph">如果要在中使用BlueXP<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> 然后、您应按照单独的说明开始在该环境中使用。<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
   <block id="ffe7522d9ea3d134eb0a945275d454d7" category="paragraph-title">所需权限</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">安装连接器需要 root 权限。</block>
   <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">从下载Connector软件<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
@@ -1703,7 +1699,6 @@
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">了解如何管理支持案例</block>
   <block id="84b67e035ee851e17fd4010870ec0a29" category="paragraph"><block ref="f0098b5aeef401e4baf694b939b219f4" category="inline-link-rx"></block>。</block>
   <block id="d2792d178cbdf6c41f2b8f2ae64424ed" category="list-text">现在、任何与Internet完全隔离的云环境都支持Connector。然后、您可以使用Connector上运行的BlueXP控制台将Cloud Volumes ONTAP 部署在同一位置、并发现内部ONTAP 集群(如果您已从云环境连接到内部环境)。您还可以使用BlueXP备份和恢复来备份AWS和Azure商业区域中的Cloud Volumes ONTAP 卷。此类部署不支持任何其他BlueXP服务、但BlueXP电子钱包除外。</block>
-  <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">云区域可以是AWS C2S/SC2S、Azure IL6等美国安全机构或任何商业区域的区域。</block>
   <block id="75327cdc175eca204abf0a4aa66413b3" category="paragraph">要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将BYOL许可证添加到BlueXP数字钱包中、然后部署Cloud Volumes ONTAP。</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">将连接器安装在无法访问Internet的位置</block>
   <block id="148472786b9015b5f19ac843e8bc0f31" category="list-text"><block ref="148472786b9015b5f19ac843e8bc0f31" category="inline-link-rx"></block></block>
@@ -2952,7 +2947,6 @@
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">您不能删除与 Connector 实例关联的实例配置文件的凭据。</block>
   <block id="9ba678561b5c8922fc9983fcb89e1752" category="summary">在私有模式下部署BlueXP之前、请准备好您的环境。例如、您需要查看主机要求、准备网络连接、设置权限等。</block>
   <block id="5f1067df496bfafd5eb793369b955e41" category="doc">准备在专用模式下部署</block>
-  <block id="ffd6a883d5c5e0f954b2db441bf455a2" category="admonition">如果要在中使用BlueXP<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> 然后、您应按照单独的说明进行操作、以说明如何准备、安装连接器和启动Cloud Volumes ONTAP。<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
   <block id="cd9866f3dfe1445bb49e9984aef06565" category="paragraph">开始之前、您应了解BlueXP在专用模式下的工作原理。</block>
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">了解私有模式的工作原理</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>。</block>
@@ -2980,9 +2974,7 @@
   <block id="5120a32615b91a5de80fd01e90d53677" category="inline-xref">详细了解与SaaS层的出站连接</block>
   <block id="26791add2e44035ab424c178d3f4c61f" category="paragraph"><block ref="4a9f480c757559738dc0bf80da949e99" category="inline-xref-macro-rx"></block>。</block>
   <block id="9c39d5b8fd0bf20212456c9aceeaea5b" category="list-text">BlueXP Connector安装在内部或云(在安全区域、主权云区域或商业区域)中、并且与BlueXP SaaS层具有_no_连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。</block>
-  <block id="43ff95fff31da6098dc2104a2b9903cd" category="inline-link">AWS C2S和SC2S</block>
   <block id="f7a5a85e5651d269f8be77a9a2e84792" category="inline-link">Azure IL6</block>
-  <block id="f4ffd6793bd6a15bb751635d36738fa2" category="paragraph">安全区域包括<block ref="f61a6c487032eb3fbf14a041d1a80535" category="inline-link-rx"></block> 和<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="55fbab9267d4e9aae7daef26b314226f" category="paragraph">下表对这些模式进行了比较。</block>
   <block id="2113372caa2625fc2eac79b5c72bd737" category="cell">是否需要连接到BlueXP SaaS层？</block>
   <block id="6a4fdae8165172d715565269b5d6eb0b" category="cell">仅出站</block>
@@ -3095,11 +3087,6 @@
   <block id="9ebc1b25e2041947b9103da47cd1c08a" category="list-text">身份验证通过本地用户管理和访问来提供。不通过BlueXP的云服务提供身份验证。</block>
   <block id="9155ed0ad2860f7dbb98e01dbb6fa42d" category="list-text">在云部署中支持的BlueXP服务</block>
   <block id="8a4d4c53b0a8fbc638ca47e5e362f9e3" category="list-text">在云中安装Connector时、BlueXP支持以下私有模式的存储和数据服务：</block>
-  <block id="5cab93e720177e480ed8d2fe603b87b8" category="inline-link">AWS C2S/SC2S</block>
-  <block id="ed6f21c8b73c49053eac72fb867ecff6" category="cell">在AWS和Azure商业区域中受支持。
-
-在Google Cloud或中不受支持<block ref="5388026a167091fc23180597ac85e174" category="inline-link-rx"></block> 或<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
-  <block id="2c4d2c4938d2e881355a7e09fe8b1993" category="cell">由于无法访问Internet、因此无法使用以下功能：自动软件升级、AutoSupport 和AWS成本信息。</block>
   <block id="5ddc4e154584048fc0f47939b47c7b63" category="cell">您可以将数字钱包与下面列出的受支持许可选项结合使用、用于私有模式。</block>
   <block id="71fa0def55e8ba28f8cea8204dcaaf4f" category="cell">需要从安装了连接器的云连接到内部环境。
 
@@ -3779,4 +3766,16 @@ deploymentmanager.editor</block>
   <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">此更新还包括错误修复。</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
+  <block id="e22252cf3c711c916163d727b6261500" category="paragraph">云区域可以是AWS Top SecretCloud、AWS SecretCloud、Azure IL6等安全美国机构的区域、也可以是任何商业区域。</block>
+  <block id="ff2c9914d275ee17c3f22e89e7ca1ef7" category="inline-link">AWS机密云</block>
+  <block id="a864a931bf30f7ad758b78e4a2cb264c" category="inline-link">AWS云的绝密</block>
+  <block id="958949b356b2f90081cbb745321e2bf3" category="inline-link">了解如何在AWS机密云或Top SecretCloud中开始使用Cloud Volumes ONTAP</block>
+  <block id="d6d8d91e7b96dd482dc74f45a4f14045" category="paragraph">如果要在中使用BlueXP<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block> 或<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>然后，您应按照单独的说明开始使用这些环境。<block ref="4d25824b3e9e7473eac5e4c3e5c39cc3" category="inline-link-rx"></block></block>
+  <block id="026951b63281b53e88087e2423613cad" category="example-title">秘密区域</block>
+  <block id="76187385115cd00f6a1ec1ff426ad7b5" category="example-title">顶级机密区域</block>
+  <block id="5327be2346849398acb42586361c3fa1" category="paragraph">安全区域包括<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>，和<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="1b46f73bf231e8eefaf1347b4383cc0a" category="cell">在AWS和Azure商业区域中受支持。
+
+在Google Cloud或中不受支持<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>或<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="fcbe8b204f3332d68f1b0f5f05c998db" category="cell">由于无法访问Internet、因此无法使用以下功能：自动软件升级和AutoSupport。</block>
 </blocks>

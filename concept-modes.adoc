@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-modes.html 
-keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret 
 summary: BlueXP提供了多种部署模式、使您能够以满足业务和安全要求的方式使用BlueXP。标准模式可利用BlueXP SaaS层提供完整功能、而受限模式和专用模式可供具有连接限制的组织使用。 
 ---
 = 了解BlueXP部署模式
@@ -41,7 +41,7 @@ BlueXP为您的帐户提供了以下部署模式。每个模式在出站连接�
 私有模式:: BlueXP Connector安装在内部或云(在安全区域、主权云区域或商业区域)中、并且与BlueXP SaaS层具有_no_连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
 +
 --
-安全区域包括 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S和SC2S"^] 和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
+安全区域包括 https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^]， https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^]，和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
 
 --
 
@@ -254,10 +254,10 @@ API endpoint:: API调用会调用Connector虚拟机。
 
 | 备份和恢复 | 在AWS和Azure商业区域中受支持。
 
-在Google Cloud或中不受支持 https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] 或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+在Google Cloud或中不受支持 https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^]， https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^]或 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
 
 
-| Cloud Volumes ONTAP | 由于无法访问Internet、因此无法使用以下功能：自动软件升级、AutoSupport 和AWS成本信息。 
+| Cloud Volumes ONTAP | 由于无法访问Internet、因此无法使用以下功能：自动软件升级和AutoSupport。 
 
 
 | 数字电子钱包 | 您可以将数字钱包与下面列出的受支持许可选项结合使用、用于私有模式。 
@@ -315,6 +315,9 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licens
 +
 --
 link:task-quick-start-private-mode.html["了解如何开始使用私有模式"]。
+
+
+NOTE: 如果要在中使用BlueXP https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^] 或 https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^]然后，您应按照单独的说明开始使用这些环境。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["了解如何在AWS机密云或Top SecretCloud中开始使用Cloud Volumes ONTAP"^]
 
 --
 
