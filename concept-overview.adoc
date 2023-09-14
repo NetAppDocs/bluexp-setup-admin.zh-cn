@@ -68,7 +68,6 @@ BlueXP平台提供了数据管理的四大要素：存储、移动性、保护�
 * https://bluexp.netapp.com/digital-advisor["数字顾问"^]
 * https://bluexp.netapp.com/digital-advisor["经济效率"^]
 * https://bluexp.netapp.com/digital-advisor["运营故障恢复能力"^]
-* https://bluexp.netapp.com/ransomware-protection["勒索软件保护"^]
 
 
 --

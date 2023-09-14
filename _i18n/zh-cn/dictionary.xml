@@ -566,8 +566,6 @@
   <block id="3e347fe716ab17eefd02acef8c0347bf" category="list-text"><block ref="3e347fe716ab17eefd02acef8c0347bf" category="inline-link-rx"></block></block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="inline-link">数字顾问</block>
   <block id="86d4d1274a29106954740fc239a0af79" category="list-text"><block ref="86d4d1274a29106954740fc239a0af79" category="inline-link-rx"></block></block>
-  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="inline-link">勒索软件保护</block>
-  <block id="ecbf594bb3a0b1f21d5ca3e417aec924" category="list-text"><block ref="ecbf594bb3a0b1f21d5ca3e417aec924" category="inline-link-rx"></block></block>
   <block id="e1d4fcf84146530af8da4a20a003710d" category="inline-link">详细了解如何使用BlueXP帮助您的组织</block>
   <block id="b2be08edab4d3d89797b89ae19e20493" category="paragraph"><block ref="b2be08edab4d3d89797b89ae19e20493" category="inline-link-rx"></block></block>
   <block id="902e65d33784bd8924eb05e622aa2dda" category="section-title">支持的云提供商</block>
@@ -3355,9 +3353,6 @@
   <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">要使用BlueXP功能和服务、您需要提供权限、以便BlueXP可以在云环境中执行操作。使用此页面上的链接可根据您的目标快速访问所需的权限。</block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">将内部ONTAP集群分层到Amazon S3</block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">StorageGRID权限</block>
-  <block id="eb44d47feda5532d1121c79d84128d2e" category="cell">API调用AWS、ONTAP、BlueXP分类、BlueXP勒索软件保护、并向NetApp发送AutoSupport消息</block>
-  <block id="e671b39f5fdb18b38eb5c968b368b3aa" category="cell">API调用Azure、ONTAP、BlueXP分类、BlueXP勒索软件保护、并向NetApp发送AutoSupport消息</block>
-  <block id="8150638aa57d2b5755445cf3ab8eac20" category="cell">API调用Google Cloud、ONTAP、BlueXP分类、BlueXP勒索软件保护以及向NetApp发送AutoSupport消息</block>
   <block id="6d349a0af72df500a21b7660d8e471b2" category="paragraph"><block ref="6d349a0af72df500a21b7660d8e471b2" category="inline-link-rx"></block></block>
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">选择*用户凭据*。</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">要确认注册过程是否成功，请选择帮助图标，然后选择*Support*。</block>
@@ -3566,7 +3561,6 @@
   <block id="2a3be610e29cddb2c56aa61b555b895a" category="list-text">在 AWS 中创建 Connector 实例时，您提供了 AWS 访问密钥和机密密钥。您可以使用此密钥对通过 SSH 连接到实例。EC2 Linux实例的用户名为Ubuntu (对于2023年5月之前创建的连接器、用户名为EC2-user)。</block>
   <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">在Azure中创建Connector VM时、您指定了用户名并选择使用密码或SSH公共密钥进行身份验证。使用您选择的身份验证方法连接到虚拟机。</block>
   <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
-  <block id="80a43f3cb5826b8218d88da517c1e84b" category="list-text">此时、系统会通过电子邮件发送有关以下BlueXP功能和服务的通知：Connector、BlueXP数字钱包、BlueXP复制和同步、BlueXP备份和恢复、BlueXP分层、BlueXP迁移报告和BlueXP勒索软件保护。未来版本将添加其他服务。</block>
   <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">从AWS Marketplace订阅BlueXP</block>
   <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">从Azure Marketplace订阅BlueXP</block>
   <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">从Google Cloud Marketplace订阅BlueXP</block>
@@ -3778,4 +3772,8 @@ deploymentmanager.editor</block>
 
 在Google Cloud或中不受支持<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>或<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="fcbe8b204f3332d68f1b0f5f05c998db" category="cell">由于无法访问Internet、因此无法使用以下功能：自动软件升级和AutoSupport。</block>
+  <block id="8bb35bd6add2b83baee34c828e6acacf" category="cell">API调用Azure、调用ONTAP、调用BlueXP分类、并向NetApp发送AutoSupport消息</block>
+  <block id="d80bf17e105d87b4295cb2e090a28117" category="list-text">此时、系统将通过电子邮件发送以下BlueXP功能和服务的通知：Connector、BlueXP数字钱包、BlueXP复制和同步、BlueXP备份和恢复、BlueXP分层和BlueXP迁移报告。未来版本将添加其他服务。</block>
+  <block id="2cc0b2404e9976abc7bb1156519a654c" category="cell">API调用AWS、ONTAP、BlueXP分类、并向NetApp发送AutoSupport消息</block>
+  <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">API调用Google Cloud、ONTAP、BlueXP分类、并向NetApp发送AutoSupport消息</block>
 </blocks>
