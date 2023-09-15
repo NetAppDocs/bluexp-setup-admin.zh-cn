@@ -2271,7 +2271,6 @@
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">指定实例是否应具有公有 IP地址。</block>
   <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">指定防火墙设置、以便为Connector实例启用所需的连接方法：SSH、HTTP和HTTPS。</block>
   <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">对于特定配置、还需要一些规则。</block>
-  <block id="79b8b9ad9bf89b0b494ac4c62694d70f" category="list-text">*配置存储*：保留默认存储选项。</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*高级详细信息*：在* IAM实例配置文件*下、选择包含Connector所需权限的IAM角色。</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS 使用指定的设置启动软件。Connector 实例和软件应在大约五分钟内运行。</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">身份联合支持使用BlueXP进行单点登录、以便用户可以使用您公司身份中的凭据进行登录。首先、了解身份联合如何与BlueXP配合使用、然后查看设置过程概述。</block>
@@ -3776,4 +3775,6 @@ deploymentmanager.editor</block>
   <block id="d80bf17e105d87b4295cb2e090a28117" category="list-text">此时、系统将通过电子邮件发送以下BlueXP功能和服务的通知：Connector、BlueXP数字钱包、BlueXP复制和同步、BlueXP备份和恢复、BlueXP分层和BlueXP迁移报告。未来版本将添加其他服务。</block>
   <block id="2cc0b2404e9976abc7bb1156519a654c" category="cell">API调用AWS、ONTAP、BlueXP分类、并向NetApp发送AutoSupport消息</block>
   <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">API调用Google Cloud、ONTAP、BlueXP分类、并向NetApp发送AutoSupport消息</block>
+  <block id="3bb1e2709fa189f2a1cf46aadeab3b46" category="list-text">*配置存储*：保留根卷的默认大小和磁盘类型。</block>
+  <block id="4aed728875c28373d48d9ac6dc115722" category="paragraph">如果要在根卷上启用Amazon EBS加密、请选择*高级*、展开*卷1*、选择*加密*、然后选择KMS密钥。</block>
 </blocks>
