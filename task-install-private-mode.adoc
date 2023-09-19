@@ -76,13 +76,13 @@ sudo /path/cloud-manager-connector-offline-<version>
 +
 image:screenshot-onprem-darksite-welcome.png["在 Web 浏览器中输入连接器的 IP 地址后显示的欢迎页面的屏幕截图。"]
 
-. 选择*设置新BlueXP*并按照提示设置系统。
+. 选择*设置新BlueXP Connecter*并按照提示设置系统。
 +
 ** *系统详细信息*：输入Connector的名称和公司名称。
 +
 image:screenshot-onprem-darksite-details.png["系统详细信息页面的屏幕截图、提示您输入BlueXP名称和公司名称。"]
 
-** * 创建管理员用户 * ：为系统创建管理员用户。
+** *创建管理员用户*：创建系统的管理员用户。
 +
 此用户帐户在系统本地运行。无法通过BlueXP连接到可用的auth0服务。
 
