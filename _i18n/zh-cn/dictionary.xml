@@ -2372,7 +2372,6 @@
   <block id="61bc7bf1f88516437cb71c2afcff94f5" category="paragraph">创建连接的BlueXP管理员是唯一可以更新连接的授权用户。如果您要添加其他管理员、请联系NetApp支持部门。</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">在向NetApp技术支持部门创建支持案例之前、您需要向BlueXP添加一个NetApp 支持站点 帐户、然后注册获取支持。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
-  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">您的BlueXP帐户和各个Cloud Volumes ONTAP系统都需要注册支持。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支持注册概述</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">激活支持授权有两种形式的注册：</block>
   <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">注册您的BlueXP帐户ID支持订阅(您的20位960xxxxxxxxx序列号、位于BlueXP的支持资源页面上)。</block>
@@ -2380,8 +2379,6 @@
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在云提供商的市场中注册与订阅关联的Cloud Volumes ONTAP 序列号(即20位909201xxxxxxxx序列号)。</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">这些序列号通常称为_PAYGO序列号、并由BlueXP在部署Cloud Volumes ONTAP 时生成。</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">注册这两种类型的序列号可实现打开支持服务单和自动生成案例等功能。要完成注册、请按如下所述将NetApp 支持站点(NSS)帐户添加到BlueXP中。</block>
-  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支持云提供商解决方案</block>
-  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">有关以下云提供商解决方案的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
   <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
@@ -3217,7 +3214,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="cell">可持续性</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023年7月2日</block>
   <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">连接器3.9.31</block>
@@ -3777,4 +3773,9 @@ deploymentmanager.editor</block>
   <block id="4aed728875c28373d48d9ac6dc115722" category="paragraph">如果要在根卷上启用Amazon EBS加密、请选择*高级*、展开*卷1*、选择*加密*、然后选择KMS密钥。</block>
   <block id="cf5973f42a5c4e31665e41b2ec75f8a0" category="list-text">选择*设置新BlueXP Connecter*并按照提示设置系统。</block>
   <block id="1759129089da3c0c000cb4c2196a2fd0" category="list-text">*创建管理员用户*：创建系统的管理员用户。</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">要获得BlueXP及其存储解决方案和服务的特定技术支持、需要注册支持。要为Cloud Volumes ONTAP系统启用关键工作流、还需要注册支持服务。</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">注册获取支持不会为云提供商文件服务启用NetApp支持。有关与云提供商文件服务、其基础架构或使用该服务的任何解决方案相关的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">获得云提供商文件服务支持</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">有关与云提供商文件服务、其基础架构或使用该服务的任何解决方案相关的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">要获得针对BlueXP及其存储解决方案和服务的技术支持、请使用下面所述的支持选项。</block>
 </blocks>
