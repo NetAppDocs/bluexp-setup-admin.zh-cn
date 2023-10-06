@@ -3778,4 +3778,7 @@ deploymentmanager.editor</block>
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">获得云提供商文件服务支持</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">有关与云提供商文件服务、其基础架构或使用该服务的任何解决方案相关的技术支持、请参阅该产品的BlueXP文档中的"获得帮助"。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">要获得针对BlueXP及其存储解决方案和服务的技术支持、请使用下面所述的支持选项。</block>
+  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023年10月6日</block>
+  <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">连接器3.9.34</block>
+  <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">此版本包含一些小改进和错误修复。</block>
 </blocks>
