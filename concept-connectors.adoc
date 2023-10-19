@@ -81,6 +81,8 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 ^1^虽然您可以在没有连接器的情况下访问这些服务、但要从这些服务启动操作、需要使用连接器。
 
+要在受限模式或专用模式下使用BlueXP、需要使用Connector。
+
 
 
 == 连接器必须始终正常运行
@@ -130,9 +132,9 @@ link:concept-modes.html["了解BlueXP部署模式"]。
 BlueXP客户管理员可以直接从BlueXP、云提供商的市场或在您自己的Linux主机上手动安装软件来创建Connector。如何开始取决于您是在标准模式、受限模式还是专用模式下使用BlueXP。
 
 * link:concept-modes.html["了解BlueXP部署模式"]
-* link:task-quick-start-standard-mode.html["标准模式下的BlueXP快速入门"]
-* link:task-quick-start-restricted-mode.html["在受限模式下快速启动BlueXP"]
-* link:task-quick-start-private-mode.html["在专用模式下快速启动BlueXP"]
+* link:task-quick-start-standard-mode.html["以标准模式开始使用BlueXP"]
+* link:task-quick-start-restricted-mode.html["开始在受限模式下使用BlueXP"]
+* link:task-quick-start-private-mode.html["开始在私有模式下使用BlueXP"]
 
 
 
@@ -157,7 +159,7 @@ BlueXP客户管理员可以直接从BlueXP、云提供商的市场或在您自�
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["设置私有模式的权限"]
 
 
-要查看Connector所需的确切权限、请参见以下页面：
+要查看Connector日常操作所需的确切权限、请参阅以下页面：
 
 * link:reference-permissions-aws.html["了解Connector如何使用AWS权限"]
 * link:reference-permissions-azure.html["了解Connector如何使用Azure权限"]

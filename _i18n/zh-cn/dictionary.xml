@@ -147,7 +147,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">BlueXP通知</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="paragraph"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
-  <block id="60f3c104288fca2aca24db064cb7c7c1" category="doc">在专用模式下快速启动BlueXP</block>
   <block id="077d70acc6fcd0e9c32a626a8ef8e416" category="paragraph">通过准备您的环境并部署Connector、在私有模式下开始使用BlueXP。</block>
   <block id="19b89452bb4e16dbfc6dc9d3fbbf8fc1" category="list-text">准备一个满足CPU、RAM、磁盘空间、Docker引擎等要求的专用Linux主机。</block>
   <block id="8cb1247d6f1cd796c983b5b1cfbbd285" category="list-text">设置网络以访问目标网络。</block>
@@ -524,7 +523,6 @@
   <block id="681992b8581f6d4247af5523a14d0ce4" category="list-text">Docker 引擎</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">查看安装说明</block>
   <block id="762cb137e48e2922920955cfb157dea8" category="list-text">在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
-  <block id="c5b365377913424e6a59866f8ca70ef5" category="summary">NetApp BlueXP为您的企业提供了一个控制平台、可帮助您在内部环境和云环境中构建、保护和管理数据。BlueXP SaaS平台包括存储和数据服务、可提供存储管理、数据移动性、数据保护以及数据分析和控制。管理功能通过基于Web的控制台和API提供。</block>
   <block id="9f0bb2acc3984bc2da2e5e566dd4bc0a" category="doc">了解BlueXP</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
   <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">BlueXP平台提供了数据管理的四大要素：存储、移动性、保护以及分析和控制。</block>
@@ -544,8 +542,6 @@
   <block id="6b068f0a943d421535c7d8d412ee3522" category="list-text">E系列系统</block>
   <block id="3404cce75db90acf6a9d52860721a139" category="list-text">ONTAP 集群</block>
   <block id="7fcb7f97cbc710b693fef37b5e86770f" category="list-text">StorageGRID 系统</block>
-  <block id="7f346b4ef7825b27ccadbbf10f2d2cd0" category="inline-link">Kubbernetes持久数据</block>
-  <block id="bf51187e0e630c8bb2fbde7d3c4a5f69" category="list-text">流程编排和保护<block ref="17466ff7cb59071f2d4e860ff4e2c4e1" category="inline-link-rx"></block></block>
   <block id="340a76e3aef8e862f5fd79411261b297" category="list-text">移动性</block>
   <block id="55e7d878083c03ce4abbbc1175e10f41" category="list-text">通过同步、复制、分层和缓存数据、将数据移动到需要的位置。</block>
   <block id="e216b7a924341f796bca310d1d812baf" category="inline-link">复制和同步</block>
@@ -561,7 +557,6 @@
   <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">Replication</block>
   <block id="e5335d776982e29d68ce5591f7857b38" category="list-text"><block ref="e5335d776982e29d68ce5591f7857b38" category="inline-link-rx"></block></block>
   <block id="27d62ce672b932b5110b78a6ca41f5d9" category="list-text">分析和控制</block>
-  <block id="166c994d4abe4a5b8c4f0a60491d6b92" category="list-text">使用工具监控、映射和优化数据存储和基础架构。</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="inline-link">分类</block>
   <block id="3e347fe716ab17eefd02acef8c0347bf" category="list-text"><block ref="3e347fe716ab17eefd02acef8c0347bf" category="inline-link-rx"></block></block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="inline-link">数字顾问</block>
@@ -2813,12 +2808,8 @@
   <block id="31f2b2cbba0d986ad6ce5bec030a9de1" category="paragraph"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block>。</block>
   <block id="fa1f9e92f4f0aa51cba859b2dbc37a02" category="section-title">如何创建 Connector</block>
   <block id="e4e0875eedbe591adccfba1b76d09729" category="paragraph">BlueXP客户管理员可以直接从BlueXP、云提供商的市场或在您自己的Linux主机上手动安装软件来创建Connector。如何开始取决于您是在标准模式、受限模式还是专用模式下使用BlueXP。</block>
-  <block id="ce6d43255d920acadadb7e3862aee0b0" category="list-text"><block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block></block>
-  <block id="2d9421fac12c9ac9462f27b55d118c68" category="list-text"><block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block></block>
-  <block id="ba356dfc51631fb5a0371fea940de345" category="list-text"><block ref="ba356dfc51631fb5a0371fea940de345" category="inline-link-macro-rx"></block></block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="section-title">权限</block>
   <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">直接从BlueXP创建Connector需要特定权限、而Connector实例本身也需要另一组权限。如果您直接从BlueXP在AWS或Azure中创建Connector、则BlueXP将使用所需权限创建Connector。</block>
-  <block id="1e419112f48a13d6b30178e127d0a445" category="paragraph">要查看Connector所需的确切权限、请参见以下页面：</block>
   <block id="338a6f193e9988b8f40b3128d5e4ffb7" category="inline-link-macro">了解Connector如何使用AWS权限</block>
   <block id="0e4f7db7cba89c0c2240f4376d660bcd" category="list-text"><block ref="0e4f7db7cba89c0c2240f4376d660bcd" category="inline-link-macro-rx"></block></block>
   <block id="a039d4d02d5241a9510700b22c46787e" category="inline-link-macro">了解Connector如何使用Azure权限</block>
@@ -3230,8 +3221,6 @@
   <block id="297a49f6150dc8dc8d45620c0f09f393" category="list-text">如果要管理其他Google Cloud项目中的资源、请通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限。您需要对每个项目重复此步骤。</block>
   <block id="1f7d098197ba2def0ffc66c388b2aa6c" category="paragraph">如果为Cloud Volumes ONTAP创建新的工作环境、则BlueXP会默认选择以下AWS凭据：</block>
   <block id="1c16bd0b2377f4460ae56ecb40a419ae" category="paragraph">请注意、您可以选择与此角色关联的Azure订阅。您选择的每个订阅都提供连接器权限、用于管理该订阅中的资源(例如Cloud Volumes ONTAP)。</block>
-  <block id="55a733edf0d6d526d9ebeda09e38bdd1" category="summary">BlueXP帐户为您的组织提供多租户功能、使您能够在隔离的工作空间中组织用户和资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP系统、而在另一个工作空间中管理不同类型工作环境的其他用户则看不到该工作空间。</block>
-  <block id="e96a7b63d6df3633f05aea7438dd616e" category="paragraph">BlueXP account_为您的组织提供多租户功能、使您能够在隔离的_workspace中组织用户和资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP系统、而在另一个工作空间中管理不同类型工作环境的其他用户则看不到该工作空间。</block>
   <block id="d90aceadc99dce46d7d593ee18ab0d90" category="paragraph">Connector会与以下端点联系、以管理公有云环境中的资源和流程。</block>
   <block id="91499b479a6f9fe14de575cded8e2ab6" category="paragraph">如果要管理多个Azure订阅中的资源、则必须将服务主体绑定到其中每个订阅。例如、通过BlueXP、您可以选择要在部署Cloud Volumes ONTAP时使用的订阅。</block>
   <block id="6258a889f12d08d6da95cf4059f67498" category="paragraph">您应添加要用于BlueXP的每个Azure订阅的ID。</block>
@@ -3781,4 +3770,18 @@ deploymentmanager.editor</block>
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023年10月6日</block>
   <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">连接器3.9.34</block>
   <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">此版本包含一些小改进和错误修复。</block>
+  <block id="fbfcc41262435943a07339aac43c3871" category="summary">NetApp BlueXP为您的企业提供了一个控制平台、可帮助您在内部环境和云环境中构建、保护和管理数据。BlueXP SaaS平台包括可提供存储管理、数据移动性、数据保护以及数据分析和控制的服务。管理功能通过基于Web的控制台和API提供。</block>
+  <block id="3c7cc2c5cfc598a6280bf919763758f3" category="inline-link">为Kubbernetes工作负载提供数据保护</block>
+  <block id="3f0e4bbce5ac7b1b50e921687f2ef311" category="list-text"><block ref="3f0e4bbce5ac7b1b50e921687f2ef311" category="inline-link-rx"></block></block>
+  <block id="17b1e045b0e19ff6f254c01b1f9a9131" category="list-text">使用工具监控、映射和优化数据存储和基础架构。获得可指导行动的智能信息、以优化存储运行状况、故障恢复能力和经济效益。</block>
+  <block id="ca61c00bb942882ff64e228d1e677f97" category="paragraph">要在受限模式或专用模式下使用BlueXP、需要使用Connector。</block>
+  <block id="25a9b1247ec1fd14b6ef367a6910af4a" category="inline-link-macro">以标准模式开始使用BlueXP</block>
+  <block id="53307bf922b08c003dac0571547a263c" category="list-text"><block ref="53307bf922b08c003dac0571547a263c" category="inline-link-macro-rx"></block></block>
+  <block id="91f55c66e69b3b40e117fc5d123e8cd6" category="inline-link-macro">开始在受限模式下使用BlueXP</block>
+  <block id="def77b30fc5552aeb374df8119e2c2c8" category="list-text"><block ref="def77b30fc5552aeb374df8119e2c2c8" category="inline-link-macro-rx"></block></block>
+  <block id="08e6464d98921d4b239eda70bb4b04b2" category="inline-link-macro">开始在私有模式下使用BlueXP</block>
+  <block id="484cc15e142fd16556c500975b95d031" category="list-text"><block ref="484cc15e142fd16556c500975b95d031" category="inline-link-macro-rx"></block></block>
+  <block id="a6500600136e87d0f971781229e9f9ab" category="paragraph">要查看Connector日常操作所需的确切权限、请参阅以下页面：</block>
+  <block id="b3686cfa126ecda3f385bc3c05a38641" category="summary">BlueXP帐户为您的组织提供多租户功能、使您能够在隔离的工作空间中组织用户和资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP工作环境、而在其他工作空间中管理工作环境的用户则看不到该工作空间。</block>
+  <block id="59a7c4ef8ec683b4486222e8f42e56e6" category="paragraph">BlueXP account_为您的组织提供多租户功能、使您能够在隔离的_workspace中组织用户和资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP工作环境、而在其他工作空间中管理工作环境的用户则看不到该工作空间。</block>
 </blocks>
