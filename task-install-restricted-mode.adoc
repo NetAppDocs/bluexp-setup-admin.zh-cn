@@ -267,18 +267,26 @@ chmod +x OnCommandCloudManager-<version>
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./OnCommandCloudManager-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 -proxy会将Connector配置为使用以下格式之一的HTTP或HTTPS代理服务器：
 
 +
 ** \http://address:port
-** \http://username:password@address:port
+** \http://user-name:password@address:port
+** \http://domain-name%92user-name:password@address:port
 ** \https://address:port
-** \https://username:password@address:port
+** \https://user-name:password@address:port
+** \https://domain-name%92user-name:password@address:port
 +
-用户必须是本地用户。不支持域用户。
+请注意以下事项：
+
++
+*** 用户可以是本地用户或域用户。
+*** 对于域用户、必须对\使用ASCII代码、如上所示。
+*** BlueXP不支持包含@字符的密码。
+
 
 
 

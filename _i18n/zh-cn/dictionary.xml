@@ -124,14 +124,10 @@
   <block id="e9b5bbe1e4c19139761534abb688155a" category="list-text">分配运行脚本的权限。</block>
   <block id="643a877b7c306b1bcece42c8f03bebfb" category="paragraph">其中、&lt;version&gt; 是您下载的连接器版本。</block>
   <block id="325740f998865be7879e32048d406868" category="list-text">运行安装脚本。</block>
-  <block id="658dfe68751aa32c88df07e11961f9e4" category="paragraph">-proxy和-cacert参数是可选的。如果您有代理服务器、则需要输入所示的参数。安装程序不会提示您提供有关代理的信息。</block>
   <block id="b9fe00008273bec266b1b13a375c5496" category="paragraph">以下是使用这两个可选参数的命令示例：</block>
   <block id="c4b4fca8bb676cd8922fa6d8e24c4b0b" category="paragraph">-proxy会将Connector配置为使用以下格式之一的HTTP或HTTPS代理服务器：</block>
   <block id="2ceb0e196c300f23618f8a9e66bf0553" category="list-text">\http://address:port</block>
-  <block id="56ea310ec955ce6bca75693a1ac8f92d" category="list-text">\http://username:password@address:port</block>
   <block id="ab0bd0c76dc86ad344963fb604cbdb9a" category="list-text">\https://address:port</block>
-  <block id="0e304d528ea3fafc4ceebb3dd322c283" category="list-text">\https://username:password@address:port</block>
-  <block id="b9a11b90960ff803269429887ab4cff3" category="paragraph">用户必须是本地用户。不支持域用户。</block>
   <block id="1d012dd95bea10f05050cd3762e31e84" category="paragraph">-cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。只有在指定HTTPS代理服务器或代理为截获代理时、才需要此参数。</block>
   <block id="f5f31bd671c0968ba09c8eb577f95629" category="list-text">等待安装完成。</block>
   <block id="d242483bab76006d2edbd9135be8effe" category="paragraph">在安装结束时、如果您指定了代理服务器、则Connector服务(occa)将重新启动两次。</block>
@@ -1590,8 +1586,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">这些限制特定于BlueXP的设置和管理：Connector、SaaS平台等。</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">连接器限制</block>
-  <block id="37c1762f10d4fe7f0bd3dd2820e543c3" category="section-title">使用域用户的代理配置</block>
-  <block id="2ced7e677ffb2b0b579ea765f328f9d9" category="paragraph">在为Connector配置代理服务器时、BlueXP不支持域用户。输入代理服务器的用户名时、该服务器必须是本地用户。</block>
   <block id="cf4525e15b866700f10e91573643ba54" category="section-title">不应更改默认EC2实例设置</block>
   <block id="505d2a7358228b26711e097c3ca6dc24" category="paragraph">在AWS中部署Connector时、默认情况下会配置以下EC2实例设置：</block>
   <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2设置为可选</block>
@@ -2426,7 +2420,6 @@
   <block id="2c451caa323474f558c4e4065578647d" category="list-text">设置代理：</block>
   <block id="dabc8d2c79f6529ca393b4b3d4f75805" category="list-text">选择*启用代理*。</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">使用语法指定服务器<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> 或<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
-  <block id="3d069ceba6ecf8b2c1c3def00d512e45" category="list-text">如果服务器需要基本身份验证，请指定用户名和密码</block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="admonition">BlueXP不支持包含@字符的密码。</block>
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">启用直接 API 流量</block>
   <block id="6282017b43dee5b3762b81c0124c425c" category="paragraph">如果您将Connector配置为使用代理服务器、则可以在Connector上启用直接API流量、以便在不通过代理的情况下直接向云提供商服务发送API调用。在 AWS ， Azure 或 Google Cloud 中运行的 Connectors 支持此选项。</block>
@@ -3784,4 +3777,14 @@ deploymentmanager.editor</block>
   <block id="a6500600136e87d0f971781229e9f9ab" category="paragraph">要查看Connector日常操作所需的确切权限、请参阅以下页面：</block>
   <block id="b3686cfa126ecda3f385bc3c05a38641" category="summary">BlueXP帐户为您的组织提供多租户功能、使您能够在隔离的工作空间中组织用户和资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP工作环境、而在其他工作空间中管理工作环境的用户则看不到该工作空间。</block>
   <block id="59a7c4ef8ec683b4486222e8f42e56e6" category="paragraph">BlueXP account_为您的组织提供多租户功能、使您能够在隔离的_workspace中组织用户和资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP工作环境、而在其他工作空间中管理工作环境的用户则看不到该工作空间。</block>
+  <block id="68d3d8808dd0c97d733b830adcc3ce04" category="paragraph">-proxy和-cacert参数是可选的。如果您有代理服务器、则需要输入所示的参数。安装程序不会提示您提供有关代理的信息。</block>
+  <block id="5c19a40334d46880274be75a5173b4c4" category="list-text">\http://user-name:password@address:port</block>
+  <block id="33dbf59ca7c7ba76bec757cd7f795ed4" category="list-text">\http://domain-name%92user-name:password@address:port</block>
+  <block id="0c41c26ede4faf2f62d330df516b6e2c" category="list-text">\https://user-name:password@address:port</block>
+  <block id="84d3a6cbeb010ca14b892dcb244ad6c5" category="list-text">\https://domain-name%92user-name:password@address:port</block>
+  <block id="9c959780e1c60d211b8e7acdef1e4650" category="list-text">用户可以是本地用户或域用户。</block>
+  <block id="288412232e1a46f03f9c36a0d0f3b5c0" category="list-text">对于域用户、必须对\使用ASCII代码、如上所示。</block>
+  <block id="2fc62556a3d8d2f1a8b9dc5e4e4ba9ca" category="list-text">如果服务器需要基本身份验证、请指定用户名和密码。</block>
+  <block id="80bba58d673fb4fcbcf926f928bf80c7" category="list-text">对于域用户、必须按如下所示输入\的ASCII代码：domain-name%92user-name</block>
+  <block id="5596775e1e7017bff2ae389af56efd57" category="paragraph">例如：NetApp%92代理</block>
 </blocks>
