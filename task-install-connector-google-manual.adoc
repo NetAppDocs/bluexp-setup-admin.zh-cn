@@ -114,7 +114,8 @@ Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3
 
 
  a| 
-\https://support.netapp.com
+https://support.netapp.com
+https://mysupport.netapp.com
  a| 
 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。
 

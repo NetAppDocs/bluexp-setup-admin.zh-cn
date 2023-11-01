@@ -58,7 +58,8 @@ AWS 服务（ AmazonAWS.com ）：
 
 
  a| 
-\https://support.netapp.com
+https://support.netapp.com
+https://mysupport.netapp.com
  a| 
 获取许可信息并向 NetApp 支持部门发送 AutoSupport 消息。
 
