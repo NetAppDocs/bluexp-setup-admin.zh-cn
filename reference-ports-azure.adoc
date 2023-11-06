@@ -4,7 +4,7 @@ permalink: reference-ports-azure.html
 keywords: ports, security group, http, https, inbound, outbound 
 summary: Connector的Azure安全组需要入站和出站规则。从BlueXP创建Connector时、BlueXP会自动创建此安全组。您需要为所有其他安装选项设置此安全组。 
 ---
-= Azure中的安全组规则
+= Azure中的连接器安全组规则
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

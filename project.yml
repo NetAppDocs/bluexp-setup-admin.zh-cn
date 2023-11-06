@@ -17,13 +17,13 @@ sidebar:
     entries:
     - title: 新增功能
       url: "/whats-new.html"
-    - title: 限制
+    - title: 已知限制
       url: "/reference-limitations.html"
   - title: 入门
     entries:
     - title: 了解基础知识
       entries:
-      - title: BlueXP概述
+      - title: BlueXP
         url: "/concept-overview.html"
       - title: "—帐户"
         url: "/concept-netapp-accounts.html"
@@ -43,31 +43,31 @@ sidebar:
         entries:
         - title: AWS
           entries:
-          - title: 安装选项
+          - title: 连接器安装选项
             url: "/concept-install-options-aws.html"
-          - title: 从BlueXP创建
+          - title: 从BlueXP创建连接器
             url: "/task-install-connector-aws-bluexp.html"
-          - title: 从市场创建
+          - title: 从商城创建连接器
             url: "/task-install-connector-aws-marketplace.html"
-          - title: 手动安装
+          - title: 手动安装连接器
             url: "/task-install-connector-aws-manual.html"
         - title: Azure 酒店
           entries:
-          - title: 安装选项
+          - title: 连接器安装选项
             url: "/concept-install-options-azure.html"
-          - title: 从BlueXP创建
+          - title: 从BlueXP创建连接器
             url: "/task-install-connector-azure-bluexp.html"
-          - title: 从市场创建
+          - title: 从商城创建连接器
             url: "/task-install-connector-azure-marketplace.html"
-          - title: 手动安装
+          - title: 手动安装连接器
             url: "/task-install-connector-azure-manual.html"
         - title: Google Cloud
           entries:
-          - title: 安装选项
+          - title: 连接器安装选项
             url: "/concept-install-options-google.html"
-          - title: 从BlueXP或使用gCloud创建
+          - title: 从BlueXP或gCloud创建连接器
             url: "/task-install-connector-google-bluexp-gcloud.html"
-          - title: 手动安装
+          - title: 手动安装连接器
             url: "/task-install-connector-google-manual.html"
         - title: 内部部署
           url: "/task-install-connector-on-prem.html"
@@ -105,11 +105,11 @@ sidebar:
       url: "/concept-federation.html"
     - title: BlueXP帐户
       entries:
-      - title: 管理您的帐户
+      - title: 管理您的BlueXP帐户
         url: "/task-managing-netapp-accounts.html"
       - title: 监控帐户中的操作
         url: "/task-monitor-cm-operations.html"
-      - title: 创建其他帐户
+      - title: 创建另一个BlueXP帐户
         url: "/task-create-account.html"
       - title: 用户角色
         url: "/reference-user-roles.html"
@@ -119,29 +119,29 @@ sidebar:
         url: "/task-finding-system-id.html"
       - title: 管理现有连接器
         url: "/task-managing-connectors.html"
-      - title: 安装 HTTPS 证书
+      - title: 安装HTTPS证书以确保安全访问
         url: "/task-installing-https-cert.html"
-      - title: 配置代理设置
+      - title: 配置Connector以使用代理服务器
         url: "/task-configuring-proxy.html"
-      - title: 默认配置
+      - title: Connector 的默认配置
         url: "/reference-connector-default-config.html"
-    - title: 凭据
+    - title: 凭据和订阅
       entries:
-      - title: 管理 AWS 凭据
+      - title: AWS
         entries:
-        - title: 概述
+        - title: 了解凭据和权限
           url: "/concept-accounts-aws.html"
         - title: 管理凭据和订阅
           url: "/task-adding-aws-accounts.html"
-      - title: 管理 Azure 凭据
+      - title: Azure 酒店
         entries:
-        - title: 概述
+        - title: 了解凭据和权限
           url: "/concept-accounts-azure.html"
         - title: 管理凭据和订阅
           url: "/task-adding-azure-accounts.html"
-      - title: 管理 Google Cloud 凭据
+      - title: Google Cloud
         entries:
-        - title: 概述
+        - title: 了解项目和权限
           url: "/concept-accounts-gcp.html"
         - title: 管理凭据和订阅
           url: "/task-adding-gcp-accounts.html"
@@ -171,11 +171,11 @@ sidebar:
         url: "/reference-permissions-gcp.html"
     - title: 端口
       entries:
-      - title: AWS中的安全组规则
+      - title: AWS中的连接器安全组规则
         url: "/reference-ports-aws.html"
-      - title: Azure中的安全组规则
+      - title: Azure中的连接器安全组规则
         url: "/reference-ports-azure.html"
-      - title: Google Cloud中的防火墙规则
+      - title: Google Cloud中的连接器防火墙规则
         url: "/reference-ports-gcp.html"
       - title: 内部连接器的端口
         url: "/reference-ports-on-prem.html"

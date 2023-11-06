@@ -37,6 +37,8 @@ VPC和子网:: 创建Connector时、需要指定此Connector应驻留的VPC和�
 从连接器连接的端点:: Connector需要通过出站Internet访问与以下端点联系、以便管理公共云环境中的资源和流程、以实现日常运营。
 +
 --
+请注意、下面列出的端点均为CNAME条目。
+
 [cols="2a,1a"]
 |===
 | 端点 | 目的 
@@ -241,3 +243,5 @@ https://_ipaddress_[]
 现在、您可以使用BlueXP帐户安装并设置Connector。
 
 打开Web浏览器并转到 https://console.bluexp.netapp.com["BlueXP控制台"^] 开始将Connector与BlueXP结合使用。
+
+如果您在创建Connector的同一AWS帐户中具有Amazon S3存储分段、则会在BlueXP画布上自动显示Amazon S3工作环境。 https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["了解如何从BlueXP管理S3存储分段"^]

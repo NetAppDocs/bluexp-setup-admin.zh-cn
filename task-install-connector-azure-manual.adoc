@@ -96,6 +96,8 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-l
 从连接器连接的端点:: Connector需要通过出站Internet访问与以下端点联系、以便管理公共云环境中的资源和流程、以实现日常运营。
 +
 --
+请注意、下面列出的端点均为CNAME条目。
+
 [cols="2a,1a"]
 |===
 | 端点 | 目的 
@@ -515,6 +517,8 @@ https://_ipaddress_[]
 
 .结果
 现在、Connector已安装完毕、并已使用您的BlueXP帐户进行设置。
+
+如果您在创建Connector的同一Azure订阅中拥有Azure Blb存储、您将看到Azure Blb存储工作环境自动显示在BlueXP画布上。 https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["了解如何从BlueXP管理Azure Blb存储"^]
 
 
 

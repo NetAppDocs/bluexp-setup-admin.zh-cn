@@ -16,6 +16,9 @@ summary: 现在、您已登录并在标准模式下设置了BlueXP、用户可�
 [role="lead"]
 现在、您已登录并在标准模式下设置了BlueXP、用户可以创建和发现工作环境并使用BlueXP数据服务。
 
+
+TIP: 如果您在AWS、Microsoft Azure或Google Cloud中安装了Connector、则BlueXP会自动发现连接器安装位置中有关Amazon S3存储分段、Azure Blb存储分段或Google Cloud存储分段的信息。工作环境会自动添加到BlueXP画布中。
+
 要获得帮助、请转到 https://docs.netapp.com/us-en/bluexp-family/["BlueXP文档的主页"^] 查看所有BlueXP服务的文档。
 
 .相关链接

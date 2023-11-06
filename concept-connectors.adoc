@@ -172,7 +172,7 @@ BlueXP客户管理员可以直接从BlueXP、云提供商的市场或在您自�
 
 我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然BlueXP平台中的大多数服务和功能均通过基于SaaS的软件提供、但有几项特性和功能取决于Connector的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。
 
-只要Connector能够通过出站Internet访问来获取软件更新、它就会自动将其软件更新到最新版本。如果您正在私有模式下使用BlueXP、则需要手动升级Connector。
+当您在标准模式或受限模式下使用BlueXP时、Connector会自动将其软件更新到最新版本、只要它可以通过出站Internet访问来获取软件更新即可。如果您正在私有模式下使用BlueXP、则需要手动升级Connector。
 
 link:task-managing-connectors.html["了解如何手动升级Connector软件"]。
 

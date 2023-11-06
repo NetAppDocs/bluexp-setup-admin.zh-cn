@@ -4,7 +4,7 @@ permalink: concept-accounts-aws.html
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
 summary: 了解BlueXP如何使用AWS凭据和权限代表您执行操作。了解这些详细信息有助于您在BlueXP中管理一个或多个AWS帐户的凭据。例如、您可能希望了解何时向BlueXP添加其他AWS凭据。 
 ---
-= AWS 凭据和权限
+= 了解 AWS 凭据和权限
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
