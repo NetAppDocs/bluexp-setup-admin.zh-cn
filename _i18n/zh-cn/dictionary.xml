@@ -3775,4 +3775,7 @@ https://support.netapp.com
   <block id="260bcd27c402b5ba9f5dcabbfc1e0ddd" category="sidebar">凭据和订阅</block>
   <block id="cbaee96b9499da2c5c6d3b23090382c6" category="sidebar">了解凭据和权限</block>
   <block id="9d812302dfdd0fdbf4faa0fe53b9ed24" category="sidebar">了解项目和权限</block>
+  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">2023年11月8日</block>
+  <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">连接器3.9.35</block>
+  <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">此版本包含一些小的安全性改进和错误修复。</block>
 </blocks>
