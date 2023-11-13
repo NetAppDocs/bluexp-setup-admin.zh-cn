@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-quick-start-private-mode.html 
-keywords: private mode quick start, quick start 
+keywords: private mode quick start, quick start, aws top secret cloud, aws secret cloud, secret cloud, top secret cloud 
 summary: 通过准备您的环境并部署Connector、在私有模式下开始使用BlueXP。 
 ---
 = 入门工作流(私有模式)
@@ -15,6 +15,8 @@ summary: 通过准备您的环境并部署Connector、在私有模式下开始�
 
 [role="lead"]
 通过准备您的环境并部署Connector、在私有模式下开始使用BlueXP。
+
+私有模式通常用于无Internet连接的内部环境和安全云区域、其中包括 https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^]， https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^]，和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
 
 开始之前、您应了解 link:concept-netapp-accounts.html["BlueXP帐户"]， link:concept-connectors.html["连接器"]，和 link:concept-modes.html["部署模式"]。
 

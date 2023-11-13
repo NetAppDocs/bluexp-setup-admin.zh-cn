@@ -3146,21 +3146,13 @@
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">身份联合</block>
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">BlueXP帐户</block>
   <block id="f4040f71a7d553f2519487070892b115" category="sidebar">用户角色</block>
-  <block id="6dc6b060b761d145366b9ed041137917" category="sidebar">管理 AWS 凭据</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">管理凭据和订阅</block>
-  <block id="c135c603177e58023474a65f829c0fd3" category="sidebar">管理 Azure 凭据</block>
-  <block id="15f599d5c4282f662b38657a0b5c5739" category="sidebar">管理 Google Cloud 凭据</block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">已发现云存储</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">权限摘要</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
   <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">了解部署模式</block>
-  <block id="761d871e89c5ad68ac5c2de768bb7fc4" category="sidebar">在AWS中创建连接器(标准模式)</block>
-  <block id="1df187938f50cb0ec2035714e29f9008" category="sidebar">在Azure中创建连接器(标准模式)</block>
-  <block id="421e0ee20fb73cf162f2c03955c94f24" category="sidebar">在Google Cloud中创建连接器(标准模式)</block>
-  <block id="a80c3e3d3461039581490c3b665e6c55" category="sidebar">在内部创建连接器(标准模式)</block>
   <block id="c8aded93abddb2318a41b08cba739012" category="sidebar">管理连接器</block>
-  <block id="5287995c403f34c9ff0e79af4e8e7c9d" category="sidebar">管理帐户的NSS凭据</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客和社区</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP博客</block>
@@ -3778,4 +3770,23 @@ https://support.netapp.com
   <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">2023年11月8日</block>
   <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">连接器3.9.35</block>
   <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">此版本包含一些小的安全性改进和错误修复。</block>
+  <block id="ee06369b39630f4fbf14829266d40a91" category="paragraph">私有模式通常用于无Internet连接的内部环境和安全云区域、其中包括<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>，和<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="a95e947d8a886ad72a7cea0e895006fd" category="paragraph">受限模式通常由州和地方政府以及受监管的公司使用、包括在AWS GovCloud和Azure政府区域进行部署。开始之前、您应了解 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>， <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>，和 <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
+  <block id="c2a3212cb98f382140fb5a23af1c6063" category="paragraph">在标准模式下、用户可从基于Web的控制台以云服务的形式访问BlueXP。开始之前、您应了解 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>， <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>，和 <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
+  <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">查看AWS权限</block>
+  <block id="b7053c5f835c45d38cf071449c74fd56" category="sidebar">查看Azure权限</block>
+  <block id="7050d365baa220c42a688cbf36a7e997" category="sidebar">查看Google Cloud权限</block>
+  <block id="891c5b2cea54480f0e1abb74959457a6" category="sidebar">开始在标准AWS区域使用</block>
+  <block id="e766f31fe70a68c11b8631144211d0f7" category="sidebar">开始在AWS GovCloud区域使用</block>
+  <block id="9722aa95875a94430d4569d2e8bd2382" category="sidebar">开始使用AWS机密或Top SecretCloud</block>
+  <block id="e55aba8c57180a56450db886ecd8232e" category="sidebar">查看连接器的IAM策略</block>
+  <block id="27c705176bc1f05cf50771b1f8fe182a" category="sidebar">开始在标准Azure区域使用</block>
+  <block id="60563f8b2620e88ac71d1a98ee73e2e5" category="sidebar">开始在Azure政府地区使用</block>
+  <block id="31b63be41ae4657f9e340188aa268589" category="sidebar">开始使用Azure IL6</block>
+  <block id="3dbdf7d7951b212ca0000f0027184bb8" category="sidebar">查看连接器的自定义角色</block>
+  <block id="6c3328ab0a2ccaa273efaec9a88e2751" category="sidebar">开始在标准Google Cloud区域使用</block>
+  <block id="6844a754c2b209da7ac4949824ac467d" category="sidebar">查看连接器的服务帐户</block>
+  <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">在标准模式下安装和设置连接器</block>
+  <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">在专用模式下安装和设置连接器</block>
+  <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">登录</block>
 </blocks>

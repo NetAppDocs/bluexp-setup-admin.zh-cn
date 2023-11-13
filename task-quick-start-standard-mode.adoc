@@ -16,7 +16,7 @@ summary: '通过为BlueXP控制台准备网络连接、注册和创建帐户、(
 [role="lead"]
 通过为BlueXP控制台准备网络连接、注册和创建帐户、(可选)创建Connector以及订阅BlueXP、在标准模式下开始使用BlueXP。
 
-开始之前、您应了解 link:concept-netapp-accounts.html["BlueXP帐户"]， link:concept-connectors.html["连接器"]，和 link:concept-modes.html["部署模式"]。
+在标准模式下、用户可从基于Web的控制台以云服务的形式访问BlueXP。开始之前、您应了解 link:concept-netapp-accounts.html["BlueXP帐户"]， link:concept-connectors.html["连接器"]，和 link:concept-modes.html["部署模式"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] link:reference-networking-saas-console.html["准备网络以使用BlueXP控制台"]
 [role="quick-margin-para"]

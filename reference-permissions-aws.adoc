@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-permissions-aws.html 
-keywords: permissions, actions, aws, aws permissions 
+keywords: permissions, actions, aws, aws permissions, top secret, secret, aws top secret, aws secret, aws govcloud, govcloud, govcloud permissions, secret permissions, top secret permissions 
 summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加一个策略、此策略可为Connector提供管理该AWS帐户中资源和进程的权限。Connector使用这些权限对多个AWS服务进行API调用、包括EC2、S3、CloudFormation、IAM、 密钥管理服务等。 
 ---
 = Connector 的 AWS 权限
