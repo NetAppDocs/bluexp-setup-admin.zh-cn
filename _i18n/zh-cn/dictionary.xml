@@ -37,7 +37,6 @@
   <block id="5e15e451ab1dcb5e3bfae55f8b58e524" category="list-text">* 凭据位置 * ：选择 * Amazon Web Services &gt; Connector* 。</block>
   <block id="8117407a9689d4f991904d5739091c47" category="list-text">*定义凭据*：输入AWS访问密钥和机密密钥。</block>
   <block id="dc6e318a413899b5467eabc5f69ad366" category="list-text">* 市场订阅 * ：通过立即订阅或选择现有订阅，将市场订阅与这些凭据相关联。</block>
-  <block id="70c85793f0a33ef534a67f193287a992" category="doc">管理您的Azure Blb帐户</block>
   <block id="f9a2f8eef1df12108fd0c6b9b6b7fe6a" category="doc">Google Cloud中的连接器安装选项</block>
   <block id="b5afc81c4f24b143224e304b939a3f6c" category="paragraph">可以使用以下安装选项：</block>
   <block id="b584cbf8cb993e5b450384402639e3c4" category="paragraph">此操作将在您选择的VPC中启动运行Linux和Connector软件的VM实例。</block>
@@ -387,7 +386,6 @@
   <block id="9df83ab1f3ab5fb0d62768dd3ff406e6" category="list-text">cloudkms.keyrings.getIamPolicy</block>
   <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
   <block id="7c68c9240932ba8b284de266f9564faa" category="paragraph">BlueXP备份和恢复需要这些权限。</block>
-  <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">了解BlueXP如何使用Google Cloud凭据和权限代表您执行操作。了解这些详细信息有助于您管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。</block>
   <block id="a8f8f08c9d91eeaecc31377113ddd27b" category="section-title">BlueXP的项目和权限</block>
   <block id="627c5def4348066ddd5e7a1664e1079b" category="paragraph">在使用BlueXP管理Google Cloud项目中的资源之前、必须先部署Connector。Connector 不能在您的内部环境或其他云提供商中运行。</block>
   <block id="356334a26d74c400a5e0a69f237ba73e" category="paragraph">在直接从BlueXP部署Connector之前、必须具有两组权限：</block>
@@ -1011,7 +1009,6 @@
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">满足上述 CPU 和 RAM 要求的实例类型。建议使用n2-standard-4。</block>
   <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">屏蔽VM功能</block>
   <block id="5e59673ea4dc0650f587413c4848c02c" category="paragraph">在具有支持的操作系统的VM实例上、Google Cloud支持Connector<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
-  <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">了解BlueXP如何使用Azure凭据和权限代表您执行操作。了解这些详细信息有助于您管理一个或多个Azure订阅的凭据。例如、您可能希望了解何时向BlueXP添加其他Azure凭据。</block>
   <block id="08a6159f6d9d986210470d2ab6dff166" category="section-title">初始 Azure 凭据</block>
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">适用于 Azure 的连接器部署策略</block>
   <block id="9cbe008fc71c240a16ab125b2873fe44" category="inline-link-macro">查看BlueXP如何使用权限</block>
@@ -1033,7 +1030,6 @@
   <block id="9d28e4868b7fcb2d0b7ab54f9d7f7b3c" category="inline-link-macro">将帐户凭据添加到BlueXP</block>
   <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">您可以这样做 <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> 提供有关 AD 服务主体的详细信息。</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">例如、在创建新的Cloud Volumes ONTAP 工作环境时、您可以在凭据之间切换：</block>
-  <block id="baa9dd166d2a7f1d62e78a829f4b35a6" category="section-title">市场部署和内部部署如何？</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">以上各节介绍了BlueXP中建议的Connector部署方法。您还可以从Azure Marketplace在Azure中部署Connector、并在您自己的Linux主机上安装Connector软件。</block>
   <block id="f0e36fc8cdf840530f36b60220f9185b" category="paragraph">如果您使用Marketplace、则可以通过为Connector VM和系统分配的托管身份分配自定义角色来提供权限、也可以使用Azure AD服务主体。</block>
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">对于内部部署、您不能为Connector设置托管身份、但可以使用服务主体提供权限。</block>
@@ -1212,7 +1208,6 @@
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">您可以通过关联市场订阅并对订阅过程进行故障排除来管理与Connector VM实例关联的Google Cloud凭据。这两项任务都可以确保您可以使用市场订阅来支付BlueXP服务费用。</block>
   <block id="f691281f53b81c9f5d73a97dc7c334fd" category="doc">管理BlueXP的Google Cloud凭据和订阅</block>
   <block id="209e33f8aa50ade8c82e5bc82a8c023d" category="section-title">将Marketplace订阅与Google Cloud凭据关联</block>
-  <block id="e6bd6cdf191b4526ecbd9326bd7b5c24" category="paragraph">在Google Cloud中部署Connector时、BlueXP会创建一组与Connector VM实例关联的默认凭据。您可以随时更改与这些凭据关联的 Marketplace 订阅。通过订阅、您可以创建按需购买的Cloud Volumes ONTAP 系统并使用其他BlueXP服务。</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">一组现有凭据的操作菜单屏幕截图。</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
@@ -1480,7 +1475,6 @@
   <block id="5d1285233566f1379ef88c010de06abc" category="list-text">* 定义凭据 * ：输入有关授予所需权限的 Azure Active Directory 服务主体的信息：</block>
   <block id="3612e0e7a44ec38da1e226c618526f91" category="open-title">Google Cloud服务帐户</block>
   <block id="4b6fbf3b382ce342b57bbdb4fe0d6baf" category="paragraph">将服务帐户与Connector VM关联。</block>
-  <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">了解BlueXP如何使用AWS凭据和权限代表您执行操作。了解这些详细信息有助于您在BlueXP中管理一个或多个AWS帐户的凭据。例如、您可能希望了解何时向BlueXP添加其他AWS凭据。</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">初始 AWS 凭据</block>
   <block id="09c2333ff15fa85698d91a366cce26dd" category="inline-link-macro">适用于AWS的Connector部署策略</block>
   <block id="858c852a1a4696d4e56295d4b4b0ea20" category="paragraph">当BlueXP在AWS中启动Connector实例时、它会为此实例创建IAM角色和实例配置文件。此外，它还会附加一个策略，为 Connector 提供管理该 AWS 帐户中资源和进程的权限。 <block ref="9d2ef148313eb953f656b8efd4016e8c" category="inline-link-macro-rx"></block>。</block>
@@ -1494,11 +1488,9 @@
   <block id="d366b2fda179ae88058b546b6cd89726" category="list-text">您可以将AWS凭据直接添加到BlueXP</block>
   <block id="1fba93959336f34e08c6d34d0ca68230" category="paragraph">有关更多详细信息、请查看以下各节。</block>
   <block id="a456be184fc96fef017630ede092b15d" category="section-title">将 AWS 凭据添加到现有 Connector</block>
-  <block id="c0f31a85c681cbd2946d5195b382308e" category="paragraph">如果您要在不同的AWS帐户中启动Cloud Volumes ONTAP 、则可以为IAM用户提供AWS密钥、也可以为受信任帐户中某个角色的ARN提供AWS密钥。下图显示了另外两个帐户，一个通过可信帐户中的 IAM 角色提供权限，另一个通过 IAM 用户的 AWS 密钥提供权限：</block>
   <block id="25743d3dcac2dfe95c6e899571bfccc3" category="inline-image-macro">一个概念映像，显示另外两个帐户。每个都有一个 IAM 策略，一个附加到 IAM 用户，另一个附加到 IAM 角色。</block>
   <block id="49a11e441cb19dc0d43b1d3a3794d033" category="paragraph"><block ref="49a11e441cb19dc0d43b1d3a3794d033" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48c7f5d184d27ef640370421d3317ba5" category="paragraph">然后、您可以通过指定IAM角色的Amazon资源名称(ARN)或IAM用户的AWS密钥将帐户凭据添加到BlueXP。</block>
-  <block id="bc84b27c0d74f906857d6c1a83c368a0" category="paragraph">添加另一组凭据后，您可以在创建新的工作环境时切换到这些凭据：</block>
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">了解如何向现有Connector添加AWS凭据。</block>
   <block id="affef63146feae005315127173a28aa9" category="paragraph"><block ref="affef63146feae005315127173a28aa9" category="inline-link-macro-rx"></block></block>
   <block id="a923d2e65283c489ad78d9cdfa9bad74" category="section-title">将AWS凭据直接添加到BlueXP</block>
@@ -1511,7 +1503,6 @@
   <block id="a4542ce435b67066671321f478dce8cc" category="paragraph">如果您使用 Marketplace ，则会以相同方式提供权限。您只需手动创建和设置 IAM 角色，然后为任何其他帐户提供权限即可。</block>
   <block id="c369edb322a8885a983610e18f932d0c" category="paragraph">对于内部部署、您无法为BlueXP系统设置IAM角色、但可以使用AWS访问密钥提供权限。</block>
   <block id="70bfaa19a89e29bf0fc2b34b8f3150ba" category="section-title">如何安全地轮换 AWS 凭据？</block>
-  <block id="ee0f653772b33fb034bc7001a0c5e7a3" category="paragraph">如上所述、您可以通过BlueXP通过以下几种方式提供AWS凭据：与Connector实例关联的IAM角色、在可信帐户中承担IAM角色或提供AWS访问密钥。</block>
   <block id="025a22cb479bbf0e83048a4ae6ffaaa0" category="paragraph">对于前两个选项、BlueXP使用AWS安全令牌服务获取持续轮换的临时凭据。这是最佳实践—它是自动的，安全的。</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">如果您为BlueXP提供了AWS访问密钥、则应定期在BlueXP中更新这些密钥以轮换使用。这是一个完全手动的过程。</block>
   <block id="ccd2fd61b259ee660f0c8a22d4d70882" category="summary">当连接器手动安装在内部Linux主机上时、它会使用入站端口。在进行规划时、您可能需要引用这些端口。</block>
@@ -2661,7 +2652,6 @@
   <block id="ef21f4467b6f56b5c04a15d016e654a2" category="paragraph">将Azure凭据添加到BlueXP后、您可以将Azure Marketplace订阅与这些凭据相关联。通过订阅、您可以创建按需购买的Cloud Volumes ONTAP 系统并使用其他BlueXP服务。</block>
   <block id="2e6aa15d4609a29d86e5e9f886599c4c" category="paragraph">在以下两种情况下、您可能会在将凭据添加到BlueXP后关联Azure Marketplace订阅：</block>
   <block id="20e15acf80fa51f5de6b9e96c9c64fde" category="list-text">最初将凭据添加到BlueXP时、您未关联订阅。</block>
-  <block id="086754afbe30b09d7f6a643dd6e05800" category="list-text">您希望将现有 Azure Marketplace 订阅替换为新订阅。</block>
   <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">如果出现提示、请登录到您的Azure帐户。</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">您将重定向到BlueXP网站。</block>
@@ -2673,7 +2663,6 @@
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">删除凭据</block>
   <block id="a16b0bbea9ed6a7a22d41efc21ec1cef" category="paragraph">如果您不再需要一组凭据、可以从BlueXP中删除这些凭据。您只能删除与工作环境无关的凭据。</block>
   <block id="79c33710e10337a79e50227860ebf59a" category="list-text">在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*删除凭据*。</block>
-  <block id="a4f513306c1a0ead14679ffb7c282460" category="doc">管理Amazon S3存储分段</block>
   <block id="08533087d95fb07c92ed0773080a65d4" category="doc">设置Azure网络</block>
   <block id="1387f52f9e1a700036780a5bf567fab3" category="section-title">vNet和子网</block>
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">创建Connector时、需要指定此Connector应驻留的vNet和子网。</block>
@@ -2890,7 +2879,6 @@
   <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">关联 AWS 订阅</block>
   <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">将AWS凭据添加到BlueXP后、您可以将AWS Marketplace订阅与这些凭据相关联。通过订阅、您可以按每小时费率(PAYGO)或使用年度合同为Cloud Volumes ONTAP 付费、并使用其他BlueXP服务。</block>
   <block id="5eae6608f40144c94d96a8f0a1602c97" category="paragraph">在以下两种情况下、您可能会在将凭据添加到BlueXP后关联AWS Marketplace订阅：</block>
-  <block id="dbaf1a33cea4faeebcb91c3b7d479cc9" category="list-text">您希望将现有 AWS Marketplace 订阅替换为新订阅。</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">了解如何创建 Connector</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">您需要先创建Connector、然后才能更改BlueXP设置。 <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>。</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
@@ -3147,7 +3135,6 @@
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">BlueXP帐户</block>
   <block id="f4040f71a7d553f2519487070892b115" category="sidebar">用户角色</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">管理凭据和订阅</block>
-  <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">已发现云存储</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">权限摘要</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
@@ -3188,7 +3175,6 @@
   <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">默认情况下、您将在"通知中心"中看到所有活动通知。您可以筛选您看到的通知、以便仅显示对您重要的通知。您可以按BlueX"服务"和通知"类型"进行筛选。</block>
   <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">您在"通知中心"中设置的筛选器并不能确定您将通过电子邮件接收的通知类型。默认情况下、BlueXP客户管理员将收到所有"严重"和"建议"通知的电子邮件。这些通知适用于所有服务-您不能选择仅接收特定服务的通知、例如Connectors或BlueXP备份和恢复。</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">所有其他用户和收件人都配置为不接收任何通知电子邮件、因此您需要为任何其他用户配置通知设置。</block>
-  <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">管理您的Google云存储分段</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">您应具备以下条件：</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">有关详细信息，请参见<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
   <block id="1b6d3b3a89f4e066eb8bb8d481156cbb" category="list-text">*实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(建议使用T3.x大 容量)。</block>
@@ -3789,4 +3775,49 @@ https://support.netapp.com
   <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">在标准模式下安装和设置连接器</block>
   <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">在专用模式下安装和设置连接器</block>
   <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">登录</block>
+  <block id="337e8febb8ac96133c86a51cd7bc0240" category="summary">了解BlueXP如何使用Azure凭据代表您执行操作、以及这些凭据如何与商城订阅相关联。了解这些详细信息有助于您管理一个或多个Azure订阅的凭据。例如、您可能希望了解何时向BlueXP添加其他Azure凭据。</block>
+  <block id="3bf21bdc87a8f6ebde5b75e8cb0d5138" category="section-title">凭据和商城订阅</block>
+  <block id="b1e32c999d336fb505915de8a8ffca55" category="paragraph">您添加到连接器的凭据必须与Azure Marketplace订阅相关联、以便您可以按小时费率(PAYGO)或通过年度合同支付Cloud Volumes ONTAP费用、并使用其他BlueXP服务。</block>
+  <block id="fb84f4e33822ea62702acf73a6936590" category="paragraph"><block ref="1203dc0bfed75eb2f240871bcc177fc9" category="inline-link-macro-rx"></block>。</block>
+  <block id="699a4563fbdfb82a77a96312a9c5b942" category="paragraph">请注意以下有关Azure凭据和商城订阅的信息：</block>
+  <block id="394fe3b41aaabcee1c8575842cbb5c99" category="list-text">您只能将一个Azure Marketplace订阅与一组Azure凭据相关联</block>
+  <block id="d9fbcede0b5dd54b1e4b6bd98ebd3fff" category="list-text">您可以将现有商城订阅替换为新订阅</block>
+  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="section-title">常见问题解答</block>
+  <block id="c304c6eb88f5bb91ab96ba559c3124d2" category="paragraph">以下问题与凭据和订阅相关。</block>
+  <block id="d1498a931fa5f0af32115f36f233018b" category="section-title">我是否可以更改适用于Cloud Volumes ONTAP工作环境的Azure Marketplace订阅？</block>
+  <block id="eb61c2cc62653045f5374d6c02b9cb28" category="paragraph">可以。当您更改与一组Azure凭据关联的Azure Marketplace订阅时、所有现有和新的Cloud Volumes ONTAP工作环境都将从新订阅中扣除费用。</block>
+  <block id="9da47999e254d317c9c5eadda7df30b7" category="section-title">我是否可以添加多个Azure凭据、每个凭据都有不同的商城订阅？</block>
+  <block id="c0e1571fee7bc6b756a9626664ca06e8" category="paragraph">属于同一Azure订阅的所有Azure凭据都将与同一Azure Marketplace订阅相关联。</block>
+  <block id="0fa4c0b97cc5b7972696a2ba8c38b9c8" category="paragraph">如果您有多个属于不同Azure订阅的Azure凭据、则这些凭据可以与同一Azure Marketplace订阅或不同的Marketplace订阅相关联。</block>
+  <block id="4666e56ab2715e92af8b4dbb7fc97357" category="section-title">我是否可以将现有Cloud Volumes ONTAP工作环境迁移到其他Azure订阅？</block>
+  <block id="cd0af57faab800d64dbc9b6686539495" category="paragraph">不可以、不能将与您的Cloud Volumes ONTAP工作环境关联的Azure资源移动到其他Azure订阅。</block>
+  <block id="94db8f0d9e472465df4f4a2373f34e15" category="section-title">凭据如何用于市场部署和内置部署？</block>
+  <block id="459f61ebe7bde01cca8ed21d42e836ca" category="paragraph">在Google Cloud中部署Connector时、BlueXP会创建一组与Connector VM实例关联的默认凭据。您可以随时更改与这些凭据关联的Google Cloud Marketplace订阅。通过订阅、您可以创建按需购买的Cloud Volumes ONTAP 系统并使用其他BlueXP服务。</block>
+  <block id="9e2bbef36ac6bd075f201eb1ac82fddb" category="paragraph">将当前市场订阅替换为新订阅会改变任何现有Cloud Volumes ONTAP工作环境和所有新工作环境的市场订阅。</block>
+  <block id="6f3c919771c405c0014ee0f6d72d3149" category="summary">了解BlueXP如何使用Google Cloud凭据代表您执行操作、以及这些凭据如何与商城订阅相关联。了解这些详细信息有助于您管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。</block>
+  <block id="2b28187ebaea3b39a76735548553c017" category="paragraph">在Google Cloud中部署Connector时、BlueXP会为Connector所在项目中的Google Cloud服务帐户创建一组默认凭据。这些凭据必须与Google云市场订阅相关联、以便您可以按小时费率(PAYGO)购买Cloud Volumes ONTAP并使用其他BlueXP服务。</block>
+  <block id="09287a1087bc09afb8b07a6d1a5eae1e" category="inline-link-macro">了解如何关联Google Cloud Marketplace订阅</block>
+  <block id="7acdafee5614d2da4affd478462c535e" category="paragraph"><block ref="4394d3ef2937eb47839ebd4e9350c4a7" category="inline-link-macro-rx"></block>。</block>
+  <block id="ebb6d853fd57e1782a582fe71ada39d8" category="paragraph">请注意以下有关Google Cloud凭据和商城订阅的信息：</block>
+  <block id="4d1b7e7c166bf4ed32fa5d56516fa083" category="list-text">一个Connector只能关联一组Google Cloud凭据</block>
+  <block id="6d399b7b3ed393068765f55064547297" category="list-text">您只能将一个Google Cloud Marketplace订阅与凭据关联</block>
+  <block id="239d1b40f08bc1656a0d7e74a463506d" category="summary">了解BlueXP如何使用AWS凭据代表您执行操作、以及这些凭据如何与商城订阅相关联。了解这些详细信息有助于您在BlueXP中管理一个或多个AWS帐户的凭据。例如、您可能希望了解何时向BlueXP添加其他AWS凭据。</block>
+  <block id="83c8c6a596b650f7a3d797d7ca610eec" category="paragraph">如果要将BlueXP与其他AWS帐户结合使用、则可以为IAM用户或可信帐户中某个角色的ARN提供AWS密钥。下图显示了另外两个帐户，一个通过可信帐户中的 IAM 角色提供权限，另一个通过 IAM 用户的 AWS 密钥提供权限：</block>
+  <block id="69989e90b246317e0163189ff8d059e9" category="paragraph">您添加到连接器的凭据必须与AWS Marketplace订阅相关联、以便您可以按小时费率(PAYGO)或通过年度合同支付Cloud Volumes ONTAP费用、并使用其他BlueXP服务。</block>
+  <block id="121abc14ff73ca8b4e21d30028c17399" category="paragraph"><block ref="ec04a55c38de32bb88fa7b4155061e7c" category="inline-link-macro-rx"></block>。</block>
+  <block id="76561e64ef8af12896c02fcfaddaf89e" category="paragraph">请注意以下有关AWS凭据和Marketplace订阅的信息：</block>
+  <block id="7b0c974aab7fa6523b2e4aa45c818464" category="list-text">您只能将一个AWS Marketplace订阅与一组AWS凭据相关联</block>
+  <block id="d33d86c6f3f99b3b9b1b988bde0679bd" category="paragraph">以下问题与凭据和订阅相关。</block>
+  <block id="f4ccd042e43557d6dcec2b8d243b7662" category="paragraph">如上文各节所述、BlueXP支持您通过几种方式提供AWS凭据：与连接器实例关联的IAM角色、在受信任帐户中承担IAM角色或提供AWS访问密钥。</block>
+  <block id="c9195aa1791c4bdbc03156535bd27fc0" category="section-title">我是否可以更改适用于Cloud Volumes ONTAP工作环境的AWS Marketplace订阅？</block>
+  <block id="2fde9464009be43ef57f1ae03915ce1b" category="paragraph">可以。当您更改与一组凭据关联的AWS Marketplace订阅时、所有现有和新的Cloud Volumes ONTAP工作环境都将按新订阅收费。</block>
+  <block id="5f40627f2e8501cf250f4cc37e129f5c" category="section-title">我是否可以添加多个AWS凭据、每个凭据都有不同的商城订阅？</block>
+  <block id="f3d5116dad7634904c5a0daad024b77d" category="paragraph">属于同一AWS帐户的所有AWS凭据都将与同一AWS Marketplace订阅相关联。</block>
+  <block id="941c9eda62bf4e57d449bdcf28810b26" category="paragraph">如果您有多个属于不同AWS帐户的AWS凭据、则这些凭据可以与同一AWS Marketplace订阅或不同订阅相关联。</block>
+  <block id="240d9c0eecb88b98c7fc253d7a1ea3e9" category="section-title">我是否可以将现有Cloud Volumes ONTAP工作环境移至其他AWS帐户？</block>
+  <block id="48fee81c8905ac5f4a12516fa379b0f7" category="paragraph">不可以、不能将与您的Cloud Volumes ONTAP工作环境关联的AWS资源移动到其他AWS帐户。</block>
+  <block id="a0b5de080d56bb71b1a6a7c72fd88757" category="doc">管理BlueXP的AWS凭据和市场订阅</block>
+  <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">您希望更改与AWS凭据关联的AWS Marketplace订阅。</block>
+  <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">管理BlueXP的Azure凭据和市场订阅</block>
+  <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">您希望更改与Azure凭据关联的Azure Marketplace订阅。</block>
 </blocks>

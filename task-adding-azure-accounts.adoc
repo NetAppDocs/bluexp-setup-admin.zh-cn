@@ -4,7 +4,7 @@ permalink: task-adding-azure-accounts.html
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
 summary: '添加和管理Azure凭据、以便BlueXP拥有在Azure订阅中部署和管理云资源所需的权限。如果您管理多个 Azure Marketplace 订阅，则可以从 " 凭据 " 页面将其中每个订阅分配给不同的 Azure 凭据。' 
 ---
-= 管理BlueXP的Azure凭据和订阅
+= 管理BlueXP的Azure凭据和市场订阅
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -327,7 +327,10 @@ image:screenshot_accounts_switch_azure.gif["屏幕截图、显示在详细信息
 在以下两种情况下、您可能会在将凭据添加到BlueXP后关联Azure Marketplace订阅：
 
 * 最初将凭据添加到BlueXP时、您未关联订阅。
-* 您希望将现有 Azure Marketplace 订阅替换为新订阅。
+* 您希望更改与Azure凭据关联的Azure Marketplace订阅。
++
+将当前市场订阅替换为新订阅会改变任何现有Cloud Volumes ONTAP工作环境和所有新工作环境的市场订阅。
+
 
 
 .开始之前

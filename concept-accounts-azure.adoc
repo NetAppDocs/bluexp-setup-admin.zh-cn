@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
-keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
-summary: 了解BlueXP如何使用Azure凭据和权限代表您执行操作。了解这些详细信息有助于您管理一个或多个Azure订阅的凭据。例如、您可能希望了解何时向BlueXP添加其他Azure凭据。 
+keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials, marketplace subscription, replace subscription, subscription 
+summary: 了解BlueXP如何使用Azure凭据代表您执行操作、以及这些凭据如何与商城订阅相关联。了解这些详细信息有助于您管理一个或多个Azure订阅的凭据。例如、您可能希望了解何时向BlueXP添加其他Azure凭据。 
 ---
 = 了解 Azure 凭据和权限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 了解BlueXP如何使用Azure凭据和权限代表您执行操作。了
 
 
 [role="lead"]
-了解BlueXP如何使用Azure凭据和权限代表您执行操作。了解这些详细信息有助于您管理一个或多个Azure订阅的凭据。例如、您可能希望了解何时向BlueXP添加其他Azure凭据。
+了解BlueXP如何使用Azure凭据代表您执行操作、以及这些凭据如何与商城订阅相关联。了解这些详细信息有助于您管理一个或多个Azure订阅的凭据。例如、您可能希望了解何时向BlueXP添加其他Azure凭据。
 
 
 
@@ -54,7 +54,49 @@ image:screenshot_accounts_switch_azure.gif["显示在\"详细信息和凭据\"�
 
 
 
-== 市场部署和内部部署如何？
+== 凭据和商城订阅
+
+您添加到连接器的凭据必须与Azure Marketplace订阅相关联、以便您可以按小时费率(PAYGO)或通过年度合同支付Cloud Volumes ONTAP费用、并使用其他BlueXP服务。
+
+link:task-adding-azure-accounts.html#subscribe["了解如何关联Azure订阅"]。
+
+请注意以下有关Azure凭据和商城订阅的信息：
+
+* 您只能将一个Azure Marketplace订阅与一组Azure凭据相关联
+* 您可以将现有商城订阅替换为新订阅
+
+
+
+
+== 常见问题解答
+
+以下问题与凭据和订阅相关。
+
+
+
+=== 我是否可以更改适用于Cloud Volumes ONTAP工作环境的Azure Marketplace订阅？
+
+可以。当您更改与一组Azure凭据关联的Azure Marketplace订阅时、所有现有和新的Cloud Volumes ONTAP工作环境都将从新订阅中扣除费用。
+
+link:task-adding-azure-accounts.html#subscribe["了解如何关联Azure订阅"]。
+
+
+
+=== 我是否可以添加多个Azure凭据、每个凭据都有不同的商城订阅？
+
+属于同一Azure订阅的所有Azure凭据都将与同一Azure Marketplace订阅相关联。
+
+如果您有多个属于不同Azure订阅的Azure凭据、则这些凭据可以与同一Azure Marketplace订阅或不同的Marketplace订阅相关联。
+
+
+
+=== 我是否可以将现有Cloud Volumes ONTAP工作环境迁移到其他Azure订阅？
+
+不可以、不能将与您的Cloud Volumes ONTAP工作环境关联的Azure资源移动到其他Azure订阅。
+
+
+
+=== 凭据如何用于市场部署和内置部署？
 
 以上各节介绍了BlueXP中建议的Connector部署方法。您还可以从Azure Marketplace在Azure中部署Connector、并在您自己的Linux主机上安装Connector软件。
 

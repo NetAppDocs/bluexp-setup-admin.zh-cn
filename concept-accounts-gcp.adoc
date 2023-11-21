@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: 了解BlueXP如何使用Google Cloud凭据和权限代表您执行操作。了解这些详细信息有助于您管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。 
+summary: 了解BlueXP如何使用Google Cloud凭据代表您执行操作、以及这些凭据如何与商城订阅相关联。了解这些详细信息有助于您管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。 
 ---
 = 了解Google Cloud项目和权限
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 了解BlueXP如何使用Google Cloud凭据和权限代表您执行操�
 
 
 [role="lead"]
-了解BlueXP如何使用Google Cloud凭据和权限代表您执行操作。了解这些详细信息有助于您管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。
+了解BlueXP如何使用Google Cloud凭据代表您执行操作、以及这些凭据如何与商城订阅相关联。了解这些详细信息有助于您管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。
 
 
 
@@ -37,6 +37,21 @@ image:diagram_permissions_gcp.png["一个概念映像、用于描述用于部署
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["为标准模式设置Google Cloud权限"]
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["设置受限模式的权限"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["设置私有模式的权限"]
+
+
+
+
+== 凭据和商城订阅
+
+在Google Cloud中部署Connector时、BlueXP会为Connector所在项目中的Google Cloud服务帐户创建一组默认凭据。这些凭据必须与Google云市场订阅相关联、以便您可以按小时费率(PAYGO)购买Cloud Volumes ONTAP并使用其他BlueXP服务。
+
+link:task-adding-gcp-accounts.html["了解如何关联Google Cloud Marketplace订阅"]。
+
+请注意以下有关Google Cloud凭据和商城订阅的信息：
+
+* 一个Connector只能关联一组Google Cloud凭据
+* 您只能将一个Google Cloud Marketplace订阅与凭据关联
+* 您可以将现有商城订阅替换为新订阅
 
 
 

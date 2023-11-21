@@ -20,7 +20,9 @@ summary: 您可以通过关联市场订阅并对订阅过程进行故障排除�
 
 == 将Marketplace订阅与Google Cloud凭据关联
 
-在Google Cloud中部署Connector时、BlueXP会创建一组与Connector VM实例关联的默认凭据。您可以随时更改与这些凭据关联的 Marketplace 订阅。通过订阅、您可以创建按需购买的Cloud Volumes ONTAP 系统并使用其他BlueXP服务。
+在Google Cloud中部署Connector时、BlueXP会创建一组与Connector VM实例关联的默认凭据。您可以随时更改与这些凭据关联的Google Cloud Marketplace订阅。通过订阅、您可以创建按需购买的Cloud Volumes ONTAP 系统并使用其他BlueXP服务。
+
+将当前市场订阅替换为新订阅会改变任何现有Cloud Volumes ONTAP工作环境和所有新工作环境的市场订阅。
 
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
