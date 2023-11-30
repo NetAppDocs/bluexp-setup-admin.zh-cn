@@ -230,21 +230,20 @@ BlueXP会从其记录中删除Connector。
 
 == 卸载 Connector 软件
 
-卸载 Connector 软件以解决问题或从主机中永久删除此软件。您需要使用的步骤取决于您是将 Connector 安装在可访问 Internet 的主机上，还是安装在无法访问 Internet 的受限网络中的主机上。
+卸载 Connector 软件以解决问题或从主机中永久删除此软件。您需要使用的步骤取决于您是将Connector安装在可访问Internet的主机(标准模式或受限模式)上、还是安装在网络中无法访问Internet的主机(专用模式)上。
 
 
 
-=== 从可访问 Internet 的主机卸载
+=== 使用标准模式或受限模式时卸载
 
-联机连接器包含一个卸载脚本，您可以使用此脚本卸载软件。
+在标准模式或受限模式下使用BlueXP时、可通过以下步骤卸载Connector软件。
 
 .步骤
+. 连接到Connector的Linux VM。
 . 在 Linux 主机上运行卸载脚本：
 +
-[source, cli]
-----
-/opt/application/netapp/service-manager-2/uninstall.sh [silent]
-----
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
+
 +
 _silent_ 运行此脚本，而不提示您进行确认。
 
@@ -252,16 +251,15 @@ _silent_ 运行此脚本，而不提示您进行确认。
 
 
 
-=== 从无法访问 Internet 的主机卸载
+=== 使用私有模式时卸载
 
-如果您从 NetApp 支持站点下载了 Connector 软件并将其安装在无法访问 Internet 的受限网络中，请使用以下命令。
+在无法访问Internet的专用模式下使用BlueXP时、可通过以下步骤卸载Connector软件。
 
 .步骤
+. 连接到Connector的Linux VM。
 . 在 Linux 主机中，运行以下命令：
 +
-[source, cli]
-----
-docker-compose -f /opt/application/netapp/ds/docker-compose.yml down -v
-rm -rf /opt/application/netapp/ds
-----
+`./opt/application/netapp/ds/cleanup.sh`
+`rm -rf /opt/application/netapp/ds`
+
 

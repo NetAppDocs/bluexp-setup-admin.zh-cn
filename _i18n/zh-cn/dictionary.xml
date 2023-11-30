@@ -487,7 +487,6 @@
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">专用主机</block>
   <block id="3e54bf758f50b15d709edd166d8bf82b" category="list-text">与其他应用程序共享的主机不支持此连接器。主机必须是专用主机。</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">支持的操作系统</block>
-  <block id="e5051949dc3a37f9077e85df0f1c8a21" category="list-text">Ubuntu 22.04</block>
   <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6、7.7、7.8和7.9</block>
   <block id="eaf5618d0182a88179ac8580cc418219" category="list-text">Red Hat Enterprise Linux 7.6、7.7、7.8和7.9</block>
   <block id="24dfedb0d4bd46f0cd823d4e245f7642" category="paragraph">主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。</block>
@@ -1970,7 +1969,6 @@
   <block id="5eeca886fa07462826a9ea747483f528" category="section-title">AWS详细信息</block>
   <block id="a0676ac5cfebaef69b53ff7e37cd8c3c" category="paragraph">如果您从BlueXP或云提供商的市场部署了Connector、请注意以下事项：</block>
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">EC2实例类型为T3.xlarge。</block>
-  <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">该映像的操作系统为Ubuntu 22.04。</block>
   <block id="953e61420be6157aa122dfd3475d4070" category="paragraph">操作系统不包含 GUI 。您必须使用终端访问系统。</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">默认系统磁盘为100 GiB GP2磁盘。</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Azure详细信息</block>
@@ -2089,13 +2087,8 @@
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">输入Connector的名称进行确认、然后选择*删除*。</block>
   <block id="7c42efcb94d7f8204bfb69f49301938f" category="paragraph">BlueXP会从其记录中删除Connector。</block>
   <block id="1e5422449b0eb99ea40cb7fe70879cc1" category="section-title">卸载 Connector 软件</block>
-  <block id="1eadfd8e2f3b513abf35355f37e97001" category="paragraph">卸载 Connector 软件以解决问题或从主机中永久删除此软件。您需要使用的步骤取决于您是将 Connector 安装在可访问 Internet 的主机上，还是安装在无法访问 Internet 的受限网络中的主机上。</block>
-  <block id="4d67fb715dceafe12fe6803426ac57b2" category="section-title">从可访问 Internet 的主机卸载</block>
-  <block id="e089c95fb359ddfa284cac5771dbcd57" category="paragraph">联机连接器包含一个卸载脚本，您可以使用此脚本卸载软件。</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">在 Linux 主机上运行卸载脚本：</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silent_ 运行此脚本，而不提示您进行确认。</block>
-  <block id="8df713934e0916c402f7101820962747" category="section-title">从无法访问 Internet 的主机卸载</block>
-  <block id="aa03c0a49ae5be9aa71931d934887122" category="paragraph">如果您从 NetApp 支持站点下载了 Connector 软件并将其安装在无法访问 Internet 的受限网络中，请使用以下命令。</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">在 Linux 主机中，运行以下命令：</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">设置内部网络</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">在您自己的Linux主机上手动安装Connector时、Connector安装程序需要在安装过程中访问以下URL：</block>
@@ -2444,7 +2437,6 @@
   <block id="aca7ecb913d1693820d3cecc61146e57" category="list-text">选择要与用户关联的工作空间、然后选择*应用*。</block>
   <block id="00c13424586ec3eadb8e36d6a47c5a3d" category="paragraph">现在、只要Connector还与这些工作空间关联、用户就可以从BlueXP访问这些工作空间。</block>
   <block id="f932d2619edea0dc69b40e9be53abdc4" category="section-title">创建和管理服务帐户</block>
-  <block id="a27c9464b539fe59f34a06ecfb5eebf0" category="paragraph">服务帐户充当"用户"、可以通过授权API调用BlueXP来实现自动化。这样可以更轻松地管理自动化，因为您不需要基于可以随时离开公司的真实用户帐户构建自动化脚本。如果您使用的是联合，则可以创建令牌，而无需从云生成刷新令牌。</block>
   <block id="3867fe57530ba0aa0540b395cae02bbe" category="paragraph">您可以通过为服务帐户分配角色来为其授予权限、就像任何其他BlueXP用户一样。您还可以将服务帐户与特定工作空间相关联，以控制服务可以访问的工作环境（资源）。</block>
   <block id="3e90ee6ffbf4747b6daa7514209e20ef" category="paragraph">创建服务帐户时、您可以通过BlueXP复制或下载此服务帐户的客户端ID和客户端密钥。此密钥对用于通过BlueXP进行身份验证。</block>
   <block id="41d9e1257b3e21add2e59d038938ea94" category="section-title">创建服务帐户</block>
@@ -3820,4 +3812,19 @@ https://support.netapp.com
   <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">您希望更改与AWS凭据关联的AWS Marketplace订阅。</block>
   <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">管理BlueXP的Azure凭据和市场订阅</block>
   <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">您希望更改与Azure凭据关联的Azure Marketplace订阅。</block>
+  <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22.04 LTS</block>
+  <block id="7f9b20909dd63d1bee579fee63d32a4a" category="paragraph">卸载 Connector 软件以解决问题或从主机中永久删除此软件。您需要使用的步骤取决于您是将Connector安装在可访问Internet的主机(标准模式或受限模式)上、还是安装在网络中无法访问Internet的主机(专用模式)上。</block>
+  <block id="704318f2299bbf226c9c1348790ad16a" category="section-title">使用标准模式或受限模式时卸载</block>
+  <block id="cb4aad09336fbc7a1b8ecf07e5495e18" category="paragraph">在标准模式或受限模式下使用BlueXP时、可通过以下步骤卸载Connector软件。</block>
+  <block id="fd1e4807d8caf9eb7b22acef39d3e5ce" category="list-text">连接到Connector的Linux VM。</block>
+  <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
+  <block id="e62b509228c00429c0a06d3fd75b6e6e" category="section-title">使用私有模式时卸载</block>
+  <block id="56772d07c7720c5dc4391eea138265a3" category="paragraph">在无法访问Internet的专用模式下使用BlueXP时、可通过以下步骤卸载Connector软件。</block>
+  <block id="72b013396e56865d3673702aa9bcc731" category="paragraph"><block ref="53c9ecf44ffc5c93a5a42f4cda983463" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
+  <block id="6ae4e7f185de6791c9b45f3d273959f9" category="cell">\https://aiq.netapp.com</block>
+  <block id="034ade3fc7b98591feafb7b0039b2724" category="cell">需要访问BlueXP数字顾问。</block>
+  <block id="345dbd48a6c734a7dc3b743f014493be" category="paragraph">服务帐户充当"用户"、可以通过授权API调用BlueXP来实现自动化。这样可以更轻松地管理自动化，因为您不需要基于可以随时离开公司的真实用户帐户构建自动化脚本。</block>
+  <block id="f48ee857175ccdfbd5ae5d5354c32c08" category="inline-link">了解刷新令牌</block>
+  <block id="713b059ba47ab000812d3dd15273cee6" category="paragraph">请注意、使用服务帐户时、API操作不需要刷新令牌。<block ref="cc919b62f11a25e2d8c9fb23b34ada32" category="inline-link-rx"></block></block>
+  <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">该映像的操作系统为Ubuntu 22.04 LTS。</block>
 </blocks>

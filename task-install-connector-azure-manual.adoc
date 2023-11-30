@@ -29,7 +29,7 @@ summary: 要在您自己的Linux主机上手动安装Connector、您需要查看
 支持的操作系统::
 +
 --
-* Ubuntu 22.04
+* Ubuntu 22.04 LTS
 * CentOS 7.6、7.7、7.8和7.9
 * Red Hat Enterprise Linux 7.6、7.7、7.8和7.9
 +
