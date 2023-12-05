@@ -3839,4 +3839,7 @@ https://support.netapp.com
   <block id="74456640d8afbf406f720d7bd598b445" category="list-text">此外、还支持将本地ONTAP卷备份和还原到ONTAP S3。</block>
   <block id="18bb302ce6a2bf46e1beed1133756fb6" category="inline-link">了解如何将本地ONTAP数据备份到ONTAP S3</block>
   <block id="4befb86902877ee4e8c0bab35f4c9850" category="paragraph"><block ref="4befb86902877ee4e8c0bab35f4c9850" category="inline-link-rx"></block></block>
+  <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">2023年12月5日</block>
+  <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">将卷数据备份到Azure Blb存储时、BlueXP备份和恢复不再需要以下权限：</block>
+  <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">其他BlueXP存储服务需要这些权限、因此、如果您正在使用这些其他存储服务、这些权限仍将保留在Connector的自定义角色中。</block>
 </blocks>

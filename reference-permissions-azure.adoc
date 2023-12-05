@@ -198,9 +198,6 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
 
 Connector会发出以下API请求以进行BlueXP备份和恢复：
 
-* Microsoft.Compute/virtualMachines/read
-* Microsoft.Compute/virtualMachines/start/action
-* Microsoft.Compute/virtualMachines/deallocate/action
 * microsoft.Storage/storageAccounts"/列表项/操作
 * microsoft.Storage/storageAccounts"或"Read"
 * microsoft.Storage/storageAccounts"或"write"
@@ -223,8 +220,6 @@ Connector会发出以下API请求以进行BlueXP备份和恢复：
 * Microsoft.Network/privateDnsZones/A/write
 * Microsoft.Network/privateDnsZones/read
 * Microsoft.Network/privateDnsZones/virtualNetworkLinks/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
 * Microsoft.Network/networkInterfaces/delete
 * Microsoft.Network/networkSecurityGroups/delete
 * microsoft.resources/deployments/delete
@@ -772,6 +767,21 @@ Connector会为日常操作发出以下API请求。
 == 更改日志
 
 添加和删除权限后、我们将在以下各节中记录这些权限。
+
+
+
+=== 2023年12月5日
+
+将卷数据备份到Azure Blb存储时、BlueXP备份和恢复不再需要以下权限：
+
+* Microsoft.Compute/virtualMachines/read
+* Microsoft.Compute/virtualMachines/start/action
+* Microsoft.Compute/virtualMachines/deallocate/action
+* Microsoft.Compute/virtualMachines/extensions/delete
+* Microsoft.Compute/virtualMachines/delete
+
+
+其他BlueXP存储服务需要这些权限、因此、如果您正在使用这些其他存储服务、这些权限仍将保留在Connector的自定义角色中。
 
 
 
