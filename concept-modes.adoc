@@ -276,9 +276,17 @@ API endpoint:: API调用会调用Connector虚拟机。
 | 支持的服务 | 注释： 
 
 
-| 备份和恢复 | 仅支持将内部ONTAP 卷备份和还原到StorageGRID 系统。
+| 备份和恢复  a| 
+* 支持将本机ONTAP卷备份和还原到StorageGRID系统。
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["了解如何将内部ONTAP 数据备份到StorageGRID"^]
 
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["了解如何将内部ONTAP 数据备份到StorageGRID"^] 
+* 此外、还支持将本地ONTAP卷备份和还原到ONTAP S3。
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["了解如何将本地ONTAP数据备份到ONTAP S3"^]
+
+
+
 
 
 | 分类  a| 
