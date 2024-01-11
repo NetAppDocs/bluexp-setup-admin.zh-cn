@@ -18,14 +18,14 @@ summary: 为了帮助您快速入门、NetApp代表可能会要求您提供Conne
 
 .步骤
 . 在BlueXP控制台的右上角、选择帮助图标。
-. 选择*支持>连接器*。
+. 选择*支持> BlueXP Connecter*。
 +
-系统 ID 显示在顶部。
+系统ID显示在页面顶部。
 
 +
 * 示例 *
 
 +
-image:screenshot_system_id.gif["显示支持信息板中的BlueXP系统ID的屏幕截图。"]
+image:screenshot-system-id.png["显示支持信息板中的BlueXP系统ID的屏幕截图。"]
 
 

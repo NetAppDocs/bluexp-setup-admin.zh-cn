@@ -12,11 +12,8 @@
   <block id="4d23d12ce4b0de2019310ec73c45d09b" category="doc">查找 Connector 的系统 ID</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
   <block id="beabea313ffb3a9482595dfdd092b6c6" category="list-text">在BlueXP控制台的右上角、选择帮助图标。</block>
-  <block id="ee2045d2e396ef6520817ecf395d1155" category="list-text">选择*支持&gt;连接器*。</block>
-  <block id="cd9ffc2440addbacdf692ee7105ad41f" category="paragraph">系统 ID 显示在顶部。</block>
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">* 示例 *</block>
   <block id="2529cf627b3e8b4f850e5b8e7998dea3" category="inline-image-macro">显示支持信息板中的BlueXP系统ID的屏幕截图。</block>
-  <block id="dd452be96917f1c62ed3d40b11c4ebf2" category="paragraph"><block ref="dd452be96917f1c62ed3d40b11c4ebf2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a31342596e31d918d08c0417177a8f77" category="list-text">转到Google Cloud门户、并将服务帐户分配给Connector VM实例。</block>
   <block id="81c722be01f6c1251ced26ff2ff9dd3f" category="inline-link">Google Cloud文档：更改实例的服务帐户和访问范围</block>
   <block id="c8b77e7a211a8e1bbb884962a105fc2f" category="paragraph"><block ref="c8b77e7a211a8e1bbb884962a105fc2f" category="inline-link-rx"></block></block>
@@ -952,8 +949,6 @@
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">社区</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">加入BlueXP社区、关注正在进行的讨论或创建新的讨论。</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com （反馈电子邮件）</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">我们非常重视您的反馈意见。提交反馈以帮助我们改进BlueXP。</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">向NetApp支持部门创建案例</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。</block>
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">了解如何管理与BlueXP登录关联的凭据</block>
@@ -3842,4 +3837,17 @@ https://support.netapp.com
   <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">2023年12月5日</block>
   <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">将卷数据备份到Azure Blb存储时、BlueXP备份和恢复不再需要以下权限：</block>
   <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">其他BlueXP存储服务需要这些权限、因此、如果您正在使用这些其他存储服务、这些权限仍将保留在Connector的自定义角色中。</block>
+  <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">2024年1月11日</block>
+  <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">连接器3.9.36</block>
+  <block id="c86344b833d64024dcd801a79f3f366e" category="paragraph">此版本包括一些小改进、错误修复以及对以下云区域中的Connector的支持：</block>
+  <block id="5c4c535d51f9fbfc21f1baf9f449004c" category="list-text">AWS的以色列(特拉维夫)地区</block>
+  <block id="c53c95f8243560e843dabb8877e4d787" category="list-text">Google Cloud中的沙特阿拉伯地区</block>
+  <block id="3244421fb40bc38e67d918370813ac13" category="list-text">选择*支持&gt; BlueXP Connecter*。</block>
+  <block id="f3678f7b6e79e91c386c1443915f058a" category="paragraph">系统ID显示在页面顶部。</block>
+  <block id="78b33f2334c7af84c813788a6be69874" category="paragraph"><block ref="78b33f2334c7af84c813788a6be69874" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="da0773230b01d6a89d37c6a470238b1c" category="section-title">查看连接器的版本</block>
+  <block id="9135b5936981eca97dce83eb29069ca4" category="paragraph">您可以查看连接器的版本、以验证连接器是否自动升级到最新版本、或者因为您需要与NetApp代表共享此版本。</block>
+  <block id="eb59fa7ccae5cea6d510c55c15078ce1" category="paragraph">版本显示在页面顶部。</block>
+  <block id="a2f380016f769a1938d51415013af95a" category="inline-image-macro">显示支持信息板中连接器版本的屏幕截图。</block>
+  <block id="da65ca9f7cc579e3fad52951fe45cdb6" category="paragraph"><block ref="da65ca9f7cc579e3fad52951fe45cdb6" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
