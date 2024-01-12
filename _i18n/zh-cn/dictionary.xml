@@ -2972,9 +2972,6 @@
   <block id="ea22f9957523103248d84695e98b17ba" category="cell">支持的服务</block>
   <block id="f4c6f851b00d5518bf888815de279aba" category="cell">注释：</block>
   <block id="34678ee868eeabce720fc4a0fd60c17a" category="cell">完全支持</block>
-  <block id="c9a7d35c9d99037b4d9d587cc87ddf09" category="cell">受限模式的政府区域和商业区域支持。受限模式的主权区域不支持。
-
-不支持以下功能：应用程序、虚拟机和Kubernetes。</block>
   <block id="0a44fe605745a017fde35750e5fae36a" category="paragraph">受限模式的政府区域支持。在商业区域或受限模式的主权区域不支持。</block>
   <block id="9bff93d1123789b473f27a881c3e00c6" category="paragraph">存在以下限制：</block>
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">无法扫描OneDrive帐户、SharePoint帐户和Google Drive帐户。</block>
@@ -3019,7 +3016,6 @@
 不支持不使用连接器(直接发现)进行发现。</block>
   <block id="99f9fe7adce4b6282eee924da977b6d4" category="list-text">在内部部署中支持的BlueXP服务</block>
   <block id="614a24e7adcef9d83ca4454cd4443cbd" category="list-text">如果您的内部安装了Connector、则BlueXP支持以下私有模式存储和数据服务：</block>
-  <block id="1a1c1a2053d87746c09321c96ffee577" category="inline-link">了解如何将内部ONTAP 数据备份到StorageGRID</block>
   <block id="53a7caecec393fdcc143318b6a21f701" category="list-text">唯一支持的数据源是您可以在本地发现的数据源。</block>
   <block id="ad85db404f0dfc2267b348299aa513b9" category="inline-link">查看可在本地发现的源</block>
   <block id="c31f6ba921f50b9fdf957e9653b25a96" category="paragraph"><block ref="c31f6ba921f50b9fdf957e9653b25a96" category="inline-link-rx"></block></block>
@@ -3040,7 +3036,6 @@
   <block id="b04b058acf83e4616c9312ab2b951050" category="paragraph">请注意、某些服务可能受支持、但有一些限制。有关在受限模式和专用模式下如何支持这些服务的详细信息、请参阅上述部分。</block>
   <block id="aa200c19289e5050e77edc0bccc67c2b" category="cell">产品区域</block>
   <block id="7e4b1c5ec6c6adb1fa50f4ca17076845" category="cell">BlueXP服务或功能</block>
-  <block id="4e74f624e4d0f3f558ca01aa93696658" category="cell">*工作环境*</block>
   <block id="270fcb785810d0206945029bb05f4e97" category="cell">Amazon S3</block>
   <block id="52745271323ee9ea30e3a37d0338d118" category="cell">Azure Blob</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="cell">Google Cloud 存储</block>
@@ -3663,9 +3658,6 @@ deploymentmanager.editor</block>
   <block id="026951b63281b53e88087e2423613cad" category="example-title">秘密区域</block>
   <block id="76187385115cd00f6a1ec1ff426ad7b5" category="example-title">顶级机密区域</block>
   <block id="5327be2346849398acb42586361c3fa1" category="paragraph">安全区域包括<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>，和<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
-  <block id="1b46f73bf231e8eefaf1347b4383cc0a" category="cell">在AWS和Azure商业区域中受支持。
-
-在Google Cloud或中不受支持<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>或<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="fcbe8b204f3332d68f1b0f5f05c998db" category="cell">由于无法访问Internet、因此无法使用以下功能：自动软件升级和AutoSupport。</block>
   <block id="8bb35bd6add2b83baee34c828e6acacf" category="cell">API调用Azure、调用ONTAP、调用BlueXP分类、并向NetApp发送AutoSupport消息</block>
   <block id="d80bf17e105d87b4295cb2e090a28117" category="list-text">此时、系统将通过电子邮件发送以下BlueXP功能和服务的通知：Connector、BlueXP数字钱包、BlueXP复制和同步、BlueXP备份和恢复、BlueXP分层和BlueXP迁移报告。未来版本将添加其他服务。</block>
@@ -3829,11 +3821,6 @@ https://support.netapp.com
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">了解如何在使用私有模式时升级连接器</block>
   <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
   <block id="a6c2003199e95310a83aa40a67058bd8" category="paragraph">请务必为无法访问Internet的专用网络下载脱机安装程序。</block>
-  <block id="592f630e8b69cd90cac093e1bdbd9dbb" category="list-text">支持将本机ONTAP卷备份和还原到StorageGRID系统。</block>
-  <block id="06335b9f199e896c8eeed49a6ea11aae" category="paragraph"><block ref="06335b9f199e896c8eeed49a6ea11aae" category="inline-link-rx"></block></block>
-  <block id="74456640d8afbf406f720d7bd598b445" category="list-text">此外、还支持将本地ONTAP卷备份和还原到ONTAP S3。</block>
-  <block id="18bb302ce6a2bf46e1beed1133756fb6" category="inline-link">了解如何将本地ONTAP数据备份到ONTAP S3</block>
-  <block id="4befb86902877ee4e8c0bab35f4c9850" category="paragraph"><block ref="4befb86902877ee4e8c0bab35f4c9850" category="inline-link-rx"></block></block>
   <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">2023年12月5日</block>
   <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">将卷数据备份到Azure Blb存储时、BlueXP备份和恢复不再需要以下权限：</block>
   <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">其他BlueXP存储服务需要这些权限、因此、如果您正在使用这些其他存储服务、这些权限仍将保留在Connector的自定义角色中。</block>
@@ -3850,4 +3837,29 @@ https://support.netapp.com
   <block id="eb59fa7ccae5cea6d510c55c15078ce1" category="paragraph">版本显示在页面顶部。</block>
   <block id="a2f380016f769a1938d51415013af95a" category="inline-image-macro">显示支持信息板中连接器版本的屏幕截图。</block>
   <block id="da65ca9f7cc579e3fad52951fe45cdb6" category="paragraph"><block ref="da65ca9f7cc579e3fad52951fe45cdb6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="34c6561859a3a97caa0248fbb4372124" category="inline-link">查看ONTAP数据支持的备份目标列表</block>
+  <block id="b78582359876713ba71594c58c688056" category="cell">受限模式的政府区域和商业区域支持。受限模式的主权区域不支持。
+
+在受限模式下、BlueXP备份和恢复仅支持备份和还原ONTAP卷数据。<block ref="db0a18d2a99588054f71bf6c0bd14abb" category="inline-link-rx"></block>
+
+不支持备份和还原应用程序数据、虚拟机数据和Kubnetes数据。</block>
+  <block id="daf7166d96d9be504340c5f0fca638a4" category="cell">在AWS和Azure商业区域中受支持。
+
+在Google Cloud或中不受支持<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>或<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block>
+
+在私有模式下、BlueXP备份和恢复仅支持备份和还原ONTAP卷数据。<block ref="178bedf5671592d86ab011b6af0333e7" category="inline-link-rx"></block>
+
+不支持备份和还原应用程序数据、虚拟机数据和Kubnetes数据。</block>
+  <block id="b17e900e063883a32cc6ff0df77599bf" category="inline-link">查看ONTAP卷数据支持的备份目标列表</block>
+  <block id="652dc029a5083b41e38c79d0e4d16733" category="paragraph">在私有模式下、BlueXP备份和恢复仅支持备份和还原ONTAP卷数据。<block ref="eebf709c38a40036acede282fbe8b80c" category="inline-link-rx"></block></block>
+  <block id="f85eecb0561afa9ea5f5e20833e958c3" category="paragraph">不支持备份和还原应用程序数据、虚拟机数据和Kubnetes数据。</block>
+  <block id="d0622c7af7b2cc2435986b2d005d8fc3" category="cell">*工作环境*
+
+表的这一部分列出了BlueXP画布中对工作环境管理的支持。它并不表示BlueXP备份和恢复支持的备份目标。</block>
+  <block id="156b68e03278a01a3d2781f8c900caac" category="cell">是的。
+
+<block ref="14c876cb6a245f558ae78bae571d2b6e" category="inline-link-rx"></block></block>
+  <block id="fa0738e12b2324073fa9b5f91af71e48" category="cell">是的。
+
+<block ref="42dbd2df9d57eeeb664cce05b5a35bf1" category="inline-link-rx"></block></block>
 </blocks>
