@@ -56,7 +56,7 @@ image:diagram-identity-federation.png["一个示意图、其中显示了使用Bl
 BlueXP支持以下身份提供程序：
 
 * 安全断言标记语言(SAML)身份提供程序
-* Microsoft Azure Active Directory (AD)
+* Microsoft Entra ID
 * Active Directory 联合身份验证服务（ ADFS ）
 * PingFederate
 
@@ -129,9 +129,9 @@ NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新
 |===
 
 
-=== Microsoft Azure AD
+=== Microsoft Entra ID
 
-总体而言、在BlueXP和Azure AD之间设置联合连接包括以下步骤：
+总体而言、在BlueXP和Microsoft Entra ID之间设置联合连接包括以下步骤：
 
 [cols="10,15,75"]
 |===
@@ -139,9 +139,9 @@ NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新
 
 
 | 1. | AD管理员  a| 
-配置Azure Active Directory以启用与BlueXP的身份联合。
+配置Microsoft Entra ID以启用与BlueXP的身份联合。
 
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["查看将应用程序注册到Azure AD的说明"^]
+https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["查看有关使用Microsoft Entra ID注册应用程序的说明"^]
 
 
 TIP: Do _not_ complete the steps that describe how to create a connection in auth0。您将在下一步中创建此连接。
@@ -155,7 +155,7 @@ TIP: Do _not_ complete the steps that describe how to create a connection in aut
 
 * 客户端 ID
 * 客户端密钥值
-* Microsoft Azure AD域
+* Microsoft Entra ID域
 
 
 使用此信息创建连接后、"Federation Setup"页面将列出可发送给AD管理员以在下一步完成配置的参数。
@@ -165,7 +165,7 @@ NOTE: 记下机密密钥的到期日期。您需要返回到"联盟设置"页面
 
 
 
-| 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数完成Azure AD中的配置。 
+| 3. | AD管理员 | 完成步骤2后、使用"联合身份验证设置"页面上显示的参数在Microsoft Entra ID中完成配置。 
 
 
 | 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]

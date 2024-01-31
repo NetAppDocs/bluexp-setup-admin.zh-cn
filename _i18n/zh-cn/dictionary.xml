@@ -61,7 +61,6 @@
   <block id="ca5c14dd1767138ec0ae60d1c4d7a128" category="list-text">选择* Azure用户帐户*以登录到您的Microsoft帐户、该帐户应具有所需的权限。</block>
   <block id="e0f74d06e87b3ad6fc9f3b3cfc573c38" category="paragraph">此表由 Microsoft 拥有和托管。您的凭据不会提供给 NetApp 。</block>
   <block id="49e88457c3aa8d56ebf17eb8460a3eb8" category="admonition">如果您已登录到Azure帐户、则BlueXP将自动使用该帐户。如果您有多个帐户，则可能需要先注销，以确保您使用的是正确的帐户。</block>
-  <block id="0a3420a284048b3146bfedfda39bc929" category="list-text">选择* Active Directory服务主体*以输入有关授予所需权限的Azure Active Directory服务主体的信息：</block>
   <block id="5f92aba7d335e90da33ac643d56ed817" category="list-text">应用程序(客户端) ID</block>
   <block id="ac1fdeeca5975112ea2d53b754a4c94f" category="list-text">目录(租户) ID</block>
   <block id="734082edf44417dd19cc65943aa65c36" category="list-text">客户端密钥</block>
@@ -586,7 +585,6 @@
   <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">选择* NSS管理&gt;添加NSS帐户*。</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">出现提示时、选择*继续*以重定向到Microsoft登录页面。</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">通过这些操作、BlueXP可以使用您的NSS帐户执行许可证下载、软件升级验证和未来支持注册等操作。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">请注意以下事项：</block>
@@ -608,19 +606,9 @@
   <block id="f8c7ce78aaf937671ef25c9c931e368e" category="list-text"><block ref="f8c7ce78aaf937671ef25c9c931e368e" category="inline-link-rx"></block></block>
   <block id="a37ea04c3e1568f7c0e8e6abc9104d40" category="inline-link">注册按需购买的系统</block>
   <block id="b973035f0b680495b14f344d6beef53c" category="list-text"><block ref="b973035f0b680495b14f344d6beef53c" category="inline-link-rx"></block></block>
-  <block id="bdc3d022de69262bc7cb126fddac2df3" category="section-title">更新新身份验证方法的 NSS 帐户</block>
-  <block id="759f5e4f5dca6e6753e9254efed21ea1" category="paragraph">从 2021 年 11 月开始， NetApp 现在使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。由于此更新、BlueXP将提示您更新先前添加的任何现有帐户的凭据。</block>
-  <block id="a8ee828dbf9ffbba52ad9d7c1d04242a" category="inline-link">创建一个Microsoft Azure Active Directory B2C帐户、此帐户将链接到您当前的BlueXP帐户</block>
-  <block id="4ca24677e66997a22608e9d0d222f780" category="list-text">如果您尚未执行此操作，<block ref="7a8e518e973906b81bf65d6cae725be0" category="inline-link-rx"></block>。</block>
   <block id="b7d544e19d5b26255a1df1dd3e33d678" category="list-text">选择* NSS管理*。</block>
-  <block id="de427ea5ca6af7aba62b71992e7b574a" category="list-text">对于要更新的NSS帐户、请选择*更新帐户*。</block>
-  <block id="d351b79158a130fb8ea25841a60a3d92" category="inline-image-macro">显示更新帐户选项的屏幕截图</block>
-  <block id="8c513892354d080911596538a0a8e779" category="paragraph"><block ref="8c513892354d080911596538a0a8e779" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="12e10a54c3e2f5a33f8aa5731c8309bd" category="paragraph">此过程完成后，您更新的帐户现在应在表中列为 _new_ 帐户。此帐户的 _older_ 版本以及任何现有的工作环境关联仍列在表中。</block>
   <block id="5f74d1c3714e49926cf5f752029ebcc2" category="inline-xref">将这些工作环境附加到其他 NSS 帐户</block>
-  <block id="fa867fa0605c678ee51d2260103bd8bf" category="list-text">如果现有 Cloud Volumes ONTAP 工作环境已附加到旧版本的帐户，请按照以下步骤进行操作 <block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0afff19aa3343a6f86619d833dbd316" category="inline-image-macro">一个由三个并排点组成的图标</block>
-  <block id="957061f35945035f7619d487eeae3396" category="list-text">转至旧版本的NSS帐户、然后选择 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 然后选择 * 删除 * 。</block>
   <block id="8cb2ff10d15cea1a460cee3b506d5a6c" category="section-title">更新NSS凭据</block>
   <block id="90488de845793cd541dd12866e86b44a" category="paragraph">发生以下任一情况时、您需要在BlueXP中更新NSS帐户的凭据：</block>
   <block id="d7fb44c1919b66d02d93dc18ebb82756" category="list-text">您可以更改帐户的凭据</block>
@@ -630,7 +618,6 @@
   <block id="2aa3557242cb0eddbff8233ad0c81a45" category="paragraph"><block ref="2aa3557242cb0eddbff8233ad0c81a45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="297e9bab56e72eca06bc12c5f89c3007" category="section-title">将工作环境附加到其他 NSS 帐户</block>
   <block id="8b65cb7585cade7e7c6df120ae10da1b" category="paragraph">如果您的组织有多个 NetApp 支持站点帐户，则可以更改与 Cloud Volumes ONTAP 系统关联的帐户。</block>
-  <block id="71030de456dade7df9dd4194ac0cc64e" category="paragraph">只有配置为使用 NetApp 采用的 Microsoft Azure AD 进行身份管理的 NSS 帐户才支持此功能。要使用此功能、您需要选择*添加NSS帐户*或*更新帐户*。</block>
   <block id="2b1290920584c08c2e2b07569cf0a3b0" category="list-text">完成以下步骤以更改 NSS 帐户：</block>
   <block id="7ebef2f036d00a5760c52a09582f43b4" category="list-text">展开当前与工作环境关联的 NetApp 支持站点帐户对应的行。</block>
   <block id="4ff944075f223ced34dfceaeee89f003" category="list-text">对于要更改关联的工作环境、请选择 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
@@ -639,7 +626,6 @@
   <block id="11ecc3de6ba7beb5561699b813f5f452" category="paragraph"><block ref="11ecc3de6ba7beb5561699b813f5f452" category="inline-image-macro-rx" type="image"></block></block>
   <block id="17b44f0405de560bdd9ba352b67adb7a" category="list-text">选择帐户、然后选择*保存*。</block>
   <block id="504f62cd55407d98070b45659035b7f5" category="section-title">显示 NSS 帐户的电子邮件地址</block>
-  <block id="b740e07b8f623825c65d7d54111e7561" category="paragraph">既然NetApp 支持站点 帐户使用Microsoft Azure Active Directory进行身份验证服务、则在BlueXP中显示的NSS用户名通常是由Azure AD生成的标识符。因此，您可能无法立即知道与该帐户关联的电子邮件地址。但是、BlueXP可以选择向您显示关联的电子邮件地址。</block>
   <block id="a74d4f6da1f4962caa974b5e68852f05" category="admonition">转到"NSS管理"页面时、BlueXP会为表中的每个帐户生成一个令牌。此令牌包含有关关联电子邮件地址的信息。退出此页面后，此令牌将被删除。此信息永远不会缓存，这有助于保护您的隐私。</block>
   <block id="fb62719b7db2f72c6247845a1f5cbcb1" category="list-text">对于要更新的NSS帐户、请选择 <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> 然后选择 * 显示电子邮件地址 * 。</block>
   <block id="51f80facd7c70833cf77adf937c57d0f" category="inline-image-macro">屏幕截图显示了 NetApp 支持站点帐户的操作菜单，其中包括显示电子邮件地址的功能。</block>
@@ -1017,15 +1003,12 @@
   <block id="daa8ebdcea8faf9c0a905610b976465d" category="inline-link-macro">将托管身份与这些订阅相关联</block>
   <block id="e9449a821e5687d61739e39e9c79898a" category="paragraph">分配给Connector VM的系统分配的受管身份与启动Connector的订阅相关联。如果要选择其他 Azure 订阅，则需要 <block ref="f01caac2e85764bbee287cdcbf568231" category="inline-link-macro-rx"></block>。</block>
   <block id="87201b9d2d1782996b39bbbe3547cd00" category="section-title">其他 Azure 凭据</block>
-  <block id="65362b4c54ef572e25b742c44ba41e3e" category="inline-link-macro">在 Azure Active Directory 中创建和设置服务主体</block>
-  <block id="008c03a90ac1fbf6c15706a19f919f3b" category="paragraph">如果要对BlueXP使用不同的Azure凭据、则必须通过授予所需权限 <block ref="551303c9f711674f6fbd417b1f488bc0" category="inline-link-macro-rx"></block> 对于每个 Azure 帐户。下图显示了另外两个帐户，每个帐户都设置有一个服务主体和一个提供权限的自定义角色：</block>
   <block id="21df124adba9039de035d33b17717b15" category="inline-image-macro">显示初始 Azure 帐户（通过自定义角色和托管身份接收权限）以及通过自定义角色和服务主体接收权限的其他两个帐户的概念映像。</block>
   <block id="0d613716f3793197f23817b5b3a36ec3" category="paragraph"><block ref="0d613716f3793197f23817b5b3a36ec3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d28e4868b7fcb2d0b7ab54f9d7f7b3c" category="inline-link-macro">将帐户凭据添加到BlueXP</block>
   <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">您可以这样做 <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> 提供有关 AD 服务主体的详细信息。</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">例如、在创建新的Cloud Volumes ONTAP 工作环境时、您可以在凭据之间切换：</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">以上各节介绍了BlueXP中建议的Connector部署方法。您还可以从Azure Marketplace在Azure中部署Connector、并在您自己的Linux主机上安装Connector软件。</block>
-  <block id="f0e36fc8cdf840530f36b60220f9185b" category="paragraph">如果您使用Marketplace、则可以通过为Connector VM和系统分配的托管身份分配自定义角色来提供权限、也可以使用Azure AD服务主体。</block>
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">对于内部部署、您不能为Connector设置托管身份、但可以使用服务主体提供权限。</block>
   <block id="53c512e9599c71e1a585d636a5229820" category="list-text">标准模式</block>
   <block id="4275ae61422c34253a59329bd20a0449" category="inline-link-macro">设置Azure权限</block>
@@ -1110,13 +1093,9 @@
   <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">如果Connector安装在内部、则必须使用此身份验证方法。您不能使用IAM角色。</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">现在、您应该拥有具有所需权限的IAM用户的访问密钥。安装Connector后、您需要将这些凭据与BlueXP中的Connector相关联。</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="open-title">Azure 酒店</block>
-  <block id="0180cc84ac01ea354335e5e4c42027db" category="paragraph">在内部安装Connector时、您需要通过在Azure Active Directory中设置服务主体并获取BlueXP所需的Azure凭据来为BlueXP提供Azure权限。</block>
-  <block id="ac572c9e1fee2fbf598102a8524251e8" category="list-title">创建Azure Active Directory应用程序以进行基于角色的访问控制</block>
   <block id="2189e37a9b7c751d238d4e13fd8f634b" category="list-text">确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。</block>
   <block id="9e0b4c608c2ed027fef07ddc68aae407" category="inline-link">Microsoft Azure 文档：所需权限</block>
-  <block id="c9bae6707a626ab71ed3b97345b5becf" category="list-text">从 Azure 门户中，打开 * Azure Active Directory* 服务。</block>
   <block id="2edcc284e8171b76333ca90d4cda988f" category="inline-image-macro">显示了 Microsoft Azure 中的 Active Directory 服务。</block>
-  <block id="2947c6ef91b5c925ae2fcec9d7750590" category="paragraph"><block ref="2947c6ef91b5c925ae2fcec9d7750590" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9034af778b085a9440ffcb8389cc4db" category="list-text">指定有关应用程序的详细信息：</block>
   <block id="46beecb01aa2327ae1886dfc53955977" category="list-text">* 名称 * ：输入应用程序的名称。</block>
   <block id="c1433d2b36933dc034014d989542d7e9" category="list-text">*帐户类型*：选择帐户类型(任何将适用于BlueXP)。</block>
@@ -1158,16 +1137,10 @@
   <block id="1e957f13620bb4b87171f37fc42387b1" category="paragraph"><block ref="1e957f13620bb4b87171f37fc42387b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f7cb8eeaecd418d11a034c2be7337f33" category="list-title">获取应用程序的应用程序ID和目录ID</block>
   <block id="e762ce4f71e8abc9d8deee4d4b7277fe" category="list-text">复制 * 应用程序（客户端） ID* 和 * 目录（租户） ID* 。</block>
-  <block id="8fd7e29954792b2ee199fcf4fb0e7dec" category="inline-image-macro">显示 Azure Active Directory 中某个应用程序的应用程序（客户端） ID 和目录（租户） ID 的屏幕截图。</block>
-  <block id="825a40e15534f0cdcdd95391c6eb18c2" category="paragraph"><block ref="825a40e15534f0cdcdd95391c6eb18c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f49aa80c50bf9d897f387113aee3a15" category="paragraph">将Azure帐户添加到BlueXP时、您需要提供应用程序(客户端) ID和目录(租户) ID。BlueXP使用ID以编程方式登录。</block>
   <block id="3a1ecf20407e16f0524dacb991fefae3" category="list-title">创建客户端密钥</block>
-  <block id="eeae8e1dd73b92b26863247fdba559d5" category="list-text">打开 * Azure Active Directory* 服务。</block>
   <block id="56c696c4118c8dc3d2947c159fdbbb7c" category="list-text">提供密钥和持续时间的问题描述。</block>
   <block id="a91d60261e2974b6b9f5d3d3d0abacdd" category="list-text">复制客户端密钥的值。</block>
-  <block id="5a3a4c596a95b6a9851a1c7b6539b0ea" category="inline-image-macro">Azure 门户的屏幕截图，其中显示了 Azure AD 服务主体的客户端密钥。</block>
-  <block id="7c5f29026f30af547f4c1e9a0f0854e6" category="paragraph"><block ref="7c5f29026f30af547f4c1e9a0f0854e6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="023ea1edce87fad0b64c3daf1301e63a" category="paragraph">您现在拥有一个客户端密钥、BlueXP可以使用它向Azure AD进行身份验证。</block>
   <block id="62089e33eb517da2e77f2dbae303746e" category="paragraph">此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。安装Connector后、您需要将这些凭据与BlueXP中的Connector相关联。</block>
   <block id="b6bbae5bdf4c539603a70f4db19e6b04" category="summary">在内部安装Connector、然后登录并设置它以使用您的BlueXP帐户。</block>
   <block id="1fb392a56edc456b1bc3eddb57b0906b" category="doc">在内部安装和设置连接器</block>
@@ -1465,7 +1438,6 @@
   <block id="201a0e8a9a7e1b007b99b4e4c24c017d" category="open-title">Azure服务主体</block>
   <block id="e326875367720b38c29c8fa0afd491be" category="paragraph">为BlueXP提供您先前设置的Azure服务主体的凭据。</block>
   <block id="58cf09b42fff9dfb526ddbf232538ae2" category="list-text">* 凭据位置 * ：选择 * Microsoft Azure &gt; Connector* 。</block>
-  <block id="5d1285233566f1379ef88c010de06abc" category="list-text">* 定义凭据 * ：输入有关授予所需权限的 Azure Active Directory 服务主体的信息：</block>
   <block id="3612e0e7a44ec38da1e226c618526f91" category="open-title">Google Cloud服务帐户</block>
   <block id="4b6fbf3b382ce342b57bbdb4fe0d6baf" category="paragraph">将服务帐户与Connector VM关联。</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">初始 AWS 凭据</block>
@@ -1811,10 +1783,6 @@
   <block id="afd82a1708e69d4da8a44f0cbee4ae9c" category="section-title">NetApp 支持站点帐户需要更新</block>
   <block id="cd9cf4a2a1c115f8da1d3cd4b0b783dd" category="paragraph">从 2021 年 12 月开始， NetApp 现在使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。执行此更新后，Cloud Manager 将提示您更新先前添加的任何现有 NetApp 支持站点帐户的凭据。</block>
   <block id="a47acc65b2885cddfc6096e5aa5324f7" category="paragraph">如果您尚未将 NSS 帐户迁移到 IDaaS ，则首先需要迁移此帐户，然后在 Cloud Manager 中更新凭据。</block>
-  <block id="d843af49cdcc73f67f6a04467ff7a5b1" category="inline-link-macro">了解如何将 NSS 帐户更新为新的身份验证方法</block>
-  <block id="39324a4f3b6b149e18eccdfc7337abd7" category="list-text"><block ref="3c862e0ed1419b55d2a034c234cd6671" category="inline-link-macro-rx"></block>。</block>
-  <block id="b48762bb68eb4f8c518d5be6f1c76d16" category="inline-link">了解有关 NetApp 使用 Microsoft Azure AD 进行身份管理的更多信息</block>
-  <block id="d9031e6782c3419c7b81c9c83572daf7" category="list-text"><block ref="d9031e6782c3419c7b81c9c83572daf7" category="inline-link-rx"></block></block>
   <block id="3d0f9c18d87223bbfa0a981f08fc2ba8" category="section-title">更改 Cloud Volumes ONTAP 的 NSS 帐户</block>
   <block id="e99f30e825d98bd08033ec588636b5fc" category="paragraph">如果您的组织有多个 NetApp 支持站点帐户，您现在可以更改与 Cloud Volumes ONTAP 系统关联的帐户。</block>
   <block id="410c9dea5614a1c565dab22836dac506" category="inline-link-macro">了解如何将工作环境附加到其他 NSS 帐户</block>
@@ -2152,7 +2120,6 @@
   <block id="608216b752e1b11f41d17b75b772c3a3" category="paragraph">为IAM用户设置权限和访问密钥。安装Connector并设置BlueXP后、您需要为BlueXP提供AWS访问密钥。</block>
   <block id="5850d39c612d40f90f438e324ad5d585" category="paragraph">现在，此帐户具有所需权限。</block>
   <block id="e204418b1dd1e0b04b4cf51c3a87d8b4" category="paragraph">使用所需权限创建Azure自定义角色。您将为Connector VM分配此角色。</block>
-  <block id="a05caac06592f9dd951208e6ba7ea716" category="paragraph">在Azure Active Directory中创建和设置服务主体、并获取BlueXP所需的Azure凭据。安装Connector并设置BlueXP后、您需要为BlueXP提供这些凭据。</block>
   <block id="173005bb35533114a1987fe6db4b3ce0" category="list-title">为应用程序分配自定义角色</block>
   <block id="0f49f1997355db31e21cf44f968bde0d" category="paragraph">此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。添加Azure帐户时、您需要在BlueXP中输入此信息。</block>
   <block id="1ed6266d74ad49161a59212a6ae176ed" category="paragraph">创建一个角色并将其应用于要用于Connector VM实例的服务帐户。</block>
@@ -2243,7 +2210,6 @@
   <block id="f1a3fd4ef355aad263b4de618c67166b" category="section-title">支持的身份提供程序</block>
   <block id="7d141767127fe81f539e933e77b452bf" category="paragraph">BlueXP支持以下身份提供程序：</block>
   <block id="a07e97604d6d44417ed607f955f75bb4" category="list-text">安全断言标记语言(SAML)身份提供程序</block>
-  <block id="6ed3014fadd3eec5c63b090c750c1377" category="list-text">Microsoft Azure Active Directory (AD)</block>
   <block id="00f7a7902fa21b12c977cbf65a600530" category="list-text">Active Directory 联合身份验证服务（ ADFS ）</block>
   <block id="8be692f2d7f8fe746b9e4a80e973c3ab" category="list-text">PingFederate</block>
   <block id="b3a90c39fbb2a07cca4a396cdcfbcda7" category="paragraph">BlueXP仅支持服务提供商启动(SP启动)的SSO。不支持身份提供程序启动(IdP启动)的SSO。</block>
@@ -2291,17 +2257,10 @@
   <block id="77515c9e6cbb6a15e2cb738105271642" category="cell">从测试并启用连接<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block>
 
 请注意、此页面会在测试连接和启用连接之间刷新。</block>
-  <block id="6e9feb3d8b1d2610e025f8bd1e048c93" category="section-title">Microsoft Azure AD</block>
-  <block id="fa292d75bd72ae1e1506c8f6c8e39fa3" category="paragraph">总体而言、在BlueXP和Azure AD之间设置联合连接包括以下步骤：</block>
-  <block id="9149dec1c87108fda2f607ad7f9d0f7c" category="paragraph">配置Azure Active Directory以启用与BlueXP的身份联合。</block>
-  <block id="a2c2d074b529efb4b812b96b74e02f33" category="inline-link">查看将应用程序注册到Azure AD的说明</block>
-  <block id="8f916695f0c02d47ca7caf627294b5b2" category="paragraph"><block ref="8f916695f0c02d47ca7caf627294b5b2" category="inline-link-rx"></block></block>
   <block id="ef64c252ec5198cd24bcab0c5b591d8c" category="paragraph">要完成此步骤、您需要从AD管理员处获取以下信息：</block>
   <block id="76525f0f34b48475e5ca33f71d296f3b" category="list-text">客户端 ID</block>
   <block id="797685b539958d3786d560ae97430767" category="list-text">客户端密钥值</block>
-  <block id="a5ebf29140e5a70af04c991816638085" category="list-text">Microsoft Azure AD域</block>
   <block id="5b70b2d98b345016c9e69390ea296277" category="admonition">记下机密密钥的到期日期。您需要返回到"联盟设置"页面并更新证书_Before _、它将过期。这是您的责任。BlueXP不会跟踪到期日期。最好与您的广告团队合作、以便及时收到警报。</block>
-  <block id="bcaf1c3aeb49ac35fd670bdcd8cd4946" category="cell">完成步骤2后、使用"Federation Setup"页面上显示的参数完成Azure AD中的配置。</block>
   <block id="d39660f3085c958967d8d820464b4974" category="paragraph">总体而言、在BlueXP和ADFS之间设置联合连接包括以下步骤：</block>
   <block id="d37e669914774ef1ff275b462c890f08" category="paragraph">配置ADFS服务器以启用与BlueXP的身份联合。</block>
   <block id="f1b98402afda515a4e3b322603f457af" category="inline-link">查看使用auth0配置ADFS服务器的说明</block>
@@ -2605,24 +2564,15 @@
   <block id="4c8e6ab2d23d4298d90b773c324cb53f" category="paragraph">从BlueXP部署Connector时、BlueXP会在具有所需权限的虚拟机上启用系统分配的托管身份。默认情况下、在为Cloud Volumes ONTAP 创建新工作环境时、BlueXP会选择这些Azure凭据。</block>
   <block id="960aa67e3f5a73b6b0ebfceb7ad917b1" category="inline-link-macro">了解 Azure 凭据和权限</block>
   <block id="85d7d6e9942cf214a95a83e7e69cb42d" category="admonition">如果在现有系统上手动安装 Connector 软件，则不会添加一组初始凭据。 <block ref="03e7749e48caa10071407ca0a90e6393" category="inline-link-macro-rx"></block>。</block>
-  <block id="59472e728844389989783720db86de5d" category="paragraph">如果您要使用 _Different_ Azure 凭据部署 Cloud Volumes ONTAP ，则必须通过在 Azure Active Directory 中为每个 Azure 帐户创建和设置服务主体来授予所需权限。然后、您可以将新凭据添加到BlueXP。</block>
   <block id="6e95efa08c25f0af7a47ce778b6734b5" category="section-title">使用服务主体授予Azure权限</block>
-  <block id="b2998e2e0ef7309b8da02b90df84bd24" category="paragraph">BlueXP需要在Azure中执行操作的权限。您可以通过在Azure Active Directory中创建和设置服务主体以及获取BlueXP所需的Azure凭据来为Azure帐户授予所需权限。</block>
-  <block id="a51a8051417c96e970980b9b28955db7" category="paragraph">下图展示了BlueXP如何获取在Azure中执行操作的权限。与一个或多个Azure订阅绑定的服务主体对象表示Azure Active Directory中的BlueXP、并分配给允许所需权限的自定义角色。</block>
-  <block id="a842603387c8331a94843de5d982e083" category="inline-image-macro">概念映像、显示BlueXP在进行API调用之前从Azure Active Directory获取身份验证和授权。在Active Directory中、BlueXP角色定义权限。它与一个或多个 Azure 订阅以及一个表示 Cloud Manger 应用程序的服务主体对象相关联。</block>
-  <block id="36cdb45a5a4d45ce925c965292b1bf5e" category="paragraph"><block ref="36cdb45a5a4d45ce925c965292b1bf5e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="38a91ab5feb97884a3314ce2a24ffe85" category="list-text"><block ref="37b5fab1aa996a2c516511211cb14d49" category="inline-xref-macro-rx"></block>。</block>
   <block id="b5cf760d7a6af85b245fd69703dbf615" category="list-text"><block ref="043a4d29eb639fbbd1f56826dde09f8f" category="inline-xref-macro-rx"></block>。</block>
   <block id="a7fa3c1cd24012fd30c1c780e76ed243" category="list-text"><block ref="64c971bf921f5a3e2106b2880ac38406" category="inline-xref-macro-rx"></block>。</block>
   <block id="1c80a5d7f18a46f8056d76d21087faa4" category="list-text"><block ref="6e43fddc58b77d10342452e0c5f86200" category="inline-xref-macro-rx"></block>。</block>
   <block id="984e49e0fdc61eadd13acdd5613f2579" category="list-text"><block ref="2f8da44aff19ae4d1a810f6d1d618984" category="inline-xref-macro-rx"></block>。</block>
-  <block id="f80027e1697bb881bbd28096ec4eb44d" category="section-title">创建 Azure Active Directory 应用程序</block>
-  <block id="bde31a3498404dfaa1dada9308b8c172" category="paragraph">创建一个Azure Active Directory (AD)应用程序和服务主体、BlueXP可使用它进行基于角色的访问控制。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">开始之前</block>
   <block id="805d5c27eec50dcf481d2dff37f36287" category="paragraph">您必须将服务主体绑定到一个或多个Azure订阅并为其分配自定义"BlueXP操作员"角色、以便BlueXP在Azure中具有权限。</block>
   <block id="10976842fc02803e74db1e7ad1d16d24" category="paragraph">服务主体必须具有 "Windows Azure 服务管理 API" 权限。</block>
   <block id="4c8a0043df6fc20c84f393cad42133de" category="section-title">获取应用程序 ID 和目录 ID</block>
-  <block id="38551ea5316187f2da6d181a1e614e38" category="paragraph">您需要创建客户端密钥、然后为BlueXP提供该密钥的值、以便BlueXP可以使用它向Azure AD进行身份验证。</block>
   <block id="6186e185b0ea9b1c5909f6190ea935aa" category="section-title">将凭据添加到BlueXP</block>
   <block id="897558c0bcdd42cd68064bdca7591b82" category="paragraph">在为Azure帐户提供所需权限后、您可以将该帐户的凭据添加到BlueXP。完成此步骤后，您可以使用不同的 Azure 凭据启动 Cloud Volumes ONTAP 。</block>
   <block id="15bb02041f104dbc655746382fa7ea1c" category="paragraph">如果您刚刚在云提供商中创建了这些凭据，则可能需要几分钟的时间才能使用这些凭据。请等待几分钟、然后再将凭据添加到BlueXP。</block>
@@ -2686,7 +2636,6 @@
   <block id="fd5bdaf26d6756bb4ba2d2c659da9808" category="list-text">*公共IP*：如果要对Connector VM使用公共IP地址、则该IP地址必须使用基本SKU以确保BlueXP使用此公共IP地址。</block>
   <block id="0b7c0e66015972c9e3c3e051249db480" category="list-text">*网络安全组*：Connector需要使用SSH、HTTP和HTTPS进行入站连接。</block>
   <block id="92fa0fc1299e55c066d0a19cd22b4e7b" category="list-text">*身份*：在*管理*下、选择*启用系统分配的受管身份*。</block>
-  <block id="76f2625388817626b5d20572023827a8" category="paragraph">此设置非常重要，因为托管身份允许 Connector 虚拟机在不提供任何凭据的情况下向 Azure Active Directory 标识自己。<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
   <block id="2d3bb174766a8cbc78a4d5d0a2739c56" category="paragraph">首次访问BlueXP控制台时、系统将提示您选择要与Connector关联的帐户、您需要启用受限模式。</block>
   <block id="b22816a3d20c18e89e4ef89984ca5df6" category="inline-link-macro">了解如何创建其他BlueXP帐户</block>
   <block id="432f719258fc9e575a2982302eac9cdc" category="admonition">如果您已有帐户、但要创建另一个帐户、则需要使用租户API。 <block ref="987610e2980e99ab837daf2502634d0e" category="inline-link-macro-rx"></block>。</block>
@@ -2966,7 +2915,6 @@
   <block id="572a35a7a9ed649cca9ec1cf347c9b9a" category="paragraph">此外、还需要从区域内连接到云提供商资源。</block>
   <block id="f987da77cc0f6de4634d1fa74f39b8bf" category="list-text">在受限模式下、云支持Connector：在政府区域、主权区域或商业区域。</block>
   <block id="d4d5e0af068ca8798201df6c91671178" category="list-text">可以从AWS或Azure Marketplace安装连接器、也可以在您自己的Linux主机上手动安装连接器。</block>
-  <block id="5d2e991218aeae54cc4d2ce0102ec194" category="list-text">用户界面可从云区域中部署的Connector进行访问。</block>
   <block id="a67215d34dfdabae38d0a7c1f5f4b6cc" category="list-text">身份验证通过使用auth0的BlueXP云服务提供。此外、还可以使用身份联合。</block>
   <block id="2a4defb74ef42279e0fb8c75b5c452cd" category="list-text">在受限模式下、BlueXP支持以下存储和数据服务：</block>
   <block id="ea22f9957523103248d84695e98b17ba" category="cell">支持的服务</block>
@@ -3077,7 +3025,6 @@
   <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">NetApp云凭据：输入密码</block>
   <block id="a02705346febd77df5680fe2f12343a9" category="list-text">联合用户：输入您的联合身份凭据</block>
   <block id="24bdc2b22d38abff9ff97a9c5b5e7966" category="list-text">NetApp 支持站点 帐户：输入您的NetApp 支持站点 凭据</block>
-  <block id="e3e02b70df514c22082124328763d018" category="list-text">提供有关 Azure AD 服务主体的详细信息。此服务主体还需要特定权限。</block>
   <block id="fdf818accfe04434a4c9fd9ccfe6d56c" category="list-text">在Azure中复制新自定义角色所需的权限、并将其保存在JSON文件中。</block>
   <block id="6beeae0bdc78c57583db2029e3f5c09d" category="list-text">通过将Azure订阅ID添加到可分配范围来修改JSON。</block>
   <block id="6d3e63abb9fe9c98dbe6a99d8a196043" category="list-text">输入以下 Azure 命令行界面命令：</block>
@@ -3087,7 +3034,6 @@
   <block id="4cca684df8c889c784e30e6f0215cff5" category="admonition">Azure SetupAsService是Azure的Connector部署策略中提供的默认名称。如果您为角色选择了其他名称，请选择该名称。</block>
   <block id="f6d4189bf00021bb75f4f2f5b11507bf" category="paragraph">Azure用户现在具有从BlueXP部署Connector所需的权限。</block>
   <block id="d9a4ebb1284c84465eac2a20b8331523" category="paragraph">您可以为BlueXP提供具有所需权限的Azure服务主体的凭据、而不是使用Azure帐户登录。</block>
-  <block id="f7f4921534d4730228a1def336cce565" category="paragraph">在Azure Active Directory中创建和设置服务主体、并获取BlueXP所需的Azure凭据。</block>
   <block id="26f0c6c76fbc2f0b096a4ff32489120c" category="paragraph">此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。创建Connector时、您需要在BlueXP中输入此信息。</block>
   <block id="0d1f9ac2ac0f76a6809ba58855ffa7f5" category="list-text">选项1：使用系统分配的托管身份为Azure虚拟机分配自定义角色。</block>
   <block id="d31f2fb13b2fed83440a04d526a6ca7d" category="list-text">选项2：为BlueXP提供具有所需权限的Azure服务主体的凭据。</block>
@@ -3116,12 +3062,6 @@
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">权限摘要</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
-  <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">了解部署模式</block>
-  <block id="c8aded93abddb2318a41b08cba739012" category="sidebar">管理连接器</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客和社区</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP博客</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="cell">可持续性</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023年7月2日</block>
   <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">连接器3.9.31</block>
@@ -3261,7 +3201,6 @@
   <block id="ce2590ec8b406b42ba7a670543c8ab81" category="list-text">选择应用程序并选择*选择*。</block>
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">选择 * 下一步 * 。</block>
   <block id="85b8cec39bdb05ec73cd076b2359cfd1" category="list-text">选择*审核+分配*。</block>
-  <block id="9993d6f6284200668a6f4c51df9812da" category="list-text">在* Azure Active Directory*服务中、选择*应用程序注册*并选择应用程序。</block>
   <block id="69dc2d1327bf480b016b4aed7cd7d900" category="list-text">选择* API权限&gt;添加权限*。</block>
   <block id="4477be44a064848adbf1b5f50428e0cd" category="list-text">选择*以组织用户身份访问Azure服务管理*、然后选择*添加权限*。</block>
   <block id="39ec83d3cc8c12b784bf30f64700b168" category="list-text">选择*应用程序注册*并选择您的应用程序。</block>
@@ -3568,7 +3507,6 @@ deploymentmanager.editor</block>
   <block id="a0d5fffa896034a79c127d53a34685b7" category="list-text"><block ref="a0d5fffa896034a79c127d53a34685b7" category="inline-link-macro-rx"></block></block>
   <block id="8ce9c61f5e14fb093fdb6cc132fb3103" category="summary">要从BlueXP在Azure中创建Connector、您需要设置网络连接、准备Azure权限、然后创建Connector。</block>
   <block id="383a4f176227e611b43fffaef447cf94" category="section-title">第2步：创建自定义角色</block>
-  <block id="568a7904f89eda5a0e1ad00f19631224" category="paragraph">创建一个Azure自定义角色、您可以将其分配给Azure帐户或Azure AD服务主体。BlueXP使用Azure进行身份验证、并使用这些权限代表您创建Connector实例。</block>
   <block id="93017c2ae371dc5a19be6e0cce08ab5a" category="section-title">第3步：设置身份验证</block>
   <block id="a29efb5754bb36ee62d4a2e17c5e5717" category="list-text">出现提示时、使用您的Azure帐户登录。此帐户必须具有特定的 Azure 权限。这是默认选项。</block>
   <block id="fbb7d70eda793afc4159d1bd8f3c3814" category="paragraph">按照以下步骤准备这些身份验证方法之一、以便用于BlueXP。</block>
@@ -3734,22 +3672,6 @@ https://support.netapp.com
   <block id="ee06369b39630f4fbf14829266d40a91" category="paragraph">私有模式通常用于无Internet连接的内部环境和安全云区域、其中包括<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>，和<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="a95e947d8a886ad72a7cea0e895006fd" category="paragraph">受限模式通常由州和地方政府以及受监管的公司使用、包括在AWS GovCloud和Azure政府区域进行部署。开始之前、您应了解 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>， <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>，和 <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
   <block id="c2a3212cb98f382140fb5a23af1c6063" category="paragraph">在标准模式下、用户可从基于Web的控制台以云服务的形式访问BlueXP。开始之前、您应了解 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>， <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>，和 <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
-  <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">查看AWS权限</block>
-  <block id="b7053c5f835c45d38cf071449c74fd56" category="sidebar">查看Azure权限</block>
-  <block id="7050d365baa220c42a688cbf36a7e997" category="sidebar">查看Google Cloud权限</block>
-  <block id="891c5b2cea54480f0e1abb74959457a6" category="sidebar">开始在标准AWS区域使用</block>
-  <block id="e766f31fe70a68c11b8631144211d0f7" category="sidebar">开始在AWS GovCloud区域使用</block>
-  <block id="9722aa95875a94430d4569d2e8bd2382" category="sidebar">开始使用AWS机密或Top SecretCloud</block>
-  <block id="e55aba8c57180a56450db886ecd8232e" category="sidebar">查看连接器的IAM策略</block>
-  <block id="27c705176bc1f05cf50771b1f8fe182a" category="sidebar">开始在标准Azure区域使用</block>
-  <block id="60563f8b2620e88ac71d1a98ee73e2e5" category="sidebar">开始在Azure政府地区使用</block>
-  <block id="31b63be41ae4657f9e340188aa268589" category="sidebar">开始使用Azure IL6</block>
-  <block id="3dbdf7d7951b212ca0000f0027184bb8" category="sidebar">查看连接器的自定义角色</block>
-  <block id="6c3328ab0a2ccaa273efaec9a88e2751" category="sidebar">开始在标准Google Cloud区域使用</block>
-  <block id="6844a754c2b209da7ac4949824ac467d" category="sidebar">查看连接器的服务帐户</block>
-  <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">在标准模式下安装和设置连接器</block>
-  <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">在专用模式下安装和设置连接器</block>
-  <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">登录</block>
   <block id="337e8febb8ac96133c86a51cd7bc0240" category="summary">了解BlueXP如何使用Azure凭据代表您执行操作、以及这些凭据如何与商城订阅相关联。了解这些详细信息有助于您管理一个或多个Azure订阅的凭据。例如、您可能希望了解何时向BlueXP添加其他Azure凭据。</block>
   <block id="3bf21bdc87a8f6ebde5b75e8cb0d5138" category="section-title">凭据和商城订阅</block>
   <block id="b1e32c999d336fb505915de8a8ffca55" category="paragraph">您添加到连接器的凭据必须与Azure Marketplace订阅相关联、以便您可以按小时费率(PAYGO)或通过年度合同支付Cloud Volumes ONTAP费用、并使用其他BlueXP服务。</block>
@@ -3862,4 +3784,52 @@ https://support.netapp.com
   <block id="fa0738e12b2324073fa9b5f91af71e48" category="cell">是的。
 
 <block ref="42dbd2df9d57eeeb664cce05b5a35bf1" category="inline-link-rx"></block></block>
+  <block id="ceff1e7e9afd603be2687369aac73bb6" category="paragraph">此设置非常重要、因为托管标识允许Connector虚拟机通过Microsoft Entra ID标识自身、而无需提供任何凭据。<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
+  <block id="10d9864d222fd249479246f9c50df58c" category="list-text">*定义凭据*：输入有关授予所需权限的Microsoft Entra服务主体的信息：</block>
+  <block id="9c0e62a86b9fe558cad9c4d280ea439d" category="list-text">启用NTP</block>
+  <block id="726d1cad4d0527532460d1a853919ebc" category="inline-link">了解有关BlueXP分类的更多信息</block>
+  <block id="aa58ae713abe4e1f7b639f232b2814b8" category="list-text">如果您计划使用BlueXP分类来扫描公司数据源、则应在BlueXP Connector系统和BlueXP分类系统上启用网络时间协议(Network Time Protocol、NTP)服务、以便在系统之间同步时间。<block ref="f37549d88d23259dc9470e2f2bfbbbf0" category="inline-link-rx"></block></block>
+  <block id="9ed6715eace733ae6dc526b52a03058e" category="paragraph">创建连接器后、您需要实施此网络连接要求。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp使用Microsoft Entra ID作为特定于支持和许可的身份验证服务的身份提供程序。</block>
+  <block id="dfec517d439938ca1ef24de3972ed1d6" category="paragraph">只有配置为使用NetApp采用的Microsoft Entra ID进行身份管理的NSS帐户才支持此功能。要使用此功能、您需要选择*添加NSS帐户*或*更新帐户*。</block>
+  <block id="a5b46ae1ec2ad5287349444529a0b53c" category="paragraph">现在、NetApp 支持站点 帐户使用Microsoft Entra ID提供身份验证服务、BlueXP中显示的NSS用户名通常是由Microsoft Entra生成的标识符。因此，您可能无法立即知道与该帐户关联的电子邮件地址。但是、BlueXP可以选择向您显示关联的电子邮件地址。</block>
+  <block id="009cf1f7b9b15240104b17e10bb20e3a" category="paragraph">在Microsoft Entra ID中创建和设置服务主体、并获取BlueXP所需的Azure凭据。</block>
+  <block id="20a548e155064dfebc2cf8e9a74ab489" category="list-title">创建Microsoft Entra应用程序以实现基于角色的访问控制</block>
+  <block id="3acc75f616414df16724fc2f4fe192eb" category="list-text">从Azure门户中，打开*Microsoft Entra ID*服务。</block>
+  <block id="ef37e6517cca469b358f0c04ca3cf119" category="paragraph"><block ref="ef37e6517cca469b358f0c04ca3cf119" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8427c98ccc673304dbaa4bf3fd3975a1" category="list-text">在*Microsoft Entra ID*服务中，选择*App Registrations *并选择应用程序。</block>
+  <block id="0e9983a04d343289b5ae2931f37d22a2" category="inline-image-macro">显示Microsoft Entra Idy中应用程序的应用程序(客户端) ID和目录(租户) ID的屏幕截图。</block>
+  <block id="5f3a0546e3f6705a50269404106d5aba" category="paragraph"><block ref="5f3a0546e3f6705a50269404106d5aba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0540893171fcc820664625cbbe23e031" category="list-text">打开*Microsoft Entra ID*服务。</block>
+  <block id="9056be4df2e385c15b0e73176bcf8af3" category="inline-image-macro">Azure门户的屏幕截图、其中显示了Microsoft Entra服务主体的客户端密钥。</block>
+  <block id="bc061266b02f85e444a9b5ae50e1a3fd" category="paragraph"><block ref="bc061266b02f85e444a9b5ae50e1a3fd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b750da0ca2dca4110c6636dcb1ebbe6f" category="paragraph">现在、您有了一个客户端密钥、BlueXP可以使用它通过Microsoft Entra ID进行身份验证。</block>
+  <block id="93f1f0c1ede8583ffa25159579861501" category="inline-link">详细了解NetApp如何使用Microsoft Azure Active Directory进行身份管理</block>
+  <block id="b17de28cfe26993460dbe87832a64b2e" category="paragraph"><block ref="b17de28cfe26993460dbe87832a64b2e" category="inline-link-rx"></block></block>
+  <block id="8b0acfdcefc686d1057ba6e0a6e5660e" category="paragraph">当Connector安装在内部环境中时、您需要通过在Microsoft Entra ID中设置服务主体并获取BlueXP所需的Azure凭据来为BlueXP提供Azure权限。</block>
+  <block id="33a300827c19fa9f3bf7b47e8b880c1a" category="paragraph">创建Azure自定义角色、您可以将其分配给Azure帐户或Microsoft Entra服务主体。BlueXP使用Azure进行身份验证、并使用这些权限代表您创建Connector实例。</block>
+  <block id="4dc29cf7d5ceac3415d2828b1afce709" category="list-text">提供有关Microsoft Entra服务主体的详细信息。此服务主体还需要特定权限。</block>
+  <block id="b4dba39cc2b8d5c6f4a03822fd76264e" category="list-text">选择*Active Directory服务主体*以输入有关授予所需权限的Microsoft Entra服务主体的信息：</block>
+  <block id="7f29dd2bb0d156a9d6d9989b5778daa2" category="paragraph">如果您计划从云提供商的市场创建Connector、则需要在创建Connector后实施此网络连接要求。</block>
+  <block id="b8209f3a8b56fd0a82dda548b64e89ef" category="paragraph">在Microsoft Entra ID中创建和设置服务主体、并获取BlueXP所需的Azure凭据。安装Connector并设置BlueXP后、您需要为BlueXP提供这些凭据。</block>
+  <block id="861b0fb25af072735ec514d20fc89dcf" category="list-text">用户界面可从云区域中部署的Connector虚拟机访问。</block>
+  <block id="22b4db6594130f0f35e22d0a9f00512b" category="paragraph">如果您要使用_MASSE_ Azure凭据部署Cloud Volumes ONTAP、则必须通过在Microsoft Entra ID中为每个Azure帐户创建和设置服务主体来授予所需的权限。然后、您可以将新凭据添加到BlueXP。</block>
+  <block id="5c1680223b4715618aa00772c8cde483" category="paragraph">BlueXP需要在Azure中执行操作的权限。您可以通过在Microsoft Entra ID中创建和设置服务主体并获取BlueXP所需的Azure凭据来为Azure帐户授予所需权限。</block>
+  <block id="fe5c910b24c178432f88a8f6c9bff2f8" category="paragraph">下图展示了BlueXP如何获取在Azure中执行操作的权限。与一个或多个Azure订阅绑定的服务主体对象在Microsoft Entra ID中表示BlueXP、并分配给允许所需权限的自定义角色。</block>
+  <block id="7afd1b01e02546b27e413c581edae96f" category="inline-image-macro">一个概念图、显示BlueXP在进行API调用之前先从Microsoft Entra ID获取身份验证和授权。在Active Directory中、BlueXP角色定义权限。它与一个或多个 Azure 订阅以及一个表示 Cloud Manger 应用程序的服务主体对象相关联。</block>
+  <block id="6d78ad58e10567f5ec4210ab631a73a7" category="paragraph"><block ref="6d78ad58e10567f5ec4210ab631a73a7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f2ef9d77d1510f334154dfe7d165c04f" category="list-text"><block ref="f6c5720bdbe1f9f8e6fbf04de7a942ac" category="inline-xref-macro-rx"></block>。</block>
+  <block id="6a9a84396b26e1101ebf5eac3a9595ed" category="section-title">创建Microsoft Entra应用程序</block>
+  <block id="1e6c9b3850b2a8aff77429d3da407ad1" category="paragraph">创建BlueXP可用于基于角色的访问控制的Microsoft Entra应用程序和服务主体。</block>
+  <block id="de44ed3c24fd21ff1cd5065625a6d78e" category="paragraph">您需要创建一个客户端密钥、然后向BlueXP提供该密钥的值、以便BlueXP可以使用它通过Microsoft Entra ID进行身份验证。</block>
+  <block id="4df90909cc2d04997870c4949a39d14b" category="list-text">Microsoft Entra ID</block>
+  <block id="f03abb60d67394fd935c0b64f6d1c3c1" category="paragraph">总体而言、在BlueXP和Microsoft Entra ID之间设置联合连接包括以下步骤：</block>
+  <block id="4d78a4f82051c51790a4d6a1b19d7bf4" category="paragraph">配置Microsoft Entra ID以启用与BlueXP的身份联合。</block>
+  <block id="91b6e8c144e0b0c26485c1d90cdf8e9b" category="inline-link">查看有关使用Microsoft Entra ID注册应用程序的说明</block>
+  <block id="f56344318e894c9b20e07a08f6a512c3" category="paragraph"><block ref="f56344318e894c9b20e07a08f6a512c3" category="inline-link-rx"></block></block>
+  <block id="b1b357376edc356774ec099bb39e65b7" category="list-text">Microsoft Entra ID域</block>
+  <block id="bcf96e38858d09ccb3d335e0944d8a4a" category="cell">完成步骤2后、使用"联合身份验证设置"页面上显示的参数在Microsoft Entra ID中完成配置。</block>
+  <block id="b63eb36e7e2e258bb1104cee2cd67c79" category="inline-link-macro">在Microsoft Entra ID中创建和设置服务主体</block>
+  <block id="3c648c2bdafb5df126cd7d0e3dfcad8a" category="paragraph">如果要对BlueXP使用不同的Azure凭据、则必须通过授予所需权限 <block ref="45c7e71be639d18293cd100d389b6dc3" category="inline-link-macro-rx"></block> 对于每个 Azure 帐户。下图显示了另外两个帐户，每个帐户都设置有一个服务主体和一个提供权限的自定义角色：</block>
+  <block id="66106267dde1c941a1fde19110f5e949" category="paragraph">如果您使用Marketplace、则可以通过将自定义角色分配给Connector VM和系统分配的托管身份来提供权限、也可以使用Microsoft Entra服务主体。</block>
 </blocks>

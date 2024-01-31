@@ -120,6 +120,14 @@ https://mysupport.netapp.com
 --
 
 
+启用NTP:: 如果您计划使用BlueXP分类来扫描公司数据源、则应在BlueXP Connector系统和BlueXP分类系统上启用网络时间协议(Network Time Protocol、NTP)服务、以便在系统之间同步时间。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解有关BlueXP分类的更多信息"^]
++
+--
+创建连接器后、您需要实施此网络连接要求。
+
+--
+
+
 
 
 == 第2步：设置AWS权限

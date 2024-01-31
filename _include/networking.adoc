@@ -69,3 +69,6 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 --
 
+
+启用NTP:: 如果您计划使用BlueXP分类来扫描公司数据源、则应在BlueXP Connector系统和BlueXP分类系统上启用网络时间协议(Network Time Protocol、NTP)服务、以便在系统之间同步时间。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解有关BlueXP分类的更多信息"^]
+

@@ -184,6 +184,9 @@ https://mysupport.netapp.com
 --
 
 
+启用NTP:: 如果您计划使用BlueXP分类来扫描公司数据源、则应在BlueXP Connector系统和BlueXP分类系统上启用网络时间协议(Network Time Protocol、NTP)服务、以便在系统之间同步时间。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解有关BlueXP分类的更多信息"^]
+
+
 
 
 == 第3步：设置权限
@@ -249,16 +252,16 @@ az role definition create --role-definition Connector_Policy.json
 --
 .服务主体
 --
-在Azure Active Directory中创建和设置服务主体、并获取BlueXP所需的Azure凭据。
+在Microsoft Entra ID中创建和设置服务主体、并获取BlueXP所需的Azure凭据。
 
-.创建Azure Active Directory应用程序以进行基于角色的访问控制
+.创建Microsoft Entra应用程序以实现基于角色的访问控制
 . 确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。
 +
 有关详细信息，请参见 https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Microsoft Azure 文档：所需权限"^]
 
-. 从 Azure 门户中，打开 * Azure Active Directory* 服务。
+. 从Azure门户中，打开*Microsoft Entra ID*服务。
 +
-image:screenshot_azure_ad.gif["显示了 Microsoft Azure 中的 Active Directory 服务。"]
+image:screenshot_azure_ad.png["显示了 Microsoft Azure 中的 Active Directory 服务。"]
 
 . 在菜单中、选择*应用程序注册*。
 . 选择*新建注册*。
@@ -356,7 +359,7 @@ image:screenshot_azure_service_principal_role.png["Azure 门户的屏幕截图�
 
 
 .添加 Windows Azure 服务管理 API 权限
-. 在* Azure Active Directory*服务中、选择*应用程序注册*并选择应用程序。
+. 在*Microsoft Entra ID*服务中，选择*App Registrations *并选择应用程序。
 . 选择* API权限>添加权限*。
 . 在 * Microsoft APIs* 下，选择 * Azure Service Management* 。
 +
@@ -369,10 +372,10 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Azure 门户的屏幕截图，
 
 
 .获取应用程序的应用程序ID和目录ID
-. 在* Azure Active Directory*服务中、选择*应用程序注册*并选择应用程序。
+. 在*Microsoft Entra ID*服务中，选择*App Registrations *并选择应用程序。
 . 复制 * 应用程序（客户端） ID* 和 * 目录（租户） ID* 。
 +
-image:screenshot_azure_app_ids.gif["显示 Azure Active Directory 中某个应用程序的应用程序（客户端） ID 和目录（租户） ID 的屏幕截图。"]
+image:screenshot_azure_app_ids.gif["显示Microsoft Entra Idy中应用程序的应用程序(客户端) ID和目录(租户) ID的屏幕截图。"]
 
 +
 将Azure帐户添加到BlueXP时、您需要提供应用程序(客户端) ID和目录(租户) ID。BlueXP使用ID以编程方式登录。
@@ -380,17 +383,17 @@ image:screenshot_azure_app_ids.gif["显示 Azure Active Directory 中某个应�
 
 
 .创建客户端密钥
-. 打开 * Azure Active Directory* 服务。
+. 打开*Microsoft Entra ID*服务。
 . 选择*应用程序注册*并选择您的应用程序。
 . 选择*证书和机密>新客户端机密*。
 . 提供密钥和持续时间的问题描述。
 . 选择 * 添加 * 。
 . 复制客户端密钥的值。
 +
-image:screenshot_azure_client_secret.gif["Azure 门户的屏幕截图，其中显示了 Azure AD 服务主体的客户端密钥。"]
+image:screenshot_azure_client_secret.gif["Azure门户的屏幕截图、其中显示了Microsoft Entra服务主体的客户端密钥。"]
 
 +
-您现在拥有一个客户端密钥、BlueXP可以使用它向Azure AD进行身份验证。
+现在、您有了一个客户端密钥、BlueXP可以使用它通过Microsoft Entra ID进行身份验证。
 
 
 
@@ -569,7 +572,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 . 选择*添加凭据*并按照向导中的步骤进行操作。
 +
 .. * 凭据位置 * ：选择 * Microsoft Azure > Connector* 。
-.. * 定义凭据 * ：输入有关授予所需权限的 Azure Active Directory 服务主体的信息：
+.. *定义凭据*：输入有关授予所需权限的Microsoft Entra服务主体的信息：
 +
 *** 应用程序(客户端) ID
 *** 目录(租户) ID

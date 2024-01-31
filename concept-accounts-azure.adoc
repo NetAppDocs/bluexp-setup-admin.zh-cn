@@ -42,7 +42,7 @@ image:screenshot_accounts_select_azure.gif["显示详细信息和凭据页面中
 
 == 其他 Azure 凭据
 
-如果要对BlueXP使用不同的Azure凭据、则必须通过授予所需权限 link:task-adding-azure-accounts.html["在 Azure Active Directory 中创建和设置服务主体"] 对于每个 Azure 帐户。下图显示了另外两个帐户，每个帐户都设置有一个服务主体和一个提供权限的自定义角色：
+如果要对BlueXP使用不同的Azure凭据、则必须通过授予所需权限 link:task-adding-azure-accounts.html["在Microsoft Entra ID中创建和设置服务主体"] 对于每个 Azure 帐户。下图显示了另外两个帐户，每个帐户都设置有一个服务主体和一个提供权限的自定义角色：
 
 image:diagram_permissions_multiple_azure.png["显示初始 Azure 帐户（通过自定义角色和托管身份接收权限）以及通过自定义角色和服务主体接收权限的其他两个帐户的概念映像。"]
 
@@ -100,7 +100,7 @@ link:task-adding-azure-accounts.html#subscribe["了解如何关联Azure订阅"]�
 
 以上各节介绍了BlueXP中建议的Connector部署方法。您还可以从Azure Marketplace在Azure中部署Connector、并在您自己的Linux主机上安装Connector软件。
 
-如果您使用Marketplace、则可以通过为Connector VM和系统分配的托管身份分配自定义角色来提供权限、也可以使用Azure AD服务主体。
+如果您使用Marketplace、则可以通过将自定义角色分配给Connector VM和系统分配的托管身份来提供权限、也可以使用Microsoft Entra服务主体。
 
 对于内部部署、您不能为Connector设置托管身份、但可以使用服务主体提供权限。
 

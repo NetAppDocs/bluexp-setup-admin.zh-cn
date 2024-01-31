@@ -56,7 +56,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 . 选择* NSS管理>添加NSS帐户*。
 . 出现提示时、选择*继续*以重定向到Microsoft登录页面。
 +
-NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。
+NetApp使用Microsoft Entra ID作为特定于支持和许可的身份验证服务的身份提供程序。
 
 . 在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。
 +
@@ -97,32 +97,6 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 
 
 
-== 更新新身份验证方法的 NSS 帐户
-
-从 2021 年 11 月开始， NetApp 现在使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。由于此更新、BlueXP将提示您更新先前添加的任何现有帐户的凭据。
-
-.步骤
-. 如果您尚未执行此操作， https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["创建一个Microsoft Azure Active Directory B2C帐户、此帐户将链接到您当前的BlueXP帐户"^]。
-. 在BlueXP控制台的右上角、选择帮助图标、然后选择*支持*。
-. 选择* NSS管理*。
-. 对于要更新的NSS帐户、请选择*更新帐户*。
-+
-image:screenshot-nss-update-account.png["显示更新帐户选项的屏幕截图"]
-
-. 出现提示时、选择*继续*以重定向到Microsoft登录页面。
-+
-NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。
-
-. 在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。
-+
-此过程完成后，您更新的帐户现在应在表中列为 _new_ 帐户。此帐户的 _older_ 版本以及任何现有的工作环境关联仍列在表中。
-
-. 如果现有 Cloud Volumes ONTAP 工作环境已附加到旧版本的帐户，请按照以下步骤进行操作 <<将工作环境附加到其他 NSS 帐户,将这些工作环境附加到其他 NSS 帐户>>。
-. 转至旧版本的NSS帐户、然后选择 image:icon-action.png["一个由三个并排点组成的图标"] 然后选择 * 删除 * 。
-
-
-
-
 == 更新NSS凭据
 
 发生以下任一情况时、您需要在BlueXP中更新NSS帐户的凭据：
@@ -140,7 +114,7 @@ image:screenshot-nss-update-credentials.png["屏幕截图显示了 NetApp 支持
 
 . 出现提示时、选择*继续*以重定向到Microsoft登录页面。
 +
-NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。
+NetApp使用Microsoft Entra ID作为特定于支持和许可的身份验证服务的身份提供程序。
 
 . 在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。
 
@@ -151,7 +125,7 @@ NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供
 
 如果您的组织有多个 NetApp 支持站点帐户，则可以更改与 Cloud Volumes ONTAP 系统关联的帐户。
 
-只有配置为使用 NetApp 采用的 Microsoft Azure AD 进行身份管理的 NSS 帐户才支持此功能。要使用此功能、您需要选择*添加NSS帐户*或*更新帐户*。
+只有配置为使用NetApp采用的Microsoft Entra ID进行身份管理的NSS帐户才支持此功能。要使用此功能、您需要选择*添加NSS帐户*或*更新帐户*。
 
 .步骤
 . 在BlueXP控制台的右上角、选择帮助图标、然后选择*支持*。
@@ -173,7 +147,7 @@ image:screenshot-nss-change-account.png["屏幕截图显示了与 NetApp 支持�
 
 == 显示 NSS 帐户的电子邮件地址
 
-既然NetApp 支持站点 帐户使用Microsoft Azure Active Directory进行身份验证服务、则在BlueXP中显示的NSS用户名通常是由Azure AD生成的标识符。因此，您可能无法立即知道与该帐户关联的电子邮件地址。但是、BlueXP可以选择向您显示关联的电子邮件地址。
+现在、NetApp 支持站点 帐户使用Microsoft Entra ID提供身份验证服务、BlueXP中显示的NSS用户名通常是由Microsoft Entra生成的标识符。因此，您可能无法立即知道与该帐户关联的电子邮件地址。但是、BlueXP可以选择向您显示关联的电子邮件地址。
 
 
 TIP: 转到"NSS管理"页面时、BlueXP会为表中的每个帐户生成一个令牌。此令牌包含有关关联电子邮件地址的信息。退出此页面后，此令牌将被删除。此信息永远不会缓存，这有助于保护您的隐私。

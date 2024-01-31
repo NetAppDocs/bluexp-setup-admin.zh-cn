@@ -68,7 +68,7 @@ BlueXP为您的帐户提供了以下部署模式。每个模式在出站连接�
 | UI访问 | 从BlueXP SaaS层 | 从Connector VM本地访问 | 从Connector VM本地访问 
 
 
-| API endpoint | BlueXP SaaS层 | BlueXP SaaS层 | 连接器 
+| API endpoint | BlueXP SaaS层 | 连接器 | 连接器 
 
 
 | 身份验证 | 通过SaaS使用auth0、NSS登录或身份联合 | 通过SaaS使用auth0或身份联合 | 本地用户身份验证 
@@ -138,9 +138,8 @@ BlueXP SaaS层不会启动与连接器的通信。所有通信均由Connector启
 支持的连接器位置:: 在受限模式下、云支持Connector：在政府区域、主权区域或商业区域。
 连接器安装:: 可以从AWS或Azure Marketplace安装连接器、也可以在您自己的Linux主机上手动安装连接器。
 连接器升级:: 您可以从BlueXP自动升级Connector软件、每月更新一次。
-用户界面访问:: 用户界面可从云区域中部署的Connector进行访问。
-API endpoint:: 将对以下端点执行API调用：
-\https://cloudmanager.cloud.netapp.com
+用户界面访问:: 用户界面可从云区域中部署的Connector虚拟机访问。
+API endpoint:: API调用会调用Connector虚拟机。
 身份验证:: 身份验证通过使用auth0的BlueXP云服务提供。此外、还可以使用身份联合。
 支持的BlueXP服务:: 在受限模式下、BlueXP支持以下存储和数据服务：
 +

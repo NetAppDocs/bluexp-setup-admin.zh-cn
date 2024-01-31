@@ -192,7 +192,7 @@ link:reference-ports-azure.html["查看Azure的安全组规则"]。
 
 ** *身份*：在*管理*下、选择*启用系统分配的受管身份*。
 +
-此设置非常重要，因为托管身份允许 Connector 虚拟机在不提供任何凭据的情况下向 Azure Active Directory 标识自己。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["详细了解 Azure 资源的托管身份"^]。
+此设置非常重要、因为托管标识允许Connector虚拟机通过Microsoft Entra ID标识自身、而无需提供任何凭据。 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["详细了解 Azure 资源的托管身份"^]。
 
 
 
@@ -440,7 +440,7 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 . 选择*添加凭据*并按照向导中的步骤进行操作。
 +
 .. * 凭据位置 * ：选择 * Microsoft Azure > Connector* 。
-.. * 定义凭据 * ：输入有关授予所需权限的 Azure Active Directory 服务主体的信息：
+.. *定义凭据*：输入有关授予所需权限的Microsoft Entra服务主体的信息：
 +
 *** 应用程序(客户端) ID
 *** 目录(租户) ID
