@@ -422,6 +422,51 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#6-novemb
 
 == 2022年11月1日
 
+
+
+=== BlueXP简介
+
+NetApp BlueXP扩展并增强了Cloud Manager提供的功能。BlueXP是一个统一控制平台、可为内部环境和云环境中的存储和数据服务提供混合多云体验。
+
+统一管理体验:: 借助BlueXP、您可以从一个界面管理所有存储和数据资产。
++
+--
+您可以使用BlueXP创建和管理云存储(例如Cloud Volumes ONTAP 和Azure NetApp Files)、移动、保护和分析数据以及控制许多内部和边缘存储设备。
+
+https://bluexp.netapp.com["从BlueXP网站了解更多信息"^]
+
+--
+新的导航菜单:: 在BlueXP的导航菜单中、服务现在按类别进行组织、并根据其功能进行命名。例如，您可以从*保护*类别访问BlueXP备份和恢复。
++
+--
+image:screenshot-navigation-menu.png["BlueXP中导航菜单的屏幕截图、其中显示了存储和运行状况等类别。"]
+
+--
+新的产品集成::
++
+--
+* 现在、您可以在安装了Connector的AWS帐户中管理Amazon S3存储分段。
+* 现在、您可以管理更多内部存储系统、例如E系列和StorageGRID。
+* 现在、您可以使用以前仅作为独立服务提供且具有单独UI的数据服务、例如BlueXP数字顾问(Active IQ)。
+
+
+--
+了解更多信息。::
++
+--
+* https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["管理Amazon S3存储分段"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html["管理E系列存储系统"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html["管理StorageGRID 存储系统"^]
+* https://docs.netapp.com/us-en/active-iq/digital-advisor-integration-with-bluexp.html["了解Digital Advisor集成"^]
+
+
+--
+
+
+
+
+=== 提示更新NSS凭据
+
 现在、当与您的帐户关联的刷新令牌在3个月后过期时、Cloud Manager将提示您更新与您的NetApp 支持站点 帐户关联的凭据。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["了解如何管理 NSS 帐户"^]
 
 
