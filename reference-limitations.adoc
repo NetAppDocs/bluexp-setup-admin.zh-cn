@@ -24,9 +24,19 @@ summary: 已知限制确定了本产品版本不支持的平台、设备或功�
 
 
 
+=== EC2实例需要使用IMDSv1
+
+在使用标准模式或受限模式时、在AWS中的EC2实例上手动安装Connector软件之前、您需要确保EC2实例使用实例元数据服务版本1 (IMDSv1)。IMDSv2不支持此连接器。
+
+由于IMDSv2现在是新EC2实例上的默认版本、因此您需要修改实例元数据选项以恢复IMDSv1的使用。
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["AWS文档：还原IMDSv1的使用"^]
+
+
+
 === 不应更改默认EC2实例设置
 
-在AWS中部署Connector时、默认情况下会配置以下EC2实例设置：
+从BlueXP或AWS Marketplace在AWS中部署Connector时、默认情况下会配置以下EC2实例设置：
 
 * IMDSv2设置为可选
 * HttpTokens设置为可选

@@ -40,6 +40,14 @@ image:screenshot-edit-name.png["屏幕截图、显示了在用户设置下编辑
 
 
 
+=== Amazon EC2实例元数据服务要求
+
+您应注意、在AWS中手动安装Connector软件之前、EC2实例需要使用IMDSv1。
+
+link:reference-limitations.html["详细了解AWS中的IMDSv1要求"]。
+
+
+
 == 2024年1月11日
 
 

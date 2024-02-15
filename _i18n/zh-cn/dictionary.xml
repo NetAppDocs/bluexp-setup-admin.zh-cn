@@ -1525,7 +1525,6 @@
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">这些限制特定于BlueXP的设置和管理：Connector、SaaS平台等。</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">连接器限制</block>
   <block id="cf4525e15b866700f10e91573643ba54" category="section-title">不应更改默认EC2实例设置</block>
-  <block id="505d2a7358228b26711e097c3ca6dc24" category="paragraph">在AWS中部署Connector时、默认情况下会配置以下EC2实例设置：</block>
   <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2设置为可选</block>
   <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokens设置为可选</block>
   <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">这些设置不应更改为必需。将这些设置更改为所需会影响连接器和Cloud Volumes ONTAP 的可用性。</block>
@@ -3865,4 +3864,16 @@ https://support.netapp.com
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">您需要更新每个Cloud Volumes ONTAP系统的备份位置。</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">从Cloud Volumes ONTAP命令行界面运行以下命令以显示当前备份目标：</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">运行以下命令以更新备份目标的IP地址：</block>
+  <block id="375a8301ce4caf38298dba148206d69c" category="section-title">EC2实例需要使用IMDSv1</block>
+  <block id="997791080d6fcd216110fbfe145cef98" category="paragraph">在使用标准模式或受限模式时、在AWS中的EC2实例上手动安装Connector软件之前、您需要确保EC2实例使用实例元数据服务版本1 (IMDSv1)。IMDSv2不支持此连接器。</block>
+  <block id="95371958414dbd4f614d7ff8348b9b31" category="paragraph">由于IMDSv2现在是新EC2实例上的默认版本、因此您需要修改实例元数据选项以恢复IMDSv1的使用。</block>
+  <block id="c637448044ff305c64a7c1cd8b77b196" category="inline-link">AWS文档：还原IMDSv1的使用</block>
+  <block id="dd3ddc1f5982d8946100b097e7993378" category="paragraph"><block ref="dd3ddc1f5982d8946100b097e7993378" category="inline-link-rx"></block></block>
+  <block id="1dd4f77b0b91e0fcf80bc700a9a86fd6" category="paragraph">从BlueXP或AWS Marketplace在AWS中部署Connector时、默认情况下会配置以下EC2实例设置：</block>
+  <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
+  <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">EC2实例需要实例元数据服务版本1 (IMDSv1)。IMDSv2不支持此连接器。</block>
+  <block id="7626696bd9f21a6589ce40ea53af6046" category="section-title">Amazon EC2实例元数据服务要求</block>
+  <block id="bce093b82ba18b11f0951a0e0b61a538" category="paragraph">您应注意、在AWS中手动安装Connector软件之前、EC2实例需要使用IMDSv1。</block>
+  <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link-macro">详细了解AWS中的IMDSv1要求</block>
+  <block id="b305801a6c9c8eadb3e6439dc658aaa8" category="paragraph"><block ref="785f731db3565bf64fce6692ea6b4a4a" category="inline-link-macro-rx"></block>。</block>
 </blocks>
