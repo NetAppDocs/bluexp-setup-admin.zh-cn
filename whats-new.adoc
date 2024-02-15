@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors' 
 summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、云提供商凭据等。 
 ---
 = 新增功能
@@ -15,6 +15,28 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 [role="lead"]
 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、云提供商凭据等。
+
+
+
+== 2024年2月15日
+
+
+
+=== 连接器3.9.37
+
+此版本的BlueXP Connector包括一些小的安全改进和错误修复。
+
+目前、3.9.37版本可用于标准模式和受限模式。
+
+
+
+=== 编辑名称
+
+如果您使用NetApp云凭据登录到BlueXP、现在可以在*用户设置*中编辑您的名称。
+
+image:screenshot-edit-name.png["屏幕截图、显示了在用户设置下编辑您的姓名的功能。"]
+
+如果您使用联合连接或NetApp 支持站点 帐户登录、则不支持编辑您的名称。
 
 
 
