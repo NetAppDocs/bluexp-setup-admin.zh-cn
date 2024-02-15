@@ -34,17 +34,17 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 如果您使用NetApp云凭据登录到BlueXP、现在可以在*用户设置*中编辑您的名称。
 
-image:screenshot-edit-name.png["屏幕截图、显示了在用户设置下编辑您的姓名的功能。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["屏幕截图、显示了在用户设置下编辑您的姓名的功能。"]
 
 如果您使用联合连接或NetApp 支持站点 帐户登录、则不支持编辑您的名称。
 
 
 
-=== Amazon EC2实例元数据服务要求
+=== EC2实例的IMDSv1要求
 
-您应注意、在AWS中手动安装Connector软件之前、EC2实例需要使用IMDSv1。
+请注意、在AWS中手动安装Connector软件之前、Amazon EC2实例需要使用实例元数据服务版本1 (IMDSv1)。
 
-link:reference-limitations.html["详细了解AWS中的IMDSv1要求"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["详细了解AWS中的IMDSv1要求"]。
 
 
 
@@ -107,7 +107,7 @@ BlueXP现已推出新的专用模式版本。此版本包含连接器3.9.35版�
 
 * 现在、在从BlueXP在AWS中创建Connector时、您可以在Key Pair字段中进行搜索、以便更轻松地找到要用于Connector实例的密钥对。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["从BlueXP在AWS中创建连接器时、网络页面上显示的密钥对字段中的搜索选项的屏幕截图。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-aws-key-pair.png["从BlueXP在AWS中创建连接器时、网络页面上显示的密钥对字段中的搜索选项的屏幕截图。"]
 
 * 此更新还包括错误修复。
 

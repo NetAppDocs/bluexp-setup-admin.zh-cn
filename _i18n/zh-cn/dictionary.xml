@@ -3580,7 +3580,6 @@ deploymentmanager.editor</block>
   <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">连接器3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">现在、在从BlueXP在AWS中创建Connector时、您可以在Key Pair字段中进行搜索、以便更轻松地找到要用于Connector实例的密钥对。</block>
   <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">从BlueXP在AWS中创建连接器时、网络页面上显示的密钥对字段中的搜索选项的屏幕截图。</block>
-  <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">此更新还包括错误修复。</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
   <block id="e22252cf3c711c916163d727b6261500" category="paragraph">云区域可以是AWS Top SecretCloud、AWS SecretCloud、Azure IL6等安全美国机构的区域、也可以是任何商业区域。</block>
@@ -3859,7 +3858,6 @@ https://support.netapp.com
   <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">编辑名称</block>
   <block id="c42458c54134318669b685ee8730a478" category="paragraph">如果您使用NetApp云凭据登录到BlueXP、现在可以在*用户设置*中编辑您的名称。</block>
   <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">屏幕截图、显示了在用户设置下编辑您的姓名的功能。</block>
-  <block id="19f8b99a1063fac466ee71dbd38b8447" category="paragraph"><block ref="19f8b99a1063fac466ee71dbd38b8447" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4a784443543a41df794122c52fae1df7" category="paragraph">如果您使用联合连接或NetApp 支持站点 帐户登录、则不支持编辑您的名称。</block>
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">您需要更新每个Cloud Volumes ONTAP系统的备份位置。</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">从Cloud Volumes ONTAP命令行界面运行以下命令以显示当前备份目标：</block>
@@ -3872,8 +3870,10 @@ https://support.netapp.com
   <block id="1dd4f77b0b91e0fcf80bc700a9a86fd6" category="paragraph">从BlueXP或AWS Marketplace在AWS中部署Connector时、默认情况下会配置以下EC2实例设置：</block>
   <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
   <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">EC2实例需要实例元数据服务版本1 (IMDSv1)。IMDSv2不支持此连接器。</block>
-  <block id="7626696bd9f21a6589ce40ea53af6046" category="section-title">Amazon EC2实例元数据服务要求</block>
-  <block id="bce093b82ba18b11f0951a0e0b61a538" category="paragraph">您应注意、在AWS中手动安装Connector软件之前、EC2实例需要使用IMDSv1。</block>
   <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link-macro">详细了解AWS中的IMDSv1要求</block>
-  <block id="b305801a6c9c8eadb3e6439dc658aaa8" category="paragraph"><block ref="785f731db3565bf64fce6692ea6b4a4a" category="inline-link-macro-rx"></block>。</block>
+  <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c7f67b21e0c8d093756f7b3a59e8d2e8" category="section-title">EC2实例的IMDSv1要求</block>
+  <block id="09477b433fb18272d0d3ee6b7a7e23ad" category="paragraph">请注意、在AWS中手动安装Connector软件之前、Amazon EC2实例需要使用实例元数据服务版本1 (IMDSv1)。</block>
+  <block id="ae1d4316f9a8104fa910e65fd2096cb3" category="paragraph"><block ref="3fb75bc46ec80b0989f43707450cda37" category="inline-link-rx"></block>。</block>
+  <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
