@@ -74,6 +74,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 * 迁移报告
 * 与BlueXP数据服务的内部ONTAP 集群集成
 * 运营弹性^1^
+* 勒索软件保护
 * StorageGRID 系统
 * 分层
 * 卷缓存

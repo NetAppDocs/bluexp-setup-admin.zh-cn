@@ -377,7 +377,7 @@ NOTE: 如果要在中使用BlueXP https://aws.amazon.com/federal/secret-cloud/["
 | StorageGRID | 否 | 否 
 
 
-.16+| * 服务 * | 备份和恢复 | 是的。
+.17+| * 服务 * | 备份和恢复 | 是的。
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["查看ONTAP卷数据支持的备份目标列表"^] | 是的。
 
@@ -412,6 +412,9 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 | 运营故障恢复能力 | 否 | 否 
+
+
+| 勒索软件保护 | 否 | 否 
 
 
 | 修复 | 否 | 否 
