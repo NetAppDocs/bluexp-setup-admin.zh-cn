@@ -270,7 +270,7 @@ TIP: 在BlueXP创建Connector时、它会将一组新权限应用于Connector实
 直接从BlueXP基于Web的控制台创建Connector。
 
 .关于此任务
-从BlueXP创建连接器会使用默认配置在AWS中部署EC2实例。 link:reference-connector-default-config.html["了解Connector的默认配置"]。
+从BlueXP创建连接器会使用默认配置在AWS中部署EC2实例。创建连接器后、不应更改为CPU或RAM更少的较小EC2实例类型。 link:reference-connector-default-config.html["了解Connector的默认配置"]。
 
 .开始之前
 您应具备以下条件：

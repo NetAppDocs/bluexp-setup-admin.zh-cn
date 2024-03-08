@@ -420,7 +420,7 @@ image:screenshot_azure_client_secret.gif["Azure门户的屏幕截图、其中显
 直接从BlueXP基于Web的控制台创建Connector。
 
 .关于此任务
-从BlueXP创建连接器会使用默认配置在Azure中部署虚拟机。 link:reference-connector-default-config.html["了解Connector的默认配置"]。
+从BlueXP创建连接器会使用默认配置在Azure中部署虚拟机。创建连接器后、不应更改为CPU或RAM更少的较小虚拟机类型。 link:reference-connector-default-config.html["了解Connector的默认配置"]。
 
 .开始之前
 您应具备以下条件：

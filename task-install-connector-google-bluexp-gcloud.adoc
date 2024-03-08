@@ -378,7 +378,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud�
 直接从BlueXP基于Web的控制台或使用gCloud创建Connector。
 
 .关于此任务
-创建Connector会使用默认配置在Google Cloud中部署虚拟机实例。 link:reference-connector-default-config.html["了解Connector的默认配置"]。
+创建Connector会使用默认配置在Google Cloud中部署虚拟机实例。创建连接器后、不应更改为CPU或RAM更少的较小VM实例。 link:reference-connector-default-config.html["了解Connector的默认配置"]。
 
 [role="tabbed-block"]
 ====

@@ -18,6 +18,54 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
+== 2024年3月8日
+
+
+
+=== 连接器3.9.38
+
+目前、3.9.38版本可用于标准模式和受限模式。此版本支持AWS中的IMDSv2和AWS权限更新。
+
+
+
+==== 支持IMDSv2
+
+现在、BlueXP可通过连接器实例和Cloud Volumes ONTAP实例支持Amazon EC2实例元数据服务版本2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。
+
+https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["从AWS安全博客了解有关IMDSv2的更多信息"^]
+
+在EC2实例上、实例元数据服务(IMDS)已启用、如下所示：
+
+* 适用于BlueXP、AWS Marketplace或使用的新Connector部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform脚本"^]默认情况下，EC2实例上会启用IMDSv2。
+* 如果在AWS中启动新的EC2实例、然后手动安装Connector软件、则默认情况下IMDSv2也会处于启用状态。
+* 对于现有连接器、仍然支持IMDSv1、但您可以根据需要在EC2实例上手动配置IMDSv2。
+* 对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["了解如何在现有实例上配置IMDSv2"]。
+
+
+
+==== AWS权限更新
+
+我们更新了适用于AWS的Connector策略、以包括"EC2：可说明可用性Zones"权限。即将发布的版本需要此权限。发行说明发布后、我们将更新发行说明以提供更多详细信息。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["查看Connector的AWS权限"]。
+
+
+
+=== 代理设置和Cloud Volumes ONTAP设置
+
+现在，可从*Manage Connectors*页面(标准模式)或*Edit Connectors*页面(受限模式和专用模式)访问连接器的代理服务器设置。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["了解如何配置Connector以使用代理服务器"]。
+
+此外，我们将“*连接器设置*”页重命名为“* Cloud Volumes ONTAP设置*”。
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["屏幕截图、显示\"设置\"菜单中的Cloud Volumes ONTAP设置选项。"]
+
+
+
 == 2024年2月15日
 
 
@@ -37,14 +85,6 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["屏幕截图、显示了在用户设置下编辑您的姓名的功能。"]
 
 如果您使用联合连接或NetApp 支持站点 帐户登录、则不支持编辑您的名称。
-
-
-
-=== EC2实例的IMDSv1要求
-
-请注意、在AWS中手动安装Connector软件之前、Amazon EC2实例需要使用实例元数据服务版本1 (IMDSv1)。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["详细了解AWS中的IMDSv1要求"]。
 
 
 

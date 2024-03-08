@@ -31,11 +31,39 @@ BlueXP支持HTTP和HTTPS。代理服务器可以位于云中或网络中。
 请注意，此操作将重新启动 Connector 。在继续操作之前、请确保Connector未执行任何操作。
 
 .步骤
-. 在BlueXP控制台的右上角、选择设置图标、然后选择*连接器设置*。
+. 导航到*编辑BlueXP Connecter*页面。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
+导航方式取决于您是在标准模式下使用BlueXP (从SaaS网站访问BlueXP界面)、还是在受限模式或私有模式下使用BlueXP (从Connector主机本地访问BlueXP界面)。
 
-. 在*常规*下、选择* HTTP代理配置*。
++
+[role="tabbed-block"]
+====
+.标准模式
+--
+.. 从BlueXP标题中选择*连接器*下拉列表。
+.. 选择*管理连接器*。
++
+image:screenshot-manage-connectors.png["屏幕截图、显示选择连接器后显示的管理连接器页面。"]
+
+.. 选择连接器的操作菜单，然后选择*Edit Connecter*。
++
+image:screenshot-edit-connector-standard.png["显示操作菜单中的编辑连接器选项的屏幕截图。"]
+
+
+
+--
+.受限或专用模式
+--
+.. 从BlueXP标题中选择*连接器*下拉列表。
+.. 选择*Edit Connecter*。
++
+image:screenshot-edit-connector.png["显示\"编辑连接器\"选项的屏幕截图、该选项在展开\"连接器\"菜单后可用。"]
+
+
+
+--
+====
+. 选择*HTTP代理配置*。
 . 设置代理：
 +
 .. 选择*启用代理*。
@@ -69,10 +97,38 @@ image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制�
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["了解有关将Azure专用链路或服务端点与Cloud Volumes ONTAP 结合使用的更多信息"^]
 
 .步骤
-. 在BlueXP控制台的右上角、选择设置图标、然后选择*连接器设置*。
+. 导航到*编辑BlueXP Connecter*页面：
 +
-image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
+导航方式取决于您是在标准模式下使用BlueXP (从SaaS网站访问BlueXP界面)、还是在受限模式或私有模式下使用BlueXP (从Connector主机本地访问BlueXP界面)。
 
-. 在*常规*下、选择*支持直接API流量*。
++
+[role="tabbed-block"]
+====
+.标准模式
+--
+.. 从BlueXP标题中选择*连接器*下拉列表。
+.. 选择*管理连接器*。
++
+image:screenshot-manage-connectors.png["屏幕截图、显示选择连接器后显示的管理连接器页面。"]
+
+.. 选择连接器的操作菜单，然后选择*Edit Connecter*。
++
+image:screenshot-edit-connector-standard.png["显示操作菜单中的编辑连接器选项的屏幕截图。"]
+
+
+
+--
+.受限或专用模式
+--
+.. 从BlueXP标题中选择*连接器*下拉列表。
+.. 选择*Edit Connecter*。
++
+image:screenshot-edit-connector.png["显示\"编辑连接器\"选项的屏幕截图、该选项在展开\"连接器\"菜单后可用。"]
+
+
+
+--
+====
+. 选择*支持直接API流量*。
 . 选中此复选框以启用此选项、然后选择*保存*。
 

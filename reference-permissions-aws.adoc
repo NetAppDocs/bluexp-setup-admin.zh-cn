@@ -73,6 +73,7 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
     "Statement": [
         {
             "Action": [
+                "ec2:DescribeAvailabilityZones",
                 "ec2:DescribeInstances",
                 "ec2:DescribeInstanceStatus",
                 "ec2:RunInstances",
@@ -1301,6 +1302,16 @@ Connector会发出以下API请求来发现和管理Amazon EKS集群：
 == 更改日志
 
 添加和删除权限后、我们将在以下各节中记录这些权限。
+
+
+
+=== 2024年3月8日
+
+连接器策略现在包括以下权限：
+
+EC2：特性可用性区域
+
+即将发布的版本需要此权限。发行说明发布后、我们将更新发行说明以提供更多详细信息。
 
 
 

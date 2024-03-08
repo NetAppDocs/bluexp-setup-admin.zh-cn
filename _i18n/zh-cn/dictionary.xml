@@ -1401,9 +1401,7 @@
   <block id="f624e5f75138eb92caddd44e1bc7342e" category="list-text">标记：getTagValues</block>
   <block id="5e665d8f5cf0c341dce9f3bd5e7f4cc0" category="list-text">标记：标记资源</block>
   <block id="5e10058ad3f07bfeca3eef81de09ce28" category="list-text">标记：未标记资源</block>
-  <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">2023年6月6日</block>
   <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">现在、Cloud Volumes ONTAP需要以下权限：</block>
-  <block id="1be1ae3d277ebf372ecefda4d444dbbb" category="section-title">2023年2月14日</block>
   <block id="bf9c7c9727a11f040da47cdd589f7ea6" category="paragraph">现在、BlueXP层需要以下权限：</block>
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">在私有模式下部署Connector、以便在使用BlueXP时无需与BlueXP SaaS层建立出站连接。要开始使用、请安装Connector、通过访问Connector上运行的用户界面来设置BlueXP、然后提供您先前设置的云权限。</block>
   <block id="2f549fb867eb9c0be636782d32264aa6" category="doc">在专用模式下部署连接器</block>
@@ -1524,10 +1522,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">这些限制特定于BlueXP的设置和管理：Connector、SaaS平台等。</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">连接器限制</block>
-  <block id="cf4525e15b866700f10e91573643ba54" category="section-title">不应更改默认EC2实例设置</block>
-  <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2设置为可选</block>
-  <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokens设置为可选</block>
-  <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">这些设置不应更改为必需。将这些设置更改为所需会影响连接器和Cloud Volumes ONTAP 的可用性。</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">可能与 172 范围内的 IP 地址冲突</block>
   <block id="efdb2123102821583a0af000d2fa9040" category="paragraph">BlueXP使用IP地址位于172.17.0.0/16和172.18.0.0/16范围的两个接口部署Connector。</block>
   <block id="5646658d58bb92ba775a6c2cd024ef17" category="paragraph">如果您的网络中的子网配置了上述任一范围、则您可能会在BlueXP中遇到连接失败。例如、在BlueXP中发现内部ONTAP 集群可能会失败。</block>
@@ -2328,8 +2322,6 @@
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">在 Connector 上启用代理</block>
   <block id="a211e8f0d908dfd70d36364b3fbd91b0" category="paragraph">在将 Connector 配置为使用代理服务器时，该连接器及其管理的 Cloud Volumes ONTAP 系统（包括任何 HA 调解器）都会使用代理服务器。</block>
   <block id="f5cfd333047dfa220ee8666d14286034" category="paragraph">请注意，此操作将重新启动 Connector 。在继续操作之前、请确保Connector未执行任何操作。</block>
-  <block id="1ba8304c99952e6f64861018bbefcdd0" category="list-text">在BlueXP控制台的右上角、选择设置图标、然后选择*连接器设置*。</block>
-  <block id="861d390100edeb52d8f385f026c72049" category="list-text">在*常规*下、选择* HTTP代理配置*。</block>
   <block id="2c451caa323474f558c4e4065578647d" category="list-text">设置代理：</block>
   <block id="dabc8d2c79f6529ca393b4b3d4f75805" category="list-text">选择*启用代理*。</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">使用语法指定服务器<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> 或<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
@@ -2339,7 +2331,6 @@
   <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">如果您禁用了在Cloud Volumes ONTAP 中使用Azure专用链路、而是使用服务端点、则必须启用直接API流量。否则、流量将无法正确路由。</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">了解有关将Azure专用链路或服务端点与Cloud Volumes ONTAP 结合使用的更多信息</block>
   <block id="6143580a5ae490efe32d3c566650ad6c" category="paragraph"><block ref="6143580a5ae490efe32d3c566650ad6c" category="inline-link-rx"></block></block>
-  <block id="73918d630dd9a657f3442a2c1231fd74" category="list-text">在*常规*下、选择*支持直接API流量*。</block>
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">选中此复选框以启用此选项、然后选择*保存*。</block>
   <block id="9345f603d48306b04203c8a77bc1ec43" category="summary">创建BlueXP帐户时、该帐户仅包含一个管理员用户和一个工作区。您可以通过添加用户、创建服务帐户以实现自动化以及添加工作空间等方式来管理帐户、以满足组织的需求。</block>
   <block id="f2b686d839a94b2d7f1e0a55d1c7c302" category="doc">管理您的BlueXP帐户</block>
@@ -3456,7 +3447,6 @@
   <block id="bbc8741d5b8cb60c926722b934bec008" category="section-title">第2步：设置AWS权限</block>
   <block id="76fc03e9ac56ec6623a5f3fd59761d4b" category="section-title">第3步：创建接头</block>
   <block id="da14ee4a8100ac08980150bcda1e397d" category="inline-link-macro">了解Connector的默认配置</block>
-  <block id="f1620bf756a71002318f3eb8b1277d2f" category="paragraph">从BlueXP创建连接器会使用默认配置在AWS中部署EC2实例。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="26b0998fe035211b8097187e431e16b9" category="summary">要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备AWS权限、安装Connector、然后提供准备好的权限。</block>
   <block id="eb44c1bbcb138bd8d43dab2a2d5dd798" category="doc">在AWS中手动安装Connector</block>
   <block id="2cdec4e0f473161523115d9e1cc50257" category="list-text">创建连接器时、您需要选择要用于实例的EC2密钥对。</block>
@@ -3507,7 +3497,6 @@ deploymentmanager.editor</block>
   <block id="fbb7d70eda793afc4159d1bd8f3c3814" category="paragraph">按照以下步骤准备这些身份验证方法之一、以便用于BlueXP。</block>
   <block id="a9242e0bd7c37f9c26c954ae4eff29b3" category="open-title">Azure帐户</block>
   <block id="d1ff9355f81257b2c8a7693e702ba3f7" category="section-title">第4步：创建连接器</block>
-  <block id="f23ed1e499f82b7b35d463ccef21eed1" category="paragraph">从BlueXP创建连接器会使用默认配置在Azure中部署虚拟机。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="2f44f891a2e61a894ccc4f30dfd7b4be" category="paragraph"><block ref="8d330a1f00fb06fce7867e682fb9a351" category="inline-xref-macro-rx"></block>。</block>
   <block id="234849cccf32785a20387f435fbc1665" category="paragraph">在标准模式下使用BlueXP时、如何提供权限取决于您计划如何创建Connector。</block>
   <block id="235df19fd66aa61dd8174f1a6480f822" category="paragraph">要了解如何设置权限、请参见以下内容：</block>
@@ -3546,7 +3535,6 @@ deploymentmanager.editor</block>
   <block id="4d55aaa36c67fd980b8ca20ca5db6ef9" category="paragraph">在从BlueXP或使用gCloud部署Connector之前、您需要为要部署Connector VM的Google Cloud用户设置权限。</block>
   <block id="8456ad5c97fd1db8b43fc61d8ea03799" category="section-title">第6步：创建连接器</block>
   <block id="bb919bb919074dbe6c69b05695d0a1aa" category="paragraph">直接从BlueXP基于Web的控制台或使用gCloud创建Connector。</block>
-  <block id="b03261236b57a26202438940439ee786" category="paragraph">创建Connector会使用默认配置在Google Cloud中部署虚拟机实例。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="ec2ce152b3b60e3721ae091911de473d" category="list-text">了解VM实例要求。</block>
   <block id="aab924c92611ee11b49b8687e53ec943" category="list-text">*CPU*：4核或4个vCPU</block>
   <block id="3f8517f6b0146fc27e0a5144098713fb" category="list-text">*RAM*：14 GB</block>
@@ -3862,19 +3850,91 @@ https://support.netapp.com
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">您需要更新每个Cloud Volumes ONTAP系统的备份位置。</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">从Cloud Volumes ONTAP命令行界面运行以下命令以显示当前备份目标：</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">运行以下命令以更新备份目标的IP地址：</block>
-  <block id="375a8301ce4caf38298dba148206d69c" category="section-title">EC2实例需要使用IMDSv1</block>
-  <block id="997791080d6fcd216110fbfe145cef98" category="paragraph">在使用标准模式或受限模式时、在AWS中的EC2实例上手动安装Connector软件之前、您需要确保EC2实例使用实例元数据服务版本1 (IMDSv1)。IMDSv2不支持此连接器。</block>
   <block id="95371958414dbd4f614d7ff8348b9b31" category="paragraph">由于IMDSv2现在是新EC2实例上的默认版本、因此您需要修改实例元数据选项以恢复IMDSv1的使用。</block>
   <block id="c637448044ff305c64a7c1cd8b77b196" category="inline-link">AWS文档：还原IMDSv1的使用</block>
   <block id="dd3ddc1f5982d8946100b097e7993378" category="paragraph"><block ref="dd3ddc1f5982d8946100b097e7993378" category="inline-link-rx"></block></block>
-  <block id="1dd4f77b0b91e0fcf80bc700a9a86fd6" category="paragraph">从BlueXP或AWS Marketplace在AWS中部署Connector时、默认情况下会配置以下EC2实例设置：</block>
   <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
   <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">EC2实例需要实例元数据服务版本1 (IMDSv1)。IMDSv2不支持此连接器。</block>
-  <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link-macro">详细了解AWS中的IMDSv1要求</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c7f67b21e0c8d093756f7b3a59e8d2e8" category="section-title">EC2实例的IMDSv1要求</block>
-  <block id="09477b433fb18272d0d3ee6b7a7e23ad" category="paragraph">请注意、在AWS中手动安装Connector软件之前、Amazon EC2实例需要使用实例元数据服务版本1 (IMDSv1)。</block>
-  <block id="ae1d4316f9a8104fa910e65fd2096cb3" category="paragraph"><block ref="3fb75bc46ec80b0989f43707450cda37" category="inline-link-rx"></block>。</block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="list-text">勒索软件保护</block>
+  <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">2024年3月8日</block>
+  <block id="e95eef6ba2551f885847cc2b51459994" category="paragraph">连接器策略现在包括以下权限：</block>
+  <block id="33e595f0fd43192e3f1d28a291860881" category="paragraph">EC2：特性可用性区域</block>
+  <block id="b12f2c2fee8ccdb3cad2171b53ed3cfd" category="paragraph">即将发布的版本需要此权限。发行说明发布后、我们将更新发行说明以提供更多详细信息。</block>
+  <block id="6a7140fd5370f297d9a834d30e26ffde" category="section-title">2023年6月6日</block>
+  <block id="5fc531b28735a6e141b39c2b5e2f1dcc" category="section-title">2023年2月14日</block>
+  <block id="d1b9e6a9e660eac14ba251761cf89e4b" category="paragraph">从BlueXP创建连接器会使用默认配置在Azure中部署虚拟机。创建连接器后、不应更改为CPU或RAM更少的较小虚拟机类型。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="d54ab8a1d5dd0b1066137c76d5021844" category="section-title">VM或实例类型</block>
+  <block id="c371dc405db8facc84986c93c1618d1e" category="paragraph">如果您直接从BlueXP创建了Connector、则BlueXP会使用默认配置在云提供商中部署一个虚拟机实例。创建连接器后、不应更改为CPU或RAM更少的较小VM实例。</block>
+  <block id="bdfd85d15fc6c7ed4e5a19af0a8f1999" category="paragraph">CPU和RAM要求如下：</block>
+  <block id="84fc34721c0c912a148a70d22ac7cd5a" category="paragraph"><block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="98dddf7eafbbdfa88756d62945237473" category="section-title">要求在Amazon EC2实例上使用IMDSv2</block>
+  <block id="824e7fae55f361d08bb9bd5bdf494ff0" category="inline-link">从AWS安全博客了解有关IMDSv2的更多信息</block>
+  <block id="c49009b6f155acc311d4014abe19ec98" category="paragraph">从2024年3月开始、BlueXP现在可通过连接器和Cloud Volumes ONTAP (包括HA部署的调解器)支持Amazon EC2实例元数据服务版本2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
+  <block id="4166379ba80de4be17a81c04ec7819c4" category="list-text">默认情况下、所有新连接器EC2实例都会启用IMDSv2。IMDSv1在2024年3月之前启用。</block>
+  <block id="6f218fd0d06a9a2564453a73bc05ee13" category="list-text">默认情况下、所有新的和现有的Cloud Volumes ONTAP EC2实例都会启用IMDSv1。</block>
+  <block id="7e6c98db93605459a9b69da423ef4684" category="paragraph">如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。</block>
+  <block id="b2f60e6f194d16e1bf9deaa367cd9eae" category="list-text">连接器版本必须为3.9.38或更高版本。</block>
+  <block id="177aac65c5f4518e1a35eb1479fac1a1" category="list-text">此更改需要重新启动Cloud Volumes ONTAP实例。</block>
+  <block id="5024434a1308ae5aff26ba15a55bce13" category="paragraph">这些步骤需要使用AWS命令行界面、因为您必须将响应跃点限制更改为3。</block>
+  <block id="674bc63ff5794e51146ad842329f5afd" category="list-text">要求在连接器实例上使用IMDSv2：</block>
+  <block id="7c08236138358b7a6e12dcdf43b92969" category="list-text">安装AWS命令行界面。</block>
+  <block id="97b647a1aeead85f7ff9e6660cadfd49" category="inline-link">AWS文档：安装或更新到最新版本的AWS命令行界面</block>
+  <block id="0eccbc3e7cb345786a9c69cf32e0b410" category="paragraph"><block ref="0eccbc3e7cb345786a9c69cf32e0b410" category="inline-link-rx"></block></block>
+  <block id="fdedd16440c0c883dfc66fe8ef510c62" category="list-text">使用<block ref="163406f31b4a352573543db4a8b761b7" prefix=" " category="inline-code"></block> 命令以要求使用IMDSv2并将Put响应跃点限制更改为3。</block>
+  <block id="d83ec76d50b3bda1cf13e81a46048f91" category="admonition">。<block ref="b14a1de55f9953d856d03b1230916191" prefix=" " category="inline-code"></block> 参数用于将IMDSv2设置为必需。时间<block ref="b14a1de55f9953d856d03b1230916191" prefix=" " category="inline-code"></block> 是必需的、您还必须设置<block ref="075040dbadfe9a123d2621d11f01b0a6" prefix=" " category="inline-code"></block> 设置为启用。</block>
+  <block id="e3562f747ad313da62190f86bb64dc87" category="list-text">要求在Cloud Volumes ONTAP实例上使用IMDSv2：</block>
+  <block id="e813184f980902e482da371f4c1635a3" category="inline-link">Amazon EC2控制台</block>
+  <block id="a3c1ab8ea16cbc440d74ed1810e1ea29" category="list-text">转至<block ref="a979ef0662428242021a3b937a5a7bf7" category="inline-link-rx"></block></block>
+  <block id="0923d272646612aa7fcac06ded4f9775" category="list-text">从导航窗格中，选择*Instances *。</block>
+  <block id="bd669926126507d7fbfbbb50bfafba24" category="list-text">选择Cloud Volumes ONTAP实例。</block>
+  <block id="1c9db3e842584a909d28ae8882a8e58a" category="list-text">选择*操作&gt;实例设置&gt;修改实例元数据选项*。</block>
+  <block id="dee3242d9f387f850469315724ac6c27" category="list-text">在*修改实例元数据选项*对话框中，选择以下内容：</block>
+  <block id="e24b7163a4dc37a3db7eb4e01db5a81f" category="list-text">对于*实例元数据服务*，选择*Enable*。</block>
+  <block id="2c239daef1a43ddd2011dfa4a307c157" category="list-text">对于*IMDSv2*，请选择*require*。</block>
+  <block id="5cf803d4e6ce3c1fc67e7320dcd440b1" category="list-text">对其他Cloud Volumes ONTAP实例(包括HA调解器)重复上述步骤。</block>
+  <block id="0694adc8bc882f236f606e1c56eebe94" category="inline-link">停止并启动Cloud Volumes ONTAP实例</block>
+  <block id="96afcc62a59c68b277c1a37c2254e239" category="list-text"><block ref="96afcc62a59c68b277c1a37c2254e239" category="inline-link-rx"></block></block>
+  <block id="1bf094b9d6f1b1c1ae5e745beefb3ff7" category="paragraph">连接器实例和Cloud Volumes ONTAP实例现在已配置为使用IMDSv2。</block>
+  <block id="00d14f718aca7db50368d8fc7008b41a" category="section-title">连接器3.9.38</block>
+  <block id="d39d3f642c13ecde9b0fc02889aa6386" category="paragraph">目前、3.9.38版本可用于标准模式和受限模式。此版本支持AWS中的IMDSv2和AWS权限更新。</block>
+  <block id="b8048e9aa508d6c9379607c39c84e904" category="section-title">支持IMDSv2</block>
+  <block id="727615b8adbd72d276572a4469f7c09d" category="paragraph">现在、BlueXP可通过连接器实例和Cloud Volumes ONTAP实例支持Amazon EC2实例元数据服务版本2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。</block>
+  <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
+  <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">在EC2实例上、实例元数据服务(IMDS)已启用、如下所示：</block>
+  <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Terraform脚本</block>
+  <block id="0b18bb2eadaff9912e9bbefb3accbc90" category="list-text">适用于BlueXP、AWS Marketplace或使用的新Connector部署<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>默认情况下，EC2实例上会启用IMDSv2。</block>
+  <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">如果在AWS中启动新的EC2实例、然后手动安装Connector软件、则默认情况下IMDSv2也会处于启用状态。</block>
+  <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">对于现有连接器、仍然支持IMDSv1、但您可以根据需要在EC2实例上手动配置IMDSv2。</block>
+  <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。</block>
+  <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">了解如何在现有实例上配置IMDSv2</block>
+  <block id="35caf9a212e382e214a82a5d75099530" category="paragraph"><block ref="2136f09eaf84594e894a08f345e725b8" category="inline-link-rx"></block>。</block>
+  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">AWS权限更新</block>
+  <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">我们更新了适用于AWS的Connector策略、以包括"EC2：可说明可用性Zones"权限。即将发布的版本需要此权限。发行说明发布后、我们将更新发行说明以提供更多详细信息。</block>
+  <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">查看Connector的AWS权限</block>
+  <block id="bad85d32b5f3e46e956809c13b502817" category="paragraph"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block>。</block>
+  <block id="9796f4649a0c963c7b6019196c7f14f0" category="section-title">代理设置和Cloud Volumes ONTAP设置</block>
+  <block id="1697d0f8a0936757a7bb28b4fa2eacd1" category="paragraph">现在，可从*Manage Connectors*页面(标准模式)或*Edit Connectors*页面(受限模式和专用模式)访问连接器的代理服务器设置。</block>
+  <block id="50770490f832c2b93de5aff17e5102b5" category="inline-link">了解如何配置Connector以使用代理服务器</block>
+  <block id="d58ba1e11f305c91632d6e86e3515966" category="paragraph"><block ref="f2fec40748e9e912170fdd2984d9b989" category="inline-link-rx"></block>。</block>
+  <block id="d560347c8aaf0de44ab17132b9923b1c" category="paragraph">此外，我们将“*连接器设置*”页重命名为“* Cloud Volumes ONTAP设置*”。</block>
+  <block id="79c73187c699b08002880f70fb88a0a8" category="inline-image-macro">屏幕截图、显示"设置"菜单中的Cloud Volumes ONTAP设置选项。</block>
+  <block id="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="paragraph"><block ref="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03c012ec036bd77d62ef64e67f7dbc5a" category="list-text">导航到*编辑BlueXP Connecter*页面。</block>
+  <block id="5682fb3f3dc6955b7e9d4b14adc8daa0" category="paragraph">导航方式取决于您是在标准模式下使用BlueXP (从SaaS网站访问BlueXP界面)、还是在受限模式或私有模式下使用BlueXP (从Connector主机本地访问BlueXP界面)。</block>
+  <block id="75effefc9fa992948e167a31a7b2c21e" category="inline-image-macro">屏幕截图、显示选择连接器后显示的管理连接器页面。</block>
+  <block id="e929efc0ae3c20b98faca1bce939c39f" category="paragraph"><block ref="e929efc0ae3c20b98faca1bce939c39f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d7cd2871be8edef469dbc0a8331b2ea1" category="list-text">选择连接器的操作菜单，然后选择*Edit Connecter*。</block>
+  <block id="51061648a222d2e9cfc0c81e3936b2ed" category="inline-image-macro">显示操作菜单中的编辑连接器选项的屏幕截图。</block>
+  <block id="b56348249fcdfb1d99adf3c4aed569de" category="paragraph"><block ref="b56348249fcdfb1d99adf3c4aed569de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c2e1602403c9ad1e0a65c8bcd78343f0" category="open-title">受限或专用模式</block>
+  <block id="58254850bdb77fd29a5e690737b3b38e" category="list-text">选择*Edit Connecter*。</block>
+  <block id="52151b08532438e354a67736d7f485dd" category="inline-image-macro">显示"编辑连接器"选项的屏幕截图、该选项在展开"连接器"菜单后可用。</block>
+  <block id="00f7462bbd72cb5b8ec9621909b3ebb1" category="paragraph"><block ref="00f7462bbd72cb5b8ec9621909b3ebb1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3a71443a0764cf544fb5e2055be2d744" category="list-text">选择*HTTP代理配置*。</block>
+  <block id="7562ce5f768e11625bc10a4b9ebb71b0" category="list-text">导航到*编辑BlueXP Connecter*页面：</block>
+  <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">选择*支持直接API流量*。</block>
+  <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">从BlueXP创建连接器会使用默认配置在AWS中部署EC2实例。创建连接器后、不应更改为CPU或RAM更少的较小EC2实例类型。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">创建Connector会使用默认配置在Google Cloud中部署虚拟机实例。创建连接器后、不应更改为CPU或RAM更少的较小VM实例。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
 </blocks>

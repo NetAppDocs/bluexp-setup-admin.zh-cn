@@ -39,6 +39,20 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times["请注
 
 
 
+== VM或实例类型
+
+如果您直接从BlueXP创建了Connector、则BlueXP会使用默认配置在云提供商中部署一个虚拟机实例。创建连接器后、不应更改为CPU或RAM更少的较小VM实例。
+
+CPU和RAM要求如下：
+
+CPU:: 4 个核心或 4 个 vCPU
+RAM:: 14 GB
+
+
+link:reference-connector-default-config.html["了解Connector的默认配置"]。
+
+
+
 == 查看连接器的版本
 
 您可以查看连接器的版本、以验证连接器是否自动升级到最新版本、或者因为您需要与NetApp代表共享此版本。
@@ -120,6 +134,81 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 --
 
+
+
+
+== 要求在Amazon EC2实例上使用IMDSv2
+
+从2024年3月开始、BlueXP现在可通过连接器和Cloud Volumes ONTAP (包括HA部署的调解器)支持Amazon EC2实例元数据服务版本2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["从AWS安全博客了解有关IMDSv2的更多信息"^]
+
+* 默认情况下、所有新连接器EC2实例都会启用IMDSv2。IMDSv1在2024年3月之前启用。
+* 默认情况下、所有新的和现有的Cloud Volumes ONTAP EC2实例都会启用IMDSv1。
+
+
+如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。
+
+.开始之前
+* 连接器版本必须为3.9.38或更高版本。
+* 此更改需要重新启动Cloud Volumes ONTAP实例。
+
+
+.关于此任务
+这些步骤需要使用AWS命令行界面、因为您必须将响应跃点限制更改为3。
+
+.步骤
+. 要求在连接器实例上使用IMDSv2：
++
+.. 连接到Connector的Linux VM。
++
+在 AWS 中创建 Connector 实例时，您提供了 AWS 访问密钥和机密密钥。您可以使用此密钥对通过 SSH 连接到实例。EC2 Linux实例的用户名为Ubuntu (对于2023年5月之前创建的连接器、用户名为EC2-user)。
+
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS 文档：连接到 Linux 实例"^]
+
+.. 安装AWS命令行界面。
++
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html["AWS文档：安装或更新到最新版本的AWS命令行界面"^]
+
+.. 使用 `aws ec2 modify-instance-metadata-options` 命令以要求使用IMDSv2并将Put响应跃点限制更改为3。
++
+* 示例 *
+
++
+[source, awscli]
+----
+aws ec2 modify-instance-metadata-options \
+    --instance-id <instance-id> \
+    --http-put-response-hop-limit 3 \
+    --http-tokens required \
+    --http-endpoint enabled
+----
+
+
++
+
+NOTE: 。 `http-tokens` 参数用于将IMDSv2设置为必需。时间 `http-tokens` 是必需的、您还必须设置 `http-endpoint` 设置为启用。
+
+. 要求在Cloud Volumes ONTAP实例上使用IMDSv2：
++
+.. 转至 https://console.aws.amazon.com/ec2/["Amazon EC2控制台"^]
+.. 从导航窗格中，选择*Instances *。
+.. 选择Cloud Volumes ONTAP实例。
+.. 选择*操作>实例设置>修改实例元数据选项*。
+.. 在*修改实例元数据选项*对话框中，选择以下内容：
++
+*** 对于*实例元数据服务*，选择*Enable*。
+*** 对于*IMDSv2*，请选择*require*。
+*** 选择 * 保存 * 。
+
+
+.. 对其他Cloud Volumes ONTAP实例(包括HA调解器)重复上述步骤。
+.. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-state.html["停止并启动Cloud Volumes ONTAP实例"^]
+
+
+
+
+.结果
+连接器实例和Cloud Volumes ONTAP实例现在已配置为使用IMDSv2。
 
 
 
