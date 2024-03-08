@@ -3909,7 +3909,6 @@ https://support.netapp.com
   <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">对于现有连接器、仍然支持IMDSv1、但您可以根据需要在EC2实例上手动配置IMDSv2。</block>
   <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。</block>
   <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">了解如何在现有实例上配置IMDSv2</block>
-  <block id="35caf9a212e382e214a82a5d75099530" category="paragraph"><block ref="2136f09eaf84594e894a08f345e725b8" category="inline-link-rx"></block>。</block>
   <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">AWS权限更新</block>
   <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">我们更新了适用于AWS的Connector策略、以包括"EC2：可说明可用性Zones"权限。即将发布的版本需要此权限。发行说明发布后、我们将更新发行说明以提供更多详细信息。</block>
   <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">查看Connector的AWS权限</block>
@@ -3937,4 +3936,5 @@ https://support.netapp.com
   <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">选择*支持直接API流量*。</block>
   <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">从BlueXP创建连接器会使用默认配置在AWS中部署EC2实例。创建连接器后、不应更改为CPU或RAM更少的较小EC2实例类型。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">创建Connector会使用默认配置在Google Cloud中部署虚拟机实例。创建连接器后、不应更改为CPU或RAM更少的较小VM实例。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
+  <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>。</block>
 </blocks>
