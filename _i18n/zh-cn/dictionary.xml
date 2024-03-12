@@ -3937,4 +3937,51 @@ https://support.netapp.com
   <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">从BlueXP创建连接器会使用默认配置在AWS中部署EC2实例。创建连接器后、不应更改为CPU或RAM更少的较小EC2实例类型。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">创建Connector会使用默认配置在Google Cloud中部署虚拟机实例。创建连接器后、不应更改为CPU或RAM更少的较小VM实例。 <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>。</block>
   <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>。</block>
+  <block id="dbbd746e2d2c019dcb0c3c40b74f4f75" category="section-title">2021年3月8日</block>
+  <block id="7b2a09e0d726d9a52333a0ecb6df6812" category="paragraph">此更新包括对多项功能和服务的增强功能。</block>
+  <block id="f4eb7f69c035214da13ca0f958ab2c5a" category="section-title">Cloud Volumes ONTAP 增强功能</block>
+  <block id="e2c75aece78307cc6efce80e0fc6a89f" category="paragraph">此版本的 Cloud Manager 增强了 Cloud Volumes ONTAP 的管理功能。</block>
+  <block id="cedfa4114a856d26f8fcf723a5b4cb7a" category="section-title">所有云提供商均提供增强功能</block>
+  <block id="ab2fea55ae9697fcfeae223bb8d1a161" category="paragraph">Cloud Manager 现在可以部署和管理 Cloud Volumes ONTAP 9.0.0 。</block>
+  <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">了解此版本 Cloud Volumes ONTAP 中的新增功能</block>
+  <block id="41671c8c2787c6b4ae4a7430aaed25a5" category="paragraph"><block ref="1d003678f7aeecaa48a9a55ee79dfa0c" category="inline-link-rx"></block>。</block>
+  <block id="7b73adc87602305d19eea3376846e09c" category="section-title">AWS 中提供的增强功能</block>
+  <block id="360907953d19dad6cd45833cc14167e2" category="list-text">现在，您可以在 AWS 商用云服务（ C2S ）环境中部署 Cloud Volumes ONTAP 9.8 。</block>
+  <block id="3e45f0a61d57f2e3257d5825fe5a7c94" category="inline-link">了解如何开始使用 C2S</block>
+  <block id="b2d82b2661ffd005fd69b6dbe8cd323c" category="paragraph"><block ref="b2d82b2661ffd005fd69b6dbe8cd323c" category="inline-link-rx"></block></block>
+  <block id="acaa3f0ba647338374e9aa5717e4b179" category="list-text">Cloud Manager 始终支持您使用 AWS 密钥管理服务（ KMS ）对 Cloud Volumes ONTAP 数据进行加密。从 Cloud Volumes ONTAP 9.0.0 开始，如果选择客户管理的 CMK ， EBS 磁盘上的数据以及分层到 S3 的数据将被加密。以前，只会对 EBS 数据进行加密。</block>
+  <block id="dcbf930e1a349b31dc68e26e5227c6d0" category="paragraph">请注意，您需要为 Cloud Volumes ONTAP IAM 角色提供访问权限才能使用 CMK 。</block>
+  <block id="b2eca227b653383cc96f103eeeeaf77a" category="inline-link">了解有关使用 Cloud Volumes ONTAP 设置 AWS KMS 的更多信息</block>
+  <block id="97e8e04f21dce84bbdc17d9128f42a47" category="paragraph"><block ref="97e8e04f21dce84bbdc17d9128f42a47" category="inline-link-rx"></block></block>
+  <block id="0ac19842b01b2e595d367d49d3a2f512" category="section-title">Azure 中提供的增强功能</block>
+  <block id="f4ddf81019b69d6e9ec665b8c011944c" category="paragraph">现在，您可以在 Azure 国防部（ DoD ）影响级别 6 （ IL6 ）中部署 Cloud Volumes ONTAP 9.8 。</block>
+  <block id="b1f9439900369929f00410057598c853" category="section-title">Google Cloud 中提供的增强功能</block>
+  <block id="235712a00d7d49281addbc1384cc33f2" category="list-text">我们减少了 Google Cloud 中 Cloud Volumes ONTAP 9.8 及更高版本所需的 IP 地址数量。默认情况下，不需要一个 IP 地址（我们将集群间 LIF 与节点管理 LIF 统一在一起）。您还可以在使用 API 时跳过创建 SVM 管理 LIF ，这样就可以减少对额外 IP 地址的需求。</block>
+  <block id="4d75268045c1a28e17697720e7f27123" category="inline-link">在 Google Cloud 中了解有关 IP 地址要求的更多信息</block>
+  <block id="d28733663a4e51b540df89210de1322c" category="paragraph"><block ref="d28733663a4e51b540df89210de1322c" category="inline-link-rx"></block></block>
+  <block id="933d399c3cb0f03992675d49630ab818" category="list-text">现在，在 Google Cloud 中部署 Cloud Volumes ONTAP HA 对时，您可以为 VPC-1 ， VPC-2 和 VPC-3 选择共享 VPC 。以前，只有 VPC-0 可以是共享 VPC 。Cloud Volumes ONTAP 9.8 及更高版本支持此更改。</block>
+  <block id="fcc0572bd798a75498f99e20a8093f04" category="inline-link">了解有关 Google Cloud 网络连接要求的更多信息</block>
+  <block id="0007fc2f224950d7146482dd816d045a" category="paragraph"><block ref="0007fc2f224950d7146482dd816d045a" category="inline-link-rx"></block></block>
+  <block id="36758ba57a2ee81dcda1cf690cba345c" category="section-title">连接器增强功能</block>
+  <block id="c620fdcd127f42421f0ebb82ca0160b3" category="list-text">现在， Cloud Manager 会在 Connector 未运行时通过电子邮件通知管理员用户。</block>
+  <block id="f4923be5b51cdac20509609eb07ce1aa" category="paragraph">保持您的连接器正常运行有助于确保对 Cloud Volumes ONTAP 和其他 NetApp 云服务进行最佳管理。</block>
+  <block id="fbbb26e1a604e4bb843aa5158a56bf75" category="list-text">现在，如果您需要更改 Connector 的实例类型， Cloud Manager 将显示通知。</block>
+  <block id="07a7156f8ae2953eb97fcedc0f846001" category="paragraph">更改实例类型可确保您可以使用当前缺少的新功能。</block>
+  <block id="bd10f9ff269639d7e4902e8c79d702a6" category="section-title">Cloud Sync 增强功能</block>
+  <block id="dd7348bf6510a0f506ab7acf9e645e94" category="list-text">Cloud Sync 现在支持在 ONTAP S3 存储和 SMB 服务器之间建立同步关系：</block>
+  <block id="eb6261f1bc2ebf45d278c1fde4d7cfc4" category="list-text">将 ONTAP S3 存储连接到 SMB 服务器</block>
+  <block id="cc619045f8d284993e15378035fbf631" category="list-text">从 SMB 服务器到 ONTAP S3 存储</block>
+  <block id="3d9c61bbb0656b8a470cbe7bd67859f7" category="inline-link">查看支持的同步关系</block>
+  <block id="a75cec21dd4fd0bc8a57fdafde743e02" category="paragraph"><block ref="a75cec21dd4fd0bc8a57fdafde743e02" category="inline-link-rx"></block></block>
+  <block id="0957e4e6271f0a8785ac7980f9561e4e" category="list-text">现在，您可以通过 Cloud Sync 直接从用户界面统一数据代理组的配置。</block>
+  <block id="e0341128a5853714165581951816b70b" category="paragraph">建议不要自行更改配置。您应咨询 NetApp ，了解何时更改配置以及如何更改配置。</block>
+  <block id="a51f8f17029baacb9ec578d529b96fc1" category="inline-link">了解有关定义统一配置的更多信息</block>
+  <block id="ba6ad1a8a7ff7fed9858ae1a6056a044" category="paragraph"><block ref="ba6ad1a8a7ff7fed9858ae1a6056a044" category="inline-link-rx"></block></block>
+  <block id="af8de564f8a6452ff0926ac0d084a2a0" category="section-title">Cloud Tiering 增强功能</block>
+  <block id="b4baef0a3a494382cb3865753733f031" category="list-text">分层到 Google Cloud Storage 时，您可以应用生命周期规则，以便分层数据在 30 天后从标准存储类过渡到低成本的近线存储，冷线存储或归档存储。</block>
+  <block id="d85e79234e503ba2929218e38d0c7268" category="list-text">现在，如果您有任何未发现的内部 ONTAP 集群，则会显示云分层功能，以便您可以将其添加到 Cloud Manager 中，以便在这些集群上启用分层或其他服务。</block>
+  <block id="da79c9a9c81722678ed4139ebb8929d9" category="inline-link">了解如何发现这些附加集群</block>
+  <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
+  <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Azure NetApp Files 增强功能</block>
+  <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">现在，您可以动态更改卷的服务级别，以满足工作负载需求并优化成本。此卷将移至另一个容量池，而不会对该卷产生任何影响。<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
 </blocks>

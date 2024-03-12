@@ -939,6 +939,116 @@ link:task-managing-netapp-accounts.html#allow-third-party-services["了解有关
 
 
 
+== 2021年3月8日
+
+此更新包括对多项功能和服务的增强功能。
+
+
+
+=== Cloud Volumes ONTAP 增强功能
+
+此版本的 Cloud Manager 增强了 Cloud Volumes ONTAP 的管理功能。
+
+
+
+==== 所有云提供商均提供增强功能
+
+Cloud Manager 现在可以部署和管理 Cloud Volumes ONTAP 9.0.0 。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_new_990.html["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+
+
+
+==== AWS 中提供的增强功能
+
+* 现在，您可以在 AWS 商用云服务（ C2S ）环境中部署 Cloud Volumes ONTAP 9.8 。
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["了解如何开始使用 C2S"^]
+
+* Cloud Manager 始终支持您使用 AWS 密钥管理服务（ KMS ）对 Cloud Volumes ONTAP 数据进行加密。从 Cloud Volumes ONTAP 9.0.0 开始，如果选择客户管理的 CMK ， EBS 磁盘上的数据以及分层到 S3 的数据将被加密。以前，只会对 EBS 数据进行加密。
++
+请注意，您需要为 Cloud Volumes ONTAP IAM 角色提供访问权限才能使用 CMK 。
+
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html["了解有关使用 Cloud Volumes ONTAP 设置 AWS KMS 的更多信息"^]
+
+
+
+
+
+==== Azure 中提供的增强功能
+
+现在，您可以在 Azure 国防部（ DoD ）影响级别 6 （ IL6 ）中部署 Cloud Volumes ONTAP 9.8 。
+
+
+
+==== Google Cloud 中提供的增强功能
+
+* 我们减少了 Google Cloud 中 Cloud Volumes ONTAP 9.8 及更高版本所需的 IP 地址数量。默认情况下，不需要一个 IP 地址（我们将集群间 LIF 与节点管理 LIF 统一在一起）。您还可以在使用 API 时跳过创建 SVM 管理 LIF ，这样就可以减少对额外 IP 地址的需求。
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html["在 Google Cloud 中了解有关 IP 地址要求的更多信息"^]
+
+* 现在，在 Google Cloud 中部署 Cloud Volumes ONTAP HA 对时，您可以为 VPC-1 ， VPC-2 和 VPC-3 选择共享 VPC 。以前，只有 VPC-0 可以是共享 VPC 。Cloud Volumes ONTAP 9.8 及更高版本支持此更改。
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html["了解有关 Google Cloud 网络连接要求的更多信息"^]
+
+
+
+
+
+=== 连接器增强功能
+
+* 现在， Cloud Manager 会在 Connector 未运行时通过电子邮件通知管理员用户。
++
+保持您的连接器正常运行有助于确保对 Cloud Volumes ONTAP 和其他 NetApp 云服务进行最佳管理。
+
+* 现在，如果您需要更改 Connector 的实例类型， Cloud Manager 将显示通知。
++
+更改实例类型可确保您可以使用当前缺少的新功能。
+
+
+
+
+
+=== Cloud Sync 增强功能
+
+* Cloud Sync 现在支持在 ONTAP S3 存储和 SMB 服务器之间建立同步关系：
++
+** 将 ONTAP S3 存储连接到 SMB 服务器
+** 从 SMB 服务器到 ONTAP S3 存储
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["查看支持的同步关系"^]
+
+
+
+* 现在，您可以通过 Cloud Sync 直接从用户界面统一数据代理组的配置。
++
+建议不要自行更改配置。您应咨询 NetApp ，了解何时更改配置以及如何更改配置。
+
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#set-up-a-unified-configuration["了解有关定义统一配置的更多信息"^]
+
+
+
+
+
+=== Cloud Tiering 增强功能
+
+* 分层到 Google Cloud Storage 时，您可以应用生命周期规则，以便分层数据在 30 天后从标准存储类过渡到低成本的近线存储，冷线存储或归档存储。
+* 现在，如果您有任何未发现的内部 ONTAP 集群，则会显示云分层功能，以便您可以将其添加到 Cloud Manager 中，以便在这些集群上启用分层或其他服务。
++
+https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["了解如何发现这些附加集群"^]
+
+
+
+
+
+=== Azure NetApp Files 增强功能
+
+现在，您可以动态更改卷的服务级别，以满足工作负载需求并优化成本。此卷将移至另一个容量池，而不会对该卷产生任何影响。 https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["了解更多信息。"^]
+
+
+
 == 2021年2月9日
 
 
