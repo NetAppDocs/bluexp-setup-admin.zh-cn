@@ -18,6 +18,48 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
+== 2024年3月26日
+
+
+
+=== 专用模式版本(3.9.38)
+
+BlueXP现已推出新的专用模式版本。此版本包含以下BlueXP服务版本、这些版本支持专用模式。
+
+[cols="2*"]
+|===
+| 服务 | 包含版本 
+
+
+| 连接器 | 3.9.38 
+
+
+| 备份和恢复 | 2024年3月12日 
+
+
+| 分类 | 2024年3月4日 
+
+
+| Cloud Volumes ONTAP管理 | 2024年3月8日 
+
+
+| 数字电子钱包 | 2023年7月30日 
+
+
+| 内部ONTAP集群管理 | 2023年7月30日 
+
+
+| Replication | 2022年9月18日 
+|===
+此新版本可从NetApp 支持站点 下载。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["了解如何在使用私有模式时升级连接器"]
+
+
+
+
 == 2024年3月8日
 
 
@@ -106,7 +148,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 
 
-=== 私有模式释放
+=== 专用模式版本(3.9.35)
 
 BlueXP现已推出新的专用模式版本。此版本包含连接器3.9.35版以及截至2023年10月私有模式支持的BlueXP服务版本。
 

@@ -3713,7 +3713,6 @@ https://support.netapp.com
   <block id="713b059ba47ab000812d3dd15273cee6" category="paragraph">请注意、使用服务帐户时、API操作不需要刷新令牌。<block ref="cc919b62f11a25e2d8c9fb23b34ada32" category="inline-link-rx"></block></block>
   <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">该映像的操作系统为Ubuntu 22.04 LTS。</block>
   <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">2023年12月5日</block>
-  <block id="1771e2f4014c6ccd829b84cf9e8c7d27" category="section-title">私有模式释放</block>
   <block id="5a78b457c661dc3d01c5125da794f0ed" category="paragraph">BlueXP现已推出新的专用模式版本。此版本包含连接器3.9.35版以及截至2023年10月私有模式支持的BlueXP服务版本。</block>
   <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">此新版本可从NetApp 支持站点 下载。</block>
   <block id="2e57b160bcd31ccd527a6670d94879de" category="inline-link">了解专用模式附带的BlueXP服务</block>
@@ -3983,4 +3982,18 @@ https://support.netapp.com
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Azure NetApp Files 增强功能</block>
   <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">现在，您可以动态更改卷的服务级别，以满足工作负载需求并优化成本。此卷将移至另一个容量池，而不会对该卷产生任何影响。<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
   <block id="849f31cbd6498a40e853e0172989edd1" category="cell">从工作空间中删除工作环境</block>
+  <block id="fe8fcef9d0fdb328fbc812d42b4ca2e7" category="section-title">2024年3月26日</block>
+  <block id="3c16167b6c091087d9151aee3f52b379" category="section-title">专用模式版本(3.9.38)</block>
+  <block id="b7070cb9b31e0d402b92f5c1d4efa401" category="paragraph">BlueXP现已推出新的专用模式版本。此版本包含以下BlueXP服务版本、这些版本支持专用模式。</block>
+  <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">包含版本</block>
+  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">连接器</block>
+  <block id="0eff5e73304fb938a09633bd1b0cec70" category="cell">3.9.38</block>
+  <block id="2d67cd05b64a3416bc8bae12b4ef5685" category="cell">2024年3月12日</block>
+  <block id="9ee51d75827fcf6a985ed40e7418fea6" category="cell">2024年3月4日</block>
+  <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Cloud Volumes ONTAP管理</block>
+  <block id="900dd8f50d2294930a102034524e26b7" category="cell">内部ONTAP集群管理</block>
+  <block id="638be56d4cf930b576e6dc1300c7c33b" category="cell">2022年9月18日</block>
+  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">了解私有模式</block>
+  <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
+  <block id="de945439c2ef8db914ae9a056d6763b1" category="section-title">专用模式版本(3.9.35)</block>
 </blocks>
