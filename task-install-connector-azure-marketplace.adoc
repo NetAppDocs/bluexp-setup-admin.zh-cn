@@ -116,6 +116,8 @@ https://mysupport.netapp.com
 * HTTPS证书
 
 
+请注意、BlueXP不支持透明代理服务器。
+
 --
 
 

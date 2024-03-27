@@ -188,6 +188,8 @@ https://mysupport.netapp.com
 * HTTPS证书
 
 
+请注意、BlueXP不支持透明代理服务器。
+
 --
 
 
@@ -418,6 +420,9 @@ image:screenshot_azure_client_secret.gif["Azure门户的屏幕截图、其中显
 * 有关代理服务器的详细信息、如果从Connector访问Internet需要代理。
 +
 您可以选择在安装后配置代理服务器、但这样做需要重新启动Connector。
+
++
+请注意、BlueXP不支持透明代理服务器。
 
 * CA签名证书、如果代理服务器使用HTTPS或代理是截获代理。
 

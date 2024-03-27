@@ -2314,7 +2314,6 @@
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">这些NSS凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持&gt; NSS管理*访问这些凭据。</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">如果您的公司策略要求您使用代理服务器进行与Internet的所有通信、则需要将您的连接器配置为使用该代理服务器。如果您未将Connector配置为在安装期间使用代理服务器、则可以将Connector配置为随时使用该代理服务器。</block>
   <block id="146adb7944757e88795676b780c31811" category="doc">配置Connector以使用代理服务器</block>
-  <block id="9d8704731bd068bd3be5ad98b7941cba" category="paragraph">BlueXP支持HTTP和HTTPS。代理服务器可以位于云中或网络中。</block>
   <block id="30d7902c191c571f1aa091af3df65f3d" category="paragraph">如果公共IP地址或NAT网关不可用、则将Connector配置为使用代理服务器可提供出站Internet访问。此代理服务器仅为Connector提供出站连接。它不为Cloud Volumes ONTAP 系统提供任何连接。</block>
   <block id="66dcf6df2e799ff19e8fe5b0ed10a143" category="paragraph">如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。</block>
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">在 Connector 上启用代理</block>
@@ -2817,7 +2816,6 @@
 \https://blob.core.microsoft.scloud
 \https://core.microsoft.scloud</block>
   <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">管理Azure IL6区域中的资源。</block>
-  <block id="5b9a9863d7ad33310f21a8e9b1c1d682" category="paragraph">在私有模式下、BlueXP只会向云提供商发送出站流量、以便创建Cloud Volumes ONTAP 系统。</block>
   <block id="41d07a4a0a908721d3dbbf8c6e1a98a4" category="paragraph">如果您计划创建Cloud Volumes ONTAP 系统、则BlueXP需要云提供商的权限。您需要在云提供商中设置权限、然后在安装Connector实例后将这些权限与之关联。</block>
   <block id="3d715e57805c2356f84c41d139ed45c5" category="paragraph">如果您要在内部安装Connector、则必须使用AWS访问密钥或Azure服务主体提供权限。不支持其他选项。</block>
   <block id="68f824a5014b20fc98aea0beb5945581" category="paragraph">使用IAM角色为Connector提供权限。您需要手动将角色附加到Connector的EC2实例。</block>
@@ -3847,11 +3845,6 @@ https://support.netapp.com
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">您需要更新每个Cloud Volumes ONTAP系统的备份位置。</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">从Cloud Volumes ONTAP命令行界面运行以下命令以显示当前备份目标：</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">运行以下命令以更新备份目标的IP地址：</block>
-  <block id="95371958414dbd4f614d7ff8348b9b31" category="paragraph">由于IMDSv2现在是新EC2实例上的默认版本、因此您需要修改实例元数据选项以恢复IMDSv1的使用。</block>
-  <block id="c637448044ff305c64a7c1cd8b77b196" category="inline-link">AWS文档：还原IMDSv1的使用</block>
-  <block id="dd3ddc1f5982d8946100b097e7993378" category="paragraph"><block ref="dd3ddc1f5982d8946100b097e7993378" category="inline-link-rx"></block></block>
-  <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
-  <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">EC2实例需要实例元数据服务版本1 (IMDSv1)。IMDSv2不支持此连接器。</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="list-text">勒索软件保护</block>
@@ -3996,4 +3989,15 @@ https://support.netapp.com
   <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">了解私有模式</block>
   <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
   <block id="de945439c2ef8db914ae9a056d6763b1" category="section-title">专用模式版本(3.9.35)</block>
+  <block id="63d6aff1d21e14755a0a0cd9fcdbe7fc" category="paragraph">请注意、BlueXP不支持透明代理服务器。</block>
+  <block id="a8080c542b2627e36657b832e30937bf" category="paragraph">+
+在私有模式下、BlueXP只会向云提供商发送出站流量、以便创建Cloud Volumes ONTAP 系统。</block>
+  <block id="79911dec911bf03733bda7065e7e3964" category="section-title">不支持透明代理服务器</block>
+  <block id="d0da98586108cb1be969ff43380eee45" category="paragraph">BlueXP不支持使用Connector的透明代理服务器。</block>
+  <block id="eb38246be0b09c0a9d91cb2085b20b5d" category="inline-link-macro">了解有关将代理服务器与Connector结合使用的更多信息</block>
+  <block id="20cac3f0e9288e4238db227a684ecc49" category="paragraph"><block ref="cad892d1cc18ace00e67298d6d6448d0" category="inline-link-macro-rx"></block>。</block>
+  <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">支持的配置</block>
+  <block id="7d207720727cb20f87ab53c6a1b2514b" category="list-text">BlueXP支持HTTP和HTTPS。</block>
+  <block id="add3a67a28c550a2cc27b87a5a61ea8e" category="list-text">代理服务器可以位于云中或网络中。</block>
+  <block id="8ddee083db5cf3707b8335f563d2c755" category="list-text">BlueXP不支持透明代理服务器。</block>
 </blocks>

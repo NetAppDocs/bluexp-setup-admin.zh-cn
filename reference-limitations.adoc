@@ -24,6 +24,14 @@ summary: 已知限制确定了本产品版本不支持的平台、设备或功�
 
 
 
+=== 不支持透明代理服务器
+
+BlueXP不支持使用Connector的透明代理服务器。
+
+link:task-configuring-proxy.html["了解有关将代理服务器与Connector结合使用的更多信息"]。
+
+
+
 === 可能与 172 范围内的 IP 地址冲突
 
 BlueXP使用IP地址位于172.17.0.0/16和172.18.0.0/16范围的两个接口部署Connector。

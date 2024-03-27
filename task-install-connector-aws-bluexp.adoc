@@ -111,6 +111,8 @@ link:reference-networking-saas-console.html["从BlueXP控制台查看已联系�
 * HTTPS证书
 
 
+请注意、BlueXP不支持透明代理服务器。
+
 --
 
 

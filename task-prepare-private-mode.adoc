@@ -177,10 +177,12 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 * IP 地址
 * 凭据
 * HTTPS证书
+
+
+请注意、BlueXP不支持透明代理服务器。
+
 +
 在私有模式下、BlueXP只会向云提供商发送出站流量、以便创建Cloud Volumes ONTAP 系统。
-
-
 
 --
 端口:: 除非您启动 Connector ，否则不会向其传入流量。

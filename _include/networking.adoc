@@ -55,6 +55,8 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-l
 * HTTPS证书
 
 
+请注意、BlueXP不支持透明代理服务器。
+
 --
 
 
