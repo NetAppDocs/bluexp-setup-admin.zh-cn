@@ -1,0 +1,2929 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>管理BlueXP的AWS凭据和市场订阅 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="管理BlueXP的AWS凭据和市场订阅 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-adding-aws-accounts.html" />
+	<meta property="og:description" content="添加和管理AWS凭据、以便BlueXP拥有在AWS帐户中部署和管理云资源所需的权限。如果您管理多个 AWS 订阅，则可以从凭据页面将其中每个订阅分配给不同的 AWS 凭据。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/bluexp-setup-admin/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="添加和管理AWS凭据、以便BlueXP拥有在AWS帐户中部署和管理云资源所需的权限。如果您管理多个 AWS 订阅，则可以从凭据页面将其中每个订阅分配给不同的 AWS 凭据。">
+  <meta name="keywords" content=" permissions, aws, policy, iam, iam role, role, granting, policy, iam policy, iam user, access keys, arn, cloud provider accounts, aws, cloud provider profile, json, iam, credentials, adding credentials, add credentials"><!-- Icons -->
+  <link rel="icon" href="/zh-cn/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-cn/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/bluexp-setup-admin/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-cn/bluexp-setup-admin/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/bluexp-setup-admin/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/bluexp-setup-admin/js/na-search.js'></script><script src='/zh-cn/bluexp-setup-admin/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-cn/bluexp-setup-admin/js/custom-dropdown.js'></script>
+  <script src='/zh-cn/bluexp-setup-admin/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/bluexp-setup-admin/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/bluexp-setup-admin/js/jszip.min.js'></script><script src='/zh-cn/bluexp-setup-admin/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-cn/bluexp-setup-admin/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/cn">
+                <image id="ie-header-logo" src="/zh-cn/bluexp-setup-admin/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文档</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-cn/bluexp-setup-admin/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">简体中文</span>
+                    <img src="/zh-cn/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-cn/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-adding-aws-accounts.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-adding-aws-accounts.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-adding-aws-accounts.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-adding-aws-accounts.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-adding-aws-accounts.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-adding-aws-accounts.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-adding-aws-accounts.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-adding-aws-accounts.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-cn/bluexp-setup-admin/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">全部来自 NetApp</span>
+                    <img src="/zh-cn/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-cn/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支持</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知识库</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/zh-hans/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">训练</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-cn/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-cn/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文档</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">云文档</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/zh-cn/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-cn/bluexp-setup-admin/">-->
+      Setup and administration
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-cn/bluexp-setup-admin/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-cn/bluexp-setup-admin/search.html" 
+        data-type="widget"
+        data-placeholder="搜索文档"
+        data-no-results-found="未找到 {query} 的相关结果"
+        data-did-you-mean="搜索 {suggestion}。"
+        data-no-results-found-did-you-mean="未找到 {query} 的相关结果。您是指 {suggestion}？"
+        data-results-found="找到 {hitCount} 个结果"
+        data-error-message="发生错误。请重试。"
+        data-error-reset="重置搜索"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="设置和管理文档"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/bluexp-setup-admin/index.html">
+        设置和管理文档
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="发行说明"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 发行说明</div>-->
+         发行说明
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增功能"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-setup-admin/whats-new.html">
+        新增功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="已知限制"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-setup-admin/reference-limitations.html">
+        已知限制
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="入门"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 入门</div>-->
+         入门
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="了解基础知识"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 了解基础知识</div>-->
+         了解基础知识
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/concept-overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/concept-overview.html">
+        BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="—帐户"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/concept-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/concept-netapp-accounts.html">
+        —帐户
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="连接器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/concept-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/concept-connectors.html">
+        连接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="部署模式"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/concept-modes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/concept-modes.html">
+        部署模式
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="开始使用标准模式"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 开始使用标准模式</div>-->
+         开始使用标准模式
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="入门工作流"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-quick-start-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-quick-start-standard-mode.html">
+        入门工作流
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="准备网络以使用BlueXP控制台"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-networking-saas-console.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-networking-saas-console.html">
+        准备网络以使用BlueXP控制台
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="注册到BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-sign-up-saas.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-sign-up-saas.html">
+        注册到BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="创建连接器"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 创建连接器</div>-->
+         创建连接器
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="连接器安装选项"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/concept-install-options-aws.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-cn/bluexp-setup-admin/concept-install-options-aws.html">
+        连接器安装选项
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="从BlueXP创建连接器"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-install-connector-aws-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-cn/bluexp-setup-admin/task-install-connector-aws-bluexp.html">
+        从BlueXP创建连接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="从商城创建连接器"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-install-connector-aws-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-cn/bluexp-setup-admin/task-install-connector-aws-marketplace.html">
+        从商城创建连接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="手动安装连接器"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-install-connector-aws-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-cn/bluexp-setup-admin/task-install-connector-aws-manual.html">
+        手动安装连接器
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure 酒店"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure 酒店</div>-->
+         Azure 酒店
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="连接器安装选项"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/concept-install-options-azure.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-cn/bluexp-setup-admin/concept-install-options-azure.html">
+        连接器安装选项
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="从BlueXP创建连接器"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-install-connector-azure-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-cn/bluexp-setup-admin/task-install-connector-azure-bluexp.html">
+        从BlueXP创建连接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="从商城创建连接器"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-install-connector-azure-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-cn/bluexp-setup-admin/task-install-connector-azure-marketplace.html">
+        从商城创建连接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="手动安装连接器"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-install-connector-azure-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-cn/bluexp-setup-admin/task-install-connector-azure-manual.html">
+        手动安装连接器
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="连接器安装选项"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/concept-install-options-google.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-cn/bluexp-setup-admin/concept-install-options-google.html">
+        连接器安装选项
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="从BlueXP或gCloud创建连接器"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-install-connector-google-bluexp-gcloud.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-cn/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html">
+        从BlueXP或gCloud创建连接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="手动安装连接器"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-install-connector-google-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/zh-cn/bluexp-setup-admin/task-install-connector-google-manual.html">
+        手动安装连接器
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="内部部署"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-install-connector-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/bluexp-setup-admin/task-install-connector-on-prem.html">
+        内部部署
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="订阅BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-subscribe-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-subscribe-standard-mode.html">
+        订阅BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="接下来可以执行的操作"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-whats-next.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-whats-next.html">
+        接下来可以执行的操作
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="开始使用受限模式"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 开始使用受限模式</div>-->
+         开始使用受限模式
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="入门工作流"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-quick-start-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-quick-start-restricted-mode.html">
+        入门工作流
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="准备部署"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-prepare-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-prepare-restricted-mode.html">
+        准备部署
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="部署连接器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-install-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-install-restricted-mode.html">
+        部署连接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="订阅BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-subscribe-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-subscribe-restricted-mode.html">
+        订阅BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="接下来可以执行的操作"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-whats-next-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-whats-next-restricted-mode.html">
+        接下来可以执行的操作
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="开始使用私有模式"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 开始使用私有模式</div>-->
+         开始使用私有模式
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="入门工作流"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-quick-start-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-quick-start-private-mode.html">
+        入门工作流
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="准备部署"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-prepare-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-prepare-private-mode.html">
+        准备部署
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="部署连接器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-install-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-install-private-mode.html">
+        部署连接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="接下来可以执行的操作"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-whats-next-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-whats-next-private-mode.html">
+        接下来可以执行的操作
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="登录到BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-logging-in.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-setup-admin/task-logging-in.html">
+        登录到BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理BlueXP"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 管理BlueXP</div>-->
+         管理BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="身份联合"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/concept-federation.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-setup-admin/concept-federation.html">
+        身份联合
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP帐户"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> BlueXP帐户</div>-->
+         BlueXP帐户
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理您的BlueXP帐户"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-managing-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-managing-netapp-accounts.html">
+        管理您的BlueXP帐户
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="监控帐户中的操作"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-monitor-cm-operations.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-monitor-cm-operations.html">
+        监控帐户中的操作
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="创建另一个BlueXP帐户"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-create-account.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-create-account.html">
+        创建另一个BlueXP帐户
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="用户角色"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-user-roles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-user-roles.html">
+        用户角色
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="连接器"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 连接器</div>-->
+         连接器
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="查找 Connector 的系统 ID"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-finding-system-id.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-finding-system-id.html">
+        查找 Connector 的系统 ID
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理现有连接器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-managing-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-managing-connectors.html">
+        管理现有连接器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安装HTTPS证书以确保安全访问"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-installing-https-cert.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-installing-https-cert.html">
+        安装HTTPS证书以确保安全访问
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="配置Connector以使用代理服务器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-configuring-proxy.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-configuring-proxy.html">
+        配置Connector以使用代理服务器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector 的默认配置"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-connector-default-config.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-connector-default-config.html">
+        Connector 的默认配置
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="凭据和订阅"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 凭据和订阅</div>-->
+         凭据和订阅
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="了解凭据和权限"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/concept-accounts-aws.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/bluexp-setup-admin/concept-accounts-aws.html">
+        了解凭据和权限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理凭据和订阅"
+      data-li-level="4#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-adding-aws-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/bluexp-setup-admin/task-adding-aws-accounts.html">
+        管理凭据和订阅
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure 酒店"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure 酒店</div>-->
+         Azure 酒店
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="了解凭据和权限"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/concept-accounts-azure.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/bluexp-setup-admin/concept-accounts-azure.html">
+        了解凭据和权限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理凭据和订阅"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-adding-azure-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/bluexp-setup-admin/task-adding-azure-accounts.html">
+        管理凭据和订阅
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="了解项目和权限"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/concept-accounts-gcp.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/bluexp-setup-admin/concept-accounts-gcp.html">
+        了解项目和权限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理凭据和订阅"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-adding-gcp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/bluexp-setup-admin/task-adding-gcp-accounts.html">
+        管理凭据和订阅
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理与BlueXP帐户关联的NSS凭据"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-adding-nss-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-adding-nss-accounts.html">
+        管理与BlueXP帐户关联的NSS凭据
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理与您的BlueXP登录关联的凭据"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-manage-user-credentials.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/task-manage-user-credentials.html">
+        管理与您的BlueXP登录关联的凭据
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="参考"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 参考</div>-->
+         参考
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="权限"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 权限</div>-->
+         权限
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="权限摘要"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-permissions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-permissions.html">
+        权限摘要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector 的 AWS 权限"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-permissions-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-permissions-aws.html">
+        Connector 的 AWS 权限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connector 的 Azure 权限"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-permissions-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-permissions-azure.html">
+        Connector 的 Azure 权限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="适用于 Connector 的 Google Cloud 权限"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-permissions-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-permissions-gcp.html">
+        适用于 Connector 的 Google Cloud 权限
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="端口"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 端口</div>-->
+         端口
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS中的连接器安全组规则"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-ports-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-ports-aws.html">
+        AWS中的连接器安全组规则
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure中的连接器安全组规则"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-ports-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-ports-azure.html">
+        Azure中的连接器安全组规则
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud中的连接器防火墙规则"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-ports-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-ports-gcp.html">
+        Google Cloud中的连接器防火墙规则
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="内部连接器的端口"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/reference-ports-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/bluexp-setup-admin/reference-ports-on-prem.html">
+        内部连接器的端口
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="知识和支持"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 知识和支持</div>-->
+         知识和支持
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="注册以获得支持"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-setup-admin/task-support-registration.html">
+        注册以获得支持
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="获取帮助"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/bluexp-setup-admin/task-get-help.html">
+        获取帮助
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律声明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-adding-aws-accounts.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/bluexp-setup-admin/legal-notices.html">
+        法律声明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-cn/bluexp-setup-admin"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-cn/bluexp-setup-admin"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-cn/bluexp-setup-admin/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">管理BlueXP的AWS凭据和市场订阅</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-11-21 21:00:04 +0000">11/21/2023</time>
+        
+    
+    
+        <span>贡献者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-cn/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />建议更改</span>
+        <img src="/zh-cn/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-cn/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin.zh-cn/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-adding-aws-accounts.html&page-title=管理BlueXP的AWS凭据和市场订阅" class="page-nav-contribute-link" role="button">请求文档更改</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-adding-aws-accounts.adoc" class="page-nav-contribute-link" role="button">编辑此页面</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >了解如何贡献</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-cn/bluexp-setup-admin/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-cn/bluexp-setup-admin/pdfs/fullsite-sidebar/BlueXP设置和管理文档.pdf" >
+                    <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>本文档站点的 PDF</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/发行说明.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            发行说明
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/入门.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            入门
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/了解基础知识.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            了解基础知识
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/开始使用标准模式.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            开始使用标准模式
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/创建连接器.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            创建连接器
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/Azure_酒店.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure 酒店
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/开始使用受限模式.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            开始使用受限模式
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/开始使用私有模式.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            开始使用私有模式
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/管理BlueXP.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            管理BlueXP
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/BlueXP帐户.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            BlueXP帐户
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/连接器.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            连接器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/凭据和订阅.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            凭据和订阅
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/Azure_酒店.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure 酒店
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/参考.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            参考
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/权限.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            权限
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/端口.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            端口
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/bluexp-setup-admin/pdfs/sidebar/知识和支持.pdf" 
+            
+          >
+            <img src="/zh-cn/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            知识和支持
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-cn/bluexp-setup-admin/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>单独 PDF 文档的收集<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>添加和管理AWS凭据、以便BlueXP拥有在AWS帐户中部署和管理云资源所需的权限。如果您管理多个AWS Marketplace订阅、则可以从"凭据"页面将其中每个订阅分配给不同的AWS凭据。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="概述">概述</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>您可以将AWS凭据添加到现有Connector或直接添加到BlueXP：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>向现有Connector添加其他AWS凭据</p>
+<div class="paragraph">
+<p>将AWS凭据添加到现有连接器可提供在公有 云环境中管理资源和进程所需的权限。 <a href="#向connector添加其他凭据">了解如何将 AWS 凭据添加到 Connector</a>。</p>
+</div>
+</li>
+<li>
+<p>将AWS凭据添加到BlueXP以创建Connector</p>
+<div class="paragraph">
+<p>向BlueXP添加新的AWS凭据可为BlueXP提供创建Connector所需的权限。 <a href="#向bluexp添加用于创建connector的凭据">了解如何向BlueXP添加AWS凭据</a>。</p>
+</div>
+</li>
+<li>
+<p>将AWS凭据添加到BlueXP for FSX for ONTAP</p>
+<div class="paragraph">
+<p>向BlueXP添加新的AWS凭据可为BlueXP提供创建和管理适用于ONTAP 的FSX所需的权限。 <a href="https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html" target="_blank" rel="noopener">"了解如何为适用于 ONTAP 的 FSX 设置权限"</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="如何轮换凭据">如何轮换凭据</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>通过BlueXP、您可以通过以下几种方式提供AWS凭据：与Connector实例关联的IAM角色、在可信帐户中担任IAM角色或提供AWS访问密钥。 <a href="concept-accounts-aws.html">"详细了解 AWS 凭据和权限"</a>。</p>
+</div>
+<div class="paragraph">
+<p>对于前两个选项、BlueXP使用AWS安全令牌服务获取持续轮换的临时凭据。此过程是最佳实践，因为它是自动的，并且安全。</p>
+</div>
+<div class="paragraph">
+<p>如果您为BlueXP提供了AWS访问密钥、则应定期在BlueXP中更新这些密钥以轮换使用。这是一个完全手动的过程。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="向connector添加其他凭据">向Connector添加其他凭据</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>将其他AWS凭据添加到Connector、以便其拥有管理公共云环境中的资源和流程所需的权限。您可以在其他帐户中提供 IAM 角色的 ARN ，也可以提供 AWS 访问密钥。</p>
+</div>
+<div class="paragraph">
+<p>如果您刚刚开始使用BlueXP、 <a href="concept-accounts-aws.html">"了解BlueXP如何使用AWS凭据和权限"</a>。</p>
+</div>
+<div class="sect2">
+<h3 id="授予权限">授予权限</h3>
+<div class="paragraph">
+<p>在将AWS凭据添加到Connector之前、您需要提供所需的权限。通过这些权限、BlueXP可以管理该AWS帐户中的资源和进程。如何提供权限取决于您是要为BlueXP提供受信任帐户或AWS密钥中某个角色的ARN。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-setup-admin/images/note.svg" alt="备注">
+</td>
+<td class="content">
+如果您从BlueXP部署了Connector、则BlueXP会自动为部署此Connector的帐户添加AWS凭据。如果您从AWS Marketplace部署了Connector或在现有系统上手动安装了Connector软件、则不会添加此初始帐户。 <a href="concept-accounts-aws.html">"了解 AWS 凭据和权限"</a>。
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>选项 *</p>
+</li>
+<li>
+<p><a href="#在另一个帐户中担任-iam-角色以授予权限">在另一个帐户中担任 IAM 角色以授予权限</a></p>
+</li>
+<li>
+<p><a href="#通过提供-aws-密钥授予权限">通过提供 AWS 密钥授予权限</a></p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="在另一个帐户中担任-iam-角色以授予权限">在另一个帐户中担任 IAM 角色以授予权限</h4>
+<div class="paragraph">
+<p>您可以使用 IAM 角色在部署 Connector 实例的源 AWS 帐户与其他 AWS 帐户之间设置信任关系。然后、您可以为BlueXP提供可信帐户中IAM角色的ARN。</p>
+</div>
+<div class="paragraph">
+<p>如果Connector安装在内部、则无法使用此身份验证方法。您必须使用AWS密钥。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>转到要为Connector提供权限的目标帐户中的IAM控制台。</p>
+</li>
+<li>
+<p>在访问管理下、选择*角色&gt;创建角色*、然后按照步骤创建角色。</p>
+<div class="paragraph">
+<p>请务必执行以下操作：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。</p>
+</li>
+<li>
+<p>选择 * 其他 AWS 帐户 * ，然后输入 Connector 实例所在帐户的 ID 。</p>
+</li>
+<li>
+<p>通过复制和粘贴内容来创建所需的策略 <a href="reference-permissions-aws.html">"Connector的IAM策略"</a>。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>复制IAM角色的角色ARN、以便稍后将其粘贴到BlueXP中。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">结果</div>
+<p>现在，此帐户具有所需权限。 <a href="#add-the-credentials">现在，您可以将凭据添加到 Connector</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="通过提供-aws-密钥授予权限">通过提供 AWS 密钥授予权限</h4>
+<div class="paragraph">
+<p>如果要为BlueXP为IAM用户提供AWS密钥、则需要向该用户授予所需的权限。BlueXP IAM策略定义了允许BlueXP使用的AWS操作和资源。</p>
+</div>
+<div class="paragraph">
+<p>如果Connector安装在内部、则必须使用此身份验证方法。您不能使用IAM角色。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>在IAM控制台中、通过复制和粘贴内容来创建策略 <a href="reference-permissions-aws.html">"Connector的IAM策略"</a>。</p>
+<div class="paragraph">
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html" target="_blank" rel="noopener">"AWS 文档：创建 IAM 策略"</a></p>
+</div>
+</li>
+<li>
+<p>将策略附加到IAM角色或IAM用户。</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html" target="_blank" rel="noopener">"AWS 文档：创建 IAM 角色"</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html" target="_blank" rel="noopener">"AWS 文档：添加和删除 IAM 策略"</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">结果</div>
+<p>现在，此帐户具有所需权限。 <a href="#add-the-credentials">现在，您可以将凭据添加到 Connector</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="添加凭据">添加凭据</h3>
+<div class="paragraph">
+<p>在为 AWS 帐户提供所需权限后，您可以将该帐户的凭据添加到现有 Connector 。这样，您就可以使用同一个连接器在该帐户中启动 Cloud Volumes ONTAP 系统了。</p>
+</div>
+<div class="paragraph">
+<div class="title">开始之前</div>
+<p>如果您刚刚在云提供商中创建了这些凭据，则可能需要几分钟的时间才能使用这些凭据。请等待几分钟、然后再将凭据添加到BlueXP。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>确保当前在BlueXP中选择了正确的Connector。</p>
+</li>
+<li>
+<p>在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_settings_icon.gif" alt="一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"></span></p>
+</div>
+</li>
+<li>
+<p>在*帐户凭据*页面上、选择*添加凭据*、然后按照向导中的步骤进行操作。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>* 凭据位置 * ：选择 * Amazon Web Services &gt; Connector* 。</p>
+</li>
+<li>
+<p>* 定义凭据 * ：提供可信 IAM 角色的 ARN （ Amazon 资源名称），或者输入 AWS 访问密钥和机密密钥。</p>
+</li>
+<li>
+<p>* 市场订阅 * ：通过立即订阅或选择现有订阅，将市场订阅与这些凭据相关联。</p>
+<div class="paragraph">
+<p>要按小时费率(PAYGO)或按年度合同支付BlueXP服务费用、AWS凭据必须与AWS Marketplace订阅相关联。</p>
+</div>
+</li>
+<li>
+<p><strong>查看</strong>：确认有关新凭据的详细信息、然后选择*添加*。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">结果</div>
+<p>现在，在创建新的工作环境时，您可以从 " 详细信息和凭据 " 页面切换到另一组凭据：</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_accounts_switch_aws.png" alt="显示在&quot;详细信息和凭据&quot;页面中选择&quot;切换帐户&quot;后在云提供商帐户之间进行选择的屏幕截图。"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="向bluexp添加用于创建connector的凭据">向BlueXP添加用于创建Connector的凭据</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>通过提供IAM角色的ARN、为BlueXP提供创建Connector所需的权限、将AWS凭据添加到BlueXP。您可以在创建新的Connector时选择这些凭据。</p>
+</div>
+<div class="sect2">
+<h3 id="设置-iam-角色">设置 IAM 角色</h3>
+<div class="paragraph">
+<p>设置一个IAM角色、使BlueXP SaaS层能够承担此角色。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>转到目标帐户中的 IAM 控制台。</p>
+</li>
+<li>
+<p>在访问管理下、选择*角色&gt;创建角色*、然后按照步骤创建角色。</p>
+<div class="paragraph">
+<p>请务必执行以下操作：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在 * 可信实体类型 * 下，选择 * AWS 帐户 * 。</p>
+</li>
+<li>
+<p>选择*其他AWS帐户*、然后输入BlueXP SaaS的ID：952013314444</p>
+</li>
+<li>
+<p>创建包含创建Connector所需权限的策略。</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html" target="_blank" rel="noopener">"查看适用于 ONTAP 的 FSX 所需的权限"</a></p>
+</li>
+<li>
+<p><a href="task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions">"查看连接器部署策略"</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>复制IAM角色的角色ARN、以便在下一步将其粘贴到BlueXP中。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">结果</div>
+<p>IAM 角色现在具有所需的权限。 <a href="#add-the-credentials-2">现在、您可以将其添加到BlueXP中</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="添加凭据-2">添加凭据</h3>
+<div class="paragraph">
+<p>为IAM角色提供所需权限后、将角色ARN添加到BlueXP中。</p>
+</div>
+<div class="paragraph">
+<div class="title">开始之前</div>
+<p>如果您刚刚创建了 IAM 角色，则可能需要几分钟的时间，直到这些角色可用为止。请等待几分钟、然后再将凭据添加到BlueXP。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_settings_icon.gif" alt="一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"></span></p>
+</div>
+</li>
+<li>
+<p>在*帐户凭据*页面上、选择*添加凭据*、然后按照向导中的步骤进行操作。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>凭据位置</strong>：选择* Amazon Web Services &gt; BlueX*。</p>
+</li>
+<li>
+<p>* 定义凭据 * ：提供 IAM 角色的 ARN （ Amazon 资源名称）。</p>
+</li>
+<li>
+<p><strong>查看</strong>：确认有关新凭据的详细信息、然后选择*添加*。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">结果</div>
+<p>现在、您可以在创建新Connector时使用这些凭据。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="向bluexp-for-amazon-fsx-for-ontap-添加凭据">向BlueXP for Amazon FSX for ONTAP 添加凭据</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html" target="_blank" rel="noopener">"适用于ONTAP 的Amazon FSX的BlueXP文档"</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="关联-aws-订阅">关联 AWS 订阅</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>将AWS凭据添加到BlueXP后、您可以将AWS Marketplace订阅与这些凭据相关联。通过订阅、您可以按每小时费率(PAYGO)或使用年度合同为Cloud Volumes ONTAP 付费、并使用其他BlueXP服务。</p>
+</div>
+<div class="paragraph">
+<p>在以下两种情况下、您可能会在将凭据添加到BlueXP后关联AWS Marketplace订阅：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>最初将凭据添加到BlueXP时、您未关联订阅。</p>
+</li>
+<li>
+<p>您希望更改与AWS凭据关联的AWS Marketplace订阅。</p>
+<div class="paragraph">
+<p>将当前市场订阅替换为新订阅会改变任何现有Cloud Volumes ONTAP工作环境和所有新工作环境的市场订阅。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<div class="title">开始之前</div>
+<p>您需要先创建Connector、然后才能更改BlueXP设置。 <a href="concept-connectors.html#how-to-create-a-connector">"了解如何创建 Connector"</a>。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。</p>
+</li>
+<li>
+<p>选择一组凭据的操作菜单，然后选择*关联订阅*。</p>
+<div class="paragraph">
+<p>您必须选择与连接器关联的凭据。您不能将商城订阅与BlueXP关联的凭据关联。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_associate_subscription.png" alt="一组现有凭据的操作菜单屏幕截图。"></span></p>
+</div>
+</li>
+<li>
+<p>要将凭据与现有订阅关联、请从下拉列表中选择此订阅、然后选择*关联*。</p>
+</li>
+<li>
+<p>要将凭据与新订阅关联、请选择*添加订阅&gt;继续*、然后按照AWS Marketplace中的步骤进行操作：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>选择*查看购买选项*。</p>
+</li>
+<li>
+<p>选择*订阅*。</p>
+</li>
+<li>
+<p>选择*设置您的帐户*。</p>
+<div class="paragraph">
+<p>您将重定向到BlueXP网站。</p>
+</div>
+</li>
+<li>
+<p>在*订阅分配*页面中：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>选择要与此订阅关联的BlueXP帐户。</p>
+</li>
+<li>
+<p>在*替换现有订阅*字段中、选择是否要将一个帐户的现有订阅自动替换为此新订阅。</p>
+<div class="paragraph">
+<p>此新订阅将取代帐户中所有凭据的现有订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>对于所有其他帐户、您需要重复上述步骤来手动关联订阅。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>选择 * 保存 * 。</p>
+<div class="paragraph">
+<p>以下视频显示了从AWS Marketplace订阅的步骤：</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="videoblock">
+<div class="title">从AWS Marketplace订阅BlueXP</div>
+<div class="content">
+<iframe frameborder="0"  src="https://netapp.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=096e1740-d115-44cf-8c27-b051011611eb" allowfullscreen allow="autoplay"> </iframe>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="将现有订阅与您的帐户关联">将现有订阅与您的帐户关联</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>从AWS Marketplace订阅BlueXP后、此过程的最后一步是将此订阅与BlueXP网站上的BlueXP帐户相关联。如果您未完成此步骤、则无法通过BlueXP帐户使用订阅。</p>
+</div>
+<div class="paragraph">
+<p>如果您从AWS Marketplace订阅了BlueXP、但错过了将订阅与您的帐户关联的步骤、请按照以下步骤进行操作。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>转到BlueXP数字钱包、确认您的订阅未与BlueXP帐户关联。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>从BlueXP导航菜单中、选择*监管&gt;数字电子钱包*。</p>
+</li>
+<li>
+<p>选择*订阅*。</p>
+</li>
+<li>
+<p>确认未显示您的BlueXP订阅。</p>
+<div class="paragraph">
+<p>您将只看到与当前正在查看的帐户关联的订阅。如果您看不到您的订阅、请继续执行以下步骤。</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>登录到AWS控制台并导航到*AWS Marketplace订阅*。</p>
+</li>
+<li>
+<p>查找NetApp BlueXP订阅。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-aws-marketplace-bluexp-subscription.png" alt="显示NetApp BlueXP订阅的AWS Marketplace的屏幕截图。"></span></p>
+</div>
+</li>
+<li>
+<p>选择*设置产品*。</p>
+<div class="paragraph">
+<p>订阅服务页面应加载到新的浏览器选项卡或窗口中。</p>
+</div>
+</li>
+<li>
+<p>选择*设置您的帐户*。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-aws-marketplace-set-up-account.png" alt="显示NetApp BlueXP订阅和页面右上角显示的设置您的帐户选项的AWS Marketplace的屏幕截图。"></span></p>
+</div>
+<div class="paragraph">
+<p>netapp.com上的*订阅分配*页面应加载到新的浏览器选项卡或窗口中。</p>
+</div>
+<div class="paragraph">
+<p>请注意、系统可能会提示您先登录BlueXP。</p>
+</div>
+</li>
+<li>
+<p>在*订阅分配*页面中：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>选择要与此订阅关联的BlueXP帐户。</p>
+</li>
+<li>
+<p>在*替换现有订阅*字段中、选择是否要将一个帐户的现有订阅自动替换为此新订阅。</p>
+<div class="paragraph">
+<p>此新订阅将取代帐户中所有凭据的现有订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。</p>
+</div>
+<div class="paragraph">
+<p>对于所有其他帐户、您需要重复上述步骤来手动关联订阅。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-subscription-assignment.png" alt="&quot;订阅分配&quot;页面的屏幕截图、可用于选择要与此订阅关联的确切BlueXP帐户。"></span></p>
+</div>
+</li>
+<li>
+<p>转到BlueXP数字钱包、确认订阅与您的BlueXP帐户关联。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>从BlueXP导航菜单中、选择*监管&gt;数字电子钱包*。</p>
+</li>
+<li>
+<p>选择*订阅*。</p>
+</li>
+<li>
+<p>验证是否显示您的BlueXP订阅。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>确认订阅与您的AWS凭据关联。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。</p>
+</li>
+<li>
+<p>在*帐户凭据*页面上、验证订阅是否与您的AWS凭据关联。</p>
+<div class="paragraph">
+<p>下面是一个示例。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-credentials-with-subscription.png" alt="BlueXP帐户凭据页面的屏幕截图、其中显示AWS凭据、其中包含一个订阅字段、用于标识与这些凭据关联的订阅的名称。"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="编辑凭据">编辑凭据</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>通过更改帐户类型(AWS密钥或承担角色)、编辑名称或更新凭据本身(密钥或角色ARN)、在BlueXP中编辑AWS凭据。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-setup-admin/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+您不能编辑与 Connector 实例关联的实例配置文件的凭据。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。</p>
+</li>
+<li>
+<p>在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*编辑凭据*。</p>
+</li>
+<li>
+<p>进行所需更改、然后选择*应用*。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="删除凭据">删除凭据</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>如果您不再需要一组凭据、可以从BlueXP中删除这些凭据。您只能删除与工作环境无关的凭据。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-setup-admin/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+您不能删除与 Connector 实例关联的实例配置文件的凭据。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。</p>
+</li>
+<li>
+<p>在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*删除凭据*。</p>
+</li>
+<li>
+<p>选择*删除*进行确认。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-cn/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-cn/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本页面中</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用条款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隐私策略</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 设置</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">请发送有关此页面的反馈</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/bluexp-setup-admin/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/bluexp-setup-admin/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/bluexp-setup-admin/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/bluexp-setup-admin/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-cn/bluexp-setup-admin/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
