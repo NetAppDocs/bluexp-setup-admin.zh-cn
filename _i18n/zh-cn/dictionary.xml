@@ -4000,4 +4000,8 @@ https://support.netapp.com
   <block id="7d207720727cb20f87ab53c6a1b2514b" category="list-text">BlueXP支持HTTP和HTTPS。</block>
   <block id="add3a67a28c550a2cc27b87a5a61ea8e" category="list-text">代理服务器可以位于云中或网络中。</block>
   <block id="8ddee083db5cf3707b8335f563d2c755" category="list-text">BlueXP不支持透明代理服务器。</block>
+  <block id="116ea46795790eba5c14aa5d5c67dd04" category="list-text">Cloud Volumes ONTAP必须运行以下版本之一：</block>
+  <block id="9ddb47b49482c226b2e422f267668544" category="list-text">9.12.1 P2 (或任何后续修补程序)</block>
+  <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4 (或任何后续修补程序)</block>
+  <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1.或此版本之后的任何版本</block>
 </blocks>

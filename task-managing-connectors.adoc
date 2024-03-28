@@ -149,6 +149,13 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 .开始之前
 * 连接器版本必须为3.9.38或更高版本。
+* Cloud Volumes ONTAP必须运行以下版本之一：
++
+** 9.12.1 P2 (或任何后续修补程序)
+** 9.13.0 P4 (或任何后续修补程序)
+** 9.13.1.或此版本之后的任何版本
+
+
 * 此更改需要重新启动Cloud Volumes ONTAP实例。
 
 
