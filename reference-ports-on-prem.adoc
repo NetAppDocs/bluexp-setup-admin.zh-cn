@@ -23,7 +23,11 @@ summary: 当连接器手动安装在内部Linux主机上时、它会使用入站
 | 协议 | Port | 目的 
 
 
-| HTTP | 80 | 提供从客户端 Web 浏览器到本地用户界面的 HTTP 访问 
+| HTTP | 80  a| 
+* 提供从客户端 Web 浏览器到本地用户界面的 HTTP 访问
+* 在Cloud Volumes ONTAP升级过程中使用
+
+
 
 
 | HTTPS | 443 | 提供从客户端Web浏览器到本地用户界面的HTTPS访问 
