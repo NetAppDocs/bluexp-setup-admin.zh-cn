@@ -504,7 +504,6 @@
   <block id="530ae65bce71acbabc920f0c53c4b5c2" category="list-text">必须有20 GiB的可用空间</block>
   <block id="681992b8581f6d4247af5523a14d0ce4" category="list-text">Docker 引擎</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">查看安装说明</block>
-  <block id="762cb137e48e2922920955cfb157dea8" category="list-text">在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
   <block id="9f0bb2acc3984bc2da2e5e566dd4bc0a" category="doc">了解BlueXP</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
   <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">BlueXP平台提供了数据管理的四大要素：存储、移动性、保护以及分析和控制。</block>
@@ -3894,7 +3893,6 @@ https://support.netapp.com
   <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
   <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">在EC2实例上、实例元数据服务(IMDS)已启用、如下所示：</block>
   <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Terraform脚本</block>
-  <block id="0b18bb2eadaff9912e9bbefb3accbc90" category="list-text">适用于BlueXP、AWS Marketplace或使用的新Connector部署<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>默认情况下，EC2实例上会启用IMDSv2。</block>
   <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">如果在AWS中启动新的EC2实例、然后手动安装Connector软件、则默认情况下IMDSv2也会处于启用状态。</block>
   <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">对于现有连接器、仍然支持IMDSv1、但您可以根据需要在EC2实例上手动配置IMDSv2。</block>
   <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。</block>
@@ -4005,4 +4003,14 @@ https://support.netapp.com
   <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4 (或任何后续修补程序)</block>
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1.或此版本之后的任何版本</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">在Cloud Volumes ONTAP升级过程中使用</block>
+  <block id="970c4756c8fc49a0c32d6a5b32d6d6f5" category="list-text">在安装Connector之前、主机上需要Docker引擎。</block>
+  <block id="66a843cd9e2f1ff37fec4c91275dc9a7" category="list-text">支持的最低版本为9.3.1。</block>
+  <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">支持的最大版本为25.0.5。</block>
+  <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
+  <block id="779956d8a8a5dbf08bbf655892abfefb" category="section-title">2024年4月11日</block>
+  <block id="b0672ad18e27e61949a210d3369455e0" category="section-title">Docker引擎更新</block>
+  <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">我们已更新Docker引擎要求、以指定Connector支持的最大版本为21.0.5。支持的最低版本仍为9.3.1。</block>
+  <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">View Connector主机要求</block>
+  <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>。</block>
+  <block id="91c7ed7e9c640df79f6bf153c6642ae5" category="list-text">适用于从BlueXP或使用进行的新Connector部署<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>默认情况下，EC2实例上会启用IMDSv2。</block>
 </blocks>

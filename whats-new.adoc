@@ -18,6 +18,18 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
+== 2024年4月11日
+
+
+
+=== Docker引擎更新
+
+我们已更新Docker引擎要求、以指定Connector支持的最大版本为21.0.5。支持的最低版本仍为9.3.1。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector主机要求"]。
+
+
+
 == 2024年3月26日
 
 
@@ -78,7 +90,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 在EC2实例上、实例元数据服务(IMDS)已启用、如下所示：
 
-* 适用于BlueXP、AWS Marketplace或使用的新Connector部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform脚本"^]默认情况下，EC2实例上会启用IMDSv2。
+* 适用于从BlueXP或使用进行的新Connector部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform脚本"^]默认情况下，EC2实例上会启用IMDSv2。
 * 如果在AWS中启动新的EC2实例、然后手动安装Connector软件、则默认情况下IMDSv2也会处于启用状态。
 * 对于现有连接器、仍然支持IMDSv1、但您可以根据需要在EC2实例上手动配置IMDSv2。
 * 对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。

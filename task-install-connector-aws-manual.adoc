@@ -53,7 +53,17 @@ AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们�
 密钥对:: 创建连接器时、您需要选择要用于实例的EC2密钥对。
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
 /var 中的磁盘空间:: 必须有20 GiB的可用空间
-Docker 引擎:: 在安装Connector之前、主机上需要安装Docker引擎19.3.1或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]
+Docker 引擎:: 在安装Connector之前、主机上需要Docker引擎。
++
+--
+* 支持的最低版本为9.3.1。
+* 支持的最大版本为25.0.5。
++
+https://docs.docker.com/engine/install/["查看安装说明"^]
+
+
+
+--
 
 
 
