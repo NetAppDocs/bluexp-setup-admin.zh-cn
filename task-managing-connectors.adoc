@@ -139,13 +139,19 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 == 要求在Amazon EC2实例上使用IMDSv2
 
-从2024年3月开始、BlueXP现在可通过连接器和Cloud Volumes ONTAP (包括HA部署的调解器)支持Amazon EC2实例元数据服务版本2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["从AWS安全博客了解有关IMDSv2的更多信息"^]
+从2024年3月开始、BlueXP现在可通过连接器和Cloud Volumes ONTAP (包括HA部署的调解器)支持Amazon EC2实例元数据服务版本2 (IMDSv2)。在大多数情况下、会在新EC2实例上自动配置IMDSv2。IMDSv1在2024年3月之前启用。如果安全策略要求、您可能需要在EC2实例上手动配置IMDSv2。
 
-* 默认情况下、所有新连接器EC2实例都会启用IMDSv2。IMDSv1在2024年3月之前启用。
-* 默认情况下、所有新的和现有的Cloud Volumes ONTAP EC2实例都会启用IMDSv1。
+.关于此任务
+IMDSv2可提供更强的漏洞防护。 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["从AWS安全博客了解有关IMDSv2的更多信息"^]
 
+在EC2实例上、实例元数据服务(IMDS)已启用、如下所示：
 
-如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。
+* 适用于从BlueXP或使用进行的新Connector部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform脚本"^]默认情况下，EC2实例上会启用IMDSv2。
+* 如果在AWS中启动新的EC2实例、然后手动安装Connector软件、则默认情况下IMDSv2也会处于启用状态。
+* 如果从AWS Marketplace启动Connector、则默认情况下会启用IMDSv1。您可以在EC2实例上手动配置IMDSv2。
+* 对于现有连接器、仍然支持IMDSv1、但您可以根据需要在EC2实例上手动配置IMDSv2。
+* 对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。
+
 
 .开始之前
 * 连接器版本必须为3.9.38或更高版本。

@@ -18,6 +18,38 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
+== 2024年4月22日
+
+
+
+=== 连接器3.9.39
+
+此版本的BlueXP Connector包括一些小的安全改进和错误修复。
+
+目前、3.9.39版本可用于标准模式和受限模式。
+
+
+
+=== 用于创建Connector的AWS权限
+
+现在、要从BlueXP在AWS中创建Connector、需要两个额外的权限：
+
+[source, json]
+----
+"ec2:DescribeLaunchTemplates",
+"ec2:CreateLaunchTemplate",
+----
+要在EC2实例上为连接器启用IMDSv2、需要具备这些权限。
+
+我们已将这些权限包括在创建Connector时BlueXP用户界面中显示的策略中、以及文档中提供的同一策略中。
+
+
+NOTE: 此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。分配给连接器实例的策略不同。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["了解如何设置AWS权限以从AWS创建Connector"]。
+
+
+
 == 2024年4月11日
 
 
@@ -92,6 +124,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 * 适用于从BlueXP或使用进行的新Connector部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform脚本"^]默认情况下，EC2实例上会启用IMDSv2。
 * 如果在AWS中启动新的EC2实例、然后手动安装Connector软件、则默认情况下IMDSv2也会处于启用状态。
+* 如果从AWS Marketplace启动Connector、则默认情况下会启用IMDSv1。您可以在EC2实例上手动配置IMDSv2。
 * 对于现有连接器、仍然支持IMDSv1、但您可以根据需要在EC2实例上手动配置IMDSv2。
 * 对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。
 
