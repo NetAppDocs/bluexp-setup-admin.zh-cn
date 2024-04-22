@@ -731,20 +731,6 @@ Connector发出以下API请求、以发现和管理Azure Kubernetes Service (AKS
 
 
 
-=== 修复
-
-使用BlueXP修复时、Connector会发出以下API请求来管理Azure资源上的标记：
-
-* microsoft.resources/resources/read
-* microsoft.resources/subscriptions/operationresults/read
-* microsoft.resources/subscriptions/resources/read
-* microsoft.resources/subscriptions/resources/resources/read
-* microsoft.resources/tags或read
-* microsoft.resources/tags或write
-
-
-
-
 === 分层
 
 在设置BlueXP层时、Connector会发出以下API请求。

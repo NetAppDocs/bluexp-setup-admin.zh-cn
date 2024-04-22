@@ -59,7 +59,6 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 
 * 边缘缓存
 * Kubernetes
-* 修复
 
 
 [role="tabbed-block"]
@@ -1279,22 +1278,6 @@ Connector会发出以下API请求来发现和管理Amazon EKS集群：
 * EKS：ListClusters
 * EKS：Describe集群
 * IAM：GetInstanceProfile
-
-
-
-
-=== 修复
-
-使用BlueXP修复时、Connector会发出以下API请求来管理AWS资源上的标记：
-
-* EC2：CreateTags
-* EC2：DeleteTags
-* EC2：Describe标记
-* 标记：getResources
-* 标记：getTag密钥
-* 标记：getTagValues
-* 标记：标记资源
-* 标记：未标记资源
 
 
 
