@@ -37,7 +37,7 @@ link:concept-modes.html["了解私有模式的工作原理"]。
 
 在私有模式下、您可以通过在自己的Linux主机上手动安装Connector在内部或云中安装Connector。
 
-如果要在Google Cloud中创建Cloud Volumes ONTAP 系统、则Connector必须在Google Cloud中运行、它不能在内部运行。
+连接器的安装位置决定了在使用私有模式时哪些BlueXP服务和功能可用。例如、如果要部署和管理Cloud Volumes ONTAP、必须将连接器安装在云中。 link:concept-modes.html#private-mode["了解有关私有模式的更多信息"]。
 
 
 
@@ -210,11 +210,9 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 == 第5步：准备云权限
 
-如果您计划创建Cloud Volumes ONTAP 系统、则BlueXP需要云提供商的权限。您需要在云提供商中设置权限、然后在安装Connector实例后将这些权限与之关联。
+如果Connector安装在云中、而您计划创建Cloud Volumes ONTAP系统、则BlueXP需要云提供商的权限。您需要在云提供商中设置权限、然后在安装Connector实例后将这些权限与之关联。
 
 要查看所需步骤、请选择要用于云提供商的身份验证选项。
-
-如果您要在内部安装Connector、则必须使用AWS访问密钥或Azure服务主体提供权限。不支持其他选项。
 
 [role="tabbed-block"]
 ====
