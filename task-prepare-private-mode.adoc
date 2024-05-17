@@ -51,7 +51,13 @@ link:concept-modes.html["了解私有模式的工作原理"]。
 --
 * Ubuntu 22.04 LTS
 * CentOS 7.6、7.7、7.8和7.9
++
+在2024年6月30日之前、NetApp将继续为CentOS 7提供Connector支持。
+
 * Red Hat Enterprise Linux 7.6、7.7、7.8和7.9
++
+在2024年6月30日之前、NetApp将继续为该连接器提供RHEL 7支持。
+
 +
 主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
 
@@ -64,7 +70,7 @@ link:concept-modes.html["了解私有模式的工作原理"]。
 虚拟机管理程序:: 需要一个经过认证可运行Ubuntu、CentOS或Red Hat Enterprise Linux的裸机或托管虚拟机管理程序。
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
+https://access.redhat.com/articles/973163["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
 
 --
 CPU:: 4 个核心或 4 个 vCPU
@@ -99,7 +105,7 @@ https://docs.docker.com/engine/install/["查看安装说明"^]
 设置您的网络，以便 Connector 可以管理公有云环境中的资源和流程。除了为Connector提供虚拟网络和子网之外、您还需要确保满足以下要求。
 
 连接到目标网络:: Connector必须与您计划管理存储的位置建立网络连接。例如、您计划部署Cloud Volumes ONTAP 的VPC或vNet、或者您的内部ONTAP 集群所在的数据中心。
-用于日常操作的端点:: Connector会与以下端点联系、以管理公有云环境中的资源和流程。
+用于日常操作的端点:: 如果您计划创建Cloud Volumes ONTAP系统、则连接器需要连接到云提供商的公共可用资源中的端点。
 +
 --
 [cols="2a,1a"]
@@ -181,18 +187,16 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
-代理服务器:: 如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。
+代理服务器:: 如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。请注意、BlueXP不支持透明代理服务器。
 +
 --
 * IP 地址
 * 凭据
 * HTTPS证书
-
-
-请注意、BlueXP不支持透明代理服务器。
-
 +
 在私有模式下、BlueXP只会向云提供商发送出站流量、以便创建Cloud Volumes ONTAP 系统。
+
+
 
 --
 端口:: 除非您启动 Connector ，否则不会向其传入流量。

@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: task-manage-multiple-connectors.html 
+keywords: switch connectors, multiple connectors, disaster recovery, dr, two connectors 
+summary: 如果您使用多个连接器、BlueXP允许您直接从控制台在这些连接器之间进行切换。您还可以管理具有多个连接器的单个工作环境。 
+---
+= 使用多个连接器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您使用多个连接器、BlueXP允许您直接从控制台在这些连接器之间进行切换。您还可以管理具有多个连接器的单个工作环境。
+
+
+
+== 在连接器之间切换
+
+如果您有多个连接器，则可以在它们之间切换，以查看与特定连接器关联的工作环境。
+
+例如，假设您正在多云环境中工作。您可能在 AWS 中有一个连接器，在 Google Cloud 中有另一个连接器。您需要在这些连接器之间进行切换，以管理在这些云中运行的 Cloud Volumes ONTAP 系统。
+
+.步骤
+. 选择*连接器*下拉列表、选择另一个连接器、然后选择*交换机*。
++
+image:screenshot_connector_switch.gif["标题中显示 Connector 图标和 Switch 操作的屏幕截图。"]
+
+
+
+.结果
+BlueXP将刷新并显示与选定连接器关联的工作环境。
+
+
+
+== 设置灾难恢复配置
+
+您可以同时管理具有多个连接器的工作环境，以实现灾难恢复。如果一个连接器发生故障，您可以切换到另一个连接器以立即管理工作环境。
+
+.步骤
+. 切换到要在工作环境中管理的另一个Connector。
+. 发现现有工作环境。
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["将现有Cloud Volumes ONTAP 系统添加到BlueXP"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["发现 ONTAP 集群"^]
+
+
+. 如果您管理的是Cloud Volumes ONTAP工作环境，请选择*设置>连接器设置*，并将容量管理模式设置为*手动模式*。
++
+为避免出现争用问题，只应将主连接器设置为*Automatic Mode*。
+
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-storage-management.html#capacity-management["详细了解容量管理模式"^]
+
+

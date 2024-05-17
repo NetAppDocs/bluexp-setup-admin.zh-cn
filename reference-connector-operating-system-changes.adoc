@@ -1,0 +1,182 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-operating-system-changes.html 
+keywords: connector, operating systems, connector operating systems, os support, supported operating systems, rhel 8, rhel 9, red hat, docker, podman 
+summary: 当我们在特定Linux操作系统上添加和删除对Connector的支持时、您可能会对此支持如何影响现有Connector部署有疑问。 
+---
+= 对支持的Linux操作系统进行的更改
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+当我们在特定Linux操作系统上添加和删除对Connector的支持时、您可能会对此支持如何影响现有Connector部署有疑问。
+
+
+
+== 支持RHEL 8和9
+
+从3.9.40版开始、BlueXP支持将Connector与以下Red Hat Enterprise Linux (RHEL)版本结合使用：
+
+* 8.6至8.9
+* 9.1至9.3
+
+
+请注意以下有关对这些RHEL版本的支持的信息：
+
+限制::
++
+--
+* 如果Connector安装在RHEL 8或9主机上、则BlueXP备份和恢复存在与单文件还原和勒索软件扫描相关的限制。有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["BlueXP备份和恢复的已知限制"^]
+* 如果在内部的RHEL 8或9主机上安装Connector、则支持BlueXP分类。如果RHEL 8或9主机位于AWS、Azure或Google Cloud中、则不支持此功能。
+
+
+--
+容器流程编排工具:: 在RHEL 8或9主机上安装Connector时、需要使用Podman作为容器流程编排工具。RHEL 8和9不支持Docker引擎。
++
+--
+link:task-install-connector-on-prem.html#step-1-review-host-requirements["查看Podman的要求"]。
+
+--
+部署模式:: 在标准模式或受限模式下使用BlueXP时、支持RHEL 8和9。
+仅限全新手动安装:: 在内部或云中运行的主机上手动安装Connector时、_new_ Connector安装支持RHEL 8和9。
+RHEL升级:: 如果您的现有Connector运行在RHEL 7主机上、我们不支持将RHEL 7操作系统升级到RHEL 8或9。 <<RHEL 7或CentOS 7上的现有连接器,详细了解RHEL 7或CentOS 7上的现有连接器>>。
+
+
+
+
+== 不再支持RHEL 7和CentOS 7
+
+2024年6月30日、RHEL 7将停止维护(EOM)、而CentOS 7将停止使用(EOL)。在2024年6月30日之前、NetApp将继续在这些Linux分发版上支持Connector。
+
+https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance["Red Hat：关于Red Hat Enterprise Linux 7的须知维护结束"^]
+
+
+
+=== RHEL 7或CentOS 7上的现有连接器
+
+如果您的现有Connector运行在RHEL 7或CentOS 7上、我们不支持将操作系统升级或转换为RHEL 8或9。要改为在RHEL 8或9主机上运行Connector、需要执行以下操作：
+
+. 设置RHEL 8或9主机。
+. 安装Podman。
+. 执行_new_ Connector安装。
+. 配置Connector以发现旧Connector所管理的工作环境。
+
+
+
+
+== 继续支持Ubuntu 22.04 LTS
+
+Ubuntu 22.04 LTS仍然支持Connector、并且它是BlueXP和市场部署的默认操作系统。
+
+此操作系统需要Docker引擎。不支持Podman。
+
+
+
+== 支持的操作系统摘要
+
+下面是前面几节中介绍的操作系统支持的摘要。
+
+
+NOTE: 在2024年6月30日之前、NetApp将继续在RHEL 7和CentOS 7上支持Connector。
+
+[role="tabbed-block"]
+====
+.标准模式
+--
+手动安装::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6到7.9
+* Red Hat Enterprise Linux
++
+** 7.6至7.9
+** 8.6至8.9
+** 9.1至9.3
+
+
+
+
+--
+从BlueXP进行部署:: Ubuntu 22.04 LTS
+从AWS Marketplace部署:: Ubuntu 22.04 LTS
+从Azure Marketplace部署:: Ubuntu 22.04 LTS
+
+
+--
+.受限模式
+--
+手动安装::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6到7.9
+* Red Hat Enterprise Linux
++
+** 7.6至7.9
+** 8.6至8.9
+** 9.1至9.3
+
+
+
+
+--
+从AWS Marketplace部署:: Ubuntu 22.04 LTS
+从Azure Marketplace部署:: Ubuntu 22.04 LTS
+
+
+--
+.私有模式
+--
+手动安装::
++
+--
+* Ubuntu 22.04 LTS
+* CentOS 7.6到7.9
+* Red Hat Enterprise Linux 7.6到7.9
+
+
+--
+
+
+--
+====
+
+
+== 相关链接
+
+
+
+=== 如何开始使用RHEL 8和9
+
+有关主机要求、Podman要求以及安装Podman和Connector的步骤的详细信息、请参见以下页面：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在内部安装和设置连接器"] (标准模式)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["在AWS中手动安装Connector"] (标准模式)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["在Azure中手动安装Connector"] (标准模式)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["在Google Cloud中手动安装Connector"] (标准模式)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["准备在受限模式下部署"]
+
+
+
+
+=== 如何重新发现您的工作环境
+
+请参阅以下页面、以便在部署新的Connector后重新发现您的工作环境。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["将现有Cloud Volumes ONTAP 系统添加到BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["发现内部ONTAP 集群"^]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html["创建或发现FSx for ONTAP工作环境"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["创建 Azure NetApp Files 工作环境"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["发现E系列系统"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["发现StorageGRID 系统"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html["添加 Amazon Kubernetes 集群"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html["添加 Azure Kubernetes 集群"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html["添加 Google Cloud Kubernetes 集群"^]
+* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["导入OpenShift集群"^]
+

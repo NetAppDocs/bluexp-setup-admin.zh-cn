@@ -80,7 +80,7 @@ AWS 服务（ AmazonAWS.com ）：
 ** link:task-install-connector-aws-bluexp.html#step-1-set-up-networking["设置AWS网络"]
 ** link:task-install-connector-azure-bluexp.html#step-1-set-up-networking["设置Azure网络"]
 ** link:task-install-connector-google-bluexp-gcloud.html#step-1-set-up-networking["设置Google Cloud网络"]
-** link:task-install-connector-on-prem.html#step-2-set-up-networking["设置内部网络"]
+** link:task-install-connector-on-prem.html#step-3-set-up-networking["设置内部网络"]
 
 
 * 为BlueXP服务准备网络连接

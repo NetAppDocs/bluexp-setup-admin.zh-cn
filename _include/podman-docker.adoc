@@ -1,0 +1,101 @@
+= 
+:allow-uri-read: 
+
+
+根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
+
+* Red Hat Enterprise Linux 8和9需要Podman。
+* Ubuntu、CentOS和Red Hat Enterprise Linux 7需要Docker引擎。
+
+
+.步骤
+[role="tabbed-block"]
+====
+.Podman
+--
+安装Podman 4.6.1。
+
+.步骤
+. 如果在主机上安装了Podman-Docker软件包、请将其删除。
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. 安装Podman。
++
+Podman可从Red Hat Enterprise Linux官方存储库获得。
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
+. 启用并启动Podman.sSocket服务。
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. 安装python3.
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. 如果您的系统上尚未提供EPEL存储库包、请安装该软件包。
++
+之所以需要执行此步骤、是因为可以从Enterprise Linux的额外软件包(EPEL)存储库中进行podman-compose。
+
++
+对于Red Hat Enterprise Linux 9：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+对于Red Hat Enterprise Linux 8：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. 安装podman-compose软件包1.0.6。
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: 使用 `dnf install` 命令可满足向PATH环境变量添加Podman-compose的要求。安装命令会将podman-compose添加到/usr/bin中、该文件已包含在中 `secure_path` 选项。
+
+
+
+--
+.Docker 引擎
+--
+安装介于19.3.1和21.0.5之间的Docker引擎版本。
+
+.步骤
+. 安装Docker引擎。
++
+https://docs.docker.com/engine/install/["从Docker查看安装说明"^]
+
++
+请务必按照以下步骤安装特定版本的Docker引擎。安装最新版本将安装BlueXP不支持的Docker版本。
+
+. 确认Docker已启用且正在运行。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====

@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: task-require-imdsv2.html 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
+summary: BlueXP通过连接器和Cloud Volumes ONTAP支持IMDSv2。在大多数情况下、会在新EC2实例上自动配置IMDSv2。IMDSv1在2024年3月之前启用。如果安全策略要求、您可能需要在EC2实例上手动配置IMDSv2。 
+---
+= 要求在Amazon EC2实例上使用IMDSv2
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP通过连接器和Cloud Volumes ONTAP (包括HA部署的调解器)支持Amazon EC2实例元数据服务版本2 (IMDSv2)。在大多数情况下、会在新EC2实例上自动配置IMDSv2。IMDSv1在2024年3月之前启用。如果安全策略要求、您可能需要在EC2实例上手动配置IMDSv2。
+
+.开始之前
+* 连接器版本必须为3.9.38或更高版本。
+* Cloud Volumes ONTAP必须运行以下版本之一：
++
+** 9.12.1 P2 (或任何后续修补程序)
+** 9.13.0 P4 (或任何后续修补程序)
+** 9.13.1.或此版本之后的任何版本
+
+
+* 此更改需要重新启动Cloud Volumes ONTAP实例。
+* 这些步骤需要使用AWS命令行界面、因为您必须将响应跃点限制更改为3。
+
+
+.关于此任务
+IMDSv2可提供更强的漏洞防护。 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["从AWS安全博客了解有关IMDSv2的更多信息"^]
+
+在EC2实例上、实例元数据服务(IMDS)已启用、如下所示：
+
+* 适用于从BlueXP或使用进行的新Connector部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform脚本"^]默认情况下，EC2实例上会启用IMDSv2。
+* 如果在AWS中启动新的EC2实例、然后手动安装Connector软件、则默认情况下IMDSv2也会处于启用状态。
+* 如果从AWS Marketplace启动Connector、则默认情况下会启用IMDSv1。您可以在EC2实例上手动配置IMDSv2。
+* 对于现有连接器、仍然支持IMDSv1、但您可以根据需要在EC2实例上手动配置IMDSv2。
+* 对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。
+
+
+.步骤
+. 要求在连接器实例上使用IMDSv2：
++
+.. 连接到Connector的Linux VM。
++
+在 AWS 中创建 Connector 实例时，您提供了 AWS 访问密钥和机密密钥。您可以使用此密钥对通过 SSH 连接到实例。EC2 Linux实例的用户名为Ubuntu (对于2023年5月之前创建的连接器、用户名为EC2-user)。
+
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS 文档：连接到 Linux 实例"^]
+
+.. 安装AWS命令行界面。
++
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html["AWS文档：安装或更新到最新版本的AWS命令行界面"^]
+
+.. 使用 `aws ec2 modify-instance-metadata-options` 命令以要求使用IMDSv2并将Put响应跃点限制更改为3。
++
+* 示例 *
+
++
+[source, awscli]
+----
+aws ec2 modify-instance-metadata-options \
+    --instance-id <instance-id> \
+    --http-put-response-hop-limit 3 \
+    --http-tokens required \
+    --http-endpoint enabled
+----
+
+
++
+
+NOTE: 。 `http-tokens` 参数用于将IMDSv2设置为必需。时间 `http-tokens` 是必需的、您还必须设置 `http-endpoint` 设置为启用。
+
+. 要求在Cloud Volumes ONTAP实例上使用IMDSv2：
++
+.. 转至 https://console.aws.amazon.com/ec2/["Amazon EC2控制台"^]
+.. 从导航窗格中，选择*Instances *。
+.. 选择Cloud Volumes ONTAP实例。
+.. 选择*操作>实例设置>修改实例元数据选项*。
+.. 在*修改实例元数据选项*对话框中，选择以下内容：
++
+*** 对于*实例元数据服务*，选择*Enable*。
+*** 对于*IMDSv2*，请选择*require*。
+*** 选择 * 保存 * 。
+
+
+.. 对其他Cloud Volumes ONTAP实例(包括HA调解器)重复上述步骤。
+.. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-state.html["停止并启动Cloud Volumes ONTAP实例"^]
+
+
+
+
+.结果
+连接器实例和Cloud Volumes ONTAP实例现在已配置为使用IMDSv2。

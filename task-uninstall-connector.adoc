@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall-connector.html 
+keywords: uninstall, remove connector, uninstall connector 
+summary: 卸载 Connector 软件以解决问题或从主机中永久删除此软件。您需要使用的步骤取决于您使用的部署模式。从环境中删除Connector后、您可以从BlueXP中将其删除。 
+---
+= 卸载并删除连接器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+卸载 Connector 软件以解决问题或从主机中永久删除此软件。您需要使用的步骤取决于您使用的部署模式。从环境中删除Connector后、您可以从BlueXP中将其删除。
+
+link:concept-modes.html["了解BlueXP部署模式"]。
+
+
+
+== 使用标准模式或受限模式时卸载Connector
+
+如果您在标准模式或受限模式下使用BlueXP (换言之、Connector主机具有出站连接)、则应按照以下步骤卸载Connector软件。
+
+.步骤
+. 连接到Connector的Linux VM。
+. 在 Linux 主机上运行卸载脚本：
++
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
+
++
+_silent_ 运行此脚本，而不提示您进行确认。
+
+
+
+.结果
+现在、Connector软件已从Linux主机卸载。
+
+
+
+== 使用专用模式时卸载Connector
+
+如果您在私有模式下使用BlueXP (即、Connector主机具有_no_出站连接)、则应按照以下步骤卸载Connector软件。
+
+.步骤
+. 连接到Connector的Linux VM。
+. 在 Linux 主机中，运行以下命令：
++
+`./opt/application/netapp/ds/cleanup.sh`
+`rm -rf /opt/application/netapp/ds`
+
+
+
+.结果
+现在、Connector软件已从Linux主机卸载。
+
+
+
+== 从BlueXP中删除连接器
+
+如果某个连接器处于非活动状态、您可以将其从BlueXP中的连接器列表中删除。如果删除了 Connector 虚拟机或卸载了 Connector 软件，则可以执行此操作。
+
+有关删除连接器，请注意以下事项：
+
+* 此操作不会删除虚拟机。
+* 无法还原此操作—从BlueXP中删除Connector后、便无法重新添加它。
+
+
+.步骤
+. 从BlueXP标题中选择*连接器*下拉列表。
+. 选择*管理连接器*。
+. 选择非活动连接器的操作菜单、然后选择*删除连接器*。
++
+image:screenshot_connector_remove.gif["Connector 小工具的屏幕截图，您可以在其中删除非活动的 Connector 。"]
+
+. 输入Connector的名称进行确认、然后选择*删除*。
+
+
+.结果
+BlueXP会从其记录中删除Connector。

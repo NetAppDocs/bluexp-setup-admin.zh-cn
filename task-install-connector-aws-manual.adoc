@@ -30,8 +30,18 @@ summary: 要在您自己的Linux主机上手动安装Connector、您需要查看
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6、7.7、7.8和7.9
-* Red Hat Enterprise Linux 7.6、7.7、7.8和7.9
+* CentOS 7.6到7.9
++
+在2024年6月30日之前、NetApp将继续为CentOS 7提供Connector支持。
+
+* Red Hat Enterprise Linux
++
+** 7.6至7.9
++
+在2024年6月30日之前、NetApp将继续为该连接器提供RHEL 7支持。
+
+** 8.6至8.9
+** 9.1至9.3
 +
 主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
 
@@ -40,11 +50,13 @@ summary: 要在您自己的Linux主机上手动安装Connector、您需要查看
 
 
 
+
+
 --
 虚拟机管理程序:: 需要一个经过认证可运行Ubuntu、CentOS或Red Hat Enterprise Linux的裸机或托管虚拟机管理程序。
 +
 --
-https://access.redhat.com/certified-hypervisors["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
+https://access.redhat.com/articles/973163["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
 
 --
 CPU:: 4 个核心或 4 个 vCPU
@@ -53,13 +65,25 @@ AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们�
 密钥对:: 创建连接器时、您需要选择要用于实例的EC2密钥对。
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
 /var 中的磁盘空间:: 必须有20 GiB的可用空间
-Docker 引擎:: 在安装Connector之前、主机上需要Docker引擎。
+容器流程编排工具:: 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 +
 --
-* 支持的最低版本为9.3.1。
-* 支持的最大版本为25.0.5。
+* Red Hat Enterprise Linux 8和9需要Podman 4.6.1版。
 +
-https://docs.docker.com/engine/install/["查看安装说明"^]
+Podman必须满足以下前提条件：
+
++
+** 必须启用并启动Podman.sSocket服务
+** 必须安装python3
+** 必须安装Podman-compose软件包1.0.6版
+** 必须将Podman-compose添加到PATH环境变量中
+
+
+* Ubuntu、CentOS和Red Hat Enterprise Linux 7需要Docker引擎。
++
+** 支持的最低版本为9.3.1。
+** 支持的最大版本为25.0.5。
+
 
 
 
@@ -68,7 +92,108 @@ https://docs.docker.com/engine/install/["查看安装说明"^]
 
 
 
-== 第2步：设置网络
+== 第2步：安装Podman或Docker引擎
+
+根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
+
+* Red Hat Enterprise Linux 8和9需要Podman。
+* Ubuntu、CentOS和Red Hat Enterprise Linux 7需要Docker引擎。
+
+
+.步骤
+[role="tabbed-block"]
+====
+.Podman
+--
+安装Podman 4.6.1。
+
+.步骤
+. 如果在主机上安装了Podman-Docker软件包、请将其删除。
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. 安装Podman。
++
+Podman可从Red Hat Enterprise Linux官方存储库获得。
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
+. 启用并启动Podman.sSocket服务。
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. 安装python3.
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. 如果您的系统上尚未提供EPEL存储库包、请安装该软件包。
++
+之所以需要执行此步骤、是因为可以从Enterprise Linux的额外软件包(EPEL)存储库中进行podman-compose。
+
++
+对于Red Hat Enterprise Linux 9：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+对于Red Hat Enterprise Linux 8：
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. 安装podman-compose软件包1.0.6。
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: 使用 `dnf install` 命令可满足向PATH环境变量添加Podman-compose的要求。安装命令会将podman-compose添加到/usr/bin中、该文件已包含在中 `secure_path` 选项。
+
+
+
+--
+.Docker 引擎
+--
+安装介于19.3.1和21.0.5之间的Docker引擎版本。
+
+.步骤
+. 安装Docker引擎。
++
+https://docs.docker.com/engine/install/["从Docker查看安装说明"^]
+
++
+请务必按照以下步骤安装特定版本的Docker引擎。安装最新版本将安装BlueXP不支持的Docker版本。
+
+. 确认Docker已启用且正在运行。
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====
+
+
+== 第3步：设置网络
 
 确保您计划安装Connector的网络位置符合以下要求。满足这些要求后、Connector便可管理混合云环境中的资源和流程。
 
@@ -157,15 +282,13 @@ https://mysupport.netapp.com
 --
 
 
-代理服务器:: 如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。
+代理服务器:: 如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。请注意、BlueXP不支持透明代理服务器。
 +
 --
 * IP 地址
 * 凭据
 * HTTPS证书
 
-
-请注意、BlueXP不支持透明代理服务器。
 
 --
 
@@ -189,7 +312,7 @@ https://mysupport.netapp.com
 
 
 
-== 第3步：设置权限
+== 第4步：设置权限
 
 您需要使用以下选项之一为BlueXP提供AWS权限：
 
@@ -262,7 +385,7 @@ https://mysupport.netapp.com
 ====
 
 
-== 第4步：安装连接器
+== 第5步：安装连接器
 
 完成前提条件后、您可以在自己的Linux主机上手动安装软件。
 
@@ -284,12 +407,6 @@ https://mysupport.netapp.com
 NetApp 支持站点上提供的安装程序可能是早期版本。安装后，如果有新版本可用， Connector 会自动进行更新。
 
 .步骤
-. 验证 Docker 是否已启用且正在运行。
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . 如果在主机上设置了_http_proxy_或_https_proxy_系统变量、请将其删除：
 +
 [source, cli]
@@ -328,7 +445,7 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 -proxy会将Connector配置为使用以下格式之一的HTTP或HTTPS代理服务器：
@@ -346,7 +463,14 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 *** 用户可以是本地用户或域用户。
 *** 对于域用户、必须对\使用ASCII代码、如上所示。
-*** BlueXP不支持包含@字符的密码。
+*** BlueXP不支持包含@字符的用户名或密码。
+*** 如果密码包含以下任一特殊字符，则必须在该特殊字符前面加上反斜杠：&或!
++
+例如：
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
 
 
 
@@ -382,7 +506,7 @@ https://_ipaddress_[]
 
 
 
-== 第5步：为BlueXP提供权限
+== 第6步：为BlueXP提供权限
 
 现在您已安装Connector、您需要为BlueXP提供先前设置的AWS权限。通过提供权限、BlueXP可以在AWS中管理数据和存储基础架构。
 

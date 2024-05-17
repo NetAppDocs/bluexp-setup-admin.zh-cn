@@ -33,6 +33,7 @@ summary: 您可能希望在部署连接器之前或需要对任何问题进行�
 +
 操作系统不包含 GUI 。您必须使用终端访问系统。
 
+* 此安装包括Docker引擎、这是所需的容器流程编排工具。
 * EC2 Linux实例的用户名为Ubuntu (对于2023年5月之前创建的连接器、用户名为EC2-user)。
 * 默认系统磁盘为100 GiB GP2磁盘。
 
@@ -48,6 +49,7 @@ summary: 您可能希望在部署连接器之前或需要对任何问题进行�
 +
 操作系统不包含 GUI 。您必须使用终端访问系统。
 
+* 此安装包括Docker引擎、这是所需的容器流程编排工具。
 * 默认系统磁盘为100 GiB高级SSD磁盘。
 
 
@@ -62,6 +64,7 @@ summary: 您可能希望在部署连接器之前或需要对任何问题进行�
 +
 操作系统不包含 GUI 。您必须使用终端访问系统。
 
+* 此安装包括Docker引擎、这是所需的容器流程编排工具。
 * 默认系统磁盘为100 GiB SSD永久性磁盘。
 
 
@@ -83,7 +86,7 @@ Connector 安装文件夹位于以下位置：
 或
 * /opt/application/netapp/service-manager-2/logs (从新的3.9.23安装开始)
 +
-这些文件夹中的日志提供了有关连接器和Docker映像的详细信息。
+这些文件夹中的日志提供了有关Connector的详细信息。
 
 * /opt/application/netapp/cloudmanager/docker_occm/data/log
 +

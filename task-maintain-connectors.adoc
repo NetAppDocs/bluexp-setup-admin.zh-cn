@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: task-maintain-connectors.html 
+keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector 
+summary: 您应负责维护Connector主机上的操作系统。例如、您应按照公司的操作系统分发标准过程对Connector主机上的操作系统应用安全更新。 
+---
+= 维护Connector VM和操作系统
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您应负责维护Connector主机上的操作系统。例如、您应按照公司的操作系统分发标准过程对Connector主机上的操作系统应用安全更新。
+
+
+TIP: 如果您已有Connector、则应注意 link:reference-connector-operating-system-changes.html["对支持的Linux操作系统进行的更改"]。
+
+
+
+== 操作系统修补程序和连接器
+
+应用操作系统安全修补程序时、您无需停止Connector主机上的任何服务。
+
+
+
+== VM或实例类型
+
+如果您直接从BlueXP创建了Connector、则BlueXP会使用默认配置在云提供商中部署一个虚拟机实例。创建连接器后、不应更改为CPU或RAM更少的较小VM实例。
+
+CPU和RAM要求如下：
+
+CPU:: 4 个核心或 4 个 vCPU
+RAM:: 14 GB
+
+
+link:reference-connector-default-config.html["了解Connector的默认配置"]。
+
+
+
+== 正在停止启动Connector VM
+
+如果需要先停止再启动Connector VM、则应从云提供商的控制台执行此操作、或者使用内部管理的标准过程执行此操作。
+
+link:concept-connectors.html#connectors-must-be-operational-at-all-times["请注意、连接器必须始终正常运行"]。
+
+
+
+== 连接到 Linux VM
+
+如果您需要连接到运行 Connector 的 Linux VM ，可以使用云提供商提供的连接选项来执行此操作。
+
+AWS:: 在 AWS 中创建 Connector 实例时，您提供了 AWS 访问密钥和机密密钥。您可以使用此密钥对通过 SSH 连接到实例。EC2 Linux实例的用户名为Ubuntu (对于2023年5月之前创建的连接器、用户名为EC2-user)。
++
+--
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS 文档：连接到 Linux 实例"^]
+
+--
+Azure 酒店:: 在Azure中创建Connector VM时、您指定了用户名并选择使用密码或SSH公共密钥进行身份验证。使用您选择的身份验证方法连接到虚拟机。
++
+--
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure 文档：通过 SSH 连接到虚拟机"^]
+
+--
+Google Cloud:: 在 Google Cloud 中创建 Connector 时，无法指定身份验证方法。但是，您可以使用 Google Cloud Console 或 Google Cloud CLI （ gcloud ）连接到 Linux VM 实例。
++
+--
+https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs ：连接到 Linux VM"^]
+
+--
+
+
+
+
+== 更改连接器的 IP 地址
+
+如果您的业务需要，您可以更改云提供商自动分配的 Connector 实例的内部 IP 地址和公有 IP 地址。
+
+.步骤
+. 按照云提供商的说明更改连接器实例的本地 IP 地址或公有 IP 地址（或两者）。
+. 如果您更改了公有 IP地址、并且需要连接到在Connector上运行的本地用户界面、请重新启动Connector实例、以便向BlueXP注册新的IP地址。
+. 如果更改了专用 IP 地址，请更新 Cloud Volumes ONTAP 配置文件的备份位置，以便将备份发送到 Connector 上的新专用 IP 地址。
++
+您需要更新每个Cloud Volumes ONTAP系统的备份位置。
+
++
+.. 从Cloud Volumes ONTAP命令行界面运行以下命令以显示当前备份目标：
++
+[source, cli]
+----
+system configuration backup show
+----
+.. 运行以下命令以更新备份目标的IP地址：
++
+[source, cli]
+----
+system configuration backup settings modify -destination <target-location>
+----
+
+
+
+
+
+
+== 编辑Connector的URI
+
+添加并删除Connector的统一资源标识符(Uniform Resource Identifier、URI)。
+
+.步骤
+. 从BlueXP标题中选择*连接器*下拉列表。
+. 选择*管理连接器*。
+. 选择Connector的操作菜单、然后选择*编辑URIs*。
+. 添加并删除URI、然后选择*应用*。
+

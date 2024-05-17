@@ -1,0 +1,111 @@
+---
+sidebar: sidebar 
+permalink: task-troubleshoot-connector.html 
+keywords: troubleshoot, system id, system ID, autosupport, asup, troubleshoot connector, download failure, cloud volumes ontap download failure 
+summary: 要解决连接器的问题、您可以联系NetApp支持部门、他们可能会要求您提供系统ID或最新的AutoSupport消息。您还可以查看NetApp知识库来自行解决问题。 
+---
+= 对接头进行故障排除
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要解决连接器的问题、您可以与NetApp支持人员联系、他们可能会询问您的系统ID、连接器版本或最新的AutoSupport消息。您还可以查看NetApp知识库来自行解决问题。
+
+.相关链接
+link:task-get-help.html["从NetApp支持部门获取帮助"]。
+
+
+
+== 查找 Connector 的系统 ID
+
+为了帮助您快速入门、NetApp代表可能会要求您提供Connector的系统ID。此 ID 通常用于许可和故障排除目的。
+
+.步骤
+. 在BlueXP控制台的右上角、选择帮助图标。
+. 选择*支持> BlueXP Connecter*。
++
+系统ID显示在页面顶部。
+
++
+* 示例 *
+
++
+image:screenshot-system-id.png["显示支持信息板中的BlueXP系统ID的屏幕截图。"]
+
+
+
+
+
+== 查看连接器的版本
+
+您可以查看连接器的版本、以验证连接器是否自动升级到最新版本、或者因为您需要与NetApp代表共享此版本。
+
+.步骤
+. 在BlueXP控制台的右上角、选择帮助图标。
+. 选择*支持> BlueXP Connecter*。
++
+版本显示在页面顶部。
+
++
+image:screenshot-connector-version.png["显示支持信息板中连接器版本的屏幕截图。"]
+
+
+
+
+
+== 下载或发送 AutoSupport 消息
+
+如果您遇到问题， NetApp 人员可能会要求您向 NetApp 支持发送 AutoSupport 消息以进行故障排除。
+
+.步骤
+. 在BlueXP控制台的右上角、选择帮助图标、然后选择*支持*。
++
+image:screenshot-help-support.png["帮助菜单的屏幕截图，其中列出的第一个选项为支持"]
+
+. 选择* BlueXP Connector*。
+. 根据向 NetApp 支持部门发送信息的方式，选择以下选项之一：
++
+.. 选择选项以将 AutoSupport 消息下载到本地计算机。然后，您可以使用首选方法将其发送给 NetApp 支持部门。
+.. 选择*发送NetApp*以直接将消息发送到AutoSupport 支持。
+
+
++
+image:screenshot-connector-autosupport.png["支持信息板的屏幕截图、显示用户可选择下载和发送AutoSupport 消息的位置。"]
+
+
+
+
+
+== 修复使用 Google Cloud NAT 网关时的下载失败问题
+
+连接器会自动下载 Cloud Volumes ONTAP 的软件更新。如果您的配置使用 Google Cloud NAT 网关，则下载可能会失败。您可以通过限制软件映像划分到的部件数来更正此问题描述。必须使用BlueXP API完成此步骤。
+
+.步骤
+. 使用以下 JSON 正文向 /occm/config 提交 PUT 请求：
++
+[source]
+----
+{
+  "maxDownloadSessions": 32
+}
+----
++
+maxDownloadSessions_ 的值可以是 1 或大于 1 的任意整数。如果值为 1 ，则下载的映像不会被拆分。
+
++
+请注意， 32 是一个示例值。应使用的值取决于 NAT 配置以及可以同时拥有的会话数。
+
+
+
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig["了解有关 /ocem/config API 调用的更多信息"^]
+
+
+
+== 从NetApp知识库获取帮助
+
+https://kb.netapp.com/Special:Search?path=Cloud%2FBlueXP&query=connector&type=wiki["查看NetApp支持团队创建的故障排除信息"]。

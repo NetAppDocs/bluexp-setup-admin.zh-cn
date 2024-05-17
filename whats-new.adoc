@@ -18,6 +18,52 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
+== 2024年5月17日
+
+
+
+=== 连接器3.9.40
+
+此版本的BlueXP Connector包括对其他操作系统的支持、小的安全改进和错误修复。
+
+目前、3.9.40版本可用于标准模式和受限模式。
+
+
+
+==== 支持RHEL 8和9
+
+现在、在运行以下版本的Red Hat Enterprise Linux (安装了_new_ Connector)的主机上支持Connector：
+
+* 8.6至8.9
+* 9.1至9.3
+
+
+这些操作系统需要使用Podman作为容器流程编排工具。
+
+您应了解Podman的要求、已知限制、操作系统支持摘要、拥有RHEL 7主机时应采取的措施、如何入门等。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
+
+
+
+==== 不再支持RHEL 7和CentOS 7
+
+2024年6月30日、RHEL 7将停止维护(EOM)、而CentOS 7将停止使用(EOL)。在2024年6月30日之前、NetApp将继续在这些Linux分发版上支持Connector。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解在RHEL 7或CentOS 7上运行现有Connector时该怎么办"]。
+
+
+
+==== AWS权限更新
+
+在3.9.38版中、我们更新了适用于AWS的Connector策略、以包括"EC2：可说明可用性区域"权限。现在、要使用Cloud Volumes ONTAP支持AWS本地区域、需要此权限。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["查看Connector的AWS权限"]。
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["详细了解对AWS本地区域的支持"^]
+
+
+
+
 == 2024年4月22日
 
 
@@ -99,7 +145,7 @@ BlueXP现已推出新的专用模式版本。此版本包含以下BlueXP服务�
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["了解如何在使用私有模式时升级连接器"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
 
 
 
@@ -129,7 +175,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 * 对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。
 
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["了解如何在现有实例上配置IMDSv2"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["了解如何在现有实例上配置IMDSv2"]。
 
 
 
@@ -201,7 +247,7 @@ BlueXP现已推出新的专用模式版本。此版本包含连接器3.9.35版�
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["了解专用模式附带的BlueXP服务"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["了解如何在使用私有模式时升级连接器"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
 
 
 
@@ -464,7 +510,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-
 
 +
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-onprem-no-internet.html["将连接器安装在无法访问Internet的位置"^]
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["访问Connector上的BlueXP控制台"^]
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["添加未分配的许可证"^]
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-overview-cvo.html["开始使用Cloud Volumes ONTAP"^]
 

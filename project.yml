@@ -19,6 +19,8 @@ sidebar:
       url: "/whats-new.html"
     - title: 已知限制
       url: "/reference-limitations.html"
+    - title: 对支持的Linux操作系统进行的更改
+      url: "/reference-connector-operating-system-changes.html"
   - title: 入门
     entries:
     - title: 了解基础知识
@@ -115,15 +117,23 @@ sidebar:
         url: "/reference-user-roles.html"
     - title: 连接器
       entries:
-      - title: 查找 Connector 的系统 ID
-        url: "/task-finding-system-id.html"
-      - title: 管理现有连接器
-        url: "/task-managing-connectors.html"
+      - title: 维护虚拟机和操作系统
+        url: "/task-maintain-connectors.html"
       - title: 安装HTTPS证书以确保安全访问
         url: "/task-installing-https-cert.html"
       - title: 配置Connector以使用代理服务器
         url: "/task-configuring-proxy.html"
-      - title: Connector 的默认配置
+      - title: 要求在EC2实例上使用IMDSv2
+        url: "/task-require-imdsv2.html"
+      - title: 使用私有模式时升级Connector
+        url: "/task-upgrade-connector.html"
+      - title: 使用多个连接器
+        url: "/task-manage-multiple-connectors.html"
+      - title: 对接头进行故障排除
+        url: "/task-troubleshoot-connector.html"
+      - title: 卸载并删除连接器
+        url: "/task-uninstall-connector.html"
+      - title: 默认配置
         url: "/reference-connector-default-config.html"
     - title: 凭据和订阅
       entries:

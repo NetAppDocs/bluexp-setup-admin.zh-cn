@@ -31,8 +31,8 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 * 要查看使用这些策略的分步说明、请参见以下页面：
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["为AWS Marketplace部署设置权限"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["设置对内置部署的权限"]
-** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["设置受限模式的权限"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["设置对内置部署的权限"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["设置受限模式的权限"]
 ** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["设置私有模式的权限"]
 
 
@@ -1256,6 +1256,9 @@ Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes 
 
 
 | EC2：ModifyVolume | 否 | 是的。 | 否 
+
+
+| 检查可用性区域是否为AWS本地区域、并验证所有部署参数是否兼容 | EC2：特性可用性区域 | 是的。 | 否 | 是的。 
 |===
 
 
@@ -1288,13 +1291,11 @@ Connector会发出以下API请求来发现和管理Amazon EKS集群：
 
 
 
-=== 2024年3月8日
+=== 2024年5月9日
 
-连接器策略现在包括以下权限：
+现在、Cloud Volumes ONTAP需要以下权限：
 
 EC2：特性可用性区域
-
-即将发布的版本需要此权限。发行说明发布后、我们将更新发行说明以提供更多详细信息。
 
 
 

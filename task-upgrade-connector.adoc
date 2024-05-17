@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: task-upgrade-connector.html 
+keywords: upgrade, manual upgrade, connector upgrade, manual connector upgrade, upgrade connector manually, private mode upgrade, offline upgrade, upgrade private mode 
+summary: 在标准模式或受限模式下使用BlueXP时、BlueXP会自动将Connector升级到最新版本。通常每月发布新版本、以引入新功能并提高稳定性。如果您愿意、可以将Connector配置为从本地存储库提取映像更新。对于私有模式部署、您始终需要手动自行升级Connector。 
+---
+= 使用私有模式时升级Connector
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您在专用模式下使用的是BlueXP、则可以在NetApp 支持站点 提供了较新版本时升级此连接器。
+
+
+TIP: 在标准模式或受限模式下使用BlueXP时、无需手动升级Connector。BlueXP会自动将Connector升级到最新版本、只要Connector可以出站访问Internet来获取软件更新即可。
+
+.关于此任务
+在升级过程中、Connector需要重新启动、因此在升级期间基于Web的控制台将不可用。
+
+.步骤
+. 从下载Connector软件 https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["NetApp 支持站点"^]。
++
+请务必为无法访问Internet的专用网络下载脱机安装程序。
+
+. 将安装程序复制到 Linux 主机。
+. 分配运行脚本的权限。
++
+[source, cli]
+----
+chmod +x /path/BlueXP-Connector-offline-<version>
+----
++
+其中、<version> 是您下载的连接器版本。
+
+. 运行安装脚本：
++
+[source, cli]
+----
+sudo /path/BlueXP-Connector-offline-<version>
+----
++
+其中、<version> 是您下载的连接器版本。
+
+. 升级完成后，您可以转到 * 帮助 > 支持 > 连接器 * 来验证连接器的版本。
+
