@@ -239,6 +239,8 @@ Google Cloud用户现在具有创建Connector所需的权限。
 
 要为Connector提供BlueXP在Google Cloud中管理资源所需的权限、需要Google Cloud服务帐户。创建Connector时、您需要将此服务帐户与Connector VM关联起来。
 
+在后续版本中添加新权限时、您有责任更新自定义角色。如果需要新的权限、这些权限将在发行说明中列出。
+
 .步骤
 . 在Google Cloud中创建自定义角色：
 +

@@ -22,19 +22,20 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
 
 下面显示的自定义角色提供了Connector管理Azure网络中的资源和进程所需的权限。
 
-直接从BlueXP创建Connector时、BlueXP会自动将此自定义角色应用于Connector。
+请注意以下事项：
 
-如果您从Azure Marketplace部署Connector、或者在Linux主机上手动安装Connector、则需要您自己设置自定义角色。
+* 直接从BlueXP创建Connector时、BlueXP会自动将此自定义角色应用于Connector。
+* 如果您从Azure Marketplace部署Connector、或者在Linux主机上手动安装Connector、则需要您自己设置自定义角色。
+* 无论哪种情况、您都需要确保角色在后续版本中添加新权限时处于最新状态。如果需要新的权限、这些权限将在发行说明中列出。
+* 要查看使用这些策略的分步说明、请参见以下页面：
++
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["为Azure Marketplace部署设置权限"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["设置对内置部署的权限"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["设置受限模式的权限"]
+** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["设置私有模式的权限"]
 
-要查看使用这些策略的分步说明、请参见以下页面：
-
-* link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["为Azure Marketplace部署设置权限"]
-* link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["设置对内置部署的权限"]
-* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["设置受限模式的权限"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["设置私有模式的权限"]
 
 
-您还需要确保角色是最新的、因为在后续版本中添加了新权限。
 
 [source, json]
 ----

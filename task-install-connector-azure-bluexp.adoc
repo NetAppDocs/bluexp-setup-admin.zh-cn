@@ -161,7 +161,7 @@ link:reference-networking-saas-console.html["从BlueXP控制台查看已联系�
 . 在Azure中复制新自定义角色所需的权限、并将其保存在JSON文件中。
 +
 
-NOTE: 此自定义角色仅包含从BlueXP在Azure中启动Connector VM所需的权限。请勿在其他情况下使用此策略。当BlueXP创建Connector时、它会将一组新的权限应用于Connector VM、从而使Connector能够管理公有 云环境中的资源。
+NOTE: 此自定义角色仅包含从BlueXP在Azure中启动Connector VM所需的权限。请勿在其他情况下使用此策略。在BlueXP创建Connector时、它会将一组新权限应用于Connector VM、以使Connector能够管理Azure资源。
 
 +
 [source, json]
@@ -420,7 +420,9 @@ image:screenshot_azure_client_secret.gif["Azure门户的屏幕截图、其中显
 直接从BlueXP基于Web的控制台创建Connector。
 
 .关于此任务
-从BlueXP创建连接器会使用默认配置在Azure中部署虚拟机。创建连接器后、不应更改为CPU或RAM更少的较小虚拟机类型。 link:reference-connector-default-config.html["了解Connector的默认配置"]。
+* 从BlueXP创建连接器会使用默认配置在Azure中部署虚拟机。创建连接器后、不应更改为CPU或RAM更少的较小虚拟机类型。 link:reference-connector-default-config.html["了解Connector的默认配置"]。
+* 在BlueXP部署Connector时、它会创建一个自定义角色并将其分配给Connector VM。此角色包含允许Connector管理Azure资源的权限。在后续版本中添加新权限时、您需要确保此角色保持最新。 link:reference-permissions-azure.html["详细了解连接器的自定义角色"]。
+
 
 .开始之前
 您应具备以下条件：

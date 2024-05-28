@@ -226,7 +226,6 @@
   <block id="12c7029287280adb69871787fa604772" category="paragraph">您需要将此自定义角色应用于连接到Connector VM的服务帐户。</block>
   <block id="cb3ffce0d4b8f43b3d9f183b558cca41" category="inline-link-macro">设置受限模式的权限</block>
   <block id="fad45f664f0478b74c9485a0b1f6d781" category="inline-link-macro">设置私有模式的权限</block>
-  <block id="c5078b96055d6b776ee265ca4c7650c2" category="paragraph">您还需要确保角色是最新的、因为在后续版本中添加了新权限。</block>
   <block id="823b2e7894c2b52c1e9adc9ea10b9be5" category="section-title">如何使用Google Cloud权限</block>
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">操作</block>
   <block id="8224e3db072d582bb34ae19441c597fe" category="cell">- compute。disks.create
@@ -1025,7 +1024,6 @@
   <block id="8098dd228e3c3acafd4ab6231ee02a5b" category="paragraph">无论选择哪种方案、第一步都是创建IAM策略。此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。</block>
   <block id="5409221a62615b6b2cf0061a5376c983" category="inline-link">AWS文档：条件元素</block>
   <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">如果需要、您可以使用IAM来限制IAM策略<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> Element。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
-  <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">在BlueXP创建Connector时、它会将一组新权限应用于Connector实例、以使Connector能够管理AWS资源。</block>
   <block id="1e71ce7defc90d8f5a2c46c08ba968df" category="list-text">转到AWS IAM控制台。</block>
   <block id="26d4a7a50dfbae842d907e3b8000633e" category="list-text">复制并粘贴以下策略：</block>
   <block id="1bd08699c526c66f71094b5ff54dc839" category="list-text">将策略附加到BlueXP可以承担的IAM角色或IAM用户、以便您可以为BlueXP提供访问密钥：</block>
@@ -1210,9 +1208,7 @@
   <block id="30782d3f448f611988824827b71e6b96" category="paragraph">当BlueXP在AWS中启动Connector实例时、它会向此实例附加一个策略、此策略可为Connector提供管理该AWS帐户中资源和进程的权限。Connector使用这些权限对多个AWS服务进行API调用、包括EC2、S3、CloudFormation、IAM、 密钥管理服务(KMS)等。</block>
   <block id="c1141a37b962270fc1e8960233830c99" category="section-title">IAM策略</block>
   <block id="d169cac20ae3e0b6b9cec32d273de5f2" category="paragraph">下面提供的IAM策略为Connector提供了根据您的AWS区域管理公有 云环境中的资源和流程所需的权限。</block>
-  <block id="74b6a526e505305f967084e06fa6aaf3" category="list-text">如果您直接从BlueXP在标准AWS区域中创建Connector、则BlueXP会自动将策略应用到Connector。在这种情况下、您无需执行任何操作。</block>
   <block id="7d6d11737dd3bca1243f4e22e7aeaec1" category="list-text">如果您从AWS Marketplace部署Connector、在Linux主机上手动安装Connector或要向BlueXP添加其他AWS凭据、则需要自行设置策略。</block>
-  <block id="b8502b99c36d378968d3d20a7561e523" category="list-text">此外、您还需要确保在后续版本中添加新权限时策略保持最新。</block>
   <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="list-text">如果需要、您可以使用IAM来限制IAM策略<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> Element。<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
   <block id="5e7e2fc7d83311cfc7311fe5dec48480" category="list-text">要查看使用这些策略的分步说明、请参见以下页面：</block>
   <block id="de16d176ab7c6c01a7ce45f2e7213194" category="paragraph">选择您所在的区域以查看所需的策略：</block>
@@ -3083,7 +3079,6 @@
 只有Azure政府区域才需要此端点。</block>
   <block id="d7a02621d52c29a3c5f7895e817cba5b" category="list-text">自动化目录</block>
   <block id="37b89c92faa8fead3ede2cb2c162ef52" category="inline-link-macro">连接器实例本身所需的查看权限</block>
-  <block id="9c7ace21b2c703b0c1706b0f405490ae" category="paragraph">请注意、此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。 <block ref="1803651c0d8d31da6be94aca23bd6fb9" category="inline-link-macro-rx"></block>。</block>
   <block id="ee0f5d3d76febb57f0cd8c307401026c" category="paragraph">要为市场部署做准备、请在AWS中创建IAM策略并将其附加到IAM角色。从AWS Marketplace创建Connector时、系统将提示您选择此IAM角色。</block>
   <block id="b8173d0c4669ed6158a49dda320b1515" category="paragraph">根据您计划使用的BlueXP服务、您可能需要创建第二个策略。对于标准区域、权限会分布在两个策略中。由于AWS中受管策略的字符大小上限、因此需要使用两个策略。 <block ref="60507836418f54f0b2b646fcefa2cf2c" category="inline-link-macro-rx"></block>。</block>
   <block id="ad76b7ae56285d87ab9015cde946bbf4" category="list-text"><block ref="ad76b7ae56285d87ab9015cde946bbf4" category="inline-link-rx"></block></block>
@@ -3218,7 +3213,6 @@
   <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">如果Cloud Volumes ONTAP系统没有用于发送AutoSupport消息的出站Internet连接、BlueXP会自动将这些系统配置为使用连接器附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。</block>
   <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">从BlueXP在Azure中创建连接器</block>
   <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">从BlueXP创建Connector时、您需要提供一个登录名、以便BlueXP能够向Azure进行身份验证并部署虚拟机。您有两种选择：</block>
-  <block id="79a9c2b8e447685125856ec6046d8128" category="admonition">此自定义角色仅包含从BlueXP在Azure中启动Connector VM所需的权限。请勿在其他情况下使用此策略。当BlueXP创建Connector时、它会将一组新的权限应用于Connector VM、从而使Connector能够管理公有 云环境中的资源。</block>
   <block id="6dc4f3e9aa2dada18f0a17189fa7d079" category="list-text">单击 * 访问控制（ IAM ） * 。</block>
   <block id="761218505548d0e5a2977bd7c31de50a" category="list-text">单击 * 添加 * &gt; * 添加角色分配 * ，然后添加权限：</block>
   <block id="407df91196b1a54a89a9911a8ac6a332" category="list-text">选择 * Azure SetupAsService* 角色，然后单击 * 下一步 * 。</block>
@@ -4179,4 +4173,16 @@ https://support.netapp.com
   <block id="a2e2f8288038950766d9cd088e4d892d" category="sidebar">维护虚拟机和操作系统</block>
   <block id="417a7f2f69f19fbcd309a4694944397e" category="sidebar">要求在EC2实例上使用IMDSv2</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">默认配置</block>
+  <block id="abaca48e727d4b8ce4fa03323bbfdae6" category="paragraph">在后续版本中添加新权限时、您有责任更新自定义角色。如果需要新的权限、这些权限将在发行说明中列出。</block>
+  <block id="3799b61c7b8f19b2e2054544594671c3" category="admonition">此自定义角色仅包含从BlueXP在Azure中启动Connector VM所需的权限。请勿在其他情况下使用此策略。在BlueXP创建Connector时、它会将一组新权限应用于Connector VM、以使Connector能够管理Azure资源。</block>
+  <block id="235877cfbecd45ab1b8e8ccb08915ab6" category="inline-link-macro">详细了解连接器的自定义角色</block>
+  <block id="9c94f9d5dbcdb22d1966ac1fff333345" category="list-text">在BlueXP部署Connector时、它会创建一个自定义角色并将其分配给Connector VM。此角色包含允许Connector管理Azure资源的权限。在后续版本中添加新权限时、您需要确保此角色保持最新。 <block ref="68dcfa6eadd8a48a8164adbbc9abc0e5" category="inline-link-macro-rx"></block>。</block>
+  <block id="1f43b26ddf19b23cb5c358604ad9d1bb" category="paragraph">在后续版本中添加新权限时、您有责任更新Connector策略。如果需要新的权限、这些权限将在发行说明中列出。</block>
+  <block id="676f79631572648a20e41bdcef2aa88e" category="list-text">无论哪种情况、您都需要确保角色在后续版本中添加新权限时处于最新状态。如果需要新的权限、这些权限将在发行说明中列出。</block>
+  <block id="ced19d28868cf97a99ad66ab748a0458" category="list-text">如果您直接从BlueXP在标准AWS区域中创建Connector、则BlueXP会自动将策略应用到Connector。</block>
+  <block id="27bfd6a18f38f12efb7983c46e54e86c" category="list-text">无论哪种情况、您都需要确保在后续版本中添加新权限时策略是最新的。如果需要新的权限、这些权限将在发行说明中列出。</block>
+  <block id="8ed564b3f4045fb1f8ddb641549ce096" category="paragraph">此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。在BlueXP创建Connector时、它会将一组新权限应用于Connector实例、以使Connector能够管理AWS资源。 <block ref="1803651c0d8d31da6be94aca23bd6fb9" category="inline-link-macro-rx"></block>。</block>
+  <block id="df6a3e698694ef43588c621a4f033d31" category="inline-link-macro">详细了解连接器的IAM策略</block>
+  <block id="1fb320e90a252e8c1b4c19e3cbd46329" category="list-text">在BlueXP创建Connector时、它会为实例创建IAM角色和实例配置文件。此角色包含允许Connector管理AWS资源的权限。在后续版本中添加新权限时、您需要确保此角色保持最新。 <block ref="7c04064b609d1f2f70bc0b0dc253bdfa" category="inline-link-macro-rx"></block>。</block>
+  <block id="4560d9b851db1f575c8bd1ba53369c0a" category="paragraph">您还需要确保角色是最新的、因为在后续版本中添加了新权限。如果需要新的权限、这些权限将在发行说明中列出。</block>
 </blocks>

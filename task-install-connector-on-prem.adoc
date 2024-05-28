@@ -118,9 +118,20 @@ rm /var/run/docker.sock
 Podman可从Red Hat Enterprise Linux官方存储库获得。
 
 +
+对于Red Hat Enterprise Linux 9：
+
++
 [source, cli]
 ----
 sudo dnf install podman-2:4.6.1
+----
++
+对于Red Hat Enterprise Linux 8：
+
++
+[source, cli]
+----
+sudo dnf install podman-3:4.6.1
 ----
 . 启用并启动Podman.sSocket服务。
 +

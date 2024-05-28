@@ -24,9 +24,9 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 
 请注意以下事项：
 
-* 如果您直接从BlueXP在标准AWS区域中创建Connector、则BlueXP会自动将策略应用到Connector。在这种情况下、您无需执行任何操作。
+* 如果您直接从BlueXP在标准AWS区域中创建Connector、则BlueXP会自动将策略应用到Connector。
 * 如果您从AWS Marketplace部署Connector、在Linux主机上手动安装Connector或要向BlueXP添加其他AWS凭据、则需要自行设置策略。
-* 此外、您还需要确保在后续版本中添加新权限时策略保持最新。
+* 无论哪种情况、您都需要确保在后续版本中添加新权限时策略是最新的。如果需要新的权限、这些权限将在发行说明中列出。
 * 如果需要、您可以使用IAM来限制IAM策略 `Condition` Element。 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["AWS文档：条件元素"^]
 * 要查看使用这些策略的分步说明、请参见以下页面：
 +
