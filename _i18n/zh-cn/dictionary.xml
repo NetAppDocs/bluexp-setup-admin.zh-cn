@@ -4185,4 +4185,17 @@ https://support.netapp.com
   <block id="df6a3e698694ef43588c621a4f033d31" category="inline-link-macro">详细了解连接器的IAM策略</block>
   <block id="1fb320e90a252e8c1b4c19e3cbd46329" category="list-text">在BlueXP创建Connector时、它会为实例创建IAM角色和实例配置文件。此角色包含允许Connector管理AWS资源的权限。在后续版本中添加新权限时、您需要确保此角色保持最新。 <block ref="7c04064b609d1f2f70bc0b0dc253bdfa" category="inline-link-macro-rx"></block>。</block>
   <block id="4560d9b851db1f575c8bd1ba53369c0a" category="paragraph">您还需要确保角色是最新的、因为在后续版本中添加了新权限。如果需要新的权限、这些权限将在发行说明中列出。</block>
+  <block id="74ee4e65950c57ed59a7a33de5a179e6" category="section-title">2024年6月4日</block>
+  <block id="87174c130fb334601e88a5630bf24478" category="section-title">专用模式版本(3.9.40)</block>
+  <block id="3a88f5b91fe23c6da00e330b440f9fd7" category="paragraph">现在可以从NetApp 支持站点 下载新的专用模式版本。此版本包含以下BlueXP服务版本、这些版本支持专用模式。</block>
+  <block id="4f56b8c7a0f62edc59659cfaecc68958" category="paragraph">请注意、此专用模式版本不支持Connector with Red Hat Enterprise Linux 8和9。</block>
+  <block id="f691a3ef752f6e51a74183a6b7b1c432" category="cell">3.9.40</block>
+  <block id="918de91f5332dad6620331712ef5c21d" category="cell">2024年5月15日(版本1.31)</block>
+  <block id="64cc8195fcb01e582343c910736d1abd" category="paragraph">要详细了解这些BlueXP服务版本中包含的内容、请参阅每个BlueXP服务的发行说明。</block>
+  <block id="451cc12943297b25b1cf250cc5d0e60a" category="inline-link">了解BlueXP备份和恢复的新增功能</block>
+  <block id="d846859679a4eca86e97e1887623b347" category="list-text"><block ref="d846859679a4eca86e97e1887623b347" category="inline-link-rx"></block></block>
+  <block id="dd890c1f1f06a084e8274154f3f07ebe" category="inline-link">了解BlueXP分类的新增功能</block>
+  <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
+  <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">了解BlueXP中Cloud Volumes ONTAP管理的新增功能</block>
+  <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
 </blocks>
