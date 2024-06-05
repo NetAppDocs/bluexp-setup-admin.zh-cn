@@ -165,12 +165,6 @@ API endpoint:: API调用会调用Connector虚拟机。
 | 分类  a| 
 受限模式的政府区域支持。在商业区域或受限模式的主权区域不支持。
 
-存在以下限制：
-
-* 无法扫描OneDrive帐户、SharePoint帐户和Google Drive帐户。
-* 无法集成Microsoft Azure信息保护(AIP)标签功能。
-
-
 
 
 | Cloud Volumes ONTAP | 完全支持 
