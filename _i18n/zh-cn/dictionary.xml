@@ -2861,9 +2861,6 @@
   <block id="f4c6f851b00d5518bf888815de279aba" category="cell">注释：</block>
   <block id="34678ee868eeabce720fc4a0fd60c17a" category="cell">完全支持</block>
   <block id="0a44fe605745a017fde35750e5fae36a" category="paragraph">受限模式的政府区域支持。在商业区域或受限模式的主权区域不支持。</block>
-  <block id="9bff93d1123789b473f27a881c3e00c6" category="paragraph">存在以下限制：</block>
-  <block id="b3478a494adde25715314b14559dd6a4" category="list-text">无法扫描OneDrive帐户、SharePoint帐户和Google Drive帐户。</block>
-  <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">无法集成Microsoft Azure信息保护(AIP)标签功能。</block>
   <block id="8adfa152daa2970174717fd5e24151b2" category="cell">您可以在受限模式下将电子钱包与下面列出的受支持许可选项结合使用。</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="cell">内部 ONTAP 集群</block>
   <block id="2bd6e3220a2a60e7217c63bc76d9f73c" category="cell">同时支持使用连接器进行发现和不使用连接器进行发现(直接发现)。
@@ -4109,7 +4106,6 @@ https://support.netapp.com
   <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">连接器3.9.40</block>
   <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">此版本的BlueXP Connector包括对其他操作系统的支持、小的安全改进和错误修复。</block>
   <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">目前、3.9.40版本可用于标准模式和受限模式。</block>
-  <block id="9788cee19c4b5d5971c7a99e340846e8" category="paragraph">现在、在运行以下版本的Red Hat Enterprise Linux (安装了_new_ Connector)的主机上支持Connector：</block>
   <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">这些操作系统需要使用Podman作为容器流程编排工具。</block>
   <block id="3d007e1710eb9efcb8c51296efc8eb4f" category="paragraph">您应了解Podman的要求、已知限制、操作系统支持摘要、拥有RHEL 7主机时应采取的措施、如何入门等。</block>
   <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">了解连接器对RHEL 8和9的支持</block>
@@ -4198,4 +4194,5 @@ https://support.netapp.com
   <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
   <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">了解BlueXP中Cloud Volumes ONTAP管理的新增功能</block>
   <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
+  <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">现在、如果在标准模式或受限模式下使用BlueXP、则在运行具有_new_ Connector安装的以下Red Hat Enterprise Linux版本的主机上支持Connector：</block>
 </blocks>
