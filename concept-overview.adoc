@@ -47,7 +47,6 @@ BlueXP平台提供了数据管理的四大要素：存储、移动性、保护�
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["复制和同步"^]
-* https://bluexp.netapp.com/global-file-cache["边缘缓存"^]
 * https://bluexp.netapp.com/cloud-tiering["分层"^]
 
 

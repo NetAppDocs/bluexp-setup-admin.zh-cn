@@ -525,7 +525,6 @@
   <block id="e216b7a924341f796bca310d1d812baf" category="inline-link">复制和同步</block>
   <block id="f74f0f0050569783e8c306d738c4d91e" category="list-text"><block ref="f74f0f0050569783e8c306d738c4d91e" category="inline-link-rx"></block></block>
   <block id="ba695b3cf8b635f89946173735838948" category="inline-link">边缘缓存</block>
-  <block id="a062a07503c91ac212c0a374cd04a732" category="list-text"><block ref="a062a07503c91ac212c0a374cd04a732" category="inline-link-rx"></block></block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">分层</block>
   <block id="81bcb3e3c1a8f797192f8c3c33e62033" category="list-text"><block ref="81bcb3e3c1a8f797192f8c3c33e62033" category="inline-link-rx"></block></block>
   <block id="83f1d9ca1a0c4c2fc51a371c0d773f76" category="list-text">保护</block>
@@ -4195,4 +4194,7 @@ https://support.netapp.com
   <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">了解BlueXP中Cloud Volumes ONTAP管理的新增功能</block>
   <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
   <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">现在、如果在标准模式或受限模式下使用BlueXP、则在运行具有_new_ Connector安装的以下Red Hat Enterprise Linux版本的主机上支持Connector：</block>
+  <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">2024年6月12日</block>
+  <block id="e7a68d45477c484e2ef45d11f3cea8f8" category="section-title">连接器3.9.41</block>
+  <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">3.9.41版本适用于标准模式和受限模式。</block>
 </blocks>
