@@ -62,7 +62,17 @@ https://access.redhat.com/articles/973163["Red Hat 解决方案：哪些虚拟�
 CPU:: 4 个核心或 4 个 vCPU
 RAM:: 14 GB
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
++
+--
+BlueXP使用 `/opt` 安装 `/opt/application/netapp` 目录及其内容。
+
+--
 /var 中的磁盘空间:: 必须有20 GiB的可用空间
++
+--
+BlueXP需要中的此空间 `/var` 因为Docker或Podman的架构设计是为了在此目录中创建容器。具体来说、他们将在中创建容器 `/var/lib/containers/storage` 目录。外部挂载或符号链接不适用于此空间。
+
+--
 容器流程编排工具:: 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 +
 --
