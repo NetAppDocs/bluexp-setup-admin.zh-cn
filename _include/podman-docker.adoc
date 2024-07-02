@@ -5,7 +5,7 @@
 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 
 * Red Hat Enterprise Linux 8和9需要Podman。
-* Ubuntu、CentOS和Red Hat Enterprise Linux 7需要Docker引擎。
+* Ubuntu需要Docker引擎。
 
 
 .步骤

@@ -481,13 +481,9 @@
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">专用主机</block>
   <block id="3e54bf758f50b15d709edd166d8bf82b" category="list-text">与其他应用程序共享的主机不支持此连接器。主机必须是专用主机。</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">支持的操作系统</block>
-  <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6、7.7、7.8和7.9</block>
-  <block id="eaf5618d0182a88179ac8580cc418219" category="list-text">Red Hat Enterprise Linux 7.6、7.7、7.8和7.9</block>
   <block id="24dfedb0d4bd46f0cd823d4e245f7642" category="paragraph">主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。</block>
   <block id="1aa77ca522dde8d598ae9c2372a7494b" category="paragraph">这些操作系统的英语版本支持 Connector 。</block>
   <block id="1b21b0d71706897b69f108572c444d40" category="list-text">虚拟机管理程序</block>
-  <block id="0791add814d036f56d1303750c34ee31" category="list-text">需要一个经过认证可运行Ubuntu、CentOS或Red Hat Enterprise Linux的裸机或托管虚拟机管理程序。</block>
-  <block id="fb2321bb5267696f60c7247224e6d35f" category="inline-link">Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
   <block id="379f39ccee41ac65b6cdfb0734a7098c" category="list-text">4 个核心或 4 个 vCPU</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
@@ -3963,14 +3959,9 @@ https://support.netapp.com
   <block id="4a789989adf3b86e195463499e01cf12" category="paragraph">为避免出现争用问题，只应将主连接器设置为*Automatic Mode*。</block>
   <block id="f05a0e154340f7c017b3a9bfa5a8bf05" category="inline-link">详细了解容量管理模式</block>
   <block id="e9ec7fb1196fea38d01bfb38780ff401" category="paragraph"><block ref="e9ec7fb1196fea38d01bfb38780ff401" category="inline-link-rx"></block></block>
-  <block id="14d1cdb0a2bd276d491de013f748f36f" category="list-text">CentOS 7.6到7.9</block>
-  <block id="039ad6159af7a5795d5ea8a67ed01be0" category="paragraph">在2024年6月30日之前、NetApp将继续为CentOS 7提供Connector支持。</block>
   <block id="c73bbd3786350b0a8d3577d82afdf489" category="list-text">Red Hat Enterprise Linux</block>
-  <block id="02fd8714cfc51e3b6db51cd61dd286c9" category="list-text">7.6至7.9</block>
-  <block id="733cf095adf4ff17305fe7425a0a7856" category="paragraph">在2024年6月30日之前、NetApp将继续为该连接器提供RHEL 7支持。</block>
   <block id="f335f00e1188cffe57c3d9416ce23c84" category="list-text">8.6至8.9</block>
   <block id="d80ef147e70626ef64e723b33860d715" category="list-text">9.1至9.3</block>
-  <block id="820947c99e79ec5219502b83f9727a99" category="paragraph"><block ref="820947c99e79ec5219502b83f9727a99" category="inline-link-rx"></block></block>
   <block id="bd3df16097ce93a7398107a82c38c714" category="list-text">容器流程编排工具</block>
   <block id="58ee14553c5227edc98c5edc7c7652e1" category="list-text">根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。</block>
   <block id="d6b3d211666107f9448c07f59d0ea45a" category="list-text">Red Hat Enterprise Linux 8和9需要Podman 4.6.1版。</block>
@@ -3979,7 +3970,6 @@ https://support.netapp.com
   <block id="a9beaf3f1f76b7989733494d5f0683c6" category="list-text">必须安装python3</block>
   <block id="43868fbb689a64ee607e9c7e12ad974b" category="list-text">必须安装Podman-compose软件包1.0.6版</block>
   <block id="52b91e466535d0b3aeeecf2ff692015c" category="list-text">必须将Podman-compose添加到PATH环境变量中</block>
-  <block id="d5edf3bedcb983d3a4430b0315f6ddfc" category="list-text">Ubuntu、CentOS和Red Hat Enterprise Linux 7需要Docker引擎。</block>
   <block id="105ab5fc478f234922108aa9df08a4ee" category="section-title">第4步：安装Podman或Docker引擎</block>
   <block id="539f3f37fd39a23eafb39c20263238f1" category="paragraph">如果您计划手动安装Connector软件、则需要通过安装Podman或Docker引擎来准备主机。</block>
   <block id="c124e878249e7549657a0f175026b2f9" category="list-text">Red Hat Enterprise Linux 8和9需要Podman。</block>
@@ -4038,12 +4028,10 @@ https://support.netapp.com
   <block id="cadd936a18695c0f75406a35d18725ee" category="paragraph">此操作系统需要Docker引擎。不支持Podman。</block>
   <block id="42d12ee6ea3719c1f52fd78afdba631f" category="section-title">支持的操作系统摘要</block>
   <block id="4dd65f46069a455736b8e8c7d3fed71f" category="paragraph">下面是前面几节中介绍的操作系统支持的摘要。</block>
-  <block id="4fd86dfd467b8b3461b84edce26c3f3f" category="admonition">在2024年6月30日之前、NetApp将继续在RHEL 7和CentOS 7上支持Connector。</block>
   <block id="d20756c02f9913587a3e83e30f0e10d3" category="list-text">手动安装</block>
   <block id="0809934ab73994b74ff0369462a31319" category="list-text">从BlueXP进行部署</block>
   <block id="12a87db5b86462e9bd05a612793965de" category="list-text">从AWS Marketplace部署</block>
   <block id="21b3bbb098ff9926f5de185468b47efd" category="list-text">从Azure Marketplace部署</block>
-  <block id="9e9b2b37314c458b11ce81a5a7428ce9" category="list-text">Red Hat Enterprise Linux 7.6到7.9</block>
   <block id="fd976d7410ccbb05f33da778aade918e" category="section-title">如何开始使用RHEL 8和9</block>
   <block id="19fbd5208079427f7255588fa19e6216" category="paragraph">有关主机要求、Podman要求以及安装Podman和Connector的步骤的详细信息、请参见以下页面：</block>
   <block id="c7ebd4cc461f15f97b0c6bb4d8aa138a" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block> (标准模式)</block>
@@ -4199,4 +4187,9 @@ https://support.netapp.com
   <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">3.9.41版本适用于标准模式和受限模式。</block>
   <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">BlueXP使用<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> 安装<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> 目录及其内容。</block>
   <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP需要中的此空间<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> 因为Docker或Podman的架构设计是为了在此目录中创建容器。具体来说、他们将在中创建容器<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> 目录。外部挂载或符号链接不适用于此空间。</block>
+  <block id="2e71b3fb71d89f18906d4807a6011e20" category="list-text">支持的操作系统</block>
+  <block id="16affed9b9386a1e06dfd59de9b05f10" category="paragraph">此操作系统的英语版本支持Connector。</block>
+  <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">需要一个经过认证可运行受支持操作系统的裸机或托管虚拟机管理程序。</block>
+  <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Ubuntu需要Docker引擎。</block>
+  <block id="eb79e7adcda869f967a810da89679252" category="paragraph">2024年6月30日、RHEL 7达到了维护结束(EOM)、而CentOS 7达到了生命周期结束(EOL)。2024年6月30日、NetApp停止在这些Linux分发版上支持Connector。</block>
 </blocks>

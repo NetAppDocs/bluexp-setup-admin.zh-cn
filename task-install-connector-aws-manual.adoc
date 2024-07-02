@@ -30,16 +30,8 @@ summary: 要在您自己的Linux主机上手动安装Connector、您需要查看
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6到7.9
-+
-在2024年6月30日之前、NetApp将继续为CentOS 7提供Connector支持。
-
 * Red Hat Enterprise Linux
 +
-** 7.6至7.9
-+
-在2024年6月30日之前、NetApp将继续为该连接器提供RHEL 7支持。
-
 ** 8.6至8.9
 ** 9.1至9.3
 +
@@ -53,12 +45,7 @@ summary: 要在您自己的Linux主机上手动安装Connector、您需要查看
 
 
 --
-虚拟机管理程序:: 需要一个经过认证可运行Ubuntu、CentOS或Red Hat Enterprise Linux的裸机或托管虚拟机管理程序。
-+
---
-https://access.redhat.com/articles/973163["Red Hat 解决方案：哪些虚拟机管理程序已通过认证，可以运行 Red Hat Enterprise Linux ？"^]
-
---
+虚拟机管理程序:: 需要一个经过认证可运行受支持操作系统的裸机或托管虚拟机管理程序。
 CPU:: 4 个核心或 4 个 vCPU
 RAM:: 14 GB
 AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 T3.xlarge 。
@@ -89,7 +76,7 @@ Podman必须满足以下前提条件：
 ** 必须将Podman-compose添加到PATH环境变量中
 
 
-* Ubuntu、CentOS和Red Hat Enterprise Linux 7需要Docker引擎。
+* Ubuntu需要Docker引擎。
 +
 ** 支持的最低版本为9.3.1。
 ** 支持的最大版本为25.0.5。
@@ -107,7 +94,7 @@ Podman必须满足以下前提条件：
 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 
 * Red Hat Enterprise Linux 8和9需要Podman。
-* Ubuntu、CentOS和Red Hat Enterprise Linux 7需要Docker引擎。
+* Ubuntu需要Docker引擎。
 
 
 .步骤

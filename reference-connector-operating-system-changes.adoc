@@ -51,7 +51,7 @@ RHEL升级:: 如果您的现有Connector运行在RHEL 7主机上、我们不支�
 
 == 不再支持RHEL 7和CentOS 7
 
-2024年6月30日、RHEL 7将停止维护(EOM)、而CentOS 7将停止使用(EOL)。在2024年6月30日之前、NetApp将继续在这些Linux分发版上支持Connector。
+2024年6月30日、RHEL 7达到了维护结束(EOM)、而CentOS 7达到了生命周期结束(EOL)。2024年6月30日、NetApp停止在这些Linux分发版上支持Connector。
 
 https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance["Red Hat：关于Red Hat Enterprise Linux 7的须知维护结束"^]
 
@@ -81,9 +81,6 @@ Ubuntu 22.04 LTS仍然支持Connector、并且它是BlueXP和市场部署的默�
 
 下面是前面几节中介绍的操作系统支持的摘要。
 
-
-NOTE: 在2024年6月30日之前、NetApp将继续在RHEL 7和CentOS 7上支持Connector。
-
 [role="tabbed-block"]
 ====
 .标准模式
@@ -92,10 +89,8 @@ NOTE: 在2024年6月30日之前、NetApp将继续在RHEL 7和CentOS 7上支持Co
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6到7.9
 * Red Hat Enterprise Linux
 +
-** 7.6至7.9
 ** 8.6至8.9
 ** 9.1至9.3
 
@@ -115,10 +110,8 @@ NOTE: 在2024年6月30日之前、NetApp将继续在RHEL 7和CentOS 7上支持Co
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6到7.9
 * Red Hat Enterprise Linux
 +
-** 7.6至7.9
 ** 8.6至8.9
 ** 9.1至9.3
 
@@ -133,15 +126,7 @@ NOTE: 在2024年6月30日之前、NetApp将继续在RHEL 7和CentOS 7上支持Co
 --
 .私有模式
 --
-手动安装::
-+
---
-* Ubuntu 22.04 LTS
-* CentOS 7.6到7.9
-* Red Hat Enterprise Linux 7.6到7.9
-
-
---
+手动安装:: Ubuntu 22.04 LTS
 
 
 --
