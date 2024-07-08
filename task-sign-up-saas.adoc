@@ -4,7 +4,7 @@ permalink: task-sign-up-saas.html
 keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
 summary: 您可以从基于Web的控制台访问BlueXP。开始使用BlueXP时、第一步是使用现有NetApp 支持站点 凭据或创建NetApp云登录来注册。 
 ---
-= 注册到BlueXP
+= 注册或登录BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,29 +14,40 @@ summary: 您可以从基于Web的控制台访问BlueXP。开始使用BlueXP时�
 
 
 [role="lead"]
-您可以从基于Web的控制台访问BlueXP。开始使用BlueXP时、第一步是使用现有NetApp 支持站点 凭据或创建NetApp云登录来注册。
+您可以从基于Web的控制台访问BlueXP。开始使用BlueXP后、第一步是使用您的NetApp支持站点凭据或公司目录中的SSO凭据进行注册或登录。
 
 .关于此任务
-您可以使用以下选项之一注册到BlueXP：
+首次访问BlueXP时、您可以使用BlueXP通过以下选项之一进行注册或登录：
 
-* 您的现有NetApp 支持站点 (NSS)凭据
-* 通过指定您的电子邮件地址和密码来登录NetApp云
+BlueXP登录:: 您可以通过创建BlueXP登录名来注册。此身份验证方法要求您指定电子邮件地址和密码。验证电子邮件地址后、您可以登录、然后创建一个BlueXP帐户(如果您还不属于某个帐户)。
+NetApp支持站点(NSS)凭据:: 如果您已有NetApp支持站点凭据、则无需注册BlueXP。您使用NSS凭据登录、然后BlueXP会提示您创建BlueXP帐户(如果您还不属于某个帐户)。
+联合连接:: 您可以使用单点登录使用公司目录中的凭据（联合身份）登录。组织帐户中的第一个用户必须注册BlueXP或使用NSS凭据登录、然后设置身份联合。之后、每个后续用户只需使用其SSO凭据登录即可。
++
+--
+link:concept-federation.html["了解如何在BlueXP中使用身份联合"](英文)
 
+--
 
-这两个选项都支持联合连接、从而可以使用公司目录中的凭据(联合身份)进行单点登录。您可以在注册后设置联合连接。 link:concept-federation.html["了解如何在BlueXP中使用身份联合"]。
 
 .步骤
 . 打开Web浏览器并转到 https://console.bluexp.netapp.com["BlueXP控制台"^]
-. 如果您有NetApp 支持站点 帐户，请直接在*Log In*页面上输入与您的NSS帐户关联的电子邮件地址。
+. 如果您拥有NetApp支持站点帐户或已设置身份联合，请直接在*Log In*页面上输入与您的帐户关联的电子邮件地址。
 +
 如果您有NSS帐户、则可以跳过注册页面。BlueXP将在此首次登录过程中为您注册。
 
-. 如果您没有NSS帐户、但要通过创建NetApp云登录来注册、请选择*注册*。
-. 在*注册*页面上、输入创建NetApp云登录所需的信息。
+. 如果要通过创建BlueXP登录名进行注册，请选择*Sign Up。
++
+.. 在*注册*页上，输入所需信息并选择*下一步*。
 +
 请注意、注册表单中仅允许使用英文字符。
 
-. 出现提示时、请查看最终用户许可协议并接受条款。
+.. 检查您的收件箱中是否有来自NetApp的电子邮件、其中包含验证您的电子邮件地址的说明。
++
+必须先执行此步骤、然后才能登录到BlueXP。
+
+
+
+. 登录后、请查看最终用户许可协议并接受条款。
 . 在*欢迎*页面上、输入帐户的名称。
 +
 如果您的企业已有帐户、而您希望加入该帐户、则应退出BlueXP并要求所有者将您与该帐户关联。所有者将您添加到后、您可以登录并访问此帐户。 link:task-managing-netapp-accounts.html#add-users["了解如何向现有帐户添加成员"]。

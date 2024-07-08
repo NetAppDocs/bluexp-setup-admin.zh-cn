@@ -18,6 +18,32 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
+== 2024年7月8日
+
+
+
+=== 连接器3.9.42
+
+此版本对AWS加拿大西部(卡尔加里)地区的Connector进行了一些小改进、并提供了一些错误修复和支持。
+
+
+
+=== 更新了Docker引擎要求
+
+在Ubuntu主机上安装Connector后、支持的Docker引擎最低版本为23.0.6。它以前是9.3.1。
+
+支持的最大版本仍为21.0.5。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector主机要求"]。
+
+
+
+=== 现在需要电子邮件验证
+
+现在、注册BlueXP的新用户需要先验证其电子邮件地址、然后才能登录。
+
+
+
 == 2024年6月12日
 
 
