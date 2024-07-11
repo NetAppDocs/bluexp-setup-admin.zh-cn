@@ -4209,4 +4209,5 @@ https://support.netapp.com
   <block id="a0171ad16b4ca1d03af998be3b923d6f" category="paragraph">支持的最大版本仍为21.0.5。</block>
   <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">现在需要电子邮件验证</block>
   <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">现在、注册BlueXP的新用户需要先验证其电子邮件地址、然后才能登录。</block>
+  <block id="096051910b67309e40aa0d0e1d279007" category="paragraph">3.9.42版本适用于标准模式和受限模式。</block>
 </blocks>
