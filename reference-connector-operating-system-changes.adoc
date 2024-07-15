@@ -18,15 +18,65 @@ summary: 当我们在特定Linux操作系统上添加和删除对Connector的支
 
 
 
+== 支持的操作系统
+
+以下Linux操作系统支持BlueXP Connector。
+
+[role="tabbed-block"]
+====
+.标准模式
+--
+手动安装::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 到 8.10
+** 9.1至9.3
+
+
+
+
+--
+从BlueXP进行部署:: Ubuntu 22.04 LTS
+从AWS Marketplace部署:: Ubuntu 22.04 LTS
+从Azure Marketplace部署:: Ubuntu 22.04 LTS
+
+
+--
+.受限模式
+--
+手动安装::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 到 8.10
+** 9.1至9.3
+
+
+
+
+--
+从AWS Marketplace部署:: Ubuntu 22.04 LTS
+从Azure Marketplace部署:: Ubuntu 22.04 LTS
+
+
+--
+.私有模式
+--
+手动安装:: Ubuntu 22.04 LTS
+
+
+--
+====
+
+
 == 支持RHEL 8和9
 
-从3.9.40版开始、BlueXP支持将Connector与以下Red Hat Enterprise Linux (RHEL)版本结合使用：
-
-* 8.6至8.9
-* 9.1至9.3
-
-
-请注意以下有关对这些RHEL版本的支持的信息：
+请注意以下有关对RHEL 8和9的支持的信息：
 
 限制::
 +
@@ -77,62 +127,6 @@ Ubuntu 22.04 LTS仍然支持Connector、并且它是BlueXP和市场部署的默�
 
 
 
-== 支持的操作系统摘要
-
-下面是前面几节中介绍的操作系统支持的摘要。
-
-[role="tabbed-block"]
-====
-.标准模式
---
-手动安装::
-+
---
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux
-+
-** 8.6至8.9
-** 9.1至9.3
-
-
-
-
---
-从BlueXP进行部署:: Ubuntu 22.04 LTS
-从AWS Marketplace部署:: Ubuntu 22.04 LTS
-从Azure Marketplace部署:: Ubuntu 22.04 LTS
-
-
---
-.受限模式
---
-手动安装::
-+
---
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux
-+
-** 8.6至8.9
-** 9.1至9.3
-
-
-
-
---
-从AWS Marketplace部署:: Ubuntu 22.04 LTS
-从Azure Marketplace部署:: Ubuntu 22.04 LTS
-
-
---
-.私有模式
---
-手动安装:: Ubuntu 22.04 LTS
-
-
---
-====
-
-
 == 相关链接
 
 
@@ -160,8 +154,4 @@ Ubuntu 22.04 LTS仍然支持Connector、并且它是BlueXP和市场部署的默�
 * https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["创建 Azure NetApp Files 工作环境"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["发现E系列系统"^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["发现StorageGRID 系统"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html["添加 Amazon Kubernetes 集群"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html["添加 Azure Kubernetes 集群"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html["添加 Google Cloud Kubernetes 集群"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["导入OpenShift集群"^]
 
