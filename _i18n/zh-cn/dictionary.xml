@@ -4204,4 +4204,5 @@ https://support.netapp.com
   <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">2024年7月15日</block>
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">支持RHEL 8.10</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">现在、BlueXP支持在使用标准模式或受限模式的Red Hat Enterprise Linux 8.10主机上安装Connector。</block>
+  <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">从连接器3.9.40版开始支持RHEL 8.10。</block>
 </blocks>
