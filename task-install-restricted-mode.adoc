@@ -46,7 +46,7 @@ link:task-prepare-restricted-mode.html#step-3-review-host-requirements["查看�
 
 
 .步骤
-. 转至 https://aws.amazon.com/marketplace/pp/B018REK8QG["AWS Marketplace上的BlueXP页面"^]
+. 转到 https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["在AWS Marketplace上列出BlueXP Connector"^]
 . 在Marketplace页面上，选择*继续订阅*，然后选择*继续配置*。
 +
 image:screenshot-subscribe-aws.png["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
