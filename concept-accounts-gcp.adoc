@@ -36,7 +36,7 @@ image:diagram_permissions_gcp.png["一个概念映像、用于描述用于部署
 
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["为标准模式设置Google Cloud权限"]
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["设置受限模式的权限"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["设置私有模式的权限"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["设置私有模式的权限"]
 
 
 

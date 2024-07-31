@@ -32,7 +32,7 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["为Azure Marketplace部署设置权限"]
 ** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["设置对内置部署的权限"]
 ** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["设置受限模式的权限"]
-** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["设置私有模式的权限"]
+** link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["设置私有模式的权限"]
 
 
 

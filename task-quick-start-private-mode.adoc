@@ -22,7 +22,7 @@ summary: 通过准备您的环境并部署Connector、在私有模式下开始�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] link:task-prepare-private-mode.html["准备部署"]
 [role="quick-margin-list"]
-. 准备一个满足CPU、RAM、磁盘空间、Docker引擎等要求的专用Linux主机。
+. 准备一个专用的Linux主机、以满足CPU、RAM、磁盘空间、容器业务流程工具等方面的要求。
 . 设置网络以访问目标网络。
 . 对于云部署、请在云提供商中设置权限、以便您可以在安装软件后将这些权限与Connector相关联。
 

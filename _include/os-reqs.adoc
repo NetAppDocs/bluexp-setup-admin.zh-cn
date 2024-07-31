@@ -26,10 +26,23 @@
 --
 
 
-支持的操作系统:: Ubuntu 22.04 LTS
+支持的操作系统::
 +
 --
-此操作系统的英语版本支持Connector。
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 到 8.10
+** 9.1至9.3
++
+主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
+
++
+这些操作系统的英语版本支持 Connector 。
+
+
+
+
 
 --
 

@@ -157,7 +157,7 @@ BlueXP客户管理员可以直接从BlueXP、云提供商的市场或在您自�
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["设置受限模式的权限"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["设置私有模式的权限"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["设置私有模式的权限"]
 
 
 要查看Connector日常操作所需的确切权限、请参阅以下页面：

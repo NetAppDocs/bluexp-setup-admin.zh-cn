@@ -67,7 +67,19 @@ summary: 当我们在特定Linux操作系统上添加和删除对Connector的支
 --
 .私有模式
 --
-手动安装:: Ubuntu 22.04 LTS
+手动安装::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 到 8.10
+** 9.1至9.3
+
+
+
+
+--
 
 
 --
@@ -87,12 +99,7 @@ summary: 当我们在特定Linux操作系统上添加和删除对Connector的支
 
 --
 容器流程编排工具:: 在RHEL 8或9主机上安装Connector时、需要使用Podman作为容器流程编排工具。RHEL 8和9不支持Docker引擎。
-+
---
-link:task-install-connector-on-prem.html#step-1-review-host-requirements["查看Podman的要求"]。
-
---
-部署模式:: 在标准模式或受限模式下使用BlueXP时、支持RHEL 8和9。
+部署模式:: 在标准模式、受限模式和专用模式下使用BlueXP时、支持RHEL 8和9。
 仅限全新手动安装:: 在内部或云中运行的主机上手动安装Connector时、_new_ Connector安装支持RHEL 8和9。
 RHEL升级:: 如果您的现有Connector运行在RHEL 7主机上、我们不支持将RHEL 7操作系统升级到RHEL 8或9。 <<RHEL 7或CentOS 7上的现有连接器,详细了解RHEL 7或CentOS 7上的现有连接器>>。
 
@@ -135,13 +142,28 @@ Ubuntu 22.04 LTS仍然支持Connector、并且它是BlueXP和市场部署的默�
 
 有关主机要求、Podman要求以及安装Podman和Connector的步骤的详细信息、请参见以下页面：
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在内部安装和设置连接器"] (标准模式)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["在AWS中手动安装Connector"] (标准模式)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["在Azure中手动安装Connector"] (标准模式)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["在Google Cloud中手动安装Connector"] (标准模式)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["准备在受限模式下部署"]
+[role="tabbed-block"]
+====
+.标准模式
+--
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在内部安装和设置连接器"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["在AWS中手动安装Connector"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["在Azure中手动安装Connector"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["在Google Cloud中手动安装Connector"]
 
 
+--
+.受限模式
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html["准备在受限模式下部署"]
+
+--
+.私有模式
+--
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html["准备在专用模式下部署"]
+
+--
+====
 
 
 === 如何重新发现您的工作环境
