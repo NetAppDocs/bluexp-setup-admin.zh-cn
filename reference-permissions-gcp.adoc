@@ -296,10 +296,6 @@ includedPermissions:
 - compute.instances.addAccessConfig | 启用BlueXP分类。 
 
 
-| - container.Clusters。get
-- container.Clusters。list | 发现在 Google Kubernetes Engine 中运行的 Kubernetes 集群。 
-
-
 | - compute.instanceGroups.get
 - compute。addresses.get
 - compute.instances.updateNetworkInterface | 在Cloud Volumes ONTAP HA对上创建和管理Storage VM。 

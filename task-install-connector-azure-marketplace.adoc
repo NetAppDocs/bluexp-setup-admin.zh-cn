@@ -147,9 +147,9 @@ https://mysupport.netapp.com
 
 创建Connector时、您需要选择符合以下要求的虚拟机类型。
 
-CPU:: 4 个核心或 4 个 vCPU
-RAM:: 14 GB
-Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 DS3 v2 。
+CPU:: 8 个核心或 8 个 vCPU
+RAM:: 32 GB
+Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。建议使用Standard"(标准)_D8s_v3。
 
 
 
@@ -409,7 +409,7 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 配置虚拟机时，请注意以下事项：
 
 +
-** *虚拟机大小*：选择满足CPU和RAM要求的虚拟机大小。我们建议使用 DS3 v2 。
+** *虚拟机大小*：选择满足CPU和RAM要求的虚拟机大小。建议使用Standard"(标准)_D8s_v3。
 ** *磁盘*：此连接器可以对HDD或SSD磁盘执行最佳性能。
 ** *网络安全组*：Connector需要使用SSH、HTTP和HTTPS进行入站连接。
 +

@@ -60,7 +60,7 @@ image:screenshot-subscribe-aws.png["屏幕截图显示了 AWS Marketplace 上的
 +
 ** *名称和标记*：输入实例的名称和标记。
 ** *应用程序和操作系统映像*：跳过此部分。已选择连接器AMI。
-** *实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(建议使用T3.x大 容量)。
+** *实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(建议使用t3.2x大型)。
 ** *密钥对(login)*：选择要用于安全连接到实例的密钥对。
 ** *网络设置*：根据需要编辑网络设置：
 +
@@ -123,7 +123,7 @@ image:screenshot-gov-cloud-mktp.png["在AWS Marketplace中搜索BlueXP产品后�
 
 . 按照提示配置和部署实例：
 +
-** *选择一个实例类型*：根据区域可用性、选择一个受支持的实例类型(建议使用T3.xlarge)。
+** *选择实例类型*：根据地区可用性，选择支持的实例类型之一(建议使用t3.2x大)。
 +
 link:task-prepare-restricted-mode.html["查看实例要求"]。
 
@@ -174,7 +174,7 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["了解�
 配置虚拟机时，请注意以下事项：
 
 +
-** *虚拟机大小*：选择满足CPU和RAM要求的虚拟机大小。我们建议使用 DS3 v2 。
+** *虚拟机大小*：选择满足CPU和RAM要求的虚拟机大小。建议使用Standard"(标准)_D8s_v3。
 ** *磁盘*：此连接器可以对HDD或SSD磁盘执行最佳性能。
 ** *公共IP*：如果要对Connector VM使用公共IP地址、则该IP地址必须使用基本SKU以确保BlueXP使用此公共IP地址。
 +

@@ -45,22 +45,6 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 ====
 对于标准区域、权限会分布在两个策略中。由于AWS中受管策略的字符大小上限、因此需要使用两个策略。
 
-第一个策略为以下服务提供权限：
-
-* Amazon S3 存储分段发现
-* 备份和恢复
-* 分类
-* Cloud Volumes ONTAP
-* 适用于 ONTAP 的 FSX
-* 分层
-
-
-第二个策略为以下服务提供权限：
-
-* 边缘缓存
-* Kubernetes
-
-
 [role="tabbed-block"]
 =====
 .策略1
@@ -1260,29 +1244,6 @@ Connector会发出以下API请求、以便在AWS中部署和管理Cloud Volumes 
 
 | 检查可用性区域是否为AWS本地区域、并验证所有部署参数是否兼容 | EC2：特性可用性区域 | 是的。 | 否 | 是的。 
 |===
-
-
-=== 边缘缓存
-
-Connector会发出以下API请求、以便在部署期间部署BlueXP边缘缓存实例：
-
-* CloudFormation：Describe堆栈
-* CloudWatch：GetMetricStatistics
-* CloudFormation：ListStack
-
-
-
-
-=== Kubernetes
-
-Connector会发出以下API请求来发现和管理Amazon EKS集群：
-
-* EC2：Describe注册
-* EKS：ListClusters
-* EKS：Describe集群
-* IAM：GetInstanceProfile
-
-
 
 
 == 更改日志

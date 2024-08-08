@@ -59,7 +59,7 @@ link:reference-user-roles.html["详细了解这些角色"]。
 
 * Cloud Volumes ONTAP 系统
 * 内部ONTAP 集群
-* Kubernetes集群
+* StorageGRID系统
 
 
 link:task-setting-up-netapp-accounts.html["了解如何添加工作空间"]。

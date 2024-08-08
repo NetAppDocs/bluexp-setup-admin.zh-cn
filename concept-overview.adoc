@@ -56,7 +56,6 @@ BlueXP平台提供了数据管理的四大要素：存储、移动性、保护�
 --
 * https://bluexp.netapp.com/cloud-backup["备份和恢复"^]
 * https://bluexp.netapp.com/replication["Replication"^]
-* https://bluexp.netapp.com/solutions/kubernetes["为Kubbernetes工作负载提供数据保护"^]
 
 
 --

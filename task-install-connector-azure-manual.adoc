@@ -46,9 +46,9 @@ summary: 要在您自己的Linux主机上手动安装Connector、您需要查看
 
 --
 虚拟机管理程序:: 需要一个经过认证可运行受支持操作系统的裸机或托管虚拟机管理程序。
-CPU:: 4 个核心或 4 个 vCPU
-RAM:: 14 GB
-Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 DS3 v2 。
+CPU:: 8 个核心或 8 个 vCPU
+RAM:: 32 GB
+Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。建议使用Standard"(标准)_D8s_v3。
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
 +
 --
@@ -61,10 +61,39 @@ BlueXP使用 `/opt` 安装 `/opt/application/netapp` 目录及其内容。
 BlueXP需要中的此空间 `/var` 因为Docker或Podman的架构设计是为了在此目录中创建容器。具体来说、他们将在中创建容器 `/var/lib/containers/storage` 目录。外部挂载或符号链接不适用于此空间。
 
 --
+
+
+[[podman-versions]]
 容器流程编排工具:: 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 +
 --
-* Red Hat Enterprise Linux 8和9需要Podman 4.6.1版。
+* Red Hat Enterprise Linux 8和9需要Podman。
++
+[cols="50a,50a"]
+|===
+| RHEL 版本 | 支持的Podman版本 
+
+
+ a| 
+RHEL 8.6至8.9
+ a| 
+Podman 4.6.1
+
+
+
+ a| 
+RHEL 8.10
+ a| 
+Podman 4.6.1和4.9.4
+
+
+
+ a| 
+RHEL 9.1至9.3
+ a| 
+Podman 4.6.1
+
+|===
 +
 Podman必须满足以下前提条件：
 
@@ -101,7 +130,7 @@ Podman必须满足以下前提条件：
 ====
 .Podman
 --
-安装Podman 4.6.1。
+安装支持的Podman版本。<<podman-versions,查看BlueXP  支持的Podman版本>>(英文)
 
 .步骤
 . 如果在主机上安装了Podman-Docker软件包、请将其删除。
@@ -121,16 +150,22 @@ Podman可从Red Hat Enterprise Linux官方存储库获得。
 +
 [source, cli]
 ----
-sudo dnf install podman-2:4.6.1
+sudo dnf install podman-2:<version>
 ----
++
+其中<version>是您正在安装的Podman的受支持版本。<<podman-versions,查看BlueXP  支持的Podman版本>>(英文)
+
 +
 对于Red Hat Enterprise Linux 8：
 
 +
 [source, cli]
 ----
-sudo dnf install podman-3:4.6.1
+sudo dnf install podman-3:<version>
 ----
++
+其中<version>是您正在安装的Podman的受支持版本。<<podman-versions,查看BlueXP  支持的Podman版本>>(英文)
+
 . 启用并启动Podman.sSocket服务。
 +
 [source, cli]

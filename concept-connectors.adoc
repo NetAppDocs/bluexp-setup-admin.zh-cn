@@ -68,10 +68,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 * 灾难恢复
 * E系列系统
 * 经济效益^1^
-* 边缘缓存
 * Google Cloud存储分段
-* Kubernetes 集群
-* 迁移报告
 * 与BlueXP数据服务的内部ONTAP 集群集成
 * 运营弹性^1^
 * 勒索软件保护

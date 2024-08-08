@@ -50,20 +50,20 @@
 虚拟机管理程序:: 需要一个经过认证可运行受支持操作系统的裸机或托管虚拟机管理程序。
 
 
-CPU:: 4 个核心或 4 个 vCPU
-RAM:: 14 GB
+CPU:: 8 个核心或 8 个 vCPU
+RAM:: 32 GB
 
 
-AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 T3.xlarge 。
+AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用t3.2倍大。
 
 
 密钥对:: 创建连接器时、您需要选择要用于实例的EC2密钥对。
 
 
-Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用 DS3 v2 。
+Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。建议使用Standard"(标准)_D8s_v3。
 
 
-Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。建议使用n2-standard-4。
+Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-8。
 +
 --
 在具有支持的操作系统的VM实例上、Google Cloud支持Connector https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["屏蔽VM功能"^]
@@ -98,10 +98,37 @@ https://docs.docker.com/engine/install/["查看安装说明"^]
 --
 
 
+[[podman-versions]]
 容器流程编排工具:: 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 +
 --
-* Red Hat Enterprise Linux 8和9需要Podman 4.6.1版。
+* Red Hat Enterprise Linux 8和9需要Podman。
++
+[cols="50a,50a"]
+|===
+| RHEL 版本 | 支持的Podman版本 
+
+
+ a| 
+RHEL 8.6至8.9
+ a| 
+Podman 4.6.1
+
+
+
+ a| 
+RHEL 8.10
+ a| 
+Podman 4.6.1和4.9.4
+
+
+
+ a| 
+RHEL 9.1至9.3
+ a| 
+Podman 4.6.1
+
+|===
 +
 Podman必须满足以下前提条件：
 

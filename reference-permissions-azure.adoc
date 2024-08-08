@@ -166,7 +166,10 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
                     "Microsoft.Compute/images/write",
-                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/write",
+                    "Microsoft.Compute/virtualMachineScaleSets/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/delete"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -698,38 +701,16 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 
 
 | 在创建期间对存储帐户进行加密 | microsoft.ManagedIdentity/userAssignedIdentities/assign/action | 是的。 | 是的。 | 否 
+
+
+.3+| 在灵活的流程编排模式下使用虚拟机扩展集、以便为Cloud Volumes ONTAP指定特定分区 | Microsoft。 计算/虚拟MachineScaleSets/Write | 是的。 | 否 | 否 
+
+
+| Microsoft。 计算/虚拟MachineScaleSets/Read | 是的。 | 否 | 否 
+
+
+| Microsoft。 计算/虚拟MachineScaleSets/delete | 否 | 否 | 是的。 
 |===
-
-
-=== 边缘缓存
-
-使用BlueXP边缘缓存时、Connector会发出以下API请求：
-
-* microsoft.Insights /指标/读取
-* Microsoft.Compute/virtualMachines/extensions/write
-* Microsoft.Compute/virtualMachines/extensions/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
-* Microsoft.Network/networkInterfaces/delete
-* Microsoft.Network/networkSecurityGroups/delete
-* microsoft.resources/deployments/delete
-
-
-
-
-=== Kubernetes
-
-Connector发出以下API请求、以发现和管理Azure Kubernetes Service (AKS)中运行的集群：
-
-* Microsoft.Compute/virtualMachines/read
-* microsoft.resources/subscriptions/locations/read
-* microsoft.resources/subscriptions/operationresults/read
-* microsoft.resources/subscriptions/resources/read
-* microsoft.resources/subscriptions/resources/resources/read
-* microsoft.ContainerService/managedClusters/Read
-* microsoft.ContainerService/managedClusters/ListClusterUserCredential/action
-
-
 
 
 === 分层
@@ -754,6 +735,17 @@ Connector会为日常操作发出以下API请求。
 == 更改日志
 
 添加和删除权限后、我们将在以下各节中记录这些权限。
+
+
+
+=== 2024年8月7日
+
+以下权限已添加到JSON策略中、因为Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限：
+
+* Microsoft。 计算/虚拟MachineScaleSets/Write
+* Microsoft。 计算/虚拟MachineScaleSets/Read
+* Microsoft。 计算/虚拟MachineScaleSets/delete
+
 
 
 
