@@ -4199,4 +4199,5 @@ https://support.netapp.com
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">支持信息板改进</block>
   <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">访问时<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>，BlueXP  使用自签名证书进行HTTPS访问。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。安装证书后、BlueXP  会在用户访问基于Web的控制台时使用CA签名的证书。</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
+  <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">软件更新</block>
 </blocks>

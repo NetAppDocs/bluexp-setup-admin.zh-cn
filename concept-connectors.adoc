@@ -50,6 +50,7 @@ _Connector_是在云网络或内部网络中运行的NetApp软件。它会执行
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["了解有关内部ONTAP 集群的发现和管理选项的更多信息"^]
 
+* 软件更新
 * 可持续性
 
 
