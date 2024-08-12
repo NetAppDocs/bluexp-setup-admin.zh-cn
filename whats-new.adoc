@@ -18,7 +18,7 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
-== 2024年8月8日
+== 2024 年 8 月 8 日
 
 
 
@@ -27,24 +27,6 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 此版本包含一些小改进、错误修复以及对新Azure权限的要求。
 
 3.9.43版本适用于标准模式和受限模式。
-
-
-
-==== Azure权限更新
-
-我们更新了适用于Azure的Connector策略、以包括以下权限：
-
-[source, json]
-----
-"Microsoft.Compute/virtualMachineScaleSets/write",
-"Microsoft.Compute/virtualMachineScaleSets/read",
-"Microsoft.Compute/virtualMachineScaleSets/delete"
-----
-Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有连接器、并且要使用此新功能、则需要将这些权限添加到与您的Azure凭据关联的自定义角色。
-
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["了解Cloud Volumes ONTAP对虚拟机扩展集的支持"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["查看Connector的Azure权限"](英文)
-
 
 
 

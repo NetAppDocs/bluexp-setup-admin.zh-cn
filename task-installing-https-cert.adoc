@@ -14,7 +14,7 @@ summary: 默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS
 
 
 [role="lead"]
-默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS访问。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。
+访问时 https://console.bluexp.netapp.com/["基于Web的BlueXP控制台"^]，BlueXP  使用自签名证书进行HTTPS访问。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。安装证书后、BlueXP  会在用户访问基于Web的控制台时使用CA签名的证书。
 
 
 

@@ -701,15 +701,6 @@ Connector会发出以下API请求以在Azure中部署和管理Cloud Volumes ONTA
 
 
 | 在创建期间对存储帐户进行加密 | microsoft.ManagedIdentity/userAssignedIdentities/assign/action | 是的。 | 是的。 | 否 
-
-
-.3+| 在灵活的流程编排模式下使用虚拟机扩展集、以便为Cloud Volumes ONTAP指定特定分区 | Microsoft。 计算/虚拟MachineScaleSets/Write | 是的。 | 否 | 否 
-
-
-| Microsoft。 计算/虚拟MachineScaleSets/Read | 是的。 | 否 | 否 
-
-
-| Microsoft。 计算/虚拟MachineScaleSets/delete | 否 | 否 | 是的。 
 |===
 
 
@@ -735,17 +726,6 @@ Connector会为日常操作发出以下API请求。
 == 更改日志
 
 添加和删除权限后、我们将在以下各节中记录这些权限。
-
-
-
-=== 2024年8月7日
-
-以下权限已添加到JSON策略中、因为Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限：
-
-* Microsoft。 计算/虚拟MachineScaleSets/Write
-* Microsoft。 计算/虚拟MachineScaleSets/Read
-* Microsoft。 计算/虚拟MachineScaleSets/delete
-
 
 
 

@@ -186,7 +186,6 @@
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。</block>
   <block id="288bb352dffecbb16aa463067359ba15" category="summary">默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS访问。您可以安装由证书颁发机构（ CA ）签名的证书、该证书提供比自签名证书更好的安全保护。</block>
   <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">安装HTTPS证书以确保安全访问</block>
-  <block id="094e745d52cd94c819bfa88386ee94b4" category="paragraph">默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS访问。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">开始之前</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">了解如何操作</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">您需要先创建Connector、然后才能更改BlueXP设置。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
@@ -4057,29 +4056,15 @@ https://support.netapp.com
   <block id="33ff271280dc3e0c2c15bf39aeefdeb9" category="list-text">EC2实例类型为t3.2 x大。</block>
   <block id="f637fe372218bb6ee39fd481301dc99f" category="list-text">VM类型为Standard"(标准)_D8s_v3。</block>
   <block id="d8c41b98cc9656d72fb99f79ff2425ba" category="list-text">VM实例为n2-standard-8。</block>
-  <block id="d44b908365d28414a72f5b042c756f89" category="cell">在灵活的流程编排模式下使用虚拟机扩展集、以便为Cloud Volumes ONTAP指定特定分区</block>
-  <block id="e32bb1c8b64cbfd8bf1712551cd39a15" category="cell">Microsoft。 计算/虚拟MachineScaleSets/Write</block>
-  <block id="da4802bef00f05ba8274ecb054d0388f" category="cell">Microsoft。 计算/虚拟MachineScaleSets/Read</block>
-  <block id="d1cca5c5928df2cf3cc230adb4148b49" category="cell">Microsoft。 计算/虚拟MachineScaleSets/delete</block>
-  <block id="b8b20e3ad75113ec2b241d05fd702223" category="section-title">2024年8月7日</block>
-  <block id="51ec06da7f63e08ee6add2ed46d50777" category="paragraph">以下权限已添加到JSON策略中、因为Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限：</block>
   <block id="784880161a798d3c05d73e33c5740f73" category="list-text">*虚拟机大小*：选择满足CPU和RAM要求的虚拟机大小。建议使用Standard"(标准)_D8s_v3。</block>
   <block id="23997c4fb216c03ff31d0f8094671142" category="list-text">*CPU*：8核或8个vCPU</block>
   <block id="3baace5508f5436415356f7f1c718d50" category="list-text">*RAM*：32 GB</block>
   <block id="e5ee5282a10eef25059e919331c8ea5e" category="list-text">*机器类型*：建议使用n2-standard-8。</block>
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">*选择实例类型*：根据地区可用性，选择支持的实例类型之一(建议使用t3.2x大)。</block>
   <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">此时、系统将通过电子邮件发送有关以下BlueXP  功能和服务的通知：Connector、BlueXP  数字钱包、BlueXP  副本和同步、BlueXP  备份和恢复以及BlueXP  分层。未来版本将添加其他服务。</block>
-  <block id="7940343b35479ccb2e54485d30ff86b4" category="section-title">2024年8月8日</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">连接器3.9.43</block>
   <block id="be1b4db310d7b6590c7af9eb4751b6ce" category="paragraph">此版本包含一些小改进、错误修复以及对新Azure权限的要求。</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">3.9.43版本适用于标准模式和受限模式。</block>
-  <block id="1933591d3cd5758cc59a0316d8d38362" category="section-title">Azure权限更新</block>
-  <block id="257ae732be2a868d9475f68f934cf7b1" category="paragraph">我们更新了适用于Azure的Connector策略、以包括以下权限：</block>
-  <block id="c78a856f5972910d86f9b588fe9783e6" category="paragraph">Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有连接器、并且要使用此新功能、则需要将这些权限添加到与您的Azure凭据关联的自定义角色。</block>
-  <block id="33deee49118b5c8f42cddf68ea82eb12" category="inline-link">了解Cloud Volumes ONTAP对虚拟机扩展集的支持</block>
-  <block id="6f165e27b35c2eee0268707accdba9ba" category="list-text"><block ref="6f165e27b35c2eee0268707accdba9ba" category="inline-link-rx"></block></block>
-  <block id="21952e368aec0a06297b408b56d39588" category="inline-link">查看Connector的Azure权限</block>
-  <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>(英文)</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">更新了CPU和RAM要求</block>
   <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">为了提高BlueXP  和连接器的可靠性并提高其性能、我们现在需要为连接器虚拟机增加CPU和RAM：</block>
   <block id="ab0a05181cb2ac15cc8151f858731517" category="list-text">CPU：8个核心或8个vCPU (以前需要4个)</block>
@@ -4212,4 +4197,6 @@ https://support.netapp.com
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Azure NetApp Files 增强功能</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021年2月9日</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">支持信息板改进</block>
+  <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">访问时<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>，BlueXP  使用自签名证书进行HTTPS访问。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。安装证书后、BlueXP  会在用户访问基于Web的控制台时使用CA签名的证书。</block>
+  <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
 </blocks>
