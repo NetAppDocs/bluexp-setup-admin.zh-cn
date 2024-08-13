@@ -4197,7 +4197,13 @@ https://support.netapp.com
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Azure NetApp Files 增强功能</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021年2月9日</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">支持信息板改进</block>
-  <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">访问时<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>，BlueXP  使用自签名证书进行HTTPS访问。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。安装证书后、BlueXP  会在用户访问基于Web的控制台时使用CA签名的证书。</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">2024 年 8 月 8 日</block>
   <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">软件更新</block>
+  <block id="66c9d0cfd45dc71069845154fb72a8b8" category="list-text">支持的连接器版本</block>
+  <block id="4dc9e2f6078fbeb26bbafe7461aa7ecf" category="list-text">从以下版本的Connector开始、支持RHEL 8和9：</block>
+  <block id="1316cb3dbdfa1d8facde6d30372df833" category="list-text">3.9.40在标准模式或受限模式下使用BlueXP  时</block>
+  <block id="c8fff1f28296d1ce9e5b594252b146c8" category="list-text">3.9.42在专用模式下使用BlueXP  时</block>
+  <block id="70328d3965555bdfe7c71386e9e25887" category="doc">安装用于Web控制台访问的CA签名证书</block>
+  <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">默认情况下、BlueXP  使用自签名SSL证书通过HTTPS连接提供对的安全访问<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> 。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。安装证书后、BlueXP  会在用户访问基于Web的控制台时使用CA签名的证书。</block>
+  <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">请注意、默认密码使用的是注册电子邮件地址的一次性密码(OTP)。每次尝试登录时都会生成一个新的OTP。</block>
 </blocks>

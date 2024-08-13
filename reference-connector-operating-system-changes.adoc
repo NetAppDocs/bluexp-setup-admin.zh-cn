@@ -100,6 +100,14 @@ summary: 当我们在特定Linux操作系统上添加和删除对Connector的支
 --
 容器流程编排工具:: 在RHEL 8或9主机上安装Connector时、需要使用Podman作为容器流程编排工具。RHEL 8和9不支持Docker引擎。
 部署模式:: 在标准模式、受限模式和专用模式下使用BlueXP时、支持RHEL 8和9。
+支持的连接器版本:: 从以下版本的Connector开始、支持RHEL 8和9：
++
+--
+* 3.9.40在标准模式或受限模式下使用BlueXP  时
+* 3.9.42在专用模式下使用BlueXP  时
+
+
+--
 仅限全新手动安装:: 在内部或云中运行的主机上手动安装Connector时、_new_ Connector安装支持RHEL 8和9。
 RHEL升级:: 如果您的现有Connector运行在RHEL 7主机上、我们不支持将RHEL 7操作系统升级到RHEL 8或9。 <<RHEL 7或CentOS 7上的现有连接器,详细了解RHEL 7或CentOS 7上的现有连接器>>。
 
