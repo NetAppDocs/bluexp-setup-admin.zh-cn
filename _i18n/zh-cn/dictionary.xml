@@ -185,7 +185,6 @@
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。</block>
   <block id="288bb352dffecbb16aa463067359ba15" category="summary">默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS访问。您可以安装由证书颁发机构（ CA ）签名的证书、该证书提供比自签名证书更好的安全保护。</block>
-  <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">安装HTTPS证书以确保安全访问</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">开始之前</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">了解如何操作</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">您需要先创建Connector、然后才能更改BlueXP设置。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
@@ -2857,7 +2856,6 @@
   <block id="0d1f9ac2ac0f76a6809ba58855ffa7f5" category="list-text">选项1：使用系统分配的托管身份为Azure虚拟机分配自定义角色。</block>
   <block id="d31f2fb13b2fed83440a04d526a6ca7d" category="list-text">选项2：为BlueXP提供具有所需权限的Azure服务主体的凭据。</block>
   <block id="c4da032e0a3943e2f3a51ca860a71925" category="list-text">如果您计划在自己的主机上手动安装软件、请在虚拟机上启用系统分配的托管身份、以便您可以通过自定义角色提供所需的Azure权限。</block>
-  <block id="f53835e0f369158c476f99fda577e700" category="sidebar">设置和管理文档</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
@@ -3493,7 +3491,6 @@ https://support.netapp.com
   <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22.04 LTS</block>
   <block id="fd1e4807d8caf9eb7b22acef39d3e5ce" category="list-text">连接到Connector的Linux VM。</block>
   <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
-  <block id="72b013396e56865d3673702aa9bcc731" category="paragraph"><block ref="53c9ecf44ffc5c93a5a42f4cda983463" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="6ae4e7f185de6791c9b45f3d273959f9" category="cell">\https://aiq.netapp.com</block>
   <block id="034ade3fc7b98591feafb7b0039b2724" category="cell">需要访问BlueXP数字顾问。</block>
   <block id="345dbd48a6c734a7dc3b743f014493be" category="paragraph">服务帐户充当"用户"、可以通过授权API调用BlueXP来实现自动化。这样可以更轻松地管理自动化，因为您不需要基于可以随时离开公司的真实用户帐户构建自动化脚本。</block>
@@ -3611,7 +3608,6 @@ https://support.netapp.com
   <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">屏幕截图、显示了在用户设置下编辑您的姓名的功能。</block>
   <block id="4a784443543a41df794122c52fae1df7" category="paragraph">如果您使用联合连接或NetApp 支持站点 帐户登录、则不支持编辑您的名称。</block>
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">您需要更新每个Cloud Volumes ONTAP系统的备份位置。</block>
-  <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">从Cloud Volumes ONTAP命令行界面运行以下命令以显示当前备份目标：</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">运行以下命令以更新备份目标的IP地址：</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
@@ -4206,4 +4202,8 @@ https://support.netapp.com
   <block id="70328d3965555bdfe7c71386e9e25887" category="doc">安装用于Web控制台访问的CA签名证书</block>
   <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">默认情况下、BlueXP  使用自签名SSL证书通过HTTPS连接提供对的安全访问<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> 。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。安装证书后、BlueXP  会在用户访问基于Web的控制台时使用CA签名的证书。</block>
   <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">请注意、默认密码使用的是注册电子邮件地址的一次性密码(OTP)。每次尝试登录时都会生成一个新的OTP。</block>
+  <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">在Cloud Volumes ONTAP命令行界面中、将权限级别设置为高级：</block>
+  <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">运行以下命令以显示当前备份目标：</block>
+  <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
+  <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">BlueXP  设置和管理文档</block>
 </blocks>

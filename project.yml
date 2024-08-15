@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Setup and administration
+  name: BlueXP setup and administration
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,7 +11,7 @@ settings:
   langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: 设置和管理文档
+  - title: BlueXP  设置和管理文档
     url: "/index.html"
   - title: 发行说明
     entries:
@@ -119,7 +119,7 @@ sidebar:
       entries:
       - title: 维护虚拟机和操作系统
         url: "/task-maintain-connectors.html"
-      - title: 安装HTTPS证书以确保安全访问
+      - title: 安装用于Web控制台访问的CA签名证书
         url: "/task-installing-https-cert.html"
       - title: 配置Connector以使用代理服务器
         url: "/task-configuring-proxy.html"

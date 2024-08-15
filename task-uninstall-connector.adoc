@@ -48,7 +48,7 @@ _silent_ 运行此脚本，而不提示您进行确认。
 . 连接到Connector的Linux VM。
 . 在 Linux 主机中，运行以下命令：
 +
-`./opt/application/netapp/ds/cleanup.sh`
+`/opt/application/netapp/ds/cleanup.sh`
 `rm -rf /opt/application/netapp/ds`
 
 
