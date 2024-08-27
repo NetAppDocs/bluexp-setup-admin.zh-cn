@@ -36,7 +36,7 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 ----
 Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有连接器、并且要使用此新功能、则需要将这些权限添加到与您的Azure凭据关联的自定义角色。
 
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解Cloud Volumes ONTAP对虚拟机扩展集的支持"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解Cloud Volumes ONTAP 9.151版本"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["查看Connector的Azure权限"](英文)
 
 

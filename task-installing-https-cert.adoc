@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-installing-https-cert.html 
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
-summary: 默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS访问。您可以安装由证书颁发机构（ CA ）签名的证书、该证书提供比自签名证书更好的安全保护。 
+summary: 在受限模式或专用模式下使用BlueXP  时、安装用于访问基于Web的控制台的CA签名证书。 
 ---
-= 安装用于Web控制台访问的CA签名证书
+= 安装CA签名的证书以进行基于Web的控制台访问
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 默认情况下、BlueXP使用自签名证书对Web控制台进行HTTPS
 
 
 [role="lead"]
-默认情况下、BlueXP  使用自签名SSL证书通过HTTPS连接提供对的安全访问 https://console.bluexp.netapp.com/["基于Web的BlueXP控制台"^] 。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。安装证书后、BlueXP  会在用户访问基于Web的控制台时使用CA签名的证书。
+当您在受限模式或私有模式下使用BlueXP  时、可以从云区域或内部部署的Connector虚拟机访问用户界面。默认情况下、BlueXP  使用自签名SSL证书为连接器上运行的基于Web的控制台提供安全的HTTPS访问。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。安装证书后、BlueXP  会在用户访问基于Web的控制台时使用CA签名的证书。
 
 
 
 == 开始之前
 
-您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
+您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何创建 Connector"]。
 
 
 
@@ -66,7 +66,7 @@ BlueXP将显示证书签名请求。
 
 
 .结果
-现在、BlueXP使用CA签名证书提供安全的HTTPS访问。下图显示了为安全访问配置的BlueXP帐户：
+现在、BlueXP使用CA签名证书提供安全的HTTPS访问。下图显示了一个为安全访问配置的Connector：
 
 image:screenshot_https_cert.gif["屏幕截图：在安装签名证书后显示 HTTPS 设置页面。该页显示证书属性和续订证书的选项。"]
 
