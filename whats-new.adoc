@@ -69,7 +69,7 @@ Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有�
 * Google Cloud：n2-standard-8
 
 
-此要求适用于新连接器和现有连接器。
+更新后的CPU和RAM要求适用于所有新连接器。对于现有连接器、建议增加CPU和RAM、以提高性能和可靠性。
 
 
 
