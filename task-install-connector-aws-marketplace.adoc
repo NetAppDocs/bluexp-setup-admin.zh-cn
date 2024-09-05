@@ -193,7 +193,7 @@ AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们�
 . 转到 https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["在AWS Marketplace上列出BlueXP Connector"^]
 . 在"商城"页面上、选择*继续订阅*。
 +
-image:screenshot-subscribe-aws.png["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
+image:screenshot-subscribe-aws-continue.png["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
 
 . 要订阅软件，请选择*接受条款*。
 +

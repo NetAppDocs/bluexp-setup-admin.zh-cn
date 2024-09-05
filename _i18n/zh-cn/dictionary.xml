@@ -2015,7 +2015,6 @@
   <block id="b5599f9f352b1fa4cb2153ba99bdb13c" category="list-text">一个IAM角色、其附加策略包括Connector所需的权限。</block>
   <block id="dfcbfa4ce7dbf520f2b737359dfbc591" category="list-text">为IAM用户订阅和取消订阅AWS Marketplace的权限。</block>
   <block id="648fca9db3d7e8e554a59d3519d8b0f6" category="inline-image-macro">屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。</block>
-  <block id="973e3a2a390bb57ce9d9e16ac0145023" category="paragraph"><block ref="973e3a2a390bb57ce9d9e16ac0145023" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">以下步骤介绍了如何从EC2控制台启动实例、因为控制台允许您将IAM角色附加到Connector实例。使用 * 从网站启动 * 操作无法实现这一点。</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">按照提示配置和部署实例：</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*名称和标记*：输入实例的名称和标记。</block>
@@ -4224,4 +4223,5 @@ https://support.netapp.com
   <block id="e5df21e6d1c0f91eabeef6ab2202379e" category="list-text">*应用程序和操作系统映像*：跳过本节。已选择连接器AMI。</block>
   <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">*实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(已预先选择并建议使用t3.2x大 容量)。</block>
   <block id="2ff5664491ece284c069195a204d44c0" category="list-text">指定用于为连接器实例启用所需连接方法的安全组设置：SSH、HTTP和HTTPS。</block>
+  <block id="f04e7bde7d47a749e6ba7643ae027953" category="paragraph"><block ref="f04e7bde7d47a749e6ba7643ae027953" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
