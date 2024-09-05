@@ -47,29 +47,34 @@ link:task-prepare-restricted-mode.html#step-3-review-host-requirements["查看�
 
 .步骤
 . 转到 https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["在AWS Marketplace上列出BlueXP Connector"^]
-. 在Marketplace页面上，选择*继续订阅*，然后选择*继续配置*。
+. 在"商城"页面上、选择*继续订阅*。
 +
 image:screenshot-subscribe-aws.png["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
 
-. 更改任何默认选项并选择*继续启动*。
-. 在*选择操作*下，选择*通过EC2*起动，然后选择*起动*。
+. 要订阅软件，请选择*接受条款*。
++
+订阅过程可能需要几分钟时间。
+
+. 订阅过程完成后，选择*继续配置*。
++
+image:screenshot-subscribe-aws-configuration.png["屏幕截图显示了 AWS Marketplace 上的 Continue to Subscribe and Continue to Configuration 按钮。"]
+
+. 在*配置此软件*页上，确保您选择了正确的区域，然后选择*继续启动*。
+. 在*启动此软件*页的*选择操作*下，选择*通过EC2*启动，然后选择*启动*。
 +
 以下步骤介绍了如何从EC2控制台启动实例、因为控制台允许您将IAM角色附加到Connector实例。使用 * 从网站启动 * 操作无法实现这一点。
 
 . 按照提示配置和部署实例：
 +
 ** *名称和标记*：输入实例的名称和标记。
-** *应用程序和操作系统映像*：跳过此部分。已选择连接器AMI。
-** *实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(建议使用t3.2x大型)。
+** *应用程序和操作系统映像*：跳过本节。已选择连接器AMI。
+** *实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(已预先选择并建议使用t3.2x大 容量)。
 ** *密钥对(login)*：选择要用于安全连接到实例的密钥对。
 ** *网络设置*：根据需要编辑网络设置：
 +
 *** 选择所需的VPC和子网。
 *** 指定实例是否应具有公有 IP地址。
-*** 指定防火墙设置、以便为Connector实例启用所需的连接方法：SSH、HTTP和HTTPS。
-+
-对于特定配置、还需要一些规则。
-
+*** 指定用于为连接器实例启用所需连接方法的安全组设置：SSH、HTTP和HTTPS。
 +
 link:reference-ports-aws.html["查看AWS的安全组规则"]。
 

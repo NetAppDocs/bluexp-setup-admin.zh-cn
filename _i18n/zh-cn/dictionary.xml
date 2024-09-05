@@ -2019,14 +2019,11 @@
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">以下步骤介绍了如何从EC2控制台启动实例、因为控制台允许您将IAM角色附加到Connector实例。使用 * 从网站启动 * 操作无法实现这一点。</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">按照提示配置和部署实例：</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*名称和标记*：输入实例的名称和标记。</block>
-  <block id="5fa511356078e407d467aeb21afa8311" category="list-text">*应用程序和操作系统映像*：跳过此部分。已选择连接器AMI。</block>
   <block id="3346e4a27b0ab9e94d29515e25908ed6" category="inline-link-macro">查看实例要求</block>
   <block id="a2edeeec0c237aa79e3b1f0eb87b07e4" category="list-text">*密钥对(login)*：选择要用于安全连接到实例的密钥对。</block>
   <block id="db8b616682d262766c36f81013b4f840" category="list-text">*网络设置*：根据需要编辑网络设置：</block>
   <block id="c04d267ebc445e8f04c29787ecab6547" category="list-text">选择所需的VPC和子网。</block>
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">指定实例是否应具有公有 IP地址。</block>
-  <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">指定防火墙设置、以便为Connector实例启用所需的连接方法：SSH、HTTP和HTTPS。</block>
-  <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">对于特定配置、还需要一些规则。</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*高级详细信息*：在* IAM实例配置文件*下、选择包含Connector所需权限的IAM角色。</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS 使用指定的设置启动软件。Connector 实例和软件应在大约五分钟内运行。</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">身份联合支持使用BlueXP进行单点登录、以便用户可以使用您公司身份中的凭据进行登录。首先、了解身份联合如何与BlueXP配合使用、然后查看设置过程概述。</block>
@@ -3049,9 +3046,6 @@
   <block id="0447e5af15c21fbb6eee1972d30cef83" category="list-text">选择*Amazon Web Services*作为云提供商，然后选择*CONTINUO*。</block>
   <block id="15de410cab5b286c0cff40620cbbc2f8" category="list-text">使用产品内置指南选择*继续*以准备部署。产品指南中的每个步骤都包含文档本页中包含的信息。</block>
   <block id="43c314e15e760781773285daf91c0ad5" category="list-text">如果您已经按照本页上的步骤进行准备，请选择*跳至部署*。</block>
-  <block id="21d86ad4e09aa752397558f2a4a4d776" category="list-text">在Marketplace页面上，选择*继续订阅*，然后选择*继续配置*。</block>
-  <block id="62e122f28cedb83482c8d975a0ebbc6b" category="list-text">更改任何默认选项并选择*继续启动*。</block>
-  <block id="b5db57dbb4b1fc339bfbf2e32844ab33" category="list-text">在*选择操作*下，选择*通过EC2*起动，然后选择*起动*。</block>
   <block id="a77947bca5ad1214f93361073cfddb0a" category="list-text">*摘要*：查看摘要并选择*启动实例*。</block>
   <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">选择*开始*。</block>
   <block id="1ce857b02028095dcbdb6522daf11862" category="list-text">选择*立即获取*，然后选择*继续*。</block>
@@ -4023,7 +4017,6 @@ https://support.netapp.com
   <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">2024年7月18日</block>
   <block id="4736cb006ef02fa673f618379e2106bd" category="cell">2024年7月1日(版本1.33)</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">2024年6月10日</block>
-  <block id="d2c0dfc6934302fa99dba597124c94a2" category="list-text">*实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(建议使用t3.2x大型)。</block>
   <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 个核心或 8 个 vCPU</block>
   <block id="911ede8df5585598c294830dafe276fa" category="list-text">32 GB</block>
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">满足上述 CPU 和 RAM 要求的实例类型。我们建议使用t3.2倍大。</block>
@@ -4221,4 +4214,14 @@ https://support.netapp.com
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">了解Cloud Volumes ONTAP 9.151版本</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
   <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">更新后的CPU和RAM要求适用于所有新连接器。对于现有连接器、建议增加CPU和RAM、以提高性能和可靠性。</block>
+  <block id="f24abcf11233503db09edba21b8e5cdb" category="list-text">在"商城"页面上、选择*继续订阅*。</block>
+  <block id="b57313d1cbeb83e2be3f889cd8fc5526" category="list-text">要订阅软件，请选择*接受条款*。</block>
+  <block id="b33dcc2933561e1bbdc43d2b68e8ab24" category="paragraph">订阅过程可能需要几分钟时间。</block>
+  <block id="11c2c43373c3fc2b79b1a6f46f2372bf" category="list-text">订阅过程完成后，选择*继续配置*。</block>
+  <block id="84bdd294c5ae866bbc0419f7bba9f368" category="paragraph"><block ref="84bdd294c5ae866bbc0419f7bba9f368" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2630dda750b0b4c54559adbe4e5daa21" category="list-text">在*配置此软件*页上，确保您选择了正确的区域，然后选择*继续启动*。</block>
+  <block id="4a3fda2105dbdf853aa237113073a9f0" category="list-text">在*启动此软件*页的*选择操作*下，选择*通过EC2*启动，然后选择*启动*。</block>
+  <block id="e5df21e6d1c0f91eabeef6ab2202379e" category="list-text">*应用程序和操作系统映像*：跳过本节。已选择连接器AMI。</block>
+  <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">*实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(已预先选择并建议使用t3.2x大 容量)。</block>
+  <block id="2ff5664491ece284c069195a204d44c0" category="list-text">指定用于为连接器实例启用所需连接方法的安全组设置：SSH、HTTP和HTTPS。</block>
 </blocks>
