@@ -35,7 +35,7 @@ link:concept-modes.html["了解私有模式的工作原理"]。
 
 == 第2步：查看安装选项
 
-在私有模式下、您可以通过在自己的Linux主机上手动安装Connector在内部或云中安装Connector。
+在私有模式下、您可以通过在自己的Linux主机上手动安装Connector来在内部或云中安装Connector。
 
 连接器的安装位置决定了在使用私有模式时哪些BlueXP服务和功能可用。例如、如果要部署和管理Cloud Volumes ONTAP、必须将连接器安装在云中。 link:concept-modes.html#private-mode["了解有关私有模式的更多信息"]。
 
@@ -94,37 +94,12 @@ BlueXP需要中的此空间 `/var` 因为Docker或Podman的架构设计是为了
 容器流程编排工具:: 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 +
 --
-* Red Hat Enterprise Linux 8和9需要Podman。
-+
-[cols="50a,50a"]
-|===
-| RHEL 版本 | 支持的Podman版本 
-
-
- a| 
-RHEL 8.6至8.9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8.10
- a| 
-Podman 4.6.1和4.9.4
-
-
-
- a| 
-RHEL 9.1至9.3
- a| 
-Podman 4.6.1
-
-|===
+* Red Hat Enterprise Linux需要Podman。
 +
 Podman必须满足以下前提条件：
 
 +
+** 需要使用Podman 4.6.1或4.9.4版
 ** 必须启用并启动Podman.sSocket服务
 ** 必须安装python3
 ** 必须安装Podman-compose软件包1.0.6版
@@ -134,7 +109,10 @@ Podman必须满足以下前提条件：
 * Ubuntu需要Docker引擎。
 +
 ** 支持的最低版本为23.0.6。
-** 支持的最大版本为25.0.5。
+** 支持的最大版本为26.0.0。
++
+请注意、从Connector 3.9.44版开始、_new_ Connector安装支持Docker引擎26。
+
 
 
 
@@ -242,7 +220,7 @@ NOTE: 使用 `dnf install` 命令可满足向PATH环境变量添加Podman-compos
 --
 .Docker 引擎
 --
-安装介于23.0.6和21.0.5之间的Docker引擎版本。
+安装受支持的Docker引擎版本。<<podman-versions,查看BlueXP  支持的Docker引擎版本>>(英文)
 
 .步骤
 . 安装Docker引擎。

@@ -22,7 +22,7 @@ NetApp BlueXP为您的企业提供了一个控制平台、可帮助您在内部�
 
 BlueXP平台提供了数据管理的四大要素：存储、移动性、保护以及分析和控制。
 
-存储:: 发现、部署和管理存储、无论存储位于AWS、Azure、Google Cloud还是内部。
+存储:: 发现、部署和管理存储、无论是在AWS、Azure、Google Cloud中还是在内部环境中。
 +
 --
 * 设置和使用 https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 跨云实现高效的多协议数据管理。

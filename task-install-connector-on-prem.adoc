@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-connector-on-prem.html 
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: 在内部安装Connector、然后登录并设置它以使用您的BlueXP帐户。 
+summary: 在内部安装连接器、然后登录并设置它以使用您的BlueXP  帐户。 
 ---
-= 在内部安装和设置连接器
+= 在内部安装和设置Connector
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,12 @@ summary: 在内部安装Connector、然后登录并设置它以使用您的BlueX
 
 
 [role="lead"]
-在内部安装Connector、然后登录并设置它以使用您的BlueXP帐户。
+连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。要在内部运行Connector、您需要查看主机要求、设置网络、准备云权限、安装Connector、设置Connector、然后提供您准备的权限。
 
 .开始之前
-您应查看 link:reference-limitations.html["连接器限制"]。
+* 您应具有link:concept-connectors.html["了解连接器"]。
+* 您应查看 link:reference-limitations.html["连接器限制"]。
+
 
 
 
@@ -33,7 +35,7 @@ summary: 在内部安装Connector、然后登录并设置它以使用您的BlueX
 * Red Hat Enterprise Linux
 +
 ** 8.6 到 8.10
-** 9.1至9.3
+** 9.1 到 9.4
 +
 主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
 
@@ -66,37 +68,12 @@ BlueXP需要中的此空间 `/var` 因为Docker或Podman的架构设计是为了
 容器流程编排工具:: 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 +
 --
-* Red Hat Enterprise Linux 8和9需要Podman。
-+
-[cols="50a,50a"]
-|===
-| RHEL 版本 | 支持的Podman版本 
-
-
- a| 
-RHEL 8.6至8.9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8.10
- a| 
-Podman 4.6.1和4.9.4
-
-
-
- a| 
-RHEL 9.1至9.3
- a| 
-Podman 4.6.1
-
-|===
+* Red Hat Enterprise Linux需要Podman。
 +
 Podman必须满足以下前提条件：
 
 +
+** 需要使用Podman 4.6.1或4.9.4版
 ** 必须启用并启动Podman.sSocket服务
 ** 必须安装python3
 ** 必须安装Podman-compose软件包1.0.6版
@@ -106,7 +83,10 @@ Podman必须满足以下前提条件：
 * Ubuntu需要Docker引擎。
 +
 ** 支持的最低版本为23.0.6。
-** 支持的最大版本为25.0.5。
+** 支持的最大版本为26.0.0。
++
+请注意、从Connector 3.9.44版开始、_new_ Connector安装支持Docker引擎26。
+
 
 
 
@@ -212,7 +192,7 @@ NOTE: 使用 `dnf install` 命令可满足向PATH环境变量添加Podman-compos
 --
 .Docker 引擎
 --
-安装介于23.0.6和21.0.5之间的Docker引擎版本。
+安装受支持的Docker引擎版本。<<podman-versions,查看BlueXP  支持的Docker引擎版本>>(英文)
 
 .步骤
 . 安装Docker引擎。
@@ -399,9 +379,9 @@ TIP: 为什么不选择Google Cloud？如果在您的内部安装了Connector、
 ====
 .AWS
 --
-在内部安装Connector时、您需要通过为具有所需权限的IAM用户添加访问密钥来为BlueXP提供AWS权限。
+如果连接器安装在内部环境中、则需要为具有所需权限的IAM用户添加访问密钥、从而为BlueXP  提供AWS权限。
 
-如果Connector安装在内部、则必须使用此身份验证方法。您不能使用IAM角色。
+如果连接器安装在内部、则必须使用此身份验证方法。您不能使用IAM角色。
 
 .步骤
 . 登录到AWS控制台并导航到IAM服务。
@@ -433,7 +413,7 @@ TIP: 为什么不选择Google Cloud？如果在您的内部安装了Connector、
 --
 .Azure 酒店
 --
-当Connector安装在内部环境中时、您需要通过在Microsoft Entra ID中设置服务主体并获取BlueXP所需的Azure凭据来为BlueXP提供Azure权限。
+如果连接器安装在内部环境中、您需要通过在Microsoft Entra ID中设置服务主体并获取BlueXP  所需的Azure凭据来为BlueXP  提供Azure权限。
 
 .创建Microsoft Entra应用程序以实现基于角色的访问控制
 . 确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。
@@ -704,7 +684,7 @@ _ipaddress_ 可以是 localhost ，专用 IP 地址或公有 IP 地址，具体�
 .. 输入系统名称。
 .. 在*是否在安全环境中运行？*下、保持禁用受限模式。
 +
-您应始终禁用受限模式、因为这些步骤说明了如何在标准模式下使用BlueXP。(此外、在内部安装Connector时、不支持受限模式。)
+您应始终禁用受限模式、因为这些步骤说明了如何在标准模式下使用BlueXP。(此外、如果连接器安装在内部、则不支持受限模式。)
 
 .. 选择*开始*。
 

@@ -18,6 +18,82 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
+== 2024年9月9日
+
+
+
+=== 连接器3.9.44
+
+此版本支持Docker引擎26、SSL证书增强功能以及错误修复。
+
+3.9.44版本适用于标准模式和受限模式。
+
+
+
+==== 支持Docker引擎26.
+
+在Ubuntu 22.04 LTS上安装Connector时、Docker引擎是必需的容器编排工具。
+
+从连接器3.9.44版开始、Docker引擎26现在支持_new_ Connector安装。
+
+支持的Docker引擎版本更新列表如下：
+
+* 支持的最低版本为23.0.6。
+* 支持的最大版本为26.0.0。
+
+
+
+
+==== 已更新用于本地UI访问的SSL证书
+
+当您在受限模式或私有模式下使用BlueXP  时、可以从云区域或内部部署的Connector虚拟机访问用户界面。默认情况下、BlueXP  使用自签名SSL证书为连接器上运行的基于Web的控制台提供安全的HTTPS访问。
+
+在此版本中、我们对新连接器和现有连接器的SSL证书进行了更改：
+
+* 此时、证书的公用名将与短主机名匹配
+* 证书使用者替代名称是主机的完全限定域名(FQDN)
+
+
+
+
+=== 支持RHEL 9.4
+
+现在、在标准模式或受限模式下使用BlueXP  时、BlueXP  支持在Red Hat Enterprise Linux 9.4主机上安装连接器。
+
+从连接器3.9.40版开始支持RHEL 9.4。
+
+标准模式和受限模式支持的RHEL版本更新列表现在包括以下内容：
+
+* 8.6 到 8.10
+* 9.1 到 9.4
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
+
+
+
+=== 所有RHEL版本均支持Podman 4.9.4
+
+现在、所有受支持的Red Hat Enterprise Linux版本均支持Podman 4.9.4。以前、版本4.9.4仅支持RHEL 8.10。
+
+更新后的Podman版本列表包括Red Hat Enterprise Linux主机支持的4.6.1和4.9.4版本。
+
+从连接器3.9.40版开始、RHEL主机需要使用Podman。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
+
+
+
+=== 已更新AWS和Azure权限
+
+我们更新了Connector的AWS和Azure策略、以删除不再需要的权限。这些权限与BlueXP  边缘缓存以及Kubbernetes集群的发现和管理相关、自2024年8月起不再支持这些功能。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log["了解AWS策略发生了哪些变化"](英文)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log["了解Azure策略中发生的变化"](英文)
+
+
+
+
 == 2024年8月22日
 
 
@@ -48,7 +124,7 @@ Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有�
 
 === 连接器3.9.43
 
-此版本包含一些小改进、错误修复以及对新Azure权限的要求。
+此版本提供了一些小改进和错误修复。
 
 3.9.43版本适用于标准模式和受限模式。
 

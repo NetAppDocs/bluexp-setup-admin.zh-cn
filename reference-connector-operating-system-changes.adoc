@@ -33,7 +33,7 @@ summary: 当我们在特定Linux操作系统上添加和删除对Connector的支
 * Red Hat Enterprise Linux
 +
 ** 8.6 到 8.10
-** 9.1至9.3
+** 9.1 到 9.4
 
 
 
@@ -54,7 +54,7 @@ summary: 当我们在特定Linux操作系统上添加和删除对Connector的支
 * Red Hat Enterprise Linux
 +
 ** 8.6 到 8.10
-** 9.1至9.3
+** 9.1 到 9.4
 
 
 
@@ -154,7 +154,7 @@ Ubuntu 22.04 LTS仍然支持Connector、并且它是BlueXP和市场部署的默�
 ====
 .标准模式
 --
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在内部安装和设置连接器"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在内部安装和设置Connector"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["在AWS中手动安装Connector"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["在Azure中手动安装Connector"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["在Google Cloud中手动安装Connector"]

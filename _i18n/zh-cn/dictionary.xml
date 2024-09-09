@@ -489,7 +489,6 @@
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
   <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">BlueXP平台提供了数据管理的四大要素：存储、移动性、保护以及分析和控制。</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="list-text">存储</block>
-  <block id="14e51ced0d5dc6abc5f091838e1fd7a8" category="list-text">发现、部署和管理存储、无论存储位于AWS、Azure、Google Cloud还是内部。</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
   <block id="4066a2484747588656be41f7c6f52cf0" category="list-text">设置和使用<block ref="f57700eb7f072532c25bc35835afbefb" category="inline-link-rx"></block> 跨云实现高效的多协议数据管理。</block>
   <block id="17a28f89a71d8bcba39452a2fd7343db" category="list-text">设置和使用云文件存储服务：</block>
@@ -1042,8 +1041,6 @@
   <block id="9eda901ca4a8d939f48fdc3e1139b8d2" category="list-text"><block ref="9eda901ca4a8d939f48fdc3e1139b8d2" category="inline-link-macro-rx"></block></block>
   <block id="45f5c7b6248438f849cf619c647c63e4" category="paragraph">如果要将AWS或Azure中的BlueXP服务与内部部署的Connector结合使用、则需要在云提供程序中设置权限、以便可以在安装Connector后将凭据添加到Connector。</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="open-title">AWS</block>
-  <block id="e1ef579b405a3d1b9ab7d84e56f110d3" category="paragraph">在内部安装Connector时、您需要通过为具有所需权限的IAM用户添加访问密钥来为BlueXP提供AWS权限。</block>
-  <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">如果Connector安装在内部、则必须使用此身份验证方法。您不能使用IAM角色。</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">现在、您应该拥有具有所需权限的IAM用户的访问密钥。安装Connector后、您需要将这些凭据与BlueXP中的Connector相关联。</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="open-title">Azure 酒店</block>
   <block id="2189e37a9b7c751d238d4e13fd8f634b" category="list-text">确保您在Azure中拥有创建Active Directory应用程序和将应用程序分配给角色的权限。</block>
@@ -1095,15 +1092,11 @@
   <block id="56c696c4118c8dc3d2947c159fdbbb7c" category="list-text">提供密钥和持续时间的问题描述。</block>
   <block id="a91d60261e2974b6b9f5d3d3d0abacdd" category="list-text">复制客户端密钥的值。</block>
   <block id="62089e33eb517da2e77f2dbae303746e" category="paragraph">此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。安装Connector后、您需要将这些凭据与BlueXP中的Connector相关联。</block>
-  <block id="b6bbae5bdf4c539603a70f4db19e6b04" category="summary">在内部安装Connector、然后登录并设置它以使用您的BlueXP帐户。</block>
-  <block id="1fb392a56edc456b1bc3eddb57b0906b" category="doc">在内部安装和设置连接器</block>
-  <block id="430c29468d032364c0f94cffe3c8a10b" category="paragraph">在内部现有Linux主机上下载并安装Connector软件。</block>
   <block id="e832abccfbda1e1df2db47f59705c74c" category="paragraph">此时将安装Connector。在安装结束时、如果您指定了代理服务器、则Connector服务(occa)将重新启动两次。</block>
   <block id="8dae847f59a6afd8d7e49b7b7654d0eb" category="list-text">打开 Web 浏览器并输入以下 URL ：</block>
   <block id="a28c11d82be2375d6506ed209153e0c1" category="paragraph">_ipaddress_ 可以是 localhost ，专用 IP 地址或公有 IP 地址，具体取决于主机的配置。例如，如果连接器位于公有云中且没有公有 IP 地址，则必须输入与连接器主机连接的主机的专用 IP 地址。</block>
   <block id="2b7648ae4507d851df87a08114c2876e" category="list-text">注册或登录。</block>
   <block id="41adb69bcb6f24f8432b590170f61d23" category="list-text">登录后、设置BlueXP：</block>
-  <block id="c0112364e46bcec7ed4460a6be7ead53" category="paragraph">您应始终禁用受限模式、因为这些步骤说明了如何在标准模式下使用BlueXP。(此外、在内部安装Connector时、不支持受限模式。)</block>
   <block id="dcdd03125bee39fb6c8e9aa5e0bfcc7f" category="paragraph">现在、BlueXP已设置为使用您刚刚安装的Connector。</block>
   <block id="c7c7fe81ff2afbb7f657e592f9871125" category="summary">在受限模式下启动和运行BlueXP后、您可以开始使用受限模式支持的BlueXP服务。</block>
   <block id="d279ef9d3fa427882e45e653bc7b1949" category="doc">下一步可以执行的操作(受限模式)</block>
@@ -1994,7 +1987,6 @@
   <block id="74d2f2a8ee613c321072e364f7ed33b2" category="inline-link-macro">了解如何在AWS中创建Connector</block>
   <block id="019fd7c8c6395aedf9e4d8fe995febee" category="inline-link-macro">了解如何在 Azure 中创建 Connector</block>
   <block id="aa5c1c092b41ba183b34ea75815e55a2" category="inline-link-macro">了解如何在 Google Cloud 中创建 Connector</block>
-  <block id="b279d324941aabfaed1bf558f37a98bc" category="inline-link-macro">了解如何在内部创建Connector</block>
   <block id="11f541a08afbd320cd13f0c88b417a4b" category="paragraph">请注意、如果要使用BlueXP服务在Google Cloud中管理存储和数据、则Connector必须在Google Cloud中运行。</block>
   <block id="aca02eea323174e41d57225a762eb959" category="list-text">AWS身份验证方法：IAM角色或具有所需权限的IAM用户的访问密钥。</block>
   <block id="3f4713c771af26689845a2dfeec86b37" category="inline-link-macro">了解如何设置AWS权限</block>
@@ -2584,7 +2576,6 @@
   <block id="0db58c0529496c0e926af5f8c9002335" category="list-text"><block ref="60d271fc50ad3f5d03a8767578822d7b" category="inline-xref-macro-rx"></block></block>
   <block id="6fca6b826d3e4d0980a08d26e6cf905f" category="section-title">在另一个帐户中担任 IAM 角色以授予权限</block>
   <block id="cc9abb75b8a4618db30dc1fa4729b191" category="paragraph">您可以使用 IAM 角色在部署 Connector 实例的源 AWS 帐户与其他 AWS 帐户之间设置信任关系。然后、您可以为BlueXP提供可信帐户中IAM角色的ARN。</block>
-  <block id="296337985ff5f0cc398e02f1aff0b176" category="paragraph">如果Connector安装在内部、则无法使用此身份验证方法。您必须使用AWS密钥。</block>
   <block id="2c76935f38c3f21d03c203f5311fc4f4" category="list-text">转到要为Connector提供权限的目标帐户中的IAM控制台。</block>
   <block id="61b72a48f16d18bfce7a18c7ce80f123" category="list-text">在访问管理下、选择*角色&gt;创建角色*、然后按照步骤创建角色。</block>
   <block id="e1a3d580d5cb42904b96dc05c0e0903d" category="paragraph">请务必执行以下操作：</block>
@@ -2641,7 +2632,6 @@
   <block id="cd9866f3dfe1445bb49e9984aef06565" category="paragraph">开始之前、您应了解BlueXP在专用模式下的工作原理。</block>
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">了解私有模式的工作原理</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>。</block>
-  <block id="ba7c13ef3e78a348949ddfd6f17e4f18" category="paragraph">在私有模式下、您可以通过在自己的Linux主机上手动安装Connector在内部或云中安装Connector。</block>
   <block id="c3d3f783d267d1bd41b2e7f8639a5865" category="section-title">用于日常操作的端点</block>
   <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">\https://management.azure.microsoft.scloud
 \https://login.microsoftonline.microsoft.scloud
@@ -2652,7 +2642,6 @@
   <block id="862b0c0ff0da2b02588d845f4c6d6d34" category="list-text">在计划安装Connector的虚拟机上启用系统分配的托管身份、以便您可以通过自定义角色提供所需的Azure权限。</block>
   <block id="81b303f46dd1d85b6f031bc99d8e87a6" category="summary">BlueXP提供了多种部署模式、使您能够以满足业务和安全要求的方式使用BlueXP。标准模式可利用BlueXP SaaS层提供完整功能、而受限模式和专用模式可供具有连接限制的组织使用。</block>
   <block id="534fd3c26a29e770ad82ea272b33fadf" category="paragraph">BlueXP提供了多种部署模式_、使您能够以满足业务和安全要求的方式使用BlueXP。_Standard mode"利用BlueXP SaaS层提供完整功能、而_restricted mode"和_private mode"则可供具有连接限制的组织使用。</block>
-  <block id="3bee795df059c001dd8dffe355235790" category="paragraph">虽然在使用受限模式或私有模式时、BlueXP会禁止流量、通信和数据的流动、但您有责任确保您的环境(内部环境和云环境)符合要求的法规。</block>
   <block id="3003441b99515b8ab9a5d515870819a4" category="paragraph">BlueXP为您的帐户提供了以下部署模式。每个模式在出站连接要求、部署位置、安装过程、身份验证方法、可用数据和存储服务以及收费方法方面都有所不同。</block>
   <block id="e3795acf5a54c95b1889f3c7c929ab50" category="list-text">用户可以从基于Web的控制台以云服务的形式访问BlueXP。根据您计划使用的BlueXP服务、BlueXP管理员会创建一个或多个连接器来管理混合云环境中的数据。</block>
   <block id="299192dda00d9cbb51cb176b72e6f464" category="paragraph">此模式使用通过公共Internet进行加密数据传输。</block>
@@ -2660,7 +2649,6 @@
   <block id="90fed451e3dab076e7f87c02c10b6e5d" category="paragraph">此模式通常由州和地方政府以及受监管公司使用。</block>
   <block id="5120a32615b91a5de80fd01e90d53677" category="inline-xref">详细了解与SaaS层的出站连接</block>
   <block id="26791add2e44035ab424c178d3f4c61f" category="paragraph"><block ref="4a9f480c757559738dc0bf80da949e99" category="inline-xref-macro-rx"></block>。</block>
-  <block id="9c39d5b8fd0bf20212456c9aceeaea5b" category="list-text">BlueXP Connector安装在内部或云(在安全区域、主权云区域或商业区域)中、并且与BlueXP SaaS层具有_no_连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。</block>
   <block id="f7a5a85e5651d269f8be77a9a2e84792" category="inline-link">Azure IL6</block>
   <block id="55fbab9267d4e9aae7daef26b314226f" category="paragraph">下表对这些模式进行了比较。</block>
   <block id="2113372caa2625fc2eac79b5c72bd737" category="cell">是否需要连接到BlueXP SaaS层？</block>
@@ -2751,18 +2739,13 @@
   <block id="999ae70b12514c648b606bf0f3afabcb" category="inline-link-macro">了解如何开始使用受限模式</block>
   <block id="3adc000476556fe48061c952620b6394" category="list-text"><block ref="b25261838e688763c403e651d058df29" category="inline-link-macro-rx"></block>。</block>
   <block id="cdd00bf67dbaadd905bfd3009de402e0" category="list-text"><block ref="987610e2980e99ab837daf2502634d0e" category="inline-link-macro-rx"></block>。</block>
-  <block id="f6c6b4fd2db0ea773400bb3972e0cb6a" category="paragraph">在私有模式下、您可以在内部或云中安装Connector、然后使用BlueXP管理混合云中的数据。无法连接到BlueXP SaaS层。</block>
   <block id="1ba924375f21d42237f7e64fdfaa9eb2" category="paragraph">下图显示了一个私有模式部署示例、其中、Connector安装在云中、并同时管理Cloud Volumes ONTAP 和内部ONTAP 集群。</block>
   <block id="a5fee7a4c74b489c2e8e8d39b686e4e8" category="inline-image-macro">一个概念图像、显示了运行Connector并提供对基于Web的控制台的访问权限的云中的虚拟网络、以及在内部数据中心中管理Cloud Volumes ONTAP 和AFF 集群。</block>
   <block id="a694033f641f0571740cee35545e0d7b" category="paragraph"><block ref="a694033f641f0571740cee35545e0d7b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="91e148a438d522c7bf22cb76961971bb" category="paragraph">同时、第二张图显示了一个专用模式部署示例、其中、Connector安装在内部、管理内部ONTAP 集群并提供对受支持的BlueXP数据服务的访问。</block>
   <block id="abe210b497cdf1c7a95420fde5e0a084" category="inline-image-macro">一个概念图像、显示了一个内部数据中心、其中运行了一个Connector、并提供了对基于Web的控制台和BlueXP数据服务的访问权限、同时管理了内部数据中心中的AFF 集群。</block>
   <block id="f93e5962b5e90d7eb1d0880c090f849c" category="paragraph"><block ref="f93e5962b5e90d7eb1d0880c090f849c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="310027a7e917a90953e50ed1339f3406" category="paragraph">BlueXP在专用模式下的工作原理如下：</block>
-  <block id="f3c1a94d2912b274af9305a55f3a5898" category="list-text">在私有模式下、云或内部支持Connector。</block>
-  <block id="353a8aa5f642372473dec3b281845de2" category="list-text">您自己的Linux主机支持在云端或内部环境中手动安装Connector。</block>
   <block id="7de085033718a90f09298783df66d7f7" category="list-text">您需要手动升级Connector软件。连接器软件会按未定义的时间间隔发布到NetApp 支持站点。</block>
-  <block id="f455e039c0995560727cdaff463a454e" category="list-text">用户界面可从部署在云区域或内部环境中的Connector进行访问。</block>
   <block id="ed7ea5a66dc5685a9fd16fc1534926fe" category="list-text">API调用会调用Connector虚拟机。</block>
   <block id="9ebc1b25e2041947b9103da47cd1c08a" category="list-text">身份验证通过本地用户管理和访问来提供。不通过BlueXP的云服务提供身份验证。</block>
   <block id="9155ed0ad2860f7dbb98e01dbb6fa42d" category="list-text">在云部署中支持的BlueXP服务</block>
@@ -2855,7 +2838,6 @@
   <block id="7e99ea34b714387479c29a20b4a89752" category="sidebar">开始使用标准模式</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="sidebar">登录到BlueXP</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">创建连接器</block>
-  <block id="4df40e141b0559f15db8f84f78aed013" category="sidebar">内部部署</block>
   <block id="f559abff8763b27adc86fdb8b373f2c7" category="sidebar">订阅BlueXP</block>
   <block id="d0a7edff5cd82c23f3d1c18e0779ccbc" category="sidebar">接下来可以执行的操作</block>
   <block id="2e765525323590e2ff4d6c84d224de36" category="sidebar">开始使用受限模式</block>
@@ -3224,7 +3206,6 @@
   <block id="df29cf5b19d5f16c92a7f553f92e9d4a" category="list-text"><block ref="df29cf5b19d5f16c92a7f553f92e9d4a" category="inline-link-macro-rx"></block></block>
   <block id="57e58ed1cb42b3b5aaba112bc48563a6" category="list-text"><block ref="57e58ed1cb42b3b5aaba112bc48563a6" category="inline-link-macro-rx"></block></block>
   <block id="6563bdfaccc3983704cae5a10067fc4e" category="list-text"><block ref="6563bdfaccc3983704cae5a10067fc4e" category="inline-link-macro-rx"></block></block>
-  <block id="7f80da371418dd1762f659141a966f43" category="list-text"><block ref="7f80da371418dd1762f659141a966f43" category="inline-link-macro-rx"></block></block>
   <block id="6400bfdbde707064e9b4e7768b35a3f9" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> <block ref="fa53da48b043041a5a8508c7d2d93104" category="inline-link-macro-rx"></block></block>
   <block id="e5d3b66eefdb2ac002721447f12c550c" category="summary">当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它会在完成一些管理任务时与多个端点联系。访问BlueXP控制台的计算机应连接到这些端点。</block>
   <block id="2ae779b46b9a3564f7c1c2e6ccea2296" category="paragraph">在BlueXP控制台中完成特定操作时、系统会从用户的计算机访问这些端点。您还应参考Connector和特定BlueXP服务的网络连接要求。有关详细信息、请参见本页末尾的相关链接。</block>
@@ -3540,7 +3521,6 @@ https://support.netapp.com
   <block id="b750da0ca2dca4110c6636dcb1ebbe6f" category="paragraph">现在、您有了一个客户端密钥、BlueXP可以使用它通过Microsoft Entra ID进行身份验证。</block>
   <block id="93f1f0c1ede8583ffa25159579861501" category="inline-link">详细了解NetApp如何使用Microsoft Azure Active Directory进行身份管理</block>
   <block id="b17de28cfe26993460dbe87832a64b2e" category="paragraph"><block ref="b17de28cfe26993460dbe87832a64b2e" category="inline-link-rx"></block></block>
-  <block id="8b0acfdcefc686d1057ba6e0a6e5660e" category="paragraph">当Connector安装在内部环境中时、您需要通过在Microsoft Entra ID中设置服务主体并获取BlueXP所需的Azure凭据来为BlueXP提供Azure权限。</block>
   <block id="33a300827c19fa9f3bf7b47e8b880c1a" category="paragraph">创建Azure自定义角色、您可以将其分配给Azure帐户或Microsoft Entra服务主体。BlueXP使用Azure进行身份验证、并使用这些权限代表您创建Connector实例。</block>
   <block id="4dc29cf7d5ceac3415d2828b1afce709" category="list-text">提供有关Microsoft Entra服务主体的详细信息。此服务主体还需要特定权限。</block>
   <block id="b4dba39cc2b8d5c6f4a03822fd76264e" category="list-text">选择*Active Directory服务主体*以输入有关授予所需权限的Microsoft Entra服务主体的信息：</block>
@@ -3730,7 +3710,6 @@ https://support.netapp.com
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1.或此版本之后的任何版本</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">在Cloud Volumes ONTAP升级过程中使用</block>
   <block id="970c4756c8fc49a0c32d6a5b32d6d6f5" category="list-text">在安装Connector之前、主机上需要Docker引擎。</block>
-  <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">支持的最大版本为25.0.5。</block>
   <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
   <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">我们已更新Docker引擎要求、以指定Connector支持的最大版本为21.0.5。支持的最低版本仍为9.3.1。</block>
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">View Connector主机要求</block>
@@ -3971,7 +3950,6 @@ https://support.netapp.com
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Ubuntu需要Docker引擎。</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">2024年6月30日、RHEL 7达到了维护结束(EOM)、而CentOS 7达到了生命周期结束(EOL)。2024年6月30日、NetApp停止在这些Linux分发版上支持Connector。</block>
   <block id="547a1a61c710e2dc947389da0967d175" category="list-text">支持的最低版本为23.0.6。</block>
-  <block id="7a96db7c574c0cfb888eceb8119d9bac" category="paragraph">安装介于23.0.6和21.0.5之间的Docker引擎版本。</block>
   <block id="13265d5e2f2489e0351d3bae9dc7d923" category="doc">注册或登录BlueXP</block>
   <block id="400356f2a752e6926bd99ce1db45ee8c" category="paragraph">您可以从基于Web的控制台访问BlueXP。开始使用BlueXP后、第一步是使用您的NetApp支持站点凭据或公司目录中的SSO凭据进行注册或登录。</block>
   <block id="71bf124b6b9da30db8c000241ce01691" category="paragraph">首次访问BlueXP时、您可以使用BlueXP通过以下选项之一进行注册或登录：</block>
@@ -4002,7 +3980,6 @@ https://support.netapp.com
   <block id="0017322d56b9d155b01ac8380335c15b" category="list-text">转到<block ref="00e748787e3cd0352ad19292d67af7aa" category="inline-link-rx"></block></block>
   <block id="6c3a57872e006099844f13049e7b1891" category="list-text"><block ref="6c3a57872e006099844f13049e7b1891" category="inline-link-macro-rx"></block></block>
   <block id="00e6604adbc44c85a390ab929076d0bb" category="list-text">在标准模式、受限模式和专用模式下使用BlueXP时、支持RHEL 8和9。</block>
-  <block id="f3e58ec45f13e79fe493e5ac40efdaef" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block></block>
   <block id="ce02a119fe20803f37d74f2f696ae608" category="list-text"><block ref="ce02a119fe20803f37d74f2f696ae608" category="inline-link-rx"></block></block>
   <block id="adf5c1237bee96f4b87ff5eb3fd3c25b" category="list-text"><block ref="adf5c1237bee96f4b87ff5eb3fd3c25b" category="inline-link-rx"></block></block>
   <block id="5f47d3df7f8a6f7d2b2dc0a0630af052" category="list-text"><block ref="5f47d3df7f8a6f7d2b2dc0a0630af052" category="inline-link-rx"></block></block>
@@ -4021,13 +3998,6 @@ https://support.netapp.com
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">满足上述 CPU 和 RAM 要求的实例类型。我们建议使用t3.2倍大。</block>
   <block id="021caa7094e7de94c50c2e35da292351" category="list-text">满足上述 CPU 和 RAM 要求的实例类型。建议使用Standard"(标准)_D8s_v3。</block>
   <block id="bff17a7a57b9d5cdc97a4f823a72230f" category="list-text">满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-8。</block>
-  <block id="8abbe747192e82bfa2032f017a838560" category="cell">RHEL 版本</block>
-  <block id="a364bd44d579f5e34c65860ec7315249" category="cell">支持的Podman版本</block>
-  <block id="43af2bbad49057d23c6e4820111aa078" category="paragraph">RHEL 8.6至8.9</block>
-  <block id="49eebb445dc65a643c84c0a3f87edc63" category="paragraph">Podman 4.6.1</block>
-  <block id="c48cc40f38f8bc361e9a53b83a812d48" category="paragraph">RHEL 8.10</block>
-  <block id="da6353ecfbed18a800723b5888858632" category="paragraph">Podman 4.6.1和4.9.4</block>
-  <block id="52ee9eded79e01170d5ef36dbb0f640a" category="paragraph">RHEL 9.1至9.3</block>
   <block id="91a03852a4fcc00d6d0d7b56befab967" category="inline-xref">查看BlueXP  支持的Podman版本</block>
   <block id="ab8cca64c499d5f050e52a06f69e6322" category="paragraph">安装支持的Podman版本。<block ref="3c15003d1ebf129cb6cebdaf6ae30fe9" category="inline-xref-macro-rx"></block>(英文)</block>
   <block id="37ec26cfa2b5ba215786c921633974f0" category="paragraph">其中&lt;version&gt;是您正在安装的Podman的受支持版本。<block ref="3c15003d1ebf129cb6cebdaf6ae30fe9" category="inline-xref-macro-rx"></block>(英文)</block>
@@ -4045,7 +4015,6 @@ https://support.netapp.com
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">*选择实例类型*：根据地区可用性，选择支持的实例类型之一(建议使用t3.2x大)。</block>
   <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">此时、系统将通过电子邮件发送有关以下BlueXP  功能和服务的通知：Connector、BlueXP  数字钱包、BlueXP  副本和同步、BlueXP  备份和恢复以及BlueXP  分层。未来版本将添加其他服务。</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">连接器3.9.43</block>
-  <block id="be1b4db310d7b6590c7af9eb4751b6ce" category="paragraph">此版本包含一些小改进、错误修复以及对新Azure权限的要求。</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">3.9.43版本适用于标准模式和受限模式。</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">更新了CPU和RAM要求</block>
   <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">为了提高BlueXP  和连接器的可靠性并提高其性能、我们现在需要为连接器虚拟机增加CPU和RAM：</block>
@@ -4199,7 +4168,6 @@ https://support.netapp.com
   <block id="31c59436a743feb0e198d549a11637b0" category="section-title">2023年5月12日</block>
   <block id="8b5a7355367fbfe0f4039d610b872ea2" category="section-title">2023年3月23日</block>
   <block id="cb73adae14da8ca1c572c8494ce45515" category="section-title">2023年1月5日</block>
-  <block id="22e645000db07af6682e1c6517a3c82a" category="section-title">2024年8月22日</block>
   <block id="335b63351c39337de35ede84c3852d4d" category="section-title">连接器3.9.43修补程序</block>
   <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">我们更新了连接器以支持Cloud Volumes ONTAP 9.151版本。</block>
   <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">此版本支持对适用于Azure的Connector策略进行更新。现在、此策略包含以下权限：</block>
@@ -4208,7 +4176,6 @@ https://support.netapp.com
   <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>(英文)</block>
   <block id="649038b676315e0ebdd7132fcd5362c2" category="summary">在受限模式或专用模式下使用BlueXP  时、安装用于访问基于Web的控制台的CA签名证书。</block>
   <block id="76b215b1722d5e63e6379d518b352edf" category="doc">安装CA签名的证书以进行基于Web的控制台访问</block>
-  <block id="40e7815d87fea23da90e3571602f7f78" category="paragraph">当您在受限模式或私有模式下使用BlueXP  时、可以从云区域或内部部署的Connector虚拟机访问用户界面。默认情况下、BlueXP  使用自签名SSL证书为连接器上运行的基于Web的控制台提供安全的HTTPS访问。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。安装证书后、BlueXP  会在用户访问基于Web的控制台时使用CA签名的证书。</block>
   <block id="e7b76852295808494e2734a85e108067" category="paragraph">现在、BlueXP使用CA签名证书提供安全的HTTPS访问。下图显示了一个为安全访问配置的Connector：</block>
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">了解Cloud Volumes ONTAP 9.151版本</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
@@ -4224,4 +4191,77 @@ https://support.netapp.com
   <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">*实例类型*：根据地区可用性，选择符合RAM和CPU要求的实例类型(已预先选择并建议使用t3.2x大 容量)。</block>
   <block id="2ff5664491ece284c069195a204d44c0" category="list-text">指定用于为连接器实例启用所需连接方法的安全组设置：SSH、HTTP和HTTPS。</block>
   <block id="f04e7bde7d47a749e6ba7643ae027953" category="paragraph"><block ref="f04e7bde7d47a749e6ba7643ae027953" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="list-text">9.1 到 9.4</block>
+  <block id="3b1bfd730b4217c8855d7ce0b155acdc" category="list-text">支持的最大版本为26.0.0。</block>
+  <block id="c4924fa73c6ac3240841a8329a4a87a2" category="paragraph">请注意、从Connector 3.9.44版开始、_new_ Connector安装支持Docker引擎26。</block>
+  <block id="c71ee68b655a1c2de6162e6ea2837535" category="list-text">Red Hat Enterprise Linux需要Podman。</block>
+  <block id="3ee8b338aa466b632e26ed7928d4b063" category="list-text">需要使用Podman 4.6.1或4.9.4版</block>
+  <block id="f99019d3e8e3a4daa34cad5d0e1cccc2" category="inline-xref">查看BlueXP  支持的Docker引擎版本</block>
+  <block id="6abb84cd1ebbb51102cb3ca371b8a8ca" category="paragraph">安装受支持的Docker引擎版本。<block ref="2fdf32031e9fd2d8e629141f098d92fe" category="inline-xref-macro-rx"></block>(英文)</block>
+  <block id="b425a48ec3cd2a8cf0d731578b9ac8cb" category="paragraph">虽然BlueXP  在使用受限模式或私有模式时会阻止流量、通信和数据的流动、但您有责任确保您的环境(内部和云中)符合所需的法规。</block>
+  <block id="ad8ea852a1d73dd8dbfac3b19dd09403" category="list-text">BlueXP  连接器安装在内部环境或云中(位于安全区域、主权云区域或商业区域)、并且与BlueXP  SaaS层之间具有_no_连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。</block>
+  <block id="95f7a3f8f1594da8c9dbd6c9cb3ee51e" category="paragraph">在私有模式下、您可以在内部或云中安装Connector、然后使用BlueXP  管理混合云中的数据。无法连接到BlueXP SaaS层。</block>
+  <block id="abf28f2fb4149a9c246bdad2c7003d6f" category="paragraph">同时、第二张图显示了一个私有模式部署示例、其中、连接器安装在内部、管理内部ONTAP集群、并提供对受支持BlueXP  数据服务的访问。</block>
+  <block id="9aa917589a67807ae517fb9273102cfc" category="list-text">在私有模式下、云或内部均支持Connector。</block>
+  <block id="d807dd72163fd15a4c8f1c109e3e464f" category="list-text">支持在云中或内部环境中您自己的Linux主机上手动安装Connector。</block>
+  <block id="93c8aa442d9657958e3a6b431149b6c7" category="list-text">用户界面可从部署在您的云区域或内部的Connector进行访问。</block>
+  <block id="293b0d6507d1bd7abf464948b7ee72e3" category="list-text">发现、部署和管理存储、无论是在AWS、Azure、Google Cloud中还是在内部环境中。</block>
+  <block id="697e19b973c6dfabc32eda21853b990c" category="inline-link">在内部安装和设置Connector</block>
+  <block id="66579202619073ba384ce27dfcd8dff1" category="list-text"><block ref="66579202619073ba384ce27dfcd8dff1" category="inline-link-rx"></block></block>
+  <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024年9月9日</block>
+  <block id="8edd5bd442ff2f098d5cd9a411e19444" category="paragraph">已从标准区域的策略2中删除权限、因为BlueXP  不再支持BlueXP  边缘缓存以及Kubnetes集群的发现和管理。</block>
+  <block id="233590199dce2cbcf120d8b311c92db1" category="example-title">查看已从策略中删除的权限</block>
+  <block id="8c16b137acb60eb3b351f65f0f551d50" category="paragraph">已从JSON策略中删除以下权限、因为BlueXP  不再支持发现和管理Kubnetes集群：</block>
+  <block id="317850f59220c738a6550c8cc0fbd9c5" category="list-text">microsoft.ContainerService/managedClusters/ListClusterUserCredential/action</block>
+  <block id="42f3fa961e42affb80862a782c9341af" category="list-text">microsoft.ContainerService/managedClusters/Read</block>
+  <block id="db311ee703dc0562542410a07692686e" category="paragraph">如果连接器安装在内部、则不能使用此身份验证方法。您必须使用AWS密钥。</block>
+  <block id="18eeee44961787b52080a2c714b406a6" category="paragraph">如果连接器安装在内部、则必须使用此身份验证方法。您不能使用IAM角色。</block>
+  <block id="0cd8313934e43905fe55906d112bfcba" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是直接从BlueXP  在AWS中创建Connector。要从BlueXP在AWS中创建Connector、您需要设置网络连接、准备AWS权限、然后创建Connector。</block>
+  <block id="e74b1c05a68d1410f2fdc6be60f433dd" category="inline-link-macro">了解连接器</block>
+  <block id="a69707f32a14657a4148714e0858cc16" category="list-text">您应具有<block ref="265bf4041c284cedb5265913609f75cf" category="inline-link-macro-rx"></block>。</block>
+  <block id="0f6f328a496422180419aea5d68c3d2b" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是在运行AWS的Linux主机上手动安装Connector软件。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备AWS权限、安装Connector、然后提供准备好的权限。</block>
+  <block id="bde99503b08825a9b6290c21b6ff2424" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是直接从AWS Marketplace在AWS中创建Connector。要从AWS Marketplace创建Connector、您需要设置网络、准备AWS权限、查看实例要求、然后创建Connector。</block>
+  <block id="f83b4f8c16705e26d282f2cb4ed19e78" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是直接从BlueXP  在Azure中创建连接器。要从BlueXP在Azure中创建Connector、您需要设置网络连接、准备Azure权限、然后创建Connector。</block>
+  <block id="5cb6efc5332c23d8c22978f3559aa613" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是在Azure中运行的Linux主机上手动安装Connector软件。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Azure权限、安装Connector、然后提供您准备的权限。</block>
+  <block id="1017ad8551dc7209fead1d996608e2b5" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是直接从Azure Marketplace在Azure中创建Connector。要从Azure Marketplace创建Connector、您需要设置网络连接、准备Azure权限、查看实例要求、然后创建Connector。</block>
+  <block id="9a63fba43be3e1df0de44c749000ffc5" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项包括直接从BlueXP  或使用gCloud在AWS中创建连接器。要从BlueXP或使用gCloud在Google Cloud中创建Connector、您需要设置网络连接、准备Google Cloud权限、启用Google Cloud API、然后创建Connector。</block>
+  <block id="455e0d1571fc687b88776ecc58050d7b" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是在运行Google Cloud的Linux主机上手动安装Connector软件。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Google Cloud权限、启用API、安装Connector、然后提供您准备的权限。</block>
+  <block id="2645e78b8215441741aa8ea067e0db45" category="summary">在内部安装连接器、然后登录并设置它以使用您的BlueXP  帐户。</block>
+  <block id="e080a3173dc73a079c4fd120abb491e0" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。要在内部运行Connector、您需要查看主机要求、设置网络、准备云权限、安装Connector、设置Connector、然后提供您准备的权限。</block>
+  <block id="5ed8d571b208e6fe2728f122d3340d93" category="paragraph">如果连接器安装在内部环境中、则需要为具有所需权限的IAM用户添加访问密钥、从而为BlueXP  提供AWS权限。</block>
+  <block id="7247a245f2594a184b7ed7669be8c32e" category="paragraph">如果连接器安装在内部环境中、您需要通过在Microsoft Entra ID中设置服务主体并获取BlueXP  所需的Azure凭据来为BlueXP  提供Azure权限。</block>
+  <block id="d73fea737459cd596b8a61a9c640bf6f" category="paragraph">在内部现有Linux主机上下载并安装Connector软件。</block>
+  <block id="efa5b8441900c9d334fd44b2a0480c25" category="paragraph">您应始终禁用受限模式、因为这些步骤说明了如何在标准模式下使用BlueXP。(此外、如果连接器安装在内部、则不支持受限模式。)</block>
+  <block id="703afaf08bc749a3a4cb4aa82e3edc43" category="paragraph">当您在受限模式或私有模式下使用BlueXP  时、可以从云区域或内部部署的Connector虚拟机访问用户界面。默认情况下、BlueXP  使用自签名SSL证书为连接器上运行的基于Web的控制台提供安全的HTTPS访问。如果您的企业需要、您可以安装由证书颁发机构(CA)签名的证书、这样可以提供比自签名证书更好的安全保护。安装证书后、BlueXP  会在用户访问基于Web的控制台时使用CA签名的证书。</block>
+  <block id="1dabb4ec55ee6a1ed060669969044936" category="paragraph">在私有模式下、您可以通过在自己的Linux主机上手动安装Connector来在内部或云中安装Connector。</block>
+  <block id="b926732963e0a721fc9fc28ea36c9483" category="inline-link-macro">了解如何在内部创建Connector</block>
+  <block id="159a6de5191a13d6941603c4b5854079" category="list-text"><block ref="159a6de5191a13d6941603c4b5854079" category="inline-link-macro-rx"></block></block>
+  <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">连接器3.9.44</block>
+  <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">此版本支持Docker引擎26、SSL证书增强功能以及错误修复。</block>
+  <block id="8e05f2728c2c4042bd5165b33b122aa7" category="paragraph">3.9.44版本适用于标准模式和受限模式。</block>
+  <block id="000a9ac711d57d6c617331857e9c3100" category="section-title">支持Docker引擎26.</block>
+  <block id="849eb58f322918eda95ee3acd8e4497d" category="paragraph">在Ubuntu 22.04 LTS上安装Connector时、Docker引擎是必需的容器编排工具。</block>
+  <block id="4391ac6ef3fe7c6a1cb6b50f0df238d3" category="paragraph">从连接器3.9.44版开始、Docker引擎26现在支持_new_ Connector安装。</block>
+  <block id="ff42db58a1b88b5b9aedbcedc8daa613" category="paragraph">支持的Docker引擎版本更新列表如下：</block>
+  <block id="15ba9bb026c53a148756b12826c46f8b" category="section-title">已更新用于本地UI访问的SSL证书</block>
+  <block id="b96edd49155123375756b26e44b38121" category="paragraph">当您在受限模式或私有模式下使用BlueXP  时、可以从云区域或内部部署的Connector虚拟机访问用户界面。默认情况下、BlueXP  使用自签名SSL证书为连接器上运行的基于Web的控制台提供安全的HTTPS访问。</block>
+  <block id="2737440e84d6c8a13a097fa583a6e67a" category="paragraph">在此版本中、我们对新连接器和现有连接器的SSL证书进行了更改：</block>
+  <block id="6cb49682fd1f125736d18f28cbce1f23" category="list-text">此时、证书的公用名将与短主机名匹配</block>
+  <block id="982638142d38ac9441736ff5402f4e2a" category="list-text">证书使用者替代名称是主机的完全限定域名(FQDN)</block>
+  <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">支持RHEL 9.4</block>
+  <block id="70a7dd17e18fef168a9d377653df73ca" category="paragraph">现在、在标准模式或受限模式下使用BlueXP  时、BlueXP  支持在Red Hat Enterprise Linux 9.4主机上安装连接器。</block>
+  <block id="2ba7632ac1d83ea5ae8e4c11321eb1d3" category="paragraph">从连接器3.9.40版开始支持RHEL 9.4。</block>
+  <block id="d624d762d93c33c9dde16183d90a90e0" category="paragraph">标准模式和受限模式支持的RHEL版本更新列表现在包括以下内容：</block>
+  <block id="7a8260cd47a221886a3337b85ff2ec45" category="section-title">所有RHEL版本均支持Podman 4.9.4</block>
+  <block id="3a5941c5e1e3e3c4cb703b2d9d78963c" category="paragraph">现在、所有受支持的Red Hat Enterprise Linux版本均支持Podman 4.9.4。以前、版本4.9.4仅支持RHEL 8.10。</block>
+  <block id="d0f584a070c78efb8fff64b377dbf729" category="paragraph">更新后的Podman版本列表包括Red Hat Enterprise Linux主机支持的4.6.1和4.9.4版本。</block>
+  <block id="fef89f8fc6e9d583565954d5abe02ec4" category="paragraph">从连接器3.9.40版开始、RHEL主机需要使用Podman。</block>
+  <block id="842ce6e5c3bdb8cf81ffbd4f90a57649" category="section-title">已更新AWS和Azure权限</block>
+  <block id="c1f46e9419a384f29f23682739cc8d58" category="paragraph">我们更新了Connector的AWS和Azure策略、以删除不再需要的权限。这些权限与BlueXP  边缘缓存以及Kubbernetes集群的发现和管理相关、自2024年8月起不再支持这些功能。</block>
+  <block id="d201eff65f4516de2c618efea5a7edde" category="inline-link">了解AWS策略发生了哪些变化</block>
+  <block id="b0c050c316c776928b8b8bc0c327449e" category="list-text"><block ref="aff0e765a5d2f4e281feabd61d1dd500" category="inline-link-rx"></block>(英文)</block>
+  <block id="2f036a4385aa02ab7c67e7932bd4036f" category="inline-link">了解Azure策略中发生的变化</block>
+  <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>(英文)</block>
+  <block id="d30916c53949113e97a8033f02e41364" category="paragraph">此版本提供了一些小改进和错误修复。</block>
+  <block id="f0e69ccbb7ad96f546f7924206944bfa" category="sidebar">内部部署</block>
 </blocks>

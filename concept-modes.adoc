@@ -16,7 +16,7 @@ summary: BlueXP提供了多种部署模式、使您能够以满足业务和安�
 [role="lead"]
 BlueXP提供了多种部署模式_、使您能够以满足业务和安全要求的方式使用BlueXP。_Standard mode"利用BlueXP SaaS层提供完整功能、而_restricted mode"和_private mode"则可供具有连接限制的组织使用。
 
-虽然在使用受限模式或私有模式时、BlueXP会禁止流量、通信和数据的流动、但您有责任确保您的环境(内部环境和云环境)符合要求的法规。
+虽然BlueXP  在使用受限模式或私有模式时会阻止流量、通信和数据的流动、但您有责任确保您的环境(内部和云中)符合所需的法规。
 
 
 
@@ -38,7 +38,7 @@ BlueXP为您的帐户提供了以下部署模式。每个模式在出站连接�
 <<受限模式,详细了解与SaaS层的出站连接>>。
 
 --
-私有模式:: BlueXP Connector安装在内部或云(在安全区域、主权云区域或商业区域)中、并且与BlueXP SaaS层具有_no_连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
+私有模式:: BlueXP  连接器安装在内部环境或云中(位于安全区域、主权云区域或商业区域)、并且与BlueXP  SaaS层之间具有_no_连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
 +
 --
 安全区域包括 https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^]， https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^]，和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
@@ -216,23 +216,23 @@ API endpoint:: API调用会调用Connector虚拟机。
 
 == 私有模式
 
-在私有模式下、您可以在内部或云中安装Connector、然后使用BlueXP管理混合云中的数据。无法连接到BlueXP SaaS层。
+在私有模式下、您可以在内部或云中安装Connector、然后使用BlueXP  管理混合云中的数据。无法连接到BlueXP SaaS层。
 
 下图显示了一个私有模式部署示例、其中、Connector安装在云中、并同时管理Cloud Volumes ONTAP 和内部ONTAP 集群。
 
 image:diagram-private-mode-cloud.png["一个概念图像、显示了运行Connector并提供对基于Web的控制台的访问权限的云中的虚拟网络、以及在内部数据中心中管理Cloud Volumes ONTAP 和AFF 集群。"]
 
-同时、第二张图显示了一个专用模式部署示例、其中、Connector安装在内部、管理内部ONTAP 集群并提供对受支持的BlueXP数据服务的访问。
+同时、第二张图显示了一个私有模式部署示例、其中、连接器安装在内部、管理内部ONTAP集群、并提供对受支持BlueXP  数据服务的访问。
 
 image:diagram-private-mode-onprem.png["一个概念图像、显示了一个内部数据中心、其中运行了一个Connector、并提供了对基于Web的控制台和BlueXP数据服务的访问权限、同时管理了内部数据中心中的AFF 集群。"]
 
 BlueXP在专用模式下的工作原理如下：
 
 出站通信:: 不需要与BlueXP SaaS层建立出站连接。所有软件包、依赖项和基本组件均随Connector打包、并从本地计算机提供服务。只有在部署Cloud Volumes ONTAP 时、才需要连接到云提供商的公共可用资源。
-支持的连接器位置:: 在私有模式下、云或内部支持Connector。
-连接器安装:: 您自己的Linux主机支持在云端或内部环境中手动安装Connector。
+支持的连接器位置:: 在私有模式下、云或内部均支持Connector。
+连接器安装:: 支持在云中或内部环境中您自己的Linux主机上手动安装Connector。
 连接器升级:: 您需要手动升级Connector软件。连接器软件会按未定义的时间间隔发布到NetApp 支持站点。
-用户界面访问:: 用户界面可从部署在云区域或内部环境中的Connector进行访问。
+用户界面访问:: 用户界面可从部署在您的云区域或内部的Connector进行访问。
 API endpoint:: API调用会调用Connector虚拟机。
 身份验证:: 身份验证通过本地用户管理和访问来提供。不通过BlueXP的云服务提供身份验证。
 在云部署中支持的BlueXP服务:: 在云中安装Connector时、BlueXP支持以下私有模式的存储和数据服务：

@@ -96,7 +96,7 @@ NOTE: 使用 `dnf install` 命令可满足向PATH环境变量添加Podman-compos
 --
 .Docker 引擎
 --
-安装介于23.0.6和21.0.5之间的Docker引擎版本。
+安装受支持的Docker引擎版本。<<podman-versions,查看BlueXP  支持的Docker引擎版本>>(英文)
 
 .步骤
 . 安装Docker引擎。

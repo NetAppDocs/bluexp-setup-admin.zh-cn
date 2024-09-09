@@ -152,8 +152,6 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
                     "Microsoft.Network/networkSecurityGroups/securityRules/write",
                     "Microsoft.Network/applicationSecurityGroups/delete",
                     "Microsoft.Network/networkSecurityGroups/securityRules/delete",
-                    "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action",
-                    "Microsoft.ContainerService/managedClusters/read",
                     "Microsoft.Synapse/workspaces/write",
                     "Microsoft.Synapse/workspaces/read",
                     "Microsoft.Synapse/workspaces/delete",
@@ -735,6 +733,16 @@ Connector会为日常操作发出以下API请求。
 == 更改日志
 
 添加和删除权限后、我们将在以下各节中记录这些权限。
+
+
+
+=== 2024年9月9日
+
+已从JSON策略中删除以下权限、因为BlueXP  不再支持发现和管理Kubnetes集群：
+
+* microsoft.ContainerService/managedClusters/ListClusterUserCredential/action
+* microsoft.ContainerService/managedClusters/Read
+
 
 
 

@@ -12,7 +12,7 @@
 * Red Hat Enterprise Linux
 +
 ** 8.6 到 8.10
-** 9.1至9.3
+** 9.1 到 9.4
 +
 主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
 
@@ -89,7 +89,10 @@ Docker 引擎:: 在安装Connector之前、主机上需要Docker引擎。
 +
 --
 * 支持的最低版本为23.0.6。
-* 支持的最大版本为25.0.5。
+* 支持的最大版本为26.0.0。
++
+请注意、从Connector 3.9.44版开始、_new_ Connector安装支持Docker引擎26。
+
 +
 https://docs.docker.com/engine/install/["查看安装说明"^]
 
@@ -102,37 +105,12 @@ https://docs.docker.com/engine/install/["查看安装说明"^]
 容器流程编排工具:: 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 +
 --
-* Red Hat Enterprise Linux 8和9需要Podman。
-+
-[cols="50a,50a"]
-|===
-| RHEL 版本 | 支持的Podman版本 
-
-
- a| 
-RHEL 8.6至8.9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8.10
- a| 
-Podman 4.6.1和4.9.4
-
-
-
- a| 
-RHEL 9.1至9.3
- a| 
-Podman 4.6.1
-
-|===
+* Red Hat Enterprise Linux需要Podman。
 +
 Podman必须满足以下前提条件：
 
 +
+** 需要使用Podman 4.6.1或4.9.4版
 ** 必须启用并启动Podman.sSocket服务
 ** 必须安装python3
 ** 必须安装Podman-compose软件包1.0.6版
@@ -142,7 +120,10 @@ Podman必须满足以下前提条件：
 * Ubuntu需要Docker引擎。
 +
 ** 支持的最低版本为23.0.6。
-** 支持的最大版本为25.0.5。
+** 支持的最大版本为26.0.0。
++
+请注意、从Connector 3.9.44版开始、_new_ Connector安装支持Docker引擎26。
+
 
 
 

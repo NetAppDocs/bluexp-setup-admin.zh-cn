@@ -14,10 +14,12 @@ summary: 要在您自己的Linux主机上手动安装Connector、您需要查看
 
 
 [role="lead"]
-要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Azure权限、安装Connector、然后提供您准备的权限。
+连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是在Azure中运行的Linux主机上手动安装Connector软件。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Azure权限、安装Connector、然后提供您准备的权限。
 
 .开始之前
-您应查看 link:reference-limitations.html["连接器限制"]。
+* 您应具有link:concept-connectors.html["了解连接器"]。
+* 您应查看 link:reference-limitations.html["连接器限制"]。
+
 
 
 
@@ -33,7 +35,7 @@ summary: 要在您自己的Linux主机上手动安装Connector、您需要查看
 * Red Hat Enterprise Linux
 +
 ** 8.6 到 8.10
-** 9.1至9.3
+** 9.1 到 9.4
 +
 主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
 
@@ -67,37 +69,12 @@ BlueXP需要中的此空间 `/var` 因为Docker或Podman的架构设计是为了
 容器流程编排工具:: 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 +
 --
-* Red Hat Enterprise Linux 8和9需要Podman。
-+
-[cols="50a,50a"]
-|===
-| RHEL 版本 | 支持的Podman版本 
-
-
- a| 
-RHEL 8.6至8.9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8.10
- a| 
-Podman 4.6.1和4.9.4
-
-
-
- a| 
-RHEL 9.1至9.3
- a| 
-Podman 4.6.1
-
-|===
+* Red Hat Enterprise Linux需要Podman。
 +
 Podman必须满足以下前提条件：
 
 +
+** 需要使用Podman 4.6.1或4.9.4版
 ** 必须启用并启动Podman.sSocket服务
 ** 必须安装python3
 ** 必须安装Podman-compose软件包1.0.6版
@@ -107,7 +84,10 @@ Podman必须满足以下前提条件：
 * Ubuntu需要Docker引擎。
 +
 ** 支持的最低版本为23.0.6。
-** 支持的最大版本为25.0.5。
+** 支持的最大版本为26.0.0。
++
+请注意、从Connector 3.9.44版开始、_new_ Connector安装支持Docker引擎26。
+
 
 
 
@@ -213,7 +193,7 @@ NOTE: 使用 `dnf install` 命令可满足向PATH环境变量添加Podman-compos
 --
 .Docker 引擎
 --
-安装介于23.0.6和21.0.5之间的Docker引擎版本。
+安装受支持的Docker引擎版本。<<podman-versions,查看BlueXP  支持的Docker引擎版本>>(英文)
 
 .步骤
 . 安装Docker引擎。
