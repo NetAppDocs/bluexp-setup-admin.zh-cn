@@ -63,12 +63,10 @@ BlueXP使用 `/opt` 安装 `/opt/application/netapp` 目录及其内容。
 BlueXP需要中的此空间 `/var` 因为Docker或Podman的架构设计是为了在此目录中创建容器。具体来说、他们将在中创建容器 `/var/lib/containers/storage` 目录。外部挂载或符号链接不适用于此空间。
 
 --
-
-
-[[podman-versions]]
 容器流程编排工具:: 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 +
 --
+[[podman-versions]]
 * Red Hat Enterprise Linux需要Podman。
 +
 Podman必须满足以下前提条件：
@@ -83,12 +81,18 @@ Podman必须满足以下前提条件：
 
 * Ubuntu需要Docker引擎。
 +
-** 支持的最低版本为23.0.6。
-** 支持的最大版本为26.0.0。
+[cols="3*"]
+|===
+| 连接器版本 | Docker引擎的最低版本 | Docker引擎的最高版本 
+
+
+| _New_ Connector安装正在启动3.9.44 | 23.0.6 | 26.0.0 
+
+
+| 在3.9.44版本之前创建的连接器 | 23.0.6 | 25.0.5 
+|===
 +
-请注意、从Connector 3.9.44版开始、_new_ Connector安装支持Docker引擎26。
-
-
+https://docs.docker.com/engine/install/["查看安装说明"^]
 
 
 

@@ -3709,7 +3709,6 @@ https://support.netapp.com
   <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4 (或任何后续修补程序)</block>
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1.或此版本之后的任何版本</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">在Cloud Volumes ONTAP升级过程中使用</block>
-  <block id="970c4756c8fc49a0c32d6a5b32d6d6f5" category="list-text">在安装Connector之前、主机上需要Docker引擎。</block>
   <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
   <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">我们已更新Docker引擎要求、以指定Connector支持的最大版本为21.0.5。支持的最低版本仍为9.3.1。</block>
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">View Connector主机要求</block>
@@ -4192,8 +4191,6 @@ https://support.netapp.com
   <block id="2ff5664491ece284c069195a204d44c0" category="list-text">指定用于为连接器实例启用所需连接方法的安全组设置：SSH、HTTP和HTTPS。</block>
   <block id="f04e7bde7d47a749e6ba7643ae027953" category="paragraph"><block ref="f04e7bde7d47a749e6ba7643ae027953" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="list-text">9.1 到 9.4</block>
-  <block id="3b1bfd730b4217c8855d7ce0b155acdc" category="list-text">支持的最大版本为26.0.0。</block>
-  <block id="c4924fa73c6ac3240841a8329a4a87a2" category="paragraph">请注意、从Connector 3.9.44版开始、_new_ Connector安装支持Docker引擎26。</block>
   <block id="c71ee68b655a1c2de6162e6ea2837535" category="list-text">Red Hat Enterprise Linux需要Podman。</block>
   <block id="3ee8b338aa466b632e26ed7928d4b063" category="list-text">需要使用Podman 4.6.1或4.9.4版</block>
   <block id="f99019d3e8e3a4daa34cad5d0e1cccc2" category="inline-xref">查看BlueXP  支持的Docker引擎版本</block>
@@ -4239,10 +4236,6 @@ https://support.netapp.com
   <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">连接器3.9.44</block>
   <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">此版本支持Docker引擎26、SSL证书增强功能以及错误修复。</block>
   <block id="8e05f2728c2c4042bd5165b33b122aa7" category="paragraph">3.9.44版本适用于标准模式和受限模式。</block>
-  <block id="000a9ac711d57d6c617331857e9c3100" category="section-title">支持Docker引擎26.</block>
-  <block id="849eb58f322918eda95ee3acd8e4497d" category="paragraph">在Ubuntu 22.04 LTS上安装Connector时、Docker引擎是必需的容器编排工具。</block>
-  <block id="4391ac6ef3fe7c6a1cb6b50f0df238d3" category="paragraph">从连接器3.9.44版开始、Docker引擎26现在支持_new_ Connector安装。</block>
-  <block id="ff42db58a1b88b5b9aedbcedc8daa613" category="paragraph">支持的Docker引擎版本更新列表如下：</block>
   <block id="15ba9bb026c53a148756b12826c46f8b" category="section-title">已更新用于本地UI访问的SSL证书</block>
   <block id="b96edd49155123375756b26e44b38121" category="paragraph">当您在受限模式或私有模式下使用BlueXP  时、可以从云区域或内部部署的Connector虚拟机访问用户界面。默认情况下、BlueXP  使用自签名SSL证书为连接器上运行的基于Web的控制台提供安全的HTTPS访问。</block>
   <block id="2737440e84d6c8a13a097fa583a6e67a" category="paragraph">在此版本中、我们对新连接器和现有连接器的SSL证书进行了更改：</block>
@@ -4264,4 +4257,18 @@ https://support.netapp.com
   <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>(英文)</block>
   <block id="d30916c53949113e97a8033f02e41364" category="paragraph">此版本提供了一些小改进和错误修复。</block>
   <block id="f0e69ccbb7ad96f546f7924206944bfa" category="sidebar">内部部署</block>
+  <block id="faa37a1c6dbb9f8ecd3c6fd701363f79" category="cell">连接器版本</block>
+  <block id="24f3b77dafe74fa61e4dac1fa28fd846" category="cell">Docker引擎的最低版本</block>
+  <block id="f78ed5876382c6c98cfe5372fcdf962a" category="cell">Docker引擎的最高版本</block>
+  <block id="ca6fc29ee5b222437802127247ae33fd" category="cell">_New_ Connector安装正在启动3.9.44</block>
+  <block id="15f1005256bbfb87197dfe3bfd5b588f" category="cell">23.0.6</block>
+  <block id="f2162c8532f84cb24bc54e30c4c0341c" category="cell">26.0.0</block>
+  <block id="4d2dd7c014e329b4fb387303e47f1d83" category="cell">在3.9.44版本之前创建的连接器</block>
+  <block id="9b8f09d8d408f824fbf8c4f7321295aa" category="cell">25.0.5</block>
+  <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">支持的最大版本为25.0.5。</block>
+  <block id="f258c97f55e85bfbd607e70e86d840dc" category="section-title">支持在全新安装中使用Docker Engine 26</block>
+  <block id="5c968eab53d6065ccf63e9766935cb7b" category="paragraph">从3.9.44版本的连接器开始、Docker引擎26现在支持在Ubuntu主机上安装_new_连接器。</block>
+  <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">如果您在3.9.44版本之前创建了现有连接器、则Docker 25.0.5仍是Ubuntu主机上支持的最大版本。</block>
+  <block id="c64c773fbe16e4df6ae417c106a467ef" category="inline-link">详细了解Docker引擎要求</block>
+  <block id="395f31b2f1bc9cb3993acbb14cf4fb1f" category="paragraph"><block ref="724b4d6e1bb3e6bea768572a2ce7c10e" category="inline-link-rx"></block>(英文)</block>
 </blocks>
