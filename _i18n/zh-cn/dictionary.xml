@@ -188,7 +188,6 @@
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">了解如何操作</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">您需要先创建Connector、然后才能更改BlueXP设置。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
   <block id="c49ff7d7009f9d4727b2b25afa496418" category="section-title">安装 HTTPS 证书</block>
-  <block id="08547be5df7da5ef1e22244cbdbfd5d6" category="paragraph">安装由 CA 签名的证书以确保安全访问。</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">在BlueXP控制台的右上角、选择设置图标、然后选择* HTTPS设置*。</block>
   <block id="4d646a6e32f8084a095a674812f1fb31" category="list-text">在 HTTPS 设置页面中、通过生成证书签名请求（ CSR ）或安装您自己的 CA 签名证书来安装证书：</block>
   <block id="054b4f3ea543c990f6b125f41af6ebf7" category="cell">选项</block>
@@ -4271,4 +4270,11 @@ https://support.netapp.com
   <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">如果您在3.9.44版本之前创建了现有连接器、则Docker 25.0.5仍是Ubuntu主机上支持的最大版本。</block>
   <block id="c64c773fbe16e4df6ae417c106a467ef" category="inline-link">详细了解Docker引擎要求</block>
   <block id="395f31b2f1bc9cb3993acbb14cf4fb1f" category="paragraph"><block ref="724b4d6e1bb3e6bea768572a2ce7c10e" category="inline-link-rx"></block>(英文)</block>
+  <block id="346c9e732e7e7f6e38707ad310f548d0" category="list-text">\Cname.com https://signin.b2c (此端点是https://mysupport NetApp的NetApp)</block>
+  <block id="6f875ca46d399fa9c75701aab6b0e1eb" category="paragraph">安装由CA签名的证书、以便安全访问在连接器上运行的基于Web的控制台。</block>
+  <block id="00be756b024b45d0d82f8cb900cbeacb" category="paragraph">您可以使用以下选项之一安装证书：</block>
+  <block id="e832a3ac44d931a4b705999aa307cd09" category="list-text">从BlueXP  生成证书签名请求(CSR)、将证书请求提交给CA、然后在连接器上安装CA签名的证书。</block>
+  <block id="f42f94dc205ad041c3d86658f703465e" category="paragraph">BlueXP  用于生成CSR的密钥对存储在连接器内部。在连接器上安装证书时、BlueXP  会自动检索同一密钥对(专用密钥)。</block>
+  <block id="fa7c85eec1cc76ccc0e893292ce638e4" category="list-text">安装已有的CA签名证书。</block>
+  <block id="44f374dc4bb34314bb885e22229628b6" category="paragraph">使用此选项时、不会通过BlueXP  生成CSR。您需要单独生成CSR并将私钥存储在外部。在安装证书时、您需要为BlueXP  提供专用密钥。</block>
 </blocks>

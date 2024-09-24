@@ -242,6 +242,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-l
 --
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
+* \Cname.com https://signin.b2c (此端点是https://mysupport NetApp的NetApp)
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
