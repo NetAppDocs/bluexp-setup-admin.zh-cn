@@ -483,7 +483,6 @@
   <block id="12e2060dbbd01e288c66757f239fb192" category="list-text">/var 中的磁盘空间</block>
   <block id="530ae65bce71acbabc920f0c53c4b5c2" category="list-text">必须有20 GiB的可用空间</block>
   <block id="681992b8581f6d4247af5523a14d0ce4" category="list-text">Docker 引擎</block>
-  <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">查看安装说明</block>
   <block id="9f0bb2acc3984bc2da2e5e566dd4bc0a" category="doc">了解BlueXP</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
   <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">BlueXP平台提供了数据管理的四大要素：存储、移动性、保护以及分析和控制。</block>
@@ -3708,7 +3707,6 @@ https://support.netapp.com
   <block id="53f1b4752b0f2d48c0953219295e0a2b" category="list-text">9.13.0 P4 (或任何后续修补程序)</block>
   <block id="c2eb567355a3050dee61ad28cde98255" category="list-text">9.13.1.或此版本之后的任何版本</block>
   <block id="7e0ccd7729abca8ae58e9ceff3fd0b87" category="list-text">在Cloud Volumes ONTAP升级过程中使用</block>
-  <block id="3e291cd3cf657cb754d907986c7587ed" category="paragraph"><block ref="3e291cd3cf657cb754d907986c7587ed" category="inline-link-rx"></block></block>
   <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">我们已更新Docker引擎要求、以指定Connector支持的最大版本为21.0.5。支持的最低版本仍为9.3.1。</block>
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">View Connector主机要求</block>
   <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>。</block>
@@ -3947,7 +3945,6 @@ https://support.netapp.com
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">需要一个经过认证可运行受支持操作系统的裸机或托管虚拟机管理程序。</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Ubuntu需要Docker引擎。</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">2024年6月30日、RHEL 7达到了维护结束(EOM)、而CentOS 7达到了生命周期结束(EOL)。2024年6月30日、NetApp停止在这些Linux分发版上支持Connector。</block>
-  <block id="547a1a61c710e2dc947389da0967d175" category="list-text">支持的最低版本为23.0.6。</block>
   <block id="13265d5e2f2489e0351d3bae9dc7d923" category="doc">注册或登录BlueXP</block>
   <block id="400356f2a752e6926bd99ce1db45ee8c" category="paragraph">您可以从基于Web的控制台访问BlueXP。开始使用BlueXP后、第一步是使用您的NetApp支持站点凭据或公司目录中的SSO凭据进行注册或登录。</block>
   <block id="71bf124b6b9da30db8c000241ce01691" category="paragraph">首次访问BlueXP时、您可以使用BlueXP通过以下选项之一进行注册或登录：</block>
@@ -4264,7 +4261,6 @@ https://support.netapp.com
   <block id="f2162c8532f84cb24bc54e30c4c0341c" category="cell">26.0.0</block>
   <block id="4d2dd7c014e329b4fb387303e47f1d83" category="cell">在3.9.44版本之前创建的连接器</block>
   <block id="9b8f09d8d408f824fbf8c4f7321295aa" category="cell">25.0.5</block>
-  <block id="3d0dee7040af4a3fedb8d1c83abf5f56" category="list-text">支持的最大版本为25.0.5。</block>
   <block id="f258c97f55e85bfbd607e70e86d840dc" category="section-title">支持在全新安装中使用Docker Engine 26</block>
   <block id="5c968eab53d6065ccf63e9766935cb7b" category="paragraph">从3.9.44版本的连接器开始、Docker引擎26现在支持在Ubuntu主机上安装_new_连接器。</block>
   <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">如果您在3.9.44版本之前创建了现有连接器、则Docker 25.0.5仍是Ubuntu主机上支持的最大版本。</block>
@@ -4277,4 +4273,24 @@ https://support.netapp.com
   <block id="f42f94dc205ad041c3d86658f703465e" category="paragraph">BlueXP  用于生成CSR的密钥对存储在连接器内部。在连接器上安装证书时、BlueXP  会自动检索同一密钥对(专用密钥)。</block>
   <block id="fa7c85eec1cc76ccc0e893292ce638e4" category="list-text">安装已有的CA签名证书。</block>
   <block id="44f374dc4bb34314bb885e22229628b6" category="paragraph">使用此选项时、不会通过BlueXP  生成CSR。您需要单独生成CSR并将私钥存储在外部。在安装证书时、您需要为BlueXP  提供专用密钥。</block>
+  <block id="cce7af47240992bbe7e732a4ed33061c" category="inline-link">查看Docker安装说明</block>
+  <block id="11f197927bd64550079e417137ab4ce2" category="paragraph"><block ref="11f197927bd64550079e417137ab4ce2" category="inline-link-rx"></block></block>
+  <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">2024年9月30日</block>
+  <block id="0beb94109608ff82d313b33947162f96" category="section-title">专用模式版本(3.9.44)</block>
+  <block id="f1fb6fd189345cf04ef77974b58bcbfc" category="paragraph">此版本包含以下版本的BlueXP  组件和服务、这些组件和服务支持私有模式。</block>
+  <block id="8dd8dbe371973ff01954f1d0db6a6c30" category="cell">3.9.44</block>
+  <block id="5fcc5d3ffc4bbbcf6d018ab4a9639205" category="cell">2024年9月27日</block>
+  <block id="48f2931f061b9d56d7805eddf6969cea" category="paragraph">对于Connector、3.9.44专用模式版本包括2024年8月和2024年9月版本中推出的更新。最值得注意的是、支持Red Hat Enterprise Linux 9.4。</block>
+  <block id="288ce8ff800de0648500c62f0658b96c" category="paragraph">要详细了解这些BlueXP  组件和服务版本中包含的内容、请参阅每个BlueXP  服务的发行说明：</block>
+  <block id="65439cdb7546ae11a93a141421129d1a" category="inline-link">2024年9月版连接器中的新增功能</block>
+  <block id="46c02b08a8d12f7b5b9a43c01b252fe0" category="list-text"><block ref="46c02b08a8d12f7b5b9a43c01b252fe0" category="inline-link-rx"></block></block>
+  <block id="c531086859410bbf7d79b1d007644e8c" category="inline-link">2024年8月版连接器中的新增功能</block>
+  <block id="3447cde4c00b98b6428bff77da46fd8c" category="list-text"><block ref="3447cde4c00b98b6428bff77da46fd8c" category="inline-link-rx"></block></block>
+  <block id="116a2755907d33cc76c6cdc442c467b0" category="inline-link">BlueXP  备份和恢复的新增功能</block>
+  <block id="4e02af58c02d9f0704b79eb4e000eb20" category="list-text"><block ref="4e02af58c02d9f0704b79eb4e000eb20" category="inline-link-rx"></block></block>
+  <block id="cdcec1bb4c8f6524979a702b1691d4f7" category="inline-link">BlueXP  分类的新增功能</block>
+  <block id="9212eddb7e41302606e7873d754ab3aa" category="list-text"><block ref="9212eddb7e41302606e7873d754ab3aa" category="inline-link-rx"></block></block>
+  <block id="00dc7f0b165829f9f81bfaf12a8db2e4" category="inline-link">BlueXP  中Cloud Volumes ONTAP管理的新增功能</block>
+  <block id="941cdb6d27c83c929d4abe28f2321665" category="list-text"><block ref="941cdb6d27c83c929d4abe28f2321665" category="inline-link-rx"></block></block>
+  <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">有关专用模式的更多详细信息、包括如何升级、请参见以下内容：</block>
 </blocks>

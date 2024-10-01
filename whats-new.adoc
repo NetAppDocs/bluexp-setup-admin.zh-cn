@@ -18,6 +18,61 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 
+== 2024年9月30日
+
+
+
+=== 专用模式版本(3.9.44)
+
+现在可以从NetApp 支持站点 下载新的专用模式版本。
+
+此版本包含以下版本的BlueXP  组件和服务、这些组件和服务支持私有模式。
+
+[cols="2*"]
+|===
+| 服务 | 包含版本 
+
+
+| 连接器 | 3.9.44 
+
+
+| 备份和恢复 | 2024年9月27日 
+
+
+| 分类 | 2024年5月15日(版本1.31) 
+
+
+| Cloud Volumes ONTAP管理 | 2024年9月9日 
+
+
+| 数字电子钱包 | 2023年7月30日 
+
+
+| 内部ONTAP集群管理 | 2024年4月22日 
+
+
+| Replication | 2022年9月18日 
+|===
+对于Connector、3.9.44专用模式版本包括2024年8月和2024年9月版本中推出的更新。最值得注意的是、支持Red Hat Enterprise Linux 9.4。
+
+要详细了解这些BlueXP  组件和服务版本中包含的内容、请参阅每个BlueXP  服务的发行说明：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#9-september-2024["2024年9月版连接器中的新增功能"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#8-august-2024["2024年8月版连接器中的新增功能"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  备份和恢复的新增功能"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分类的新增功能"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP  中Cloud Volumes ONTAP管理的新增功能"^]
+
+
+有关专用模式的更多详细信息、包括如何升级、请参见以下内容：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
+
+
+
+
 == 2024年9月9日
 
 
