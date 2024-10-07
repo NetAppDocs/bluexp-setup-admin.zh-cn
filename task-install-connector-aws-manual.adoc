@@ -28,26 +28,64 @@ summary: 要在您自己的Linux主机上手动安装Connector、您需要查看
 连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。
 
 专用主机:: 与其他应用程序共享的主机不支持此连接器。主机必须是专用主机。
-支持的操作系统::
-+
---
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux
-+
-** 8.6 到 8.10
-** 9.1 到 9.4
-+
-主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
-
-+
-这些操作系统的英语版本支持 Connector 。
-
-
-
-
-
---
 虚拟机管理程序:: 需要一个经过认证可运行受支持操作系统的裸机或托管虚拟机管理程序。
+[[Podman-versions]]操作系统和容器要求:: 在标准模式或受限模式下使用BlueXP  时、BlueXP  支持将连接器与以下操作系统结合使用。在安装Connector之前、需要使用容器流程编排工具。
++
+--
+[cols="2a,2a,2a,2a,2a"]
+|===
+| 操作系统 | 支持的OS版本 | 支持的连接器版本 | 所需的容器工具 | SELinux 
+
+
+ a| 
+Red Hat Enterprise Linux
+ a| 
+9.1 到 9.4
+
+8.6 到 8.10
+ a| 
+3.9.40或更高版本、BlueXP  处于标准模式或受限模式
+ a| 
+4.6.1播客4.9.4
+
+<<podman-configuration,查看Podman配置要求>>(英文)
+ a| 
+在强制模式或许可模式下受支持
+
+
+
+ a| 
+Ubuntu
+ a| 
+24.04 LTS
+ a| 
+3.8.5.4.5.8.5.3.8.5.8.5.8.5.3.8.5.8.5.8.5.3.8.5.8.5.8. BlueXP 
+ a| 
+Docker 26.0.0
+ a| 
+不支持
+
+
+
+ a| 
+22.04 LTS
+ a| 
+3.9.29或更高版本
+ a| 
+Docker 23.0.6 26.0.0
+
+26.0.0支持_new_ 3.9.44或更高版本安装
+ a| 
+不支持
+
+|===
+注释：
+
+* 这些操作系统的英语版本支持 Connector 。
+* 对于RHEL、主机必须注册到Red Hat订阅管理中。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
+
+
+--
 CPU:: 8 个核心或 8 个 vCPU
 RAM:: 32 GB
 AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用t3.2倍大。
@@ -64,40 +102,6 @@ BlueXP使用 `/opt` 安装 `/opt/application/netapp` 目录及其内容。
 BlueXP需要中的此空间 `/var` 因为Docker或Podman的架构设计是为了在此目录中创建容器。具体来说、他们将在中创建容器 `/var/lib/containers/storage` 目录。外部挂载或符号链接不适用于此空间。
 
 --
-容器流程编排工具:: 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
-+
---
-[[podman-versions]]
-* Red Hat Enterprise Linux需要Podman。
-+
-Podman必须满足以下前提条件：
-
-+
-** 需要使用Podman 4.6.1或4.9.4版
-** 必须启用并启动Podman.sSocket服务
-** 必须安装python3
-** 必须安装Podman-compose软件包1.0.6版
-** 必须将Podman-compose添加到PATH环境变量中
-
-
-* Ubuntu需要Docker引擎。
-+
-[cols="3*"]
-|===
-| 连接器版本 | Docker引擎的最低版本 | Docker引擎的最高版本 
-
-
-| _New_ Connector安装正在启动3.9.44 | 23.0.6 | 26.0.0 
-
-
-| 在3.9.44版本之前创建的连接器 | 23.0.6 | 25.0.5 
-|===
-+
-https://docs.docker.com/engine/install/["查看Docker安装说明"^]
-
-
-
---
 
 
 
@@ -107,7 +111,13 @@ https://docs.docker.com/engine/install/["查看Docker安装说明"^]
 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 
 * Red Hat Enterprise Linux 8和9需要Podman。
++
+<<podman-versions,查看BlueXP  支持的Podman版本>>(英文)
+
 * Ubuntu需要Docker引擎。
++
+<<podman-versions,查看BlueXP  支持的Docker引擎版本>>(英文)
+
 
 
 .步骤
@@ -115,7 +125,13 @@ https://docs.docker.com/engine/install/["查看Docker安装说明"^]
 ====
 .Podman
 --
-安装支持的Podman版本。<<podman-versions,查看BlueXP  支持的Podman版本>>(英文)
+按照以下步骤安装Podman并对其进行配置，使其符合以下要求：
+
+* 必须启用并启动Podman.sSocket服务
+* 必须安装python3
+* 必须安装Podman-compose软件包1.0.6版
+* 必须将Podman-compose添加到PATH环境变量中
+
 
 .步骤
 . 如果在主机上安装了Podman-Docker软件包、请将其删除。
@@ -198,13 +214,10 @@ NOTE: 使用 `dnf install` 命令可满足向PATH环境变量添加Podman-compos
 --
 .Docker 引擎
 --
-安装受支持的Docker引擎版本。<<podman-versions,查看BlueXP  支持的Docker引擎版本>>(英文)
+按照Docker中的文档安装Docker引擎。
 
 .步骤
-. 安装Docker引擎。
-+
-https://docs.docker.com/engine/install/["从Docker查看安装说明"^]
-
+. https://docs.docker.com/engine/install/["从Docker查看安装说明"^]
 +
 请务必按照以下步骤安装特定版本的Docker引擎。安装最新版本将安装BlueXP不支持的Docker版本。
 
@@ -310,7 +323,7 @@ https://mysupport.netapp.com
 --
 
 
-代理服务器:: 如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。请注意、BlueXP不支持透明代理服务器。
+代理服务器:: 如果您的企业需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。请注意、BlueXP不支持透明代理服务器。
 +
 --
 * IP 地址
@@ -516,7 +529,7 @@ https://_ipaddress_[]
 
 . 登录后，设置 Connector ：
 +
-.. 指定要与Connector关联的BlueXP帐户。
+.. 指定要与连接器关联的BlueXP  组织。
 .. 输入系统名称。
 .. 在*是否在安全环境中运行？*下、保持禁用受限模式。
 +
@@ -528,7 +541,7 @@ https://_ipaddress_[]
 
 
 .结果
-现在、Connector已安装完毕、并已使用您的BlueXP帐户进行设置。
+现在、您的BlueXP  组织已安装并设置了连接器。
 
 如果您在创建Connector的同一AWS帐户中具有Amazon S3存储分段、则会在BlueXP画布上自动显示Amazon S3工作环境。 https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["了解如何从BlueXP管理S3存储分段"^]
 
@@ -566,7 +579,7 @@ https://_ipaddress_[]
 . 确保当前在BlueXP中选择了正确的Connector。
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
+image:screenshot-settings-icon-organization.png["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
 . 选择*添加凭据*并按照向导中的步骤进行操作。
 +

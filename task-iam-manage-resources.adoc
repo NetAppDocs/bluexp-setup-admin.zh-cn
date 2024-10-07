@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-resources.html 
+keywords: resource, hierarchy, association, access, resource permissions, resource hierarchy, iam, identity and access management 
+summary: 通过将资源与特定项目和文件夹相关联来管理组织的资源层次结构。 
+---
+= 管理BlueXP  组织中的资源层次结构
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+当您使用BlueXP  身份和访问管理(IAM)将成员与您的组织关联时、您可以在组织、文件夹或项目级别提供权限。要确保这些成员有权访问适当的资源、您需要通过将资源与特定项目和文件夹关联来管理组织的资源层次结构。资源是BlueXP  已管理的工作环境。
+
+
+
+== 查看组织中的资源
+
+要开始管理资源层次结构、您应了解与您的组织关联的资源。
+
+.步骤
+. 在BlueXP  控制台的右上角，选择image:icon-settings-option.png["BlueXP  Web控制台右上角显示的设置图标。"]>*身份和访问管理*。
+. 选择*资源*。
+
+
+.结果
+与您的组织关联的资源显示在*资源*表中。
+
+.下一步是什么？
+要查找特定资源，您可以<<find-resources,搜索和筛选表的内容>>。
+
+找到要查找的资源后、您可以完成以下任一操作：
+
+* <<view-folders-and-projects,查看与资源关联的文件夹和项目>>
+* <<associate-resource,将资源与其他文件夹和项目相关联>>
+* <<remove-resource,从文件夹或项目中删除资源>>
+
+
+
+
+== 查找组织中的特定资源
+
+如果您的组织中有大量资源、则可以使用搜索和筛选选项来查找特定资源。
+
+.步骤
+. 从“*资源*”页面中，选择“*高级搜索和筛选*”。
+. 使用任何可用选项查找您要查找的资源：
++
+** *按资源名称搜索*：输入文本字符串并选择*Add*。
+** *平台*：选择一个或多个平台、例如Amazon Web Services。
+** *资源*：选择一个或多个资源，如Cloud Volumes ONTAP。
+** *组织、文件夹或项目*：选择整个组织、特定文件夹或特定项目。
+
+
+. 选择*搜索*。
+
+
+.结果
+资源表的内容将刷新、以显示与您的搜索和筛选选择匹配的资源。
+
+
+
+== 将资源与文件夹和项目相关联
+
+如果要使某个资源可供组织中的其他文件夹或项目使用、则需要在该文件夹或项目与该资源之间创建关联。
+
+.开始之前
+您应了解资源关联的工作原理。link:concept-identity-and-access-management.html#resources["了解有关资源的信息、包括何时将资源与文件夹相关联"](英文)
+
+.步骤
+. 从*Resources*页中，导航到表中的资源，选择image:icon-action.png["一个由三个并排点组成的图标"]，然后选择*Associate to folder or Projects*。
+. 选择文件夹或项目，然后选择*accept。
+. 要关联其他文件夹或项目，请选择*添加文件夹或项目*，然后选择文件夹或项目。
++
+请注意、您只能从具有管理员权限的文件夹和项目中进行选择。
+
+. 选择*关联资源*。
+
+
+.结果
+BlueXP  会将资源与选定的文件夹和项目相关联。
+
+* 如果将资源与项目相关联、则对这些项目具有权限的成员现在可以在BlueXP  中访问该资源。
+* 如果将资源与文件夹相关联、则_Folder或项目admin_现在可以从BlueXP  IAM中访问资源。link:concept-identity-and-access-management.html#resources["了解如何将资源与文件夹相关联"](英文)
+
+
+.完成后
+如果您关联的资源是使用BlueXP  连接器发现的、并且您的组织中还有其他成员、则还需要将该连接器与该资源现在关联的项目相关联。否则、没有_Organization admin_角色的成员将无法从BlueXP  画布访问连接器及其关联的资源。
+
+link:task-iam-associate-connectors.html["了解如何将Connector与文件夹或项目相关联"](英文)
+
+
+
+== 查看与资源关联的文件夹和项目
+
+要确定某个资源在组织层次结构中的可用位置、您可以查看与该资源关联的文件夹和项目。
+
+.步骤
+. 在*Resources*页面中，导航到表中的某个资源，选择，然后选择image:icon-action.png["一个由三个并排点组成的图标"]*View DEGRAMENTS*。
+
+
+.结果
+BlueXP  将显示与资源关联的文件夹和项目。
+
+以下示例显示了与一个项目关联的资源。
+
+image:screenshot-iam-resource-details.png["资源详细信息页面的屏幕截图、其中显示了与组织直接下的项目关联的资源。"]
+
+.下一步是什么？
+* 您可以<<associate-resource,将资源与其他项目或文件夹相关联>>。
+* 您可以<<remove-resource,从特定文件夹或项目中删除资源>>。
+* 如果需要确定哪些组织成员有权访问资源，可以link:task-iam-manage-folders-projects.html#view-associated-resources-members["查看有权访问与资源关联的文件夹和项目的成员"]。
+
+
+
+
+== 从文件夹或项目中删除资源
+
+要从文件夹或项目中删除资源，需要删除文件夹或项目与资源之间的关联。删除关联后、组织成员将无法再管理文件夹或项目中的资源。
+
+.关于此任务
+如果要从整个组织中删除已发现的资源、则需要从BlueXP  画布中删除工作环境。
+
+.步骤
+. 在*Resources*页面中，导航到表中的某个资源，选择，然后选择image:icon-action.png["一个由三个并排点组成的图标"]*View DEGRAMENTS*。
+. 对于要删除其资源的文件夹或项目、请选择image:icon-delete.png["垃圾箱图标"]
+. 通过选择*Delete*确认要删除关联。
+
+
+.结果
+BlueXP  将删除此关联。成员无法再从该文件夹或项目访问资源。
+
+
+
+== 相关信息
+
+* link:concept-identity-and-access-management.html["了解BlueXP  身份和访问管理"]
+* link:task-iam-get-started.html["开始使用BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["了解适用于BlueXP  IAM的API"^]
+

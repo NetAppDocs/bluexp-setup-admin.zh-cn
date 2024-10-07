@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: task-iam-audit-actions-timeline.html 
+keywords: iam, audit, monitor, audit iam actions, monitor iam actions 
+summary: '根据时间表监控或审核BlueXP  身份和访问管理(IAM)操作。' 
+---
+= 通过BlueXP  时间表监控或审核IAM活动
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您需要监控或审核通过BlueXP  身份和访问管理(IAM)完成的操作、则可以从BlueXP  时间线查看详细信息。例如、您可能希望验证谁向组织添加了成员或项目是否已成功删除。
+
+.步骤
+. 在BlueXP  控制台的右上角，选择image:icon-settings-option.png["BlueXP  Web控制台右上角显示的设置图标。"]>*时间线*。
+. 从过滤器中选择*Service*，然后选择*Tenancy。
+. 使用任何其他筛选器更改表中显示的操作。
++
+例如，可以使用*User*过滤器显示与特定用户帐户相关的操作。
+
+
+
+.结果
+时间线将更新、以显示已完成的与BlueXP  IAM相关的管理操作。

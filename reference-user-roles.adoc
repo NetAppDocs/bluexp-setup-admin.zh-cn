@@ -14,19 +14,29 @@ summary: 帐户管理员，工作空间管理员，合规性查看器和 SnapCen
 
 
 [role="lead"]
-帐户管理员，工作空间管理员，合规性查看器和 SnapCenter 管理员角色可为用户提供特定权限。在将新用户与BlueXP帐户关联时、您可以分配这些角色之一。
+在受限模式或专用模式下使用BlueXP  时、您将使用BlueXP  account_来管理用户。您可以通过选择以下角色为帐户中的用户提供特定权限：帐户管理员、工作区管理员、合规性查看器和SnapCenter管理员
 
-"合规性查看器"角色用于只读BlueXP分类访问。
+如果您在标准模式下使用BlueXP 、则没有BlueXP  帐户。而是使用BlueXP  身份和访问管理(IAM)管理_ BlueXP  organization _。
+
+* link:concept-identity-and-access-management.html["了解BlueXP  IAM"]
+* link:concept-modes.html["了解BlueXP部署模式"]
+
 
 [cols="24,19,19,19,19"]
 |===
 | 任务 | 帐户管理员 | 工作空间管理员 | 合规性查看器 | SnapCenter 管理员 
 
 
-| 管理工作环境 | 是的。 | 是的。 | 否 | 否 
+| 创建连接器 | 是的。 | 否 | 否 | 否 
 
 
-| 在工作环境中启用服务 | 是的。 | 是的。 | 否 | 否 
+| 管理工作环境 | 是的。 | 是的。 | 否 | 是的。 
+
+
+| 在工作环境中启用服务 | 是的。 | 是的。 | 否 | 是的。 
+
+
+| 使用BlueXP  服务 | 是的。 | 是的。 | 否 | 是的。 
 
 
 | 从工作空间中删除工作环境 | 是的。 | 是的。 | 否 | 否 
@@ -41,7 +51,7 @@ summary: 帐户管理员，工作空间管理员，合规性查看器和 SnapCen
 | 查看时间表 | 是的。 | 是的。 | 否 | 否 
 
 
-| 在工作空间之间切换 | 是的。 | 是的。 | 是的。 | 否 
+| 在工作空间之间切换 | 是的。 | 是的。 | 是的。 | 是的。 
 
 
 | 查看BlueXP分类扫描结果 | 是的。 | 是的。 | 是的。 | 否 
@@ -50,24 +60,16 @@ summary: 帐户管理员，工作空间管理员，合规性查看器和 SnapCen
 | 接收 Cloud Volumes ONTAP 报告 | 是的。 | 否 | 否 | 否 
 
 
-| 创建连接器 | 是的。 | 否 | 否 | 否 
-
-
 | 管理BlueXP帐户 | 是的。 | 否 | 否 | 否 
 
 
-| 管理凭据 | 是的。 | 否 | 否 | 否 
+| 管理凭据 | 是的。 | 是的。 | 否 | 否 
 
 
-| 修改BlueXP设置 | 是的。 | 否 | 否 | 否 
+| 修改BlueXP设置 | 是的。 | 是的。 | 否 | 否 
 
 
-| 查看和管理支持仪表板 | 是的。 | 否 | 否 | 否 
-
-
-| 安装 HTTPS 证书 | 是的。 | 否 | 否 | 否 
+| 查看和管理支持仪表板 | 是的。 | 是的。 | 否 | 否 
 |===
 .相关链接
-* link:task-setting-up-netapp-accounts.html["在BlueXP帐户中设置工作空间和用户"]
-* link:task-managing-netapp-accounts.html["在BlueXP帐户中管理工作空间和用户"]
-
+link:task-managing-netapp-accounts.html["管理您的BlueXP帐户"]

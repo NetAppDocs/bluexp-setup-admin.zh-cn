@@ -4,7 +4,7 @@ permalink: concept-federation.html
 keywords: identity federation, federation, federated identity, set up identity federation, set up federated connection, federated connection 
 summary: 身份联合支持使用BlueXP进行单点登录、以便用户可以使用您公司身份中的凭据进行登录。首先、了解身份联合如何与BlueXP配合使用、然后查看设置过程概述。 
 ---
-= 将身份联合与BlueXP结合使用
+= 通过将身份联合与BlueXP  结合使用来启用单点登录
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

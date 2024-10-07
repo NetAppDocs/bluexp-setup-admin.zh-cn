@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors' 
-summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、云提供商凭据等。 
+summary: 了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器、云提供商凭据等。 
 ---
 = 新增功能
 :hardbreaks:
@@ -14,7 +14,106 @@ summary: 了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、�
 
 
 [role="lead"]
-了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、云提供商凭据等。
+了解BlueXP  管理功能的新增功能：身份和访问管理(IAM)、连接器、云提供商凭据等。
+
+
+
+== 2024年10月7日
+
+
+
+=== BlueXP  身份和访问管理
+
+BlueXP  身份和访问管理(IAM)是一种新的资源和访问管理模式、它取代并增强了BlueXP  帐户在标准模式下使用BlueXP  时以前提供的功能。
+
+BlueXP  IAM提供更精细的资源和权限管理：
+
+* 通过顶级_organ组织_、您可以管理各个_projects_之间的访问权限。
+* _Folders"用于将相关项目分组在一起。
+* 通过增强的资源管理功能、您可以将资源与一个或多个文件夹或项目相关联。
++
+例如、您可以将一个Cloud Volumes ONTAP系统与多个项目相关联。
+
+* 通过增强的访问管理功能、您可以将角色分配给组织层次结构不同级别的成员。
+
+
+通过这些增强功能、可以更好地控制用户可以执行的操作及其可以访问的资源。
+
+
+
+==== BlueXP  IAM如何影响现有帐户
+
+登录到BlueXP  时、您会注意到以下更改：
+
+* 您的_account_现在称为_organퟩ 횯_
+* 您的_workworkse_现在 称为_projects_
+* 用户角色的名称已更改：
++
+** _Account admin_现在是_Organization admin_
+** _Workspace admin_现在是_Folder或项目admin_
+** _Compliance viewer_现在是_Classification viewer_
+
+
+* 在"设置"下、您可以访问BlueXP  身份和访问管理以利用这些增强功能
+
+
+image:screenshot-iam-introduction.png["BlueXP  的屏幕截图、显示可从界面顶部选择的组织和项目以及可从\"设置\"菜单访问的身份和访问管理。"]
+
+请注意以下事项：
+
+* 您的现有用户或工作环境不会发生任何变化。
+* 虽然角色名称已更改、但从权限角度来看没有任何区别。用户仍可访问与以前相同的工作环境。
+* 您登录BlueXP  的方式没有变化。BlueXP  IAM可以像BlueXP  帐户一样使用NetApp云登录、NetApp支持站点凭据和联合连接。
+* 如果您有多个BlueXP  帐户、则现在有多个BlueXP  组织。
+
+
+
+
+==== 用于BlueXP  IAM的API
+
+此更改为BlueXP  IAM引入了一个新的API、但它向后兼容先前的租户API。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["了解适用于BlueXP  IAM的API"^]
+
+
+
+==== 支持的部署模式
+
+在标准模式下使用BlueXP  时、支持BlueXP  IAM。如果您在受限模式或私有模式下使用BlueXP 、则可以继续使用BlueXP _account_来管理工作空间、用户和资源。
+
+
+
+==== 下一步行动
+
+* link:concept-identity-and-access-management.html["了解BlueXP  IAM"]
+* link:task-iam-get-started.html["开始使用BlueXP  IAM"]
+
+
+
+
+=== 连接器3.9.45
+
+此版本提供了更广泛的操作系统支持和错误修复。
+
+3.9.45版本适用于标准模式和受限模式。
+
+
+
+==== 支持Ubuntu 24.04 LTS
+
+从3.9.45版本开始、在标准模式或受限模式下使用BlueXP  时、BlueXP  现在支持在Ubuntu 24.04 LTS主机上全新安装连接器。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector主机要求"]。
+
+
+
+=== 支持在RHEL主机中使用SELinux
+
+现在、对于在强制模式或许可模式下启用了SELinux的Red Hat Enterprise Linux主机、BlueXP  支持Connector。
+
+从标准模式和受限模式的3.9.40版本开始支持SELinux、而专用模式的3.9.42版本开始支持SELinux。
+
+BlueXP  不支持对Ubuntu主机使用SELinux。
+
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["了解有关SELinux的更多信息"^]
 
 
 
@@ -1391,7 +1490,7 @@ image:screenshot_nss_management.png["支持信息板中可添加 NSS 帐户的 N
 
 Cloud Manager 中的时间线现在显示与帐户管理相关的操作和事件。这些操作包括关联用户，创建工作空间和创建连接器等。如果您需要确定执行特定操作的人员，或者需要确定操作的状态，则检查时间线会很有帮助。
 
-link:task-monitor-cm-operations.html#audit-user-activity-in-your-account["了解如何筛选租户服务的时间线"]。
+link:task-monitor-cm-operations.html["了解如何筛选租户服务的时间线"](英文)
 
 
 

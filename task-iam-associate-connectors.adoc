@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: task-iam-associate-connectors.html 
+keywords: connector, associate connector, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource 
+summary: 如果您的组织成员需要在其他项目中使用连接器、您需要创建以从BlueXP  IAM创建关联。 
+---
+= 将BlueXP  连接器与其他文件夹和项目相关联
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要从BlueXP  管理多种类型的工作环境、需要使用Connector。当_Organization admin_创建Connector时，BlueXP  会自动将该Connector与组织和当前选定的项目相关联。Organization admin_可自动从组织中的任何位置访问该Connector。组织中的其他成员只能从创建连接器的项目访问该连接器、除非您将该连接器与BlueXP  身份和访问管理(IAM)中的其他项目相关联。
+
+.开始之前
+您应了解连接器关联的工作原理。link:concept-identity-and-access-management.html#associate-connectors["了解如何将连接器与BlueXP  IAM结合使用"](英文)
+
+.关于此任务
+* 当_Folder或项目admin_查看*Connectors*页时，该页将显示组织中的所有Connectors*。但是、具有此角色的成员只能查看连接器并将其与它们具有权限的文件夹和项目相关联。link:reference-iam-predefined-roles.html["详细了解_Folder或项目admin_可以完成的操作"](英文)
+* 由于一个已知问题、BlueXP  IAM中的"Connectors (连接器)"页面将显示先前从BlueXP  中删除的任何旧连接器。
+
+
+.步骤
+. 在BlueXP  控制台的右上角，选择image:icon-settings-option.png["BlueXP  Web控制台右上角显示的设置图标。"]>*身份和访问管理*。
+. 选择*连接器*。
+. 从表中、找到要关联的连接器。
++
+要查找特定连接器、您可以使用表上方的搜索、并通过选择资源层次结构的特定部分来筛选表的内容。
+
+. 要首先查看与连接器关联的文件夹和项目，请选择，然后选择image:icon-action.png["一个由三个并排点组成的图标"]*查看详细信息*。
++
+BlueXP  显示与连接器关联的文件夹和项目的详细信息。
+
+. 选择*关联到文件夹或项目*。
+. 选择文件夹或项目，然后选择*accept。
+. 要将连接器与其它文件夹或项目相关联，请选择*添加文件夹或项目*，然后选择文件夹或项目。
+. 选择*关联连接器*。
+
+
+.结果
+BlueXP  将连接器与选定的文件夹和项目相关联。现在、对这些文件夹和项目具有权限的成员可以选择该Connector。
+
+.完成后
+如果要将Connector管理的资源与相同的文件夹和项目相关联，可以从资源页执行此操作。
+
+link:task-iam-manage-resources.html#associate-resource["了解如何将资源与文件夹和项目相关联"](英文)
+
+.相关信息
+* link:concept-connectors.html["了解BlueXP  连接器"]
+* link:concept-identity-and-access-management.html["了解BlueXP  身份和访问管理"]
+* link:task-iam-get-started.html["开始使用BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["了解适用于BlueXP  IAM的API"^]
+

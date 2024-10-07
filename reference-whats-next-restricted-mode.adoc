@@ -23,6 +23,7 @@ summary: 在受限模式下启动和运行BlueXP后、您可以开始使用受�
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["备份和恢复文档"^]
 * https://docs.netapp.com/us-en/bluexp-classification/index.html["分类文档"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP 文档"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["电子钱包文档"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["内部ONTAP 集群文档"^]
 * https://docs.netapp.com/us-en/bluexp-replication/index.html["复制文档"^]
 

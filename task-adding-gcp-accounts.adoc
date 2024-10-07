@@ -52,7 +52,7 @@ image:screenshot_gcp_cvo_marketplace.png["Google Cloud中Cloud Volumes ONTAP Mar
 
 .. 在弹出对话框中、选择*向NetApp、Inc.注册*
 +
-要将Google Cloud订阅链接到您的BlueXP帐户、必须完成此步骤。只有在从此页面重定向并登录到BlueXP后、链接订阅的过程才会完成。
+要将Google Cloud订阅与您的BlueXP  组织或帐户关联起来、必须完成此步骤。只有在从此页面重定向并登录到BlueXP后、链接订阅的过程才会完成。
 
 +
 image:screenshot_gcp_marketplace_register.png["注册弹出窗口的屏幕截图。"]
@@ -63,13 +63,13 @@ image:screenshot_gcp_marketplace_register.png["注册弹出窗口的屏幕截图
 NOTE: 如果贵组织的某个用户已从您的计费帐户订阅NetApp BlueXP订阅、则您将重定向到 https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["BlueXP网站上的Cloud Volumes ONTAP 页面"^] 而是。如果这是意外情况，请联系您的 NetApp 销售团队。Google 仅为每个 Google 计费帐户启用一个订阅。
 
 +
-*** 选择要与此订阅关联的BlueXP帐户。
-*** 在*替换现有订阅*字段中、选择是否要将一个帐户的现有订阅自动替换为此新订阅。
+*** 选择要与此订阅关联的BlueXP  组织或帐户。
+*** 在*替换现有订阅*字段中，选择是否要将某个组织或帐户的现有订阅自动替换为此新订阅。
 +
-此新订阅将取代帐户中所有凭据的现有订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。
+BlueXP  会将组织或帐户中所有凭据的现有订阅替换为此新订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。
 
 +
-对于所有其他帐户、您需要重复上述步骤来手动关联订阅。
+对于所有其他组织或帐户、您需要重复这些步骤来手动关联订阅。
 
 *** 选择 * 保存 * 。
 +

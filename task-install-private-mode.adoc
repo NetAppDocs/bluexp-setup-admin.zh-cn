@@ -129,7 +129,7 @@ link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["了解如�
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
+image:screenshot-settings-icon-organization.png["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
 . 选择*添加凭据*并按照向导中的步骤进行操作。
 +
@@ -186,7 +186,7 @@ NOTE: BlueXP操作员是BlueXP策略中提供的默认名称。如果您为角�
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
+image:screenshot-settings-icon-organization.png["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
 . 选择*添加凭据*并按照向导中的步骤进行操作。
 +

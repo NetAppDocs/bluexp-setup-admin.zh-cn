@@ -29,6 +29,7 @@ summary: 当我们在特定Linux操作系统上添加和删除对Connector的支
 手动安装::
 +
 --
+* Ubuntu 24.04 LTS
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux
 +
@@ -50,6 +51,7 @@ summary: 当我们在特定Linux操作系统上添加和删除对Connector的支
 手动安装::
 +
 --
+* Ubuntu 24.04 LTS
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux
 +
@@ -74,7 +76,7 @@ summary: 当我们在特定Linux操作系统上添加和删除对Connector的支
 * Red Hat Enterprise Linux
 +
 ** 8.6 到 8.10
-** 9.1至9.3
+** 9.1 到 9.4
 
 
 
@@ -131,14 +133,6 @@ https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-e
 . 执行_new_ Connector安装。
 . 配置Connector以发现旧Connector所管理的工作环境。
 
-
-
-
-== 继续支持Ubuntu 22.04 LTS
-
-Ubuntu 22.04 LTS仍然支持Connector、并且它是BlueXP和市场部署的默认操作系统。
-
-此操作系统需要Docker引擎。不支持Podman。
 
 
 

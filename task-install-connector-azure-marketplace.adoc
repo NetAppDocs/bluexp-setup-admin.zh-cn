@@ -110,7 +110,7 @@ https://mysupport.netapp.com
 --
 
 
-代理服务器:: 如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。请注意、BlueXP不支持透明代理服务器。
+代理服务器:: 如果您的企业需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。请注意、BlueXP不支持透明代理服务器。
 +
 --
 * IP 地址
@@ -433,7 +433,7 @@ https://_ipaddress_[]
 
 . 登录后，设置 Connector ：
 +
-.. 指定要与Connector关联的BlueXP帐户。
+.. 指定要与连接器关联的BlueXP  组织。
 .. 输入系统名称。
 .. 在*是否在安全环境中运行？*下、保持禁用受限模式。
 +
@@ -445,7 +445,7 @@ https://_ipaddress_[]
 
 
 .结果
-现在、Connector已安装完毕、并已使用您的BlueXP帐户进行设置。
+现在、您的BlueXP  组织已安装并设置了连接器。
 
 如果您在创建Connector的同一Azure订阅中拥有Azure Blb存储、您将看到Azure Blb存储工作环境自动显示在BlueXP画布上。 https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["了解如何从BlueXP管理Azure Blb存储"^]
 
@@ -499,7 +499,7 @@ NOTE: BlueXP操作员是BlueXP策略中提供的默认名称。如果您为角�
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
 +
-image:screenshot_settings_icon.gif["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
+image:screenshot-settings-icon-organization.png["一个屏幕截图、显示了BlueXP控制台右上角的设置图标。"]
 
 . 选择*添加凭据*并按照向导中的步骤进行操作。
 +

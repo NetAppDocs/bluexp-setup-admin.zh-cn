@@ -88,12 +88,10 @@
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
   <block id="0594b17c3f6f94eb28b63eec7d7d3841" category="paragraph"><block ref="0594b17c3f6f94eb28b63eec7d7d3841" category="inline-link-rx"></block></block>
   <block id="a00513d5f518d02aa962d5bbb308cdfb" category="list-text">登录后，设置 Connector ：</block>
-  <block id="6cd4de3181724fe8671196328738695f" category="list-text">指定要与Connector关联的BlueXP帐户。</block>
   <block id="d80e79c3d96dec3b7d4daf9305412777" category="list-text">输入系统名称。</block>
   <block id="bc2db05002588dce0afea6db153376bc" category="list-text">在*是否在安全环境中运行？*下、保持禁用受限模式。</block>
   <block id="443d63c9ee87e9dac12aa2216b54f52d" category="inline-link-macro">按照步骤在受限模式下开始使用BlueXP</block>
   <block id="47b475ce8fffd929f1fc89967e693fe0" category="paragraph">您应始终禁用受限模式、因为这些步骤说明了如何在标准模式下使用BlueXP。只有在您拥有安全环境并希望将此帐户与BlueXP后端服务断开连接时、才应启用受限模式。如果是这种情况、 <block ref="d4230e2957fd67694fbeb2d4cebbd012" category="inline-link-macro-rx"></block>。</block>
-  <block id="e48cc2b8b425580d8ee1508fd8a29ab2" category="paragraph">现在、Connector已安装完毕、并已使用您的BlueXP帐户进行设置。</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">下一步是什么？</block>
   <block id="8f40f6b9cda905fc9a83217435e6b940" category="open-title">手动安装</block>
   <block id="4212008c2b937ee581ff9e530b8440f8" category="list-text">安装Connector的root权限。</block>
@@ -396,7 +394,6 @@
   <block id="cd68fc4363142093bc10a45e34942eaa" category="inline-link-macro">了解如何管理您的BlueXP帐户</block>
   <block id="c8f0d3e379c2e301e09afc86904572dc" category="paragraph"><block ref="7a9b57c0ab89dbd9a6ef3dc53e324a44" category="inline-link-macro-rx"></block>。</block>
   <block id="05cb21b1c0958252effc11eb9d437f38" category="section-title">部署模式</block>
-  <block id="9283e632dad76d027422fa3e7c96d56b" category="paragraph">BlueXP为您的帐户提供了以下部署模式：标准模式、受限模式和专用模式。这些模式支持具有不同安全级别和连接限制的环境。</block>
   <block id="42d7d856cc8f6a2f82ed10cd8356e7d2" category="inline-link-macro">详细了解BlueXP部署模式</block>
   <block id="1df8907309ce450576ac5f9690e79be6" category="paragraph"><block ref="fc99fd3d00f85ca19dd4470da06057e4" category="inline-link-macro-rx"></block>。</block>
   <block id="ef53538ae41a651c7f72ab6cb1135d8c" category="section-title">成员</block>
@@ -471,7 +468,6 @@
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">专用主机</block>
   <block id="3e54bf758f50b15d709edd166d8bf82b" category="list-text">与其他应用程序共享的主机不支持此连接器。主机必须是专用主机。</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">支持的操作系统</block>
-  <block id="24dfedb0d4bd46f0cd823d4e245f7642" category="paragraph">主机必须已注册到Red Hat订阅管理。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。</block>
   <block id="1aa77ca522dde8d598ae9c2372a7494b" category="paragraph">这些操作系统的英语版本支持 Connector 。</block>
   <block id="1b21b0d71706897b69f108572c444d40" category="list-text">虚拟机管理程序</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
@@ -493,7 +489,6 @@
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link">Azure NetApp Files</block>
   <block id="d03fba385c4e1320cb0846a9690ea3db" category="list-text"><block ref="d03fba385c4e1320cb0846a9690ea3db" category="inline-link-rx"></block></block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link">适用于 ONTAP 的 Amazon FSX</block>
-  <block id="a24bba36cb4a314e2d49f3de7731e9af" category="list-text"><block ref="a24bba36cb4a314e2d49f3de7731e9af" category="inline-link-rx"></block></block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link">适用于 Google Cloud 的 Cloud Volumes Service</block>
   <block id="bb5abe8201599db6217db0b48efaaf5c" category="list-text"><block ref="bb5abe8201599db6217db0b48efaaf5c" category="inline-link-rx"></block></block>
   <block id="f06223f9afc23bac523c7b9854772040" category="inline-link">内部存储</block>
@@ -502,7 +497,6 @@
   <block id="3404cce75db90acf6a9d52860721a139" category="list-text">ONTAP 集群</block>
   <block id="7fcb7f97cbc710b693fef37b5e86770f" category="list-text">StorageGRID 系统</block>
   <block id="340a76e3aef8e862f5fd79411261b297" category="list-text">移动性</block>
-  <block id="55e7d878083c03ce4abbbc1175e10f41" category="list-text">通过同步、复制、分层和缓存数据、将数据移动到需要的位置。</block>
   <block id="e216b7a924341f796bca310d1d812baf" category="inline-link">复制和同步</block>
   <block id="f74f0f0050569783e8c306d738c4d91e" category="list-text"><block ref="f74f0f0050569783e8c306d738c4d91e" category="inline-link-rx"></block></block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">分层</block>
@@ -518,8 +512,6 @@
   <block id="3e347fe716ab17eefd02acef8c0347bf" category="list-text"><block ref="3e347fe716ab17eefd02acef8c0347bf" category="inline-link-rx"></block></block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="inline-link">数字顾问</block>
   <block id="86d4d1274a29106954740fc239a0af79" category="list-text"><block ref="86d4d1274a29106954740fc239a0af79" category="inline-link-rx"></block></block>
-  <block id="e1d4fcf84146530af8da4a20a003710d" category="inline-link">详细了解如何使用BlueXP帮助您的组织</block>
-  <block id="b2be08edab4d3d89797b89ae19e20493" category="paragraph"><block ref="b2be08edab4d3d89797b89ae19e20493" category="inline-link-rx"></block></block>
   <block id="902e65d33784bd8924eb05e622aa2dda" category="section-title">支持的云提供商</block>
   <block id="0cf89ba9f6178dc91d18ec5c2aec1c61" category="paragraph">借助BlueXP、您可以在Amazon Web Services、Microsoft Azure和Google Cloud中管理云存储并使用云服务。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
@@ -528,31 +520,19 @@
   <block id="a2513e72ab3ae9830fac174977d58572" category="section-title">BlueXP的工作原理</block>
   <block id="11cf550820ecd5e75ae1a9046f7f7f05" category="section-title">软件即服务</block>
   <block id="22412f0c62e1935807bc2c96a82d38cd" category="inline-link">基于Web的控制台</block>
-  <block id="1b0e5ba1a856c5bcdb8e3362b25e7bfb" category="paragraph">BlueXP可通过访问<block ref="2f36e092fa6569e04c3ec0f6ff9041a3" category="inline-link-rx"></block> 和 API 。通过这种SaaS体验、您可以在最新功能发布后自动访问这些功能、并轻松地在您的BlueXP帐户和连接器之间切换。</block>
-  <block id="065c13346a6a1b4ec88ebda80e48a910" category="section-title">BlueXP帐户</block>
-  <block id="62acc1e12893f4b92864cd95803b816b" category="paragraph">首次登录到BlueXP时、系统会提示您创建一个_BlueXP帐户_。此帐户可提供多租户，并可用于在隔离的 _workworkworkspace _ 中组织用户和资源。</block>
-  <block id="129817058db903a45b87ffbf2c08a0d2" category="inline-link-macro">了解有关客户的更多信息</block>
-  <block id="74a4ede1451c1e5d5746c24e1fc77924" category="paragraph"><block ref="7a5209a3744a7cace63a040ed3f3ce07" category="inline-link-macro-rx"></block>。</block>
   <block id="b8af0c827fddecff5686f66caf50fc37" category="section-title">受限模式和专用模式</block>
-  <block id="0b2713c18a328b85808183d496d2d28c" category="paragraph">在具有安全和连接限制的环境中也支持BlueXP。您可以使用_restricted mode"或_private mode"来限制与BlueXP SaaS层的出站连接。</block>
   <block id="0b43e955bb49e08923e9b43ee20ef2b3" category="section-title">SOC 2 类型 2 认证</block>
   <block id="7f275ad0568e7861b2f443f918043809" category="paragraph">一家独立的注册会计师事务所和服务审计师对BlueXP进行了检查、并确认它根据适用的信任服务标准获得了SOC 2类型2报告。</block>
   <block id="582a36961cbdd6ca90f6672041cdab83" category="inline-link">查看 NetApp 的 SOC 2 报告</block>
   <block id="958c315a8c40765f65895091ecc83488" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block></block>
-  <block id="8b2f4a40ac1aa19f2dc2b3da3efe4ffc" category="summary">将NetApp 支持站点 帐户与BlueXP帐户关联以启用Cloud Volumes ONTAP的关键工作流。这些NSS凭据与整个BlueXP帐户相关联。</block>
-  <block id="8c79ce7ab82c8c7e3fb9c6e8a73f8960" category="doc">管理与BlueXP帐户关联的NSS凭据</block>
   <block id="3d41446101a1daf0639146f4555b623b" category="inline-link-macro">了解如何管理用户级别的凭据</block>
-  <block id="45b496845c319f5bc16fa44745aea5f0" category="admonition">此外、BlueXP还支持为每个BlueXP用户关联一个NSS帐户。 <block ref="92ab4e1c25ae34810f6c6d2ede81f4ab" category="inline-link-macro-rx"></block>。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">概述</block>
-  <block id="4a2f661974665defd7d188133a1ab48b" category="paragraph">要在BlueXP中启用以下任务、需要将NetApp 支持站点 凭据与您的特定BlueXP帐户ID关联：</block>
   <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">自带许可证时部署Cloud Volumes ONTAP (BYOL)</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">需要提供您的NSS帐户、以便BlueXP可以上传您的许可证密钥并为您购买的期限启用订阅。这包括自动更新期限续订。</block>
   <block id="a3b3ed2f72536d95b268a4a67722c55d" category="list-text">注册按需购买Cloud Volumes ONTAP 系统</block>
   <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">要激活对系统的支持并访问 NetApp 技术支持资源，需要提供 NSS 帐户。</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">将Cloud Volumes ONTAP 软件升级到最新版本</block>
-  <block id="a86ad85ddb4228477c624e47ab659180" category="paragraph">这些凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持&gt; NSS管理*访问这些凭据。</block>
   <block id="aeaeee19a7c393222e407a525cf01991" category="section-title">添加 NSS 帐户</block>
-  <block id="9a030ad8abbc9b1e402feade38bdec50" category="paragraph">通过支持信息板、您可以在BlueXP帐户级别添加和管理用于BlueXP的NetApp 支持站点 帐户。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您拥有客户级别的帐户、则可以添加一个或多个NSS帐户。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您拥有合作伙伴或经销商帐户、则可以添加一个或多个NSS帐户、但不能将其与客户级别的帐户同时添加。</block>
   <block id="d889e6e7cc4c5509ab5b37f8fc894e46" category="list-text">在BlueXP控制台的右上角、选择帮助图标、然后选择*支持*。</block>
@@ -620,7 +600,6 @@
   <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">NSS凭据</block>
   <block id="9b7ea233ab4085c74e7506949f6c1a49" category="paragraph">与BlueXP登录关联的NSS凭据可用于支持注册、案例管理和对Digital Advisor的访问。</block>
   <block id="f57a365a74c463e64fe68cc99fbed5f5" category="list-text">当您访问*支持&gt;资源*并注册支持时，系统会提示您将NSS凭据与BlueXP登录关联。</block>
-  <block id="b5d4819a4e8d73d085630d52e025ce10" category="paragraph">此操作将注册BlueXP帐户以获得支持、并激活支持授权。您的BlueXP帐户中只有一个用户必须将NetApp 支持站点 帐户与其BlueXP登录名关联、才能注册支持并激活支持授权。完成此操作后，“资源”页面将显示您的帐户已注册支持。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link">了解如何注册获取支持</block>
   <block id="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="paragraph"><block ref="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="inline-link-rx"></block></block>
   <block id="1f41c927d23b7f472c07e8cefaaa4155" category="list-text">访问*支持&gt;案例管理*时、系统会提示您输入NSS凭据(如果尚未输入)。通过此页面、您可以创建和管理与您的NSS帐户和公司关联的支持案例。</block>
@@ -628,10 +607,7 @@
   <block id="bff35f79163f07f1c3724cc46b19c1f3" category="paragraph">请注意以下有关与BlueXP登录关联的NSS帐户的信息：</block>
   <block id="37cb0cdf24a1597d838bc5f1699b9e5a" category="list-text">此帐户在用户级别进行管理、这意味着其他登录用户无法查看它。</block>
   <block id="fcaf3921e62bfc728003fed248ffa3f9" category="list-text">每个用户只能有一个与Digital Advisor和支持案例管理关联的NSS帐户。</block>
-  <block id="7919f3886eb3f79725465a41663fb32e" category="list-text">如果您尝试将NetApp 支持站点 帐户与Cloud Volumes ONTAP工作环境关联、则只能从添加到您所属BlueXP帐户的NSS帐户中进行选择。</block>
   <block id="a91658662405c5ec223c95cc1036afce" category="paragraph">NSS帐户级别的凭据与与BlueXP登录关联的NSS帐户不同。通过NSS帐户级凭据、您可以在自带许可证(BYOL)、注册PAYGO系统以及升级Cloud Volumes ONTAP软件时部署Cloud Volumes ONTAP。</block>
-  <block id="db0f1f3e531a1a1c690b42c9a6daae35" category="inline-link-macro">了解有关将NSS凭据与您的BlueXP帐户结合使用的更多信息</block>
-  <block id="dacf2f246c2efb276c3709c141985f7c" category="paragraph"><block ref="4734e8f3bab5a9c00aebb286a2f16deb" category="inline-link-macro-rx"></block>。</block>
   <block id="cc96a4cc30e50577aa6671b076af72e1" category="section-title">管理您的用户凭据</block>
   <block id="fa6e9e9d0c238d856c9d80111986b0b1" category="paragraph">通过更新用户名和密码或删除凭据来管理您的用户凭据。</block>
   <block id="9afc8b6b41174c0836030fc8ac89ce5a" category="list-text">如果您还没有任何用户凭据、可以选择*添加NSS凭据*以添加NetApp 支持站点 帐户。</block>
@@ -647,15 +623,7 @@
   <block id="19df8bb4b5a805b23aeac731605bdf21" category="list-text">您的现有NetApp 支持站点 (NSS)凭据</block>
   <block id="4cd9dd3aeeaff4f9e2ee0a8b309b6856" category="inline-link-macro">了解如何在BlueXP中使用身份联合</block>
   <block id="3a9d5bd356ec8e4fc31c11150128b7ac" category="list-text">打开Web浏览器并转到<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block></block>
-  <block id="61bd9c463723beb495c6ca6a1a35e0eb" category="paragraph">如果您有NSS帐户、则可以跳过注册页面。BlueXP将在此首次登录过程中为您注册。</block>
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">请注意、注册表单中仅允许使用英文字符。</block>
-  <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">在*欢迎*页面上、输入帐户的名称。</block>
-  <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">了解如何向现有帐户添加成员</block>
-  <block id="ecbca8245155432067c380b55b5146bb" category="paragraph">帐户是NetApp身份平台的顶级要素。通过它、您可以添加和管理用户、角色、权限和工作环境。</block>
-  <block id="a860f226d10bcd54ab238e5189d94747" category="inline-image-macro">使用不属于某个帐户的新帐户登录时显示的欢迎页面的屏幕截图。</block>
-  <block id="e079acaa326ddf3b1cb6ee167cce08f4" category="paragraph"><block ref="e079acaa326ddf3b1cb6ee167cce08f4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="20653d224bca9fb40181f3916e4f643d" category="list-text">选择 * 创建帐户 * 。</block>
-  <block id="2f0488f8a3ca91699637c323ed3b7ae7" category="paragraph">现在、您已拥有一个BlueXP登录名和一个帐户。在大多数情况下、下一步是创建一个连接器、将BlueXP的服务连接到您的混合云环境。</block>
   <block id="082338dd3697084a7af4c20fcdf81e82" category="summary">当BlueXP在Azure中启动Connector VM时、它会将一个自定义角色附加到该VM、从而使Connector能够管理该Azure订阅中的资源和进程。Connector使用权限对多个Azure服务进行API调用。</block>
   <block id="94864bc66faf9702eb87f3ddb6665c2c" category="doc">Connector 的 Azure 权限</block>
   <block id="9fbcb95374723e2f8d5b7c17a2ece586" category="section-title">自定义角色权限</block>
@@ -871,10 +839,7 @@
   <block id="3725c308cfc8c643d641a79a6973de6a" category="paragraph">有关这些标志的详细信息，请访问 <block ref="da0fbb66abe85889cc98553ca2ce188d" category="inline-link-macro-rx"></block>。</block>
   <block id="6e73017040e152e8818eb7f83bc493fc" category="paragraph">运行命令可使用 NetApp 黄金映像部署 Connector 。Connector 实例和软件应在大约五分钟内运行。</block>
   <block id="bd9691461cb90d45ce8386aaf15e21a6" category="list-text">从已连接到 Connector 实例的主机打开 Web 浏览器，然后输入以下 URL ：</block>
-  <block id="4d342acc2474b2bd9afcbf4cc2be732e" category="paragraph"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block>。</block>
-  <block id="aeb47633d22edfd2e068571b631d2d5e" category="paragraph">现在、您可以使用BlueXP帐户安装并设置Connector。</block>
   <block id="31b69cff9901ca80c50a1d680a9b258a" category="paragraph">打开Web浏览器并转到<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 开始将Connector与BlueXP结合使用。</block>
-  <block id="b630649167e22ae03b6b2263ca0a2200" category="summary">开始使用NetApp BlueXP、以便您可以开始在内部环境和云环境中构建、保护和管理数据。设置完成后、您可以管理您的BlueXP帐户、Connectors、云提供商帐户等。</block>
   <block id="7390f55a27add10ddc1a6c765b8a67c7" category="doc">BlueXP设置和管理文档</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp通过多种方式为BlueXP提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">获取帮助</block>
@@ -897,7 +862,6 @@
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在*资源*页面上、在技术支持下选择一个可用选项：</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服务*：选择与问题描述 关联的服务。例如、当特定于技术支持问题描述 时、如果服务中包含工作流或功能、则为BlueXP。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作环境*：如果适用于存储、请选择* Cloud Volumes ONTAP *或* on-Prem*、然后选择关联的工作环境。</block>
-  <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作环境列表属于您在服务顶部横幅中选择的BlueXP帐户、工作空间和Connector的范围。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例优先级*：选择案例的优先级、可以是"低"、"中"、"高"或"严重"。</block>
   <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">要了解有关这些优先级的更多详细信息、请将鼠标悬停在字段名称旁边的信息图标上。</block>
   <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*问题描述 *：提供问题的详细问题描述 、包括任何适用的错误消息或您执行的故障排除步骤。</block>
@@ -966,7 +930,6 @@
   <block id="53c512e9599c71e1a585d636a5229820" category="list-text">标准模式</block>
   <block id="4275ae61422c34253a59329bd20a0449" category="inline-link-macro">设置Azure权限</block>
   <block id="12f7970cff397ea2f0846f3904f8e00f" category="inline-link-macro">为内部部署设置云权限</block>
-  <block id="b3a595111956cd206b5fcd5e77bee895" category="summary">注册到BlueXP后、系统会提示您为组织创建帐户。此帐户可能是您所需的全部帐户、但如果您的企业需要多个帐户、则需要使用租户API创建其他帐户。</block>
   <block id="6c45b1e5876b4865e0208a9ade3da041" category="doc">创建另一个BlueXP帐户</block>
   <block id="6eb6b03d63d198bc73be4828f333e30e" category="paragraph">使用以下API调用创建一个额外的BlueXP帐户：</block>
   <block id="ffa4f1b743e7c72a7bca2233b70cf51d" category="paragraph">发布<block ref="9e456101e3e272027aab89f5f360d6be" prefix=" " category="inline-code"></block></block>
@@ -1014,7 +977,6 @@
   <block id="7c04a15d03a827f3e932f6ea885fb875" category="list-text"><block ref="7c04a15d03a827f3e932f6ea885fb875" category="inline-link-rx"></block></block>
   <block id="59c8a7b2e005ee251a6301c0ca1f23b3" category="list-text">确保用户具有可在安装Connector后添加到BlueXP的访问密钥。</block>
   <block id="9370643895ad52c4da3ddf50c1e24a82" category="summary">帐户管理员，工作空间管理员，合规性查看器和 SnapCenter 管理员角色可为用户提供特定权限。在将新用户与BlueXP帐户关联时、您可以分配这些角色之一。</block>
-  <block id="706c30f817a6d965f23bc2798759eb15" category="paragraph">"合规性查看器"角色用于只读BlueXP分类访问。</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">任务</block>
   <block id="023bddc1580239bc605771883a09c8ff" category="cell">帐户管理员</block>
   <block id="7088282dd5defa41ae1744ff713534b6" category="cell">工作空间管理员</block>
@@ -1033,10 +995,6 @@
   <block id="1eda8b1f4dfa35b119f2a579170d4546" category="cell">管理凭据</block>
   <block id="d7cea5f953c31662cd13f98b3b7d8608" category="cell">修改BlueXP设置</block>
   <block id="59d212e47ec92d175a35d52f6c448d89" category="cell">查看和管理支持仪表板</block>
-  <block id="768acef28167e99aae88f7c6d5d9322a" category="inline-link-macro">在BlueXP帐户中设置工作空间和用户</block>
-  <block id="efb23fed841e93229b5eba2d12143dd0" category="list-text"><block ref="efb23fed841e93229b5eba2d12143dd0" category="inline-link-macro-rx"></block></block>
-  <block id="5cc33db7bd831802e558ae70eb573d98" category="inline-link-macro">在BlueXP帐户中管理工作空间和用户</block>
-  <block id="9eda901ca4a8d939f48fdc3e1139b8d2" category="list-text"><block ref="9eda901ca4a8d939f48fdc3e1139b8d2" category="inline-link-macro-rx"></block></block>
   <block id="45f5c7b6248438f849cf619c647c63e4" category="paragraph">如果要将AWS或Azure中的BlueXP服务与内部部署的Connector结合使用、则需要在云提供程序中设置权限、以便可以在安装Connector后将凭据添加到Connector。</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="open-title">AWS</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">现在、您应该拥有具有所需权限的IAM用户的访问密钥。安装Connector后、您需要将这些凭据与BlueXP中的Connector相关联。</block>
@@ -1131,16 +1089,11 @@
   <block id="f59e6f594c03905c8d1965c57967806e" category="paragraph"><block ref="f59e6f594c03905c8d1965c57967806e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="861c99531853674511342d75aef34187" category="list-text">选择相应的计费帐户并同意条款和条件。</block>
   <block id="ca4f48bdc60c2a16dd59109486af30ee" category="paragraph">此步骤会将您的传输请求发送给 NetApp 。</block>
-  <block id="9b3006787e316852bcbc8a44b5e05f58" category="paragraph">要将Google Cloud订阅链接到您的BlueXP帐户、必须完成此步骤。只有在从此页面重定向并登录到BlueXP后、链接订阅的过程才会完成。</block>
   <block id="e3d03a33db92a9024d72af3cae4684fd" category="inline-image-macro">注册弹出窗口的屏幕截图。</block>
   <block id="6373a7d66fb33193565645f81635ec0c" category="paragraph"><block ref="6373a7d66fb33193565645f81635ec0c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="825c72d4114a9a71a355213f6b79c642" category="list-text">完成*订阅分配*页面上的步骤：</block>
   <block id="4314e9e91f1c1e76df01e49490b3367e" category="inline-link">BlueXP网站上的Cloud Volumes ONTAP 页面</block>
   <block id="e5d34a7be7e3c957d955b41f31cc1b6b" category="admonition">如果贵组织的某个用户已从您的计费帐户订阅NetApp BlueXP订阅、则您将重定向到<block ref="35e104e3e4686d9ee172091b57b45bc0" category="inline-link-rx"></block> 而是。如果这是意外情况，请联系您的 NetApp 销售团队。Google 仅为每个 Google 计费帐户启用一个订阅。</block>
-  <block id="cbc7214c5ebe550a0789b5bc029f0a62" category="list-text">选择要与此订阅关联的BlueXP帐户。</block>
-  <block id="e0c62276bada3b5536cceb070664c871" category="list-text">在*替换现有订阅*字段中、选择是否要将一个帐户的现有订阅自动替换为此新订阅。</block>
-  <block id="23d838dbd51becc56367e6d9358b446e" category="paragraph">此新订阅将取代帐户中所有凭据的现有订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。</block>
-  <block id="b4676b03cb1388f474b207b449af0dc2" category="paragraph">对于所有其他帐户、您需要重复上述步骤来手动关联订阅。</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">选择 * 保存 * 。</block>
   <block id="5894b1931d65e9796cc25db1bb6fd566" category="list-text">完成此过程后、导航回BlueXP中的凭据页面并选择此新订阅。</block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">订阅分配页面的屏幕截图。</block>
@@ -1463,7 +1416,6 @@
   <block id="d3889a6ed22a99a11226c6b554539fa1" category="paragraph">与其他应用程序共享的 VM 不支持此连接器。虚拟机必须专用于 Connector 软件。</block>
   <block id="39c131bd8f90ef7749228972a6486162" category="section-title">第三方代理和扩展</block>
   <block id="c305e694f602a4913fd20d15e3508fcc" category="paragraph">Connector VM 不支持第三方代理或 VM 扩展。</block>
-  <block id="682e5294ff498e0a4acb9473b61e773c" category="summary">了解BlueXP管理功能的新增功能：BlueXP帐户、连接器、云提供商凭据等。</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">新增功能</block>
   <block id="390bbe3d279d4d842ce6e1afdbef9cac" category="list-text">现在、当您从支持信息板创建NetApp支持案例时、BlueXP将使用与您的BlueXP登录名关联的NetApp 支持站点 帐户创建此案例。BlueXP以前使用与整个BlueXP帐户关联的NetApp 支持站点 帐户。</block>
   <block id="cf4de1590dec786ba89a784b76abf972" category="paragraph">作为此更改的一部分、BlueXP帐户的支持注册现在通过与用户BlueXP登录关联的NetApp 支持站点 帐户完成。以前、支持注册是通过与整个BlueXP帐户关联的NSS帐户完成的。因此、如果其他BlueXP用户未将NetApp 支持站点 帐户与其BlueXP登录关联、则他们将看不到相同的支持注册状态。如果您之前注册了BlueXP帐户以获得支持、则您的注册状态仍然有效。只需添加用户级NSS帐户即可查看状态。</block>
@@ -1832,7 +1784,6 @@
   <block id="e6e914a08e5df82283d333cae53c631e" category="paragraph">例如，假设您正在多云环境中工作。您可能在 AWS 中有一个连接器，在 Google Cloud 中有另一个连接器。您需要在这些连接器之间进行切换，以管理在这些云中运行的 Cloud Volumes ONTAP 系统。</block>
   <block id="843554000b6859445ec670b86fe1a3dc" category="list-text">选择*连接器*下拉列表、选择另一个连接器、然后选择*交换机*。</block>
   <block id="3ade9e51cb5ecb8e80f63de9dffe90bd" category="inline-image-macro">标题中显示 Connector 图标和 Switch 操作的屏幕截图。</block>
-  <block id="4b8bff03335e3b9e10cd47a213ff79e2" category="paragraph"><block ref="4b8bff03335e3b9e10cd47a213ff79e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a9e454ea444248fbc35956644d9980ab" category="paragraph">BlueXP将刷新并显示与选定连接器关联的工作环境。</block>
   <block id="a37f4dabe9cfbc81f6c1fb589f9a8944" category="section-title">下载或发送 AutoSupport 消息</block>
   <block id="f7cf26738e01a9e2fd6edaaed1bee6cd" category="paragraph">如果您遇到问题， NetApp 人员可能会要求您向 NetApp 支持发送 AutoSupport 消息以进行故障排除。</block>
@@ -1975,11 +1926,9 @@
   <block id="ffb0fc074900d8a4132e4776f5a4f956" category="paragraph">现在、BlueXP拥有代表您在Azure中执行操作所需的权限。现在、您可以转到<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 开始将Connector与BlueXP结合使用。</block>
   <block id="b7afeec70319496f1e3eb3a317ae30c3" category="doc">设置Google Cloud网络</block>
   <block id="b48e4ef862d4262f2d1bbbde89d8e48c" category="doc">标准模式下的BlueXP快速入门</block>
-  <block id="d592a53baa7083e5ab7b0bc72eee19ef" category="paragraph">转至<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 并注册。您可以选择创建帐户、但如果您受邀加入现有帐户、则可以跳过该步骤。</block>
   <block id="885c0a0c266c904878925a2adb8ad8e3" category="inline-link-macro">了解没有Connector可以执行的操作</block>
   <block id="6c8debb34ebc3c407a812ccc72251f69" category="paragraph">此时、您已登录并可以开始使用多种BlueXP服务、例如Digital Advisor、Amazon FSX for ONTAP 、Azure NetApp Files 等。 <block ref="8851d71f122770c4a322caec0247d10a" category="inline-link-macro-rx"></block>。</block>
   <block id="82c153b2414dc18b6be5abc5e6109200" category="paragraph">您无需使用Connector即可开始使用BlueXP、但您可以创建一个Connector来解锁所有BlueXP功能和服务。Connector是一款NetApp软件、可让BlueXP管理混合云环境中的资源和流程。</block>
-  <block id="8b4a0a506b72094247801bd21678206e" category="paragraph">BlueXP帐户管理员可以在云或内部网络中创建Connector。</block>
   <block id="249345af661bafcf4f8bd3a0b9d6e949" category="inline-link-macro">详细了解何时需要连接器及其工作原理</block>
   <block id="850c1601f372329538aba5fe3f86430c" category="list-text"><block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block></block>
   <block id="74d2f2a8ee613c321072e364f7ed33b2" category="inline-link-macro">了解如何在AWS中创建Connector</block>
@@ -2016,7 +1965,6 @@
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*高级详细信息*：在* IAM实例配置文件*下、选择包含Connector所需权限的IAM角色。</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS 使用指定的设置启动软件。Connector 实例和软件应在大约五分钟内运行。</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">身份联合支持使用BlueXP进行单点登录、以便用户可以使用您公司身份中的凭据进行登录。首先、了解身份联合如何与BlueXP配合使用、然后查看设置过程概述。</block>
-  <block id="5a94ee93b1a4f42d5f889b53b576b4f0" category="doc">将身份联合与BlueXP结合使用</block>
   <block id="dca3cd1676cfe384fbb50f39c2e26eb4" category="paragraph">_Identity Federation_支持使用BlueXP进行单点登录、以便用户可以使用您公司身份的凭据进行登录。首先、了解身份联合如何与BlueXP配合使用、然后查看设置过程概述。</block>
   <block id="f570b8386694ba0d5563a8784f3135e5" category="section-title">使用NSS凭据的身份联合</block>
   <block id="e906028a6376600a0f505777b7c3af9f" category="paragraph">如果您使用NetApp 支持站点 (NSS)凭据登录到BlueXP、则不应按照此页面上的说明设置身份联合。您应改为执行以下操作：</block>
@@ -2109,7 +2057,6 @@
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支持注册概述</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">激活支持授权有两种形式的注册：</block>
-  <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">注册您的BlueXP帐户ID支持订阅(您的20位960xxxxxxxxx序列号、位于BlueXP的支持资源页面上)。</block>
   <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">这是您在BlueXP中使用的任何服务的单一支持订阅ID。必须注册每个BlueXP帐户级别的支持订阅。</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在云提供商的市场中注册与订阅关联的Cloud Volumes ONTAP 序列号(即20位909201xxxxxxxx序列号)。</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">这些序列号通常称为_PAYGO序列号、并由BlueXP在部署Cloud Volumes ONTAP 时生成。</block>
@@ -2117,15 +2064,11 @@
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
   <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
-  <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">注册BlueXP帐户以获得NetApp支持</block>
-  <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">要注册支持并激活支持授权、BlueXP帐户中的一个用户必须将NetApp 支持站点 帐户与其BlueXP登录名关联。如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">具有NSS帐户的现有客户</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是拥有NSS帐户的NetApp客户、则只需通过BlueXP注册支持即可。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">选择*添加NSS凭证*，然后按照NetApp 支持站点(NSS)鉴定提示进行操作。</block>
-  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">“资源”页面应显示您的帐户已注册支持。</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">屏幕截图、显示帐户序列号、绿色复选框以及注册支持的文本。</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">请注意、其他BlueXP用户如果没有将NetApp 支持站点 帐户与其BlueXP登录关联、则不会看到此相同的支持注册状态。但是、这并不意味着您的BlueXP帐户未注册支持。只要帐户中有一个用户执行了这些步骤、您的帐户即已注册。</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">现有客户、但无NSS帐户</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是现有许可证和序列号但拥有_no_ nss帐户的现有NetApp客户、则需要创建一个NSS帐户并将其与BlueXP登录关联。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp 支持站点 用户注册表</block>
@@ -2145,14 +2088,10 @@
   <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">系统会立即向提供的邮箱发送一封电子邮件、以完成此安全事务。如果验证电子邮件未在几分钟内收到、请务必检查您的垃圾邮件文件夹。</block>
   <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">在电子邮件中确认操作。</block>
   <block id="201080500e946070a2e4873042507c77" category="paragraph">确认将向NetApp提交您的请求、并建议您创建NetApp 支持站点 帐户。</block>
-  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这样可以加快帐户处理速度。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">在此过程中、NetApp应与您联系。这是针对新用户的一次性入职练习。</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">拥有NetApp 支持站点 帐户后、通过完成下的步骤将帐户与BlueXP登录关联起来 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">关联Cloud Volumes ONTAP支持的NSS凭据</block>
-  <block id="d8f0da67cbab6e43f6d266bdab68cdc8" category="paragraph">要为Cloud Volumes ONTAP启用以下关键工作流、需要将NetApp 支持站点 凭据与BlueXP帐户相关联：</block>
   <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">注册按需购买Cloud Volumes ONTAP系统以获得支持</block>
-  <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">将NSS凭据与BlueXP帐户关联与与与BlueXP用户登录关联的NSS帐户不同。</block>
-  <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">这些NSS凭据与您的特定BlueXP帐户ID关联。属于BlueXP帐户的用户可以从*支持&gt; NSS管理*访问这些凭据。</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">如果您的公司策略要求您使用代理服务器进行与Internet的所有通信、则需要将您的连接器配置为使用该代理服务器。如果您未将Connector配置为在安装期间使用代理服务器、则可以将Connector配置为随时使用该代理服务器。</block>
   <block id="146adb7944757e88795676b780c31811" category="doc">配置Connector以使用代理服务器</block>
   <block id="30d7902c191c571f1aa091af3df65f3d" category="paragraph">如果公共IP地址或NAT网关不可用、则将Connector配置为使用代理服务器可提供出站Internet访问。此代理服务器仅为Connector提供出站连接。它不为Cloud Volumes ONTAP 系统提供任何连接。</block>
@@ -2170,10 +2109,7 @@
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">了解有关将Azure专用链路或服务端点与Cloud Volumes ONTAP 结合使用的更多信息</block>
   <block id="6143580a5ae490efe32d3c566650ad6c" category="paragraph"><block ref="6143580a5ae490efe32d3c566650ad6c" category="inline-link-rx"></block></block>
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">选中此复选框以启用此选项、然后选择*保存*。</block>
-  <block id="9345f603d48306b04203c8a77bc1ec43" category="summary">创建BlueXP帐户时、该帐户仅包含一个管理员用户和一个工作区。您可以通过添加用户、创建服务帐户以实现自动化以及添加工作空间等方式来管理帐户、以满足组织的需求。</block>
   <block id="f2b686d839a94b2d7f1e0a55d1c7c302" category="doc">管理您的BlueXP帐户</block>
-  <block id="c695b69dfd48e2e642e9cf48a8d3e483" category="inline-link-macro">了解BlueXP帐户的工作原理</block>
-  <block id="401598fa995f1173bd8b6d805a3761d0" category="paragraph"><block ref="5fbf8d815c8a85b58ff259c4d5123e15" category="inline-link-macro-rx"></block>。</block>
   <block id="315b1bcfec7b067d1365b30389121dcb" category="section-title">使用租户API管理您的帐户</block>
   <block id="ab92d1e2231079f7f278e33e63f88ee9" category="paragraph">如果要通过发送 API 请求来管理帐户设置，则需要使用 _租 户 API 。此API与用于创建和管理Cloud Volumes ONTAP 工作环境的BlueXP API不同。</block>
   <block id="1dc658529d6408dff5a6f0516b76a420" category="inline-link">查看租户 API 的端点</block>
@@ -2187,7 +2123,6 @@
   <block id="aeb8221008e9f6c1ef2c8833cef411ed" category="list-text">从BlueXP顶部、选择*帐户*下拉列表。</block>
   <block id="81da0bcfa753963ae97ffa63aa2045d3" category="inline-image-macro">一个屏幕截图、显示了BlueXP顶部横幅中的Account Settings选项。</block>
   <block id="0fad82c7de53b27425f25cc82c5a54c6" category="paragraph"><block ref="0fad82c7de53b27425f25cc82c5a54c6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2d35c008b6d8ec0a2c130c99f891d04a" category="list-text">选择当前选定帐户旁边的*管理帐户*。</block>
   <block id="155907ffed37b938531a447277cae166" category="inline-image-macro">显示 " 帐户 " 下拉列表中的 " 管理帐户设置 " 选项的屏幕截图。</block>
   <block id="c04c08fe80b97e132e0d3900955bcba0" category="paragraph"><block ref="c04c08fe80b97e132e0d3900955bcba0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a4f6d118b5dde10993a1937e971e7afb" category="list-text">从成员选项卡中、选择*关联用户*。</block>
@@ -2287,9 +2222,6 @@
   <block id="dd5f2c116815cb1eac2ffe4f6e18517f" category="open-title">自定义角色</block>
   <block id="ec09b900c630334c74f96f6faf3eee8e" category="paragraph">转至<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 开始将Connector与BlueXP结合使用。</block>
   <block id="6019d7a828098995320847394d1a9a09" category="open-title">服务主体</block>
-  <block id="fa63e1e893cffd937dfc1bfa0546daf3" category="summary">您可以监控BlueXP正在执行的操作的状态、以查看是否存在需要解决的任何问题。您可以在通知中心、时间线中查看状态、也可以向您的电子邮件发送通知。</block>
-  <block id="1016d21e7c7301d878d5d5b3e38eabe0" category="doc">监控帐户中的操作</block>
-  <block id="01fd2503a6dcf5702d25f8877eaa869e" category="paragraph">下表对通知中心和时间线进行了比较、以便您了解每个通知中心的功能。</block>
   <block id="9085e5686dfeb6405cc2917702710ed3" category="cell">通知中心</block>
   <block id="3d1f92a565d3b1a61880236e33c49bf3" category="cell">时间线</block>
   <block id="0486b07a3d352a89611f0005bff8bbd3" category="cell">显示事件和操作的高级状态</block>
@@ -2302,7 +2234,6 @@
   <block id="ccd4bc4aaf0a115f3a6bbe1e30e9ef4c" category="cell">显示所有操作，无论是用户启动的操作还是系统启动的操作</block>
   <block id="d040772afd73d06726db90efc0407647" category="cell">按重要性筛选结果</block>
   <block id="29ab04719210957e371eb573f91dbb73" category="cell">按服务，操作，用户，状态等进行筛选</block>
-  <block id="5c61dbbb22810fcf5149eb1192885607" category="cell">可以通过电子邮件向帐户用户和其他人发送通知</block>
   <block id="e92861fef775acb8c5a64f8d282a8b80" category="cell">无电子邮件功能</block>
   <block id="d1e2d8530c09fe28c2a817289491bd01" category="section-title">使用通知中心监控活动</block>
   <block id="40da6f1400e45d080a97992a6a539894" category="inline-image-macro">通知铃</block>
@@ -2328,19 +2259,15 @@
   <block id="86a2197cbddea56be1e7cc24be3d4916" category="paragraph"><block ref="86a2197cbddea56be1e7cc24be3d4916" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4815e02c8d3314e19dd0c9f88070f95e" category="paragraph">例如、如果您只想查看BlueXP操作的"错误"和"警告"通知、请选择这些条目、您将只看到这些类型的通知。</block>
   <block id="def7f3eac7eed1dada5cdcd2951ede36" category="section-title">设置电子邮件通知设置</block>
-  <block id="f8e2d638417ba643bd67781e67c8ff5f" category="paragraph">您可以通过电子邮件发送特定类型的通知、以便即使未登录到BlueXP、您也能了解重要的系统活动。您可以将电子邮件发送给您的BlueXP帐户中的任何用户、也可以发送给需要了解某些类型的系统活动的任何其他收件人。</block>
   <block id="5fd245f2aeee830efb92d081af6a0e22" category="list-text">如果Connector安装在无法访问Internet的站点上、则不支持发送电子邮件通知。</block>
-  <block id="f6cf378d25bc2bcaeedbdbd322fec41b" category="paragraph">您必须是帐户管理员才能自定义通知设置。</block>
   <block id="8d7a9434573819ca2918a0be28a97671" category="list-text">从BlueXP菜单栏中、选择*设置&gt;警报和通知设置*。</block>
   <block id="dffb0ae952f619b638efb5dbc37b121a" category="inline-image-macro">显示如何显示警报和通知设置页面的屏幕截图。</block>
   <block id="7d1b8c811a59859856f7d6e326206f8e" category="paragraph"><block ref="7d1b8c811a59859856f7d6e326206f8e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1574c3b98d877a336e31fff7f6edacbc" category="list-text">从_Account Users_选项卡或_Additional Recipiers_选项卡中选择一个或多个用户、然后选择要发送的通知类型：</block>
   <block id="be1ff5702d71bdbcc574f8915f637eb0" category="list-text">要对单个用户进行更改、请选择该用户的Notifications列中的菜单、检查要发送的通知类型、然后选择*应用*。</block>
   <block id="37b2c580532c6ea9ad4686cadcb2a292" category="list-text">要对多个用户进行更改、请选中每个用户对应的框、选择*管理电子邮件通知*、检查要发送的通知类型、然后选择*应用*。</block>
   <block id="c620f9967c3de275d7f81b04c1220bbb" category="inline-image-macro">显示如何更改多个用户的通知的屏幕截图。</block>
   <block id="ba47221b59f846f383b80e1123a79d45" category="paragraph"><block ref="ba47221b59f846f383b80e1123a79d45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4420a19e2fb911632ceb20db9bff5d6a" category="section-title">添加其他电子邮件收件人</block>
-  <block id="da69d368769f4f71d80717684f0fae51" category="inline-link-macro">管理帐户页面</block>
   <block id="9c3d653ca7995e59299fb7641e61895f" category="list-text">从警报和通知设置页面中、选择*添加新收件人*。</block>
   <block id="acd827f1422fd31386324c56e2be6d81" category="inline-image-macro">显示如何为警报和通知添加新电子邮件收件人的屏幕截图。</block>
   <block id="5e56842d0cfbf695522e945a01570eba" category="paragraph"><block ref="5e56842d0cfbf695522e945a01570eba" category="inline-image-macro-rx" type="image"></block></block>
@@ -2354,12 +2281,7 @@
   <block id="8e94ce578d759d7ee56ab163db1168d4" category="inline-image-macro">显示如何取消单个通知的屏幕截图。</block>
   <block id="f0347b571f6b77eac494a6f04226e225" category="paragraph">要取消单个通知、请将光标悬停在通知上方并选择*取消*。
 <block ref="1932261efa358e221b5ec460a7384dc2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c7301535b34ac7c53c3f13cbe4a60d35" category="section-title">审核帐户中的用户活动</block>
-  <block id="0563c947402024d2534f6ea4df2cd5e1" category="paragraph">BlueXP中的时间线显示了用户为管理您的帐户而完成的操作。其中包括关联用户，创建工作空间，创建连接器等管理操作。</block>
   <block id="322812be635bbd80fb94dbae450a00b4" category="paragraph">如果您需要确定执行特定操作的人员，或者需要确定操作的状态，则检查时间线会很有帮助。</block>
-  <block id="43593eb2406816ddc01b85763cd6eb9e" category="list-text">从BlueXP菜单栏中、选择*设置&gt;时间线*。</block>
-  <block id="dd42672b01336bb8efdd0fffbb622877" category="list-text">在筛选器下、选择*服务*、启用*租户*、然后选择*应用*。</block>
-  <block id="7aa6a4ffdbdc6eccd7f131257c7de6a8" category="paragraph">时间线将更新以显示帐户管理操作。</block>
   <block id="1c03861f288d9b723fd929e611a6e8fd" category="summary">添加和管理Azure凭据、以便BlueXP拥有在Azure订阅中部署和管理云资源所需的权限。如果您管理多个 Azure Marketplace 订阅，则可以从 " 凭据 " 页面将其中每个订阅分配给不同的 Azure 凭据。</block>
   <block id="3cae1bb62504fde722824fee95046472" category="doc">管理BlueXP的Azure凭据和订阅</block>
   <block id="92a9c164b3357bd8694c8be608dc3d23" category="paragraph">如果您需要使用多个 Azure 凭据或多个适用于 Cloud Volumes ONTAP 的 Azure Marketplace 订阅，请按照此页面上的步骤进行操作。</block>
@@ -2400,7 +2322,6 @@
   <block id="6186e185b0ea9b1c5909f6190ea935aa" category="section-title">将凭据添加到BlueXP</block>
   <block id="897558c0bcdd42cd68064bdca7591b82" category="paragraph">在为Azure帐户提供所需权限后、您可以将该帐户的凭据添加到BlueXP。完成此步骤后，您可以使用不同的 Azure 凭据启动 Cloud Volumes ONTAP 。</block>
   <block id="15bb02041f104dbc655746382fa7ea1c" category="paragraph">如果您刚刚在云提供商中创建了这些凭据，则可能需要几分钟的时间才能使用这些凭据。请等待几分钟、然后再将凭据添加到BlueXP。</block>
-  <block id="c70e0a237dbda00edf1f26ee4ad8e9da" category="list-text">在*帐户凭据*页面上、选择*添加凭据*、然后按照向导中的步骤进行操作。</block>
   <block id="7113a4a81ece56ecd0ba9c041db4bc9b" category="list-text">*查看*：确认有关新凭据的详细信息、然后选择*添加*。</block>
   <block id="f9e1290b868bffdf198b52e0ebc715f0" category="inline-link">创建新的工作环境时</block>
   <block id="73d53f23610cc3c7f3876a7e295ff03f" category="paragraph">现在，您可以从 " 详细信息和凭据 " 页面切换到不同的凭据集<block ref="b755550aa4c4ad31a42757f4fc357592" category="inline-link-rx"></block></block>
@@ -2418,11 +2339,9 @@
   <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">在*订阅分配*页面中：</block>
   <block id="c98f8dfd7e317cb87d057d9e065d71d4" category="section-title">编辑凭据</block>
   <block id="bf6a5b9863bb599dd7d76e43de882036" category="paragraph">通过修改Azure服务凭据的详细信息、在BlueXP中编辑Azure凭据。例如，如果为服务主体应用程序创建了新密钥，则可能需要更新客户端密钥。</block>
-  <block id="c042156941649b9112145dc552484165" category="list-text">在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*编辑凭据*。</block>
   <block id="d7ef0bce115005fa2c5e3accd5b74cc5" category="list-text">进行所需更改、然后选择*应用*。</block>
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">删除凭据</block>
   <block id="a16b0bbea9ed6a7a22d41efc21ec1cef" category="paragraph">如果您不再需要一组凭据、可以从BlueXP中删除这些凭据。您只能删除与工作环境无关的凭据。</block>
-  <block id="79c33710e10337a79e50227860ebf59a" category="list-text">在*帐户凭据*页面上、选择一组凭据的操作菜单、然后选择*删除凭据*。</block>
   <block id="08533087d95fb07c92ed0773080a65d4" category="doc">设置Azure网络</block>
   <block id="1387f52f9e1a700036780a5bf567fab3" category="section-title">vNet和子网</block>
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">创建Connector时、需要指定此Connector应驻留的vNet和子网。</block>
@@ -2520,7 +2439,6 @@
   <block id="11cac4cf4114aafe53015559291d52ce" category="paragraph">要在受限模式或专用模式下使用BlueXP、您可以先安装Connector、然后访问在Connector上本地运行的用户界面、从而开始使用BlueXP。</block>
   <block id="31f2b2cbba0d986ad6ce5bec030a9de1" category="paragraph"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block>。</block>
   <block id="fa1f9e92f4f0aa51cba859b2dbc37a02" category="section-title">如何创建 Connector</block>
-  <block id="e4e0875eedbe591adccfba1b76d09729" category="paragraph">BlueXP客户管理员可以直接从BlueXP、云提供商的市场或在您自己的Linux主机上手动安装软件来创建Connector。如何开始取决于您是在标准模式、受限模式还是专用模式下使用BlueXP。</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="section-title">权限</block>
   <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">直接从BlueXP创建Connector需要特定权限、而Connector实例本身也需要另一组权限。如果您直接从BlueXP在AWS或Azure中创建Connector、则BlueXP将使用所需权限创建Connector。</block>
   <block id="338a6f193e9988b8f40b3128d5e4ffb7" category="inline-link-macro">了解Connector如何使用AWS权限</block>
@@ -2530,15 +2448,12 @@
   <block id="c642d46c647eb91ef90ede639948cb4e" category="inline-link-macro">了解Connector如何使用Google Cloud权限</block>
   <block id="e3ab4c013397e346e8f211ff03ac44b2" category="list-text"><block ref="e3ab4c013397e346e8f211ff03ac44b2" category="inline-link-macro-rx"></block></block>
   <block id="538fc0c04ce8a0ef5cf78a12dbe8f68a" category="section-title">连接器升级</block>
-  <block id="c568c61bf8e9e5a305fc06655cdac862" category="paragraph">我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然BlueXP平台中的大多数服务和功能均通过基于SaaS的软件提供、但有几项特性和功能取决于Connector的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。</block>
-  <block id="ed0b87049db36af81b1e2989ce889651" category="inline-link-macro">了解如何手动升级Connector软件</block>
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>。</block>
   <block id="4102d173f8e2253a011fe9286a6db2a3" category="paragraph">一个Connector可以在BlueXP中管理多个工作环境。一个 Connector 应管理的最大工作环境数因情况而异。具体取决于工作环境的类型，卷数量，要管理的容量以及用户数量。</block>
   <block id="63e8317d7c5806dc1cb56752525c4d52" category="paragraph">如果您要进行大规模部署，请与 NetApp 代表合作来估算您的环境规模。如果您在此过程中遇到任何问题，请通过产品内聊天联系我们。</block>
   <block id="18d5aadda239c924412f84368e73290b" category="paragraph">在某些情况下，您可能只需要一个连接器，但可能需要两个或更多连接器。</block>
   <block id="c270270ae413e473bd85d972dfddb840" category="paragraph">以下是几个示例：</block>
   <block id="aa043b4c9a6fa32b0f3811520156579a" category="list-text">您有一个多云环境(例如AWS和Azure)、并且更喜欢在AWS中使用一个Connector、而在Azure中使用另一个Connector。每个都管理在这些环境中运行的 Cloud Volumes ONTAP 系统。</block>
-  <block id="c76efa6c691a8c8806671433356c1493" category="list-text">服务提供商可能会使用一个BlueXP帐户为其客户提供服务、而使用另一个帐户为其某个业务部门提供灾难恢复。每个帐户都有单独的 Connectors 。</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="section-title">灾难恢复</block>
   <block id="9702ba80b5da1f1cf46d6eb4c043a20a" category="paragraph">您可以同时管理具有多个连接器的工作环境，以实现灾难恢复。如果一个连接器发生故障，您可以切换到另一个连接器以立即管理工作环境。</block>
   <block id="fc08f20f6fe5ef74616fbc4c310758ef" category="list-text">发现现有工作环境。</block>
@@ -2640,7 +2555,6 @@
   <block id="862b0c0ff0da2b02588d845f4c6d6d34" category="list-text">在计划安装Connector的虚拟机上启用系统分配的托管身份、以便您可以通过自定义角色提供所需的Azure权限。</block>
   <block id="81b303f46dd1d85b6f031bc99d8e87a6" category="summary">BlueXP提供了多种部署模式、使您能够以满足业务和安全要求的方式使用BlueXP。标准模式可利用BlueXP SaaS层提供完整功能、而受限模式和专用模式可供具有连接限制的组织使用。</block>
   <block id="534fd3c26a29e770ad82ea272b33fadf" category="paragraph">BlueXP提供了多种部署模式_、使您能够以满足业务和安全要求的方式使用BlueXP。_Standard mode"利用BlueXP SaaS层提供完整功能、而_restricted mode"和_private mode"则可供具有连接限制的组织使用。</block>
-  <block id="3003441b99515b8ab9a5d515870819a4" category="paragraph">BlueXP为您的帐户提供了以下部署模式。每个模式在出站连接要求、部署位置、安装过程、身份验证方法、可用数据和存储服务以及收费方法方面都有所不同。</block>
   <block id="e3795acf5a54c95b1889f3c7c929ab50" category="list-text">用户可以从基于Web的控制台以云服务的形式访问BlueXP。根据您计划使用的BlueXP服务、BlueXP管理员会创建一个或多个连接器来管理混合云环境中的数据。</block>
   <block id="299192dda00d9cbb51cb176b72e6f464" category="paragraph">此模式使用通过公共Internet进行加密数据传输。</block>
   <block id="d8e9ba71b83a249480013323ae38e56a" category="list-text">BlueXP Connector安装在云中(在政府区域、主权云区域或商业区域)、并且与BlueXP SaaS层的出站连接有限。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。</block>
@@ -2832,7 +2746,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
   <block id="e4c53684ddd66ee4898db459d57514e8" category="sidebar">了解基础知识</block>
-  <block id="9b945efebb006547a94415eadaa12921" category="sidebar">—帐户</block>
   <block id="7e99ea34b714387479c29a20b4a89752" category="sidebar">开始使用标准模式</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="sidebar">登录到BlueXP</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">创建连接器</block>
@@ -2874,9 +2787,7 @@
   <block id="4196d70b52fef46e6943a70842908897" category="paragraph">如果为Cloud Volumes ONTAP创建新的工作环境、则BlueXP会默认选择以下Azure凭据：</block>
   <block id="9704e328148ed91b7f98eb143244edd7" category="paragraph">通知可跟踪您在BlueXP中启动的操作的进度、以便您可以验证操作是否成功。您可以通过它们查看当前登录会话期间启动的许多BlueXP操作的状态。此时并非所有BlueXP服务都会将信息报告到通知中心。</block>
   <block id="8efb4a247c34c0ca71ba217009352182" category="inline-xref">设置电子邮件通知设置</block>
-  <block id="5e703ffd4a02b69f95fc98818e5f3919" category="paragraph">您还可以将BlueXP配置为通过电子邮件发送特定类型的通知、以便即使您未登录到系统、也可以获得重要系统活动的通知。您可以将电子邮件发送给您的BlueXP帐户中的任何用户、也可以发送给需要了解某些类型的系统活动的任何其他收件人。请参见操作说明 <block ref="a148e670707e0255b9681ed2a38729bc" category="inline-xref-macro-rx"></block>。</block>
   <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">默认情况下、您将在"通知中心"中看到所有活动通知。您可以筛选您看到的通知、以便仅显示对您重要的通知。您可以按BlueX"服务"和通知"类型"进行筛选。</block>
-  <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">您在"通知中心"中设置的筛选器并不能确定您将通过电子邮件接收的通知类型。默认情况下、BlueXP客户管理员将收到所有"严重"和"建议"通知的电子邮件。这些通知适用于所有服务-您不能选择仅接收特定服务的通知、例如Connectors或BlueXP备份和恢复。</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">所有其他用户和收件人都配置为不接收任何通知电子邮件、因此您需要为任何其他用户配置通知设置。</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">您应具备以下条件：</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">有关详细信息，请参见<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
@@ -2928,8 +2839,6 @@
   <block id="b8173d0c4669ed6158a49dda320b1515" category="paragraph">根据您计划使用的BlueXP服务、您可能需要创建第二个策略。对于标准区域、权限会分布在两个策略中。由于AWS中受管策略的字符大小上限、因此需要使用两个策略。 <block ref="60507836418f54f0b2b646fcefa2cf2c" category="inline-link-macro-rx"></block>。</block>
   <block id="ad76b7ae56285d87ab9015cde946bbf4" category="list-text"><block ref="ad76b7ae56285d87ab9015cde946bbf4" category="inline-link-rx"></block></block>
   <block id="89db269549ff807cf08533caabe7fa9b" category="list-text"><block ref="89db269549ff807cf08533caabe7fa9b" category="inline-link-rx"></block></block>
-  <block id="c1278cf8c27b19d3b52a16894e40dc28" category="paragraph">BlueXP包括通过SaaS层提供的基于Web的控制台、提供多租户的帐户以及用于管理工作环境和启用BlueXP云服务的连接器。</block>
-  <block id="d9e04d29678e517946d6cb6e93b9d025" category="paragraph">您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。通过Connector、您可以管理内部环境和云环境中的资源和流程。它是管理工作环境(例如Cloud Volumes ONTAP和内部ONTAP集群)以及使用许多BlueXP数据服务所必需的。</block>
   <block id="64f210f4d96dcba2f41cec7b537055f7" category="list-text">了解实例的CPU和RAM要求。</block>
   <block id="fbeff5cf304fefe21e93306905a53be6" category="inline-link-macro">查看实例要求</block>
   <block id="faa2f324a4d310b356e12aa82056254e" category="paragraph"><block ref="c95ec05c4ecf0f3a1ae9ac9ed3381eba" prefix="" category="inline-code"></block></block>
@@ -3067,14 +2976,10 @@
   <block id="16d491a352eff99aff3a3090f243e9a7" category="paragraph">直接从BlueXP基于Web的控制台创建Connector。</block>
   <block id="38c0deaf9ce4435ad8d471fc04a21ac0" category="paragraph">这些权限适用于 Connector 实例本身。它是一组与您先前为部署Connector VM而设置的权限不同的权限。</block>
   <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">单击 * 添加 * 。</block>
-  <block id="6f634a99f964ad704af4d4f3aaf6d261" category="section-title">将现有订阅与您的帐户关联</block>
-  <block id="18fdf9616b567e691b5890f032e3bba7" category="paragraph">从AWS Marketplace订阅BlueXP后、此过程的最后一步是将此订阅与BlueXP网站上的BlueXP帐户相关联。如果您未完成此步骤、则无法通过BlueXP帐户使用订阅。</block>
   <block id="6fb458ce426e7a3b13d1d111785c2d01" category="paragraph">如果您从AWS Marketplace订阅了BlueXP、但错过了将订阅与您的帐户关联的步骤、请按照以下步骤进行操作。</block>
-  <block id="bb2c89244641e4e9b00203476e12f0fa" category="list-text">转到BlueXP数字钱包、确认您的订阅未与BlueXP帐户关联。</block>
   <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">从BlueXP导航菜单中、选择*监管&gt;数字电子钱包*。</block>
   <block id="8c3682e85d7f4dbe8a46485082335dec" category="list-text">选择*订阅*。</block>
   <block id="ed6b397e0118acc4ce6973d71f8bf52b" category="list-text">确认未显示您的BlueXP订阅。</block>
-  <block id="0b63efe724268bea77154f68b732287f" category="paragraph">您将只看到与当前正在查看的帐户关联的订阅。如果您看不到您的订阅、请继续执行以下步骤。</block>
   <block id="f059d36774fc7cb0f68cf549634c6649" category="list-text">登录到AWS控制台并导航到*AWS Marketplace订阅*。</block>
   <block id="f8c6f0be8abb9f25513e90fc59a8022a" category="list-text">查找NetApp BlueXP订阅。</block>
   <block id="a33c6ab064752da11797cc3fcb72c16c" category="inline-image-macro">显示NetApp BlueXP订阅的AWS Marketplace的屏幕截图。</block>
@@ -3087,10 +2992,8 @@
   <block id="2bd91e2097a924ebf8ed96f27e0e014b" category="paragraph">请注意、系统可能会提示您先登录BlueXP。</block>
   <block id="ad06dac7d3f75caabc6bbf1ee222b5b1" category="inline-image-macro">"订阅分配"页面的屏幕截图、可用于选择要与此订阅关联的确切BlueXP帐户。</block>
   <block id="f08dbbf2dcc1aaacd389964d9e1720e9" category="paragraph"><block ref="f08dbbf2dcc1aaacd389964d9e1720e9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ab7f683bf33e15557d8b8c755ab6925d" category="list-text">转到BlueXP数字钱包、确认订阅与您的BlueXP帐户关联。</block>
   <block id="3d202823d7d9b23ecb538a9e600a47f9" category="list-text">验证是否显示您的BlueXP订阅。</block>
   <block id="b37f51b57881b03b6c52e06acb6edd87" category="list-text">确认订阅与您的AWS凭据关联。</block>
-  <block id="be7152363bc92639c82fcab79b823266" category="list-text">在*帐户凭据*页面上、验证订阅是否与您的AWS凭据关联。</block>
   <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">下面是一个示例。</block>
   <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">BlueXP帐户凭据页面的屏幕截图、其中显示AWS凭据、其中包含一个订阅字段、用于标识与这些凭据关联的订阅的名称。</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
@@ -3106,11 +3009,8 @@
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="ea472a728fa8ea8a9d957dafbf3b3c56" category="paragraph"><block ref="4bafa1fce0633bbc25f458d6925369da" category="inline-link-macro-rx"></block>。</block>
-  <block id="880b965f9cabc8a09dc307835b0c1c44" category="paragraph">如果您的企业已有帐户、而您希望加入该帐户、则应退出BlueXP并要求所有者将您与该帐户关联。所有者将您添加到后、您可以登录并访问此帐户。 <block ref="221ad62081662624d5ad46e4eb019f63" category="inline-link-macro-rx"></block>。</block>
   <block id="51a7ac19cbf0f9d074132cf117ad2e0c" category="paragraph">将AWS凭据添加到现有连接器可提供在公有 云环境中管理资源和进程所需的权限。 <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>。</block>
-  <block id="e5858eca10506e717b009052b0640e5d" category="paragraph">系统会自动从您的BlueXP帐户中的用户(从中)填充_Account Users_选项卡中显示的用户 <block ref="bce79e838594aa867c34fc02622c1a7f" category="inline-link-macro-rx"></block>）。您可以在_Additional recipients _选项卡中为无权访问BlueXP但需要获得特定类型警报和通知通知的其他人员或组添加电子邮件地址。</block>
   <block id="fb2327495633231db53b83b63281ec59" category="paragraph"><block ref="ba792a8f94fc4fa1d6890491a6d3ca88" category="inline-link-macro-rx"></block>。</block>
-  <block id="546da6116b7feb3e2f6bc76e15679ce5" category="paragraph"><block ref="b046bb32939806f90ece83bf6f045fc2" category="inline-link-macro-rx"></block>。</block>
   <block id="785c09ae237878056a26f76d752f9655" category="paragraph"><block ref="d681f410de8bf56d0591b119af19b91f" category="inline-link-macro-rx"></block>。</block>
   <block id="819bbc17eab62ac696bc204d9864298c" category="paragraph"><block ref="317e81beacf8b3184ba06b75c8cba7f0" category="inline-link-macro-rx"></block>。</block>
   <block id="d5a6b4dc8861625dfe113504ac0e255e" category="paragraph"><block ref="fdc7ca711ae67c971d281a756b555324" category="inline-link-macro-rx"></block>。</block>
@@ -3198,8 +3098,6 @@
   <block id="13ba2efb4fd4a349dae9e57188cc7124" category="inline-link-macro">准备网络以使用BlueXP控制台</block>
   <block id="d8d95c6e255d7fd2ce0e575678de25b2" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> <block ref="1bc96baa170355729e3a1a71e3c69ee7" category="inline-link-macro-rx"></block></block>
   <block id="5e9f2d9ffcf828e9073641fd51d9dd96" category="paragraph">访问BlueXP控制台的计算机应连接到特定端点以完成一些管理任务。如果您的网络限制出站访问、则应确保允许这些端点。</block>
-  <block id="666211ddfad69f0316f1b85953aa081f" category="inline-link-macro">注册并创建帐户</block>
-  <block id="e8ae36985bee1decac54881ccee2fd0b" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="5b9edf9589bc47960079bd9eebd68511" category="inline-link-macro-rx"></block></block>
   <block id="825dba606043da7ef954a9b12c9f7d3b" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 创建连接器</block>
   <block id="df29cf5b19d5f16c92a7f553f92e9d4a" category="list-text"><block ref="df29cf5b19d5f16c92a7f553f92e9d4a" category="inline-link-macro-rx"></block></block>
   <block id="57e58ed1cb42b3b5aaba112bc48563a6" category="list-text"><block ref="57e58ed1cb42b3b5aaba112bc48563a6" category="inline-link-macro-rx"></block></block>
@@ -3315,7 +3213,6 @@ deploymentmanager.editor</block>
   <block id="5d2f88742fa055307c09a80d0773bb7f" category="paragraph">此操作还会启动运行Linux和Connector软件的VM、但部署将直接从Azure Marketplace启动、而不是从BlueXP启动。</block>
   <block id="152e6840a2911cc120f143ff657bdc7e" category="list-text"><block ref="152e6840a2911cc120f143ff657bdc7e" category="inline-link-macro-rx"></block></block>
   <block id="b393abc2831fb45cf9e5b73489057bcc" category="admonition">为什么不选择Google Cloud？如果在您的内部安装了Connector、则它无法在Google Cloud中管理您的资源。连接器必须安装在Google Cloud中、才能管理驻留在其中的任何资源。</block>
-  <block id="b8312cd81869d608f8aa6c172b1efa56" category="paragraph">注册或登录、然后设置Connector以使用您的BlueXP帐户。</block>
   <block id="63833bed9bf25b857c994cd51a878896" category="section-title">第6步：为BlueXP提供权限</block>
   <block id="ccbf44ea31f64041eb3e02bf2d4f1003" category="paragraph">安装并设置Connector后、请添加您的云凭据、以便BlueXP具有在AWS或Azure中执行操作所需的权限。</block>
   <block id="1afdeeb91955c8912691275e3b9c68c4" category="paragraph">从BlueXP部署Connector时、您需要为IAM用户提供IAM角色的ARN或访问密钥。您使用的身份验证方法必须具有在 AWS 中部署 Connector 实例所需的权限。中列出了所需的权限 <block ref="c368ad024408b872d841d80ba747ea9c" category="inline-link-macro-rx"></block>。</block>
@@ -3367,8 +3264,6 @@ deploymentmanager.editor</block>
   <block id="08e6464d98921d4b239eda70bb4b04b2" category="inline-link-macro">开始在私有模式下使用BlueXP</block>
   <block id="484cc15e142fd16556c500975b95d031" category="list-text"><block ref="484cc15e142fd16556c500975b95d031" category="inline-link-macro-rx"></block></block>
   <block id="a6500600136e87d0f971781229e9f9ab" category="paragraph">要查看Connector日常操作所需的确切权限、请参阅以下页面：</block>
-  <block id="b3686cfa126ecda3f385bc3c05a38641" category="summary">BlueXP帐户为您的组织提供多租户功能、使您能够在隔离的工作空间中组织用户和资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP工作环境、而在其他工作空间中管理工作环境的用户则看不到该工作空间。</block>
-  <block id="59a7c4ef8ec683b4486222e8f42e56e6" category="paragraph">BlueXP account_为您的组织提供多租户功能、使您能够在隔离的_workspace中组织用户和资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP工作环境、而在其他工作空间中管理工作环境的用户则看不到该工作空间。</block>
   <block id="68d3d8808dd0c97d733b830adcc3ce04" category="paragraph">-proxy和-cacert参数是可选的。如果您有代理服务器、则需要输入所示的参数。安装程序不会提示您提供有关代理的信息。</block>
   <block id="5c19a40334d46880274be75a5173b4c4" category="list-text">\http://user-name:password@address:port</block>
   <block id="33dbf59ca7c7ba76bec757cd7f795ed4" category="list-text">\http://domain-name%92user-name:password@address:port</block>
@@ -3409,7 +3304,6 @@ https://support.netapp.com
   <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">此版本包含一些小的安全性改进和错误修复。</block>
   <block id="ee06369b39630f4fbf14829266d40a91" category="paragraph">私有模式通常用于无Internet连接的内部环境和安全云区域、其中包括<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>，<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>，和<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="a95e947d8a886ad72a7cea0e895006fd" category="paragraph">受限模式通常由州和地方政府以及受监管的公司使用、包括在AWS GovCloud和Azure政府区域进行部署。开始之前、您应了解 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>， <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>，和 <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
-  <block id="c2a3212cb98f382140fb5a23af1c6063" category="paragraph">在标准模式下、用户可从基于Web的控制台以云服务的形式访问BlueXP。开始之前、您应了解 <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>， <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>，和 <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>。</block>
   <block id="337e8febb8ac96133c86a51cd7bc0240" category="summary">了解BlueXP如何使用Azure凭据代表您执行操作、以及这些凭据如何与商城订阅相关联。了解这些详细信息有助于您管理一个或多个Azure订阅的凭据。例如、您可能希望了解何时向BlueXP添加其他Azure凭据。</block>
   <block id="3bf21bdc87a8f6ebde5b75e8cb0d5138" category="section-title">凭据和商城订阅</block>
   <block id="b1e32c999d336fb505915de8a8ffca55" category="paragraph">您添加到连接器的凭据必须与Azure Marketplace订阅相关联、以便您可以按小时费率(PAYGO)或通过年度合同支付Cloud Volumes ONTAP费用、并使用其他BlueXP服务。</block>
@@ -3727,7 +3621,6 @@ https://support.netapp.com
   <block id="437c802c34c0b8670d61901c4e05641e" category="inline-link-macro">了解有关私有模式的更多信息</block>
   <block id="d05ac7ff6398ff4f2b0bd26105dd1697" category="paragraph">连接器的安装位置决定了在使用私有模式时哪些BlueXP服务和功能可用。例如、如果要部署和管理Cloud Volumes ONTAP、必须将连接器安装在云中。 <block ref="11a7253f43076934a5664eb6b2874efc" category="inline-link-macro-rx"></block>。</block>
   <block id="60a1a3ba0b214492b5ab5c5bd4a52eb0" category="paragraph">如果Connector安装在云中、而您计划创建Cloud Volumes ONTAP系统、则BlueXP需要云提供商的权限。您需要在云提供商中设置权限、然后在安装Connector实例后将这些权限与之关联。</block>
-  <block id="8ce622f98b54d3dfec80e0d09aa4e0b3" category="list-text">如果您的组织需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。请注意、BlueXP不支持透明代理服务器。</block>
   <block id="939d44d1e911e1f0f7039e74b3562137" category="list-text"><block ref="939d44d1e911e1f0f7039e74b3562137" category="inline-link-macro-rx"></block></block>
   <block id="9bf0216383a3ff083b86cdd433d2e65e" category="list-text"><block ref="9bf0216383a3ff083b86cdd433d2e65e" category="inline-link-macro-rx"></block></block>
   <block id="26553f927e14d69ad84c658048155fb4" category="summary">如果您使用多个连接器、BlueXP允许您直接从控制台在这些连接器之间进行切换。您还可以管理具有多个连接器的单个工作环境。</block>
@@ -3745,7 +3638,6 @@ https://support.netapp.com
   <block id="d80ef147e70626ef64e723b33860d715" category="list-text">9.1至9.3</block>
   <block id="bd3df16097ce93a7398107a82c38c714" category="list-text">容器流程编排工具</block>
   <block id="58ee14553c5227edc98c5edc7c7652e1" category="list-text">根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。</block>
-  <block id="c8637173b45452de8b06d3e105facbfb" category="paragraph">Podman必须满足以下前提条件：</block>
   <block id="6c92d07ad47ca46a1d54c06516989463" category="list-text">必须启用并启动Podman.sSocket服务</block>
   <block id="a9beaf3f1f76b7989733494d5f0683c6" category="list-text">必须安装python3</block>
   <block id="43868fbb689a64ee607e9c7e12ad974b" category="list-text">必须安装Podman-compose软件包1.0.6版</block>
@@ -3765,7 +3657,6 @@ https://support.netapp.com
   <block id="084cfc903eb108eb15642e42f36348f9" category="paragraph">对于Red Hat Enterprise Linux 8：</block>
   <block id="6f3a42415c589950b9ae4d3fe1f87dc7" category="list-text">安装podman-compose软件包1.0.6。</block>
   <block id="ec7c87651a5ede2a98ad4091fe48b517" category="admonition">使用<block ref="02c7499137a5d8d10292d68634eb22a0" prefix=" " category="inline-code"></block> 命令可满足向PATH环境变量添加Podman-compose的要求。安装命令会将podman-compose添加到/usr/bin中、该文件已包含在中<block ref="c9bac30d1d0554c0790285219e5ad518" prefix=" " category="inline-code"></block> 选项。</block>
-  <block id="d96a084915e5de032105988cddcc2bc5" category="list-text">安装Docker引擎。</block>
   <block id="08a382dc3dd0f48c28f89b74f8bac2a4" category="inline-link">从Docker查看安装说明</block>
   <block id="3907e04a67ccb717783cc69d280aaa41" category="paragraph"><block ref="3907e04a67ccb717783cc69d280aaa41" category="inline-link-rx"></block></block>
   <block id="66f67385f809b0a8d74f0496acc75c90" category="paragraph">请务必按照以下步骤安装特定版本的Docker引擎。安装最新版本将安装BlueXP不支持的Docker版本。</block>
@@ -3796,9 +3687,6 @@ https://support.netapp.com
   <block id="0f50cd1079cb24de2b4571c09546a2e1" category="list-text">设置RHEL 8或9主机。</block>
   <block id="5122aad3fbc28bb77264e99f11033279" category="list-text">执行_new_ Connector安装。</block>
   <block id="a9d10a06adb23581dce371f468ea4904" category="list-text">配置Connector以发现旧Connector所管理的工作环境。</block>
-  <block id="6fdeb52b60ec4b9c7e60078047c5ce34" category="section-title">继续支持Ubuntu 22.04 LTS</block>
-  <block id="a9aa1d1b3ffccec7f032ad3fee0e91b8" category="paragraph">Ubuntu 22.04 LTS仍然支持Connector、并且它是BlueXP和市场部署的默认操作系统。</block>
-  <block id="cadd936a18695c0f75406a35d18725ee" category="paragraph">此操作系统需要Docker引擎。不支持Podman。</block>
   <block id="d20756c02f9913587a3e83e30f0e10d3" category="list-text">手动安装</block>
   <block id="0809934ab73994b74ff0369462a31319" category="list-text">从BlueXP进行部署</block>
   <block id="12a87db5b86462e9bd05a612793965de" category="list-text">从AWS Marketplace部署</block>
@@ -3845,7 +3733,6 @@ https://support.netapp.com
   <block id="b94d9194c0f0e59de690d8a088d1601b" category="section-title">第5步：安装连接器</block>
   <block id="d918fe97b966ce7fb324a30c883b1d7f" category="section-title">第6步：设置连接器</block>
   <block id="76eda41f130889296c61f521e20a1006" category="list-text"><block ref="76eda41f130889296c61f521e20a1006" category="inline-link-macro-rx"></block></block>
-  <block id="08055c0ef3321805b25b3e15ed3038b0" category="paragraph"><block ref="f342de123680c8538c1dec74025adf7a" category="inline-link-macro-rx"></block>。</block>
   <block id="166140f584d4544702260c25a6b8eab6" category="section-title">多种工作环境和连接器</block>
   <block id="7a5c1d5a09d9f5a762327becef29fd1a" category="list-text"><block ref="7a5c1d5a09d9f5a762327becef29fd1a" category="inline-link-macro-rx"></block></block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024年5月17日</block>
@@ -3941,7 +3828,6 @@ https://support.netapp.com
   <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">3.9.41版本适用于标准模式和受限模式。</block>
   <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">BlueXP使用<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> 安装<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> 目录及其内容。</block>
   <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP需要中的此空间<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> 因为Docker或Podman的架构设计是为了在此目录中创建容器。具体来说、他们将在中创建容器<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> 目录。外部挂载或符号链接不适用于此空间。</block>
-  <block id="2e71b3fb71d89f18906d4807a6011e20" category="list-text">支持的操作系统</block>
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">需要一个经过认证可运行受支持操作系统的裸机或托管虚拟机管理程序。</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Ubuntu需要Docker引擎。</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">2024年6月30日、RHEL 7达到了维护结束(EOM)、而CentOS 7达到了生命周期结束(EOL)。2024年6月30日、NetApp停止在这些Linux分发版上支持Connector。</block>
@@ -3949,11 +3835,8 @@ https://support.netapp.com
   <block id="400356f2a752e6926bd99ce1db45ee8c" category="paragraph">您可以从基于Web的控制台访问BlueXP。开始使用BlueXP后、第一步是使用您的NetApp支持站点凭据或公司目录中的SSO凭据进行注册或登录。</block>
   <block id="71bf124b6b9da30db8c000241ce01691" category="paragraph">首次访问BlueXP时、您可以使用BlueXP通过以下选项之一进行注册或登录：</block>
   <block id="79160996ed8489a5cf6613551aa653a7" category="list-text">BlueXP登录</block>
-  <block id="097da8092c10ffe933148ded03ffa5e7" category="list-text">您可以通过创建BlueXP登录名来注册。此身份验证方法要求您指定电子邮件地址和密码。验证电子邮件地址后、您可以登录、然后创建一个BlueXP帐户(如果您还不属于某个帐户)。</block>
   <block id="4e509fcd83df29eba4ce6711d142163b" category="list-text">NetApp支持站点(NSS)凭据</block>
-  <block id="820249dfc3701fd3b37984191fcdfd5c" category="list-text">如果您已有NetApp支持站点凭据、则无需注册BlueXP。您使用NSS凭据登录、然后BlueXP会提示您创建BlueXP帐户(如果您还不属于某个帐户)。</block>
   <block id="9cb17ba10a86a6d673f250ed811a88c2" category="list-text">联合连接</block>
-  <block id="b9d11f4546264baa9dae3dabfb844735" category="list-text">您可以使用单点登录使用公司目录中的凭据（联合身份）登录。组织帐户中的第一个用户必须注册BlueXP或使用NSS凭据登录、然后设置身份联合。之后、每个后续用户只需使用其SSO凭据登录即可。</block>
   <block id="a3343822f7753a8d8b67395fe90b10ba" category="paragraph"><block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="631a9d1918b756ca1857359538227c2a" category="list-text">如果您拥有NetApp支持站点帐户或已设置身份联合，请直接在*Log In*页面上输入与您的帐户关联的电子邮件地址。</block>
   <block id="e2a4611e209f9dc6217229cb9441c087" category="list-text">如果要通过创建BlueXP登录名进行注册，请选择*Sign Up。</block>
@@ -3994,7 +3877,6 @@ https://support.netapp.com
   <block id="021caa7094e7de94c50c2e35da292351" category="list-text">满足上述 CPU 和 RAM 要求的实例类型。建议使用Standard"(标准)_D8s_v3。</block>
   <block id="bff17a7a57b9d5cdc97a4f823a72230f" category="list-text">满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-8。</block>
   <block id="91a03852a4fcc00d6d0d7b56befab967" category="inline-xref">查看BlueXP  支持的Podman版本</block>
-  <block id="ab8cca64c499d5f050e52a06f69e6322" category="paragraph">安装支持的Podman版本。<block ref="3c15003d1ebf129cb6cebdaf6ae30fe9" category="inline-xref-macro-rx"></block>(英文)</block>
   <block id="37ec26cfa2b5ba215786c921633974f0" category="paragraph">其中&lt;version&gt;是您正在安装的Podman的受支持版本。<block ref="3c15003d1ebf129cb6cebdaf6ae30fe9" category="inline-xref-macro-rx"></block>(英文)</block>
   <block id="ebf399faefe8b72bdfba77e608b5c6b1" category="cell">受限模式的政府区域和商业区域支持。受限模式的主权区域不支持。在受限模式下、BlueXP  备份和恢复仅支持备份和还原ONTAP卷数据。<block ref="db0a18d2a99588054f71bf6c0bd14abb" category="inline-link-rx"></block>不支持备份和还原应用程序数据和虚拟机数据。</block>
   <block id="207db32d1fe68c1dcdb493d5ea79d77f" category="cell">在AWS和Azure商业区域中受支持。BlueXP  备份和恢复在Google Cloud、、或私有模式中不受支持<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block><block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block><block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block> 、仅支持备份和还原ONTAP卷数据。<block ref="178bedf5671592d86ab011b6af0333e7" category="inline-link-rx"></block>不支持备份和还原应用程序数据和虚拟机数据。</block>
@@ -4187,10 +4069,7 @@ https://support.netapp.com
   <block id="2ff5664491ece284c069195a204d44c0" category="list-text">指定用于为连接器实例启用所需连接方法的安全组设置：SSH、HTTP和HTTPS。</block>
   <block id="f04e7bde7d47a749e6ba7643ae027953" category="paragraph"><block ref="f04e7bde7d47a749e6ba7643ae027953" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="list-text">9.1 到 9.4</block>
-  <block id="c71ee68b655a1c2de6162e6ea2837535" category="list-text">Red Hat Enterprise Linux需要Podman。</block>
-  <block id="3ee8b338aa466b632e26ed7928d4b063" category="list-text">需要使用Podman 4.6.1或4.9.4版</block>
   <block id="f99019d3e8e3a4daa34cad5d0e1cccc2" category="inline-xref">查看BlueXP  支持的Docker引擎版本</block>
-  <block id="6abb84cd1ebbb51102cb3ca371b8a8ca" category="paragraph">安装受支持的Docker引擎版本。<block ref="2fdf32031e9fd2d8e629141f098d92fe" category="inline-xref-macro-rx"></block>(英文)</block>
   <block id="b425a48ec3cd2a8cf0d731578b9ac8cb" category="paragraph">虽然BlueXP  在使用受限模式或私有模式时会阻止流量、通信和数据的流动、但您有责任确保您的环境(内部和云中)符合所需的法规。</block>
   <block id="ad8ea852a1d73dd8dbfac3b19dd09403" category="list-text">BlueXP  连接器安装在内部环境或云中(位于安全区域、主权云区域或商业区域)、并且与BlueXP  SaaS层之间具有_no_连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。</block>
   <block id="95f7a3f8f1594da8c9dbd6c9cb3ee51e" category="paragraph">在私有模式下、您可以在内部或云中安装Connector、然后使用BlueXP  管理混合云中的数据。无法连接到BlueXP SaaS层。</block>
@@ -4219,7 +4098,6 @@ https://support.netapp.com
   <block id="1017ad8551dc7209fead1d996608e2b5" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是直接从Azure Marketplace在Azure中创建Connector。要从Azure Marketplace创建Connector、您需要设置网络连接、准备Azure权限、查看实例要求、然后创建Connector。</block>
   <block id="9a63fba43be3e1df0de44c749000ffc5" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项包括直接从BlueXP  或使用gCloud在AWS中创建连接器。要从BlueXP或使用gCloud在Google Cloud中创建Connector、您需要设置网络连接、准备Google Cloud权限、启用Google Cloud API、然后创建Connector。</block>
   <block id="455e0d1571fc687b88776ecc58050d7b" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是在运行Google Cloud的Linux主机上手动安装Connector软件。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Google Cloud权限、启用API、安装Connector、然后提供您准备的权限。</block>
-  <block id="2645e78b8215441741aa8ea067e0db45" category="summary">在内部安装连接器、然后登录并设置它以使用您的BlueXP  帐户。</block>
   <block id="e080a3173dc73a079c4fd120abb491e0" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。要在内部运行Connector、您需要查看主机要求、设置网络、准备云权限、安装Connector、设置Connector、然后提供您准备的权限。</block>
   <block id="5ed8d571b208e6fe2728f122d3340d93" category="paragraph">如果连接器安装在内部环境中、则需要为具有所需权限的IAM用户添加访问密钥、从而为BlueXP  提供AWS权限。</block>
   <block id="7247a245f2594a184b7ed7669be8c32e" category="paragraph">如果连接器安装在内部环境中、您需要通过在Microsoft Entra ID中设置服务主体并获取BlueXP  所需的Azure凭据来为BlueXP  提供Azure权限。</block>
@@ -4253,14 +4131,6 @@ https://support.netapp.com
   <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>(英文)</block>
   <block id="d30916c53949113e97a8033f02e41364" category="paragraph">此版本提供了一些小改进和错误修复。</block>
   <block id="f0e69ccbb7ad96f546f7924206944bfa" category="sidebar">内部部署</block>
-  <block id="faa37a1c6dbb9f8ecd3c6fd701363f79" category="cell">连接器版本</block>
-  <block id="24f3b77dafe74fa61e4dac1fa28fd846" category="cell">Docker引擎的最低版本</block>
-  <block id="f78ed5876382c6c98cfe5372fcdf962a" category="cell">Docker引擎的最高版本</block>
-  <block id="ca6fc29ee5b222437802127247ae33fd" category="cell">_New_ Connector安装正在启动3.9.44</block>
-  <block id="15f1005256bbfb87197dfe3bfd5b588f" category="cell">23.0.6</block>
-  <block id="f2162c8532f84cb24bc54e30c4c0341c" category="cell">26.0.0</block>
-  <block id="4d2dd7c014e329b4fb387303e47f1d83" category="cell">在3.9.44版本之前创建的连接器</block>
-  <block id="9b8f09d8d408f824fbf8c4f7321295aa" category="cell">25.0.5</block>
   <block id="f258c97f55e85bfbd607e70e86d840dc" category="section-title">支持在全新安装中使用Docker Engine 26</block>
   <block id="5c968eab53d6065ccf63e9766935cb7b" category="paragraph">从3.9.44版本的连接器开始、Docker引擎26现在支持在Ubuntu主机上安装_new_连接器。</block>
   <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">如果您在3.9.44版本之前创建了现有连接器、则Docker 25.0.5仍是Ubuntu主机上支持的最大版本。</block>
@@ -4273,8 +4143,6 @@ https://support.netapp.com
   <block id="f42f94dc205ad041c3d86658f703465e" category="paragraph">BlueXP  用于生成CSR的密钥对存储在连接器内部。在连接器上安装证书时、BlueXP  会自动检索同一密钥对(专用密钥)。</block>
   <block id="fa7c85eec1cc76ccc0e893292ce638e4" category="list-text">安装已有的CA签名证书。</block>
   <block id="44f374dc4bb34314bb885e22229628b6" category="paragraph">使用此选项时、不会通过BlueXP  生成CSR。您需要单独生成CSR并将私钥存储在外部。在安装证书时、您需要为BlueXP  提供专用密钥。</block>
-  <block id="cce7af47240992bbe7e732a4ed33061c" category="inline-link">查看Docker安装说明</block>
-  <block id="11f197927bd64550079e417137ab4ce2" category="paragraph"><block ref="11f197927bd64550079e417137ab4ce2" category="inline-link-rx"></block></block>
   <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">2024年9月30日</block>
   <block id="0beb94109608ff82d313b33947162f96" category="section-title">专用模式版本(3.9.44)</block>
   <block id="f1fb6fd189345cf04ef77974b58bcbfc" category="paragraph">此版本包含以下版本的BlueXP  组件和服务、这些组件和服务支持私有模式。</block>
@@ -4293,4 +4161,692 @@ https://support.netapp.com
   <block id="00dc7f0b165829f9f81bfaf12a8db2e4" category="inline-link">BlueXP  中Cloud Volumes ONTAP管理的新增功能</block>
   <block id="941cdb6d27c83c929d4abe28f2321665" category="list-text"><block ref="941cdb6d27c83c929d4abe28f2321665" category="inline-link-rx"></block></block>
   <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">有关专用模式的更多详细信息、包括如何升级、请参见以下内容：</block>
+  <block id="fe70d00031e0c8027b968ff90a57ff67" category="paragraph"><block ref="fe70d00031e0c8027b968ff90a57ff67" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c223cc107d4b6a766458301b9e4ec659" category="list-text">指定要与连接器关联的BlueXP  组织。</block>
+  <block id="dedba3bd94f6a10ada9755fca9221d1e" category="paragraph">现在、您的BlueXP  组织已安装并设置了连接器。</block>
+  <block id="5ef39814441210148af2a4089dd68a03" category="list-text">如果您的企业需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。请注意、BlueXP不支持透明代理服务器。</block>
+  <block id="96c5b00de0b07499da2e803348fefa3a" category="list-text">[[Podman-versions]]操作系统和容器要求</block>
+  <block id="5b537a7bc807c86f4601476633c8751d" category="list-text">在标准模式或受限模式下使用BlueXP  时、BlueXP  支持将连接器与以下操作系统结合使用。在安装Connector之前、需要使用容器流程编排工具。</block>
+  <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">操作系统</block>
+  <block id="7b948bab9b4003048f0e729d2dd1b238" category="cell">支持的OS版本</block>
+  <block id="301e9d698830f505ef2566dfc5a26274" category="cell">所需的容器工具</block>
+  <block id="1a3d8802d280d4ec910f54042cd62998" category="cell">SELinux</block>
+  <block id="b11607e817d8dd4e7a61b5be6e2adcae" category="paragraph">3.9.40或更高版本、BlueXP  处于标准模式或受限模式</block>
+  <block id="4a7c3449c74a5d09f39518a207c28558" category="paragraph">4.6.1播客4.9.4</block>
+  <block id="98119697a8c596d6a586655f867a2cda" category="inline-xref">查看Podman配置要求</block>
+  <block id="a4facfb2d16d1ed97d33467440808582" category="paragraph"><block ref="70e106a4b5e10c3f8e254a047f7ddb34" category="inline-xref-macro-rx"></block>(英文)</block>
+  <block id="80626b31c22fa123b11c56011b1f23b6" category="paragraph">在强制模式或许可模式下受支持</block>
+  <block id="3d945423f8e9496c429a5d8c65b4604f" category="paragraph">Ubuntu</block>
+  <block id="4cb2cce5e859bbc5a24d65a5385fba47" category="paragraph">24.04 LTS</block>
+  <block id="8be08c10396c9c621de2a80e7ee83e4b" category="paragraph">3.8.5.4.5.8.5.3.8.5.8.5.8.5.3.8.5.8.5.8.5.3.8.5.8.5.8. BlueXP </block>
+  <block id="e8ad09ce82a676af682d64048bfaccdf" category="paragraph">Docker 26.0.0</block>
+  <block id="aa7f77e663b832d5b0e544c5511e680c" category="paragraph">不支持</block>
+  <block id="2464b5a925b66efe79da228156bcf8ec" category="paragraph">22.04 LTS</block>
+  <block id="607262a04e5c4340fc8d641e874a5695" category="paragraph">3.9.29或更高版本</block>
+  <block id="a3336db0e9f7b6341a12794c144076b6" category="paragraph">Docker 23.0.6 26.0.0</block>
+  <block id="d17c1c5df1d66cd867cac0be74a24b2f" category="paragraph">26.0.0支持_new_ 3.9.44或更高版本安装</block>
+  <block id="85597176185e09b87b7f61d19fbf15f4" category="list-text">对于RHEL、主机必须注册到Red Hat订阅管理中。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。</block>
+  <block id="cfa3c2ed59f5807a5da4f70f9fd2a75a" category="list-text">在专用模式下使用BlueXP  时、BlueXP  支持将连接器与以下操作系统结合使用。在安装Connector之前、需要使用容器流程编排工具。</block>
+  <block id="4cfbb74ea0a7f288bc508af725ee0f34" category="paragraph">3.9.42或更高版本、BlueXP  处于专用模式</block>
+  <block id="136da095d8c6e083ed13dec8dadaffe5" category="paragraph"><block ref="3c15003d1ebf129cb6cebdaf6ae30fe9" category="inline-xref-macro-rx"></block>(英文)</block>
+  <block id="cce355fe44a79b8d49cca2daa6500a25" category="paragraph"><block ref="2fdf32031e9fd2d8e629141f098d92fe" category="inline-xref-macro-rx"></block>(英文)</block>
+  <block id="240737f585dc738aa03819a8404eec8f" category="paragraph">按照以下步骤安装Podman并对其进行配置，使其符合以下要求：</block>
+  <block id="fd3ac4b8bdad6f16e9e6e20e98f8fd3b" category="paragraph">按照Docker中的文档安装Docker引擎。</block>
+  <block id="967f6b685746fef3724d3494c1afc513" category="list-text">选择要与此订阅关联的BlueXP  组织或帐户。</block>
+  <block id="ef19fc2e03027a590127656e945205e1" category="list-text">在*替换现有订阅*字段中，选择是否要将某个组织或帐户的现有订阅自动替换为此新订阅。</block>
+  <block id="c999131c88aa02b0f9b7250262aa1fa6" category="paragraph">BlueXP  会将组织或帐户中所有凭据的现有订阅替换为此新订阅。如果一组凭据从未与订阅关联、则此新订阅将不会与这些凭据关联。</block>
+  <block id="c64577fbea6506f38ae9b43ab46da844" category="paragraph">对于所有其他组织或帐户、您需要重复这些步骤来手动关联订阅。</block>
+  <block id="aed7c8a25120d41eacc3c97ed0b851e5" category="paragraph">要将Google Cloud订阅与您的BlueXP  组织或帐户关联起来、必须完成此步骤。只有在从此页面重定向并登录到BlueXP后、链接订阅的过程才会完成。</block>
+  <block id="6c42d9d3f2de2ec585181e975309fcf0" category="section-title">与云提供商进行通信</block>
+  <block id="f9a30311177259db80d6ef6b5bc77f80" category="paragraph">Connector使用TLS 1.2与AWS、Azure和Google Cloud进行所有通信。</block>
+  <block id="62e253e417ca4e6f13ae9fae3d41704e" category="paragraph">您可以直接从BlueXP 、云提供商的市场或通过在自己的Linux主机上手动安装软件来创建Connector。如何开始取决于您是在标准模式、受限模式还是专用模式下使用BlueXP。</block>
+  <block id="be6236f35c24aae3ee086b3f6ec01213" category="paragraph">我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然BlueXP  平台中的大多数服务和功能都是通过基于SaaS的软件提供的、但少数功能取决于Connector的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。</block>
+  <block id="429ef702d7e67a893ea297da8613a472" category="inline-link-macro">了解如何在使用私有模式时手动升级Connector软件</block>
+  <block id="1178d8df6f45ec63d153216266770ffa" category="paragraph"><block ref="8ab15d11feb9213cf5a6950e71fe0578" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="8f65178ee55c2c64ee3bef58afe9c682" category="list-text">服务提供商可以使用一个BlueXP  组织为其客户提供服务、而使用另一个组织为其业务部门之一提供灾难恢复。每个组织都有单独的连接器。</block>
+  <block id="d2d6f4fd74e2ac2b843a4f202e5a89b6" category="doc">通过将身份联合与BlueXP  结合使用来启用单点登录</block>
+  <block id="194f68541f58f6c331eacf4db74f4f78" category="summary">通过BlueXP  身份和访问管理(IAM)、您可以控制对组织资源的访问。</block>
+  <block id="d135d1b6a10879ca27887c632f4576d7" category="doc">了解BlueXP  身份和访问管理</block>
+  <block id="4c68d7a9d2f72cab48af82d15bdd22b9" category="paragraph">通过BlueXP  身份和访问管理(IAM)、您可以组织和控制对NetApp资源的访问。您可以根据组织的层次结构来组织资源。例如、您可以按地理位置、站点或业务单位来组织资源。然后、您可以将权限分配给层次结构特定部分的成员、从而阻止访问层次结构其他部分中的资源。</block>
+  <block id="81ac1402c03d0a47ef27fe0243ef45dc" category="inline-link-macro">详细了解BlueXP  IAM的推出</block>
+  <block id="5fdbce3d2319aac7495f83deb2cfb4ec" category="paragraph">BlueXP  IAM取代并增强了BlueXP  帐户先前提供的功能。<block ref="05afd8790c123b20ba2a3355efdad456" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="35a6ef4b2983f2c48bb7abdcd826e67f" category="paragraph">在标准模式下使用BlueXP  时、支持BlueXP  IAM。如果在受限模式或私用模式下使用BlueXP 、则使用BlueXP _account_来管理用户和资源。</block>
+  <block id="03dc9106de5affc832d68c188393146d" category="section-title">BlueXP  IAM的工作原理</block>
+  <block id="c070b3ed0873722a725505fd8f648c60" category="paragraph">通过BlueXP  IAM、您可以通过定义哪些成员对组织层次结构的特定部分具有权限来授予对组织资源的访问权限。例如、成员可以对具有五个关联资源的项目拥有项目管理员权限。</block>
+  <block id="7d5499ec968e6c97c7264ba95116b2d6" category="paragraph">使用BlueXP  IAM时、您将管理以下组件：</block>
+  <block id="ba49e39a2ccedcfe8d31a1eb6440393b" category="list-text">组织</block>
+  <block id="60c7502b5c40479908aed919a94c1786" category="list-text">文件夹</block>
+  <block id="54e1d44609e3abed11f6e1eb6ae54988" category="list-text">项目</block>
+  <block id="ddcf50c29294d4414f3f7c1bbc892cb5" category="list-text">资源</block>
+  <block id="cc3fc292512275828d3e52e16ae33c1e" category="list-text">角色和权限</block>
+  <block id="63d750f29eced0ef6f1a75aa4da71fd5" category="paragraph">BlueXP  资源按分层结构进行组织：</block>
+  <block id="790fa8644dbcadf85fb5b45d7fca979d" category="list-text">组织是层次结构的顶端。</block>
+  <block id="2ede3ee5af948d52fa8b02b8b724edbc" category="list-text">文件夹是组织或其他文件夹的子文件夹。</block>
+  <block id="c6d4d895d45b22ea5448413edb3695fb" category="list-text">项目是组织或文件夹的子项目。</block>
+  <block id="d328918eb0bde8153b59b715b29dab04" category="list-text">资源与一个或多个文件夹或项目相关联。</block>
+  <block id="c811c1fbfa4dd81873bbea559d575b16" category="paragraph">下图从基本层面展示了此层次结构。</block>
+  <block id="10119787527a31da075fede0d76f0203" category="inline-image-macro">一个概念图、用于显示BlueXP  IAM的资源层次结构：组织、文件夹、项目和资源。</block>
+  <block id="7e775be1764f78009e9846f9006651fa" category="paragraph"><block ref="7e775be1764f78009e9846f9006651fa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d6b258792ff06f82933c74eeb8aef591" category="section-title">组织</block>
+  <block id="31e872437335d3d81483e87525b418b2" category="paragraph">一个组织是BlueXP  IAM系统的顶级组织、通常代表您的公司。您的组织由文件夹、项目、成员、角色和资源组成。连接器与组织中的特定项目相关联。</block>
+  <block id="2514dc2ef1e14f7696838f5cc8280315" category="paragraph">注册BlueXP  时、系统会提示您创建新组织。</block>
+  <block id="ee07c487a7e0b5c18c94b4bded207535" category="paragraph">使用_FOLDER_可以将相关项目分组在一起、并将其与组织中的其他项目分开。例如、文件夹可能表示地理位置(欧盟或美国东部)、站点(伦敦或多伦多)或业务单位(工程或市场营销)。</block>
+  <block id="4f4b6c71ed586432b1f40e519b555023" category="paragraph">文件夹可以包含项目、其他文件夹或两者的组合。</block>
+  <block id="229579d2bfa52f21a46468d1600ae5db" category="paragraph">您不需要创建文件夹。它们是可选的。</block>
+  <block id="073b4a34202498afcb0022a2400e1b32" category="paragraph">_project_表示BlueXP  中的一个工作空间、组织成员可以从BlueXP  画布访问此工作空间来管理资源。例如、项目可以包括Cloud Volumes ONTAP系统、内部ONTAP集群或FSx for ONTAP文件系统。</block>
+  <block id="420332558cea2f6b48a90723f1ba988b" category="paragraph">一个组织可以有一个或多个项目。项目可以直接驻留在组织的下面或文件夹中。</block>
+  <block id="6df9abd9c7b51bbfb5b24919ebf7a0d9" category="paragraph">资源是您在BlueXP  中创建或发现的工作环境。</block>
+  <block id="4bcb4158bb794b5f6897b12a3d885700" category="paragraph">创建或发现资源时、该资源将与当前选定的项目相关联。这可能是唯一要与此资源关联的项目。但是、您可以选择将资源与组织中的其他项目相关联。</block>
+  <block id="448d5e2671e1140d3206b53b2cd8fcb3" category="paragraph">例如、您可以将一个Cloud Volumes ONTAP系统与一个其他项目或组织中的所有项目相关联。如何关联资源取决于组织的需求。</block>
+  <block id="168c1dcd033cefa7491c208fa91302b0" category="inline-xref">详细了解如何将连接器与BlueXP  IAM结合使用</block>
+  <block id="41b86f6155d6363543815bac5dea73ad" category="admonition">您还可以将Connector与组织中的其他文件夹或项目相关联。<block ref="9e7f5047feaf45527e5897b8e3a9f3c3" category="inline-xref-macro-rx"></block>(英文)</block>
+  <block id="45fe20b7675ad9a40c796bc19a899151" category="section-title">何时将资源与文件夹相关联</block>
+  <block id="fc684e5246159b2c02963d967d21fdff" category="paragraph">您还可以选择将资源与文件夹相关联、但这是可选操作、可满足特定使用情形的需求。</block>
+  <block id="c2b6281f68ca211ace1d3b7217d3af91" category="paragraph">Organization admin_可以将资源与文件夹相关联、以便_Folder或项目admin_可以将该资源与驻留在该文件夹中的相应项目相关联。</block>
+  <block id="1058f4a748781e5148a8a3c55abb0aab" category="paragraph">例如、假设您有一个包含两个项目的文件夹：</block>
+  <block id="6ca67105e5f9ace975f61928538c4611" category="inline-image-macro">显示文件夹中的一个文件夹和两个项目的图表：项目A和项目B</block>
+  <block id="754e6597ff2f536e3e344211df138650" category="paragraph"><block ref="754e6597ff2f536e3e344211df138650" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f7b8351932b4b34ebd9a3c35f609142" category="paragraph">Organization admin_可以将资源与文件夹相关联：</block>
+  <block id="13d52e7b25d0d3a36ee2a18423d7e3fc" category="inline-image-macro">显示文件夹、与文件夹关联的资源以及文件夹中的两个项目(项目A和项目B)的图表</block>
+  <block id="a762f5e5e726c59b96c9704f6690afd5" category="paragraph"><block ref="a762f5e5e726c59b96c9704f6690afd5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="abcb4f764f4be71c7de8f1f00d041876" category="paragraph">将资源与文件夹关联不会自动使该资源可从文件夹中的所有项目访问。但是、文件夹或项目管理可以决定应将该资源提供给哪些项目。做出此决定后、管理员可以将该资源与正确的项目相关联。</block>
+  <block id="390c53a5725b855c6866ac325cec9ffc" category="paragraph">在此示例中、管理员将资源与Project A相关联：</block>
+  <block id="a6359392d37b223c34ad47dc59840824" category="inline-image-macro">显示文件夹、文件夹中的两个项目(项目A和项目B)以及与项目A关联的资源的图表</block>
+  <block id="033735cdc14884b812013b44ececf16d" category="paragraph"><block ref="033735cdc14884b812013b44ececf16d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7daf841f0e77802f670d882e89b2933a" category="paragraph">拥有项目A权限的成员现在可以访问该资源。</block>
+  <block id="edd719acf18ba2b24326bae940c8d405" category="paragraph">您的组织成员是用户帐户或服务帐户。服务帐户通常由应用程序使用来完成指定的任务、而无需人为干预。</block>
+  <block id="1e600081d8c3ddee81a1c4fde234a8ea" category="paragraph">一个组织至少有一个具有_Organization admin_角色的用户(系统会自动为创建该组织的用户分配此角色)。您可以向组织添加其他成员、并在资源层次结构的不同级别分配不同的权限。</block>
+  <block id="f7498a2b1cad9068d22c6cae249fa86a" category="paragraph">在BlueXP  IAM中、您不会直接向组织成员授予权限。而是为每个成员授予一个角色。角色包含一组权限、使成员能够在资源层次结构的特定级别执行特定操作。</block>
+  <block id="113f89b00e292b60a3abd42cf2ae334d" category="paragraph">通过在资源层次结构的特定部分提供权限、您可以将访问权限限制为只能访问成员完成其任务所需的资源。</block>
+  <block id="805218308fdc32b426f980b2af2fc1bb" category="section-title">您可以在其中分配层次结构中的角色</block>
+  <block id="3b9526de74c9dc5ffc9af4580bef6209" category="paragraph">将成员与角色关联时、需要选择整个组织、特定文件夹或特定项目。您选择的角色会为成员授予对层次结构选定部分中资源的权限。</block>
+  <block id="3a3412900d3c19fdb5732fe4f6694e1d" category="section-title">角色继承</block>
+  <block id="1dbcc05186db9ce123a5c671a4b5512c" category="paragraph">分配角色时、该角色将继承到组织层次结构中：</block>
+  <block id="54e4ca1414109471d3f30c5ad4a0e082" category="list-text">您在组织级别授予的角色将由组织中的所有文件夹、项目和资源继承。这意味着该成员对组织中的所有内容都有权限。</block>
+  <block id="352f1c445e075db00bbcab968cda6823" category="list-text">文件夹中的所有文件夹、项目和资源都会继承您在文件夹级别授予的角色。</block>
+  <block id="5ac64a6676e634fcfd02895729d7efc4" category="paragraph">例如、如果您在文件夹级别分配了一个角色、并且该文件夹包含三个项目、则该成员将有权访问这三个项目以及任何关联资源。</block>
+  <block id="f7cc750b6297ad0e9c4ddc933def018d" category="list-text">您在项目级别授予的角色将由与该项目关联的所有资源继承。</block>
+  <block id="d91e4a7f7d3d057f2ceb3bf51ca4b809" category="section-title">多个角色</block>
+  <block id="3a6537a8a84cacd748ff26028e103b68" category="paragraph">您可以在组织层次结构的不同级别为每个组织成员分配一个角色。它可以是同一个角色、也可以是不同的角色。例如、您可以为项目1和项目2分配成员角色A。或者、您也可以为项目1分配成员角色A、为项目2分配角色B。</block>
+  <block id="778cae7482baa87153f906bf3473adc3" category="section-title">预定义角色</block>
+  <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  支持多个预定义角色、您可以将这些角色分配给组织的成员。</block>
+  <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">了解IAM预定义角色</block>
+  <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="96798f05426bc55e0ae4e4719f68dc28" category="section-title">自定义角色</block>
+  <block id="a38d248b1e1740da2f4eccb2dc9492be" category="paragraph">目前不支持自定义角色。</block>
+  <block id="1f2652079b5030c3e1f5c5b95701a71c" category="paragraph">当_Organization admin_创建Connector时，BlueXP  会自动将该Connector与组织和当前选定的项目相关联。Organization admin_可自动从组织中的任何位置访问该Connector。但是、如果您的组织中有其他成员具有不同的角色、这些成员只能从创建连接器的项目访问该连接器、除非您将该连接器与其他项目相关联。</block>
+  <block id="a84eaa1aafc5282e553ddc52e74d77b9" category="paragraph">在以下情况下、您可能需要使Connector可用于其他项目：</block>
+  <block id="9ce6bd5f8ae0c74108c66519e8a1d5dd" category="list-text">您希望允许组织中的成员使用现有Connector在另一个项目中创建或发现其他工作环境</block>
+  <block id="1294a41af24549496295a289ef7392a4" category="list-text">您已将现有资源与另一个项目相关联、该资源由Connector管理</block>
+  <block id="73cf487cae9590b5cffed6be5a610252" category="paragraph">如果使用BlueXP  连接器发现了与其他项目关联的资源、则还需要将该连接器与该资源现在关联的项目关联。否则、没有_Organization admin_角色的成员将无法从BlueXP  画布访问连接器及其关联的资源。</block>
+  <block id="6d257318c199abbb1afe6c1bda69ac59" category="paragraph">您可以从BlueXP  IAM中的*Connectors *页面创建关联：</block>
+  <block id="878220f2fc28384f3ff6858db2ecdbb8" category="list-text">将连接器与项目相关联</block>
+  <block id="840678c266fb13b1e6f3bb15d8389d12" category="paragraph">将连接器与项目关联后、可以在查看项目时从BlueXP  画布访问该连接器。</block>
+  <block id="e85ac916ed94cb910b4635be78c76be1" category="list-text">将连接器与文件夹相关联</block>
+  <block id="b586758af094fc2bd17d0a7998a3c157" category="paragraph">将连接器与文件夹关联不会自动使该连接器可从文件夹中的所有项目访问。在将某个连接器与该特定项目关联之前、组织成员无法从该项目访问该连接器。</block>
+  <block id="201614334b2723fd3338cf698f37ecd4" category="paragraph">Organization admin_可能会将Connector与文件夹相关联、以便_Folder或项目admin_可以决定将该Connector与文件夹中的相应项目相关联。</block>
+  <block id="0561b5e58584cfa2d9e645e47c0c3bb1" category="section-title">IAM示例</block>
+  <block id="8ddebf391d7c6c8708071496ecce1bf7" category="paragraph">以下示例显示了如何设置您的组织。</block>
+  <block id="135b3c5ddb2b53a7189302bba4295fc6" category="section-title">简单的组织</block>
+  <block id="bc43b12884b61655079a5a16d18ad9de" category="paragraph">下图显示了一个使用默认项目而不使用文件夹的组织的简单示例。一个成员负责管理整个组织。</block>
+  <block id="a72765d3ccd5c52417f70bed4c7b5d10" category="inline-image-macro">一个概念图、显示了一个组织及其项目、关联资源和一个组织管理员。</block>
+  <block id="face2518a7991fc077049ce88a451506" category="paragraph"><block ref="face2518a7991fc077049ce88a451506" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59621237129094427f9a72a5abd1c4ab" category="section-title">高级组织</block>
+  <block id="c6b77e1242f5c61d1b3a4fcc23ecbc5f" category="paragraph">下图显示了一个使用文件夹组织业务中每个地理位置的项目的组织。每个项目都有自己的一组关联资源。成员包括组织管理员和组织中每个文件夹的管理员。</block>
+  <block id="c42c21a7b10f03efb2158ca490037fe6" category="inline-image-macro">一个概念图、显示了一个组织、其中包含三个文件夹、每个文件夹包含三个项目及其关联资源。共有四个成员：一个组织管理员和三个文件夹管理员。</block>
+  <block id="bf82c3800cfba815226d6198ee52f743" category="paragraph"><block ref="bf82c3800cfba815226d6198ee52f743" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9c71ad950b1446d547278af5c7147328" category="section-title">您可以使用BlueXP  IAM执行哪些操作</block>
+  <block id="97d3cbd51b6b8b0b3d639c943148a417" category="paragraph">以下示例介绍了如何使用IAM管理BlueXP  组织：</block>
+  <block id="8ee1b3030cf2306807b2455986fcdbb7" category="list-text">为特定成员授予特定角色、使其只能完成所需的任务。</block>
+  <block id="f91eea9f01a5fb5fa77a710b4ba9c3f8" category="list-text">修改成员权限、因为他们移动了部门或承担了其他职责。</block>
+  <block id="ef27124892f4f09e9c2bb90c1203ff27" category="list-text">删除离开公司的用户。</block>
+  <block id="e1f2316dbf17a6638de690d7aa30435a" category="list-text">将文件夹或项目添加到层次结构中、因为新业务单位已添加NetApp存储。</block>
+  <block id="b2cc75cf0917e7a2e3b9e5436f277bca" category="list-text">将资源与另一个项目相关联、因为该资源具有其他团队可以利用的容量。</block>
+  <block id="4d7877e30c207ca4005b216478fe60b7" category="list-text">查看成员可以访问的资源。</block>
+  <block id="6cb05f8d1ecb6a2e9d2feda7fc446108" category="list-text">查看与特定项目关联的成员和资源。</block>
+  <block id="3163b3d4dc92f42d04ad4c79906dcdc3" category="section-title">下一步行动</block>
+  <block id="c12e8c3134a6d5ff2ec2657f6357e8ec" category="inline-link-macro">开始使用BlueXP  IAM</block>
+  <block id="8e537ea51347d673ce98d63017478ab1" category="list-text"><block ref="8e537ea51347d673ce98d63017478ab1" category="inline-link-macro-rx"></block></block>
+  <block id="83a9171f9d4625508b6cd8aa9047aa39" category="inline-link-macro">使用文件夹和项目组织BlueXP  中的资源</block>
+  <block id="4eaaa0d0b56259cfba7ab5107e3505cf" category="list-text"><block ref="4eaaa0d0b56259cfba7ab5107e3505cf" category="inline-link-macro-rx"></block></block>
+  <block id="3ae3f4ae96ab82480130c990fe8abb27" category="inline-link-macro">管理BlueXP  成员及其权限</block>
+  <block id="bc11f089f08d4112745ef231e6bd76f5" category="list-text"><block ref="bc11f089f08d4112745ef231e6bd76f5" category="inline-link-macro-rx"></block></block>
+  <block id="56f0a9d778761ff673425068bcd1caca" category="inline-link-macro">管理BlueXP  组织中的资源层次结构</block>
+  <block id="b4936fda3da18c6fa9192d0174c93248" category="list-text"><block ref="b4936fda3da18c6fa9192d0174c93248" category="inline-link-macro-rx"></block></block>
+  <block id="0ed1fa4dc958833aaa6c943368d9f610" category="inline-link-macro">将接头与文件夹和项目相关联</block>
+  <block id="9610f2c808689a17e58f0813034c0c28" category="list-text"><block ref="9610f2c808689a17e58f0813034c0c28" category="inline-link-macro-rx"></block></block>
+  <block id="aaf07b703d1ee5efd10dd75da6dea8fb" category="inline-link-macro">在BlueXP  项目和组织之间切换</block>
+  <block id="e1e7b5ea6c8560fc6815f1cf773f2f6f" category="list-text"><block ref="e1e7b5ea6c8560fc6815f1cf773f2f6f" category="inline-link-macro-rx"></block></block>
+  <block id="061653f8abbedd17bc4aa60588257e70" category="inline-link-macro">重命名BlueXP  组织</block>
+  <block id="959b3d139f0ed348df82399415bdebd9" category="list-text"><block ref="959b3d139f0ed348df82399415bdebd9" category="inline-link-macro-rx"></block></block>
+  <block id="01e8a182567bd2c2dcbbff70cc3ab8df" category="inline-link-macro">监控或审核IAM活动</block>
+  <block id="08f5de863be0cce720d83cf5f9e2325a" category="list-text"><block ref="08f5de863be0cce720d83cf5f9e2325a" category="inline-link-macro-rx"></block></block>
+  <block id="2ae9b8201c573eac585a948cb9830266" category="inline-link-macro">预定义的BlueXP  IAM角色</block>
+  <block id="3fb66cadb4027f2f57ca51f4b307b813" category="list-text"><block ref="3fb66cadb4027f2f57ca51f4b307b813" category="inline-link-macro-rx"></block></block>
+  <block id="2047b2bd03a68b861064ed837a1828ad" category="inline-link">了解适用于BlueXP  IAM的API</block>
+  <block id="6eac0fe573d21cc295c6fb62b2ea661f" category="list-text"><block ref="6eac0fe573d21cc295c6fb62b2ea661f" category="inline-link-rx"></block></block>
+  <block id="352b89440d5beff7b1d3a05b715d29f3" category="paragraph">BlueXP  提供三种部署模式。每个模式在出站连接要求、部署位置、安装过程、身份验证方法、可用数据和存储服务以及收费方法方面都有所不同。</block>
+  <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="cell">BlueXP  身份和访问管理</block>
+  <block id="f9fe38e333c2ca53b0f55bf1d77ff415" category="summary">使用受限模式或专用模式时、您可以通过BlueXP  帐户在隔离的工作空间中管理用户和组织资源。</block>
+  <block id="da7e730676141f6182a7c02360c7231a" category="paragraph">在受限模式或专用模式下使用BlueXP  时、您将使用_ BlueXP  account_来管理用户并在隔离的_工作空间_中组织资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP工作环境、而在其他工作空间中管理工作环境的用户则看不到该工作空间。</block>
+  <block id="4d5a6c38dc6ac6534bdcc6ab92e89432" category="paragraph">如果您在标准模式下使用BlueXP 、则没有BlueXP  帐户。而是使用BlueXP  身份和访问管理(IAM)管理_ BlueXP  organization _。</block>
+  <block id="a5a81005322e1187e396e2f1252dca71" category="inline-link-macro">了解BlueXP  IAM</block>
+  <block id="0a3f88a939958973fc19097a4507c320" category="list-text"><block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block></block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="inline-link">适用于 NetApp ONTAP 的 Amazon FSX</block>
+  <block id="9c4a7c12354adf4b9769466219528866" category="list-text"><block ref="9c4a7c12354adf4b9769466219528866" category="inline-link-rx"></block></block>
+  <block id="00838ef59a9253836a006f7f6c950540" category="list-text">通过同步、复制和分层数据将数据移动到需要的位置。</block>
+  <block id="567df595b15ee514a60197cd2704d121" category="list-text"><block ref="567df595b15ee514a60197cd2704d121" category="inline-link-rx"></block></block>
+  <block id="ecbf594bb3a0b1f21d5ca3e417aec924" category="list-text"><block ref="ecbf594bb3a0b1f21d5ca3e417aec924" category="inline-link-rx"></block></block>
+  <block id="0e8ea8e34a0c202eee5118a2cb8b1245" category="inline-link">详细了解如何使用BlueXP  管理混合多云环境中的数据</block>
+  <block id="0db222e907cad49a37eadf66bb039f71" category="paragraph"><block ref="0db222e907cad49a37eadf66bb039f71" category="inline-link-rx"></block></block>
+  <block id="e941556cb9de65414ef1016588b14a16" category="paragraph">BlueXP  包括一个通过SaaS层提供的基于Web的控制台、一个资源和访问管理系统、以及一个可管理工作环境并支持BlueXP  云服务的连接器。</block>
+  <block id="b92add9eaaadea48e36392b833f28648" category="paragraph">BlueXP  可通过和API进行访问<block ref="2f36e092fa6569e04c3ec0f6ff9041a3" category="inline-link-rx"></block>。通过这种SaaS体验、您可以在最新功能发布时自动访问这些功能、并在BlueXP  组织、项目和连接器之间轻松切换。</block>
+  <block id="99acbaa3cb87e4fe6650072fa6b0a905" category="section-title">BlueXP  身份和访问管理(IAM)</block>
+  <block id="6634ed0b00a5c7441cfb3ec2c18b56d8" category="paragraph">BlueXP  身份和访问管理(IAM)是一种资源和访问管理模型、可提供对资源和权限的精细管理：</block>
+  <block id="54298776910b74abb9c78a3f449702b3" category="list-text">通过顶级_organ组织_、您可以管理各个_projects_之间的访问权限</block>
+  <block id="29235ad952255adaa81cebf92ab3a0f0" category="list-text">_Folders"用于将相关项目分组在一起</block>
+  <block id="666d088bb19b110a528d20b21622daa9" category="list-text">通过资源管理、您可以将资源与一个或多个文件夹或项目相关联</block>
+  <block id="4c57f63e49ef8479b418a16f7d776ed6" category="list-text">通过访问管理、您可以将角色分配给组织层次结构不同级别的成员</block>
+  <block id="8c898441028bb7b6b2d1f2270d148587" category="paragraph">在标准模式下使用BlueXP  时、支持BlueXP  IAM。如果您在受限模式或私有模式下使用BlueXP 、则将使用BlueXP _account_来管理工作空间、用户和资源。</block>
+  <block id="b2bb1015f4cde818ea1f13912e4e1755" category="inline-link-macro">详细了解BlueXP  IAM</block>
+  <block id="1c675fd28ce69ed7126f32d646676158" category="list-text"><block ref="1c675fd28ce69ed7126f32d646676158" category="inline-link-macro-rx"></block></block>
+  <block id="8fbf37ccd9a099359c44e494e119477c" category="paragraph">您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。通过Connector、您可以管理内部环境和云环境中的资源和流程。它是管理工作环境(例如Cloud Volumes ONTAP)和使用许多BlueXP  服务所必需的。</block>
+  <block id="f2dac34fd4c65525dd66bb810768bb27" category="paragraph">在存在安全和连接限制的环境中、支持BlueXP 。您可以使用_restricted mode"或_private mode"来限制与BlueXP SaaS层的出站连接。</block>
+  <block id="cdf60a7d13d1d74e115661d87ae97a3f" category="list-text">Ubuntu 24.04 LTS</block>
+  <block id="b6f945763d62ac8e8f24fb52111049ee" category="summary">BlueXP  身份和访问管理包括多个预定义角色、您可以将这些角色分配给组织的成员。</block>
+  <block id="9a4737feea9b9d5b10fea0c8478ac45b" category="doc">预定义的BlueXP  IAM角色和权限</block>
+  <block id="58f6c76de5e396f2cb8175b3a9628439" category="paragraph">BlueXP  身份和访问管理(IAM)包括多个预定义角色、您可以将这些角色分配给组织中不同级别的资源层次结构成员。在分配这些角色之前、您应了解每个角色包含的权限。</block>
+  <block id="6a476d78ce3a8169d99c99c3285fa106" category="section-title">组织管理员</block>
+  <block id="5ffa38d8daf12ac10d48a131c7cf1faa" category="list-text">可全面控制整个BlueXP  组织。</block>
+  <block id="43e2aff42f40dd4820c2190845f92a29" category="list-text">具有此角色的成员可以完成BlueXP  中的所有操作。</block>
+  <block id="08fe1197004da98b5b31b7f36eb2ecd2" category="section-title">文件夹或项目管理员</block>
+  <block id="f50c53d21cc12324f60732dc0bc33452" category="list-text">提供对一个或多个项目和文件夹的完全控制。</block>
+  <block id="36ebb13cae90d210a33c907ce95b5dab" category="paragraph">请注意、如果您在文件夹级别分配此角色、则该成员将有权访问与该文件夹关联的所有项目。</block>
+  <block id="b35f7cd4ff8cf3b50f8a254ff8eaab4d" category="list-text">具有此角色的成员可以在BlueXP  中完成以下操作：</block>
+  <block id="b7468effacd77ea7140c661bd2dce11a" category="list-text">管理他们拥有权限的项目和文件夹中的所有工作环境</block>
+  <block id="b510afc7b0f705daf7ba3b0e6a9509ab" category="list-text">使用所有BlueXP  服务</block>
+  <block id="19c38739f5aec88cec4d5ddfe95e4da5" category="list-text">从BlueXP  IAM中、文件夹管理员可以管理属于该文件夹的子文件夹、项目和资源：</block>
+  <block id="28283751df9965c22c056b9918a77bf8" category="list-text">在文件夹中添加文件夹或项目</block>
+  <block id="e51470b514d7e8944c546a41c7f08927" category="list-text">编辑文件夹和项目：其名称、关联资源和成员访问权限</block>
+  <block id="7c45875dc8931622255e645bf97ee885" category="list-text">删除文件夹和项目</block>
+  <block id="f9d9cf5a121b8d1ad96ee13010dde815" category="list-text">在文件夹或项目级别添加用户帐户并关联角色</block>
+  <block id="25955130d336f909d9a5c924bed6c39c" category="list-text">将连接器与文件夹或项目相关联</block>
+  <block id="cf49f8905b1420831f6afdb9343ab19f" category="list-text">在文件夹或项目级别向成员添加角色</block>
+  <block id="010425dbecf395ac4e4dfe5c2d068de4" category="list-text">查看与文件夹和项目关联的资源</block>
+  <block id="5313ba4411cbe52945aadd516908bc49" category="list-text">将可查看的资源与其他文件夹或项目相关联</block>
+  <block id="8e832b96727752de00c9220cff5b65d7" category="list-text">解除资源与文件夹或项目的关联</block>
+  <block id="1c675b61b8cdd67aee5e55f21e480a43" category="list-text">在BlueXP  IAM中、项目管理员可以按如下方式管理该项目及其关联资源：</block>
+  <block id="764cb47403e778ea4e27ed7882b78c78" category="list-text">编辑项目：项目名称、关联资源和成员访问权限</block>
+  <block id="9eceb2ab0004faaee5b590af60ce69af" category="list-text">在项目级别添加用户帐户并关联角色</block>
+  <block id="bb7c6e636a38d6790d21106ca4e22741" category="list-text">如果成员对具有其他关联连接器的其他项目具有管理员权限、请将连接器与项目相关联</block>
+  <block id="5e7c7a8ded45512d3c1312126add0472" category="list-text">在项目级别向成员添加角色</block>
+  <block id="8474cb230440aa90ac5d23b91c19cf06" category="list-text">查看与项目关联的资源</block>
+  <block id="d18353fc23c06d0e557aed7f817ce4a9" category="list-text">如果成员对具有其他关联资源的其他项目具有管理员权限、请将资源与项目相关联</block>
+  <block id="9fd806de6c0f64675237b801a3b8765f" category="list-text">解除资源与项目的关联</block>
+  <block id="8987cc0290d182f0256f6f0026257ea0" category="list-text">删除项目</block>
+  <block id="379e8cc7b99cd4d7696788fde49a89de" category="list-text">通过设置&gt;凭据管理凭据</block>
+  <block id="5c2549b200adb54fcf4ab1fa173b79b7" category="list-text">查看BlueXP  时间线</block>
+  <block id="ea6f3818343083288cee520c382ca65a" category="list-text">注册BlueXP  以获得支持并提交案例</block>
+  <block id="36910b765d93c29f4611f725c05faabe" category="section-title">SnapCenter管理员</block>
+  <block id="9475c3d2084f0988bba4e27b2659a267" category="list-text">能够使用适用于应用程序的BlueXP  备份和恢复功能从内部ONTAP集群备份快照。</block>
+  <block id="b839a58c0750f04dc83675a2a8c1ba61" category="list-text">从备份和恢复&gt;应用程序完成任何操作</block>
+  <block id="1393a4279651a3334e20f39925a139f5" category="section-title">分类查看器</block>
+  <block id="4a7c2bc5a034a095b9cd966aff4637c5" category="list-text">提供查看BlueXP  分类扫描结果的功能。</block>
+  <block id="84e4a7656b5466806bf9fbeda2eedd15" category="list-text">查看合规性信息并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。</block>
+  <block id="5f8c43dca47697fafd9a89eae3ea6f82" category="paragraph">具有此角色的成员不能执行任何其他操作。</block>
+  <block id="ef8eb5bec0bebce3b4cac1797fe12831" category="list-text"><block ref="ef8eb5bec0bebce3b4cac1797fe12831" category="inline-link-macro-rx"></block></block>
+  <block id="24fff469b53b3c0caad8c3049aada3bc" category="doc">为BlueXP  控制台准备网络连接</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="list-title">相关信息</block>
+  <block id="d7d13641730495fed0b36f7a2cfb5657" category="paragraph">在受限模式或专用模式下使用BlueXP  时、您将使用BlueXP  account_来管理用户。您可以通过选择以下角色为帐户中的用户提供特定权限：帐户管理员、工作区管理员、合规性查看器和SnapCenter管理员</block>
+  <block id="1e3e0a42c3e9d5acf6234aecce4a2177" category="cell">使用BlueXP  服务</block>
+  <block id="e351b985910352ae6ebe3e03c618e2b9" category="paragraph"><block ref="e351b985910352ae6ebe3e03c618e2b9" category="inline-link-macro-rx"></block></block>
+  <block id="32bf39c0f4f8e0ff3b8343a1c55eccc0" category="inline-link">电子钱包文档</block>
+  <block id="950b8d2ee51e322cd0332cda491f261e" category="list-text"><block ref="950b8d2ee51e322cd0332cda491f261e" category="inline-link-rx"></block></block>
+  <block id="7b0893f7350a7ce29533d2ee8bafbcea" category="list-text">在*组织凭据*或*帐户凭据*页面上，选择*添加凭据*并按照向导中的步骤进行操作。</block>
+  <block id="d0ecf8e73b6ccfcf921b7f1d7a9f7aab" category="section-title">将现有订阅与您的组织或帐户相关联</block>
+  <block id="3584c068f7259e26bf2cc7a1ba9ea2d5" category="paragraph">从AWS Marketplace订阅BlueXP  后、此过程的最后一步是将此订阅与您的BlueXP  组织或BlueXP  网站上的BlueXP  帐户相关联。如果您未完成此步骤、则无法对您的BlueXP  组织或帐户使用订阅。</block>
+  <block id="8925ab51378f8cb5d967e8409c3769de" category="admonition">如果您在标准模式下使用BlueXP 、您将拥有一个_ BlueXP  organization _、您可以使用BlueXP  身份和访问管理(IAM)来管理该组织。但是、如果您在受限模式或专用模式下使用BlueXP 、则您将拥有一个BlueXP  account_。</block>
+  <block id="fe37bae88294c4de2b5b7432ab7f2823" category="list-text">转到BlueXP  电子钱包、确认您的订阅未与您的BlueXP  组织或帐户关联。</block>
+  <block id="0991a6d9711452708fd4f3ebf96049fc" category="paragraph">您只会看到与您当前正在查看的组织或帐户关联的订阅。如果您看不到您的订阅、请继续执行以下步骤。</block>
+  <block id="f168d27fc2af576ba3133324e187f903" category="list-text">转到BlueXP  电子钱包、确认订阅与您的BlueXP  组织或帐户关联。</block>
+  <block id="ccb2060a5fc8753c97b484d4f00cea35" category="list-text">在*组织凭据*或*帐户凭据*页面上、验证订阅是否与您的AWS凭据关联。</block>
+  <block id="c04c991a23225733a46a58429473235a" category="list-text">在*组织凭据*或*帐户凭据*页面上，选择一组凭据的操作菜单，然后选择*编辑凭据*。</block>
+  <block id="b957a9b739887d11a774a7b99f5f474b" category="list-text">在*组织凭据*或*帐户凭据*页面上，选择一组凭据的操作菜单，然后选择*删除凭据*。</block>
+  <block id="3401377697acc9c98526396313cb476f" category="summary">将NetApp支持站点帐户与您的BlueXP  组织或帐户关联、以启用Cloud Volumes ONTAP的关键工作流。这些NSS凭据与整个BlueXP  组织或帐户相关联。</block>
+  <block id="8fc1b74aa1cb89da788e1a3b937438ab" category="doc">管理与BlueXP  组织或帐户关联的NSS凭据</block>
+  <block id="1ebe3d8a3d69a73646283d430c26a946" category="paragraph">BlueXP  还支持为每个BlueXP  用户帐户关联一个NSS帐户。<block ref="92ab4e1c25ae34810f6c6d2ede81f4ab" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="e2ca9dfd816e611b53e740c0def06a75" category="paragraph">要在BlueXP  中启用以下任务、需要将NetApp支持站点凭据与您的特定BlueXP  帐户序列号相关联：</block>
+  <block id="acc5d74b9730b17cf679fd826310c607" category="paragraph">这些凭据与您的特定BlueXP  帐户序列号相关联。属于BlueXP  组织或帐户的用户可以从*Support &gt; NSS Management*访问这些凭据。</block>
+  <block id="607d5f9332bf0fe8fef9f43fcf68c22e" category="paragraph">通过支持信息板、您可以添加和管理NetApp支持站点帐户、以便在BlueXP  组织或帐户级别与BlueXP  结合使用。</block>
+  <block id="72c38f83a9b4d27b609d1241238f7402" category="summary">在受限模式或专用模式下设置BlueXP  时、系统会提示您创建帐户。如果您需要多个帐户、则需要使用租户API创建这些帐户。</block>
+  <block id="6c51e0305a581ec236781db2baf30bac" category="paragraph">在受限模式或专用模式下设置BlueXP  时、系统会提示您创建BlueXP  account_、以便于管理用户和组织资源。此帐户可能是您所需的全部帐户、但如果您的企业需要多个帐户、则需要使用租户API创建其他帐户。</block>
+  <block id="770867b0b0a2458eaea7ebb70fd87cd2" category="paragraph">如果您在标准模式下使用BlueXP 、则没有BlueXP  帐户。而是使用BlueXP  身份和访问管理(IAM)来管理组织。<block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">工作环境列表位于您在服务顶部横幅中选择的BlueXP  组织(或帐户)、项目(或工作空间)和连接器的范围内。</block>
+  <block id="aeaa07e62e0681df3c00b18be44e1799" category="summary">如果您的组织成员需要在其他项目中使用连接器、您需要创建以从BlueXP  IAM创建关联。</block>
+  <block id="9c1561cceda808c78453a453f4175e14" category="doc">将BlueXP  连接器与其他文件夹和项目相关联</block>
+  <block id="f65c722b8c32b398b8803f08c37a6e61" category="paragraph">要从BlueXP  管理多种类型的工作环境、需要使用Connector。当_Organization admin_创建Connector时，BlueXP  会自动将该Connector与组织和当前选定的项目相关联。Organization admin_可自动从组织中的任何位置访问该Connector。组织中的其他成员只能从创建连接器的项目访问该连接器、除非您将该连接器与BlueXP  身份和访问管理(IAM)中的其他项目相关联。</block>
+  <block id="c7a2ea5af88a07f2a9350a72ef1052ca" category="inline-link-macro">了解如何将连接器与BlueXP  IAM结合使用</block>
+  <block id="fa0b2ee8e271330f8acc8d4a5d3356ce" category="paragraph">您应了解连接器关联的工作原理。<block ref="0e59e07e63f66ad6442c68a3b1946546" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="6955c430a5d86c9667f05d296c1693d4" category="inline-link-macro">详细了解_Folder或项目admin_可以完成的操作</block>
+  <block id="8723b90b2839ad516c180ca7ded07e0e" category="list-text">当_Folder或项目admin_查看*Connectors*页时，该页将显示组织中的所有Connectors*。但是、具有此角色的成员只能查看连接器并将其与它们具有权限的文件夹和项目相关联。<block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="c8681ca380c36d5cecfb5edf90afb264" category="list-text">由于一个已知问题、BlueXP  IAM中的"Connectors (连接器)"页面将显示先前从BlueXP  中删除的任何旧连接器。</block>
+  <block id="e0e8a7d90375792efecad34c0c923e32" category="inline-image-macro">BlueXP  Web控制台右上角显示的设置图标。</block>
+  <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">在BlueXP  控制台的右上角，选择<block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block>&gt;*身份和访问管理*。</block>
+  <block id="898a5f7650c6f7bf6a01efe09c881973" category="list-text">选择*连接器*。</block>
+  <block id="efd7c600c956f9a4ecd581c9e8a5de04" category="list-text">从表中、找到要关联的连接器。</block>
+  <block id="0e081d7aa898f932c4f244f1d41dd4df" category="paragraph">要查找特定连接器、您可以使用表上方的搜索、并通过选择资源层次结构的特定部分来筛选表的内容。</block>
+  <block id="16b0f0c24bd4a14288344d064f0b09c2" category="list-text">要首先查看与连接器关联的文件夹和项目，请选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*查看详细信息*。</block>
+  <block id="a2884a208c64d00906f60b988f29dfd3" category="paragraph">BlueXP  显示与连接器关联的文件夹和项目的详细信息。</block>
+  <block id="7b0e84897f645e2241868699f64b6699" category="list-text">选择*关联到文件夹或项目*。</block>
+  <block id="3ecb65defa4c1a5901512a34a0590820" category="list-text">选择文件夹或项目，然后选择*accept。</block>
+  <block id="dcac22117f893250b0d0bb357e1c2bd1" category="list-text">要将连接器与其它文件夹或项目相关联，请选择*添加文件夹或项目*，然后选择文件夹或项目。</block>
+  <block id="6e6b98ef1e6b24eadb68f22591d228dc" category="list-text">选择*关联连接器*。</block>
+  <block id="b781e4992dbe981761c1038af733ca5e" category="paragraph">BlueXP  将连接器与选定的文件夹和项目相关联。现在、对这些文件夹和项目具有权限的成员可以选择该Connector。</block>
+  <block id="e5acafcfe25589f54d6beb75260dbc2b" category="paragraph">如果要将Connector管理的资源与相同的文件夹和项目相关联，可以从资源页执行此操作。</block>
+  <block id="b8b0c6cf6f3f89235f0deb7b0c6b01e0" category="inline-link-macro">了解如何将资源与文件夹和项目相关联</block>
+  <block id="1d0aafa476757723426865415e3ee193" category="paragraph"><block ref="8a5d319849e62944ab4cf141ef41222a" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="b7a601c5b33a5386ee0bb3aae898017b" category="inline-link-macro">了解BlueXP  连接器</block>
+  <block id="7afcdd5541489f3f579e29939a4f3b56" category="list-text"><block ref="7afcdd5541489f3f579e29939a4f3b56" category="inline-link-macro-rx"></block></block>
+  <block id="fee273709adaab981913a7abc57f5905" category="summary">根据时间表监控或审核BlueXP  身份和访问管理(IAM)操作。</block>
+  <block id="830b79fe3efeb384332dedb84d8ff767" category="doc">通过BlueXP  时间表监控或审核IAM活动</block>
+  <block id="42e0a2c81a2cf7b37677d170bc85978f" category="paragraph">如果您需要监控或审核通过BlueXP  身份和访问管理(IAM)完成的操作、则可以从BlueXP  时间线查看详细信息。例如、您可能希望验证谁向组织添加了成员或项目是否已成功删除。</block>
+  <block id="64e53abfa40854f36d6b4c6ad127aa3b" category="list-text">在BlueXP  控制台的右上角，选择<block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block>&gt;*时间线*。</block>
+  <block id="8bafb57e517b9244bba809e5cab3a143" category="list-text">从过滤器中选择*Service*，然后选择*Tenancy。</block>
+  <block id="b730e0eba0d08897f72ba09172648f87" category="list-text">使用任何其他筛选器更改表中显示的操作。</block>
+  <block id="b8c1f56eee477fe8393d72e12e3bf35c" category="paragraph">例如，可以使用*User*过滤器显示与特定用户帐户相关的操作。</block>
+  <block id="3d4851ba91765cc5d2d961318683249b" category="paragraph">时间线将更新、以显示已完成的与BlueXP  IAM相关的管理操作。</block>
+  <block id="45180db54349008d2b70b94ae6e3eabf" category="summary">要开始使用IAM、请自定义组织的层次结构、添加其他成员、添加或发现资源、并将这些资源与项目关联起来。</block>
+  <block id="0a5dffcd5ad75df1361945677962baef" category="doc">开始使用BlueXP  身份和访问管理</block>
+  <block id="7ca27548881ca86ae44f89c1adadc84a" category="paragraph">注册BlueXP  时、系统会提示您创建新组织。该组织包括一个成员(组织管理员)和一个默认项目。要设置BlueXP  身份和访问管理(IAM)以满足您的业务需求、您需要自定义组织的层次结构、添加其他成员、添加或发现资源、并在整个层次结构中关联这些资源。</block>
+  <block id="c26dde1bc65f85e1bbd53b2a0238e8f3" category="paragraph">您必须具有*组织管理员*权限才能从BlueXP  IAM管理整个组织。如果您拥有*文件夹或项目管理员*权限，则只能管理您拥有权限的文件夹和项目。</block>
+  <block id="7c991908d7b205aff93efb82993167ef" category="paragraph">按照以下步骤设置新的BlueXP  组织。根据组织的需求、完成这些步骤的顺序可能有所不同。</block>
+  <block id="4e7ef180350510bb1b5495edc59a540f" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>编辑默认项目或添加到组织的层次结构中</block>
+  <block id="240c78500b3e0a067f95a31418fec6d3" category="paragraph">您只需使用默认项目、也可以创建与业务层次结构匹配的其他项目和文件夹。</block>
+  <block id="3a55ab4fb3114696e0b9c8d3786a3a95" category="inline-link-macro">了解如何使用文件夹和项目组织资源</block>
+  <block id="3d19bf548c854ffd6c0292d1875e0edd" category="paragraph"><block ref="968e8791737599307dd67fcbe92e9cbd" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="9fea0b15c1b7bd94f7011cdc6e6829b3" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>将成员与您的组织关联起来</block>
+  <block id="98d55d6f71b537b94b2af136386a72fe" category="paragraph">如果您的企业中有多个人需要从BlueXP  访问和管理资源、您需要将其用户帐户与您的组织关联起来、并在资源层次结构中提供适当的权限。您还可以选择向组织添加服务帐户。</block>
+  <block id="9ec5c0ba9365bb27b016a700955f883d" category="inline-link-macro">了解如何管理成员及其权限</block>
+  <block id="2d9d027ed40d94b5797f8ff2eac12474" category="paragraph"><block ref="20fed5a6fd937b8ae02cbbc8c36e0fcb" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="369419be6c2d63174cdf720283757d9b" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>添加或发现资源</block>
+  <block id="11c2c8c4fe8439d67b7a0334f2f2da64" category="paragraph">在BlueXP  中将资源添加或发现为_working workenapp环境_。工作环境表示组织成员从项目中管理的存储系统。例如、Cloud Volumes ONTAP系统或内部ONTAP集群。</block>
+  <block id="dc20f86d6867d18c7eb78f469ecd6b02" category="paragraph">了解如何从BlueXP  画布创建或发现资源：</block>
+  <block id="8ed358b5f97ac929cbf55d77be2ae1c3" category="list-text"><block ref="8ed358b5f97ac929cbf55d77be2ae1c3" category="inline-link-rx"></block></block>
+  <block id="02a8d4819b5139097a91d9e8b93e0042" category="list-text"><block ref="02a8d4819b5139097a91d9e8b93e0042" category="inline-link-rx"></block></block>
+  <block id="99cd6bbb6bd6b4f32aaf030548bc8abb" category="list-text"><block ref="99cd6bbb6bd6b4f32aaf030548bc8abb" category="inline-link-rx"></block></block>
+  <block id="88b75fafcd5fe284804d4e4a240a0a52" category="list-text"><block ref="88b75fafcd5fe284804d4e4a240a0a52" category="inline-link-rx"></block></block>
+  <block id="8a92c7a06d8d0a82ae22fd0df9c480fc" category="list-text"><block ref="8a92c7a06d8d0a82ae22fd0df9c480fc" category="inline-link-rx"></block></block>
+  <block id="6d14225a666e4ce0c6e84d99c57c45f7" category="list-text"><block ref="6d14225a666e4ce0c6e84d99c57c45f7" category="inline-link-rx"></block></block>
+  <block id="2a3af81903d30050b417342ded50e5a3" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>将资源与其他项目相关联</block>
+  <block id="2b599d0dc63562c8d0584c7dd387af09" category="paragraph">在BlueXP  中创建或发现资源时、该资源将自动与创建或发现工作环境时选择的项目相关联。如果要使该资源可供组织中的其他项目使用、则需要在它们之间创建关联。如果资源由连接器管理，则还需要在项目和关联连接器之间创建关联。</block>
+  <block id="4430cefb38674d70ef9b7fe67aee23c8" category="inline-link-macro">了解如何管理组织的资源层次结构</block>
+  <block id="8387c3b8e8cca04d38e2ed26ff0cf701" category="list-text"><block ref="c02aea27d6ba71f8c3e62cb351aaf61e" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="103bfaceef56d275f5b3b197d4ee51fd" category="inline-link-macro">了解如何将Connector与文件夹或项目相关联</block>
+  <block id="b652fc70a3a390949b9f3f65f8af4a3e" category="list-text"><block ref="da17c06ade731a806b49952bbabf5b3a" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="62aa62bf2f18202c0f101ef907e7a452" category="summary">通过BlueXP  的身份和访问管理、您可以使用文件夹和项目表示完整的资源层次结构。</block>
+  <block id="204879f985900cde315e51eda56aa36d" category="doc">使用文件夹和项目组织BlueXP  IAM中的资源</block>
+  <block id="888af4d1c4f4f8cf5928fe9cc5ae80c1" category="paragraph">通过BlueXP  身份和访问管理(IAM)、您可以使用项目和文件夹来组织NetApp资源。_project_表示BlueXP  中的一个工作空间、组织成员可以访问该工作空间来管理_Res풴_(例如、Cloud Volumes ONTAP系统)。一个_FOLDER_将相关项目分组在一起。将资源组织到文件夹和项目中之后、您可以通过为组织成员提供对特定文件夹和项目的权限来授予对资源的粒度访问权限。</block>
+  <block id="c08b7d4448e95633b73e2495389e853c" category="section-title">添加文件夹或项目</block>
+  <block id="9b72b5a70aa482b566f3aded23197da9" category="paragraph">创建BlueXP  组织时、它包含一个项目。您可以创建其他项目来管理组织的资源。您可以选择创建文件夹以将相关项目分组在一起。</block>
+  <block id="b9b4d0d7c739aa9127b9919f23478743" category="paragraph">您的组织的层次结构的深度可向下划分为7个级别。因此、您可以创建6个级别的嵌套文件夹。最后一个嵌套文件夹可以包括层次结构第七级的项目。</block>
+  <block id="5ed844477243e17219a5a1bb8244cb94" category="paragraph">下图说明了组织层次结构的最大深度：</block>
+  <block id="de599df9f91a76585a5d0e5049f80230" category="inline-image-macro">显示组织、六个嵌套文件夹以及最后一个嵌套文件夹中的一个项目的屏幕截图。</block>
+  <block id="140320cb76bc5580566bd6ef83ee9d69" category="paragraph"><block ref="140320cb76bc5580566bd6ef83ee9d69" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="54f6cd3aa5e387ea27f8d46fcd265b0f" category="list-text">从“*组织*”页中，选择“*添加文件夹或项目*”。</block>
+  <block id="0bb9526fc793356f11cea651032b1b15" category="list-text">选择*文件夹*或*项目*。</block>
+  <block id="5506a3204ff4171234856af0ca0d34fd" category="list-text">提供有关文件夹或项目的详细信息：</block>
+  <block id="0ab63481584814b59197d796cfc5dc97" category="list-text">*名称和位置*：输入名称并在层次结构中为文件夹或项目选择一个位置。文件夹或项目可以直接位于组织的下方或文件夹内。</block>
+  <block id="f46059ba82cb53e4af025ce918760999" category="list-text">*资源*：选择要与此文件夹或项目关联的资源。</block>
+  <block id="217f7358d2ee319a9c814b539574d78d" category="paragraph">您只能从与文件夹或项目的父级关联的资源中进行选择。如果父级是组织、则可以从组织中的任何资源中进行选择。如果父级是文件夹、则只能从与该文件夹关联的资源中进行选择。</block>
+  <block id="dc401be3adab60c813414832f0b97d88" category="inline-link-macro">了解何时可以将资源与文件夹相关联</block>
+  <block id="d706c5ded100123a86d8602a03703158" category="paragraph"><block ref="114ceb4aae340f51ba021c40f504c25f" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="8bb3c5dc86a399d0babf2eb49831e5ec" category="list-text">*访问*：根据您的资源层次结构中已定义的现有权限查看将有权访问文件夹或项目的成员。</block>
+  <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">如果需要，请选择*添加成员*以指定应具有文件夹或项目访问权限的其他组织成员，然后选择角色。角色用于定义成员对文件夹或项目拥有的权限。</block>
+  <block id="23b701226cc247c8895ac46e9cd633ab" category="inline-link-macro">了解预定义的IAM角色</block>
+  <block id="8d9ad9660b2859a6d51b88d7e31b54d2" category="paragraph"><block ref="ac90d6f587d2b5ff3fb7bb93da707f89" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="13ea0232702fea363d7f4aaffe9ba8f1" category="paragraph">BlueXP  将创建文件夹或项目并关联指定的资源和成员。</block>
+  <block id="698adc884d432ec429a17995e5d34320" category="section-title">查看与文件夹或项目关联的资源和成员</block>
+  <block id="903a5130798fef050adcb933e11d9330" category="paragraph">要验证您的资源是否已正确组织并可供组织中的适当成员访问、您可以查看哪些资源和成员与文件夹或项目相关联。</block>
+  <block id="5d051468e96f24341fd4c6192e28f6e2" category="list-text">在*组织*页中，导航到表中的项目或文件夹，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*编辑文件夹*或*编辑项目*。</block>
+  <block id="3f6ecf327501ffc3f265d065c39f55b6" category="inline-image-macro">组织页面的屏幕截图、显示在表中为项目选择操作菜单时的编辑项目选项。</block>
+  <block id="f8731f9389f28c059bc2471d56363fcd" category="paragraph"><block ref="f8731f9389f28c059bc2471d56363fcd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="71aa242e147c147797dbd6f9f41b801c" category="list-text">在*Edit*页面上，查看有关关联资源和成员访问权限的详细信息：</block>
+  <block id="a470fed0aa4603c3c8d460c4028252f1" category="list-text">选择*资源*以查看关联的资源。在表中，*Status*列标识与文件夹或项目关联的资源。</block>
+  <block id="c2fdbd86cd719dffbb80161af27b0ec9" category="inline-image-macro">"编辑项目"页面的屏幕截图、其中显示了可与项目关联或解除关联的可用资源。</block>
+  <block id="65381685a85e45e94ee53dbceff322ff" category="paragraph"><block ref="65381685a85e45e94ee53dbceff322ff" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6b1db5558a176057dbfc6d02d715d5ee" category="list-text">选择*Access*以查看有权访问文件夹或项目的成员。</block>
+  <block id="68f9e92246f3af16e2706083b8012f92" category="inline-image-macro">"编辑项目"页面的屏幕截图、其中显示了有权访问该项目的成员。</block>
+  <block id="e537768f43901c1791172250c6c08115" category="paragraph"><block ref="e537768f43901c1791172250c6c08115" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9e17333b6af28e20b12b88031ec846a2" category="inline-xref">修改关联的资源</block>
+  <block id="d6b7bb304d4f265bbfd145a745c68eed" category="inline-xref">修改成员访问权限</block>
+  <block id="ba165dec55dcb067d55d8a2bbb32e738" category="paragraph">如果需要，您可以<block ref="fa5515ea77ce1b6a8dbcd79e2fc3ca20" category="inline-xref-macro-rx"></block>或<block ref="50dc3585d06eec07143d3dfe141dd3c9" category="inline-xref-macro-rx"></block>。</block>
+  <block id="df3e2bd0fe2ced6b1bd1a55dad748146" category="section-title">修改与文件夹或项目关联的资源</block>
+  <block id="a6393b52680d3f8c4ed45e505093ff28" category="paragraph">您可以通过关联或解除关联资源来修改与文件夹或项目关联的资源。例如、您可能希望将某个资源与另一个项目相关联、因为该资源具有其他团队可以利用的容量。</block>
+  <block id="0727cfa5c59f7b7114ac7246e406611c" category="list-text">在*Edit*页面上，选择*Res并且 选择*。</block>
+  <block id="d66e1bd376f74d0703fc72b368b92cd7" category="paragraph">在表中，*Status*列标识与文件夹或项目关联的资源。</block>
+  <block id="95e3e0534ba1d2354c42f80be5302007" category="list-text">选择要关联或解除关联的资源。</block>
+  <block id="77132bcd63b33103ab4d954f60736e06" category="list-text">根据您选择的资源，选择*与项目关联*或*与项目解除关联*。</block>
+  <block id="152ff89b1af4f8995e50a4b8f158db52" category="inline-image-macro">"编辑项目"页面的屏幕截图、其中显示了在您选择当前未关联的资源后可用的"关联资源"选项。</block>
+  <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">选择*应用*</block>
+  <block id="2020ca2154e03d2358d7a18c7bd4e4ee" category="paragraph">BlueXP  将资源与文件夹或项目相关联。拥有该文件夹或项目权限的组织成员现在可以访问关联的资源。</block>
+  <block id="19df46354fac1ffd06065f8388377f84" category="section-title">修改成员对文件夹或项目的访问权限</block>
+  <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">修改成员对文件夹或项目的访问权限、以确保正确的成员能够访问与文件夹或项目关联的资源。</block>
+  <block id="91686a8345015e73c2baa91ffbe5ecd6" category="list-text">在*Edit*页面上，选择*Access*。</block>
+  <block id="a8781f46e241d03a4d2657a4d6f9a9b2" category="paragraph">BlueXP  显示有权访问文件夹或项目的成员列表。</block>
+  <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">修改成员访问权限：</block>
+  <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*添加成员*：选择要添加到文件夹或项目中的成员并为其分配角色。</block>
+  <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*更改成员的角色*：对于具有组织管理员以外角色的任何成员，请选择其现有角色，然后选择新角色。</block>
+  <block id="ec947f15d50d5e45f56ce8c956d581f0" category="paragraph">如果角色是在较高级别(文件夹或组织级别)提供的、则应考虑是在较低级别还是更高级别上提供。例如、如果您在文件夹级别分配了_Folder或项目管理员角色、则将项目级别的角色更改为更低级别的权限不会更改成员的权限。由于角色是在组织层次结构中继承的、因此该成员仍具有项目级别的管理员权限。</block>
+  <block id="6774afc9942c8dcab2e06828e8f199cb" category="inline-link-macro">详细了解角色继承</block>
+  <block id="8945f05b50a19ebe83ee85e629a09120" category="paragraph"><block ref="e2e11ae218588663759cb10a40da4876" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="961a7d705cef5925f92fdc2102dfe17d" category="list-text">*删除成员访问权限*：对于在您正在查看的文件夹或项目中定义了角色的成员，您可以删除其访问权限。</block>
+  <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">从成员页面管理权限</block>
+  <block id="e8600e476151636aa41417322bf8eecb" category="paragraph">如果成员访问权限是在更高级别(文件夹或组织级别)提供的、则在查看此文件夹或项目时、您无法删除成员访问权限。您需要切换到层次结构的该部分。或者，您也可以<block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>。</block>
+  <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">选择 * 应用 * 。</block>
+  <block id="d93816509ec30392c51369fac191445e" category="paragraph">BlueXP  将更新有权访问文件夹或项目的成员。</block>
+  <block id="7f394af8afb3598061eec3ed6197180d" category="section-title">重命名文件夹或项目</block>
+  <block id="f8ca84129dded5d2d753c0d0cc1ddea1" category="paragraph">如果需要、您可以更改文件夹和项目的名称。</block>
+  <block id="ec4b36b02d2682a0624b6df463ee2789" category="list-text">在*Edit*页面上，输入新名称并选择*Apply*。</block>
+  <block id="d8f0fb037537a867a046608fffa33518" category="paragraph">BlueXP  将更新文件夹或项目的名称。</block>
+  <block id="03b976867f3d4bd64ebf2dde3b296e4d" category="section-title">删除文件夹或项目</block>
+  <block id="0a868630764e886d94bedbbfd727e6f4" category="paragraph">您可以删除不再需要的文件夹和项目。</block>
+  <block id="11c35e27e51a047151d75fb0ede09570" category="inline-xref">了解如何解除资源关联</block>
+  <block id="9d50dafa8adc8d60b26fee65330e84c5" category="list-text">文件夹或项目不能具有任何关联资源。<block ref="802e9206ed2588cee6f64d588f1bc58d" category="inline-xref-macro-rx"></block>(英文)</block>
+  <block id="aa028ced940586c19c0a4e4d80b01fd3" category="list-text">文件夹不得包含任何子文件夹或项目。您需要先删除这些文件夹和项目。</block>
+  <block id="fe7e8f43628806d12162357cbc6c575a" category="list-text">在*组织*页中，导航到表中的项目或文件夹，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*删除*。</block>
+  <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">确认您要删除文件夹或项目。</block>
+  <block id="d8fe55db78c51b6f4ff410e959687f9f" category="paragraph">BlueXP  将删除文件夹或项目。组织成员无法再使用该文件夹或项目。</block>
+  <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">管理组织的成员、以便在组织的资源层次结构的不同级别提供权限。</block>
+  <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">添加BlueXP  IAM成员并管理其权限</block>
+  <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">通过BlueXP  身份和访问管理(IAM)、您可以向组织添加成员、并在资源层次结构中为其分配一个或多个角色。_Role__包含一组权限、通过这些权限、成员可以在资源层次结构的特定级别执行特定操作。您可以关联新用户帐户和服务帐户、管理成员角色等。</block>
+  <block id="5ab22546ed60fe10595d23125ed0b721" category="admonition">为确保您不会失去对BlueXP  组织的访问权限、最佳做法是让两个成员具有组织管理员角色。</block>
+  <block id="0c33a84e89f04d016e75e654ef3ce490" category="paragraph">当_Folder或项目admin_查看*成员*页面时，该页面将显示组织中的所有成员。但是、具有此角色的成员只能查看和管理其拥有权限的文件夹和项目的成员权限。<block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="e3a1bd8f43fc761424ef512d07c27a8b" category="section-title">向您的组织添加成员</block>
+  <block id="488cf26f47d26088a59a4ac2eaef1a3e" category="paragraph">您可以向组织添加两种类型的成员：用户帐户和服务帐户。服务帐户通常由应用程序使用来完成指定的任务、而无需人为干预。</block>
+  <block id="2fa104cdb397e386efece8c040a2e601" category="open-title">用户帐户</block>
+  <block id="55116207f6aac3a1c7009f777207f1eb" category="list-text">如果用户尚未执行此操作、请要求他们转到<block ref="2fbfa33fd647f6f78a572269d50d0708" category="inline-link-rx"></block>并注册。</block>
+  <block id="f535d18baa302d9949025f9cdeb6dae8" category="paragraph">用户注册时，应完成*Sign Up页面，验证其电子邮件地址，然后登录。当系统提示创建组织时，用户应关闭BlueXP  并告知您他们已创建其用户帐户。然后、您可以将此用户添加到现有BlueXP  组织中。</block>
+  <block id="a03a7a8bd694ce33c9c0c2cfdb88ceeb" category="inline-link-macro">了解如何注册BlueXP </block>
+  <block id="cf2da96b6ab9e2a236b955bf0f10d6cf" category="paragraph"><block ref="0ad6f11c6cde9791902ac82d37c3487c" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="ea06d0aa9a6946f5aa264a3c85890998" category="list-text">选择*成员*。</block>
+  <block id="e85e93a55281258b0ff57a7eebf50647" category="list-text">选择*添加成员*。</block>
+  <block id="9b0488f4f0afa4377edfdf2fba2c409c" category="list-text">要添加成员、请完成对话框中的步骤：</block>
+  <block id="9bca2d1766cc11cdf4a33384724d680c" category="list-text">*实体类型*：保持*用户*处于选中状态。</block>
+  <block id="0da1f1328af785dc1b184f8cb9745b00" category="list-text">*用户的电子邮件*：输入与用户创建的BlueXP  登录关联的用户电子邮件地址。</block>
+  <block id="ef40c18024e43a3effd7c56a4ee5e3b8" category="list-text">*选择组织、文件夹或项目*：选择成员应具有权限的资源层次结构级别。</block>
+  <block id="6a4cc2830754c534e4d4ede0d53dd765" category="list-text">您只能从拥有管理员权限的文件夹和项目中进行选择。</block>
+  <block id="78693d86cfd1ee5b776ba655fad718c2" category="list-text">如果选择组织或文件夹、则成员将有权访问组织或文件夹中的所有内容。</block>
+  <block id="cb604814075da4e4c030eb2c875d037c" category="list-text">*选择角色*：选择一个角色，为成员提供与所选组织、文件夹或项目关联的资源的权限。</block>
+  <block id="edd875bb1109a9f8286024a3b4794e94" category="list-text">如果选择了组织，则可以从*文件夹或项目管理员*以外的任何角色中进行选择。</block>
+  <block id="4361a448252604e85e36e94b87d2292d" category="list-text">如果您选择了文件夹或项目，则可以从*组织管理员*以外的任何角色中进行选择。</block>
+  <block id="6bf9e2157bec6406efede412c9a7f3d8" category="list-text">*添加角色*：如果要提供对组织中其他文件夹或项目的访问权限，请选择*添加角色*，指定其他文件夹或项目，然后选择角色。</block>
+  <block id="e7cafc47c0f061eadce634a20633d476" category="paragraph">BlueXP  将用户添加到组织中。</block>
+  <block id="2c83e58d75bb3a8e196e882a13fad2b6" category="paragraph">用户应收到来自NetApp BlueXP  的电子邮件。此电子邮件包含成员可用于访问BlueXP  的信息。</block>
+  <block id="18ceb42f6a360de22895a255078e9829" category="open-title">服务帐户</block>
+  <block id="3cf18c3e40a1206110812c369cc39dee" category="list-text">*实体类型*：选择*服务帐户*。</block>
+  <block id="79cb42be7b748ee1bfa8b8bda6dcca1e" category="list-text">*服务帐户名称*：输入服务帐户的名称。</block>
+  <block id="f67f980ba471dba7c5f95c824dd43bf6" category="list-text">下载或复制客户端ID和客户端密钥。</block>
+  <block id="8294c35652607973fb1c045f68ed7198" category="paragraph">客户端密钥只能显示一次、不会由BlueXP存储在任何位置。复制或下载密钥并将其安全存储。请注意、您可以稍后根据需要重新创建客户端ID和客户端密钥。</block>
+  <block id="7dd9ac3b82f77a633f44a54628281caa" category="paragraph">BlueXP  会将服务帐户添加到您的组织中。</block>
+  <block id="043819e1bae944c0c66cfa39d92d377a" category="section-title">查看组织成员</block>
+  <block id="85f7f0a38e4d8907b849af9be7f0523b" category="paragraph">您可以查看BlueXP  组织中所有成员的列表。要了解某个成员可以使用哪些资源和权限、您可以查看在组织的资源层次结构的不同级别分配给该成员的角色。</block>
+  <block id="4bd98620ebfd813b73be1bb04c31e63a" category="paragraph">“*成员*”页面显示了有关两种类型成员的详细信息：用户帐户和服务帐户。</block>
+  <block id="ac926c3351f3a5bf1296ce5e7341b403" category="paragraph">您的组织成员出现在“*成员*”表中。</block>
+  <block id="9c537de44875b062f96c3c19b5d405f8" category="list-text">从*成员*页面导航到表中的成员，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*查看详细信息*。</block>
+  <block id="dfd8d68ee86525e48890a53eb4a7ef69" category="paragraph">BlueXP  显示有关成员的详细信息、其中包括成员在组织的资源层次结构中拥有权限的文件夹和项目。</block>
+  <block id="6f3b2d366fd74358540895c5d487f7fc" category="paragraph">下面是一个成员的示例、该成员被分配了文件夹的_Folder或项目管理_角色、该角色为文件夹中的三个项目提供权限。</block>
+  <block id="a6102229f11a975b96c232bac6fe4518" category="inline-image-macro">有权访问项目和文件夹的成员的详细信息页面的屏幕截图。</block>
+  <block id="77029620a91c1437c153c854b16400d8" category="paragraph"><block ref="77029620a91c1437c153c854b16400d8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2ec798ce1d65b266be695e73de188467" category="paragraph">以下是另一个示例、其中显示了具有组织管理员角色的成员、该角色为用户授予了对组织中所有资源的访问权限。</block>
+  <block id="8395f2651a81b25e9b7a23fbee8b9549" category="inline-image-macro">具有组织管理员权限的成员的详细信息页面的屏幕截图。</block>
+  <block id="3d5d541246a5be6ff781d877024461b5" category="paragraph"><block ref="3d5d541246a5be6ff781d877024461b5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c2a2a4211749f24853726e3f3a3f7a50" category="inline-link-macro">查看与特定文件夹或项目关联的所有成员</block>
+  <block id="1b6d4c30361c139d898bdf90eabbe5db" category="paragraph"><block ref="f0a4010d1241fe1a26982be23d0ea714" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="776acd2cbd38043ee8a559500a3c08b8" category="section-title">管理成员的权限</block>
+  <block id="33c733a7c79ecaf94ff72d68d1380f99" category="paragraph">角色用于定义在组织、文件夹或项目级别分配给成员的权限。每个组织成员可以在组织层次结构的不同级别分配一个角色。它可以是同一个角色、也可以是不同的角色。例如、您可以为项目1分配成员角色A、为项目2分配角色B。</block>
+  <block id="07e7a075870b5fd1a97b81d0f2032e95" category="admonition">不能为分配了组织管理员角色的成员分配任何其他角色。他们已经拥有整个组织的权限。</block>
+  <block id="1d54adc5a01cf744fbd32cf11ffe9bb7" category="section-title">向成员添加角色</block>
+  <block id="ffb0fd8d3db2f95c2bb0961f852f2b9f" category="paragraph">通过添加适用于组织、文件夹或项目级别的角色、为成员提供组织中的其他权限。</block>
+  <block id="276d24e9485b31bc0a3bf0758ebc947d" category="list-text">从*成员*页面导航到表中的成员，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*添加角色*。</block>
+  <block id="5f4f2140800f25dcab7691933bfbdbdb" category="list-text">要添加角色、请完成对话框中的步骤：</block>
+  <block id="a09853f10b1e18c9e2f541f7e1763305" category="list-text">选择*添加新角色*。</block>
+  <block id="f79c177f403a3ca6381c6f78b9609b80" category="paragraph">BlueXP  将添加这些角色。现在、该成员对您选择的组织、文件夹或项目中的资源具有权限。</block>
+  <block id="5d4215cb3f8195257d8c88bf98595abe" category="section-title">从一个角色更改为另一个角色</block>
+  <block id="e771bf7ac33be61bdf00c2ea7fc03998" category="paragraph">如果需要修改成员的权限、可以在组织、文件夹或项目级别更改与该成员关联的角色。</block>
+  <block id="d89b2042f4ce3e364f18c0eb45c99356" category="paragraph">如果您需要更改组织中多个成员的角色、可以使用批量操作一次性完成所有更改。</block>
+  <block id="a18b11a5572ce31c0b380d71d8df5bb9" category="open-title">一名成员</block>
+  <block id="845e17597d8d3da152c11dabc243f4e4" category="list-text">在表中、导航到组织、文件夹或项目、然后选择新角色。</block>
+  <block id="c4550179ec4d126514726a79ad76c8a1" category="paragraph">BlueXP  会在组织、文件夹和项目级别更新与该成员关联的角色。</block>
+  <block id="5394f1457d9d63e0201a5fd504346f00" category="open-title">多个成员</block>
+  <block id="e399336058a14bf4ff08ec67a09ed7a3" category="list-text">在*组织*页中，导航到表中的项目或文件夹，选择，<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>然后选择*编辑组织*、*编辑文件夹*或*编辑项目*。</block>
+  <block id="215b65c0c6b889c16ead175b98f917d5" category="list-text">选择所有成员或单独选择两个或更多成员。</block>
+  <block id="dad55b15ee639e06e0f30982722e1635" category="list-text">选择*Define Role*。</block>
+  <block id="69cc5b0ed95d422ff6c1d3d52de8c785" category="inline-image-macro">编辑对话框的"访问"部分的屏幕截图、可用于在选择两个或更多成员后选择"定义角色"操作。</block>
+  <block id="7cf468e24cab5bc3e7517a362545f945" category="paragraph"><block ref="7cf468e24cab5bc3e7517a362545f945" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9288e22101210bbf855b72095560a27c" category="list-text">选择要分配给成员的角色，然后选择*Define (定义)*。</block>
+  <block id="27e7adcace4a5cbdc1da6d0d229248d7" category="paragraph">BlueXP  会更新您选择的所有成员的角色。</block>
+  <block id="528a4b75a900c412adab255cf7a4df50" category="section-title">删除文件夹或项目的权限</block>
+  <block id="dc291d6979f5152f329545d84fe8f44e" category="paragraph">您可以通过删除成员角色来删除其对特定文件夹或项目的权限。</block>
+  <block id="4038b7041781142ee383a5f32eb9a5ad" category="paragraph">如果某个成员在您的组织中对_only _个文件夹或项目具有权限、则无法删除此角色。您有两种选择：</block>
+  <block id="46008f3c0187ee8bc97921f4799f037a" category="list-text">如果您希望成员对资源层次结构的另一部分具有权限、则需要先添加该角色、然后再删除现有角色。</block>
+  <block id="c5a9e7f2d1f93fabc381b65634e94749" category="list-text">如果您不希望成员拥有任何内容的权限、则只需从您的组织中删除该成员即可。</block>
+  <block id="a55ecc4bf928da93f86f41bb1fa482cc" category="inline-image-macro">垃圾箱图标</block>
+  <block id="776326a0ac90b669316cb0e9cbab55c0" category="list-text">在表中、导航到文件夹或项目级别、然后选择<block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fbfd5aa47697579a000ac3aa3884cd1a" category="paragraph">BlueXP  将在文件夹或项目级别删除该成员的权限。</block>
+  <block id="a657b530c9804722859fcb4792bf4466" category="section-title">重新创建服务帐户的凭据</block>
+  <block id="4e62056c599bc8dfbb5e6f1f5a707256" category="paragraph">您可以随时为服务帐户重新创建凭据(客户端ID和客户端密钥)。如果您丢失了这些凭据、或者您的企业要求您在一段时间后轮换安全凭据、您可以重新创建这些凭据。</block>
+  <block id="0bf91f2741972566e7b71facbe211ab9" category="paragraph">重新创建凭据将删除服务帐户的现有凭据、然后创建新凭据。您将无法使用先前的凭据。</block>
+  <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">在*成员*表中，导航到服务帐户，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*重新创建密码*。</block>
+  <block id="8de213850e1e3dc79a14014382d25163" category="list-text">选择*重新创建*。</block>
+  <block id="fef720cdea9308393ab25d3fcc148e17" category="paragraph">此时、新的客户端ID和客户端密钥将与服务帐户关联。</block>
+  <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">从组织中删除成员</block>
+  <block id="05dc5a4527f82cde43f14fa38fb2640e" category="paragraph">您可能需要从您的组织中删除成员，例如，如果他们离开了您的公司。</block>
+  <block id="5e7aeb8cbe9cdc031d92f74ef4d40fd0" category="paragraph">此任务不会删除成员的BlueXP  帐户或NetApp支持站点帐户。它只会从您的组织中删除成员及其关联的权限。</block>
+  <block id="0479745abf593369ddbda5e8df849e57" category="list-text">从*成员*页面导航到表中的成员，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*删除用户*。</block>
+  <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">确认要从组织中删除该成员。</block>
+  <block id="75e73ef4d25f9f9ea49c38a3bcb941e4" category="paragraph">BlueXP  将删除该成员。如果该成员再次登录到BlueXP 、他们将无法再访问您的BlueXP  组织。</block>
+  <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">通过将资源与特定项目和文件夹相关联来管理组织的资源层次结构。</block>
+  <block id="dacc6cf59d7e0f66f697ef48b807951c" category="paragraph">当您使用BlueXP  身份和访问管理(IAM)将成员与您的组织关联时、您可以在组织、文件夹或项目级别提供权限。要确保这些成员有权访问适当的资源、您需要通过将资源与特定项目和文件夹关联来管理组织的资源层次结构。资源是BlueXP  已管理的工作环境。</block>
+  <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">查看组织中的资源</block>
+  <block id="8271e2759587670b87881a1e083e0a52" category="paragraph">要开始管理资源层次结构、您应了解与您的组织关联的资源。</block>
+  <block id="95c9ea5440ca8b54a3d3dae8e1d1f492" category="list-text">选择*资源*。</block>
+  <block id="90eb4a50a957d74015adf452111a7dd5" category="paragraph">与您的组织关联的资源显示在*资源*表中。</block>
+  <block id="573f6fc7f3c18fb7721ddccfe2520412" category="inline-xref">搜索和筛选表的内容</block>
+  <block id="74a216516ae6f979fa921c96dd5057a8" category="paragraph">要查找特定资源，您可以<block ref="2fd3d11c7689796e93f3888013589416" category="inline-xref-macro-rx"></block>。</block>
+  <block id="7e2927a58abcc62c9eb5c28962dc9573" category="paragraph">找到要查找的资源后、您可以完成以下任一操作：</block>
+  <block id="d488db7f816284f6712caf2d76eb5169" category="inline-xref">查看与资源关联的文件夹和项目</block>
+  <block id="ea450edd18061a7cc42c1dc5a73807e9" category="list-text"><block ref="725a161a6f11aca02e0e25e2ae9628c0" category="inline-xref-macro-rx"></block></block>
+  <block id="6a9d36cda6e7da452a233dae9f9b821c" category="inline-xref">将资源与其他文件夹和项目相关联</block>
+  <block id="e43736ff73ca6844bfafd7ef8dc58bad" category="list-text"><block ref="7d9c5683f2b3adedfbcf34a695515c4d" category="inline-xref-macro-rx"></block></block>
+  <block id="b6af3f20458abefb8743e926f21c0677" category="inline-xref">从文件夹或项目中删除资源</block>
+  <block id="1797f1c38c97687b6136c8e69786e0a2" category="list-text"><block ref="bb02d809bee1364f03f71b60d989a04d" category="inline-xref-macro-rx"></block></block>
+  <block id="a29510a9013088f354480f508c907c2e" category="section-title">查找组织中的特定资源</block>
+  <block id="1acca7d7f6a7f4515e946bae053cbc27" category="paragraph">如果您的组织中有大量资源、则可以使用搜索和筛选选项来查找特定资源。</block>
+  <block id="a89524edc025c255e3e415e871e88e5d" category="list-text">从“*资源*”页面中，选择“*高级搜索和筛选*”。</block>
+  <block id="3d1bc41342a56d581edf9d1765f01a0b" category="list-text">使用任何可用选项查找您要查找的资源：</block>
+  <block id="48ca2619b5dca392dc3969df94469cf3" category="list-text">*按资源名称搜索*：输入文本字符串并选择*Add*。</block>
+  <block id="b2efca9e0863336ee0d7aa6af1771c24" category="list-text">*平台*：选择一个或多个平台、例如Amazon Web Services。</block>
+  <block id="e6d1209910233e075e359b7fdb3892a8" category="list-text">*资源*：选择一个或多个资源，如Cloud Volumes ONTAP。</block>
+  <block id="4a42d7a28e04f8a9b2270b8906ae904c" category="list-text">*组织、文件夹或项目*：选择整个组织、特定文件夹或特定项目。</block>
+  <block id="fb3b214ed2681d71df95f0a2e1ad7ee8" category="list-text">选择*搜索*。</block>
+  <block id="de1dcc903e0def1031803a58221b8303" category="paragraph">资源表的内容将刷新、以显示与您的搜索和筛选选择匹配的资源。</block>
+  <block id="6b979ebd5780c7df2c462682bbe1749e" category="section-title">将资源与文件夹和项目相关联</block>
+  <block id="6f4141394827d668d7827055e97c0bb9" category="paragraph">如果要使某个资源可供组织中的其他文件夹或项目使用、则需要在该文件夹或项目与该资源之间创建关联。</block>
+  <block id="123b63ad16a2eb2123e4d954ed9b410d" category="inline-link-macro">了解有关资源的信息、包括何时将资源与文件夹相关联</block>
+  <block id="aa17a9cf1b2a8bd01a901a0eb2e99eee" category="paragraph">您应了解资源关联的工作原理。<block ref="a1afb03a32649c13d619ffef925eefd6" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="0ba76e0dec90ea0767d0bea623254565" category="list-text">从*Resources*页中，导航到表中的资源，选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>，然后选择*Associate to folder or Projects*。</block>
+  <block id="40604a706a532d51e9c0e2942f20bbbd" category="list-text">要关联其他文件夹或项目，请选择*添加文件夹或项目*，然后选择文件夹或项目。</block>
+  <block id="227d0042933a910c506c0345c27ef64f" category="paragraph">请注意、您只能从具有管理员权限的文件夹和项目中进行选择。</block>
+  <block id="5c4e241b983cce10c131e9a51dc2f2e5" category="list-text">选择*关联资源*。</block>
+  <block id="71e4a1d057d7694dd5ea8710ca5d07a9" category="paragraph">BlueXP  会将资源与选定的文件夹和项目相关联。</block>
+  <block id="f487d6f4a22314a7fc4b480b252f4981" category="list-text">如果将资源与项目相关联、则对这些项目具有权限的成员现在可以在BlueXP  中访问该资源。</block>
+  <block id="6330741dc930a8e0cff70d2bbd0c2a2d" category="inline-link-macro">了解如何将资源与文件夹相关联</block>
+  <block id="0764009847ea7e98389494f95f4d739e" category="list-text">如果将资源与文件夹相关联、则_Folder或项目admin_现在可以从BlueXP  IAM中访问资源。<block ref="a53b921d2a913725c8b4e28a24824743" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="9b3a53db52bc1f1723b9689c9020a57f" category="paragraph">如果您关联的资源是使用BlueXP  连接器发现的、并且您的组织中还有其他成员、则还需要将该连接器与该资源现在关联的项目相关联。否则、没有_Organization admin_角色的成员将无法从BlueXP  画布访问连接器及其关联的资源。</block>
+  <block id="3a04b19767b9262d748f5bc93b4d433d" category="section-title">查看与资源关联的文件夹和项目</block>
+  <block id="012ed1b51c49e99d9e7c8472bbf96c42" category="paragraph">要确定某个资源在组织层次结构中的可用位置、您可以查看与该资源关联的文件夹和项目。</block>
+  <block id="ae35c12a9d0798db618751302c4603bd" category="list-text">在*Resources*页面中，导航到表中的某个资源，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*View DEGRAMENTS*。</block>
+  <block id="147b2b655dda25ecac27a2d7381599e4" category="paragraph">BlueXP  将显示与资源关联的文件夹和项目。</block>
+  <block id="0d8f80667cd7bc86a6f6ea26c12d18b9" category="paragraph">以下示例显示了与一个项目关联的资源。</block>
+  <block id="a46cbe82e9adff7ecc82d6eadb58aa97" category="inline-image-macro">资源详细信息页面的屏幕截图、其中显示了与组织直接下的项目关联的资源。</block>
+  <block id="7cadbb5f400f149f938a910df5c5cb0d" category="paragraph"><block ref="7cadbb5f400f149f938a910df5c5cb0d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e4975c67206b991961fd4bcafcfdcb06" category="inline-xref">将资源与其他项目或文件夹相关联</block>
+  <block id="b2b8405c251505e73b6f299e51537cde" category="list-text">您可以<block ref="a442a7300de9bd550df7e0b303674dfb" category="inline-xref-macro-rx"></block>。</block>
+  <block id="50a6a7359fd63777aaa93f91ca89a8bf" category="inline-xref">从特定文件夹或项目中删除资源</block>
+  <block id="7c3a34fff9d504a76d85b9789ba5cda9" category="list-text">您可以<block ref="3afb050ceb060bcbe4b73cf3bf59470f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="69f07c715f27603d2e0d422829ad4190" category="inline-link-macro">查看有权访问与资源关联的文件夹和项目的成员</block>
+  <block id="7e77a0d272b850a5b082c2fed060594a" category="list-text">如果需要确定哪些组织成员有权访问资源，可以<block ref="7b75e3c2af3e500cfb657c057dbc7c5e" category="inline-link-macro-rx"></block>。</block>
+  <block id="02daa88c7c6888cad8b055624d764072" category="section-title">从文件夹或项目中删除资源</block>
+  <block id="450758fc7e96c44f96d41df9c819588d" category="paragraph">要从文件夹或项目中删除资源，需要删除文件夹或项目与资源之间的关联。删除关联后、组织成员将无法再管理文件夹或项目中的资源。</block>
+  <block id="7f6be6d71b75090da3f7888443a6d4f8" category="paragraph">如果要从整个组织中删除已发现的资源、则需要从BlueXP  画布中删除工作环境。</block>
+  <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">对于要删除其资源的文件夹或项目、请选择<block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">通过选择*Delete*确认要删除关联。</block>
+  <block id="4cc93df03851cba78d596a3fa944ce1a" category="paragraph">BlueXP  将删除此关联。成员无法再从该文件夹或项目访问资源。</block>
+  <block id="08599f4c51d7b3ffe063f2612e7c4f5e" category="summary">如果需要、您可以更改BlueXP  组织的名称。</block>
+  <block id="3b2af1e86badf70e10ee3dd7bd601881" category="paragraph">如果需要、您可以从BlueXP  身份和访问管理(Identity and Access Management、IAM)中更改BlueXP  组织的名称。组织名称显示在BlueXP  基于Web的控制台顶部和IAM页面中。</block>
+  <block id="8bf336ab115156eac88db2970ab0e70d" category="list-text">从*组织*页面导航到表中的第一行，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*编辑组织*。</block>
+  <block id="bd0f6a5b8c74b52e8b6d378a779a799b" category="inline-image-macro">"概述"页面的屏幕截图、其中显示了"操作"图标和"编辑组织"选项。</block>
+  <block id="f891b6d41b0ea20e756113027427df78" category="paragraph"><block ref="f891b6d41b0ea20e756113027427df78" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b9669849e9961b7f3f4dc1a2f6787c34" category="list-text">输入新的组织名称并选择*Apply*。</block>
+  <block id="814a9fcdd4787ffa2a66999138964d04" category="paragraph">BlueXP  将更新您的组织名称。您应立即在BlueXP  控制台顶部看到更新后的名称。</block>
+  <block id="23a90e2bf1cd3468b9e164d1e2b979f6" category="summary">在组织、项目和连接器之间切换以访问与其关联的资源。</block>
+  <block id="112749b02c84e8790747c190f1f78319" category="doc">在BlueXP  组织、项目和连接器之间切换</block>
+  <block id="c4a2bf83344fa23edffba2df8fadd3a5" category="paragraph">您可能属于多个BlueXP  组织、或者有权访问BlueXP  组织中的多个项目或连接器。如果需要、您可以轻松地在组织、项目和连接器之间切换、以访问与该组织、项目或连接器关联的资源。</block>
+  <block id="99b40e7c0a7b505819ce6f7bdb86dc3a" category="inline-link">了解如何创建新组织</block>
+  <block id="67c0ba42d2edbdb3628b5f8b75884a26" category="admonition">如果您被邀请加入另一个组织、或者您自己创建了一个额外的组织、则您可能属于多个组织。您可以使用API创建其他组织。<block ref="a875b8dda0804745acf04cfe74e1bbff" category="inline-link-rx"></block></block>
+  <block id="f2fd478a05acdd29af1bbc7530937c70" category="section-title">在组织之间切换</block>
+  <block id="9f3d2a13f08b19e773a3807a2007b683" category="paragraph">如果您是多个组织的成员、您可以随时在这些组织之间切换。</block>
+  <block id="1cc7a4e76aef7a38eaee419a488e7c0b" category="list-text">在BlueXP  的顶部，选择*组织*。</block>
+  <block id="51c1ea8dbf8cc257133b6fbd26bb77fe" category="inline-image-macro">BlueXP  顶部横幅的屏幕截图、您可以在其中选择"Organization"下拉列表、然后选择其他组织。</block>
+  <block id="84aa41f8fcc7bb3a0989b54e1445fc22" category="paragraph"><block ref="84aa41f8fcc7bb3a0989b54e1445fc22" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eb5df30f07def91b4af8259255a5d626" category="list-text">选择其他组织，然后选择*Switch*。</block>
+  <block id="8e792761ad5404a9bbafa558b481c90f" category="paragraph">BlueXP  将切换到选定组织并显示与该组织关联的资源。</block>
+  <block id="94b85a1c5a643296b6d5ecd3976a9159" category="section-title">在项目之间切换</block>
+  <block id="6346841107e9c8e2be1fd621b47ca24c" category="paragraph">如果您的组织包含多个项目、并且您有权访问这些项目、您可以随时在这些项目之间切换。</block>
+  <block id="4fb5e918d2565d827a07366454853825" category="paragraph">您必须位于BlueXP  控制台中除BlueXP  身份和访问管理(IAM)页面以外的任何页面上。查看任何IAM页面时、您无法切换到其他项目。</block>
+  <block id="9a39538808712c101b88a2d16c068ef1" category="list-text">在BlueXP  顶部，选择*Project*。</block>
+  <block id="515fad600bb7a84f5b18f86d614aca7c" category="inline-image-macro">BlueXP  顶部横幅的屏幕截图、您可以从中选择范围下拉列表、然后选择其他项目。</block>
+  <block id="b10df0e8c9bf04b4af0a4ff317576dab" category="paragraph"><block ref="b10df0e8c9bf04b4af0a4ff317576dab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="04e3e1dc51bdbf8faf8baa18c2cecf11" category="list-text">浏览组织中的文件夹和项目，选择所需项目，然后选择*Switch*。</block>
+  <block id="93bf37cc5484ee619db47305a40ce2f4" category="inline-image-macro">范围菜单的屏幕截图、您可以在其中选择新项目。</block>
+  <block id="745a5d8d04742a2ce72cd1001baa8841" category="paragraph"><block ref="745a5d8d04742a2ce72cd1001baa8841" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="458574863afcc205fb9e6a9992e02f63" category="paragraph">BlueXP  将切换到选定项目并显示与该项目关联的资源。</block>
+  <block id="6edfdffe4b7cbe1dd342f4aaf96e6de7" category="paragraph">如果您有多个连接器、则可以在它们之间切换、以查看与特定连接器关联的工作环境。</block>
+  <block id="c405d9f25f2c99a3e11e886c535874f2" category="list-text">在BlueXP  的顶部，选择*Connecter*。</block>
+  <block id="15b260aa6b6cde375bbce1f83fa17635" category="list-text">选择另一个连接器，然后选择*Switch*。</block>
+  <block id="23421f80aa52f230e7cf8f934bb44ae7" category="paragraph">BlueXP  将刷新并显示与选定连接器关联的工作环境。</block>
+  <block id="b514c4fa3590ffc8031c7ef2c4ca7858" category="paragraph"><block ref="9610f2c808689a17e58f0813034c0c28" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="7d87b506e5a380e1e5e110d45d9ae17f" category="paragraph">现在、您的BlueXP  组织已安装并设置了连接器。</block>
+  <block id="a3b4e3e0d02c612244623948f90dff8b" category="paragraph"><block ref="ef8eb5bec0bebce3b4cac1797fe12831" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="fab63ec17826b4300a69309b2a08f4b8" category="summary">在内部安装连接器、然后登录并进行设置、以便与您的BlueXP  组织配合使用。</block>
+  <block id="ceaa02a134108c72eab7591fa047092b" category="paragraph">注册或登录、然后设置Connector以与您的BlueXP  组织配合使用。</block>
+  <block id="5522cc29285c5053f2d7ae2fc44cdb1a" category="paragraph"><block ref="5522cc29285c5053f2d7ae2fc44cdb1a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9c6d10f2338ffdd5aaeb9aa90bca7f2b" category="paragraph">此操作将注册BlueXP  组织或帐户以获得支持、并激活支持授权。您的BlueXP  组织或帐户中只有一个用户必须将NetApp支持站点帐户与其BlueXP  登录名关联、才能注册支持并激活支持授权。完成此操作后，“资源”页面将显示您的帐户已注册支持。</block>
+  <block id="bd2b5934f02071712345ec747847599c" category="list-text">如果您尝试将NetApp支持站点帐户与Cloud Volumes ONTAP工作环境相关联、则只能从添加到BlueXP  组织的NSS帐户或您所属的帐户中进行选择。</block>
+  <block id="3079cacc26f7b40554d23e060596a405" category="inline-link-macro">详细了解如何对您的BlueXP  组织或帐户使用NSS凭据</block>
+  <block id="a24a552d29f91b8982fae044dc32dff5" category="paragraph"><block ref="fb2c227ba20c316c7f097a2784c0c843" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="a15dab64157b0024121a37b3726311bd" category="summary">通过添加用户、创建服务帐户以实现自动化以及添加工作空间等方式来管理BlueXP  帐户。</block>
+  <block id="ad91be9e96aa62a4fcd46230362092d6" category="paragraph">在受限模式或私用模式下使用BlueXP  时、您将使用BlueXP  account_来管理用户和组织资源。创建帐户时、该帐户仅包含一个管理员用户和一个工作区。您可以通过添加用户、创建服务帐户以实现自动化以及添加工作空间等方式来管理帐户、以满足您的需求。</block>
+  <block id="b89af40709c02abb8e0b01ae305dfd7f" category="summary">您可以监控BlueXP正在执行的操作的状态、以查看是否存在需要解决的任何问题。您可以在时间线、通知中心中查看状态、或者将通知发送到您的电子邮件。</block>
+  <block id="57bee919903f0c92a41c5582519db779" category="doc">监控BlueXP  操作</block>
+  <block id="5d4df6d8936b94b888789b2712dcb953" category="paragraph">下表对时间线和通知中心进行了比较、以便您了解每个时间线和通知中心的功能。</block>
+  <block id="a7eb158a02fb55f7c66bb86081e76732" category="cell">提供向用户和其他人发送电子邮件通知的功能</block>
+  <block id="5059f2db2465d7555c44d131a23b2fdb" category="section-title">从BlueXP  时间线审核用户活动</block>
+  <block id="0e0586268b26baaed6af2b48cd7b1e87" category="paragraph">BlueXP  中的时间线显示用户为管理您的组织或帐户而完成的操作。其中包括关联用户、创建工作环境、创建连接器等管理操作。</block>
+  <block id="e8bcacc75837d7d116d27b0912ef8827" category="list-text">使用表上方的筛选器可更改表中显示的操作。</block>
+  <block id="76bf1023f56feea71963b97c682ddeec" category="paragraph">例如，可以使用*Service*过滤器显示与特定BlueXP  服务相关的操作，也可以使用*User*过滤器显示与特定用户帐户相关的操作。</block>
+  <block id="706ba753310eea4d62504cab3d622cb4" category="paragraph">时间线将更新、以显示已完成的管理操作。</block>
+  <block id="d9e60fcce9ab0af5d2ac79ed5bd1726a" category="paragraph">您还可以将BlueXP配置为通过电子邮件发送特定类型的通知、以便即使您未登录到系统、也可以获得重要系统活动的通知。电子邮件可以发送给您的BlueXP  组织或帐户中的任何用户、也可以发送给需要了解某些类型的系统活动的任何其他收件人。请参见操作说明<block ref="a148e670707e0255b9681ed2a38729bc" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d7070a88c379ebcd8e00bafb5d6aaffa" category="section-title">将通知中心与BlueXP  警报进行比较</block>
+  <block id="9e449a0ea34e3a3f3848e51e4cec5859" category="paragraph">通过通知中心、您可以查看从BlueXP  启动的操作的状态、并为某些类型的系统活动设置警报通知。同时、通过BlueXP  警报、您可以查看ONTAP存储环境中与容量、可用性、性能、保护和安全性相关的问题或潜在风险。</block>
+  <block id="ccb5b6f0987c177f05a95659600aac02" category="inline-link">详细了解BlueXP  警报</block>
+  <block id="14b4187954e8d9dac531afa88b0f92d1" category="paragraph"><block ref="14b4187954e8d9dac531afa88b0f92d1" category="inline-link-rx"></block></block>
+  <block id="27ee311a33d114b49d51a6048b3ca8fe" category="paragraph">您可以通过电子邮件发送特定类型的通知、以便即使未登录到BlueXP、您也能了解重要的系统活动。电子邮件可以发送给您的BlueXP  组织或帐户中的任何用户、也可以发送给需要了解某些类型的系统活动的任何其他收件人。</block>
+  <block id="e2f97c84ba5b4b79392ed9991dd71605" category="paragraph">您在"通知中心"中设置的筛选器并不能确定您将通过电子邮件接收的通知类型。默认情况下、任何BlueXP  管理员都会收到所有"关键"和"建议"通知的电子邮件。这些通知适用于所有服务-您不能选择仅接收特定服务的通知、例如Connectors或BlueXP备份和恢复。</block>
+  <block id="52c0fdc2660014d03f8cc842e5b10087" category="paragraph">您必须是BlueXP  管理员才能自定义通知设置。</block>
+  <block id="6a98cd9027ca16566b190ea864dda349" category="list-text">从_USERS_选项卡或_Additional recipients_选项卡中选择一个或多个用户、然后选择要发送的通知类型：</block>
+  <block id="ec7fb9c8b57ef53007e8124891d2af4e" category="paragraph">_USERS_选项卡中显示的用户将自动从您的BlueXP  组织或帐户中的用户中填充。您可以在_Additional recipients _选项卡中为无权访问BlueXP但需要获得特定类型警报和通知通知的其他人员或组添加电子邮件地址。</block>
+  <block id="7072fa670cf6990f3acf5d82ed1edcd8" category="paragraph">在标准模式下、用户可从基于Web的控制台以云服务的形式访问BlueXP。开始之前，您应了解 <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block> 和 <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>。</block>
+  <block id="0f29bdee858adb6d973cf8db83b0a896" category="inline-link-macro">注册并创建组织</block>
+  <block id="a31431c54e189487cfd625eb4abd12c5" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="10b13e3a86d0fb043f42c593114c5f97" category="inline-link-macro-rx"></block></block>
+  <block id="3efd790b3a726ae76674acce6a9fc96d" category="paragraph">转到<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block>并注册。您可以选择创建BlueXP  组织、但如果您被邀请加入现有组织、则可以跳过该步骤。</block>
+  <block id="47ca696b2679c30e6c526ff87569ce72" category="paragraph">您可以在云或内部网络中创建Connector。</block>
+  <block id="c85f343e000bce5e73bdf5f442b4c748" category="list-text">您可以通过创建BlueXP登录名来注册。此身份验证方法要求您指定电子邮件地址和密码。验证电子邮件地址后、如果您还不属于某个BlueXP  组织、则可以登录并创建该组织。</block>
+  <block id="e13da662e0d647f445c2a7541d592af8" category="list-text">如果您已有NetApp支持站点凭据、则无需注册BlueXP。您使用NSS凭据登录，然后BlueXP  提示您创建BlueXP  组织(如果您不属于该组织)。</block>
+  <block id="4a4cdfd6819e8aac167fde110ae0e5d5" category="list-text">您可以使用单点登录使用公司目录中的凭据（联合身份）登录。组织帐户中的第一个用户必须注册BlueXP或使用NSS凭据登录、然后设置身份联合。之后、您可以将公司身份中的成员添加到组织中。然后、这些用户可以使用其SSO凭据登录。</block>
+  <block id="0f137dcb20726f124032b79988ca3398" category="paragraph">在这两种情况下、BlueXP  都将在此初始登录过程中为您注册。</block>
+  <block id="fa57d9a1390b0562bbdc780f06c45dde" category="paragraph">如果您的用户帐户尚不属于BlueXP  组织、系统将提示您创建一个。</block>
+  <block id="6b84cc2fb300d5fdb785e38d7064e1b5" category="list-text">在*Welcome (欢迎)*页面上，输入您的BlueXP  组织名称。</block>
+  <block id="cae5740250fa8eb75c48815594885aa1" category="paragraph">组织是BlueXP  身份和访问管理(IAM)中的顶级元素。<block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="b2b8934645fc8cde08a5e11b20c23996" category="inline-link-macro">了解如何向现有组织添加成员</block>
+  <block id="1dc7c066b4e587a2dfdccb9028a4920b" category="paragraph">如果您的企业已经有一个BlueXP  组织、而您希望加入该组织、则应关闭BlueXP  并要求所有者将您与该组织关联起来。所有者将您添加到后、您可以登录并访问此帐户。<block ref="59dea8bb85edd16986d40f5a52513b8b" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="e89994c10c3affe5d20566f88f1fdd67" category="inline-image-macro">使用不属于组织的新用户帐户登录时显示的欢迎页面的屏幕截图。</block>
+  <block id="7e7119674ffe88d5f2b612d7689a7f7b" category="paragraph"><block ref="7e7119674ffe88d5f2b612d7689a7f7b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="16a6acfaa9478d613f4568fcc7f798b9" category="list-text">选择*开始*。</block>
+  <block id="6d6f5d53daa874150fc5adbc7e3b9f49" category="paragraph">现在、您已拥有BlueXP  登录名和组织。在大多数情况下、下一步是创建一个连接器、将BlueXP的服务连接到您的混合云环境。</block>
+  <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">注册BlueXP  帐户序列号(20位960xxxxxxxxx序列号位于BlueXP  的支持资源页面)。</block>
+  <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">注册BlueXP  以获得NetApp支持</block>
+  <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">要注册支持并激活支持授权、您的BlueXP  组织中的一个用户(或帐户)必须将NetApp支持站点帐户与其BlueXP  登录名关联。如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。</block>
+  <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">“资源”页面应显示您的BlueXP  组织已注册支持。</block>
+  <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">请注意、其他BlueXP用户如果没有将NetApp 支持站点 帐户与其BlueXP登录关联、则不会看到此相同的支持注册状态。但是、这并不意味着您的BlueXP  组织未注册支持。只要组织中有一个用户执行了这些步骤、您的组织就已注册。</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这将加快处理速度。</block>
+  <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">要为Cloud Volumes ONTAP启用以下关键工作流、需要将NetApp支持站点凭据与您的BlueXP  组织相关联：</block>
+  <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">将NSS凭据与您的BlueXP  组织相关联与与与BlueXP  用户登录相关联的NSS帐户不同。</block>
+  <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">这些NSS凭据与您的特定BlueXP  组织ID相关联。属于BlueXP  组织的用户可以从*Support &gt; NSS Management*访问这些凭据。</block>
+  <block id="4a3d304c0a44921333425fa75ae2ca14" category="summary">了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器、云提供商凭据等。</block>
+  <block id="3659e0ccde34b7f8fd95294187ed03d5" category="paragraph">了解BlueXP  管理功能的新增功能：身份和访问管理(IAM)、连接器、云提供商凭据等。</block>
+  <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">2024年10月7日</block>
+  <block id="cfb96b15394efa48725d4b6de4d3529b" category="paragraph">BlueXP  身份和访问管理(IAM)是一种新的资源和访问管理模式、它取代并增强了BlueXP  帐户在标准模式下使用BlueXP  时以前提供的功能。</block>
+  <block id="3a3009b65a0b76e5f313a7be507a533e" category="paragraph">BlueXP  IAM提供更精细的资源和权限管理：</block>
+  <block id="97bcbb158b23b5f59aa77340528d8c84" category="list-text">通过顶级_organ组织_、您可以管理各个_projects_之间的访问权限。</block>
+  <block id="9b574c17fafa6f5e59e653eedc50bdfa" category="list-text">_Folders"用于将相关项目分组在一起。</block>
+  <block id="0c2ed2a0d470adb6e0ba50cfe426d09a" category="list-text">通过增强的资源管理功能、您可以将资源与一个或多个文件夹或项目相关联。</block>
+  <block id="5b61ed8de2f8ed0eccd9e6f8653cc6aa" category="paragraph">例如、您可以将一个Cloud Volumes ONTAP系统与多个项目相关联。</block>
+  <block id="8113bddacffcd2a7f7d52f8c0403f7fc" category="list-text">通过增强的访问管理功能、您可以将角色分配给组织层次结构不同级别的成员。</block>
+  <block id="a1bd1f0136afa3d8ee4ccdec799667f8" category="paragraph">通过这些增强功能、可以更好地控制用户可以执行的操作及其可以访问的资源。</block>
+  <block id="32fe53941bc1e6c5b14aa6ac28b141f9" category="section-title">BlueXP  IAM如何影响现有帐户</block>
+  <block id="18b2a40b23f88190866bbbf028cac95c" category="paragraph">登录到BlueXP  时、您会注意到以下更改：</block>
+  <block id="33d31192b5c1247904766afc81b1ef60" category="list-text">您的_account_现在称为_organퟩ 횯_</block>
+  <block id="2a235898ea8ace7ac6030edb3a2e88de" category="list-text">您的_workworkse_现在 称为_projects_</block>
+  <block id="ba6e308134546bb71f87228ecaaef82c" category="list-text">用户角色的名称已更改：</block>
+  <block id="b8c7132579d69d219fb874942670a635" category="list-text">_Account admin_现在是_Organization admin_</block>
+  <block id="27fd174b0e5c48a667a61eb059ff2ad8" category="list-text">_Workspace admin_现在是_Folder或项目admin_</block>
+  <block id="402601978c4c05e28bf41ea74b2c118a" category="list-text">_Compliance viewer_现在是_Classification viewer_</block>
+  <block id="396758cef44fe7d4ebed2010a8ee7761" category="list-text">在"设置"下、您可以访问BlueXP  身份和访问管理以利用这些增强功能</block>
+  <block id="0909fc2dd5049052e70dfa0e18f7fbcf" category="inline-image-macro">BlueXP  的屏幕截图、显示可从界面顶部选择的组织和项目以及可从"设置"菜单访问的身份和访问管理。</block>
+  <block id="bc9b550d1734b431c662a14aa92c06df" category="paragraph"><block ref="bc9b550d1734b431c662a14aa92c06df" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9c4ef914f4f136c37c3df051aaedb70" category="list-text">您的现有用户或工作环境不会发生任何变化。</block>
+  <block id="31243c2d285073a1e31df388c65d726f" category="list-text">虽然角色名称已更改、但从权限角度来看没有任何区别。用户仍可访问与以前相同的工作环境。</block>
+  <block id="694ce83c478c161c3ac05490450e107e" category="list-text">您登录BlueXP  的方式没有变化。BlueXP  IAM可以像BlueXP  帐户一样使用NetApp云登录、NetApp支持站点凭据和联合连接。</block>
+  <block id="dfc4954338c7ff2d3998dbe991b1e115" category="list-text">如果您有多个BlueXP  帐户、则现在有多个BlueXP  组织。</block>
+  <block id="733cd47965367380792385cdc0bf4492" category="section-title">用于BlueXP  IAM的API</block>
+  <block id="ed819704d51143ca1736581a234a1365" category="paragraph">此更改为BlueXP  IAM引入了一个新的API、但它向后兼容先前的租户API。<block ref="100827e03f9a10b65527b59fa5323ff6" category="inline-link-rx"></block></block>
+  <block id="8e3876adf8f21b1509ebcb0486d5bc9c" category="section-title">支持的部署模式</block>
+  <block id="a737f6ac26156f3770a49e30a21f7d73" category="paragraph">在标准模式下使用BlueXP  时、支持BlueXP  IAM。如果您在受限模式或私有模式下使用BlueXP 、则可以继续使用BlueXP _account_来管理工作空间、用户和资源。</block>
+  <block id="52b3f16d7e534fa9f1eb5be8603ccd2e" category="section-title">连接器3.9.45</block>
+  <block id="7cecac935b533838cda5bd0fc68012c1" category="paragraph">此版本提供了更广泛的操作系统支持和错误修复。</block>
+  <block id="5a45d9d610a1bb698a260ef7f9494081" category="paragraph">3.9.45版本适用于标准模式和受限模式。</block>
+  <block id="6c2d90476cc3623edfaa0c9e3a4266e2" category="section-title">支持Ubuntu 24.04 LTS</block>
+  <block id="1c774c8907085ea9b2475fb3bce13a77" category="paragraph">从3.9.45版本开始、在标准模式或受限模式下使用BlueXP  时、BlueXP  现在支持在Ubuntu 24.04 LTS主机上全新安装连接器。</block>
+  <block id="f560a10aaa5bd96f550a8cbc7a892bc0" category="section-title">支持在RHEL主机中使用SELinux</block>
+  <block id="7fba1f5b73846f256d223e6eac8ba54d" category="paragraph">现在、对于在强制模式或许可模式下启用了SELinux的Red Hat Enterprise Linux主机、BlueXP  支持Connector。</block>
+  <block id="dcfe6274f3d2ae157aaa8d48b7f48951" category="paragraph">从标准模式和受限模式的3.9.40版本开始支持SELinux、而专用模式的3.9.42版本开始支持SELinux。</block>
+  <block id="69613b7c17d10062f3fcc9393553d449" category="paragraph">BlueXP  不支持对Ubuntu主机使用SELinux。</block>
+  <block id="a86bab47fe0d1d4772388e14bf7532a0" category="inline-link">了解有关SELinux的更多信息</block>
+  <block id="612eef26819f532944539f99d535f8c6" category="paragraph"><block ref="612eef26819f532944539f99d535f8c6" category="inline-link-rx"></block></block>
+  <block id="46764118606f1e8527ee8d7c6a3005a3" category="paragraph"><block ref="5741665325bf1620748daff7a5523b04" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="2cc038b51982044440dd65fe627f5133" category="sidebar">开始使用NetApp BlueXP、以便您可以开始在内部环境和云环境中构建、保护和管理数据。设置完成后、您可以使用BlueXP  身份和访问管理(IAM)控制对资源的访问、并管理连接器、云提供商帐户等。</block>
+  <block id="d7818a3dcaa08963a99fa80d50e4d009" category="sidebar">BlueXP IAM</block>
+  <block id="f9979c483e6c4c3e0bb110084e2529e7" category="sidebar">使用文件夹和项目组织资源</block>
+  <block id="ff72511bc39f980fe978f1f136d5b661" category="sidebar">管理成员及其权限</block>
+  <block id="e824a4cdd52665a1b8f0bccc58724034" category="sidebar">管理资源层次结构</block>
+  <block id="0baaa5b5cebd5e340294b6393a2b73f4" category="sidebar">使用与BlueXP  的身份联合</block>
+  <block id="22bdd8c71cc34511ea88881e20f7ca21" category="sidebar">身份和访问管理</block>
+  <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">添加成员并管理其权限</block>
+  <block id="2ee77c8821c341ed628d409d85faa73c" category="sidebar">将连接器与其他文件夹和项目相关联</block>
+  <block id="0074076abc48f077b5f84eb71e8dee87" category="sidebar">在组织、项目和连接器之间切换</block>
+  <block id="902a8ce7390bb726da2910b3ec25aae6" category="sidebar">重命名您的组织</block>
+  <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">预定义的IAM角色</block>
+  <block id="1326a41ad4b26f3395b0f54dd9172b2b" category="sidebar">了解客户信息</block>
 </blocks>

@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: task-iam-get-started.html 
+keywords: iam, quick start, get started, get started with iam, identity and access management 
+summary: 要开始使用IAM、请自定义组织的层次结构、添加其他成员、添加或发现资源、并将这些资源与项目关联起来。 
+---
+= 开始使用BlueXP  身份和访问管理
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+注册BlueXP  时、系统会提示您创建新组织。该组织包括一个成员(组织管理员)和一个默认项目。要设置BlueXP  身份和访问管理(IAM)以满足您的业务需求、您需要自定义组织的层次结构、添加其他成员、添加或发现资源、并在整个层次结构中关联这些资源。
+
+您必须具有*组织管理员*权限才能从BlueXP  IAM管理整个组织。如果您拥有*文件夹或项目管理员*权限，则只能管理您拥有权限的文件夹和项目。
+
+按照以下步骤设置新的BlueXP  组织。根据组织的需求、完成这些步骤的顺序可能有所不同。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]编辑默认项目或添加到组织的层次结构中
+[role="quick-margin-para"]
+您只需使用默认项目、也可以创建与业务层次结构匹配的其他项目和文件夹。
+
+[role="quick-margin-para"]
+link:task-iam-manage-folders-projects.html["了解如何使用文件夹和项目组织资源"](英文)
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"]将成员与您的组织关联起来
+[role="quick-margin-para"]
+如果您的企业中有多个人需要从BlueXP  访问和管理资源、您需要将其用户帐户与您的组织关联起来、并在资源层次结构中提供适当的权限。您还可以选择向组织添加服务帐户。
+
+[role="quick-margin-para"]
+link:task-iam-manage-members-permissions.html["了解如何管理成员及其权限"](英文)
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"]添加或发现资源
+[role="quick-margin-para"]
+在BlueXP  中将资源添加或发现为_working workenapp环境_。工作环境表示组织成员从项目中管理的存储系统。例如、Cloud Volumes ONTAP系统或内部ONTAP集群。
+
+[role="quick-margin-para"]
+了解如何从BlueXP  画布创建或发现资源：
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["适用于 NetApp ONTAP 的 Amazon FSX"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-e-series/index.html["E系列系统"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["内部 ONTAP 集群"^]
+* https://docs.netapp.com/us-en/bluexp-storagegrid/index.html["StorageGRID"^]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"]将资源与其他项目相关联
+[role="quick-margin-para"]
+在BlueXP  中创建或发现资源时、该资源将自动与创建或发现工作环境时选择的项目相关联。如果要使该资源可供组织中的其他项目使用、则需要在它们之间创建关联。如果资源由连接器管理，则还需要在项目和关联连接器之间创建关联。
+
+[role="quick-margin-list"]
+* link:task-iam-manage-resources.html["了解如何管理组织的资源层次结构"](英文)
+* link:task-iam-associate-connectors.html["了解如何将Connector与文件夹或项目相关联"](英文)
+
+
+.相关信息
+* link:concept-identity-and-access-management.html["了解BlueXP  身份和访问管理"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["了解适用于BlueXP  IAM的API"^]
+

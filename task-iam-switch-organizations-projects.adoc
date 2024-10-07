@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: task-iam-switch-organizations-projects.html 
+keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors 
+summary: 在组织、项目和连接器之间切换以访问与其关联的资源。 
+---
+= 在BlueXP  组织、项目和连接器之间切换
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可能属于多个BlueXP  组织、或者有权访问BlueXP  组织中的多个项目或连接器。如果需要、您可以轻松地在组织、项目和连接器之间切换、以访问与该组织、项目或连接器关联的资源。
+
+
+TIP: 如果您被邀请加入另一个组织、或者您自己创建了一个额外的组织、则您可能属于多个组织。您可以使用API创建其他组织。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/post-organizations.html["了解如何创建新组织"^]
+
+
+
+== 在组织之间切换
+
+如果您是多个组织的成员、您可以随时在这些组织之间切换。
+
+.步骤
+. 在BlueXP  的顶部，选择*组织*。
++
+image:screenshot-iam-switch-organizations.png["BlueXP  顶部横幅的屏幕截图、您可以在其中选择\"Organization\"下拉列表、然后选择其他组织。"]
+
+. 选择其他组织，然后选择*Switch*。
+
+
+.结果
+BlueXP  将切换到选定组织并显示与该组织关联的资源。
+
+
+
+== 在项目之间切换
+
+如果您的组织包含多个项目、并且您有权访问这些项目、您可以随时在这些项目之间切换。
+
+.开始之前
+您必须位于BlueXP  控制台中除BlueXP  身份和访问管理(IAM)页面以外的任何页面上。查看任何IAM页面时、您无法切换到其他项目。
+
+.步骤
+. 在BlueXP  顶部，选择*Project*。
++
+image:screenshot-iam-switch-projects.png["BlueXP  顶部横幅的屏幕截图、您可以从中选择范围下拉列表、然后选择其他项目。"]
+
+. 浏览组织中的文件夹和项目，选择所需项目，然后选择*Switch*。
++
+image:screenshot-iam-switch-projects-select.png["范围菜单的屏幕截图、您可以在其中选择新项目。"]
+
+
+
+.结果
+BlueXP  将切换到选定项目并显示与该项目关联的资源。
+
+
+
+== 在连接器之间切换
+
+如果您有多个连接器、则可以在它们之间切换、以查看与特定连接器关联的工作环境。
+
+.步骤
+. 在BlueXP  的顶部，选择*Connecter*。
+. 选择另一个连接器，然后选择*Switch*。
+
+
+.结果
+BlueXP  将刷新并显示与选定连接器关联的工作环境。
+
+.相关链接
+link:task-iam-associate-connectors.html["将接头与文件夹和项目相关联"](英文)
+
+
+
+== 相关信息
+
+* link:concept-identity-and-access-management.html["了解BlueXP  身份和访问管理"]
+* link:task-iam-get-started.html["开始使用BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["了解适用于BlueXP  IAM的API"^]
+

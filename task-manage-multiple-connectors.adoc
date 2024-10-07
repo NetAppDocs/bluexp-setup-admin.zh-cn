@@ -27,7 +27,7 @@ summary: 如果您使用多个连接器、BlueXP允许您直接从控制台在�
 .步骤
 . 选择*连接器*下拉列表、选择另一个连接器、然后选择*交换机*。
 +
-image:screenshot_connector_switch.gif["标题中显示 Connector 图标和 Switch 操作的屏幕截图。"]
+image:screenshot-connector-switch.png["标题中显示 Connector 图标和 Switch 操作的屏幕截图。"]
 
 
 

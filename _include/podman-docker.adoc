@@ -5,7 +5,13 @@
 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 
 * Red Hat Enterprise Linux 8和9需要Podman。
++
+<<podman-versions,查看BlueXP  支持的Podman版本>>(英文)
+
 * Ubuntu需要Docker引擎。
++
+<<podman-versions,查看BlueXP  支持的Docker引擎版本>>(英文)
+
 
 
 .步骤
@@ -13,7 +19,13 @@
 ====
 .Podman
 --
-安装支持的Podman版本。<<podman-versions,查看BlueXP  支持的Podman版本>>(英文)
+按照以下步骤安装Podman并对其进行配置，使其符合以下要求：
+
+* 必须启用并启动Podman.sSocket服务
+* 必须安装python3
+* 必须安装Podman-compose软件包1.0.6版
+* 必须将Podman-compose添加到PATH环境变量中
+
 
 .步骤
 . 如果在主机上安装了Podman-Docker软件包、请将其删除。
@@ -96,13 +108,10 @@ NOTE: 使用 `dnf install` 命令可满足向PATH环境变量添加Podman-compos
 --
 .Docker 引擎
 --
-安装受支持的Docker引擎版本。<<podman-versions,查看BlueXP  支持的Docker引擎版本>>(英文)
+按照Docker中的文档安装Docker引擎。
 
 .步骤
-. 安装Docker引擎。
-+
-https://docs.docker.com/engine/install/["从Docker查看安装说明"^]
-
+. https://docs.docker.com/engine/install/["从Docker查看安装说明"^]
 +
 请务必按照以下步骤安装特定版本的Docker引擎。安装最新版本将安装BlueXP不支持的Docker版本。
 

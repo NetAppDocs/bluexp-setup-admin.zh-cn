@@ -1,0 +1,258 @@
+---
+sidebar: sidebar 
+permalink: concept-identity-and-access-management.html 
+keywords: iam overview, overview, how iam works, iam example, organization, folders, projects, resources, members, roles, permissions, resource hierarchy, identity and access management, iam 
+summary: '通过BlueXP  身份和访问管理(IAM)、您可以控制对组织资源的访问。' 
+---
+= 了解BlueXP  身份和访问管理
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+通过BlueXP  身份和访问管理(IAM)、您可以组织和控制对NetApp资源的访问。您可以根据组织的层次结构来组织资源。例如、您可以按地理位置、站点或业务单位来组织资源。然后、您可以将权限分配给层次结构特定部分的成员、从而阻止访问层次结构其他部分中的资源。
+
+BlueXP  IAM取代并增强了BlueXP  帐户先前提供的功能。link:whats-new.html#iam["详细了解BlueXP  IAM的推出"](英文)
+
+在标准模式下使用BlueXP  时、支持BlueXP  IAM。如果在受限模式或私用模式下使用BlueXP 、则使用BlueXP _account_来管理用户和资源。
+
+* link:concept-netapp-accounts.html["了解有关BlueXP帐户的信息"]
+* link:concept-modes.html["了解BlueXP部署模式"]
+
+
+
+
+== BlueXP  IAM的工作原理
+
+通过BlueXP  IAM、您可以通过定义哪些成员对组织层次结构的特定部分具有权限来授予对组织资源的访问权限。例如、成员可以对具有五个关联资源的项目拥有项目管理员权限。
+
+使用BlueXP  IAM时、您将管理以下组件：
+
+* 组织
+* 文件夹
+* 项目
+* 资源
+* 成员
+* 角色和权限
+* 连接器
+
+
+BlueXP  资源按分层结构进行组织：
+
+* 组织是层次结构的顶端。
+* 文件夹是组织或其他文件夹的子文件夹。
+* 项目是组织或文件夹的子项目。
+* 资源与一个或多个文件夹或项目相关联。
+
+
+下图从基本层面展示了此层次结构。
+
+image:diagram-iam-resource-hierarchy.png["一个概念图、用于显示BlueXP  IAM的资源层次结构：组织、文件夹、项目和资源。"]
+
+
+
+=== 组织
+
+一个组织是BlueXP  IAM系统的顶级组织、通常代表您的公司。您的组织由文件夹、项目、成员、角色和资源组成。连接器与组织中的特定项目相关联。
+
+注册BlueXP  时、系统会提示您创建新组织。
+
+
+
+=== 文件夹
+
+使用_FOLDER_可以将相关项目分组在一起、并将其与组织中的其他项目分开。例如、文件夹可能表示地理位置(欧盟或美国东部)、站点(伦敦或多伦多)或业务单位(工程或市场营销)。
+
+文件夹可以包含项目、其他文件夹或两者的组合。
+
+您不需要创建文件夹。它们是可选的。
+
+
+
+=== 项目
+
+_project_表示BlueXP  中的一个工作空间、组织成员可以从BlueXP  画布访问此工作空间来管理资源。例如、项目可以包括Cloud Volumes ONTAP系统、内部ONTAP集群或FSx for ONTAP文件系统。
+
+一个组织可以有一个或多个项目。项目可以直接驻留在组织的下面或文件夹中。
+
+
+
+=== 资源
+
+资源是您在BlueXP  中创建或发现的工作环境。
+
+创建或发现资源时、该资源将与当前选定的项目相关联。这可能是唯一要与此资源关联的项目。但是、您可以选择将资源与组织中的其他项目相关联。
+
+例如、您可以将一个Cloud Volumes ONTAP系统与一个其他项目或组织中的所有项目相关联。如何关联资源取决于组织的需求。
+
+
+TIP: 您还可以将Connector与组织中的其他文件夹或项目相关联。<<连接器,详细了解如何将连接器与BlueXP  IAM结合使用>>(英文)
+
+
+
+==== 何时将资源与文件夹相关联
+
+您还可以选择将资源与文件夹相关联、但这是可选操作、可满足特定使用情形的需求。
+
+Organization admin_可以将资源与文件夹相关联、以便_Folder或项目admin_可以将该资源与驻留在该文件夹中的相应项目相关联。
+
+例如、假设您有一个包含两个项目的文件夹：
+
+image:diagram-iam-resource-association-folder-1.png["显示文件夹中的一个文件夹和两个项目的图表：项目A和项目B"]
+
+Organization admin_可以将资源与文件夹相关联：
+
+image:diagram-iam-resource-association-folder-2.png["显示文件夹、与文件夹关联的资源以及文件夹中的两个项目(项目A和项目B)的图表"]
+
+将资源与文件夹关联不会自动使该资源可从文件夹中的所有项目访问。但是、文件夹或项目管理可以决定应将该资源提供给哪些项目。做出此决定后、管理员可以将该资源与正确的项目相关联。
+
+在此示例中、管理员将资源与Project A相关联：
+
+image:diagram-iam-resource-association-folder-3.png["显示文件夹、文件夹中的两个项目(项目A和项目B)以及与项目A关联的资源的图表"]
+
+拥有项目A权限的成员现在可以访问该资源。
+
+
+
+=== 成员
+
+您的组织成员是用户帐户或服务帐户。服务帐户通常由应用程序使用来完成指定的任务、而无需人为干预。
+
+一个组织至少有一个具有_Organization admin_角色的用户(系统会自动为创建该组织的用户分配此角色)。您可以向组织添加其他成员、并在资源层次结构的不同级别分配不同的权限。
+
+
+
+=== 角色和权限
+
+在BlueXP  IAM中、您不会直接向组织成员授予权限。而是为每个成员授予一个角色。角色包含一组权限、使成员能够在资源层次结构的特定级别执行特定操作。
+
+通过在资源层次结构的特定部分提供权限、您可以将访问权限限制为只能访问成员完成其任务所需的资源。
+
+
+
+==== 您可以在其中分配层次结构中的角色
+
+将成员与角色关联时、需要选择整个组织、特定文件夹或特定项目。您选择的角色会为成员授予对层次结构选定部分中资源的权限。
+
+
+
+==== 角色继承
+
+分配角色时、该角色将继承到组织层次结构中：
+
+组织:: 您在组织级别授予的角色将由组织中的所有文件夹、项目和资源继承。这意味着该成员对组织中的所有内容都有权限。
+文件夹:: 文件夹中的所有文件夹、项目和资源都会继承您在文件夹级别授予的角色。
++
+--
+例如、如果您在文件夹级别分配了一个角色、并且该文件夹包含三个项目、则该成员将有权访问这三个项目以及任何关联资源。
+
+--
+项目:: 您在项目级别授予的角色将由与该项目关联的所有资源继承。
+
+
+
+
+==== 多个角色
+
+您可以在组织层次结构的不同级别为每个组织成员分配一个角色。它可以是同一个角色、也可以是不同的角色。例如、您可以为项目1和项目2分配成员角色A。或者、您也可以为项目1分配成员角色A、为项目2分配角色B。
+
+
+
+==== 预定义角色
+
+BlueXP  支持多个预定义角色、您可以将这些角色分配给组织的成员。
+
+link:reference-iam-predefined-roles.html["了解IAM预定义角色"](英文)
+
+
+
+==== 自定义角色
+
+目前不支持自定义角色。
+
+
+
+=== 连接器
+
+当_Organization admin_创建Connector时，BlueXP  会自动将该Connector与组织和当前选定的项目相关联。Organization admin_可自动从组织中的任何位置访问该Connector。但是、如果您的组织中有其他成员具有不同的角色、这些成员只能从创建连接器的项目访问该连接器、除非您将该连接器与其他项目相关联。
+
+在以下情况下、您可能需要使Connector可用于其他项目：
+
+* 您希望允许组织中的成员使用现有Connector在另一个项目中创建或发现其他工作环境
+* 您已将现有资源与另一个项目相关联、该资源由Connector管理
++
+如果使用BlueXP  连接器发现了与其他项目关联的资源、则还需要将该连接器与该资源现在关联的项目关联。否则、没有_Organization admin_角色的成员将无法从BlueXP  画布访问连接器及其关联的资源。
+
+
+
+您可以从BlueXP  IAM中的*Connectors *页面创建关联：
+
+* 将连接器与项目相关联
++
+将连接器与项目关联后、可以在查看项目时从BlueXP  画布访问该连接器。
+
+* 将连接器与文件夹相关联
++
+将连接器与文件夹关联不会自动使该连接器可从文件夹中的所有项目访问。在将某个连接器与该特定项目关联之前、组织成员无法从该项目访问该连接器。
+
++
+Organization admin_可能会将Connector与文件夹相关联、以便_Folder或项目admin_可以决定将该Connector与文件夹中的相应项目相关联。
+
+
+
+
+
+== IAM示例
+
+以下示例显示了如何设置您的组织。
+
+
+
+=== 简单的组织
+
+下图显示了一个使用默认项目而不使用文件夹的组织的简单示例。一个成员负责管理整个组织。
+
+image:diagram-iam-example-hierarchy-simple.png["一个概念图、显示了一个组织及其项目、关联资源和一个组织管理员。"]
+
+
+
+=== 高级组织
+
+下图显示了一个使用文件夹组织业务中每个地理位置的项目的组织。每个项目都有自己的一组关联资源。成员包括组织管理员和组织中每个文件夹的管理员。
+
+image:diagram-iam-example-hierarchy-advanced.png["一个概念图、显示了一个组织、其中包含三个文件夹、每个文件夹包含三个项目及其关联资源。共有四个成员：一个组织管理员和三个文件夹管理员。"]
+
+
+
+== 您可以使用BlueXP  IAM执行哪些操作
+
+以下示例介绍了如何使用IAM管理BlueXP  组织：
+
+* 为特定成员授予特定角色、使其只能完成所需的任务。
+* 修改成员权限、因为他们移动了部门或承担了其他职责。
+* 删除离开公司的用户。
+* 将文件夹或项目添加到层次结构中、因为新业务单位已添加NetApp存储。
+* 将资源与另一个项目相关联、因为该资源具有其他团队可以利用的容量。
+* 查看成员可以访问的资源。
+* 查看与特定项目关联的成员和资源。
+
+
+
+
+== 下一步行动
+
+* link:task-iam-get-started.html["开始使用BlueXP  IAM"]
+* link:task-iam-manage-folders-projects.html["使用文件夹和项目组织BlueXP  中的资源"]
+* link:task-iam-manage-members-permissions.html["管理BlueXP  成员及其权限"]
+* link:task-iam-manage-resources.html["管理BlueXP  组织中的资源层次结构"]
+* link:task-iam-associate-connectors.html["将接头与文件夹和项目相关联"]
+* link:task-iam-switch-organizations-projects.html["在BlueXP  项目和组织之间切换"]
+* link:task-iam-rename-organization.html["重命名BlueXP  组织"]
+* link:task-iam-audit-actions-timeline.html["监控或审核IAM活动"]
+* link:reference-iam-predefined-roles.html["预定义的BlueXP  IAM角色"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["了解适用于BlueXP  IAM的API"^]
+

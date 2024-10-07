@@ -118,6 +118,12 @@ Azure中的连接器应部署在与其管理的Cloud Volumes ONTAP 系统所在�
 
 
 
+== 与云提供商进行通信
+
+Connector使用TLS 1.2与AWS、Azure和Google Cloud进行所有通信。
+
+
+
 == 受限模式和专用模式
 
 要在受限模式或专用模式下使用BlueXP、您可以先安装Connector、然后访问在Connector上本地运行的用户界面、从而开始使用BlueXP。
@@ -128,7 +134,7 @@ link:concept-modes.html["了解BlueXP部署模式"]。
 
 == 如何创建 Connector
 
-BlueXP客户管理员可以直接从BlueXP、云提供商的市场或在您自己的Linux主机上手动安装软件来创建Connector。如何开始取决于您是在标准模式、受限模式还是专用模式下使用BlueXP。
+您可以直接从BlueXP 、云提供商的市场或通过在自己的Linux主机上手动安装软件来创建Connector。如何开始取决于您是在标准模式、受限模式还是专用模式下使用BlueXP。
 
 * link:concept-modes.html["了解BlueXP部署模式"]
 * link:task-quick-start-standard-mode.html["以标准模式开始使用BlueXP"]
@@ -171,11 +177,11 @@ BlueXP客户管理员可以直接从BlueXP、云提供商的市场或在您自�
 
 == 连接器升级
 
-我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然BlueXP平台中的大多数服务和功能均通过基于SaaS的软件提供、但有几项特性和功能取决于Connector的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。
+我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然BlueXP  平台中的大多数服务和功能都是通过基于SaaS的软件提供的、但少数功能取决于Connector的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。
 
 当您在标准模式或受限模式下使用BlueXP时、Connector会自动将其软件更新到最新版本、只要它可以通过出站Internet访问来获取软件更新即可。如果您正在私有模式下使用BlueXP、则需要手动升级Connector。
 
-link:task-upgrade-connector.html["了解如何手动升级Connector软件"]。
+link:task-upgrade-connector.html["了解如何在使用私有模式时手动升级Connector软件"](英文)
 
 
 
@@ -202,5 +208,5 @@ link:task-upgrade-connector.html["了解如何手动升级Connector软件"]。
 以下是几个示例：
 
 * 您有一个多云环境(例如AWS和Azure)、并且更喜欢在AWS中使用一个Connector、而在Azure中使用另一个Connector。每个都管理在这些环境中运行的 Cloud Volumes ONTAP 系统。
-* 服务提供商可能会使用一个BlueXP帐户为其客户提供服务、而使用另一个帐户为其某个业务部门提供灾难恢复。每个帐户都有单独的 Connectors 。
+* 服务提供商可以使用一个BlueXP  组织为其客户提供服务、而使用另一个组织为其业务部门之一提供灾难恢复。每个组织都有单独的连接器。
 

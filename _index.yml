@@ -1,10 +1,10 @@
 ---
 indexpage:
   title: BlueXP设置和管理文档
-  summary: 开始使用NetApp BlueXP、以便您可以开始在内部环境和云环境中构建、保护和管理数据。设置完成后、您可以管理您的BlueXP帐户、Connectors、云提供商帐户等。
+  summary: 开始使用NetApp BlueXP、以便您可以开始在内部环境和云环境中构建、保护和管理数据。设置完成后、您可以使用BlueXP  身份和访问管理(IAM)控制对资源的访问、并管理连接器、云提供商帐户等。
   keywords: bluexp, connector, accounts, get started, setup, administration, sign
     up, log in, login, permissions
-  lead: 开始使用NetApp BlueXP、以便您可以开始在内部环境和云环境中构建、保护和管理数据。设置完成后、您可以管理您的BlueXP帐户、Connectors、云提供商帐户等。
+  lead: 开始使用NetApp BlueXP、以便您可以开始在内部环境和云环境中构建、保护和管理数据。设置完成后、您可以使用BlueXP  身份和访问管理(IAM)控制对资源的访问、并管理连接器、云提供商帐户等。
   tiles:
   - title: 入门
     links:
@@ -18,14 +18,18 @@ indexpage:
       url: "/task-quick-start-restricted-mode.html"
     - title: 开始使用私有模式
       url: "/task-quick-start-private-mode.html"
-  - title: BlueXP帐户
+  - title: BlueXP IAM
     links:
-    - title: 了解有关BlueXP帐户的信息
-      url: concept-netapp-accounts.html
-    - title: 管理您的BlueXP帐户
-      url: task-managing-netapp-accounts.html
-    - title: 监控帐户中的操作
-      url: task-monitor-cm-operations.html
+    - title: 了解BlueXP  身份和访问管理
+      url: concept-identity-and-access-management.html
+    - title: 开始使用BlueXP  IAM
+      url: task-iam-get-started.html
+    - title: 使用文件夹和项目组织资源
+      url: task-iam-manage-folders-projects.html
+    - title: 管理成员及其权限
+      url: task-iam-manage-members-permissions.html
+    - title: 管理资源层次结构
+      url: task-iam-manage-resources.html
   - title: 连接器
     links:
     - title: 了解连接器
@@ -78,7 +82,7 @@ indexpage:
     links:
     - title: 登录到BlueXP
       url: task-logging-in.html
-    - title: 将身份联合与BlueXP结合使用
+    - title: 使用与BlueXP  的身份联合
       url: concept-federation.html
   - title: 博客和社区
     links:

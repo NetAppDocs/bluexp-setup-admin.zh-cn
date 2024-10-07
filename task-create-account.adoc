@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-create-account.html 
 keywords: create account, account, create, create another account, tenancy account, tenancy, tenancy account creation 
-summary: 注册到BlueXP后、系统会提示您为组织创建帐户。此帐户可能是您所需的全部帐户、但如果您的企业需要多个帐户、则需要使用租户API创建其他帐户。 
+summary: 在受限模式或专用模式下设置BlueXP  时、系统会提示您创建帐户。如果您需要多个帐户、则需要使用租户API创建这些帐户。 
 ---
 = 创建另一个BlueXP帐户
 :hardbreaks:
@@ -14,14 +14,19 @@ summary: 注册到BlueXP后、系统会提示您为组织创建帐户。此帐�
 
 
 [role="lead"]
-注册到BlueXP后、系统会提示您为组织创建帐户。此帐户可能是您所需的全部帐户、但如果您的企业需要多个帐户、则需要使用租户API创建其他帐户。
+在受限模式或专用模式下设置BlueXP  时、系统会提示您创建BlueXP  account_、以便于管理用户和组织资源。此帐户可能是您所需的全部帐户、但如果您的企业需要多个帐户、则需要使用租户API创建其他帐户。
 
-使用以下API调用创建一个额外的BlueXP帐户：
+如果您在标准模式下使用BlueXP 、则没有BlueXP  帐户。而是使用BlueXP  身份和访问管理(IAM)来管理组织。link:concept-identity-and-access-management.html["了解BlueXP  IAM"](英文)
 
+.步骤
+. 使用以下API调用创建一个额外的BlueXP帐户：
++
 发布 `/tenancy/account/{accountName}`
 
++
 如果要启用受限模式、则需要在请求正文中包含以下内容：
 
++
 [source, JSON]
 ----
 {
@@ -29,11 +34,13 @@ summary: 注册到BlueXP后、系统会提示您为组织创建帐户。此帐�
 }
 ----
 
+
+
 NOTE: 在BlueXP创建帐户后、您无法更改受限模式设置。您不能稍后启用受限模式、也不能稍后禁用它。必须在创建帐户时进行设置。
 
 https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-id.html["了解如何使用此API调用"^]
 
-.相关链接
+.相关信息
 * link:concept-netapp-accounts.html["了解有关BlueXP帐户的信息"]
 * link:concept-modes.html["了解BlueXP部署模式"]
 

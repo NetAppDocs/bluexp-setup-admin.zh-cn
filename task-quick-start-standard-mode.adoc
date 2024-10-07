@@ -16,15 +16,15 @@ summary: '通过为BlueXP控制台准备网络连接、注册和创建帐户、(
 [role="lead"]
 通过为BlueXP控制台准备网络连接、注册和创建帐户、(可选)创建Connector以及订阅BlueXP、在标准模式下开始使用BlueXP。
 
-在标准模式下、用户可从基于Web的控制台以云服务的形式访问BlueXP。开始之前、您应了解 link:concept-netapp-accounts.html["BlueXP帐户"]， link:concept-connectors.html["连接器"]，和 link:concept-modes.html["部署模式"]。
+在标准模式下、用户可从基于Web的控制台以云服务的形式访问BlueXP。开始之前，您应了解 link:concept-modes.html["部署模式"] 和 link:concept-connectors.html["连接器"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] link:reference-networking-saas-console.html["准备网络以使用BlueXP控制台"]
 [role="quick-margin-para"]
 访问BlueXP控制台的计算机应连接到特定端点以完成一些管理任务。如果您的网络限制出站访问、则应确保允许这些端点。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] link:task-sign-up-saas.html["注册并创建帐户"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] link:task-sign-up-saas.html["注册并创建组织"]
 [role="quick-margin-para"]
-转至 https://console.bluexp.netapp.com["BlueXP控制台"^] 并注册。您可以选择创建帐户、但如果您受邀加入现有帐户、则可以跳过该步骤。
+转到 https://console.bluexp.netapp.com["BlueXP控制台"^]并注册。您可以选择创建BlueXP  组织、但如果您被邀请加入现有组织、则可以跳过该步骤。
 
 [role="quick-margin-para"]
 此时、您已登录并可以开始使用多种BlueXP服务、例如Digital Advisor、Amazon FSX for ONTAP 、Azure NetApp Files 等。 link:concept-connectors.html["了解没有Connector可以执行的操作"]。
@@ -34,7 +34,7 @@ summary: '通过为BlueXP控制台准备网络连接、注册和创建帐户、(
 您无需使用Connector即可开始使用BlueXP、但您可以创建一个Connector来解锁所有BlueXP功能和服务。Connector是一款NetApp软件、可让BlueXP管理混合云环境中的资源和流程。
 
 [role="quick-margin-para"]
-BlueXP帐户管理员可以在云或内部网络中创建Connector。
+您可以在云或内部网络中创建Connector。
 
 [role="quick-margin-list"]
 * link:concept-connectors.html["详细了解何时需要连接器及其工作原理"]

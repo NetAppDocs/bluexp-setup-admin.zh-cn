@@ -25,14 +25,14 @@ BlueXP平台提供了数据管理的四大要素：存储、移动性、保护�
 存储:: 发现、部署和管理存储、无论是在AWS、Azure、Google Cloud中还是在内部环境中。
 +
 --
-* 设置和使用 https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 跨云实现高效的多协议数据管理。
 * 设置和使用云文件存储服务：
 +
 ** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
-** https://bluexp.netapp.com/fsx-for-ontap["适用于 ONTAP 的 Amazon FSX"^]
+** https://bluexp.netapp.com/fsx-for-ontap["适用于 NetApp ONTAP 的 Amazon FSX"^]
 ** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["适用于 Google Cloud 的 Cloud Volumes Service"^]
 
 
+* 设置和使用 https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 跨云实现高效的多协议数据管理。
 * 发现和管理 https://bluexp.netapp.com/netapp-on-premises["内部存储"^]：
 +
 ** E系列系统
@@ -43,7 +43,7 @@ BlueXP平台提供了数据管理的四大要素：存储、移动性、保护�
 
 
 --
-移动性:: 通过同步、复制、分层和缓存数据、将数据移动到需要的位置。
+移动性:: 通过同步、复制和分层数据将数据移动到需要的位置。
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["复制和同步"^]
@@ -55,7 +55,9 @@ BlueXP平台提供了数据管理的四大要素：存储、移动性、保护�
 +
 --
 * https://bluexp.netapp.com/cloud-backup["备份和恢复"^]
+* https://bluexp.netapp.com/disaster-recovery["灾难恢复"^]
 * https://bluexp.netapp.com/replication["Replication"^]
+* https://bluexp.netapp.com/ransomware-protection["勒索软件保护"^]
 
 
 --
@@ -71,7 +73,7 @@ BlueXP平台提供了数据管理的四大要素：存储、移动性、保护�
 --
 
 
-https://bluexp.netapp.com/["详细了解如何使用BlueXP帮助您的组织"^]
+https://bluexp.netapp.com/["详细了解如何使用BlueXP  管理混合多云环境中的数据"^]
 
 
 
@@ -89,35 +91,45 @@ BlueXP的定价取决于您计划使用的服务。 https://bluexp.netapp.com/pr
 
 == BlueXP的工作原理
 
-BlueXP包括通过SaaS层提供的基于Web的控制台、提供多租户的帐户以及用于管理工作环境和启用BlueXP云服务的连接器。
+BlueXP  包括一个通过SaaS层提供的基于Web的控制台、一个资源和访问管理系统、以及一个可管理工作环境并支持BlueXP  云服务的连接器。
 
 
 
 === 软件即服务
 
-BlueXP可通过访问 https://console.bluexp.netapp.com["基于Web的控制台"^] 和 API 。通过这种SaaS体验、您可以在最新功能发布后自动访问这些功能、并轻松地在您的BlueXP帐户和连接器之间切换。
+BlueXP  可通过和API进行访问 https://console.bluexp.netapp.com["基于Web的控制台"^]。通过这种SaaS体验、您可以在最新功能发布时自动访问这些功能、并在BlueXP  组织、项目和连接器之间轻松切换。
 
 
 
-=== BlueXP帐户
+=== BlueXP  身份和访问管理(IAM)
 
-首次登录到BlueXP时、系统会提示您创建一个_BlueXP帐户_。此帐户可提供多租户，并可用于在隔离的 _workworkworkspace _ 中组织用户和资源。
+BlueXP  身份和访问管理(IAM)是一种资源和访问管理模型、可提供对资源和权限的精细管理：
 
-link:concept-netapp-accounts.html["了解有关客户的更多信息"]。
+* 通过顶级_organ组织_、您可以管理各个_projects_之间的访问权限
+* _Folders"用于将相关项目分组在一起
+* 通过资源管理、您可以将资源与一个或多个文件夹或项目相关联
+* 通过访问管理、您可以将角色分配给组织层次结构不同级别的成员
+
+
+在标准模式下使用BlueXP  时、支持BlueXP  IAM。如果您在受限模式或私有模式下使用BlueXP 、则将使用BlueXP _account_来管理工作空间、用户和资源。
+
+* link:concept-identity-and-access-management.html["详细了解BlueXP  IAM"]
+* link:concept-netapp-accounts.html["了解有关BlueXP帐户的信息"]
+
 
 
 
 === 连接器
 
-您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。通过Connector、您可以管理内部环境和云环境中的资源和流程。它是管理工作环境(例如Cloud Volumes ONTAP和内部ONTAP集群)以及使用许多BlueXP数据服务所必需的。
+您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。通过Connector、您可以管理内部环境和云环境中的资源和流程。它是管理工作环境(例如Cloud Volumes ONTAP)和使用许多BlueXP  服务所必需的。
 
 link:concept-connectors.html["了解有关连接器的更多信息"]。
 
 
 
-=== 受限模式和专用模式
+=== 部署模式
 
-在具有安全和连接限制的环境中也支持BlueXP。您可以使用_restricted mode"或_private mode"来限制与BlueXP SaaS层的出站连接。
+在存在安全和连接限制的环境中、支持BlueXP 。您可以使用_restricted mode"或_private mode"来限制与BlueXP SaaS层的出站连接。
 
 link:concept-modes.html["详细了解BlueXP部署模式"]。
 

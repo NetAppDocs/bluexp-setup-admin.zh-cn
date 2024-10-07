@@ -27,8 +27,6 @@ sidebar:
       entries:
       - title: BlueXP
         url: "/concept-overview.html"
-      - title: "—帐户"
-        url: "/concept-netapp-accounts.html"
       - title: 连接器
         url: "/concept-connectors.html"
       - title: 部署模式
@@ -37,7 +35,7 @@ sidebar:
       entries:
       - title: 入门工作流
         url: "/task-quick-start-standard-mode.html"
-      - title: 准备网络以使用BlueXP控制台
+      - title: 为BlueXP  控制台准备网络连接
         url: "/reference-networking-saas-console.html"
       - title: 注册到BlueXP
         url: "/task-sign-up-saas.html"
@@ -103,18 +101,40 @@ sidebar:
       url: "/task-logging-in.html"
   - title: 管理BlueXP
     entries:
-    - title: 身份联合
-      url: "/concept-federation.html"
+    - title: 身份和访问管理
+      entries:
+      - title: 了解BlueXP  IAM
+        url: "/concept-identity-and-access-management.html"
+      - title: 开始使用BlueXP  IAM
+        url: "/task-iam-get-started.html"
+      - title: 使用文件夹和项目组织资源
+        url: "/task-iam-manage-folders-projects.html"
+      - title: 添加成员并管理其权限
+        url: "/task-iam-manage-members-permissions.html"
+      - title: 管理资源层次结构
+        url: "/task-iam-manage-resources.html"
+      - title: 将连接器与其他文件夹和项目相关联
+        url: "/task-iam-associate-connectors.html"
+      - title: 在组织、项目和连接器之间切换
+        url: "/task-iam-switch-organizations-projects.html"
+      - title: 重命名您的组织
+        url: "/task-iam-rename-organization.html"
+      - title: 监控或审核IAM活动
+        url: "/task-iam-audit-actions-timeline.html"
+      - title: 预定义的IAM角色
+        url: "/reference-iam-predefined-roles.html"
     - title: BlueXP帐户
       entries:
+      - title: 了解客户信息
+        url: "/concept-netapp-accounts.html"
       - title: 管理您的BlueXP帐户
         url: "/task-managing-netapp-accounts.html"
-      - title: 监控帐户中的操作
-        url: "/task-monitor-cm-operations.html"
       - title: 创建另一个BlueXP帐户
         url: "/task-create-account.html"
       - title: 用户角色
         url: "/reference-user-roles.html"
+    - title: 身份联合
+      url: "/concept-federation.html"
     - title: 连接器
       entries:
       - title: 维护虚拟机和操作系统
@@ -155,10 +175,12 @@ sidebar:
           url: "/concept-accounts-gcp.html"
         - title: 管理凭据和订阅
           url: "/task-adding-gcp-accounts.html"
-      - title: 管理与BlueXP帐户关联的NSS凭据
+      - title: 管理与BlueXP  组织或帐户关联的NSS凭据
         url: "/task-adding-nss-accounts.html"
       - title: 管理与您的BlueXP登录关联的凭据
         url: "/task-manage-user-credentials.html"
+    - title: 监控BlueXP  操作
+      url: "/task-monitor-cm-operations.html"
   - title: 参考
     entries:
     - title: 权限

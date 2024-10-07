@@ -103,7 +103,7 @@ https://_ipaddress_[]
 
 . 登录后，设置 Connector ：
 +
-.. 指定要与Connector关联的BlueXP帐户。
+.. 指定要与连接器关联的BlueXP  组织。
 .. 输入系统名称。
 .. 在*是否在安全环境中运行？*下、保持禁用受限模式。
 +
@@ -115,4 +115,4 @@ https://_ipaddress_[]
 
 
 .结果
-现在、Connector已安装完毕、并已使用您的BlueXP帐户进行设置。
+现在、您的BlueXP  组织已安装并设置了连接器。
