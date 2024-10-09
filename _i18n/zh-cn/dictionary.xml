@@ -4815,7 +4815,6 @@ https://support.netapp.com
   <block id="402601978c4c05e28bf41ea74b2c118a" category="list-text">_Compliance viewer_现在是_Classification viewer_</block>
   <block id="396758cef44fe7d4ebed2010a8ee7761" category="list-text">在"设置"下、您可以访问BlueXP  身份和访问管理以利用这些增强功能</block>
   <block id="0909fc2dd5049052e70dfa0e18f7fbcf" category="inline-image-macro">BlueXP  的屏幕截图、显示可从界面顶部选择的组织和项目以及可从"设置"菜单访问的身份和访问管理。</block>
-  <block id="bc9b550d1734b431c662a14aa92c06df" category="paragraph"><block ref="bc9b550d1734b431c662a14aa92c06df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9c4ef914f4f136c37c3df051aaedb70" category="list-text">您的现有用户或工作环境不会发生任何变化。</block>
   <block id="31243c2d285073a1e31df388c65d726f" category="list-text">虽然角色名称已更改、但从权限角度来看没有任何区别。用户仍可访问与以前相同的工作环境。</block>
   <block id="694ce83c478c161c3ac05490450e107e" category="list-text">您登录BlueXP  的方式没有变化。BlueXP  IAM可以像BlueXP  帐户一样使用NetApp云登录、NetApp支持站点凭据和联合连接。</block>
@@ -4850,4 +4849,12 @@ https://support.netapp.com
   <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">预定义的IAM角色</block>
   <block id="1326a41ad4b26f3395b0f54dd9172b2b" category="sidebar">了解客户信息</block>
   <block id="df583ae7ba964fd4806b55904da81813" category="list-text">警报</block>
+  <block id="c8e7383477673ee726b6ba29dc487444" category="list-text">使用IMDSv2时设置响应跃点限制</block>
+  <block id="3e732c9d6276fdfd4d8499b951b6b262" category="list-text">如果在EC2实例上启用了IMDSv2 (这是新EC2实例的默认设置)、则必须将实例上的Put响应跃点限制更改为3。如果不更改EC2实例的限制、则在尝试设置连接器时会收到UI初始化错误。</block>
+  <block id="8d8efedf65fe740dfe59c5779c9d745c" category="list-text"><block ref="8d8efedf65fe740dfe59c5779c9d745c" category="inline-link-macro-rx"></block></block>
+  <block id="75c0fbf84b1614b17a984df62bf849f6" category="inline-link">AWS文档：更改放置响应跃点限制</block>
+  <block id="ca7f44589a06d75665d92002d6148e98" category="list-text"><block ref="ca7f44589a06d75665d92002d6148e98" category="inline-link-rx"></block></block>
+  <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
+  <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
 </blocks>

@@ -57,7 +57,7 @@ BlueXP  IAM提供更精细的资源和权限管理：
 * 在"设置"下、您可以访问BlueXP  身份和访问管理以利用这些增强功能
 
 
-image:screenshot-iam-introduction.png["BlueXP  的屏幕截图、显示可从界面顶部选择的组织和项目以及可从\"设置\"菜单访问的身份和访问管理。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["BlueXP  的屏幕截图、显示可从界面顶部选择的组织和项目以及可从\"设置\"菜单访问的身份和访问管理。"]
 
 请注意以下事项：
 
@@ -83,8 +83,8 @@ image:screenshot-iam-introduction.png["BlueXP  的屏幕截图、显示可从�
 
 ==== 下一步行动
 
-* link:concept-identity-and-access-management.html["了解BlueXP  IAM"]
-* link:task-iam-get-started.html["开始使用BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["了解BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["开始使用BlueXP  IAM"]
 
 
 

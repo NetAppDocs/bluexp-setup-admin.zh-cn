@@ -90,6 +90,14 @@ CPU:: 8 个核心或 8 个 vCPU
 RAM:: 32 GB
 AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用t3.2倍大。
 密钥对:: 创建连接器时、您需要选择要用于实例的EC2密钥对。
+使用IMDSv2时设置响应跃点限制:: 如果在EC2实例上启用了IMDSv2 (这是新EC2实例的默认设置)、则必须将实例上的Put响应跃点限制更改为3。如果不更改EC2实例的限制、则在尝试设置连接器时会收到UI初始化错误。
++
+--
+* link:task-require-imdsv2.html["要求在Amazon EC2实例上使用IMDSv2"]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit["AWS文档：更改放置响应跃点限制"^]
+
+
+--
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
 +
 --
