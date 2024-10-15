@@ -170,12 +170,6 @@ link:reference-iam-predefined-roles.html["了解IAM预定义角色"](英文)
 
 
 
-==== 自定义角色
-
-目前不支持自定义角色。
-
-
-
 === 连接器
 
 当_Organization admin_创建Connector时，BlueXP  会自动将该Connector与组织和当前选定的项目相关联。Organization admin_可自动从组织中的任何位置访问该Connector。但是、如果您的组织中有其他成员具有不同的角色、这些成员只能从创建连接器的项目访问该连接器、除非您将该连接器与其他项目相关联。

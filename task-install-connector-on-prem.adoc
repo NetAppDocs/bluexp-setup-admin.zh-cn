@@ -91,7 +91,7 @@ RAM:: 32 GB
 /opt 中的磁盘空间:: 必须有 100 GiB 的可用空间
 +
 --
-BlueXP使用 `/opt` 安装 `/opt/application/netapp` 目录及其内容。
+BlueXP  使用 `/opt`安装 `/opt/application/netapp`目录及其内容。
 
 --
 /var 中的磁盘空间:: 必须有20 GiB的可用空间
