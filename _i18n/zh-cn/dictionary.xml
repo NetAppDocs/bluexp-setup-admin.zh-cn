@@ -3889,7 +3889,6 @@ https://support.netapp.com
   <block id="3baace5508f5436415356f7f1c718d50" category="list-text">*RAM*：32 GB</block>
   <block id="e5ee5282a10eef25059e919331c8ea5e" category="list-text">*机器类型*：建议使用n2-standard-8。</block>
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">*选择实例类型*：根据地区可用性，选择支持的实例类型之一(建议使用t3.2x大)。</block>
-  <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">此时、系统将通过电子邮件发送有关以下BlueXP  功能和服务的通知：Connector、BlueXP  数字钱包、BlueXP  副本和同步、BlueXP  备份和恢复以及BlueXP  分层。未来版本将添加其他服务。</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">连接器3.9.43</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">3.9.43版本适用于标准模式和受限模式。</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">更新了CPU和RAM要求</block>
@@ -4858,4 +4857,5 @@ https://support.netapp.com
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024年10月10日</block>
   <block id="9071c576479353103106b574601bd920" category="section-title">连接器3.9.45修补程序</block>
   <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">此修补程序包含错误修复。</block>
+  <block id="ab99e6e0b893c9db1dce5c6dc26245bc" category="list-text">系统会通过电子邮件发送有关以下BlueXP  功能和服务的通知：Connector、BlueXP  数字钱包、BlueXP  副本和同步以及BlueXP  备份和恢复。</block>
 </blocks>

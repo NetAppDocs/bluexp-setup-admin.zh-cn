@@ -137,7 +137,7 @@ image:screenshot_notification_dismiss1.png["显示如何取消单个通知的屏
 
 [NOTE]
 ====
-* 此时、系统将通过电子邮件发送有关以下BlueXP  功能和服务的通知：Connector、BlueXP  数字钱包、BlueXP  副本和同步、BlueXP  备份和恢复以及BlueXP  分层。未来版本将添加其他服务。
+* 系统会通过电子邮件发送有关以下BlueXP  功能和服务的通知：Connector、BlueXP  数字钱包、BlueXP  副本和同步以及BlueXP  备份和恢复。
 * 如果Connector安装在无法访问Internet的站点上、则不支持发送电子邮件通知。
 
 
