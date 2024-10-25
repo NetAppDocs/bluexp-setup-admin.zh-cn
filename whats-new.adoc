@@ -121,7 +121,11 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.
 
 从标准模式和受限模式的3.9.40版本开始支持SELinux、而专用模式的3.9.42版本开始支持SELinux。
 
-BlueXP  不支持对Ubuntu主机使用SELinux。
+请注意以下限制：
+
+* BlueXP  不支持对Ubuntu主机使用SELinux。
+* 在操作系统上启用了SELinux的连接器不支持管理Cloud Volumes ONTAP系统。
+
 
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["了解有关SELinux的更多信息"^]
 

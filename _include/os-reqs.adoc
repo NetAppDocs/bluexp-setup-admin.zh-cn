@@ -29,7 +29,7 @@ Red Hat Enterprise Linux
 
 <<podman-configuration,查看Podman配置要求>>(英文)
  a| 
-在强制模式或许可模式下受支持
+在^模式或许可模式下支持^ 1 μ m
 
 
 
@@ -60,8 +60,9 @@ Docker 23.0.6 26.0.0
 |===
 注释：
 
-* 这些操作系统的英语版本支持 Connector 。
-* 对于RHEL、主机必须注册到Red Hat订阅管理中。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
+. 在操作系统上启用了SELinux的连接器不支持管理Cloud Volumes ONTAP系统。
+. 这些操作系统的英语版本支持 Connector 。
+. 对于RHEL、主机必须注册到Red Hat订阅管理中。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
 
 
 --
@@ -88,7 +89,7 @@ Red Hat Enterprise Linux
 
 <<podman-configuration,查看Podman配置要求>>(英文)
  a| 
-在强制模式或许可模式下受支持
+在^模式或许可模式下支持^ 1 μ m
 
 
 
@@ -108,8 +109,9 @@ Docker 23.0.6 26.0.0
 |===
 注释：
 
-* 这些操作系统的英语版本支持 Connector 。
-* 对于RHEL、主机必须注册到Red Hat订阅管理中。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
+. 在操作系统上启用了SELinux的连接器不支持管理Cloud Volumes ONTAP系统。
+. 这些操作系统的英语版本支持 Connector 。
+. 对于RHEL、主机必须注册到Red Hat订阅管理中。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
 
 
 --

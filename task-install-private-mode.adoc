@@ -14,7 +14,7 @@ summary: 在私有模式下部署Connector、以便在使用BlueXP时无需与Bl
 
 
 [role="lead"]
-在私有模式下部署Connector、以便在使用BlueXP时无需与BlueXP SaaS层建立出站连接。要开始使用、请安装Connector、通过访问Connector上运行的用户界面来设置BlueXP、然后提供您先前设置的云权限。
+在私有模式下部署连接器、以便您可以使用BlueXP 、而无需与BlueXP  软件即服务(SaaS)层建立出站连接。要开始使用、请安装Connector、通过访问Connector上运行的用户界面来设置BlueXP、然后提供您先前设置的云权限。
 
 
 

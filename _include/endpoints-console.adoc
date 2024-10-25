@@ -1,0 +1,11 @@
+= 
+:allow-uri-read: 
+
+
+使用BlueXP  基于Web的控制台时从计算机联系的端点:: 从Web浏览器访问BlueXP  控制台的计算机必须能够访问多个端点。您需要使用BlueXP  控制台设置连接器、并使用BlueXP  进行日常使用。
++
+--
+link:reference-networking-saas-console.html["为BlueXP  控制台准备网络连接"](英文)
+
+--
+

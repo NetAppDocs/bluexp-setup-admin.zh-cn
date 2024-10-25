@@ -14,7 +14,7 @@ summary: Connector是在云网络或内部网络中运行的NetApp软件。它�
 
 
 [role="lead"]
-_Connector_是在云网络或内部网络中运行的NetApp软件。它会执行BlueXP管理数据基础架构所需执行的操作。Connector会不断轮询BlueXP SaaS层以了解它需要执行的任何操作。您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。
+_Connector_是在云网络或内部网络中运行的NetApp软件。它会执行BlueXP管理数据基础架构所需执行的操作。连接器会不断轮询BlueXP  软件即服务(SaaS)层、以确定需要执行的任何操作。您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。
 
 
 

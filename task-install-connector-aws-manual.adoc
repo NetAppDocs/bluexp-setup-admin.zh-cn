@@ -50,7 +50,7 @@ Red Hat Enterprise Linux
 
 <<podman-configuration,查看Podman配置要求>>(英文)
  a| 
-在强制模式或许可模式下受支持
+在^模式或许可模式下支持^ 1 μ m
 
 
 
@@ -81,8 +81,9 @@ Docker 23.0.6 26.0.0
 |===
 注释：
 
-* 这些操作系统的英语版本支持 Connector 。
-* 对于RHEL、主机必须注册到Red Hat订阅管理中。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
+. 在操作系统上启用了SELinux的连接器不支持管理Cloud Volumes ONTAP系统。
+. 这些操作系统的英语版本支持 Connector 。
+. 对于RHEL、主机必须注册到Red Hat订阅管理中。如果未注册、则主机无法在安装Connector期间访问存储库以更新所需的第三方软件。
 
 
 --
@@ -249,6 +250,14 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 
 出站 Internet 访问:: 部署连接器的网络位置必须具有出站Internet连接才能联系特定端点。
+
+
+使用BlueXP  基于Web的控制台时从计算机联系的端点:: 从Web浏览器访问BlueXP  控制台的计算机必须能够访问多个端点。您需要使用BlueXP  控制台设置连接器、并使用BlueXP  进行日常使用。
++
+--
+link:reference-networking-saas-console.html["为BlueXP  控制台准备网络连接"](英文)
+
+--
 
 
 在手动安装期间访问的端点:: 在您自己的Linux主机上手动安装Connector时、Connector安装程序需要在安装过程中访问以下URL：

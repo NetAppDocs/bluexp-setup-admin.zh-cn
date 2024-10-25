@@ -14,7 +14,7 @@ summary: BlueXP提供了多种部署模式、使您能够以满足业务和安�
 
 
 [role="lead"]
-BlueXP提供了多种部署模式_、使您能够以满足业务和安全要求的方式使用BlueXP。_Standard mode"利用BlueXP SaaS层提供完整功能、而_restricted mode"和_private mode"则可供具有连接限制的组织使用。
+BlueXP提供了多种部署模式_、使您能够以满足业务和安全要求的方式使用BlueXP。_Standard mode_利用BlueXP  软件即服务(SaaS)层提供完整功能、而_Restricted mode_and _private mode_则 可用于具有连接限制的组织。
 
 虽然BlueXP  在使用受限模式或私有模式时会阻止流量、通信和数据的流动、但您有责任确保您的环境(内部和云中)符合所需的法规。
 

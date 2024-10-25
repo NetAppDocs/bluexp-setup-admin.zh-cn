@@ -14,9 +14,13 @@ summary: 当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它�
 
 
 [role="lead"]
-当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它会在完成一些管理任务时与多个端点联系。访问BlueXP控制台的计算机应连接到这些端点。
+当您登录并使用BlueXP  基于Web的控制台时、BlueXP  会联系多个端点以完成您启动的操作。访问BlueXP  控制台的计算机必须连接到这些端点。
 
-在BlueXP控制台中完成特定操作时、系统会从用户的计算机访问这些端点。您还应参考Connector和特定BlueXP服务的网络连接要求。有关详细信息、请参见本页末尾的相关链接。
+在以下两种情况下会联系这些端点：
+
+* 从以软件即服务(SaaS)形式提供的完成特定操作时、从用户的计算机执行此操作 https://console.bluexp.netapp.com["基于Web的BlueXP控制台"^]。
+* 在用户的计算机上打开Web浏览器时、输入Connector主机的IP地址、然后登录并设置Connector。如果您手动安装连接器、则需要执行以下步骤。
+
 
 [cols="2*"]
 |===
@@ -24,7 +28,10 @@ summary: 当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它�
 
 
 | \https://console.bluexp.netapp.com
-\https://*.console.bluexp.netapp.com | 使用BlueXP基于Web的控制台时、Web浏览器会联系这些URL。 
+\https://*.console.bluexp.netapp.com | 这是您在Web浏览器中输入的端点、用于使用BlueXP  基于Web的控制台。 
+
+
+| \https://api.bluexp.netapp.com | 基于Web的BlueXP  控制台会与此端点联系、以便与BlueXP  API进行交互、以执行与授权、许可、订阅、凭据、通知等相关的操作。 
 
 
 | \https://aiq.netapp.com | 需要访问BlueXP数字顾问。 
