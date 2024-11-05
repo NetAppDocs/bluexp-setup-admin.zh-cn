@@ -49,10 +49,7 @@ BlueXP  IAM提供更精细的资源和权限管理：
 
 通过这些增强功能、可以更好地控制用户可以执行的操作及其可以访问的资源。
 
-
-
-==== BlueXP  IAM如何影响现有帐户
-
+.BlueXP  IAM如何影响现有帐户
 登录到BlueXP  时、您会注意到以下更改：
 
 * 您的_account_现在称为_organퟩ 횯_
@@ -77,22 +74,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 * 如果您有多个BlueXP  帐户、则现在有多个BlueXP  组织。
 
 
-
-
-==== 用于BlueXP  IAM的API
-
+.用于BlueXP  IAM的API
 此更改为BlueXP  IAM引入了一个新的API、但它向后兼容先前的租户API。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["了解适用于BlueXP  IAM的API"^]
 
-
-
-==== 支持的部署模式
-
+.支持的部署模式
 在标准模式下使用BlueXP  时、支持BlueXP  IAM。如果您在受限模式或私有模式下使用BlueXP 、则可以继续使用BlueXP _account_来管理工作空间、用户和资源。
 
-
-
-==== 下一步行动
-
+.下一步行动
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["了解BlueXP  IAM"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["开始使用BlueXP  IAM"]
 
@@ -105,10 +93,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 3.9.45版本适用于标准模式和受限模式。
 
-
-
-==== 支持Ubuntu 24.04 LTS
-
+.支持Ubuntu 24.04 LTS
 从3.9.45版本开始、在标准模式或受限模式下使用BlueXP  时、BlueXP  现在支持在Ubuntu 24.04 LTS主机上全新安装连接器。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector主机要求"]。
@@ -196,20 +181,14 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 
 3.9.44版本适用于标准模式和受限模式。
 
-
-
-==== 支持在全新安装中使用Docker Engine 26
-
+.支持在全新安装中使用Docker Engine 26
 从3.9.44版本的连接器开始、Docker引擎26现在支持在Ubuntu主机上安装_new_连接器。
 
 如果您在3.9.44版本之前创建了现有连接器、则Docker 25.0.5仍是Ubuntu主机上支持的最大版本。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["详细了解Docker引擎要求"](英文)
 
-
-
-==== 已更新用于本地UI访问的SSL证书
-
+.已更新用于本地UI访问的SSL证书
 当您在受限模式或私有模式下使用BlueXP  时、可以从云区域或内部部署的Connector虚拟机访问用户界面。默认情况下、BlueXP  使用自签名SSL证书为连接器上运行的基于Web的控制台提供安全的HTTPS访问。
 
 在此版本中、我们对新连接器和现有连接器的SSL证书进行了更改：
@@ -333,10 +312,7 @@ Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有�
 
 现在可以从NetApp 支持站点 下载新的专用模式版本。
 
-
-
-==== 支持RHEL 8和9
-
+.支持RHEL 8和9
 此版本支持在专用模式下使用BlueXP时在Red Hat Enterprise Linux 8或9主机上安装Connector。支持以下RHEL版本：
 
 * 8.6 到 8.10
@@ -349,10 +325,7 @@ Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有�
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
 
-
-
-==== 此版本中包含的版本
-
+.此版本中包含的版本
 此版本包含以下BlueXP服务版本、这些版本支持专用模式。
 
 [cols="2*"]
@@ -503,10 +476,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.
 
 目前、3.9.40版本可用于标准模式和受限模式。
 
-
-
-==== 支持RHEL 8和9
-
+.支持RHEL 8和9
 现在、如果在标准模式或受限模式下使用BlueXP、则在运行具有_new_ Connector安装的以下Red Hat Enterprise Linux版本的主机上支持Connector：
 
 * 8.6至8.9
@@ -519,18 +489,12 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
 
-
-
-==== 不再支持RHEL 7和CentOS 7
-
+.不再支持RHEL 7和CentOS 7
 2024年6月30日、RHEL 7将停止维护(EOM)、而CentOS 7将停止使用(EOL)。在2024年6月30日之前、NetApp将继续在这些Linux分发版上支持Connector。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解在RHEL 7或CentOS 7上运行现有Connector时该怎么办"]。
 
-
-
-==== AWS权限更新
-
+.AWS权限更新
 在3.9.38版中、我们更新了适用于AWS的Connector策略、以包括"EC2：可说明可用性区域"权限。现在、要使用Cloud Volumes ONTAP支持AWS本地区域、需要此权限。
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["查看Connector的AWS权限"]。
@@ -633,10 +597,7 @@ BlueXP现已推出新的专用模式版本。此版本包含以下BlueXP服务�
 
 目前、3.9.38版本可用于标准模式和受限模式。此版本支持AWS中的IMDSv2和AWS权限更新。
 
-
-
-==== 支持IMDSv2
-
+.支持IMDSv2
 现在、BlueXP可通过连接器实例和Cloud Volumes ONTAP实例支持Amazon EC2实例元数据服务版本2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。
 
 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["从AWS安全博客了解有关IMDSv2的更多信息"^]
@@ -652,10 +613,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["了解如何在现有实例上配置IMDSv2"]。
 
-
-
-==== AWS权限更新
-
+.AWS权限更新
 我们更新了适用于AWS的Connector策略、以包括"EC2：可说明可用性Zones"权限。即将发布的版本需要此权限。发行说明发布后、我们将更新发行说明以提供更多详细信息。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["查看Connector的AWS权限"]。
@@ -1556,18 +1514,12 @@ link:task-managing-netapp-accounts.html#allow-third-party-services["了解有关
 
 此版本的 Cloud Manager 增强了 Cloud Volumes ONTAP 的管理功能。
 
-
-
-==== 所有云提供商均提供增强功能
-
+.所有云提供商均提供增强功能
 Cloud Manager 现在可以部署和管理 Cloud Volumes ONTAP 9.0.0 。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_new_990.html["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
-
-
-==== AWS 中提供的增强功能
-
+.AWS 中提供的增强功能
 * 现在，您可以在 AWS 商用云服务（ C2S ）环境中部署 Cloud Volumes ONTAP 9.8 。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["了解如何开始使用 C2S"^]
@@ -1581,16 +1533,10 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.htm
 
 
 
-
-
-==== Azure 中提供的增强功能
-
+.Azure 中提供的增强功能
 现在，您可以在 Azure 国防部（ DoD ）影响级别 6 （ IL6 ）中部署 Cloud Volumes ONTAP 9.8 。
 
-
-
-==== Google Cloud 中提供的增强功能
-
+.Google Cloud 中提供的增强功能
 * 我们减少了 Google Cloud 中 Cloud Volumes ONTAP 9.8 及更高版本所需的 IP 地址数量。默认情况下，不需要一个 IP 地址（我们将集群间 LIF 与节点管理 LIF 统一在一起）。您还可以在使用 API 时跳过创建 SVM 管理 LIF ，这样就可以减少对额外 IP 地址的需求。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html["在 Google Cloud 中了解有关 IP 地址要求的更多信息"^]
