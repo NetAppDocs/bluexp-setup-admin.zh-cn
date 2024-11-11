@@ -24,9 +24,9 @@ _Connector_是在云网络或内部网络中运行的NetApp软件。它会执行
 
 您可以在不使用Connector的情况下使用以下BlueXP功能和服务：
 
-* 创建适用于NetApp ONTAP 的Amazon FSX工作环境
+* 适用于 NetApp ONTAP 的 Amazon FSX
 +
-虽然创建工作环境不需要使用Connector、但需要使用它来创建和管理卷、复制数据以及将FSx for ONTAP 与BlueXP分类和BlueXP复制和同步等服务集成。
+某些操作需要使用连接器或BlueXP  工作负载出厂链接。 https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html["了解哪些操作需要连接器或链路"^]
 
 * 自动化目录
 * Azure NetApp Files
@@ -52,6 +52,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 * 软件更新
 * 可持续性
+* 工作负载工厂
 
 
 

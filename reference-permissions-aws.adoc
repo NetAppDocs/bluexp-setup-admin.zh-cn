@@ -764,7 +764,7 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 
 === 适用于 ONTAP 的 Amazon FSX
 
-连接器发出以下API请求来管理Amazon FSx for ONTAP ：
+连接器发出以下API请求来管理Amazon FSx for ONTAP文件系统：
 
 * EC2：Describe实例
 * EC2：Describe实例状态

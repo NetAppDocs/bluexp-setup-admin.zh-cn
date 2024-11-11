@@ -18,7 +18,6 @@ summary: 在受限模式下启动和运行BlueXP后、您可以开始使用受�
 
 要获得帮助、请参见以下服务的文档：
 
-* https://docs.netapp.com/us-en/bluexp-fsx-ontap/index.html["Amazon FSX for ONTAP 文档"^]
 * https://docs.netapp.com/us-en/bluexp-azure-netapp-files/index.html["Azure NetApp Files 文档"^]
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["备份和恢复文档"^]
 * https://docs.netapp.com/us-en/bluexp-classification/index.html["分类文档"^]

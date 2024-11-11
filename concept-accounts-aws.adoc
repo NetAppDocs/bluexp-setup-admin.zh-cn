@@ -36,17 +36,18 @@ image:screenshot_accounts_select_aws.gif["显示详细信息和凭据页面中�
 
 == 其他 AWS 凭据
 
-可以通过两种方式添加其他AWS凭据：
+在以下情况下、您可以向BlueXP  添加其他AWS凭据：
 
-* 您可以向现有Connector添加AWS凭据
-* 您可以将AWS凭据直接添加到BlueXP
+* 将现有BlueXP  Connector与其他AWS帐户结合使用
+* 在特定AWS帐户中创建新连接器
+* 创建和管理FSx for ONTAP文件系统
 
 
 有关更多详细信息、请查看以下各节。
 
 
 
-=== 将 AWS 凭据添加到现有 Connector
+=== 添加AWS凭据以将Connector与其他AWS帐户结合使用
 
 如果要将BlueXP与其他AWS帐户结合使用、则可以为IAM用户或可信帐户中某个角色的ARN提供AWS密钥。下图显示了另外两个帐户，一个通过可信帐户中的 IAM 角色提供权限，另一个通过 IAM 用户的 AWS 密钥提供权限：
 
@@ -62,13 +63,19 @@ link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["�
 
 
 
-=== 将AWS凭据直接添加到BlueXP
+=== 添加AWS凭据以创建Connector
 
-向BlueXP添加新的AWS凭据可提供创建和管理适用于ONTAP 的FSX工作环境或创建连接器所需的权限。
+向BlueXP  添加新的AWS凭据可提供创建连接器所需的权限。
 
-* link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["了解如何将AWS凭据添加到适用于Amazon FSX for ONTAP 的BlueXP中"^]
-* link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["了解如何向BlueXP添加AWS凭据以创建Connector"]
+link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["了解如何向BlueXP添加AWS凭据以创建Connector"]
 
+
+
+=== 为FSx for ONTAP添加AWS凭据
+
+向BlueXP  添加新的AWS凭据可提供创建和管理FSx for ONTAP工作环境所需的权限。
+
+https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["了解如何将AWS凭据添加到适用于Amazon FSX for ONTAP 的BlueXP中"^]
 
 
 
