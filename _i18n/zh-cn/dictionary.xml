@@ -4078,7 +4078,6 @@ https://support.netapp.com
   <block id="1017ad8551dc7209fead1d996608e2b5" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是直接从Azure Marketplace在Azure中创建Connector。要从Azure Marketplace创建Connector、您需要设置网络连接、准备Azure权限、查看实例要求、然后创建Connector。</block>
   <block id="9a63fba43be3e1df0de44c749000ffc5" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项包括直接从BlueXP  或使用gCloud在AWS中创建连接器。要从BlueXP或使用gCloud在Google Cloud中创建Connector、您需要设置网络连接、准备Google Cloud权限、启用Google Cloud API、然后创建Connector。</block>
   <block id="455e0d1571fc687b88776ecc58050d7b" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是在运行Google Cloud的Linux主机上手动安装Connector软件。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Google Cloud权限、启用API、安装Connector、然后提供您准备的权限。</block>
-  <block id="e080a3173dc73a079c4fd120abb491e0" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。要在内部运行Connector、您需要查看主机要求、设置网络、准备云权限、安装Connector、设置Connector、然后提供您准备的权限。</block>
   <block id="5ed8d571b208e6fe2728f122d3340d93" category="paragraph">如果连接器安装在内部环境中、则需要为具有所需权限的IAM用户添加访问密钥、从而为BlueXP  提供AWS权限。</block>
   <block id="7247a245f2594a184b7ed7669be8c32e" category="paragraph">如果连接器安装在内部环境中、您需要通过在Microsoft Entra ID中设置服务主体并获取BlueXP  所需的Azure凭据来为BlueXP  提供Azure权限。</block>
   <block id="d73fea737459cd596b8a61a9c640bf6f" category="paragraph">在内部现有Linux主机上下载并安装Connector软件。</block>
@@ -4887,4 +4886,5 @@ https://support.netapp.com
   <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024年11月11日</block>
   <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>(英文)</block>
+  <block id="be6af94f792f554a6fe5be714926ba2a" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。要在内部运行Connector、您需要查看主机要求、设置网络、准备云权限、安装Connector、设置Connector、然后提供您准备的权限。</block>
 </blocks>
