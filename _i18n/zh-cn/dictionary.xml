@@ -4887,4 +4887,25 @@ https://support.netapp.com
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024年11月11日</block>
   <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>(英文)</block>
   <block id="be6af94f792f554a6fe5be714926ba2a" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。要在内部运行Connector、您需要查看主机要求、设置网络、准备云权限、安装Connector、设置Connector、然后提供您准备的权限。</block>
+  <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">专用模式版本(3.9.46)</block>
+  <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">现在、可从下载新的专用模式版本<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
+  <block id="579c9c5aad40c47e8203472b55439941" category="paragraph">3.9.46版本包括对以下BlueXP  组件和服务的更新。</block>
+  <block id="394b364c6ed61ed167a4f14316ef5ffc" category="cell">组件或服务</block>
+  <block id="2f9dd95401f68032a97298d35b87f433" category="cell">此版本包含的版本</block>
+  <block id="5431c829b8b64da3908e102d64527909" category="cell">自上一个专用模式版本以来的更改</block>
+  <block id="3d93fe525e5005a3aa89376ce36eaf7d" category="cell">3.9.46</block>
+  <block id="2e6f33758bf126679d5a0225c22673d3" category="cell">少量安全性改进和错误修复</block>
+  <block id="008c6d012aabba0e44e2b94f8259635c" category="cell">2024年11月22日</block>
+  <block id="57d300ca1fdd6058fd2a0882b05ba831" category="inline-link">BlueXP  备份和恢复页面中的新增功能</block>
+  <block id="cc73bd495467f0768e5ab6fbca8c9fc3" category="cell">转到<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>、并参考2024年11月版本中包含的更改</block>
+  <block id="d9865720c88f775c3c7aa2407f42807e" category="cell">2024年11月4日(版本1.37)</block>
+  <block id="79d6fb7fcd1197d45638c77f96548314" category="inline-link">BlueXP  分类页面中的新增功能</block>
+  <block id="3634786b3e46e41488029a1f5adcfb51" category="cell">转到<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>、并参考1.32到1.37版本中包含的更改</block>
+  <block id="5cee96e11788b0260fca227a2882f413" category="inline-link">Cloud Volumes ONTAP管理页面新增功能</block>
+  <block id="2b06273c345679e8396f450bec75502c" category="cell">转到<block ref="90e3b44730452fe495e75ab6e2b7eb58" category="inline-link-rx"></block>、并参考2024年10月和2024年11月版本中包含的变更</block>
+  <block id="d415b73567ff8e090cdf21c20afeaa64" category="cell">2024年11月26日</block>
+  <block id="4f2f9aa2e4b010fbcd8cded5bf523370" category="inline-link">"内部ONTAP集群管理新增功能"页面</block>
+  <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">转到<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block>、并参考2024年11月版本中包含的更改</block>
+  <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">虽然BlueXP  数字钱包和BlueXP  复制也包含在专用模式中、但与先前的专用模式版本相比没有任何变化。</block>
+  <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>S</block>
 </blocks>
