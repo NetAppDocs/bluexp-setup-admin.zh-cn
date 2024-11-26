@@ -2367,12 +2367,9 @@
   <block id="92fa0fc1299e55c066d0a19cd22b4e7b" category="list-text">*身份*：在*管理*下、选择*启用系统分配的受管身份*。</block>
   <block id="2d3bb174766a8cbc78a4d5d0a2739c56" category="paragraph">首次访问BlueXP控制台时、系统将提示您选择要与Connector关联的帐户、您需要启用受限模式。</block>
   <block id="b22816a3d20c18e89e4ef89984ca5df6" category="inline-link-macro">了解如何创建其他BlueXP帐户</block>
-  <block id="432f719258fc9e575a2982302eac9cdc" category="admonition">如果您已有帐户、但要创建另一个帐户、则需要使用租户API。 <block ref="987610e2980e99ab837daf2502634d0e" category="inline-link-macro-rx"></block>。</block>
   <block id="d0afc367dac05a517daede09c87a1703" category="list-text">注册或登录到BlueXP。</block>
   <block id="31925d7c2cb5897bb831e016bf096aeb" category="list-text">登录后、设置BlueXP：</block>
   <block id="511a9fce084315d00b23c33c017b6f00" category="list-text">输入Connector的名称。</block>
-  <block id="b62bf1f79ab961793aac4650ff63f80e" category="list-text">输入新BlueXP帐户的名称或选择现有帐户。</block>
-  <block id="60bcc9cfb61752f7c83242e23b71c36a" category="paragraph">如果您的登录已与BlueXP帐户关联、则可以选择一个现有帐户。</block>
   <block id="19219dd3059a0601db6b584237e0fa1f" category="list-text">选择*是否在安全环境中运行？*</block>
   <block id="fee876de3937b43909f6c74baf1cadb3" category="list-text">选择*对此帐户启用受限模式*。</block>
   <block id="6c1ad8d8a00d0b91aa909ccb6da52806" category="paragraph">请注意、在BlueXP创建帐户后、您无法更改此设置。您不能稍后启用受限模式、也不能稍后禁用它。</block>
@@ -4908,4 +4905,7 @@ https://support.netapp.com
   <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">转到<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block>、并参考2024年11月版本中包含的更改</block>
   <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">虽然BlueXP  数字钱包和BlueXP  复制也包含在专用模式中、但与先前的专用模式版本相比没有任何变化。</block>
   <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>S</block>
+  <block id="d9e0b5302621c1c23c370143ae83f9e2" category="paragraph">设置BlueXP  连接器的人员必须使用不属于以标准模式运行的BlueXP  组织的登录名登录到BlueXP 。</block>
+  <block id="958a2cecb2c46938c95b34d62fe1951c" category="paragraph">如果您的BlueXP  登录名与以标准模式运行的组织相关联、则您需要使用不属于该组织的新BlueXP  登录名或NetApp支持站点凭据进行注册。否则、您将无法在设置屏幕上看到用于启用受限模式的选项。</block>
+  <block id="fbb40b7689fb13eea9ed1fa8b7206a3b" category="list-text">输入新BlueXP  帐户的名称。</block>
 </blocks>
