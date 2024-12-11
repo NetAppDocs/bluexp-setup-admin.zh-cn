@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-overview.html 
 keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers 
-summary: NetApp BlueXP为您的企业提供了一个控制平台、可帮助您在内部环境和云环境中构建、保护和管理数据。BlueXP SaaS平台包括可提供存储管理、数据移动性、数据保护以及数据分析和控制的服务。管理功能通过基于Web的控制台和API提供。 
+summary: NetApp BlueXP为您的企业提供了一个控制平台、可帮助您在内部环境和云环境中构建、保护和管理数据。 
 ---
 = 了解BlueXP
 :hardbreaks:
@@ -20,60 +20,84 @@ NetApp BlueXP为您的企业提供了一个控制平台、可帮助您在内部�
 
 == 功能
 
-BlueXP平台提供了数据管理的四大要素：存储、移动性、保护以及分析和控制。
+BlueXP  可跨混合多云和集成数据服务统一控制存储、以保护、保护和优化数据。
 
-存储:: 发现、部署和管理存储、无论是在AWS、Azure、Google Cloud中还是在内部环境中。
+
+
+=== 通过BlueXP  画布统一控制存储
+
+通过_ BlueXP  Canvapp_、您可以发现、部署、优化和管理云和内部存储。此画布为所有存储管理提供了一个位置。
+
+
+
+==== 支持的云和内部存储
+
+通过BlueXP 、您可以从BlueXP  画布管理以下类型的存储：
+
+云存储解决方案::
 +
 --
-* 设置和使用云文件存储服务：
-+
-** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
-** https://bluexp.netapp.com/fsx-for-ontap["适用于 NetApp ONTAP 的 Amazon FSX"^]
-** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["适用于 Google Cloud 的 Cloud Volumes Service"^]
-
-
-* 设置和使用 https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] 跨云实现高效的多协议数据管理。
-* 发现和管理 https://bluexp.netapp.com/netapp-on-premises["内部存储"^]：
-+
-** E系列系统
-** ONTAP 集群
-** StorageGRID 系统
-
-
+* 适用于 NetApp ONTAP 的 Amazon FSX
+* Azure NetApp Files
+* Cloud Volumes ONTAP
 
 
 --
-移动性:: 通过同步、复制和分层数据将数据移动到需要的位置。
+内部闪存和对象存储::
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["复制和同步"^]
-* https://bluexp.netapp.com/cloud-tiering["分层"^]
+* E系列系统
+* ONTAP 集群
+* StorageGRID 系统
 
 
 --
-保护:: 使用自动化保护机制保护数据免受数据丢失、计划外中断、勒索软件和其他网络威胁的影响。
+云对象存储::
 +
 --
-* https://bluexp.netapp.com/cloud-backup["备份和恢复"^]
-* https://bluexp.netapp.com/disaster-recovery["灾难恢复"^]
-* https://bluexp.netapp.com/replication["Replication"^]
-* https://bluexp.netapp.com/ransomware-protection["勒索软件保护"^]
-
-
---
-分析和控制:: 使用工具监控、映射和优化数据存储和基础架构。获得可指导行动的智能信息、以优化存储运行状况、故障恢复能力和经济效益。
-+
---
-* https://bluexp.netapp.com/netapp-cloud-data-sense["分类"^]
-* https://bluexp.netapp.com/digital-advisor["数字顾问"^]
-* https://bluexp.netapp.com/digital-advisor["经济效率"^]
-* https://bluexp.netapp.com/digital-advisor["运营故障恢复能力"^]
+* Amazon S3存储
+* Azure Blb存储
+* Google Cloud 存储
 
 
 --
 
 
-https://bluexp.netapp.com/["详细了解如何使用BlueXP  管理混合多云环境中的数据"^]
+
+
+==== 从工作环境中进行存储管理
+
+在BlueXP  画布上、_working storages_表示您已发现或部署的云和内部存储。您可以选择一个工作环境并将其与BlueXP  数据服务集成、也可以进入该工作环境来完成添加卷等存储管理操作。
+
+image:screenshot-canvas.png["BlueXP  画布的屏幕截图、其中显示了多个工作环境、其中一个工作环境已选中、并显示了启用BlueXP  数据服务或选择\"进入工作环境\"以管理存储的功能。"]
+
+
+
+=== 集成服务、用于保护、保护和优化数据
+
+BlueXP  包括一套全面的集成数据服务、可帮助您在内部和云存储环境中保持数据的安全性、完整性和可用性。
+
+BlueXP  警报:: 查看ONTAP环境中与容量、可用性、性能、保护和安全相关的问题。
+BlueXP自动化目录:: 使用脚本化解决方案自动部署和集成NetApp产品和服务。
+BlueXP备份和恢复:: 备份和还原云和内部数据。
+BlueXP分类:: 让您的应用程序数据和云环境做好隐私准备。
+BlueXP云操作:: 深入了解您的云计算支出并确定潜在节省量。
+BlueXP复制和同步:: 在内部数据存储和云数据存储之间同步数据。
+BlueXP数字顾问:: 利用预测性分析和主动式支持优化数据基础架构。
+BlueXP数字电子钱包:: 管理和监控许可证和订阅。
+BlueXP灾难恢复:: 使用基于Amazon FSx for ONTAP的VMware Cloud作为灾难恢复站点来保护内部VMware工作负载。
+BlueXP经济效益:: 确定当前或预测的低容量集群、并实施数据分层或其他容量建议。
+BlueXP操作故障恢复能力:: 实施自动化固件和软件配置风险修复、以保持ONTAP 集群的运行状况。
+BlueXP勒索软件保护:: 检测可能导致勒索软件攻击的异常情况。保护和恢复工作负载。
+BlueXP复制:: 在存储系统之间复制数据以支持备份和灾难恢复。
+BlueXP  软件更新:: 自动执行ONTAP升级的评估、规划和执行。
+BlueXP Sustainability信息板:: 分析存储系统的可持续性。
+BlueXP层:: 将内部 ONTAP 存储扩展到云。
+BlueXP卷缓存:: 创建可写缓存卷、以加快数据访问速度或从访问量较多的卷卸载流量。
+BlueXP  工作负载工厂:: 使用Amazon FSx for NetApp ONTAP设计、设置和运行关键工作负载。
+
+
+https://www.netapp.com/bluexp/["详细了解BlueXP  和可用数据服务"^]
 
 
 
@@ -91,7 +115,7 @@ BlueXP的定价取决于您计划使用的服务。 https://bluexp.netapp.com/pr
 
 == BlueXP的工作原理
 
-BlueXP  包括一个通过SaaS层提供的基于Web的控制台、一个资源和访问管理系统、以及一个可管理工作环境并支持BlueXP  云服务的连接器。
+BlueXP  包括通过SaaS层提供的基于Web的控制台、资源和访问管理系统、用于管理工作环境和启用BlueXP  云服务的连接器以及满足您业务需求的不同部署模式。
 
 
 
@@ -129,7 +153,7 @@ link:concept-connectors.html["了解有关连接器的更多信息"]。
 
 === 部署模式
 
-在存在安全和连接限制的环境中、支持BlueXP 。您可以使用_restricted mode"或_private mode"来限制与BlueXP SaaS层的出站连接。
+BlueXP  提供三种部署模式。_Standard mode_利用BlueXP  软件即服务(SaaS)层提供完整功能。如果您的环境存在安全和连接限制、则_Restricted mode_and _private mode_会 限制与BlueXP  SaaS层的出站连接。
 
 link:concept-modes.html["详细了解BlueXP部署模式"]。
 

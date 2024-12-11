@@ -5,7 +5,6 @@
 在手动安装期间访问的端点:: 在您自己的Linux主机上手动安装Connector时、Connector安装程序需要在安装过程中访问以下URL：
 +
 --
-* \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \Cname.com https://signin.b2c (此端点是https://mysupport NetApp的NetApp)
 * \https://cloudmanager.cloud.netapp.com/tenancy

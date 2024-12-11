@@ -18,6 +18,29 @@ summary: 了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器�
 
 
 
+== 2024年12月9日
+
+
+
+=== 连接器3.9.47
+
+此版本的BlueXP  连接器包含错误修复、并对连接器安装期间所访问的端点进行了更改。
+
+目前、3.9.47版本可用于标准模式和受限模式。
+
+.在安装期间联系NetApp支持的端点
+手动安装连接器时、安装程序将不再与https://support NetApp．com联系。
+
+安装程序仍会与https://mysupport．NetApp．com联系。
+
+
+
+=== BlueXP  身份和访问管理
+
+"Connectors (连接器)"页面仅列出当前可用的连接器。它不再显示您已删除的连接器。
+
+
+
 == 2024年11月26日
 
 
@@ -53,7 +76,7 @@ summary: 了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器�
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]S
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
 
 
 
@@ -1134,7 +1157,7 @@ https://bluexp.netapp.com["从BlueXP网站了解更多信息"^]
 新的导航菜单:: 在BlueXP的导航菜单中、服务现在按类别进行组织、并根据其功能进行命名。例如，您可以从*保护*类别访问BlueXP备份和恢复。
 +
 --
-image:screenshot-navigation-menu.png["BlueXP中导航菜单的屏幕截图、其中显示了存储和运行状况等类别。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-navigation-menu.png["BlueXP中导航菜单的屏幕截图、其中显示了存储和运行状况等类别。"]
 
 --
 新的产品集成::
@@ -1510,7 +1533,7 @@ link:task-creating-connectors-azure.html["了解如何使用 Azure 服务主体�
 
 link:task-adding-nss-accounts.html["了解如何管理 NSS 帐户"]。
 
-image:screenshot_nss_management.png["支持信息板中可添加 NSS 帐户的 NSS 管理选项卡的屏幕截图。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot_nss_management.png["支持信息板中可添加 NSS 帐户的 NSS 管理选项卡的屏幕截图。"]
 
 
 

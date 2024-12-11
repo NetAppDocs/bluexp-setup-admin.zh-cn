@@ -21,7 +21,6 @@ summary: 如果您的组织成员需要在其他项目中使用连接器、您�
 
 .关于此任务
 * 当_Folder或项目admin_查看*Connectors*页时，该页将显示组织中的所有Connectors*。但是、具有此角色的成员只能查看连接器并将其与它们具有权限的文件夹和项目相关联。link:reference-iam-predefined-roles.html["详细了解_Folder或项目admin_可以完成的操作"](英文)
-* 由于一个已知问题、BlueXP  IAM中的"Connectors (连接器)"页面将显示先前从BlueXP  中删除的任何旧连接器。
 
 
 .步骤
