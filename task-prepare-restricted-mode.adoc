@@ -293,22 +293,54 @@ sudo systemctl enable docker && sudo systemctl start docker
 --
 
 
-在手动安装期间访问的端点:: 在您自己的Linux主机上手动安装Connector时、Connector安装程序需要在安装过程中访问以下URL：
+在手动安装期间访问的端点:: 在您自己的Linux主机上手动安装Connector时、Connector的安装程序要求在安装过程中能够访问多个URL。
 +
 --
-* \https://mysupport.netapp.com
-* \Cname.com https://signin.b2c (此端点是https://mysupport NetApp的NetApp)
-* \https://cloudmanager.cloud.netapp.com/tenancy
-* \https://stream.cloudmanager.cloud.netapp.com
-* \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
+* 无论您将连接器安装在何处、系统都会始终联系以下端点：
 +
-在Azure政府地区不需要此端点。
+** \https://mysupport.netapp.com
+** \Cname.com https://signin.b2c (此端点是https://mysupport NetApp的NetApp)
+** \https://cloudmanager.cloud.netapp.com/tenancy
+** \https://stream.cloudmanager.cloud.netapp.com
+** \https://production-artifacts.cloudmanager.cloud.netapp.com
 
-* \https://occmclientinfragov.azurecr.us
+
+* 如果您在AWS政府区域安装Connector、则安装程序还需要访问以下端点：
 +
-只有Azure政府区域才需要此端点。
+** \https://*.blob.core.windows.net
+** \https://cloudmanagerinfraprod.azurecr.io
+
+
+* 如果您在Azure政府地区安装Connector、则安装程序还需要访问以下端点：
++
+** \https://*.blob.core.windows.net
+** \https://occmclientinfragov.azurecr.us
+
+
+* 如果在商业区域或主权区域安装Connector、则可以在两组端点之间进行选择：
++
+** 选项1 (建议)：
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** 选项2：
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
++
+建议使用选项1中列出的端点、因为它们更安全。建议您设置防火墙、允许选项1中列出的端点、而禁止选项2中列出的端点。请注意以下有关这些端点的信息：
+
++
+** 从3.9.47版本的连接器开始、支持选项1中列出的端点。与先前版本的Connector没有向后兼容性。
+** 连接器首先连接选项2中列出的端点。如果这些端点不可访问、连接器会自动联系选项1中列出的端点。
+** 如果将连接器与BlueXP  备份和恢复或BlueXP  勒索软件保护结合使用、则不支持选项1中的端点。在这种情况下、您可以禁止选项1中列出的端点、同时允许选项2中列出的端点。
+
 
 
 
@@ -392,15 +424,7 @@ https://mysupport.netapp.com
 
 
  a| 
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+\https://\*.api BlueXP ．NetApp．com \https://api．BlueXP ．NetApp．com \https://*.cloudmanager.cloud．NetApp．com \https://cloudmanager.cloud．NetApp．com \https：NetApp-cloud-account.auth0.com
  a| 
 在BlueXP中提供SaaS功能和服务。
 
@@ -409,17 +433,42 @@ https://mysupport.netapp.com
 
 
  a| 
-\https://*.blob.core.windows.net
-
-\https://cloudmanagerinfraprod.azurecr.io
-在Azure政府地区不需要此端点。
-
-\https://occmclientinfragov.azurecr.us
-只有Azure政府区域才需要此端点。
+如果连接器位于AWS政府区域：\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
  a| 
-升级 Connector 及其 Docker 组件。
+在AWS政府地区安装Connector时获取用于Connector升级的映像。
+
+
+
+ a| 
+如果连接器位于Azure政府区域：\https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us
+ a| 
+当Connector安装在Azure政府地区时、获取用于Connector升级的映像。
+
+
+
+ a| 
+如果Connector位于商业区域或主权区域、则可以在两组端点之间进行选择：
+
+* 选项1 (推荐)^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* 备选案文2.
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
+ a| 
+当Connector安装在商业区域或主权区域时、获取Connector升级所需的映像。
 
 |===
+^1^建议使用选项1中列出的端点、因为它们更安全。建议您设置防火墙、允许选项1中列出的端点、而禁止选项2中列出的端点。请注意以下有关这些端点的信息：
+
+* 从3.9.47版本的连接器开始、支持选项1中列出的端点。与先前版本的Connector没有向后兼容性。
+* 连接器首先连接选项2中列出的端点。如果这些端点不可访问、连接器会自动联系选项1中列出的端点。
+* 如果将连接器与BlueXP  备份和恢复或BlueXP  勒索软件保护结合使用、则不支持选项1中的端点。在这种情况下、您可以禁止选项1中列出的端点、同时允许选项2中列出的端点。
+
+
 --
 
 

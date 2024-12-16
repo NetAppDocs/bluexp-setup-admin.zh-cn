@@ -83,15 +83,7 @@ https://mysupport.netapp.com
 
 
  a| 
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+\https://\*.api BlueXP ．NetApp．com \https://api．BlueXP ．NetApp．com \https://*.cloudmanager.cloud．NetApp．com \https://cloudmanager.cloud．NetApp．com \https：NetApp-cloud-account.auth0.com
  a| 
 在BlueXP中提供SaaS功能和服务。
 
@@ -100,13 +92,28 @@ https://mysupport.netapp.com
 
 
  a| 
-\https://*.blob.core.windows.net
+在两组端点之间进行选择：
 
-\https://cloudmanagerinfraprod.azurecr.io
+* 选项1 (推荐)^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* 备选案文2.
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
  a| 
-升级 Connector 及其 Docker 组件。
+获取用于Connector升级的映像。
 
 |===
+^1^建议使用选项1中列出的端点、因为它们更安全。建议您设置防火墙、允许选项1中列出的端点、而禁止选项2中列出的端点。请注意以下有关这些端点的信息：
+
+* 从3.9.47版本的连接器开始、支持选项1中列出的端点。与先前版本的Connector没有向后兼容性。
+* 连接器首先连接选项2中列出的端点。如果这些端点不可访问、连接器会自动联系选项1中列出的端点。
+* 如果将连接器与BlueXP  备份和恢复或BlueXP  勒索软件保护结合使用、则不支持选项1中的端点。在这种情况下、您可以禁止选项1中列出的端点、同时允许选项2中列出的端点。
+
+
 --
 
 

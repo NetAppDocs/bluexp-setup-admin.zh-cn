@@ -10,11 +10,72 @@
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
+* 要获取映像、安装程序需要访问以下两组端点之一：
++
+** 选项1 (建议)：
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** 选项2：
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
 
 
 --
 
+
+在手动安装期间访问的端点:: 在您自己的Linux主机上手动安装Connector时、Connector的安装程序要求在安装过程中能够访问多个URL。
++
+--
+* 无论您将连接器安装在何处、系统都会始终联系以下端点：
++
+** \https://mysupport.netapp.com
+** \Cname.com https://signin.b2c (此端点是https://mysupport NetApp的NetApp)
+** \https://cloudmanager.cloud.netapp.com/tenancy
+** \https://stream.cloudmanager.cloud.netapp.com
+** \https://production-artifacts.cloudmanager.cloud.netapp.com
+
+
+* 如果您在AWS政府区域安装Connector、则安装程序还需要访问以下端点：
++
+** \https://*.blob.core.windows.net
+** \https://cloudmanagerinfraprod.azurecr.io
+
+
+* 如果您在Azure政府地区安装Connector、则安装程序还需要访问以下端点：
++
+** \https://*.blob.core.windows.net
+** \https://occmclientinfragov.azurecr.us
+
+
+* 如果在商业区域或主权区域安装Connector、则可以在两组端点之间进行选择：
++
+** 选项1 (建议)：
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** 选项2：
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
+
+
+--
+
+
+建议使用选项1中列出的端点、因为它们更安全。建议您设置防火墙、允许选项1中列出的端点、而禁止选项2中列出的端点。请注意以下有关这些端点的说明：**从3.9.47版本的连接器开始，支持选项1中列出的端点。与先前版本的Connector没有向后兼容性。**连接器首先连接选项2中列出的端点。如果这些端点不可访问、连接器会自动联系选项1中列出的端点。**如果将连接器与BlueXP  备份和恢复或BlueXP  勒索软件保护结合使用，则不支持选项1中的端点。在这种情况下、您可以禁止选项1中列出的端点、同时允许选项2中列出的端点。
 
 主机可能会在安装期间尝试更新操作系统软件包。主机可以联系这些操作系统软件包的不同镜像站点。
