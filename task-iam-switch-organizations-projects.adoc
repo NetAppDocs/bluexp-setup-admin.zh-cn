@@ -73,7 +73,7 @@ BlueXP  将切换到选定项目并显示与该项目关联的资源。
 .结果
 BlueXP  将刷新并显示与选定连接器关联的工作环境。
 
-.相关链接
+.相关信息
 link:task-iam-associate-connectors.html["将接头与文件夹和项目相关联"](英文)
 
 

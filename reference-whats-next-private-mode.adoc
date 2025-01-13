@@ -25,5 +25,5 @@ summary: 在专用模式下启动和运行BlueXP后、您可以开始使用私�
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["使用BlueXP备份和恢复将ONTAP 卷数据备份到StorageGRID"^]
 
 
-.相关链接
+.相关信息
 link:concept-modes.html["BlueXP部署模式"]

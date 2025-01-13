@@ -16,7 +16,7 @@ summary: 要解决连接器的问题、您可以联系NetApp支持部门、他�
 [role="lead"]
 要解决连接器的问题、您可以与NetApp支持人员联系、他们可能会询问您的系统ID、连接器版本或最新的AutoSupport消息。您还可以查看NetApp知识库来自行解决问题。
 
-.相关链接
+.相关信息
 link:task-get-help.html["从NetApp支持部门获取帮助"]。
 
 

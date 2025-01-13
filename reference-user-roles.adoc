@@ -71,5 +71,5 @@ summary: 帐户管理员，工作空间管理员，合规性查看器和 SnapCen
 
 | 查看和管理支持仪表板 | 是的。 | 是的。 | 否 | 否 
 |===
-.相关链接
+.相关信息
 link:task-managing-netapp-accounts.html["管理您的BlueXP帐户"]

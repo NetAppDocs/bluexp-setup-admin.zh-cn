@@ -221,14 +221,14 @@ image:screenshot-settings-icon-organization.png["一个屏幕截图、显示了B
 
 
 
-== 关联 AWS 订阅
+== 配置AWS订阅
 
-将AWS凭据添加到BlueXP后、您可以将AWS Marketplace订阅与这些凭据相关联。通过订阅、您可以按每小时费率(PAYGO)或使用年度合同为Cloud Volumes ONTAP 付费、并使用其他BlueXP服务。
+将AWS凭据添加到BlueXP  后、您可以使用这些凭据配置AWS Marketplace订阅。通过订阅、您可以按每小时费率(PAYGO)或使用年度合同为Cloud Volumes ONTAP 付费、并使用其他BlueXP服务。
 
-在以下两种情况下、您可能会在将凭据添加到BlueXP后关联AWS Marketplace订阅：
+在以下两种情况下、您可以在向BlueXP  添加凭据后配置AWS Marketplace订阅：
 
-* 最初将凭据添加到BlueXP时、您未关联订阅。
-* 您希望更改与AWS凭据关联的AWS Marketplace订阅。
+* 最初向BlueXP  添加凭据时、您未配置订阅。
+* 您希望更改配置为AWS凭据的AWS Marketplace订阅。
 +
 将当前市场订阅替换为新订阅会改变任何现有Cloud Volumes ONTAP工作环境和所有新工作环境的市场订阅。
 
@@ -237,16 +237,20 @@ image:screenshot-settings-icon-organization.png["一个屏幕截图、显示了B
 .开始之前
 您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何创建 Connector"]。
 
+以下视频显示了从AWS Marketplace订阅BlueXP  的步骤：
+
+.从AWS Marketplace订阅BlueXP
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
-. 选择一组凭据的操作菜单，然后选择*关联订阅*。
+. 选择一组凭据的操作菜单，然后选择*Configure订阅*。
 +
 您必须选择与连接器关联的凭据。您不能将商城订阅与BlueXP关联的凭据关联。
 
 +
 image:screenshot_associate_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
 
-. 要将凭据与现有订阅关联、请从下拉列表中选择此订阅、然后选择*关联*。
+. 要将凭据与现有订阅相关联，请从下拉列表中选择订阅，然后选择*Config*。
 . 要将凭据与新订阅关联、请选择*添加订阅>继续*、然后按照AWS Marketplace中的步骤进行操作：
 +
 .. 选择*查看购买选项*。
@@ -266,12 +270,6 @@ BlueXP  会将组织或帐户中所有凭据的现有订阅替换为此新订�
 对于所有其他组织或帐户、您需要重复这些步骤来手动关联订阅。
 
 *** 选择 * 保存 * 。
-+
-以下视频显示了从AWS Marketplace订阅的步骤：
-
-+
-.从AWS Marketplace订阅BlueXP
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 

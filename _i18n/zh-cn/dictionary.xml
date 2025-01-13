@@ -1044,7 +1044,6 @@
   <block id="3c2636f752222ce604af87906e481f03" category="list-text"><block ref="3c2636f752222ce604af87906e481f03" category="inline-link-rx"></block></block>
   <block id="7596270426e8c5f92be308ff330e0e64" category="inline-link">复制文档</block>
   <block id="17ba1853097c1b83e5a82753f8133c2e" category="list-text"><block ref="17ba1853097c1b83e5a82753f8133c2e" category="inline-link-rx"></block></block>
-  <block id="06afa66cf6eca938a45be835a47030e1" category="paragraph-title">相关链接</block>
   <block id="2579d10862aa7770a64b058fb84ce858" category="inline-link-macro">BlueXP部署模式</block>
   <block id="672184337bf12286628179253519271e" category="paragraph"><block ref="672184337bf12286628179253519271e" category="inline-link-macro-rx"></block></block>
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">您可以通过关联市场订阅并对订阅过程进行故障排除来管理与Connector VM实例关联的Google Cloud凭据。这两项任务都可以确保您可以使用市场订阅来支付BlueXP服务费用。</block>
@@ -2487,9 +2486,6 @@
   <block id="3fa57b54a57f48366778b5343dad7a48" category="section-title">向BlueXP for Amazon FSX for ONTAP 添加凭据</block>
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">适用于ONTAP 的Amazon FSX的BlueXP文档</block>
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">有关详细信息，请参见<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
-  <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">关联 AWS 订阅</block>
-  <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">将AWS凭据添加到BlueXP后、您可以将AWS Marketplace订阅与这些凭据相关联。通过订阅、您可以按每小时费率(PAYGO)或使用年度合同为Cloud Volumes ONTAP 付费、并使用其他BlueXP服务。</block>
-  <block id="5eae6608f40144c94d96a8f0a1602c97" category="paragraph">在以下两种情况下、您可能会在将凭据添加到BlueXP后关联AWS Marketplace订阅：</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">了解如何创建 Connector</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">您需要先创建Connector、然后才能更改BlueXP设置。 <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>。</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
@@ -2943,7 +2939,6 @@
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">以下视频显示了从Azure Marketplace订阅的步骤：</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">以下视频显示了从Google Cloud Marketplace订阅的步骤：</block>
-  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">以下视频显示了从AWS Marketplace订阅的步骤：</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -3286,7 +3281,6 @@ https://support.netapp.com
   <block id="240d9c0eecb88b98c7fc253d7a1ea3e9" category="section-title">我是否可以将现有Cloud Volumes ONTAP工作环境移至其他AWS帐户？</block>
   <block id="48fee81c8905ac5f4a12516fa379b0f7" category="paragraph">不可以、不能将与您的Cloud Volumes ONTAP工作环境关联的AWS资源移动到其他AWS帐户。</block>
   <block id="a0b5de080d56bb71b1a6a7c72fd88757" category="doc">管理BlueXP的AWS凭据和市场订阅</block>
-  <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">您希望更改与AWS凭据关联的AWS Marketplace订阅。</block>
   <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">管理BlueXP的Azure凭据和市场订阅</block>
   <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">您希望更改与Azure凭据关联的Azure Marketplace订阅。</block>
   <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22.04 LTS</block>
@@ -4387,8 +4381,6 @@ https://support.netapp.com
   <block id="888af4d1c4f4f8cf5928fe9cc5ae80c1" category="paragraph">通过BlueXP  身份和访问管理(IAM)、您可以使用项目和文件夹来组织NetApp资源。_project_表示BlueXP  中的一个工作空间、组织成员可以访问该工作空间来管理_Res풴_(例如、Cloud Volumes ONTAP系统)。一个_FOLDER_将相关项目分组在一起。将资源组织到文件夹和项目中之后、您可以通过为组织成员提供对特定文件夹和项目的权限来授予对资源的粒度访问权限。</block>
   <block id="c08b7d4448e95633b73e2495389e853c" category="section-title">添加文件夹或项目</block>
   <block id="9b72b5a70aa482b566f3aded23197da9" category="paragraph">创建BlueXP  组织时、它包含一个项目。您可以创建其他项目来管理组织的资源。您可以选择创建文件夹以将相关项目分组在一起。</block>
-  <block id="b9b4d0d7c739aa9127b9919f23478743" category="paragraph">您的组织的层次结构的深度可向下划分为7个级别。因此、您可以创建6个级别的嵌套文件夹。最后一个嵌套文件夹可以包括层次结构第七级的项目。</block>
-  <block id="5ed844477243e17219a5a1bb8244cb94" category="paragraph">下图说明了组织层次结构的最大深度：</block>
   <block id="de599df9f91a76585a5d0e5049f80230" category="inline-image-macro">显示组织、六个嵌套文件夹以及最后一个嵌套文件夹中的一个项目的屏幕截图。</block>
   <block id="140320cb76bc5580566bd6ef83ee9d69" category="paragraph"><block ref="140320cb76bc5580566bd6ef83ee9d69" category="inline-image-macro-rx" type="image"></block></block>
   <block id="54f6cd3aa5e387ea27f8d46fcd265b0f" category="list-text">从“*组织*”页中，选择“*添加文件夹或项目*”。</block>
@@ -4403,24 +4395,17 @@ https://support.netapp.com
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">如果需要，请选择*添加成员*以指定应具有文件夹或项目访问权限的其他组织成员，然后选择角色。角色用于定义成员对文件夹或项目拥有的权限。</block>
   <block id="23b701226cc247c8895ac46e9cd633ab" category="inline-link-macro">了解预定义的IAM角色</block>
   <block id="8d9ad9660b2859a6d51b88d7e31b54d2" category="paragraph"><block ref="ac90d6f587d2b5ff3fb7bb93da707f89" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="13ea0232702fea363d7f4aaffe9ba8f1" category="paragraph">BlueXP  将创建文件夹或项目并关联指定的资源和成员。</block>
-  <block id="698adc884d432ec429a17995e5d34320" category="section-title">查看与文件夹或项目关联的资源和成员</block>
   <block id="903a5130798fef050adcb933e11d9330" category="paragraph">要验证您的资源是否已正确组织并可供组织中的适当成员访问、您可以查看哪些资源和成员与文件夹或项目相关联。</block>
   <block id="5d051468e96f24341fd4c6192e28f6e2" category="list-text">在*组织*页中，导航到表中的项目或文件夹，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*编辑文件夹*或*编辑项目*。</block>
   <block id="3f6ecf327501ffc3f265d065c39f55b6" category="inline-image-macro">组织页面的屏幕截图、显示在表中为项目选择操作菜单时的编辑项目选项。</block>
   <block id="f8731f9389f28c059bc2471d56363fcd" category="paragraph"><block ref="f8731f9389f28c059bc2471d56363fcd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="71aa242e147c147797dbd6f9f41b801c" category="list-text">在*Edit*页面上，查看有关关联资源和成员访问权限的详细信息：</block>
   <block id="a470fed0aa4603c3c8d460c4028252f1" category="list-text">选择*资源*以查看关联的资源。在表中，*Status*列标识与文件夹或项目关联的资源。</block>
   <block id="c2fdbd86cd719dffbb80161af27b0ec9" category="inline-image-macro">"编辑项目"页面的屏幕截图、其中显示了可与项目关联或解除关联的可用资源。</block>
   <block id="65381685a85e45e94ee53dbceff322ff" category="paragraph"><block ref="65381685a85e45e94ee53dbceff322ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b1db5558a176057dbfc6d02d715d5ee" category="list-text">选择*Access*以查看有权访问文件夹或项目的成员。</block>
   <block id="68f9e92246f3af16e2706083b8012f92" category="inline-image-macro">"编辑项目"页面的屏幕截图、其中显示了有权访问该项目的成员。</block>
   <block id="e537768f43901c1791172250c6c08115" category="paragraph"><block ref="e537768f43901c1791172250c6c08115" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9e17333b6af28e20b12b88031ec846a2" category="inline-xref">修改关联的资源</block>
-  <block id="d6b7bb304d4f265bbfd145a745c68eed" category="inline-xref">修改成员访问权限</block>
-  <block id="ba165dec55dcb067d55d8a2bbb32e738" category="paragraph">如果需要，您可以<block ref="fa5515ea77ce1b6a8dbcd79e2fc3ca20" category="inline-xref-macro-rx"></block>或<block ref="50dc3585d06eec07143d3dfe141dd3c9" category="inline-xref-macro-rx"></block>。</block>
   <block id="df3e2bd0fe2ced6b1bd1a55dad748146" category="section-title">修改与文件夹或项目关联的资源</block>
-  <block id="a6393b52680d3f8c4ed45e505093ff28" category="paragraph">您可以通过关联或解除关联资源来修改与文件夹或项目关联的资源。例如、您可能希望将某个资源与另一个项目相关联、因为该资源具有其他团队可以利用的容量。</block>
   <block id="0727cfa5c59f7b7114ac7246e406611c" category="list-text">在*Edit*页面上，选择*Res并且 选择*。</block>
   <block id="d66e1bd376f74d0703fc72b368b92cd7" category="paragraph">在表中，*Status*列标识与文件夹或项目关联的资源。</block>
   <block id="95e3e0534ba1d2354c42f80be5302007" category="list-text">选择要关联或解除关联的资源。</block>
@@ -4428,26 +4413,20 @@ https://support.netapp.com
   <block id="152ff89b1af4f8995e50a4b8f158db52" category="inline-image-macro">"编辑项目"页面的屏幕截图、其中显示了在您选择当前未关联的资源后可用的"关联资源"选项。</block>
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">选择*应用*</block>
-  <block id="2020ca2154e03d2358d7a18c7bd4e4ee" category="paragraph">BlueXP  将资源与文件夹或项目相关联。拥有该文件夹或项目权限的组织成员现在可以访问关联的资源。</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">修改成员对文件夹或项目的访问权限</block>
   <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">修改成员对文件夹或项目的访问权限、以确保正确的成员能够访问与文件夹或项目关联的资源。</block>
   <block id="91686a8345015e73c2baa91ffbe5ecd6" category="list-text">在*Edit*页面上，选择*Access*。</block>
-  <block id="a8781f46e241d03a4d2657a4d6f9a9b2" category="paragraph">BlueXP  显示有权访问文件夹或项目的成员列表。</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">修改成员访问权限：</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*添加成员*：选择要添加到文件夹或项目中的成员并为其分配角色。</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*更改成员的角色*：对于具有组织管理员以外角色的任何成员，请选择其现有角色，然后选择新角色。</block>
-  <block id="ec947f15d50d5e45f56ce8c956d581f0" category="paragraph">如果角色是在较高级别(文件夹或组织级别)提供的、则应考虑是在较低级别还是更高级别上提供。例如、如果您在文件夹级别分配了_Folder或项目管理员角色、则将项目级别的角色更改为更低级别的权限不会更改成员的权限。由于角色是在组织层次结构中继承的、因此该成员仍具有项目级别的管理员权限。</block>
   <block id="6774afc9942c8dcab2e06828e8f199cb" category="inline-link-macro">详细了解角色继承</block>
   <block id="8945f05b50a19ebe83ee85e629a09120" category="paragraph"><block ref="e2e11ae218588663759cb10a40da4876" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="961a7d705cef5925f92fdc2102dfe17d" category="list-text">*删除成员访问权限*：对于在您正在查看的文件夹或项目中定义了角色的成员，您可以删除其访问权限。</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">从成员页面管理权限</block>
-  <block id="e8600e476151636aa41417322bf8eecb" category="paragraph">如果成员访问权限是在更高级别(文件夹或组织级别)提供的、则在查看此文件夹或项目时、您无法删除成员访问权限。您需要切换到层次结构的该部分。或者，您也可以<block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>。</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">选择 * 应用 * 。</block>
-  <block id="d93816509ec30392c51369fac191445e" category="paragraph">BlueXP  将更新有权访问文件夹或项目的成员。</block>
   <block id="7f394af8afb3598061eec3ed6197180d" category="section-title">重命名文件夹或项目</block>
   <block id="f8ca84129dded5d2d753c0d0cc1ddea1" category="paragraph">如果需要、您可以更改文件夹和项目的名称。</block>
   <block id="ec4b36b02d2682a0624b6df463ee2789" category="list-text">在*Edit*页面上，输入新名称并选择*Apply*。</block>
-  <block id="d8f0fb037537a867a046608fffa33518" category="paragraph">BlueXP  将更新文件夹或项目的名称。</block>
   <block id="03b976867f3d4bd64ebf2dde3b296e4d" category="section-title">删除文件夹或项目</block>
   <block id="0a868630764e886d94bedbbfd727e6f4" category="paragraph">您可以删除不再需要的文件夹和项目。</block>
   <block id="11c35e27e51a047151d75fb0ede09570" category="inline-xref">了解如何解除资源关联</block>
@@ -4455,7 +4434,6 @@ https://support.netapp.com
   <block id="aa028ced940586c19c0a4e4d80b01fd3" category="list-text">文件夹不得包含任何子文件夹或项目。您需要先删除这些文件夹和项目。</block>
   <block id="fe7e8f43628806d12162357cbc6c575a" category="list-text">在*组织*页中，导航到表中的项目或文件夹，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*删除*。</block>
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">确认您要删除文件夹或项目。</block>
-  <block id="d8fe55db78c51b6f4ff410e959687f9f" category="paragraph">BlueXP  将删除文件夹或项目。组织成员无法再使用该文件夹或项目。</block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">管理组织的成员、以便在组织的资源层次结构的不同级别提供权限。</block>
   <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">添加BlueXP  IAM成员并管理其权限</block>
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">通过BlueXP  身份和访问管理(IAM)、您可以向组织添加成员、并在资源层次结构中为其分配一个或多个角色。_Role__包含一组权限、通过这些权限、成员可以在资源层次结构的特定级别执行特定操作。您可以关联新用户帐户和服务帐户、管理成员角色等。</block>
@@ -4546,13 +4524,7 @@ https://support.netapp.com
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">确认要从组织中删除该成员。</block>
   <block id="75e73ef4d25f9f9ea49c38a3bcb941e4" category="paragraph">BlueXP  将删除该成员。如果该成员再次登录到BlueXP 、他们将无法再访问您的BlueXP  组织。</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">通过将资源与特定项目和文件夹相关联来管理组织的资源层次结构。</block>
-  <block id="dacc6cf59d7e0f66f697ef48b807951c" category="paragraph">当您使用BlueXP  身份和访问管理(IAM)将成员与您的组织关联时、您可以在组织、文件夹或项目级别提供权限。要确保这些成员有权访问适当的资源、您需要通过将资源与特定项目和文件夹关联来管理组织的资源层次结构。资源是BlueXP  已管理的工作环境。</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">查看组织中的资源</block>
-  <block id="8271e2759587670b87881a1e083e0a52" category="paragraph">要开始管理资源层次结构、您应了解与您的组织关联的资源。</block>
-  <block id="95c9ea5440ca8b54a3d3dae8e1d1f492" category="list-text">选择*资源*。</block>
-  <block id="90eb4a50a957d74015adf452111a7dd5" category="paragraph">与您的组织关联的资源显示在*资源*表中。</block>
-  <block id="573f6fc7f3c18fb7721ddccfe2520412" category="inline-xref">搜索和筛选表的内容</block>
-  <block id="74a216516ae6f979fa921c96dd5057a8" category="paragraph">要查找特定资源，您可以<block ref="2fd3d11c7689796e93f3888013589416" category="inline-xref-macro-rx"></block>。</block>
   <block id="7e2927a58abcc62c9eb5c28962dc9573" category="paragraph">找到要查找的资源后、您可以完成以下任一操作：</block>
   <block id="d488db7f816284f6712caf2d76eb5169" category="inline-xref">查看与资源关联的文件夹和项目</block>
   <block id="ea450edd18061a7cc42c1dc5a73807e9" category="list-text"><block ref="725a161a6f11aca02e0e25e2ae9628c0" category="inline-xref-macro-rx"></block></block>
@@ -4560,25 +4532,19 @@ https://support.netapp.com
   <block id="e43736ff73ca6844bfafd7ef8dc58bad" category="list-text"><block ref="7d9c5683f2b3adedfbcf34a695515c4d" category="inline-xref-macro-rx"></block></block>
   <block id="b6af3f20458abefb8743e926f21c0677" category="inline-xref">从文件夹或项目中删除资源</block>
   <block id="1797f1c38c97687b6136c8e69786e0a2" category="list-text"><block ref="bb02d809bee1364f03f71b60d989a04d" category="inline-xref-macro-rx"></block></block>
-  <block id="a29510a9013088f354480f508c907c2e" category="section-title">查找组织中的特定资源</block>
-  <block id="1acca7d7f6a7f4515e946bae053cbc27" category="paragraph">如果您的组织中有大量资源、则可以使用搜索和筛选选项来查找特定资源。</block>
-  <block id="a89524edc025c255e3e415e871e88e5d" category="list-text">从“*资源*”页面中，选择“*高级搜索和筛选*”。</block>
   <block id="3d1bc41342a56d581edf9d1765f01a0b" category="list-text">使用任何可用选项查找您要查找的资源：</block>
   <block id="48ca2619b5dca392dc3969df94469cf3" category="list-text">*按资源名称搜索*：输入文本字符串并选择*Add*。</block>
   <block id="b2efca9e0863336ee0d7aa6af1771c24" category="list-text">*平台*：选择一个或多个平台、例如Amazon Web Services。</block>
   <block id="e6d1209910233e075e359b7fdb3892a8" category="list-text">*资源*：选择一个或多个资源，如Cloud Volumes ONTAP。</block>
   <block id="4a42d7a28e04f8a9b2270b8906ae904c" category="list-text">*组织、文件夹或项目*：选择整个组织、特定文件夹或特定项目。</block>
   <block id="fb3b214ed2681d71df95f0a2e1ad7ee8" category="list-text">选择*搜索*。</block>
-  <block id="de1dcc903e0def1031803a58221b8303" category="paragraph">资源表的内容将刷新、以显示与您的搜索和筛选选择匹配的资源。</block>
   <block id="6b979ebd5780c7df2c462682bbe1749e" category="section-title">将资源与文件夹和项目相关联</block>
-  <block id="6f4141394827d668d7827055e97c0bb9" category="paragraph">如果要使某个资源可供组织中的其他文件夹或项目使用、则需要在该文件夹或项目与该资源之间创建关联。</block>
   <block id="123b63ad16a2eb2123e4d954ed9b410d" category="inline-link-macro">了解有关资源的信息、包括何时将资源与文件夹相关联</block>
   <block id="aa17a9cf1b2a8bd01a901a0eb2e99eee" category="paragraph">您应了解资源关联的工作原理。<block ref="a1afb03a32649c13d619ffef925eefd6" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="0ba76e0dec90ea0767d0bea623254565" category="list-text">从*Resources*页中，导航到表中的资源，选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>，然后选择*Associate to folder or Projects*。</block>
   <block id="40604a706a532d51e9c0e2942f20bbbd" category="list-text">要关联其他文件夹或项目，请选择*添加文件夹或项目*，然后选择文件夹或项目。</block>
   <block id="227d0042933a910c506c0345c27ef64f" category="paragraph">请注意、您只能从具有管理员权限的文件夹和项目中进行选择。</block>
   <block id="5c4e241b983cce10c131e9a51dc2f2e5" category="list-text">选择*关联资源*。</block>
-  <block id="71e4a1d057d7694dd5ea8710ca5d07a9" category="paragraph">BlueXP  会将资源与选定的文件夹和项目相关联。</block>
   <block id="f487d6f4a22314a7fc4b480b252f4981" category="list-text">如果将资源与项目相关联、则对这些项目具有权限的成员现在可以在BlueXP  中访问该资源。</block>
   <block id="6330741dc930a8e0cff70d2bbd0c2a2d" category="inline-link-macro">了解如何将资源与文件夹相关联</block>
   <block id="0764009847ea7e98389494f95f4d739e" category="list-text">如果将资源与文件夹相关联、则_Folder或项目admin_现在可以从BlueXP  IAM中访问资源。<block ref="a53b921d2a913725c8b4e28a24824743" category="inline-link-macro-rx"></block>(英文)</block>
@@ -4586,7 +4552,6 @@ https://support.netapp.com
   <block id="3a04b19767b9262d748f5bc93b4d433d" category="section-title">查看与资源关联的文件夹和项目</block>
   <block id="012ed1b51c49e99d9e7c8472bbf96c42" category="paragraph">要确定某个资源在组织层次结构中的可用位置、您可以查看与该资源关联的文件夹和项目。</block>
   <block id="ae35c12a9d0798db618751302c4603bd" category="list-text">在*Resources*页面中，导航到表中的某个资源，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*View DEGRAMENTS*。</block>
-  <block id="147b2b655dda25ecac27a2d7381599e4" category="paragraph">BlueXP  将显示与资源关联的文件夹和项目。</block>
   <block id="0d8f80667cd7bc86a6f6ea26c12d18b9" category="paragraph">以下示例显示了与一个项目关联的资源。</block>
   <block id="a46cbe82e9adff7ecc82d6eadb58aa97" category="inline-image-macro">资源详细信息页面的屏幕截图、其中显示了与组织直接下的项目关联的资源。</block>
   <block id="7cadbb5f400f149f938a910df5c5cb0d" category="paragraph"><block ref="7cadbb5f400f149f938a910df5c5cb0d" category="inline-image-macro-rx" type="image"></block></block>
@@ -4601,7 +4566,6 @@ https://support.netapp.com
   <block id="7f6be6d71b75090da3f7888443a6d4f8" category="paragraph">如果要从整个组织中删除已发现的资源、则需要从BlueXP  画布中删除工作环境。</block>
   <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">对于要删除其资源的文件夹或项目、请选择<block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">通过选择*Delete*确认要删除关联。</block>
-  <block id="4cc93df03851cba78d596a3fa944ce1a" category="paragraph">BlueXP  将删除此关联。成员无法再从该文件夹或项目访问资源。</block>
   <block id="08599f4c51d7b3ffe063f2612e7c4f5e" category="summary">如果需要、您可以更改BlueXP  组织的名称。</block>
   <block id="3b2af1e86badf70e10ee3dd7bd601881" category="paragraph">如果需要、您可以从BlueXP  身份和访问管理(Identity and Access Management、IAM)中更改BlueXP  组织的名称。组织名称显示在BlueXP  基于Web的控制台顶部和IAM页面中。</block>
   <block id="8bf336ab115156eac88db2970ab0e70d" category="list-text">从*组织*页面导航到表中的第一行，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*编辑组织*。</block>
@@ -4965,4 +4929,27 @@ https://support.netapp.com
   <block id="815ee4222e11b0d1d149ad24cabecc80" category="paragraph">如果Connector位于商业区域或主权区域、则可以在两组端点之间进行选择：</block>
   <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">当Connector安装在商业区域或主权区域时、获取Connector升级所需的映像。</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">2024年12月16日</block>
+  <block id="67f44df0b66677509cb8a85769f34ee3" category="paragraph">以下视频显示了从AWS Marketplace订阅BlueXP  的步骤：</block>
+  <block id="96be219c15e8fd2a25d382cfbe8aba22" category="list-text">选择一组凭据的操作菜单，然后选择*Configure订阅*。</block>
+  <block id="f9ffa76e11dc9be1f06d413d4c1da4ed" category="list-text">要将凭据与现有订阅相关联，请从下拉列表中选择订阅，然后选择*Config*。</block>
+  <block id="e7225dcfe470884c10cd0ab60d4ad033" category="section-title">相关信息</block>
+  <block id="ff462988ef2bf728297fe5ed85ddc08d" category="section-title">配置AWS订阅</block>
+  <block id="b8da1935866ccfc3044b85a99232dc4f" category="paragraph">将AWS凭据添加到BlueXP  后、您可以使用这些凭据配置AWS Marketplace订阅。通过订阅、您可以按每小时费率(PAYGO)或使用年度合同为Cloud Volumes ONTAP 付费、并使用其他BlueXP服务。</block>
+  <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">在以下两种情况下、您可以在向BlueXP  添加凭据后配置AWS Marketplace订阅：</block>
+  <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">最初向BlueXP  添加凭据时、您未配置订阅。</block>
+  <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">您希望更改配置为AWS凭据的AWS Marketplace订阅。</block>
+  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">您的组织的资源层次结构的深度可向下划分为7个级别。因此、您可以创建6个级别的嵌套文件夹。最后一个嵌套文件夹可以包括层次结构第七级的项目。</block>
+  <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">下图说明了组织资源层次结构的最大深度：</block>
+  <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">查看与文件夹或项目关联的资源</block>
+  <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">在*Edit*页上，您可以通过展开*Resores*或*Access*部分来查看有关选定文件夹或项目的详细信息。</block>
+  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">您可以通过关联或解除关联资源来修改与文件夹或项目关联的资源。例如、您可能希望将某个资源与另一个项目相关联、因为该资源具有其他团队可以利用的容量。将资源与文件夹或项目相关联后、对该文件夹或项目具有权限的组织成员可以访问关联的资源。</block>
+  <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">查看与文件夹或项目关联的成员</block>
+  <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">如果成员访问权限是在较高级别(文件夹或组织级别)提供的、则在查看较低级别的文件夹或项目时、无法删除或更改成员访问权限。您需要切换到层次结构的该部分、并在此更新成员的权限。或者，您也可以<block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>。</block>
+  <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">在*Edit*页面上，选择*Access*以查看有权访问选定文件夹或项目的成员列表。</block>
+  <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">当您使用BlueXP  身份和访问管理(IAM)将成员与您的组织关联时、您可以在组织、文件夹或项目级别提供权限。要确保这些成员有权访问适当的资源、您需要通过将资源与特定项目和文件夹关联来管理组织的资源层次结构。_resource _是BlueXP  已管理或已知的存储资源。</block>
+  <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">您可以查看与您的组织关联的已发现和未发现资源。未发现的资源通常是通过数字顾问已知的存储资源、您尚未将其添加为工作环境。</block>
+  <block id="7e797bc936bc19649c91fa90509a82a9" category="admonition">Amazon FSx for NetApp ONTAP资源不会显示在IAM资源页面上、因为您无法将其与IAM角色关联。您可以在相应的画布上或从工作负载中查看这些资源。</block>
+  <block id="3135ebe2cc4398e8de27fc39c6eb605e" category="list-text">选择*资源*以查看"资源"页面。</block>
+  <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">选择*高级搜索和筛选*。</block>
+  <block id="f7e276f42cb40dbaba008d93e6aff422" category="paragraph">如果要使某个资源可供组织中的文件夹或项目使用、则需要在该文件夹或项目与该资源之间创建关联。</block>
 </blocks>

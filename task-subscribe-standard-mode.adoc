@@ -31,16 +31,20 @@ summary: 从云提供商的市场订阅BlueXP、按小时费率或按年合同�
 ====
 .AWS
 --
+以下视频显示了从AWS Marketplace订阅BlueXP  的步骤：
+
+.从AWS Marketplace订阅BlueXP
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
-. 选择一组凭据的操作菜单，然后选择*关联订阅*。
+. 选择一组凭据的操作菜单，然后选择*Configure订阅*。
 +
 您必须选择与连接器关联的凭据。您不能将商城订阅与BlueXP关联的凭据关联。
 
 +
 image:screenshot_associate_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
 
-. 要将凭据与现有订阅关联、请从下拉列表中选择此订阅、然后选择*关联*。
+. 要将凭据与现有订阅相关联，请从下拉列表中选择订阅，然后选择*Config*。
 . 要将凭据与新订阅关联、请选择*添加订阅>继续*、然后按照AWS Marketplace中的步骤进行操作：
 +
 .. 选择*查看购买选项*。
@@ -60,12 +64,6 @@ BlueXP  会将组织或帐户中所有凭据的现有订阅替换为此新订�
 对于所有其他组织或帐户、您需要重复这些步骤来手动关联订阅。
 
 *** 选择 * 保存 * 。
-+
-以下视频显示了从AWS Marketplace订阅的步骤：
-
-+
-.从AWS Marketplace订阅BlueXP
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 

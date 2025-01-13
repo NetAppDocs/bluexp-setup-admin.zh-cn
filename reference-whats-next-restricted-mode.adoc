@@ -27,5 +27,5 @@ summary: 在受限模式下启动和运行BlueXP后、您可以开始使用受�
 * https://docs.netapp.com/us-en/bluexp-replication/index.html["复制文档"^]
 
 
-.相关链接
+.相关信息
 link:concept-modes.html["BlueXP部署模式"]
