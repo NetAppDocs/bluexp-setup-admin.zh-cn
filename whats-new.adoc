@@ -18,6 +18,40 @@ summary: 了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器�
 
 
 
+== 2025年1月13日
+
+
+
+=== 连接器3.9.48
+
+此版本的BlueXP Connector包括一些小的安全改进和错误修复。
+
+目前、3.9.48版本可用于标准模式和受限模式。
+
+
+
+=== BlueXP  身份和访问管理
+
+* 此时、"ResResResus"页面将显示未发现的资源。未发现资源是BlueXP  已知但您尚未为创建工作环境的存储资源。例如、在Digital Advisor中显示的尚未具有工作环境的资源将在"资源"页面上显示为未发现的资源。
+* Amazon FSx for NetApp ONTAP资源不会显示在IAM资源页面上、因为您无法将其与IAM角色关联。您可以在相应的画布上或从工作负载中查看这些资源。
+
+
+
+
+=== 为其他BlueXP  服务创建支持案例
+
+在注册BlueXP  以获得支持后、您可以直接从BlueXP  基于Web的控制台创建支持案例。创建案例时、您需要选择与问题关联的服务。
+
+从此版本开始、您现在可以创建支持案例并将其与其他BlueXP  服务关联起来：
+
+* BlueXP灾难恢复
+* BlueXP勒索软件保护
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["了解有关创建支持案例的更多信息"](英文)
+
+
+
 == 2024年12月16日
 
 

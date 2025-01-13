@@ -4948,8 +4948,17 @@ https://support.netapp.com
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">在*Edit*页面上，选择*Access*以查看有权访问选定文件夹或项目的成员列表。</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">当您使用BlueXP  身份和访问管理(IAM)将成员与您的组织关联时、您可以在组织、文件夹或项目级别提供权限。要确保这些成员有权访问适当的资源、您需要通过将资源与特定项目和文件夹关联来管理组织的资源层次结构。_resource _是BlueXP  已管理或已知的存储资源。</block>
   <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">您可以查看与您的组织关联的已发现和未发现资源。未发现的资源通常是通过数字顾问已知的存储资源、您尚未将其添加为工作环境。</block>
-  <block id="7e797bc936bc19649c91fa90509a82a9" category="admonition">Amazon FSx for NetApp ONTAP资源不会显示在IAM资源页面上、因为您无法将其与IAM角色关联。您可以在相应的画布上或从工作负载中查看这些资源。</block>
+  <block id="7e797bc936bc19649c91fa90509a82a9" category="list-text">Amazon FSx for NetApp ONTAP资源不会显示在IAM资源页面上、因为您无法将其与IAM角色关联。您可以在相应的画布上或从工作负载中查看这些资源。</block>
   <block id="3135ebe2cc4398e8de27fc39c6eb605e" category="list-text">选择*资源*以查看"资源"页面。</block>
   <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">选择*高级搜索和筛选*。</block>
   <block id="f7e276f42cb40dbaba008d93e6aff422" category="paragraph">如果要使某个资源可供组织中的文件夹或项目使用、则需要在该文件夹或项目与该资源之间创建关联。</block>
+  <block id="19cb29a89a6fbf6d87da92950ea8482c" category="doc">连接器3.9.48</block>
+  <block id="4d83c70b301d09d322c3d604e361a689" category="paragraph">目前、3.9.48版本可用于标准模式和受限模式。</block>
+  <block id="a8afa3393166930c13f7426758547bca" category="list-text">此时、"ResResResus"页面将显示未发现的资源。未发现资源是BlueXP  已知但您尚未为创建工作环境的存储资源。例如、在Digital Advisor中显示的尚未具有工作环境的资源将在"资源"页面上显示为未发现的资源。</block>
+  <block id="441419ddc3a341f3081b481a3084eef7" category="section-title">为其他BlueXP  服务创建支持案例</block>
+  <block id="ac9424bee543a4a40d453b3ffa72ca64" category="paragraph">在注册BlueXP  以获得支持后、您可以直接从BlueXP  基于Web的控制台创建支持案例。创建案例时、您需要选择与问题关联的服务。</block>
+  <block id="c16acacf37243c052df936e1994e4488" category="paragraph">从此版本开始、您现在可以创建支持案例并将其与其他BlueXP  服务关联起来：</block>
+  <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">了解有关创建支持案例的更多信息</block>
+  <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>(英文)</block>
+  <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">2025年1月13日</block>
 </blocks>
