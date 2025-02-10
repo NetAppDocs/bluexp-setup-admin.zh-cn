@@ -14,9 +14,9 @@ summary: 通过添加用户、创建服务帐户以实现自动化以及添加�
 
 
 [role="lead"]
-在受限模式或私用模式下使用BlueXP  时、您将使用BlueXP  account_来管理用户和组织资源。创建帐户时、该帐户仅包含一个管理员用户和一个工作区。您可以通过添加用户、创建服务帐户以实现自动化以及添加工作空间等方式来管理帐户、以满足您的需求。
+在私有模式下使用BlueXP  时、您将使用_ BlueXP  account_来管理用户和组织资源。创建帐户时、该帐户仅包含一个管理员用户和一个工作区。您可以通过添加用户、创建服务帐户以实现自动化以及添加工作空间等方式来管理帐户、以满足您的需求。
 
-如果您在标准模式下使用BlueXP 、则没有BlueXP  帐户。而是使用BlueXP  身份和访问管理(IAM)管理_ BlueXP  organization _。
+如果您在标准模式或受限模式下使用BlueXP 、则没有BlueXP  帐户。而是使用BlueXP  身份和访问管理(IAM)管理_ BlueXP  organization _。
 
 * link:concept-identity-and-access-management.html["了解BlueXP  IAM"]
 * link:concept-modes.html["了解BlueXP部署模式"]

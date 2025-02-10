@@ -40,14 +40,6 @@ NOTE: Amazon FSx for NetApp ONTAP资源不会显示在IAM资源页面上、因�
 . 选择*搜索*。
 
 
-.下一步是什么？
-找到要查找的资源后、您可以完成以下任一操作：
-
-* <<associate-resource,将资源与其他文件夹和项目相关联>>
-* <<view-folders-and-projects,查看与资源关联的文件夹和项目>>
-* <<remove-resource,从文件夹或项目中删除资源>>
-
-
 
 
 == 将资源与文件夹和项目相关联
@@ -83,6 +75,9 @@ link:task-iam-associate-connectors.html["了解如何将Connector与文件夹或
 
 要确定某个资源在组织层次结构中的可用位置、您可以查看与该资源关联的文件夹和项目。
 
+
+NOTE: 如果需要确定哪些组织成员有权访问资源，可以link:task-iam-manage-folders-projects.html#view-associated-resources-members["查看有权访问与资源关联的文件夹和项目的成员"]。
+
 .步骤
 . 在*Resources*页面中，导航到表中的某个资源，选择，然后选择image:icon-action.png["一个由三个并排点组成的图标"]*View DEGRAMENTS*。
 
@@ -91,11 +86,8 @@ link:task-iam-associate-connectors.html["了解如何将Connector与文件夹或
 
 image:screenshot-iam-resource-details.png["资源详细信息页面的屏幕截图、其中显示了与组织直接下的项目关联的资源。"]
 
-.下一步是什么？
-* 您可以<<associate-resource,将资源与其他项目或文件夹相关联>>。
-* 您可以<<remove-resource,从特定文件夹或项目中删除资源>>。
-* 如果需要确定哪些组织成员有权访问资源，可以link:task-iam-manage-folders-projects.html#view-associated-resources-members["查看有权访问与资源关联的文件夹和项目的成员"]。
 
+NOTE: 如果需要确定哪些组织成员有权访问资源，可以link:task-iam-manage-folders-projects.html#view-associated-resources-members["查看有权访问与资源关联的文件夹和项目的成员"]。
 
 
 
@@ -103,8 +95,8 @@ image:screenshot-iam-resource-details.png["资源详细信息页面的屏幕截�
 
 要从文件夹或项目中删除资源，需要删除文件夹或项目与资源之间的关联。删除关联后、组织成员将无法再管理文件夹或项目中的资源。
 
-.关于此任务
-如果要从整个组织中删除已发现的资源、则需要从BlueXP  画布中删除工作环境。
+
+NOTE: 如果要从整个组织中删除已发现的资源、则需要从BlueXP  画布中删除工作环境。
 
 .步骤
 . 在*Resources*页面中，导航到表中的某个资源，选择，然后选择image:icon-action.png["一个由三个并排点组成的图标"]*View DEGRAMENTS*。

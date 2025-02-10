@@ -14,11 +14,11 @@ summary: '通过BlueXP  身份和访问管理(IAM)、您可以控制对组织�
 
 
 [role="lead"]
-通过BlueXP  身份和访问管理(IAM)、您可以组织和控制对NetApp资源的访问。您可以根据组织的层次结构来组织资源。例如、您可以按地理位置、站点或业务单位来组织资源。然后、您可以将权限分配给层次结构特定部分的成员、从而阻止访问层次结构其他部分中的资源。
+通过BlueXP  身份和访问管理(IAM)、您可以组织和控制对NetApp资源的访问。您可以根据组织的层次结构来组织资源。例如、您可以按地理位置、站点或业务单位来组织资源。然后、您可以将pIAM角色分配给层次结构特定部分的成员、从而阻止访问层次结构其他部分中的资源。
 
 BlueXP  IAM取代并增强了BlueXP  帐户先前提供的功能。link:whats-new.html#iam["详细了解BlueXP  IAM的推出"](英文)
 
-在标准模式下使用BlueXP  时、支持BlueXP  IAM。如果在受限模式或私用模式下使用BlueXP 、则使用BlueXP _account_来管理用户和资源。
+在标准模式和受限模式下使用BlueXP  时、支持BlueXP  IAM。如果您在私有模式下使用BlueXP 、则使用BlueXP _account_来管理用户和资源。
 
 * link:concept-netapp-accounts.html["了解有关BlueXP帐户的信息"]
 * link:concept-modes.html["了解BlueXP部署模式"]

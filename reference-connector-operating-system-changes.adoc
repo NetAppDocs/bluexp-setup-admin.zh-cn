@@ -92,14 +92,7 @@ summary: 当我们在特定Linux操作系统上添加和删除对Connector的支
 
 请注意以下有关对RHEL 8和9的支持的信息：
 
-限制::
-+
---
-* 如果Connector安装在RHEL 8或9主机上、则BlueXP备份和恢复存在与单文件还原和勒索软件扫描相关的限制。有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["BlueXP备份和恢复的已知限制"^]
-* 如果在内部的RHEL 8或9主机上安装Connector、则支持BlueXP分类。如果RHEL 8或9主机位于AWS、Azure或Google Cloud中、则不支持此功能。
-
-
---
+限制:: 如果在内部的RHEL 8或9主机上安装Connector、则支持BlueXP分类。如果RHEL 8或9主机位于AWS、Azure或Google Cloud中、则不支持此功能。
 容器流程编排工具:: 在RHEL 8或9主机上安装Connector时、需要使用Podman作为容器流程编排工具。RHEL 8和9不支持Docker引擎。
 部署模式:: 在标准模式、受限模式和专用模式下使用BlueXP时、支持RHEL 8和9。
 支持的连接器版本:: 从以下版本的Connector开始、支持RHEL 8和9：

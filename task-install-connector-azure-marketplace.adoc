@@ -156,9 +156,14 @@ https://mysupport.netapp.com
 
 创建Connector时、您需要选择符合以下要求的虚拟机类型。
 
-CPU:: 8 个核心或 8 个 vCPU
-RAM:: 32 GB
+主机可以是满足这些大小要求的任何架构。
+
+* * CPU：* 8核或8个vCPU
+* * RAM：* 32 GB
++
 Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。建议使用Standard"(标准)_D8s_v3。
+
+
 
 
 

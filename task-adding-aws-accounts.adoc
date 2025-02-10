@@ -248,7 +248,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 您必须选择与连接器关联的凭据。您不能将商城订阅与BlueXP关联的凭据关联。
 
 +
-image:screenshot_associate_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
+image:screenshot_aws_configure_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
 
 . 要将凭据与现有订阅相关联，请从下拉列表中选择订阅，然后选择*Config*。
 . 要将凭据与新订阅关联、请选择*添加订阅>继续*、然后按照AWS Marketplace中的步骤进行操作：

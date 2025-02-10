@@ -26,11 +26,8 @@ summary: 您可以通过关联市场订阅并对订阅过程进行故障排除�
 
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
-. 选择一组凭据的操作菜单，然后选择*关联订阅*。
-+
-image:screenshot_gcp_add_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
-
-. 要将凭据与现有订阅关联、请从下拉列表中选择一个Google Cloud项目和订阅、然后选择*关联*。
+. 选择一组凭据的操作菜单，然后选择*Configure订阅*。+需要新屏幕截图(TS)image:screenshot_gcp_add_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
+. 要使用选定凭据配置现有订阅、请从下拉列表中选择Google Cloud项目和订阅、然后选择*配置*。
 +
 image:screenshot_gcp_associate.gif["为 Google Cloud 凭据选择的 Google Cloud 项目和订阅的屏幕截图。"]
 

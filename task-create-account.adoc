@@ -14,9 +14,9 @@ summary: 在受限模式或专用模式下设置BlueXP  时、系统会提示�
 
 
 [role="lead"]
-在受限模式或专用模式下设置BlueXP  时、系统会提示您创建BlueXP  account_、以便于管理用户和组织资源。此帐户可能是您所需的全部帐户、但如果您的企业需要多个帐户、则需要使用租户API创建其他帐户。
+在私有模式下设置BlueXP  时、系统会提示您创建BlueXP  account_、以便于管理用户和组织资源。此帐户可能是您所需的全部帐户、但如果您的企业需要多个帐户、则需要使用租户API创建其他帐户。
 
-如果您在标准模式下使用BlueXP 、则没有BlueXP  帐户。而是使用BlueXP  身份和访问管理(IAM)来管理组织。link:concept-identity-and-access-management.html["了解BlueXP  IAM"](英文)
+如果您在标准模式或受限模式下使用BlueXP 、则没有BlueXP  帐户。而是使用BlueXP  身份和访问管理(IAM)来管理组织。link:concept-identity-and-access-management.html["了解BlueXP  IAM"](英文)
 
 .步骤
 . 使用以下API调用创建一个额外的BlueXP帐户：
