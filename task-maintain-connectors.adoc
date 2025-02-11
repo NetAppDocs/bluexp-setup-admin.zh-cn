@@ -33,10 +33,8 @@ TIP: 如果您已有Connector、则应注意 link:reference-connector-operating-
 
 CPU和RAM要求如下：
 
-主机可以是满足这些大小要求的任何架构。
-
-* * CPU：* 8核或8个vCPU
-* * RAM：* 32 GB
+CPU:: 8 个核心或 8 个 vCPU
+RAM:: 32 GB
 
 
 link:reference-connector-default-config.html["了解Connector的默认配置"]。

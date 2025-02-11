@@ -48,15 +48,6 @@ link:concept-modes.html["了解受限模式的工作原理"]。
 从AWS或Azure Marketplace部署Connector时、此映像包含所需的操作系统和软件组件。您只需选择满足CPU和RAM要求的实例类型即可。
 
 专用主机:: 与其他应用程序共享的主机不支持此连接器。主机必须是专用主机。
-+
---
-主机可以是满足以下大小要求的任何架构。
-
-* * CPU：* 8核或8个vCPU
-* * RAM：* 32 GB
-
-
---
 虚拟机管理程序:: 需要一个经过认证可运行受支持操作系统的裸机或托管虚拟机管理程序。
 [[Podman-versions]]操作系统和容器要求:: 在标准模式或受限模式下使用BlueXP  时、BlueXP  支持将连接器与以下操作系统结合使用。在安装Connector之前、需要使用容器流程编排工具。
 +
@@ -116,13 +107,8 @@ Docker 23.0.6 26.0.0
 
 
 --
-
-
-主机可以是满足这些大小要求的任何架构。
-
-* * CPU：* 8核或8个vCPU
-* * RAM：* 32 GB
-+
+CPU:: 8 个核心或 8 个 vCPU
+RAM:: 32 GB
 AWS EC2 实例类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用t3.2倍大。
 Azure 虚拟机大小:: 满足上述 CPU 和 RAM 要求的实例类型。建议使用Standard"(标准)_D8s_v3。
 Google Cloud计算机类型:: 满足上述 CPU 和 RAM 要求的实例类型。我们建议使用n2-standard-8。
@@ -143,8 +129,6 @@ BlueXP  使用 `/opt`安装 `/opt/application/netapp`目录及其内容。
 BlueXP需要中的此空间 `/var` 因为Docker或Podman的架构设计是为了在此目录中创建容器。具体来说、他们将在中创建容器 `/var/lib/containers/storage` 目录。外部挂载或符号链接不适用于此空间。
 
 --
-
-
 
 
 

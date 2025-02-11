@@ -4764,10 +4764,6 @@ https://support.netapp.com
   <block id="c16acacf37243c052df936e1994e4488" category="paragraph">从此版本开始、您现在可以创建支持案例并将其与其他BlueXP  服务关联起来：</block>
   <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">了解有关创建支持案例的更多信息</block>
   <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>(英文)</block>
-  <block id="c933dbf26cb872c859f8dbb81999eff8" category="paragraph">主机可以是满足以下大小要求的任何架构。</block>
-  <block id="9fc9c9f38ac896bc2bd0e275904e2b5d" category="list-text">* CPU：* 8核或8个vCPU</block>
-  <block id="35116a9bfaf82c27806c3c9614e3380e" category="list-text">* RAM：* 32 GB</block>
-  <block id="c0317bb7a0bafdead64d85dfbc6db80e" category="paragraph">主机可以是满足这些大小要求的任何架构。</block>
   <block id="2b67fdb5c1c9190b50c83306e4021a2c" category="paragraph"><block ref="2b67fdb5c1c9190b50c83306e4021a2c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e52d2dcc592495f70c82c59eee98424f" category="list-text">选择一组凭据的操作菜单，然后选择*Configure订阅*。+需要新屏幕截图(TS)<block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ef5d79e3ae5671ca28e5f6e3b02eed27" category="list-text">要使用选定凭据配置现有订阅、请从下拉列表中选择Google Cloud项目和订阅、然后选择*配置*。</block>
@@ -4776,8 +4772,6 @@ https://support.netapp.com
   <block id="36cef198e9fac4b4a194f5e01017b8d1" category="list-text">支持为用户分配多个角色。</block>
   <block id="6708a31732ccaf29d9ba72b524255e3e" category="list-text">现在、角色可与以下三个类别之一相关联：平台、应用程序和数据服务。</block>
   <block id="035261365b324f2942fd56c2f10f6ed5" category="inline-link">阅读有关IAM角色的信息</block>
-  <block id="ff73dba782f434133f0fc81382cc8398" category="list-text">有两个新角色与应用程序类别关联：存储查看器和存储管理员。<block ref="ac81447e1825c80c6c47ed7167f706b3" category="inline-link-rx"></block></block>
-  <block id="67012c1335c677ff94cd2d777a3c7213" category="list-text">现在、IAM在BlueXP  受限模式下使用</block>
   <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">BlueXP  身份和访问管理(IAM)现在在受限模式下使用。</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  身份和访问管理(IAM)是一种资源和访问管理模式、它可以取代和增强BlueXP  帐户在标准和受限模式下使用BlueXP  时先前提供的功能。</block>
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">BlueXP  IAM如何影响受限模式下的现有帐户</block>
@@ -4978,4 +4972,11 @@ https://support.netapp.com
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Azure NetApp Files 增强功能</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">2021年2月9日</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">支持信息板改进</block>
+  <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
+  <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 个核心或 8 个 vCPU</block>
+  <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
+  <block id="911ede8df5585598c294830dafe276fa" category="list-text">32 GB</block>
+  <block id="3a85c700de68ae35770a964c115eb7cb" category="list-title">其他IAM增强功能</block>
+  <block id="afa69926e5d0001214117331ecb2e622" category="list-text">有两个新角色与应用程序类别关联：存储查看器和存储管理员。</block>
+  <block id="df90fe85a844ffa5c11d99e37754376f" category="paragraph"><block ref="df90fe85a844ffa5c11d99e37754376f" category="inline-link-rx"></block></block>
 </blocks>

@@ -16,9 +16,6 @@
 
 * 支持为用户分配多个角色。
 * 现在、角色将与以下两个类别之一相关联：平台和数据服务。
-* 现在、角色可与以下三个类别之一相关联：平台、应用程序和数据服务。
-* 有两个新角色与应用程序类别关联：存储查看器和存储管理员。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["阅读有关IAM角色的信息"]
-* 现在、IAM在BlueXP  受限模式下使用
 
 
 
@@ -77,3 +74,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 .支持的部署模式
 在标准和受限模式下使用BlueXP  时、支持BlueXP  IAM。如果您在私有模式下使用BlueXP 、则可以继续使用BlueXP _account_来管理工作空间、用户和资源。
+
+.其他IAM增强功能
+* 支持为用户分配多个角色。
+* 现在、角色可与以下三个类别之一相关联：平台、应用程序和数据服务。
+* 有两个新角色与应用程序类别关联：存储查看器和存储管理员。
++
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["阅读有关IAM角色的信息"]
+
+
