@@ -1405,8 +1405,6 @@
   <block id="0a6b76c04095167ad3b2e08901195ca3" category="list-text">现在、以下Google Cloud地区支持Connector：</block>
   <block id="db760e7471192daa123eed31bfba312d" category="list-text">哥伦布(美国-东5)</block>
   <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">达拉斯(美国-南1)</block>
-  <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">查看支持的区域的完整列表</block>
-  <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
   <block id="05263fcc56b50972b2dfe4be20698328" category="list-text">当您从BlueXP或云提供商的市场部署Connector时、Ubuntu 22.04是适用于Connector的新操作系统。</block>
   <block id="9ab8f4fa1e0839b1101d04c9cd4e1bae" category="paragraph">您还可以选择在运行Ubuntu 22.04的自己的Linux主机上手动安装Connector。</block>
   <block id="dfcaca26de191f6219819bb7091c9ebe" category="list-text">新的Connector部署不再支持Red Hat Enterprise Linux 8.6和8.7。</block>
@@ -1524,7 +1522,6 @@
   <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">巴黎(欧洲-西部9)</block>
   <block id="eb4cae07e62b958e999eaa4c0d9b254b" category="list-text">华沙(欧洲中部2)</block>
   <block id="05f08f9410eed79855c8ade92149a276" category="list-text">现在、Azure West US 3区域支持Connector。</block>
-  <block id="075b5f25465b6b108fb916bce6a2219f" category="paragraph"><block ref="075b5f25465b6b108fb916bce6a2219f" category="inline-link-rx"></block></block>
   <block id="d9815601b56ec3084872748d000734dd" category="paragraph"><block ref="d9815601b56ec3084872748d000734dd" category="inline-link-rx"></block></block>
   <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">当新用户注册到 Cloud Central 时，他们现在可以选择 *使用 NetApp 帐号* 登录选项以使用其 NetApp 支持站点凭据登录。这是输入电子邮件地址和密码的替代方法。</block>
   <block id="f27b2370dfece83354cbb560bf251abc" category="admonition">使用电子邮件地址和密码的现有登录需要继续使用该登录方法。注册的新用户可以使用"Log in with NetApp"选项。</block>
@@ -4982,4 +4979,5 @@ https://support.netapp.com
   <block id="69ac82a1779b2cc7d528017241f5324f" category="paragraph">主机可以是满足以下大小要求的任何架构：</block>
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU：8个核心或8个vCPU</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM ： 32 GB</block>
+  <block id="0c257ecd276502d9a2d45fc70759eec6" category="admonition">自2025年2月起、这些用户角色已在标准和受限部署模式下弃用。BlueXP  私有模式仅提供一个要与用户关联的角色、即云管理器管理员角色、用于授予所有BlueXP  权限。</block>
 </blocks>

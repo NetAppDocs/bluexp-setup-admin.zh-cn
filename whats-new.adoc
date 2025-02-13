@@ -1069,9 +1069,6 @@ https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["�
 ** 达拉斯(美国-南1)
 
 
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
-
 
 
 
@@ -1095,9 +1092,6 @@ Red Hat 7.6、7.7、7.8和7.9仍支持新的和现有的连接器。
 
 * 现在、卡塔尔地区的Google Cloud支持Connector。
 * Microsoft Azure中的瑞典中部地区也支持Connector。
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
-
 * 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["了解Cloud Volumes ONTAP 增强功能"^]
@@ -1140,9 +1134,6 @@ NOTE: 受限模式的引入取代了启用或禁用SaaS平台的选项。您可�
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["了解如何设置电子邮件通知"]。
 
 * 现在、连接器在Google Cloud Turin区域受支持。
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
-
 * 现在、您可以管理与您的BlueXP登录关联的用户凭据：ONTAP 凭据和NetApp 支持站点 (NSS)凭据。
 +
 转到*设置>凭据*时、您可以查看凭据、更新凭据并将其删除。例如、如果您更改了这些凭据的密码、则需要在BlueXP中更新此密码。
@@ -1440,9 +1431,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 
 * 现在、Azure West US 3区域支持Connector。
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
-
 * 此版本的连接器还包括Cloud Volumes ONTAP 增强功能。
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#2-july-2022["了解Cloud Volumes ONTAP 增强功能"^]
@@ -1472,9 +1460,6 @@ NOTE: 使用电子邮件地址和密码的现有登录需要继续使用该登�
 
 * 现在、AWS雅加达地区(亚太地区东南部3)支持Connector。
 * 现在、Azure巴西东南部地区支持Connector。
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
-
 * 此版本的Connector还包括Cloud Volumes ONTAP 增强功能和内部ONTAP 集群增强功能。
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-june-2022["了解Cloud Volumes ONTAP 增强功能"^]
@@ -1508,9 +1493,6 @@ https://bluexp.netapp.com/cloud-volumes-global-regions["查看支持的区域的
 ** 米兰(欧洲-西部8)
 ** 圣地亚哥(南美洲-西维1)
 
-
-+
-https://bluexp.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
 
 * 当您选择要与Connector结合使用的Google Cloud服务帐户时、Cloud Manager现在会显示与每个服务帐户关联的电子邮件地址。通过查看电子邮件地址、可以更轻松地区分同名服务帐户。
 +

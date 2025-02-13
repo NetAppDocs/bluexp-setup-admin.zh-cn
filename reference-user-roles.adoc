@@ -16,6 +16,9 @@ summary: 帐户管理员，工作空间管理员，合规性查看器和 SnapCen
 [role="lead"]
 在私有模式下使用BlueXP  时、您将使用BlueXP  account_来管理用户。您可以通过选择以下角色为帐户中的用户提供特定权限：帐户管理员、工作区管理员、合规性查看器和SnapCenter管理员
 
+
+NOTE: 自2025年2月起、这些用户角色已在标准和受限部署模式下弃用。BlueXP  私有模式仅提供一个要与用户关联的角色、即云管理器管理员角色、用于授予所有BlueXP  权限。
+
 如果您在标准模式或受限模式下使用BlueXP 、则没有BlueXP  帐户。而是使用BlueXP  身份和访问管理(IAM)管理_ BlueXP  organization _。
 
 * link:concept-identity-and-access-management.html["了解BlueXP  IAM"]
