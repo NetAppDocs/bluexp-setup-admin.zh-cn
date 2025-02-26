@@ -4773,7 +4773,6 @@ https://support.netapp.com
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  身份和访问管理(IAM)是一种资源和访问管理模式、它可以取代和增强BlueXP  帐户在标准和受限模式下使用BlueXP  时先前提供的功能。</block>
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">BlueXP  IAM如何影响受限模式下的现有帐户</block>
   <block id="8f2f21c16dc203c77301e868fae6ff8c" category="paragraph">在标准和受限模式下使用BlueXP  时、支持BlueXP  IAM。如果您在私有模式下使用BlueXP 、则可以继续使用BlueXP _account_来管理工作空间、用户和资源。</block>
-  <block id="71d8d71c8cd5b49b9c78b0ae89ca1b5f" category="paragraph">通过BlueXP  身份和访问管理(IAM)、您可以组织和控制对NetApp资源的访问。您可以根据组织的层次结构来组织资源。例如、您可以按地理位置、站点或业务单位来组织资源。然后、您可以将pIAM角色分配给层次结构特定部分的成员、从而阻止访问层次结构其他部分中的资源。</block>
   <block id="492bd3385d9d03385f8098817a8d0196" category="paragraph">在标准模式和受限模式下使用BlueXP  时、支持BlueXP  IAM。如果您在私有模式下使用BlueXP 、则使用BlueXP _account_来管理用户和资源。</block>
   <block id="5d733a1853078585aec87e3ef2524bec" category="paragraph">在私有模式下使用BlueXP  时、您将使用_ BlueXP  account_在隔离的_工作空间_中管理用户和组织资源。例如、一组用户可以在一个工作空间中部署和管理Cloud Volumes ONTAP工作环境、而在其他工作空间中管理工作环境的用户则看不到该工作空间。</block>
   <block id="73f420193f5136d2f1d09a09d6f9aabb" category="paragraph">如果您在标准模式或受限模式下使用BlueXP 、则没有BlueXP  帐户。而是使用BlueXP  身份和访问管理(IAM)管理_ BlueXP  organization _。</block>
@@ -4980,4 +4979,5 @@ https://support.netapp.com
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU：8个核心或8个vCPU</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM ： 32 GB</block>
   <block id="0c257ecd276502d9a2d45fc70759eec6" category="admonition">自2025年2月起、这些用户角色已在标准和受限部署模式下弃用。BlueXP  私有模式仅提供一个要与用户关联的角色、即云管理器管理员角色、用于授予所有BlueXP  权限。</block>
+  <block id="e1625dbf565504d716b37b407e4f24a4" category="paragraph">通过BlueXP  身份和访问管理(IAM)、您可以组织和控制对NetApp资源的访问。您可以根据组织的层次结构来组织资源。例如、您可以按地理位置、站点或业务单位来组织资源。然后、您可以将IAM角色分配给层次结构特定部分的成员、从而阻止访问层次结构其他部分中的资源。</block>
 </blocks>
