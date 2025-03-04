@@ -20,7 +20,7 @@ summary: 了解BlueXP如何使用Azure凭据代表您执行操作、以及这些
 
 == 初始 Azure 凭据
 
-从BlueXP部署Connector时、您需要使用有权部署Connector虚拟机的Azure帐户或服务主体。中列出了所需的权限 link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["适用于 Azure 的连接器部署策略"]。
+从BlueXP部署Connector时、您需要使用有权部署Connector虚拟机的Azure帐户或服务主体。中列出了所需的权限link:task-install-connector-azure-bluexp.html#connector-custom-role["适用于 Azure 的连接器部署策略"]。
 
 当BlueXP  在Azure中部署Connector虚拟机时、它会在虚拟机上启用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系统分配的受管身份"^]、创建自定义角色并将其分配给虚拟机。此角色为BlueXP提供了管理该Azure订阅中的资源和进程所需的权限。link:reference-permissions-azure.html["查看BlueXP如何使用权限"](英文)
 

@@ -16,17 +16,16 @@ summary: 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角
 [role="lead"]
 当BlueXP在Azure中启动Connector VM时、它会将一个自定义角色附加到该VM、从而使Connector能够管理该Azure订阅中的资源和进程。Connector使用权限对多个Azure服务进行API调用。
 
+是否需要为连接器创建此自定义角色取决于连接器的部署方式。
 
+.从BlueXP  部署
+使用BlueXP  在Azure中部署Connector虚拟机时、它会在虚拟机上启用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系统分配的受管身份"^]、创建自定义角色并将其分配给虚拟机。此角色为BlueXP提供了管理该Azure订阅中的资源和进程所需的权限。升级连接器时、角色的权限会保持最新。您不需要为连接器创建此角色或管理更新。
 
-== 自定义角色权限
+.手动部署或从Azure Marketplace部署
+从Azure Marketplace部署Connector时、或者如果在Linux主机上手动安装Connector、则您需要自行设置自定义角色、并在进行任何更改时保持其权限。
 
-下面显示的自定义角色提供了Connector管理Azure网络中的资源和进程所需的权限。
+在后续版本中添加新权限时、您需要确保角色处于最新状态。如果需要新的权限、这些权限将在发行说明中列出。
 
-请注意以下事项：
-
-* 直接从BlueXP创建Connector时、BlueXP会自动将此自定义角色应用于Connector。
-* 如果您从Azure Marketplace部署Connector、或者在Linux主机上手动安装Connector、则需要您自己设置自定义角色。
-* 无论哪种情况、您都需要确保角色在后续版本中添加新权限时处于最新状态。如果需要新的权限、这些权限将在发行说明中列出。
 * 要查看使用这些策略的分步说明、请参见以下页面：
 +
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["为Azure Marketplace部署设置权限"]

@@ -14,7 +14,7 @@ summary: 要从BlueXP在Azure中创建Connector、您需要设置网络连接、
 
 
 [role="lead"]
-连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是直接从BlueXP  在Azure中创建连接器。要从BlueXP在Azure中创建Connector、您需要设置网络连接、准备Azure权限、然后创建Connector。
+您可以直接从BlueXP  在Azure中创建Connector。要从BlueXP  在Azure中创建连接器、您需要设置网络、准备用于部署连接器的Azure角色、然后部署连接器。
 
 .开始之前
 * 您应具有link:concept-connectors.html["了解连接器"]。
@@ -160,9 +160,13 @@ link:reference-networking-saas-console.html["从BlueXP控制台查看已联系�
 
 
 
-== 第2步：创建自定义角色
+== 第2步：创建Connector部署策略(自定义角色)
+
+您需要创建一个具有在Azure中部署Connector的权限的自定义角色。
 
 创建Azure自定义角色、您可以将其分配给Azure帐户或Microsoft Entra服务主体。BlueXP使用Azure进行身份验证、并使用这些权限代表您创建Connector实例。
+
+BlueXP  在Azure中部署Connector虚拟机后、它会在虚拟机上启用 https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["系统分配的受管身份"^]、自动创建所需角色并将其分配给虚拟机。自动创建的角色为BlueXP  提供了管理该Azure订阅中的资源和流程所需的权限。link:reference-permissions-azure.html["查看BlueXP如何使用权限"](英文)
 
 请注意、您可以使用Azure门户、Azure PowerShell、Azure命令行界面或REST API创建Azure自定义角色。以下步骤显示了如何使用Azure命令行界面创建角色。如果您希望使用其他方法、请参见 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure 文档"^]
 
