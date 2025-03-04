@@ -1768,7 +1768,6 @@
   <block id="c160cffd96a1bb98161a7add244e274f" category="paragraph">添加并删除Connector的统一资源标识符(Uniform Resource Identifier、URI)。</block>
   <block id="f98b44043815b68b5ba8272fb252dafd" category="list-text">从BlueXP标题中选择*连接器*下拉列表。</block>
   <block id="9cf3804bed44acd4f31054cd5804edd6" category="list-text">选择*管理连接器*。</block>
-  <block id="330b38a06abadd478b0e03585b3789a5" category="list-text">选择Connector的操作菜单、然后选择*编辑URIs*。</block>
   <block id="fb9b59364e346ccfcbfc4636f13644b5" category="list-text">添加并删除URI、然后选择*应用*。</block>
   <block id="fb6890fd99d108eeb3627b961bdfb529" category="section-title">修复使用 Google Cloud NAT 网关时的下载失败问题</block>
   <block id="2eac5df1bc108f46482e586570f46442" category="paragraph">连接器会自动下载 Cloud Volumes ONTAP 的软件更新。如果您的配置使用 Google Cloud NAT 网关，则下载可能会失败。您可以通过限制软件映像划分到的部件数来更正此问题描述。必须使用BlueXP API完成此步骤。</block>
@@ -4980,4 +4979,5 @@ https://support.netapp.com
   <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">BlueXP  在Azure中部署Connector虚拟机后、它会在虚拟机上启用<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block>、自动创建所需角色并将其分配给虚拟机。自动创建的角色为BlueXP  提供了管理该Azure订阅中的资源和流程所需的权限。<block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="be77518281f390b896a01faba311cae7" category="section-title">第4步：设置Connector部署权限</block>
   <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">为Connector部署创建自定义角色</block>
+  <block id="87a06bc88e9a560195c606632e964e42" category="list-text">选择*连接器URIs*。</block>
 </blocks>
