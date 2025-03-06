@@ -5025,6 +5025,6 @@ https://support.netapp.com
   <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">了解如何禁用Connector的自动升级。</block>
   <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
   <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">为连接器禁用自动升级包括两个步骤。首先、您需要确保当前连接器运行状况良好且处于最新状态。然后、您将编辑配置文件以关闭自动升级功能。</block>
-  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
   <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">默认情况下、系统不会提示用户输入其ONTAP凭据来访问ONTAP系统管理器。但是、BlueXP  管理员(具有组织管理员角色)可以将BlueXP  配置为提示用户输入其ONTAP凭据。启用此设置后、用户每次都需要输入其ONTAP凭据。</block>
+  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025年3月6日</block>
 </blocks>
