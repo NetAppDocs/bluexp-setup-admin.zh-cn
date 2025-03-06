@@ -4980,7 +4980,6 @@ https://support.netapp.com
   <block id="b2d980523e7f68a234b1bef9046bf610" category="paragraph-title">无连接器</block>
   <block id="dbe7e61b89ec728b027dc1237e881b38" category="paragraph">系统会提示用户输入其ONTAP凭据以访问集群的ONTAP系统管理器。用户可以选择将这些凭据保存在BlueXP  中、这意味着每次不会提示他们输入这些凭据。用户凭据仅对相应的用户可见、并且可从用户凭据页面进行管理。</block>
   <block id="ebed6caedf3ce370608544cd61300fb9" category="paragraph-title">带连接器</block>
-  <block id="e8cbfb0691fa9052d50053bb8d48f3ca" category="paragraph">默认情况下、系统不会提示用户输入其ONTAP凭据来访问ONTAP系统管理器。但是、BlueXP  管理员(具有组织管理员角色)可以将BlueXP  配置为提示用户输入其ONTAP凭据。启用此设置后、用户每次都需要输入其ONTAP凭据、因为它们不会存储在BlueXP  中。</block>
   <block id="f990e553cdc4c29c2efffba33e08a8c7" category="inline-link-macro">了解更多信息。</block>
   <block id="efd19a04c99c31329dfaad38a02c2181" category="paragraph"><block ref="efd19a04c99c31329dfaad38a02c2181" category="inline-link-macro-rx"></block></block>
   <block id="034059bc028cfbb547d4683b2caff29f" category="summary">管理员可以配置BlueXP  Connector、以提示用户输入其ONTAP凭据。</block>
@@ -5012,9 +5011,6 @@ https://support.netapp.com
   <block id="ea807586843dea568060289fb3d6cc9a" category="sidebar">在BlueXP  中强制实施ONTAP权限</block>
   <block id="4bbf2de0e52eb20a42e04cf23bdb1683" category="list-text">支持为BlueXP  用户分配多个角色。</block>
   <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">支持在BlueXP  组织的多个资源(组织/文件夹/项目)上分配角色</block>
-  <block id="23b3b711859803a815b81aca1cc4811c" category="doc">连接器3.9.50</block>
-  <block id="d1ff7c4409f85da727e1eb68fa6e3a26" category="paragraph">此版本的BlueXP  连接器提供了一些小的安全改进和错误修复、以及以下功能。</block>
-  <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">目前、3.9.50版本可用于标准模式和受限模式。</block>
   <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">3.9.49更新</block>
   <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">BlueXP  使用连接器时的ONTAP System Manager访问权限</block>
   <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">BlueXP  管理员(具有组织管理员角色的用户)可以将BlueXP  配置为提示用户输入其ONTAP凭据、以便访问ONTAP System Manager。启用此设置后、用户每次都需要输入其ONTAP凭据、因为它们不会存储在BlueXP  中。</block>
@@ -5030,4 +5026,5 @@ https://support.netapp.com
   <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
   <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">为连接器禁用自动升级包括两个步骤。首先、您需要确保当前连接器运行状况良好且处于最新状态。然后、您将编辑配置文件以关闭自动升级功能。</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
+  <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">默认情况下、系统不会提示用户输入其ONTAP凭据来访问ONTAP系统管理器。但是、BlueXP  管理员(具有组织管理员角色)可以将BlueXP  配置为提示用户输入其ONTAP凭据。启用此设置后、用户每次都需要输入其ONTAP凭据。</block>
 </blocks>
