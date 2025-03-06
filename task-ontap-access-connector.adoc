@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: task-ontap-access-connector.html 
+keywords: administer, credentials, ONTAP, connector, Cloud Volumes ONTAP, on-premises, roles, permissions 
+summary: 管理员可以配置BlueXP  Connector、以提示用户输入其ONTAP凭据。 
+---
+= 为ONTAP高级视图强制实施ONTAP权限(ONTAP系统管理器)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+默认情况下、连接器凭据允许BlueXP  用户访问高级视图(ONTAP系统管理器)。您可以将BlueXP  配置为提示用户提供其ONTAP凭据。这样可以确保在Cloud Volumes ONTAP和ONTAP内部部署集群中使用ONTAP集群时应用用户的ONTAP权限。
+
+
+NOTE: 要编辑Connector设置、您必须具有组织管理员角色之一。
+
+.步骤
+. 从BlueXP标题中选择*连接器*下拉列表。
+. 选择*管理连接器*。
+. 在与要编辑的连接器对应的行中选择操作菜单。
+. 展开*Force凭证*选项。
+. 选中此复选框以启用*Force凭证*选项，然后选择*Save*。
+. 通过查看*Force凭证*选项，验证是否已启用该选项。
++
+image:screenshot-force-credentials-on.png["显示强制凭据已启用的屏幕截图"]
+
+

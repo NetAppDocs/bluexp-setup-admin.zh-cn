@@ -1,0 +1,15 @@
+= 连接器
+:allow-uri-read: 
+
+
+
+
+=== 连接器
+
+现在、您可以禁用连接器的自动升级。如果您出于业务原因需要手动处理软件升级、这很有用。
+
+客户可以使用Connector 3.9.48或更高版本关闭自动升级。
+
+.相关信息
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["管理连接器升级"]
+

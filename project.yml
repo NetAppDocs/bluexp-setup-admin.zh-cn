@@ -145,7 +145,7 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: 要求在EC2实例上使用IMDSv2
         url: "/task-require-imdsv2.html"
-      - title: 使用私有模式时升级Connector
+      - title: 管理连接器升级
         url: "/task-upgrade-connector.html"
       - title: 使用多个连接器
         url: "/task-manage-multiple-connectors.html"
@@ -155,6 +155,8 @@ sidebar:
         url: "/task-uninstall-connector.html"
       - title: 默认配置
         url: "/reference-connector-default-config.html"
+      - title: 在BlueXP  中强制实施ONTAP权限
+        url: "/task-ontap-access-connector.html"
     - title: 凭据和订阅
       entries:
       - title: AWS

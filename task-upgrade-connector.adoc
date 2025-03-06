@@ -4,7 +4,7 @@ permalink: task-upgrade-connector.html
 keywords: upgrade, manual upgrade, connector upgrade, manual connector upgrade, upgrade connector manually, private mode upgrade, offline upgrade, upgrade private mode 
 summary: 在标准模式或受限模式下使用BlueXP时、BlueXP会自动将Connector升级到最新版本。通常每月发布新版本、以引入新功能并提高稳定性。如果您愿意、可以将Connector配置为从本地存储库提取映像更新。对于私有模式部署、您始终需要手动自行升级Connector。 
 ---
-= 使用私有模式时升级Connector
+= 管理连接器升级
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,12 +14,99 @@ summary: 在标准模式或受限模式下使用BlueXP时、BlueXP会自动将Co
 
 
 [role="lead"]
-如果您在专用模式下使用的是BlueXP、则可以在NetApp 支持站点 提供了较新版本时升级此连接器。
+在标准模式或受限模式下使用BlueXP  时、只要Connector具有出站Internet访问权限来获取软件更新、BlueXP  就会自动将您的Connector升级到最新版本。如果您需要手动管理连接器的升级时间、则可以禁用标准模式或受限模式的自动升级。
 
 
-TIP: 在标准模式或受限模式下使用BlueXP时、无需手动升级Connector。BlueXP会自动将Connector升级到最新版本、只要Connector可以出站访问Internet来获取软件更新即可。
+NOTE: 在专用模式下运行BlueXP  时、您必须始终自行升级连接器。
 
-.关于此任务
+
+
+== 禁用自动升级
+
+为连接器禁用自动升级包括两个步骤。首先、您需要确保当前连接器运行状况良好且处于最新状态。然后、编辑配置文件以关闭自动升级功能。
+
+
+NOTE: 只有当您具有Connector 3.9.48或更高版本时、才能禁用自动升级。
+
+
+
+=== 验证连接器的运行状况
+
+您应验证连接器是否稳定、以及连接器VM上运行的所有容器是否运行正常。禁用自动升级后、Connector VM将停止检查新服务或升级软件包。
+
+使用以下命令之一验证您的连接器。所有服务的状态均应为_running"。如果不是这种情况、请在禁用自动升级之前联系NetApp支持部门。
+
+Docker::
++
+--
+[source, cli]
+----
+docker ps -a
+----
+--
+Podman::
++
+--
+[source, cli]
+----
+podman ps -a
+----
+--
+
+
+
+
+=== 禁用连接器的自动升级
+
+可以通过在_com/opt/application/service/service-manager-2/config.json_ NetApp文件中设置_isUpgradeDisabled标志来禁用自动升级。默认情况下、此标志设置为false、连接器会自动升级。您可以将此标志设置为true以禁用自动升级。
+
+要重新启用自动升级、请使用以下步骤并将_isUpgradeDisabled _标志设置为false。
+
+.步骤
+. 确保您已验证连接器是否为最新且运行状况良好。
+. 编辑__/opt/application/application/service-manager-2/config.json_ NetApp文件并将_isUpgradeDisabled _标志的值更改为true，如本示例底部附近所示。
++
+[source]
+----
+{
+  "environment": "production",
+  "proxySetting": "notConfigured",
+  "accountId": "account-NVKiCdw2",
+  "clientId": "EalzoDIDFyovsQarrXiBYa15dZZvZxD6",
+  "enc_clientSecret": "f151lvsq3NRQDGSAGV8T3YHdSch21na6MWBtTkAXHWSGpsW5UWkRhvXpTTf6lBpocXUUr4YETIZuEHz5aWDFdB0JIz65YVJX/vTKWTN2iIpH7DUTRGISKp2UCIVixtGi",
+  "version": "3.0.76",
+  "site": "stdonpremv49",
+  "company": "NetApp",
+  "systemId": "4a4c4d97-80c2-4989-8c9f-75a92925eabb",
+  "encryptedMysqlPassword": "f151lvsq3NRQDGSAGV8T3RQN7wsmegYWXg5KXWvxyMksdg51qhTSg00SvvrhXFq0",
+  "mysqlWasConfigured": true,
+  "encryptionKey": "g4/6CAp2Aclqkrl4gb1C4A==",
+  "keyStorePassword": "Netapp234",
+  "trustStorePassword": "ugauga",
+  "dockerRepoConfig": {
+    "username": "client-infra-prod-read",
+    "encryptedPassword": "f151lvsq3NRQDGSAGV8T3W7IxfTUVELHcXa44msIIsQrtrobO32gIqG9mjpz8rbVmOryIIHcZt03UBbjdwJ5/Q==",
+    "registry": "cloudmanagerinfraprod.azurecr.io",
+    "imageNamespace": "",
+    "repoType": "DEFAULT_DOCKER_REPO"
+  },
+  "isUpgradeDisabled": true,
+  "serviceAPIServerBaseUrl": "http://10.250.250.1:8890"
+}
+----
+. 保存文件。
+. 运行以下命令、重新启动服务管理器2服务：
++
+[source, cli]
+----
+systemctl restart netapp-service-manager.service
+----
+
+
+
+
+== 升级连接器
+
 在升级过程中、Connector需要重新启动、因此在升级期间基于Web的控制台将不可用。
 
 .步骤

@@ -1,0 +1,9 @@
+= 强制用户输入ONTAP凭据以访问高级视图(ONTAP系统管理器)
+:allow-uri-read: 
+
+
+
+
+=== 强制用户输入ONTAP凭据以访问高级视图(ONTAP系统管理器)
+
+现在、您可以强制用户输入其ONTAP凭据以访问ONTAP系统管理器。此设置既适用于Cloud Volumes ONTAP、也适用于内部ONTAP。具有组织管理员角色的用户可以配置此设置。

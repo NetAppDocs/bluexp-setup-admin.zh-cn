@@ -41,7 +41,7 @@ link:reference-connector-default-config.html["了解Connector的默认配置"]�
 
 
 
-== 正在停止启动Connector VM
+== 停止和启动Connector VM
 
 如果需要先停止再启动Connector VM、则应从云提供商的控制台执行此操作、或者使用内部管理的标准过程执行此操作。
 
@@ -119,6 +119,6 @@ system configuration backup settings modify -destination <target-location>
 . 从BlueXP标题中选择*连接器*下拉列表。
 . 选择*管理连接器*。
 . 选择连接器的操作菜单，然后选择*Edit Connecter*。
-. 选择*连接器URIs*。
+. 展开*Connector URIs*栏以查看连接器的URL。
 . 添加并删除URI、然后选择*应用*。
 

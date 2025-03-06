@@ -570,7 +570,6 @@
   <block id="e3884a4ce043ad31217e0098c7c0537f" category="doc">管理与您的BlueXP登录关联的凭据</block>
   <block id="5a66a53c80f94aa60f854872b432d82d" category="paragraph">根据您在BlueXP中执行的操作、您可能已将ONTAP 凭据和NetApp 支持站点 (NSS)凭据与您的BlueXP用户登录相关联。关联这些凭据后、您可以在BlueXP中查看和管理这些凭据。例如、如果您更改了这些凭据的密码、则需要在BlueXP中更新此密码。</block>
   <block id="823a6e1d7fe661be55dd3af05f972b11" category="section-title">ONTAP 凭据</block>
-  <block id="b82af7a7b96d34942cadb7921514f408" category="paragraph">如果您在不使用连接器的情况下直接发现内部ONTAP 集群、则系统会提示您输入此集群的ONTAP 凭据。这些凭据在用户级别进行管理、这意味着其他登录用户无法查看这些凭据。</block>
   <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">NSS凭据</block>
   <block id="9b7ea233ab4085c74e7506949f6c1a49" category="paragraph">与BlueXP登录关联的NSS凭据可用于支持注册、案例管理和对Digital Advisor的访问。</block>
   <block id="f57a365a74c463e64fe68cc99fbed5f5" category="list-text">当您访问*支持&gt;资源*并注册支持时，系统会提示您将NSS凭据与BlueXP登录关联。</block>
@@ -1755,7 +1754,6 @@
   <block id="fa25ff644bc82c03a613715d969f788d" category="list-text">在 Google Cloud 中创建 Connector 时，无法指定身份验证方法。但是，您可以使用 Google Cloud Console 或 Google Cloud CLI （ gcloud ）连接到 Linux VM 实例。</block>
   <block id="b60097f9f3ac90a5ce4fd69c66be0717" category="inline-link">Google Cloud Docs ：连接到 Linux VM</block>
   <block id="b80f2820ec689140e03615f3240fde24" category="paragraph"><block ref="b80f2820ec689140e03615f3240fde24" category="inline-link-rx"></block></block>
-  <block id="bdfe8a8b0f5b6a0b4242be2e550dff4a" category="paragraph">如果您在专用模式下使用的是BlueXP、则可以在NetApp 支持站点 提供了较新版本时升级此连接器。</block>
   <block id="84692ef80d23d7ba11b5ce40223e1af5" category="paragraph">在升级过程中、Connector需要重新启动、因此在升级期间基于Web的控制台将不可用。</block>
   <block id="d651da37c0942c2e8d61b167e835ec80" category="list-text">从下载Connector软件<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>。</block>
   <block id="29796d02ce8782cd7e5fc7ab3be29617" category="list-text">升级完成后，您可以转到 * 帮助 &gt; 支持 &gt; 连接器 * 来验证连接器的版本。</block>
@@ -3627,8 +3625,6 @@ https://support.netapp.com
   <block id="9a8e93f292200e4d86cfd716262b53cc" category="paragraph">\http://bxpproxyuser:netapp1\!@address:3128</block>
   <block id="b47596b2df9e477c6203e15d91a678ba" category="section-title">第8步：为BlueXP提供权限</block>
   <block id="1963a5845bb573651eecf0188b584456" category="summary">在标准模式或受限模式下使用BlueXP时、BlueXP会自动将Connector升级到最新版本。通常每月发布新版本、以引入新功能并提高稳定性。如果您愿意、可以将Connector配置为从本地存储库提取映像更新。对于私有模式部署、您始终需要手动自行升级Connector。</block>
-  <block id="d6b403d1857ecb824db228cac4a628ae" category="doc">使用私有模式时升级Connector</block>
-  <block id="eb775c24a0b347148812da8a6496489b" category="admonition">在标准模式或受限模式下使用BlueXP时、无需手动升级Connector。BlueXP会自动将Connector升级到最新版本、只要Connector可以出站访问Internet来获取软件更新即可。</block>
   <block id="eb762959fcc0cce31949abce6f8eb1c1" category="list-text">准备一个专用的Linux主机、以满足CPU、RAM、磁盘空间、容器业务流程工具等方面的要求。</block>
   <block id="99ca40e706695ba7607287669fab39f3" category="cell">检查可用性区域是否为AWS本地区域、并验证所有部署参数是否兼容</block>
   <block id="0683995d371439e19d907680da921ba9" category="section-title">2024年5月9日</block>
@@ -3683,7 +3679,6 @@ https://support.netapp.com
   <block id="6f16d8c603420093f0274e54a03d0a2f" category="admonition">如果您已有Connector、则应注意 <block ref="bd6e461b9eed09ced9eb75610086f8d1" category="inline-link-macro-rx"></block>。</block>
   <block id="6a8efb58df7d7b111b6073b7ce536fe1" category="section-title">操作系统修补程序和连接器</block>
   <block id="5c6b62893e9b8753b16ce8db64ae077c" category="paragraph">应用操作系统安全修补程序时、您无需停止Connector主机上的任何服务。</block>
-  <block id="d4c7d564cf9384303b11292ec4d09bf7" category="section-title">正在停止启动Connector VM</block>
   <block id="f65f967e9525533fe9edbca2e40db32f" category="paragraph">如果需要先停止再启动Connector VM、则应从云提供商的控制台执行此操作、或者使用内部管理的标准过程执行此操作。</block>
   <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">了解部署模式</block>
   <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">查看AWS权限</block>
@@ -4979,5 +4974,48 @@ https://support.netapp.com
   <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">BlueXP  在Azure中部署Connector虚拟机后、它会在虚拟机上启用<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block>、自动创建所需角色并将其分配给虚拟机。自动创建的角色为BlueXP  提供了管理该Azure订阅中的资源和流程所需的权限。<block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="be77518281f390b896a01faba311cae7" category="section-title">第4步：设置Connector部署权限</block>
   <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">为Connector部署创建自定义角色</block>
-  <block id="87a06bc88e9a560195c606632e964e42" category="list-text">选择*连接器URIs*。</block>
+  <block id="68ea9cebb3c452c83085356b253868c5" category="paragraph">现在、您可以禁用连接器的自动升级。如果您出于业务原因需要手动处理软件升级、这很有用。</block>
+  <block id="3d4e00cd939cc5521989a751b4b1dbdb" category="paragraph">客户可以使用Connector 3.9.48或更高版本关闭自动升级。</block>
+  <block id="71ae02c171873e7af0f7b72300d1da9b" category="inline-link">管理连接器升级</block>
+  <block id="d8d6c527b108697862bc5a357c01048f" category="list-text"><block ref="d8d6c527b108697862bc5a357c01048f" category="inline-link-rx"></block></block>
+  <block id="56997c9a04ad826028323008fa4ae68f" category="doc">强制用户输入ONTAP凭据以访问高级视图(ONTAP系统管理器)</block>
+  <block id="7947a3598cd43dbb491dfbcdf1970bb1" category="paragraph">现在、您可以强制用户输入其ONTAP凭据以访问ONTAP系统管理器。此设置既适用于Cloud Volumes ONTAP、也适用于内部ONTAP。具有组织管理员角色的用户可以配置此设置。</block>
+  <block id="47c94941fabbd38f1b71c23663c608d6" category="section-title">停止和启动Connector VM</block>
+  <block id="90754b70edd81e7b1f33fbe6f09ee188" category="list-text">展开*Connector URIs*栏以查看连接器的URL。</block>
+  <block id="fbd9d54f39ed5129df98414b561236de" category="paragraph">用户需要ONTAP管理员凭据才能在BlueXP  中发现ONTAP集群。但是、ONTAP系统管理器访问取决于您是否使用连接器。</block>
+  <block id="b2d980523e7f68a234b1bef9046bf610" category="paragraph-title">无连接器</block>
+  <block id="dbe7e61b89ec728b027dc1237e881b38" category="paragraph">系统会提示用户输入其ONTAP凭据以访问集群的ONTAP系统管理器。用户可以选择将这些凭据保存在BlueXP  中、这意味着每次不会提示他们输入这些凭据。用户凭据仅对相应的用户可见、并且可从用户凭据页面进行管理。</block>
+  <block id="ebed6caedf3ce370608544cd61300fb9" category="paragraph-title">带连接器</block>
+  <block id="e8cbfb0691fa9052d50053bb8d48f3ca" category="paragraph">默认情况下、系统不会提示用户输入其ONTAP凭据来访问ONTAP系统管理器。但是、BlueXP  管理员(具有组织管理员角色)可以将BlueXP  配置为提示用户输入其ONTAP凭据。启用此设置后、用户每次都需要输入其ONTAP凭据、因为它们不会存储在BlueXP  中。</block>
+  <block id="f990e553cdc4c29c2efffba33e08a8c7" category="inline-link-macro">了解更多信息。</block>
+  <block id="efd19a04c99c31329dfaad38a02c2181" category="paragraph"><block ref="efd19a04c99c31329dfaad38a02c2181" category="inline-link-macro-rx"></block></block>
+  <block id="034059bc028cfbb547d4683b2caff29f" category="summary">管理员可以配置BlueXP  Connector、以提示用户输入其ONTAP凭据。</block>
+  <block id="29f68982771966bddc72b7dbd3b2f3d3" category="doc">为ONTAP高级视图强制实施ONTAP权限(ONTAP系统管理器)</block>
+  <block id="3b0e6670a76f82f4c760fe4ff152d8c0" category="paragraph">默认情况下、连接器凭据允许BlueXP  用户访问高级视图(ONTAP系统管理器)。您可以将BlueXP  配置为提示用户提供其ONTAP凭据。这样可以确保在Cloud Volumes ONTAP和ONTAP内部部署集群中使用ONTAP集群时应用用户的ONTAP权限。</block>
+  <block id="19c9798fb0fc2fbadcc32b5470960e0e" category="admonition">要编辑Connector设置、您必须具有组织管理员角色之一。</block>
+  <block id="1d34d896e9246492a9cf64de3c5abb49" category="list-text">在与要编辑的连接器对应的行中选择操作菜单。</block>
+  <block id="79200641e6b3df738c3bda6a52fd51c1" category="list-text">展开*Force凭证*选项。</block>
+  <block id="305fd31774e543ad8e03e87cad28ea54" category="list-text">选中此复选框以启用*Force凭证*选项，然后选择*Save*。</block>
+  <block id="09d01e9645cf22853822390959d6c792" category="list-text">通过查看*Force凭证*选项，验证是否已启用该选项。</block>
+  <block id="74b59d176e85a927c1b9ec89cd8847b2" category="inline-image-macro">显示强制凭据已启用的屏幕截图</block>
+  <block id="e47d9b41f27e043909b844e706663ff6" category="paragraph"><block ref="e47d9b41f27e043909b844e706663ff6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="651a32308986dea9de3797c8e0997c14" category="paragraph">在标准模式或受限模式下使用BlueXP  时、只要Connector具有出站Internet访问权限来获取软件更新、BlueXP  就会自动将您的Connector升级到最新版本。如果您需要手动管理连接器的升级时间、则可以禁用标准模式或受限模式的自动升级。</block>
+  <block id="a30a1e13c5419a2d602474533f69dcd1" category="admonition">在专用模式下运行BlueXP  时、您必须始终自行升级连接器。</block>
+  <block id="6c66e308926fc039cc9e20fe56d7abdf" category="section-title">禁用自动升级</block>
+  <block id="a1188a88192f3f804b6f1b62d79bcd67" category="paragraph">为连接器禁用自动升级包括两个步骤。首先、您需要确保当前连接器运行状况良好且处于最新状态。然后、编辑配置文件以关闭自动升级功能。</block>
+  <block id="04b99f73471ca057d71f53c3f053b60e" category="admonition">只有当您具有Connector 3.9.48或更高版本时、才能禁用自动升级。</block>
+  <block id="377245fa7e4be29c2941f9c3069eae57" category="section-title">验证连接器的运行状况</block>
+  <block id="70a6926b672111815dfe273a0292468d" category="paragraph">您应验证连接器是否稳定、以及连接器VM上运行的所有容器是否运行正常。禁用自动升级后、Connector VM将停止检查新服务或升级软件包。</block>
+  <block id="aca0bf9b192b34e35fb37ccbd9cd98be" category="paragraph">使用以下命令之一验证您的连接器。所有服务的状态均应为_running"。如果不是这种情况、请在禁用自动升级之前联系NetApp支持部门。</block>
+  <block id="c5fd214cdd0d2b3b4272e73b022ba5c2" category="list-text">Docker</block>
+  <block id="21fa3d085631029b33cc6537b5b1a964" category="section-title">禁用连接器的自动升级</block>
+  <block id="f1a415c9565a5203c9cab67d50062380" category="paragraph">可以通过在_com/opt/application/service/service-manager-2/config.json_ NetApp文件中设置_isUpgradeDisabled标志来禁用自动升级。默认情况下、此标志设置为false、连接器会自动升级。您可以将此标志设置为true以禁用自动升级。</block>
+  <block id="fda5aa414d851bf8018163c5fe4acb1a" category="paragraph">要重新启用自动升级、请使用以下步骤并将_isUpgradeDisabled _标志设置为false。</block>
+  <block id="942778941acc11e030b5e5615f2d8d41" category="list-text">确保您已验证连接器是否为最新且运行状况良好。</block>
+  <block id="667f94e7aab832b818ed3d6710e2b890" category="list-text">编辑__/opt/application/application/service-manager-2/config.json_ NetApp文件并将_isUpgradeDisabled _标志的值更改为true，如本示例底部附近所示。</block>
+  <block id="9e3e4c61d70076bf677edfc157a67761" category="list-text">保存文件。</block>
+  <block id="92ae5258778c2fa8ece2b13c88ec0853" category="list-text">运行以下命令、重新启动服务管理器2服务：</block>
+  <block id="0a38f6fb9751bd939880be04152c67f3" category="section-title">升级连接器</block>
+  <block id="084d853adc45dcd521da8dd702d68cc0" category="section-title">2025年2月15日</block>
+  <block id="ea807586843dea568060289fb3d6cc9a" category="sidebar">在BlueXP  中强制实施ONTAP权限</block>
 </blocks>
