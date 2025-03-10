@@ -1,34 +1,17 @@
-= 3.9.49更新
+= 3.9.50更新
 :allow-uri-read: 
 
 
 
 
-=== 3.9.49更新
+=== 3.9.50更新
+
+此版本的BlueXP Connector包括一些小的安全改进和错误修复。
+
+目前、3.9.50版本可用于标准模式和受限模式。
 
 
 
-==== BlueXP  使用连接器时的ONTAP System Manager访问权限
+=== BlueXP  提供NetApp Keystone测试版
 
-BlueXP  管理员(具有组织管理员角色的用户)可以将BlueXP  配置为提示用户输入其ONTAP凭据、以便访问ONTAP System Manager。启用此设置后、用户每次都需要输入其ONTAP凭据、因为它们不会存储在BlueXP  中。
-
-此功能在Connector 3.9.49及更高版本中可用。link:task-ontap-access-connector.html["了解如何配置凭据设置。"^](英文)
-
-
-
-=== 3.9.48更新
-
-
-
-==== 可以禁用Connector的自动升级设置
-
-您可以禁用Connector的自动升级功能。
-
-在标准模式或受限模式下使用BlueXP  时、只要Connector具有出站Internet访问权限来获取软件更新、BlueXP  就会自动将您的Connector升级到最新版本。如果您需要手动管理连接器的升级时间、现在可以为标准模式或受限模式禁用自动升级。
-
-
-NOTE: 此更改不会影响BlueXP  专用模式、在此模式下、您必须始终自行升级连接器。
-
-此功能在Connector 3.9.48及更高版本中可用。
-
-link:task-upgrade-connector.html["了解如何禁用Connector的自动升级。"^]
+NetApp Keystone很快将从BlueXP  发布、目前处于测试阶段。您可以从BlueXP  的左侧导航栏访问NetApp Keystone测试版的注册页面。
