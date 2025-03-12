@@ -5027,9 +5027,9 @@ https://support.netapp.com
   <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">为连接器禁用自动升级包括两个步骤。首先、您需要确保当前连接器运行状况良好且处于最新状态。然后、您将编辑配置文件以关闭自动升级功能。</block>
   <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">默认情况下、系统不会提示用户输入其ONTAP凭据来访问ONTAP系统管理器。但是、BlueXP  管理员(具有组织管理员角色)可以将BlueXP  配置为提示用户输入其ONTAP凭据。启用此设置后、用户每次都需要输入其ONTAP凭据。</block>
   <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025年3月6日</block>
-  <block id="7f1693b8d0ac4ce81a83df26522897a8" category="doc">3.9.50更新</block>
   <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">目前、3.9.50版本可用于标准模式和受限模式。</block>
   <block id="3f45680fc0523f726aa3afe05af65c63" category="section-title">BlueXP  提供NetApp Keystone测试版</block>
   <block id="6bcb702faf24747c517b58ba5f3b8a99" category="paragraph">NetApp Keystone很快将从BlueXP  发布、目前处于测试阶段。您可以从BlueXP  的左侧导航栏访问NetApp Keystone测试版的注册页面。</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
+  <block id="23b3b711859803a815b81aca1cc4811c" category="doc">连接器3.9.50</block>
 </blocks>
