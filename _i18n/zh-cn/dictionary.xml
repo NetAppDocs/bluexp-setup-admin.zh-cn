@@ -5001,10 +5001,8 @@ https://support.netapp.com
   <block id="aca0bf9b192b34e35fb37ccbd9cd98be" category="paragraph">使用以下命令之一验证您的连接器。所有服务的状态均应为_running"。如果不是这种情况、请在禁用自动升级之前联系NetApp支持部门。</block>
   <block id="c5fd214cdd0d2b3b4272e73b022ba5c2" category="list-text">Docker</block>
   <block id="21fa3d085631029b33cc6537b5b1a964" category="section-title">禁用连接器的自动升级</block>
-  <block id="f1a415c9565a5203c9cab67d50062380" category="paragraph">可以通过在_com/opt/application/service/service-manager-2/config.json_ NetApp文件中设置_isUpgradeDisabled标志来禁用自动升级。默认情况下、此标志设置为false、连接器会自动升级。您可以将此标志设置为true以禁用自动升级。</block>
   <block id="fda5aa414d851bf8018163c5fe4acb1a" category="paragraph">要重新启用自动升级、请使用以下步骤并将_isUpgradeDisabled _标志设置为false。</block>
   <block id="942778941acc11e030b5e5615f2d8d41" category="list-text">确保您已验证连接器是否为最新且运行状况良好。</block>
-  <block id="667f94e7aab832b818ed3d6710e2b890" category="list-text">编辑__/opt/application/application/service-manager-2/config.json_ NetApp文件并将_isUpgradeDisabled _标志的值更改为true，如本示例底部附近所示。</block>
   <block id="9e3e4c61d70076bf677edfc157a67761" category="list-text">保存文件。</block>
   <block id="92ae5258778c2fa8ece2b13c88ec0853" category="list-text">运行以下命令、重新启动服务管理器2服务：</block>
   <block id="0a38f6fb9751bd939880be04152c67f3" category="section-title">升级连接器</block>
@@ -5024,7 +5022,6 @@ https://support.netapp.com
   <block id="0e9ee8d377b683ca8ac77de05c3539d9" category="paragraph">此功能在Connector 3.9.48及更高版本中可用。</block>
   <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">了解如何禁用Connector的自动升级。</block>
   <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
-  <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">为连接器禁用自动升级包括两个步骤。首先、您需要确保当前连接器运行状况良好且处于最新状态。然后、您将编辑配置文件以关闭自动升级功能。</block>
   <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">默认情况下、系统不会提示用户输入其ONTAP凭据来访问ONTAP系统管理器。但是、BlueXP  管理员(具有组织管理员角色)可以将BlueXP  配置为提示用户输入其ONTAP凭据。启用此设置后、用户每次都需要输入其ONTAP凭据。</block>
   <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025年3月6日</block>
   <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">目前、3.9.50版本可用于标准模式和受限模式。</block>
@@ -5032,4 +5029,9 @@ https://support.netapp.com
   <block id="6bcb702faf24747c517b58ba5f3b8a99" category="paragraph">NetApp Keystone很快将从BlueXP  发布、目前处于测试阶段。您可以从BlueXP  的左侧导航栏访问NetApp Keystone测试版的注册页面。</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
   <block id="23b3b711859803a815b81aca1cc4811c" category="doc">连接器3.9.50</block>
+  <block id="099436dc59c324fbeaf1a2dd276b98f6" category="paragraph">为连接器禁用自动升级包括两个步骤。首先、您需要确保您的Connector运行状况良好且处于最新状态。然后、您将编辑配置文件以关闭自动升级功能。</block>
+  <block id="7b9ab409364ad80b26951a7c1a1d28d7" category="paragraph">可以通过在_com/opt/application/service/service-manager-2/config.json_ NetApp文件中设置_isUpgradeDisabled标志来禁用自动升级。默认情况下、此标志设置为false、连接器会自动升级。您可以将此标志设置为true以禁用自动升级。在完成此步骤之前、您应熟悉JSON语法。</block>
+  <block id="d0ec983e93943635bce3349bbdcbf79e" category="list-text">创建_/opt/application/service/service-manager-2/config.json_ NetApp文件的备份副本、以确保您可以还原所做的更改。</block>
+  <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">编辑__/opt/application/application/service-manager-2/config.json_ NetApp文件，并将_isUpgradeDisabled标志的值更改为true。</block>
+  <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">运行以下命令并验证连接器状态是否显示为_active (running)_：_</block>
 </blocks>

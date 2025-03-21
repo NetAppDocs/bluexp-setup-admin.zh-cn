@@ -23,7 +23,7 @@ NOTE: 在专用模式下运行BlueXP  时、您必须始终自行升级连接�
 
 == 禁用自动升级
 
-为连接器禁用自动升级包括两个步骤。首先、您需要确保当前连接器运行状况良好且处于最新状态。然后、您将编辑配置文件以关闭自动升级功能。
+为连接器禁用自动升级包括两个步骤。首先、您需要确保您的Connector运行状况良好且处于最新状态。然后、您将编辑配置文件以关闭自动升级功能。
 
 
 NOTE: 只有当您具有Connector 3.9.48或更高版本时、才能禁用自动升级。
@@ -58,13 +58,14 @@ podman ps -a
 
 === 禁用连接器的自动升级
 
-可以通过在_com/opt/application/service/service-manager-2/config.json_ NetApp文件中设置_isUpgradeDisabled标志来禁用自动升级。默认情况下、此标志设置为false、连接器会自动升级。您可以将此标志设置为true以禁用自动升级。
+可以通过在_com/opt/application/service/service-manager-2/config.json_ NetApp文件中设置_isUpgradeDisabled标志来禁用自动升级。默认情况下、此标志设置为false、连接器会自动升级。您可以将此标志设置为true以禁用自动升级。在完成此步骤之前、您应熟悉JSON语法。
 
 要重新启用自动升级、请使用以下步骤并将_isUpgradeDisabled _标志设置为false。
 
 .步骤
 . 确保您已验证连接器是否为最新且运行状况良好。
-. 编辑__/opt/application/application/service-manager-2/config.json_ NetApp文件并将_isUpgradeDisabled _标志的值更改为true，如本示例底部附近所示。
+. 创建_/opt/application/service/service-manager-2/config.json_ NetApp文件的备份副本、以确保您可以还原所做的更改。
+. 编辑__/opt/application/application/service-manager-2/config.json_ NetApp文件，并将_isUpgradeDisabled标志的值更改为true。
 +
 [source]
 ----
@@ -76,6 +77,12 @@ podman ps -a
 [source, cli]
 ----
 systemctl restart netapp-service-manager.service
+----
+. 运行以下命令并验证连接器状态是否显示为_active (running)_：_
++
+[source, cli]
+----
+systemctl status netapp-service-manager.service
 ----
 
 
