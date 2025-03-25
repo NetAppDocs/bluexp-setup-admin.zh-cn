@@ -5034,4 +5034,5 @@ https://support.netapp.com
   <block id="d0ec983e93943635bce3349bbdcbf79e" category="list-text">创建_/opt/application/service/service-manager-2/config.json_ NetApp文件的备份副本、以确保您可以还原所做的更改。</block>
   <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">编辑__/opt/application/application/service-manager-2/config.json_ NetApp文件，并将_isUpgradeDisabled标志的值更改为true。</block>
   <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">运行以下命令并验证连接器状态是否显示为_active (running)_：_</block>
+  <block id="973c3bcf96d6257755a3e8ee090eb5f1" category="list-text">电子钱包(仅限许可证、订阅监控需要连接器)</block>
 </blocks>
