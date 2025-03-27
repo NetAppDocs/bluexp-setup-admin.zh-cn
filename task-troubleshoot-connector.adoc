@@ -72,6 +72,10 @@ image:screenshot-help-support.png["帮助菜单的屏幕截图，其中列出的
 +
 .. 选择选项以将 AutoSupport 消息下载到本地计算机。然后，您可以使用首选方法将其发送给 NetApp 支持部门。
 .. 选择*发送NetApp*以直接将消息发送到AutoSupport 支持。
++
+
+NOTE: 如果您选择必须让BlueXP  发送AutoSupport消息、则可能需要长达五小时的时间、因为BlueXP  会在发送AutoSupport消息时自动进行负载平衡。如果您与NetApp支持人员的通信比较时效、则应下载此文件并自行发送给NetApp支持人员。
+
 
 
 +
