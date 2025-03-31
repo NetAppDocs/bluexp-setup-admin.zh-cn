@@ -18,12 +18,9 @@ summary: 在专用模式下启动和运行BlueXP后、您可以开始使用私�
 
 要获得帮助、请参见以下文档：
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["创建Cloud Volumes ONTAP 系统"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["发现内部ONTAP 集群"^]
-* https://docs.netapp.com/us-en/bluexp-replication/index.html["复制数据"^]
+* https://docs.netapp.com/us-en/bluexp-software-updates/index.html["管理软件更新"^]
 * https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["使用BlueXP分类扫描内置ONTAP 卷数据"^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["使用BlueXP备份和恢复将ONTAP 卷数据备份到StorageGRID"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["利用电子钱包监控许可证使用情况"^]
+* https://docs.netapp.com/us-en/active-iq/index.html["使用数字顾问查看存储运行状况信息"^]
 
-
-.相关信息
-link:concept-modes.html["BlueXP部署模式"]

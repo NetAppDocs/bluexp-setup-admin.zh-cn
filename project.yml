@@ -95,6 +95,12 @@ sidebar:
         url: "/task-prepare-private-mode.html"
       - title: 部署连接器
         url: "/task-install-private-mode.html"
+      - title: BlueXP帐户
+        entries:
+        - title: 了解客户信息
+          url: "/concept-netapp-accounts.html"
+        - title: 管理您的BlueXP帐户
+          url: "/task-managing-netapp-accounts.html"
       - title: 接下来可以执行的操作
         url: "/reference-whats-next-private-mode.html"
     - title: 登录到BlueXP
@@ -123,16 +129,12 @@ sidebar:
         url: "/task-iam-audit-actions-timeline.html"
       - title: 预定义的IAM角色
         url: "/reference-iam-predefined-roles.html"
-    - title: BlueXP帐户
+    - title: BlueXP  帐户(仅限专用模式)
       entries:
       - title: 了解客户信息
         url: "/concept-netapp-accounts.html"
       - title: 管理您的BlueXP帐户
         url: "/task-managing-netapp-accounts.html"
-      - title: 创建另一个BlueXP帐户
-        url: "/task-create-account.html"
-      - title: 用户角色
-        url: "/reference-user-roles.html"
     - title: 身份联合
       url: "/concept-federation.html"
     - title: 连接器
