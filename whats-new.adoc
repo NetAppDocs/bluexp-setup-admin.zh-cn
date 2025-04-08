@@ -335,7 +335,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["了解有�
 
 现在、您可以通过BlueXP  身份和访问管理查看项目的ID。进行API调用时、您可能需要使用此ID。
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["了解如何获取项目的ID"](英文)
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-rename-organization.html#project-id["了解如何获取项目的ID"](英文)
 
 
 

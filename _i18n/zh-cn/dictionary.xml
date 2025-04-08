@@ -4246,12 +4246,10 @@ https://support.netapp.com
   <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">对于要删除其资源的文件夹或项目、请选择<block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">通过选择*Delete*确认要删除关联。</block>
   <block id="08599f4c51d7b3ffe063f2612e7c4f5e" category="summary">如果需要、您可以更改BlueXP  组织的名称。</block>
-  <block id="3b2af1e86badf70e10ee3dd7bd601881" category="paragraph">如果需要、您可以从BlueXP  身份和访问管理(Identity and Access Management、IAM)中更改BlueXP  组织的名称。组织名称显示在BlueXP  基于Web的控制台顶部和IAM页面中。</block>
   <block id="8bf336ab115156eac88db2970ab0e70d" category="list-text">从*组织*页面导航到表中的第一行，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*编辑组织*。</block>
   <block id="bd0f6a5b8c74b52e8b6d378a779a799b" category="inline-image-macro">"概述"页面的屏幕截图、其中显示了"操作"图标和"编辑组织"选项。</block>
   <block id="f891b6d41b0ea20e756113027427df78" category="paragraph"><block ref="f891b6d41b0ea20e756113027427df78" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b9669849e9961b7f3f4dc1a2f6787c34" category="list-text">输入新的组织名称并选择*Apply*。</block>
-  <block id="814a9fcdd4787ffa2a66999138964d04" category="paragraph">BlueXP  将更新您的组织名称。您应立即在BlueXP  控制台顶部看到更新后的名称。</block>
   <block id="23a90e2bf1cd3468b9e164d1e2b979f6" category="summary">在组织、项目和连接器之间切换以访问与其关联的资源。</block>
   <block id="112749b02c84e8790747c190f1f78319" category="doc">在BlueXP  组织、项目和连接器之间切换</block>
   <block id="c4a2bf83344fa23edffba2df8fadd3a5" category="paragraph">您可能属于多个BlueXP  组织、或者有权访问BlueXP  组织中的多个项目或连接器。如果需要、您可以轻松地在组织、项目和连接器之间切换、以访问与该组织、项目或连接器关联的资源。</block>
@@ -4448,7 +4446,6 @@ https://support.netapp.com
   <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">文件夹和项目表的屏幕截图、显示选择项目操作菜单后的项目ID。</block>
   <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024年11月11日</block>
-  <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>(英文)</block>
   <block id="be6af94f792f554a6fe5be714926ba2a" category="paragraph">连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。要在内部运行Connector、您需要查看主机要求、设置网络、准备云权限、安装Connector、设置Connector、然后提供您准备的权限。</block>
   <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">专用模式版本(3.9.46)</block>
   <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">现在、可从下载新的专用模式版本<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
@@ -4950,4 +4947,15 @@ https://support.netapp.com
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">2025年3月10日(版本1.41)</block>
   <block id="49e0c1b5be27dbeb84e3a7ca1d634276" category="cell">转到<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>、并参阅1.38 1.371.41版本中包含的更改。</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
+  <block id="cb3410a9bf17cf666d6a34ac1b7c6d6c" category="paragraph"><block ref="2416ec7d97fab7b3c3e0f434ea922dd9" category="inline-link-rx"></block>(英文)</block>
+  <block id="1920da3586c2e2872f88b02997c971c3" category="doc">组织和项目ID</block>
+  <block id="106aaea1e5532e2978889c60809a6ba7" category="paragraph">您的BlueXP  组织具有名称和ID。您可以为组织选择一个名称、以帮助在BlueXP  部署中对其进行标识。您可能还需要检索某些集成的组织ID。</block>
+  <block id="93ef23628d0f701bc432c95a0b1c2f79" category="paragraph">您可以在BlueXP  中重命名您的组织。如果您在BlueXP  部署中支持的不仅仅是组织、这将非常有用。</block>
+  <block id="48aadcc35505b6db48ac02a9ec0cc774" category="section-title">获取组织ID</block>
+  <block id="f16a668fcd5a3f02beed85650fcb3882" category="paragraph">组织ID用于与BlueXP  的某些集成。</block>
+  <block id="07705e77e8129994d0ee9d1cbd506a7e" category="paragraph">您可以从"Organizations (组织)"页面查看组织ID、并根据需要将其复制到剪贴板。</block>
+  <block id="c8ac3017c892b58622f21f78871d1208" category="list-text">选择*组织*选项卡以查看*组织*页面。</block>
+  <block id="65684205c2c17c1079112735fcb6d59c" category="list-text">在*组织*页面上，在摘要栏中查找您的组织ID，并将其复制到剪贴板。您可以保存此文件以供日后使用、也可以将其直接复制到需要使用的位置。</block>
+  <block id="3b114d25af2bc979de4e8bf4773b092f" category="inline-image-macro">文件夹和项目表的屏幕截图、显示在选择项目的操作菜单后的项目ID。</block>
+  <block id="03666f94d7af611921b392c3ee39f483" category="paragraph"><block ref="03666f94d7af611921b392c3ee39f483" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
-keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
+keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project, credential 
 summary: 了解BlueXP如何使用Google Cloud凭据代表您执行操作、以及这些凭据如何与商城订阅相关联。了解这些详细信息有助于您管理一个或多个Google Cloud项目的凭据。例如、您可能希望了解与Connector VM关联的服务帐户。 
 ---
 = 了解Google Cloud项目和权限
