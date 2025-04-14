@@ -14,13 +14,15 @@ summary: Connector是在云网络或内部网络中运行的NetApp软件。它�
 
 
 [role="lead"]
-_Connector_是在云网络或内部网络中运行的NetApp软件。它会执行BlueXP管理数据基础架构所需执行的操作。连接器会不断轮询BlueXP  软件即服务(SaaS)层、以确定需要执行的任何操作。您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。
+连接器是您安装的NetApp软件、用于执行BlueXP  在管理存储基础架构时需要执行的操作。BlueXP  的许多功能都不需要连接器、但如果不需要、某些功能将不可用。
+
+如果以标准模式运行BlueXP 、则无需安装Connector即可运行BlueXP  的某些服务、例如软件更新和电子钱包。但是、BlueXP  的某些高级服务(如勒索软件保护或灾难恢复)要求您安装Connector。如果在受限或私用模式下使用BlueXP 、则需要安装连接器。
 
 
 
-== 没有连接器可以执行的操作
+== 在标准模式下不使用连接器可以执行的操作
 
-开始使用BlueXP无需使用Connector。您可以在BlueXP中使用多种功能和服务、而无需创建Connector。
+如果您在标准模式下运行、则无需安装连接器即可使用BlueXP  的某些最重要服务。
 
 您可以在不使用Connector的情况下使用以下BlueXP功能和服务：
 
@@ -41,7 +43,7 @@ _Connector_是在云网络或内部网络中运行的NetApp软件。它会执行
 在几乎所有情况下、您都可以在没有连接器的情况下向数字钱包添加许可证。
 
 +
-仅当需要使用Connector向数字钱包添加许可证时、才需要使用Cloud Volumes ONTAP _no-based _许可证。在这种情况下，需要使用连接器，因为数据是从 Cloud Volumes ONTAP 系统上安装的许可证中获取的。
+仅当需要使用Connector向数字钱包添加许可证时、才需要使用Cloud Volumes ONTAP _no-based _许可证。需要使用连接器、因为BlueXP  需要访问Cloud Volumes ONTAP系统上安装的许可证数据。
 
 * 直接发现内部ONTAP 集群
 +
@@ -59,7 +61,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 == 需要连接器时
 
-在标准模式下使用BlueXP时、需要使用Connector才能在BlueXP中实现以下功能和服务：
+在标准模式下使用BlueXP  时、您需要安装一个或多个连接器、才能在BlueXP  中启用以下功能和服务：
 
 * 警报
 * 适用于 ONTAP 的 Amazon FSX 管理功能
@@ -70,25 +72,21 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 * Cloud Volumes ONTAP
 * 灾难恢复
 * E系列系统
-* 经济效益^1^
+* 经济效益(仅供查看)
 * Google Cloud存储分段
 * 与BlueXP数据服务的内部ONTAP 集群集成
-* 运营弹性^1^
+* 操作故障恢复能力(仅限查看)
 * 勒索软件保护
 * StorageGRID 系统
 * 分层
 * 卷缓存
 
 
-^1^虽然您可以在没有连接器的情况下访问这些服务、但要从这些服务启动操作、需要使用连接器。
-
-要在受限模式或专用模式下使用BlueXP、需要使用Connector。
-
 
 
 == 连接器必须始终正常运行
 
-连接器是BlueXP服务架构的基本组成部分。您有责任确保相关连接器始终正常运行且可访问。虽然此服务旨在克服连接器可用性短暂中断的问题、但您必须在需要时立即采取措施来修复基础架构故障。
+由于连接器是BlueXP  服务架构的基本组成部分、因此您需要确保相关连接器始终处于正常运行状态、正常运行且可访问。虽然此服务旨在克服连接器可用性短暂中断的问题、但您必须在需要时立即采取措施来修复基础架构故障。
 
 本文档受EULA约束。如果本产品未按照文档进行操作、则可能会对本产品的功能和运行以及您在EULA下的权利产生不利影响。
 
@@ -104,12 +102,12 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 == 支持的位置
 
-以下位置支持连接器：
+您可以根据需要在受支持的超规模环境或内部环境中安装Connector。
 
 * Amazon Web Services
 * Microsoft Azure
 +
-Azure中的连接器应部署在与其管理的Cloud Volumes ONTAP 系统所在的同一Azure区域或中 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 区域对"^] 对于 Cloud Volumes ONTAP 系统。此要求可确保在 Cloud Volumes ONTAP 与其关联存储帐户之间使用 Azure 专用链路连接。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["了解 Cloud Volumes ONTAP 如何使用 Azure 专用链路"^]
+将您的Connector部署在与其管理的Cloud Volumes ONTAP系统相同的Azure区域中、或者在中为Cloud Volumes ONTAP系统部署 https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Azure 区域对"^]。这样可确保在Cloud Volumes ONTAP及其关联存储帐户之间使用Azure专用链接连接。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["了解 Cloud Volumes ONTAP 如何使用 Azure 专用链路"^]
 
 * Google Cloud
 +
@@ -179,7 +177,7 @@ link:concept-modes.html["了解BlueXP部署模式"]。
 
 == 连接器升级
 
-我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然BlueXP  平台中的大多数服务和功能都是通过基于SaaS的软件提供的、但少数功能取决于Connector的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。
+NetApp通常会每月更新Connector软件、以引入新功能并提高稳定性。虽然BlueXP  平台中的大多数服务和功能都是通过基于SaaS的软件提供的、但少数功能取决于Connector的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。
 
 当您在标准模式或受限模式下使用BlueXP时、Connector会自动将其软件更新到最新版本、只要它可以通过出站Internet访问来获取软件更新即可。如果您正在私有模式下使用BlueXP、则需要手动升级Connector。
 
@@ -201,13 +199,13 @@ link:task-upgrade-connector.html["了解如何在使用私有模式时手动升�
 
 == 多种工作环境和连接器
 
-一个Connector可以在BlueXP中管理多个工作环境。一个 Connector 应管理的最大工作环境数因情况而异。具体取决于工作环境的类型，卷数量，要管理的容量以及用户数量。
+您可以使用同一个连接器在BlueXP  中管理多个工作环境。一个 Connector 应管理的最大工作环境数因情况而异。具体取决于工作环境的类型，卷数量，要管理的容量以及用户数量。
 
-如果您要进行大规模部署，请与 NetApp 代表合作来估算您的环境规模。如果您在此过程中遇到任何问题，请通过产品内聊天联系我们。
+如果您要进行大规模部署，请与 NetApp 代表合作来估算您的环境规模。
 
-在某些情况下，您可能只需要一个连接器，但可能需要两个或更多连接器。
+在确定所需连接器数量时、另一个注意事项是存储所在的位置。例如、如果您在Google Cloud和Azure中都安装了Cloud Volumes ONTAP、则每个环境都需要一个Connector。如果您的存储完全位于内部环境中、您可以在任何超大的云中或内部环境中运行Connector。
 
-以下是几个示例：
+以下是其他示例：
 
 * 您有一个多云环境(例如AWS和Azure)、并且更喜欢在AWS中使用一个Connector、而在Azure中使用另一个Connector。每个都管理在这些环境中运行的 Cloud Volumes ONTAP 系统。
 * 服务提供商可以使用一个BlueXP  组织为其客户提供服务、而使用另一个组织为其业务部门之一提供灾难恢复。每个组织都有单独的连接器。
