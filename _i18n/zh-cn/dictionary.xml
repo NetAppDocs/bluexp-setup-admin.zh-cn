@@ -4923,7 +4923,6 @@ https://support.netapp.com
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">目前、3.9.51版本可用于标准模式和受限模式。</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  身份和访问管理(IAM)</block>
   <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">了解新角色。</block>
-  <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
   <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">没有组织管理员、文件夹管理员或项目管理员的用户必须分配勒索软件保护角色、才能访问勒索软件保护。您可以为用户分配以下两个角色之一：勒索软件保护管理员或勒索软件保护查看器。</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">没有组织管理员、文件夹管理员或项目管理员的用户必须分配Keystone角色、才能访问Keystone。您可以为用户分配以下两个角色之一：Keystone管理员或Keystone查看器。</block>
@@ -5025,4 +5024,5 @@ https://support.netapp.com
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  设置和管理</block>
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">添加成员和服务帐户</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">使用角色控制成员对资源的访问</block>
+  <block id="7b86bd575ced3444e23389ac71f98a8f" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block></block>
 </blocks>

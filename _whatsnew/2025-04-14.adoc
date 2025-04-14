@@ -19,4 +19,4 @@
 * 如果您具有组织管理员、文件夹或项目管理员角色、则现在可以将Keystone订阅与IAM项目相关联。通过将Keystone订阅与IAM项目关联起来、您可以在BlueXP  中控制对Keystone的访问。
 
 
-link:reference-iam-predefined-roles.html["了解新角色。"^](英文)
+link:reference-iam-predefined-roles.html["了解新角色。"^]
