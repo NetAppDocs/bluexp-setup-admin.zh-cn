@@ -1,0 +1,22 @@
+= 连接器3.9.51
+:allow-uri-read: 
+
+
+
+
+=== 连接器3.9.51
+
+此版本的BlueXP Connector包括一些小的安全改进和错误修复。
+
+目前、3.9.51版本可用于标准模式和受限模式。
+
+
+
+=== BlueXP  身份和访问管理(IAM)
+
+* 现在、您需要为用户分配角色、使其能够访问勒索软件保护。您可以为用户分配以下两个角色之一：勒索软件保护管理员或勒索软件保护查看器。
+* 现在、您需要为用户分配角色、使其能够访问NetApp Keystone。您可以为用户分配以下两个角色之一：Keystone管理员或Keystone查看器。
+* 现在、您可以将Keystone订阅与IAM项目关联起来。通过将Keystone订阅与IAM项目关联起来、您可以在BlueXP  中控制对Keystone的访问。
+
+
+link:reference-iam-predefined-roles.html["了解新角色。"^](英文)

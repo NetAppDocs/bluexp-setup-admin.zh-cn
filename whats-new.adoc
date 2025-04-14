@@ -18,35 +18,26 @@ summary: 了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器�
 
 
 
-== 2025年3月28日
+== 2025年4月14日
 
 
 
-=== 专用模式版本(3.9.50)
+=== 连接器3.9.51
 
-现在、可从下载新的专用模式版本 https://mysupport.netapp.com/site/downloads["NetApp 支持站点"^]
+此版本的BlueXP Connector包括一些小的安全改进和错误修复。
 
-3.9.50版本包括对以下BlueXP  组件和服务的更新。
-
-[cols="3*"]
-|===
-| 组件或服务 | 此版本包含的版本 | 自上一个专用模式版本以来的更改 
+目前、3.9.51版本可用于标准模式和受限模式。
 
 
-| 连接器 | 3.9.50 3.9.49 | 转到 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP  连接器页面中的新增功能"]、并参阅3.9.50和3.9.49中包含的更改。 
+
+=== BlueXP  身份和访问管理(IAM)
+
+* 现在、您需要为用户分配角色、使其能够访问勒索软件保护。您可以为用户分配以下两个角色之一：勒索软件保护管理员或勒索软件保护查看器。
+* 现在、您需要为用户分配角色、使其能够访问NetApp Keystone。您可以为用户分配以下两个角色之一：Keystone管理员或Keystone查看器。
+* 现在、您可以将Keystone订阅与IAM项目关联起来。通过将Keystone订阅与IAM项目关联起来、您可以在BlueXP  中控制对Keystone的访问。
 
 
-| 备份和恢复 | 2025年3月17日 | 转到 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  备份和恢复页面中的新增功能"^]、并参考2024年3月版本中包含的更改。 
-
-
-| 分类 | 2025年3月10日(版本1.41) | 转到 https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分类页面中的新增功能"^]、并参阅1.38 1.371.41版本中包含的更改。 
-|===
-有关专用模式的更多详细信息、包括如何升级、请参见以下内容：
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
-
+link:reference-iam-predefined-roles.html["了解新角色。"^](英文)
 
 
 

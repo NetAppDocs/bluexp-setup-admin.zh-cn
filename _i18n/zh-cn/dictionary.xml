@@ -4944,7 +4944,6 @@ https://support.netapp.com
   <block id="0e231d3391a335865e696150143618bc" category="cell">转到<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>、并参考2024年3月版本中包含的更改。</block>
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">2025年3月10日(版本1.41)</block>
   <block id="49e0c1b5be27dbeb84e3a7ca1d634276" category="cell">转到<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>、并参阅1.38 1.371.41版本中包含的更改。</block>
-  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
   <block id="cb3410a9bf17cf666d6a34ac1b7c6d6c" category="paragraph"><block ref="2416ec7d97fab7b3c3e0f434ea922dd9" category="inline-link-rx"></block>(英文)</block>
   <block id="1920da3586c2e2872f88b02997c971c3" category="doc">组织和项目ID</block>
   <block id="106aaea1e5532e2978889c60809a6ba7" category="paragraph">您的BlueXP  组织具有名称和ID。您可以为组织选择一个名称、以帮助在BlueXP  部署中对其进行标识。您可能还需要检索某些集成的组织ID。</block>
@@ -4979,4 +4978,13 @@ https://support.netapp.com
   <block id="e666f475ae71221ef0568980f94a0316" category="paragraph"><block ref="a51247ccde87e175c686e81825c9f657" category="inline-link-macro-rx"></block>(英文)**添加角色*：如果要提供对组织中其他文件夹或项目的访问权限，请选择*添加角色*，指定其他文件夹或项目或角色类别，然后选择角色类别和相应的角色。</block>
   <block id="88ccee89efe2b556b8fcc7b01ae63c9f" category="paragraph">如果需要调整用户的访问权限、您可以更改为成员分配的角色。</block>
   <block id="bd572303cf9daecbf8e01f72f337d250" category="list-text">您可以更改成员的现有角色或删除角色。</block>
+  <block id="1fa6d342759ba5c5a8f23c210cac048c" category="doc">连接器3.9.51</block>
+  <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">目前、3.9.51版本可用于标准模式和受限模式。</block>
+  <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  身份和访问管理(IAM)</block>
+  <block id="280cb81762489dce44889f9130b6e870" category="list-text">现在、您需要为用户分配角色、使其能够访问勒索软件保护。您可以为用户分配以下两个角色之一：勒索软件保护管理员或勒索软件保护查看器。</block>
+  <block id="0fc0d7857aba2fcd01e923d9a32e9297" category="list-text">现在、您需要为用户分配角色、使其能够访问NetApp Keystone。您可以为用户分配以下两个角色之一：Keystone管理员或Keystone查看器。</block>
+  <block id="7fc94980a9075f2005ba4d674e6766ee" category="list-text">现在、您可以将Keystone订阅与IAM项目关联起来。通过将Keystone订阅与IAM项目关联起来、您可以在BlueXP  中控制对Keystone的访问。</block>
+  <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">了解新角色。</block>
+  <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
 </blocks>
