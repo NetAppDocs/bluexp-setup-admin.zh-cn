@@ -5010,7 +5010,6 @@ https://support.netapp.com
   <block id="e5a26c78a572123c5a5e442167efbf6e" category="paragraph">连接器是您安装的NetApp软件、用于执行BlueXP  在管理存储基础架构时需要执行的操作。BlueXP  的许多功能都不需要连接器、但如果不需要、某些功能将不可用。</block>
   <block id="9097a69a8c3aa1836902abae4c2af6b5" category="paragraph">如果以标准模式运行BlueXP 、则无需安装Connector即可运行BlueXP  的某些服务、例如软件更新和电子钱包。但是、BlueXP  的某些高级服务(如勒索软件保护或灾难恢复)要求您安装Connector。如果在受限或私用模式下使用BlueXP 、则需要安装连接器。</block>
   <block id="c9ea5b101d4c3beb590e4912f1117899" category="section-title">在标准模式下不使用连接器可以执行的操作</block>
-  <block id="25ec9fbdb3e3fbeaa1a630feb04991b6" category="paragraph">如果您在标准模式下运行、则无需安装连接器即可使用BlueXP  的某些最重要服务。</block>
   <block id="8d17fdbbeb88dfc223add1e324431fb7" category="paragraph">仅当需要使用Connector向数字钱包添加许可证时、才需要使用Cloud Volumes ONTAP _no-based _许可证。需要使用连接器、因为BlueXP  需要访问Cloud Volumes ONTAP系统上安装的许可证数据。</block>
   <block id="8cba62c58c5613090d8d857aa64a0495" category="paragraph">在标准模式下使用BlueXP  时、您需要安装一个或多个连接器、才能在BlueXP  中启用以下功能和服务：</block>
   <block id="3dc40720b958919be726cd65a8331a73" category="list-text">经济效益(仅供查看)</block>
@@ -5050,4 +5049,5 @@ https://support.netapp.com
   <block id="4304dbdc82316f438e38c644a361fd66" category="paragraph">^2^虽然设置和管理Azure NetApp Files不需要连接器、但如果要使用BlueXP  分类扫描Azure NetApp Files数据、则需要连接器。</block>
   <block id="86429eb78c6bc64d5f1ce4125590fe22" category="paragraph">^3^虽然直接发现内部ONTAP集群不需要连接器、但如果要利用其他BlueXP  功能、则需要连接器。<block ref="04529f27c98d308747ea6be915c240c4" category="inline-link-rx"></block></block>
   <block id="9c723fb8e231218b213744c9ee3160ca" category="paragraph">您可以在Azure中运行的Linux主机上手动安装Connector。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Azure权限、安装Connector、然后提供您准备的权限。</block>
+  <block id="e6ddd5a54a1d2f8ae254b9358dfed6b9" category="paragraph">如果您在标准模式下运行、则可以开始使用BlueXP  集中管理存储资源、而无需安装连接器。</block>
 </blocks>
