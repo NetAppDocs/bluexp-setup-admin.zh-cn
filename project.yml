@@ -11,7 +11,7 @@ settings:
   langs: zh-cn,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-tw
 sidebar:
   entries:
-  - title: BlueXP  设置和管理文档
+  - title: BlueXP  设置和管理
     url: "/index.html"
   - title: 发行说明
     entries:
@@ -115,8 +115,10 @@ sidebar:
         url: "/task-iam-get-started.html"
       - title: 使用文件夹和项目组织资源
         url: "/task-iam-manage-folders-projects.html"
-      - title: 添加成员并管理其权限
+      - title: 添加成员和服务帐户
         url: "/task-iam-manage-members-permissions.html"
+      - title: 使用角色控制成员对资源的访问
+        url: "/task-iam-manage-roles.html"
       - title: 管理资源层次结构
         url: "/task-iam-manage-resources.html"
       - title: 将连接器与其他文件夹和项目相关联
@@ -127,7 +129,7 @@ sidebar:
         url: "/task-iam-rename-organization.html"
       - title: 监控或审核IAM活动
         url: "/task-iam-audit-actions-timeline.html"
-      - title: 预定义的IAM角色
+      - title: BlueXP  访问角色
         url: "/reference-iam-predefined-roles.html"
     - title: BlueXP  帐户(仅限专用模式)
       entries:

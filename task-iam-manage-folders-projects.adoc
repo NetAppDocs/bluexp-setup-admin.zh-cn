@@ -45,10 +45,10 @@ link:concept-identity-and-access-management.html#associate-resource-folder["了�
 
 ** *访问*：根据您的资源层次结构中已定义的现有权限查看将有权访问文件夹或项目的成员。
 +
-如果需要，请选择*添加成员*以指定应具有文件夹或项目访问权限的其他组织成员，然后选择角色。角色用于定义成员对文件夹或项目拥有的权限。
+如果需要，请选择*添加成员*以指定应具有文件夹或项目访问权限的其他组织成员，然后选择角色。访问角色用于定义成员对文件夹或项目拥有的权限。
 
 +
-link:reference-iam-predefined-roles.html["了解预定义的IAM角色"](英文)
+link:reference-iam-predefined-roles.html["了解访问角色"](英文)
 
 
 
@@ -159,7 +159,7 @@ image:screenshot-iam-member-access.png["\"编辑项目\"页面的屏幕截图、
 
 修改成员对文件夹或项目的访问权限、以确保正确的成员能够访问与文件夹或项目关联的资源。
 
-如果成员访问权限是在较高级别(文件夹或组织级别)提供的、则在查看较低级别的文件夹或项目时、无法删除或更改成员访问权限。您需要切换到层次结构的该部分、并在此更新成员的权限。或者，您也可以link:task-iam-manage-members-permissions.html#manage-permissions["从成员页面管理权限"]。
+如果成员访问权限是在较高级别(文件夹或组织级别)提供的、则在查看较低级别的文件夹或项目时、无法删除或更改其角色。您需要切换到层次结构的该部分、并在此更新成员的角色。或者，您也可以link:task-iam-manage-roles.html#manage-permissions["通过成员页面管理角色"]。
 
 link:concept-identity-and-access-management.html#role-inheritance["详细了解角色继承"](英文)
 

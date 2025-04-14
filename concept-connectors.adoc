@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-connectors.html 
-keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery' 
+keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery, agent' 
 summary: Connector是在云网络或内部网络中运行的NetApp软件。它会执行BlueXP管理数据基础架构所需执行的操作。Connector会不断轮询BlueXP SaaS层以了解它需要执行的任何操作。您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。 
 ---
 = 了解连接器
