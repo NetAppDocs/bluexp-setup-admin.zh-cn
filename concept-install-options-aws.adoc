@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-install-options-aws.html 
-keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
+keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install, deploy 
 summary: 在AWS中创建连接器有几种不同的方法。直接从BlueXP访问是最常见的方法。 
 ---
 = AWS中的连接器安装选项
