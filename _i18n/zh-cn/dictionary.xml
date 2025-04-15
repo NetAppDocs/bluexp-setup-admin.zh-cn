@@ -5006,7 +5006,6 @@ https://support.netapp.com
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  设置和管理</block>
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">添加成员和服务帐户</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">使用角色控制成员对资源的访问</block>
-  <block id="7b86bd575ced3444e23389ac71f98a8f" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block></block>
   <block id="e5a26c78a572123c5a5e442167efbf6e" category="paragraph">连接器是您安装的NetApp软件、用于执行BlueXP  在管理存储基础架构时需要执行的操作。BlueXP  的许多功能都不需要连接器、但如果不需要、某些功能将不可用。</block>
   <block id="9097a69a8c3aa1836902abae4c2af6b5" category="paragraph">如果以标准模式运行BlueXP 、则无需安装Connector即可运行BlueXP  的某些服务、例如软件更新和电子钱包。但是、BlueXP  的某些高级服务(如勒索软件保护或灾难恢复)要求您安装Connector。如果在受限或私用模式下使用BlueXP 、则需要安装连接器。</block>
   <block id="c9ea5b101d4c3beb590e4912f1117899" category="section-title">在标准模式下不使用连接器可以执行的操作</block>
@@ -5050,4 +5049,6 @@ https://support.netapp.com
   <block id="86429eb78c6bc64d5f1ce4125590fe22" category="paragraph">^3^虽然直接发现内部ONTAP集群不需要连接器、但如果要利用其他BlueXP  功能、则需要连接器。<block ref="04529f27c98d308747ea6be915c240c4" category="inline-link-rx"></block></block>
   <block id="9c723fb8e231218b213744c9ee3160ca" category="paragraph">您可以在Azure中运行的Linux主机上手动安装Connector。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Azure权限、安装Connector、然后提供您准备的权限。</block>
   <block id="e6ddd5a54a1d2f8ae254b9358dfed6b9" category="paragraph">如果您在标准模式下运行、则可以开始使用BlueXP  集中管理存储资源、而无需安装连接器。</block>
+  <block id="e179a365cbbaaab0ffe96afa0b1123f8" category="paragraph"><block ref="e179a365cbbaaab0ffe96afa0b1123f8" category="inline-link-macro-rx"></block></block>
+  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
 </blocks>
