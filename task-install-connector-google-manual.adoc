@@ -14,7 +14,7 @@ summary: 要在您自己的Linux主机上手动安装Connector、您需要查看
 
 
 [role="lead"]
-连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是在运行Google Cloud的Linux主机上手动安装Connector软件。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Google Cloud权限、启用API、安装Connector、然后提供您准备的权限。
+您可以在运行Google Cloud的Linux主机上手动安装q Connector。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Google Cloud权限、启用API、安装Connector、然后提供您准备的权限。
 
 .开始之前
 * 您应具有link:concept-connectors.html["了解连接器"]。

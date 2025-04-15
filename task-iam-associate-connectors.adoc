@@ -13,9 +13,7 @@ summary: 如果您的组织成员需要在其他项目中使用连接器、您�
 :imagesdir: ./media/
 
 
-[role="lead"]
-要从BlueXP  管理多种类型的工作环境、需要使用Connector。当_Organization admin_创建Connector时，BlueXP  会自动将该Connector与组织和当前选定的项目相关联。Organization admin_可自动从组织中的任何位置访问该Connector。组织中的其他成员只能从创建连接器的项目访问该连接器、除非您将该连接器与BlueXP  身份和访问管理(IAM)中的其他项目相关联。
-
+ \When an _Organization admin_ creates a Connector, BlueXP automatically associates that Connector with the organization and the currently selected project. The _Organization admin_ automatically has access to that Connector from anywhere in the organization. Other members in your organization can only access that Connector from the project in which it was created, unless you associate that Connector with other projects from BlueXP identity and access management (IAM).
 .开始之前
 您应了解连接器关联的工作原理。link:concept-identity-and-access-management.html#associate-connectors["了解如何将连接器与BlueXP  IAM结合使用"](英文)
 

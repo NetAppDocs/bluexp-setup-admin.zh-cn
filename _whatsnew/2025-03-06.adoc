@@ -12,7 +12,7 @@
 
 BlueXP  管理员(具有组织管理员角色的用户)可以将BlueXP  配置为提示用户输入其ONTAP凭据、以便访问ONTAP System Manager。启用此设置后、用户每次都需要输入其ONTAP凭据、因为它们不会存储在BlueXP  中。
 
-此功能在Connector 3.9.49及更高版本中可用。link:task-ontap-access-connector.html["了解如何配置凭据设置。"^](英文)
+此功能在Connector 3.9.49及更高版本中可用。link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["了解如何配置凭据设置。"^](英文)
 
 
 
@@ -31,4 +31,4 @@ NOTE: 此更改不会影响BlueXP  专用模式、在此模式下、您必须�
 
 此功能在Connector 3.9.48及更高版本中可用。
 
-link:task-upgrade-connector.html["了解如何禁用Connector的自动升级。"^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何禁用Connector的自动升级。"^]

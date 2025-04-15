@@ -14,7 +14,7 @@ summary: 要从Azure Marketplace创建Connector、您需要设置网络连接、
 
 
 [role="lead"]
-连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项之一是直接从Azure Marketplace在Azure中创建Connector。要从Azure Marketplace创建Connector、您需要设置网络连接、准备Azure权限、查看实例要求、然后创建Connector。
+您可以直接从Azure Marketplace在Azure中创建Connector。要从Azure Marketplace创建Connector、您需要设置网络连接、准备Azure权限、查看实例要求、然后创建Connector。
 
 .开始之前
 * 您应具有link:concept-connectors.html["了解连接器"]。

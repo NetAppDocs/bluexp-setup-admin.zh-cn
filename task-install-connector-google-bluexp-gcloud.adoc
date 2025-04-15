@@ -14,7 +14,7 @@ summary: 要从BlueXP或使用gCloud在Google Cloud中创建Connector、您需�
 
 
 [role="lead"]
-连接器是在云网络或内部网络中运行的NetApp软件、使您能够使用所有BlueXP  功能和服务。可用的安装选项包括直接从BlueXP  或使用gCloud在AWS中创建连接器。要从BlueXP或使用gCloud在Google Cloud中创建Connector、您需要设置网络连接、准备Google Cloud权限、启用Google Cloud API、然后创建Connector。
+您可以从BlueXP  或使用Google Cloud在Google Cloud中创建Connector。您需要设置网络连接、准备Google Cloud权限、启用Google Cloud API、然后创建Connector。
 
 .开始之前
 * 您应具有link:concept-connectors.html["了解连接器"]。
