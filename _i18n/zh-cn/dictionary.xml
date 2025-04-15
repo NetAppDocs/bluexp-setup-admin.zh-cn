@@ -4925,7 +4925,6 @@ https://support.netapp.com
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  支持多个预定义角色、您可以将这些角色分配给组织的成员。</block>
   <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">了解IAM预定义角色</block>
   <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="9a4737feea9b9d5b10fea0c8478ac45b" category="doc">预定义的BlueXP  IAM角色和权限</block>
   <block id="94d01a25e8d719777d74e40fde0e74eb" category="paragraph">BlueXP  身份和访问管理(IAM)包括多个预定义角色、您可以将这些角色分配给组织中不同级别的资源层次结构成员。在分配这些角色之前、您应了解每个角色包含的权限。角色分为两类：平台和数据服务。</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">平台角色</block>
   <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">平台角色是您可以分配给用户的最广泛的角色、允许广泛的BlueXP  管理权限、包括分配角色和添加用户、以及能够执行所有BlueXP  功能。BlueXP  IAM包括两个平台角色：组织管理员和文件夹管理员或项目管理员。两个BlueXP  IAM平台角色之间的主要区别是范围。</block>
@@ -4934,7 +4933,6 @@ https://support.netapp.com
   <block id="6573eb5e7a9033869897566e8b1b5f6a" category="paragraph">文件夹或项目管理员角色无法创建连接器。</block>
   <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">平台角色比较表</block>
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">大型跨国组织在BlueXP  中的组织角色示例</block>
-  <block id="09246652e91bee267cf93f6b3c2e9a32" category="paragraph">数据服务角色为用户提供访问其有权访问的组织、项目或文件夹中的数据服务的权限。</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">如果需要，请选择*添加成员*以指定应具有文件夹或项目访问权限的其他组织成员，然后选择角色。角色用于定义成员对文件夹或项目拥有的权限。</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">从成员页面管理权限</block>
   <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">如果成员访问权限是在较高级别(文件夹或组织级别)提供的、则在查看较低级别的文件夹或项目时、无法删除或更改成员访问权限。您需要切换到层次结构的该部分、并在此更新成员的权限。或者，您也可以<block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>。</block>
@@ -4972,7 +4970,72 @@ https://support.netapp.com
   <block id="0d11271abad1cfef17e56e17367d09de" category="paragraph">您可以在其中一台内部计算机上安装Connector。要在内部运行Connector、您需要查看主机要求、设置网络、准备云权限、安装Connector、设置Connector、然后提供您准备的权限。</block>
   <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">BlueXP  设置和管理文档</block>
   <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">添加成员并管理其权限</block>
-  <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">预定义的IAM角色</block>
   <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">了解访问角色。</block>
   <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
+  <block id="8c3d337cee5ab07c0918b1ab7f1db96a" category="inline-link-macro">BlueXP  访问角色</block>
+  <block id="a7d6279e87395342f6ca8ef1ab6ad3ca" category="list-text"><block ref="a7d6279e87395342f6ca8ef1ab6ad3ca" category="inline-link-macro-rx"></block></block>
+  <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">应用程序角色</block>
+  <block id="d48140a7630d821243e3ac2204b3d871" category="paragraph">下面是"应用程序"类别中的角色列表。</block>
+  <block id="a11961cab6627eac643ea36ae57ce8df" category="section-title">Keystone角色</block>
+  <block id="2a04d5504b28b9efe0f0dfff02a03355" category="paragraph">您可以使用以下角色为用户分配对Keystone的访问权限。</block>
+  <block id="78fdf101e42d4e276f66b98cdfe73866" category="admonition">目前、通过BlueXP  访问Keystone处于测试阶段。如果您希望参与Keystone测试版、请联系您的NetApp代表。</block>
+  <block id="cdcfd0d4763f6f8983003ea128be38cf" category="list-text">* Keystone管理员*：管理Keystone订阅并对警报、报告和订阅采取措施。</block>
+  <block id="3275a956f3a80df98f4623ac3ac931a6" category="list-text">* Keystone查看器*：查看Keystone订阅以及报告、警报和资产。</block>
+  <block id="147e83598b37ab6627136a0fbebd7717" category="paragraph">下表显示了每个Keystone角色可以执行的操作。</block>
+  <block id="4420e7353184ac575b539cdce1b991db" category="cell">功能和操作</block>
+  <block id="3522959e95c9f2aad088e504a7c016d0" category="cell">Keystone管理员</block>
+  <block id="9d0ab4774b32ad710dbc8b73cdf29cce" category="cell">Keystone查看器</block>
+  <block id="3d96431c652abba07d810be9a4a3b187" category="cell">查看以下选项卡："订 阅"、"资产"、"监控"和"管理"</block>
+  <block id="04b2aaee865f1746c975de785d02e95f" category="cell">*Keystone订阅页面*：</block>
+  <block id="96a37a10e0f320cc761610a86cf2637c" category="cell">可以查看订阅</block>
+  <block id="0c6e0cfae3b0f2712b3389db1db10e1b" category="cell">可以修改或续订订阅</block>
+  <block id="86744a031b02e581d9a8908f0dbdc8c1" category="cell">*Keystone资产页面*：</block>
+  <block id="7c38a1a6d325208696c25a2b660d7c45" category="cell">查看资产</block>
+  <block id="bb295074f705be0407b1b743a2f6e967" category="cell">管理资产</block>
+  <block id="f00f11f1b7ecc36f276ac4d83ea8ba95" category="cell">*Keystone警报页面*：</block>
+  <block id="428c58ec1c2902ea6bff31e38cae88ff" category="cell">查看警报</block>
+  <block id="685b0f2db45e4fc09a06ccb4695806de" category="cell">管理警报</block>
+  <block id="683e7b4cc33c1c5bb12cefaa8e17c9da" category="cell">为自己创建警报</block>
+  <block id="203311c515509be12349a4f1fc044cd7" category="cell">*电子钱包*：</block>
+  <block id="d7609c91ac60bd14d6f61465cd81ab5a" category="cell">可以查看电子钱包</block>
+  <block id="605bf3e1f808ef9bc9fe99c9bf4cdf1f" category="cell">*Keystone报告页*：</block>
+  <block id="df6e3c89245cdc5bf0a7191c642d6997" category="cell">下载报告</block>
+  <block id="61b0e09fe12f82c766454563f7be036b" category="cell">管理报告</block>
+  <block id="4d1159457f35bcc3ef7ee5b2f65bc124" category="cell">自行创建报告</block>
+  <block id="3b8988881170da948296006bcb3af098" category="cell">*服务请求*：</block>
+  <block id="c144ad302e0d51a72f17afbd09594ba8" category="cell">创建服务请求</block>
+  <block id="3f07e6ff7933633c723d3474e50d9d65" category="cell">可以查看组织内任何用户创建的服务请求</block>
+  <block id="aafdddc00f0073d6f8feca81436dbc0f" category="paragraph">以下是"数据服务"类别中的角色列表。</block>
+  <block id="452c59bc627cf63c04afb8e67c894d8f" category="paragraph">分类没有管理员角色。</block>
+  <block id="6e4131153ef85e6099f1a34150c48c4e" category="paragraph">您可以使用以下角色为用户分配勒索软件保护访问权限。</block>
+  <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">*防系统保护管理员*：管理"保护"、"警报"、"恢复"、"设置"和"报告"选项卡上的操作。</block>
+  <block id="2342f940e11a97078a40faa46aad14e1" category="list-text">*防软件保护查看器*：查看工作负载数据、查看警报数据、下载恢复数据和下载报告。</block>
+  <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">下表显示了每个BlueXP  勒索软件保护角色可以执行的操作。</block>
+  <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="cell">勒索软件保护管理员</block>
+  <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="cell">勒索软件保护查看器</block>
+  <block id="b60c44c6bbbb3793d0c08c34cd6e2382" category="cell">查看信息板和所有选项卡</block>
+  <block id="78c7efbfa07116553a52f59800129dde" category="cell">开始免费试用</block>
+  <block id="42174d568723a8694dc7e6dfd143cb12" category="cell">启动工作负载发现</block>
+  <block id="26548eb85488e3cdc0f0b9b27802995f" category="cell">*在“保护”选项卡上*：</block>
+  <block id="0ceaa792ae3f25d0f79dcd1125e9284e" category="cell">添加、修改或删除策略</block>
+  <block id="bf4011ddd9ae5a6521f75843972999ab" category="cell">保护工作负载</block>
+  <block id="21a74bcaa4f6aef211c1ce1e13ed98fe" category="cell">识别敏感数据</block>
+  <block id="c102bfc829ed11fa589522aa305984a3" category="cell">编辑工作负载保护</block>
+  <block id="d1e541a95d5060702dc6153a411c6c35" category="cell">查看工作负载详细信息</block>
+  <block id="4330b42a340140b836c42bbe9c7105be" category="cell">下载数据</block>
+  <block id="b1e60ac72e50f485ca0a5ea9c82143d2" category="cell">*在“警报”选项卡上*：</block>
+  <block id="9f64c529078a13eebc43993d1ac578d4" category="cell">查看警报详细信息</block>
+  <block id="f700fad2259a25a87fbe56ba2810e8ff" category="cell">编辑意外事件状态</block>
+  <block id="ef9988f85b068b8709daa3be2c31fca3" category="cell">查看意外事件详细信息</block>
+  <block id="38de1b212ca13fa4c230f4c20adbb48a" category="cell">获取受影响文件的完整列表</block>
+  <block id="4b1b2c63b979feafab4b35d6b2307876" category="cell">下载警报数据</block>
+  <block id="b338bf8c8e0fbc61d8a0fad3b4a74e35" category="cell">*在“恢复”选项卡上*：</block>
+  <block id="f5f949f53a00b2da6ffa7a9f7a0fd0f8" category="cell">下载受影响的文件</block>
+  <block id="65ca8041cc328ebb64db5f8368a9101a" category="cell">还原工作负载</block>
+  <block id="4ebc1406711ca6754873e22a81f31c6f" category="cell">下载恢复数据</block>
+  <block id="a4f2411faacb07693dd051a3d2d9f97e" category="cell">*在设置选项卡上*：</block>
+  <block id="988c84a947938e98e39deda3665fae89" category="cell">添加或修改备份目标</block>
+  <block id="08fec10c338548595a28b0310a1c0600" category="cell">添加或修改暹粒目标</block>
+  <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*在“报告”选项卡上*：</block>
+  <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter没有查看器角色。</block>
 </blocks>

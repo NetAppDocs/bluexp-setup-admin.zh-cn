@@ -127,7 +127,7 @@ sidebar:
         url: "/task-iam-rename-organization.html"
       - title: 监控或审核IAM活动
         url: "/task-iam-audit-actions-timeline.html"
-      - title: 预定义的IAM角色
+      - title: BlueXP  访问角色
         url: "/reference-iam-predefined-roles.html"
     - title: BlueXP  帐户(仅限专用模式)
       entries:
