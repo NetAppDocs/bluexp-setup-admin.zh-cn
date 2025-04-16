@@ -341,8 +341,6 @@ https://mysupport.netapp.com
  a| 
 在BlueXP中提供SaaS功能和服务。
 
-请注意、Connector目前正在联系cloudmanager.cloud.netapp.com"、但在即将发布的版本中、它将开始联系api.bluexp.netapp.com"。
-
 
 
  a| 
