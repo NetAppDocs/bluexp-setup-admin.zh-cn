@@ -4893,7 +4893,6 @@ https://support.netapp.com
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">目前、3.9.51版本可用于标准模式和受限模式。</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  身份和访问管理(IAM)</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
-  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">没有组织管理员、文件夹管理员或项目管理员的用户必须分配勒索软件保护角色、才能访问勒索软件保护。您可以为用户分配以下两个角色之一：勒索软件保护管理员或勒索软件保护查看器。</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">没有组织管理员、文件夹管理员或项目管理员的用户必须分配Keystone角色、才能访问Keystone。您可以为用户分配以下两个角色之一：Keystone管理员或Keystone查看器。</block>
   <block id="d4d44165c3ece93b64c24e52e61879a3" category="list-text">如果您具有组织管理员、文件夹或项目管理员角色、则现在可以将Keystone订阅与IAM项目相关联。通过将Keystone订阅与IAM项目关联起来、您可以在BlueXP  中控制对Keystone的访问。</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
@@ -5038,4 +5037,5 @@ https://support.netapp.com
   <block id="08fec10c338548595a28b0310a1c0600" category="cell">添加或修改暹粒目标</block>
   <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*在“报告”选项卡上*：</block>
   <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter没有查看器角色。</block>
+  <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">不具有组织管理员、文件夹或项目管理员的用户必须分配一个防反向程序保护角色、才能访问防反向程序保护。您可以为用户分配以下两个角色之一：勒索软件保护管理员或勒索软件保护查看器。</block>
 </blocks>

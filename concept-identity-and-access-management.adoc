@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-identity-and-access-management.html 
-keywords: iam overview, overview, how iam works, iam example, organization, folders, projects, resources, members, roles, permissions, resource hierarchy, identity and access management, iam 
+keywords: iam overview, overview, how iam works, iam example, organization, folders, projects, resources, members, roles, permissions, resource hierarchy, identity and access management, access roles, iam 
 summary: '通过BlueXP  身份和访问管理(IAM)、您可以控制对组织资源的访问。' 
 ---
 = 了解BlueXP  身份和访问管理
