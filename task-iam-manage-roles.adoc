@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-iam-manage-roles.html 
-keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members 
+keywords: projects, access, resources, user roles, iam, identity and access management, folder, organization, permissions, roles, members, access roles 
 summary: 通过BlueXP  的身份和访问管理、您可以使用文件夹和项目表示完整的资源层次结构。 
 ---
 = 使用角色管理用户对资源的访问

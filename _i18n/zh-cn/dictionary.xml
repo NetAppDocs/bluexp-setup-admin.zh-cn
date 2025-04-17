@@ -1532,7 +1532,6 @@
   <block id="83510fd4a5d6f463975ffcf1a28079a3" category="paragraph">服务帐户充当 " 用户 " ，可以通过授权 API 调用 Cloud Manager 来实现自动化。这样可以更轻松地管理自动化，因为您不需要基于可以随时离开公司的真实用户帐户构建自动化脚本。如果您使用的是联合，则可以创建令牌，而无需从云生成刷新令牌。</block>
   <block id="f172ba98380ffa94100632430ae9c805" category="inline-link-macro">了解有关使用服务帐户的更多信息</block>
   <block id="18da70587f043904939613fa4c43ba6d" category="paragraph">现在，您可以在帐户中允许进行私有预览，以便访问新的 NetApp 云服务，因为这些服务在 Cloud Manager 中作为预览版提供。</block>
-  <block id="50ea4e8dccd315b387c3720bf218560a" category="inline-link-macro">了解有关此选项的更多信息</block>
   <block id="4823145b3655f45dcb57edeef856c1a9" category="paragraph">您还可以允许帐户中的第三方服务访问 Cloud Manager 中提供的第三方服务。</block>
   <block id="2a42bd1b25c8685af4b1b1d1ca8e4805" category="paragraph">我们更新了支持信息板，允许您添加 NetApp 支持站点凭据，以便为您注册支持。您也可以直接从信息板启动 NetApp 支持案例。只需单击帮助图标，然后单击 * 支持 * 。</block>
   <block id="eb13228b7d3a81ef5fba30ba79924b80" category="list-text">在Google Cloud中创建自定义角色：</block>
@@ -2802,8 +2801,6 @@
   <block id="51a7ac19cbf0f9d074132cf117ad2e0c" category="paragraph">将AWS凭据添加到现有连接器可提供在公有 云环境中管理资源和进程所需的权限。 <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>。</block>
   <block id="fb2327495633231db53b83b63281ec59" category="paragraph"><block ref="ba792a8f94fc4fa1d6890491a6d3ca88" category="inline-link-macro-rx"></block>。</block>
   <block id="785c09ae237878056a26f76d752f9655" category="paragraph"><block ref="d681f410de8bf56d0591b119af19b91f" category="inline-link-macro-rx"></block>。</block>
-  <block id="819bbc17eab62ac696bc204d9864298c" category="paragraph"><block ref="317e81beacf8b3184ba06b75c8cba7f0" category="inline-link-macro-rx"></block>。</block>
-  <block id="d5a6b4dc8861625dfe113504ac0e255e" category="paragraph"><block ref="fdc7ca711ae67c971d281a756b555324" category="inline-link-macro-rx"></block>。</block>
   <block id="ae74a3a0435bedb1f051b5b083969faa" category="paragraph">BlueXP需要对Connector和各个服务拥有AWS权限。</block>
   <block id="12c74214cb4c18cf36d885303d6aa2e1" category="cell">目标</block>
   <block id="4afbf095518e3a60998aad1ce6f249ce" category="cell">从BlueXP部署Connector</block>
@@ -4327,7 +4324,6 @@ https://support.netapp.com
   <block id="2cc038b51982044440dd65fe627f5133" category="sidebar">开始使用NetApp BlueXP、以便您可以开始在内部环境和云环境中构建、保护和管理数据。设置完成后、您可以使用BlueXP  身份和访问管理(IAM)控制对资源的访问、并管理连接器、云提供商帐户等。</block>
   <block id="d7818a3dcaa08963a99fa80d50e4d009" category="sidebar">BlueXP IAM</block>
   <block id="f9979c483e6c4c3e0bb110084e2529e7" category="sidebar">使用文件夹和项目组织资源</block>
-  <block id="ff72511bc39f980fe978f1f136d5b661" category="sidebar">管理成员及其权限</block>
   <block id="e824a4cdd52665a1b8f0bccc58724034" category="sidebar">管理资源层次结构</block>
   <block id="0baaa5b5cebd5e340294b6393a2b73f4" category="sidebar">使用与BlueXP  的身份联合</block>
   <block id="22bdd8c71cc34511ea88881e20f7ca21" category="sidebar">身份和访问管理</block>
@@ -4933,30 +4929,6 @@ https://support.netapp.com
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">大型跨国组织在BlueXP  中的组织角色示例</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">如果需要，请选择*添加成员*以指定应具有文件夹或项目访问权限的其他组织成员，然后选择角色。角色用于定义成员对文件夹或项目拥有的权限。</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">从成员页面管理权限</block>
-  <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">如果成员访问权限是在较高级别(文件夹或组织级别)提供的、则在查看较低级别的文件夹或项目时、无法删除或更改成员访问权限。您需要切换到层次结构的该部分、并在此更新成员的权限。或者，您也可以<block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>。</block>
-  <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">添加BlueXP  IAM成员并管理其权限</block>
-  <block id="85f7f0a38e4d8907b849af9be7f0523b" category="paragraph">您可以查看BlueXP  组织中所有成员的列表。要了解某个成员可以使用哪些资源和权限、您可以查看在组织的资源层次结构的不同级别分配给该成员的角色。</block>
-  <block id="6f3b2d366fd74358540895c5d487f7fc" category="paragraph">下面是一个成员的示例、该成员被分配了文件夹的_Folder或项目管理_角色、该角色为文件夹中的三个项目提供权限。</block>
-  <block id="a6102229f11a975b96c232bac6fe4518" category="inline-image-macro">有权访问项目和文件夹的成员的详细信息页面的屏幕截图。</block>
-  <block id="77029620a91c1437c153c854b16400d8" category="paragraph"><block ref="77029620a91c1437c153c854b16400d8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2ec798ce1d65b266be695e73de188467" category="paragraph">以下是另一个示例、其中显示了具有组织管理员角色的成员、该角色为用户授予了对组织中所有资源的访问权限。</block>
-  <block id="8395f2651a81b25e9b7a23fbee8b9549" category="inline-image-macro">具有组织管理员权限的成员的详细信息页面的屏幕截图。</block>
-  <block id="3d5d541246a5be6ff781d877024461b5" category="paragraph"><block ref="3d5d541246a5be6ff781d877024461b5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4bd98620ebfd813b73be1bb04c31e63a" category="paragraph">“*成员*”页面显示了有关两种类型成员的详细信息：用户帐户和服务帐户。</block>
-  <block id="71a902b9bd8bd5f915e170707c50e813" category="section-title">管理成员角色</block>
-  <block id="e9d61c4ab8f60a06a549f931f8154bc3" category="paragraph">可以在资源层次结构的每个级别和多个级别为组织成员分配角色。您可以为成员分配与其在BlueXP  组织中的职责相关的角色。</block>
-  <block id="bb6a1c303d753a3800aa29f0149ef2da" category="paragraph">您可以从成员取消分配角色、添加新角色或同时添加这两者。角色用于定义在组织、文件夹或项目级别分配给成员的权限。您可以为成员分配与其在BlueXP  组织中的职责相关的角色。</block>
-  <block id="6cbcd95c7c747face3f074348da093de" category="paragraph">每个组织成员可以在组织层次结构的不同级别分配一个角色。它可以是同一个角色、也可以是不同的角色。例如、您可以为项目1分配成员角色A、为项目2分配角色B。</block>
-  <block id="07e7a075870b5fd1a97b81d0f2032e95" category="admonition">不能为分配了组织管理员角色的成员分配任何其他角色。他们已经拥有整个组织的权限。</block>
-  <block id="914f7dbf9ae27653eb2ab889d315d7b8" category="paragraph">您可以查看成员以验证当前为其分配的角色。</block>
-  <block id="787919896edfa2afa28d9030c2bd8ee2" category="list-text">在表中，展开要查看成员的指派角色的组织、文件夹或项目的相应行，然后在*Role*列中选择*View*。</block>
-  <block id="3f4fb5bf409c65d0cdc07e16e971923b" category="section-title">分配角色</block>
-  <block id="ffb0fd8d3db2f95c2bb0961f852f2b9f" category="paragraph">通过添加适用于组织、文件夹或项目级别的角色、为成员提供组织中的其他权限。</block>
-  <block id="868c665304c1cc003d592c37eb2d9284" category="inline-link-macro">了解IAM角色</block>
-  <block id="8eaa33e37e898cc8fe60223764d1b067" category="list-text">*选择一个类别*：BlueXP  将角色分为两类：平台和数据服务。<block ref="95a2a1c0b49231381e965b8dd6b00696" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="edd875bb1109a9f8286024a3b4794e94" category="list-text">如果选择了组织，则可以从*文件夹或项目管理员*以外的任何角色中进行选择。</block>
-  <block id="5f3c99e4fd9b4f957adfdcdde4d5a1de" category="list-text">*添加角色*：如果要提供对组织中其他文件夹或项目的访问权限，请选择*添加角色*，指定其他文件夹或项目或角色类别，然后选择角色类别和相应的角色。</block>
-  <block id="955a0a3e2fca13996f710db6f2fbe6a3" category="paragraph">您可以在组织、文件夹或项目级别更改为分配的角色。成员可以在组织的不同级别担任不同角色。</block>
   <block id="2862531e5d6bc94c86cde4ee59b36495" category="paragraph">您可以直接从BlueXP  在AWS中创建连接器。要从BlueXP在AWS中创建Connector、您需要设置网络连接、准备AWS权限、然后创建Connector。</block>
   <block id="6c6728a3304e61d70edb5c350db7efa1" category="paragraph">您可以在AWS中运行的Linux主机上手动安装Connector。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备AWS权限、安装Connector、然后提供准备好的权限。</block>
   <block id="0beb1e6219ede132ce0fe96557a2c156" category="paragraph">您可以直接从AWS Marketplace在AWS中创建Connector。要从AWS Marketplace创建Connector、您需要设置网络、准备AWS权限、查看实例要求、然后创建Connector。</block>
@@ -4966,8 +4938,6 @@ https://support.netapp.com
   <block id="44fc4ca54d8261b4facf220d04704531" category="paragraph">您可以从BlueXP  或使用Google Cloud在Google Cloud中创建Connector。您需要设置网络连接、准备Google Cloud权限、启用Google Cloud API、然后创建Connector。</block>
   <block id="5e7dbc359167a6195a71df82607e8477" category="paragraph">您可以在运行Google Cloud的Linux主机上手动安装q Connector。要在您自己的Linux主机上手动安装Connector、您需要查看主机要求、设置网络连接、准备Google Cloud权限、启用API、安装Connector、然后提供您准备的权限。</block>
   <block id="0d11271abad1cfef17e56e17367d09de" category="paragraph">您可以在其中一台内部计算机上安装Connector。要在内部运行Connector、您需要查看主机要求、设置网络、准备云权限、安装Connector、设置Connector、然后提供您准备的权限。</block>
-  <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">BlueXP  设置和管理文档</block>
-  <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">添加成员并管理其权限</block>
   <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">了解访问角色。</block>
   <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
   <block id="8c3d337cee5ab07c0918b1ab7f1db96a" category="inline-link-macro">BlueXP  访问角色</block>
@@ -5045,4 +5015,13 @@ https://support.netapp.com
   <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">2025年1月22日(版本1.39)</block>
   <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">转到<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>、并参考1.39版本中包含的更改。</block>
   <block id="09d7c2dac047caa965175fead07159aa" category="cell">2025年2月21日</block>
+  <block id="c77472b3cb88175d9f673b4976ce643a" category="paragraph">如果成员访问权限是在较高级别(文件夹或组织级别)提供的、则在查看较低级别的文件夹或项目时、无法删除或更改成员访问权限。您需要切换到层次结构的该部分、并在此更新成员的权限。或者，您也可以<block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>。</block>
+  <block id="e07d586e54fb2ecc1791d2d434436330" category="doc">添加BlueXP  成员并管理其权限</block>
+  <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="45fa36bab7b7452cfb911598ccd2d223" category="inline-link-macro">了解如何使用角色控制对BlueXP  资源的访问。</block>
+  <block id="eef972128da3061d69cdfbbd20808652" category="paragraph">您可以查看BlueXP  组织中所有成员的列表。要了解某个成员可以使用哪些资源和权限、您可以查看在组织的资源层次结构的不同级别分配给该成员的角色。<block ref="4e7a66baee137600d665a8be3cbcb6a5" category="inline-link-macro-rx"></block></block>
+  <block id="57c4db21a8e5f9688baa21606de89184" category="paragraph">您可以从*成员*页面同时查看用户帐户和服务帐户。</block>
+  <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">添加成员和服务帐户</block>
+  <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">使用角色控制成员对资源的访问</block>
+  <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  设置和管理</block>
 </blocks>
