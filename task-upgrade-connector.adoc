@@ -102,7 +102,7 @@ systemctl status netapp-service-manager.service
 +
 [source, cli]
 ----
-chmod +x /path/BlueXP-Connector-offline-<version>
+chmod +x /path/BlueXP-Connector-Offline-<version>
 ----
 +
 其中、<version> 是您下载的连接器版本。
@@ -111,7 +111,7 @@ chmod +x /path/BlueXP-Connector-offline-<version>
 +
 [source, cli]
 ----
-sudo /path/BlueXP-Connector-offline-<version>
+sudo /path/BlueXP-Connector-Offline-<version>
 ----
 +
 其中、<version> 是您下载的连接器版本。
