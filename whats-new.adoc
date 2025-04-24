@@ -82,6 +82,12 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-r
 
 此版本的BlueXP Connector包括一些小的安全改进和错误修复。
 
+* 现在、在操作系统上启用了SELinux的连接器支持Cloud Volumes ONTAP系统的管理。
++
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["了解有关SELinux的更多信息"^]
+
+
+
 目前、3.9.50版本可用于标准模式和受限模式。
 
 
@@ -125,6 +131,31 @@ NOTE: 此更改不会影响BlueXP  专用模式、在此模式下、您必须�
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何禁用Connector的自动升级。"^]
 
+
+
+== 2025年2月18日
+
+
+
+=== 专用模式版本(3.9.48)
+
+现在、可从下载新的专用模式版本 https://mysupport.netapp.com/site/downloads["NetApp 支持站点"^]
+
+3.9.48版本包括对以下BlueXP  组件和服务的更新。
+
+[cols="3*"]
+|===
+| 组件或服务 | 此版本包含的版本 | 自上一个专用模式版本以来的更改 
+
+
+| 连接器 | 3.9.48 | 转到 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48["BlueXP  连接器页面中的新增功能"]、并参阅3.9.48版包含的更改。 
+
+
+| 备份和恢复 | 2025年2月21日 | 转到 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  备份和恢复页面中的新增功能"^]、并参考2025年2月版中包含的更改。 
+
+
+| 分类 | 2025年1月22日(版本1.39) | 转到 https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分类页面中的新增功能"^]、并参考1.39版本中包含的更改。 
+|===
 
 
 == 2025年2月10日
