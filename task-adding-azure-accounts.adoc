@@ -342,9 +342,6 @@ image:screenshot_accounts_switch_azure.gif["屏幕截图、显示在详细信息
 +
 您必须选择与连接器关联的凭据。您不能将商城订阅与BlueXP关联的凭据关联。
 
-+
-image:screenshot_azure_add_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
-
 . 要将凭据与现有订阅相关联，请从下拉列表中选择订阅，然后选择*Config*。
 . 要将凭据与新订阅关联、请选择*添加订阅>继续*、然后按照Azure Marketplace中的步骤进行操作：
 +
