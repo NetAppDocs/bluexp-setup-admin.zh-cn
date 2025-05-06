@@ -35,9 +35,6 @@ _silent_ 运行此脚本，而不提示您进行确认。
 
 
 
-.结果
-现在、Connector软件已从Linux主机卸载。
-
 
 
 == 使用专用模式时卸载Connector
@@ -48,13 +45,31 @@ _silent_ 运行此脚本，而不提示您进行确认。
 . 连接到Connector的Linux VM。
 . 在 Linux 主机中，运行以下命令：
 +
-`/opt/application/netapp/ds/cleanup.sh`
-`rm -rf /opt/application/netapp/ds`
+[source, cli]
+----
+/opt/application/netapp/ds/cleanup.sh
+rm -rf /opt/application/netapp/
+----
+. 从Linux主机中、删除现已不使用的旧容器映像文件。这样可以确保/var"目录中有足够的空间来重新安装。
++
+[role="tabbed-block"]
+====
+.Podman
+--
+[source, cli]
+----
+podman system prune --all
+----
+--
+.Docker
+--
+[source, cli]
+----
+docker system prune -a
+----
+--
+====
 
-
-
-.结果
-现在、Connector软件已从Linux主机卸载。
 
 
 
@@ -77,6 +92,3 @@ image:screenshot_connector_remove.gif["Connector 小工具的屏幕截图，您�
 
 . 输入Connector的名称进行确认、然后选择*删除*。
 
-
-.结果
-BlueXP会从其记录中删除Connector。

@@ -1714,7 +1714,6 @@
   <block id="e8e3de05575910fc8863b3e5715b75a4" category="inline-image-macro">Connector 小工具的屏幕截图，您可以在其中删除非活动的 Connector 。</block>
   <block id="2edb4e92b7a9da8aeba40d13e6c35982" category="paragraph"><block ref="2edb4e92b7a9da8aeba40d13e6c35982" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">输入Connector的名称进行确认、然后选择*删除*。</block>
-  <block id="7c42efcb94d7f8204bfb69f49301938f" category="paragraph">BlueXP会从其记录中删除Connector。</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">在 Linux 主机上运行卸载脚本：</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silent_ 运行此脚本，而不提示您进行确认。</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">在 Linux 主机中，运行以下命令：</block>
@@ -3529,7 +3528,6 @@ https://support.netapp.com
   <block id="716e455593e3f61d09e3bf6cbb30d375" category="doc">卸载并删除连接器</block>
   <block id="0ca48b615c940d64cdde98b76cdee8b3" category="section-title">使用标准模式或受限模式时卸载Connector</block>
   <block id="da529abe542a53761e1008dc23815cf7" category="paragraph">如果您在标准模式或受限模式下使用BlueXP (换言之、Connector主机具有出站连接)、则应按照以下步骤卸载Connector软件。</block>
-  <block id="0f915c6b577573f25e2e8bfac8c2aacb" category="paragraph">现在、Connector软件已从Linux主机卸载。</block>
   <block id="32b4ba2ff55d15357ed5b70aeb566059" category="section-title">使用专用模式时卸载Connector</block>
   <block id="34a2bd34ae23cc65060f62957132c0eb" category="paragraph">如果您在私有模式下使用BlueXP (即、Connector主机具有_no_出站连接)、则应按照以下步骤卸载Connector软件。</block>
   <block id="a1fd436d8cb76b77def4aeb2d8bba352" category="doc">维护Connector VM和操作系统</block>
@@ -3674,7 +3672,6 @@ https://support.netapp.com
   <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">请注意、默认密码使用的是注册电子邮件地址的一次性密码(OTP)。每次尝试登录时都会生成一个新的OTP。</block>
   <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">在Cloud Volumes ONTAP命令行界面中、将权限级别设置为高级：</block>
   <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">运行以下命令以显示当前备份目标：</block>
-  <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="d44b908365d28414a72f5b042c756f89" category="cell">在灵活的流程编排模式下使用虚拟机扩展集、以便为Cloud Volumes ONTAP指定特定分区</block>
   <block id="e32bb1c8b64cbfd8bf1712551cd39a15" category="cell">Microsoft。 计算/虚拟MachineScaleSets/Write</block>
   <block id="da4802bef00f05ba8274ecb054d0388f" category="cell">Microsoft。 计算/虚拟MachineScaleSets/Read</block>
@@ -5032,4 +5029,6 @@ https://support.netapp.com
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">2025年2月18日</block>
   <block id="186343db38833a48df757e694e69337d" category="doc">管理与BlueXP  关联的NSS凭据</block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">数字钱包中的许可证更新、这意味着您将无法利用新购买的容量。</block>
+  <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">在Connector主机上维护操作系统是您(客户)的责任。例如、您(客户)应按照公司的操作系统分发标准过程对Connector主机上的操作系统应用安全更新。</block>
+  <block id="ec3b20ec97830a6ca400807ee52fba22" category="list-text">从Linux主机中、删除现已不使用的旧容器映像文件。这样可以确保/var"目录中有足够的空间来重新安装。</block>
 </blocks>
