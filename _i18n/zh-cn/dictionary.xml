@@ -1658,7 +1658,6 @@
   <block id="738140038c4506b7e29508b58d682758" category="paragraph"><block ref="738140038c4506b7e29508b58d682758" category="inline-link-rx"></block></block>
   <block id="28d40d49edc5d8557dfa8624f4921f55" category="section-title">操作系统和VM维护</block>
   <block id="19584c42f9ee050980069e98aba18776" category="paragraph">您应负责维护Connector主机上的操作系统。例如、您应按照公司的操作系统分发标准过程对Connector主机上的操作系统应用安全更新。</block>
-  <block id="58eaadf4bb73c6121323ec8ad981c1bf" category="paragraph">如果您需要先停止并启动Connector VM、则应从云提供商的控制台或使用内部管理的标准过程来执行此操作。</block>
   <block id="56f7fa1ed2a5960645c3e1c3f3521ac4" category="inline-link-macro">请注意、连接器必须始终正常运行</block>
   <block id="50f74838f982f7a3b705af170ddd7da4" category="paragraph"><block ref="c94a7910d5b535a9c639377af3b5e75b" category="inline-link-macro-rx"></block>。</block>
   <block id="f86faf1862caeed3f6dccfce3a669edf" category="section-title">在连接器之间切换</block>
@@ -3486,7 +3485,6 @@ https://support.netapp.com
   <block id="99ca40e706695ba7607287669fab39f3" category="cell">检查可用性区域是否为AWS本地区域、并验证所有部署参数是否兼容</block>
   <block id="0683995d371439e19d907680da921ba9" category="section-title">2024年5月9日</block>
   <block id="376a26b461e6c64a1c38b284dbc9703f" category="paragraph">现在、Cloud Volumes ONTAP需要以下权限：</block>
-  <block id="caf547270bba046bebc03d7ccf4b0203" category="paragraph">请注意、在应用次要安全更新时、不需要停止Connector主机上的任何服务。</block>
   <block id="ebb952d62c1eec36921c93691e959c82" category="paragraph"><block ref="ebb952d62c1eec36921c93691e959c82" category="inline-link-macro-rx"></block></block>
   <block id="25ed61080ee73d701a5ba6feef931050" category="paragraph"><block ref="25ed61080ee73d701a5ba6feef931050" category="inline-link-macro-rx"></block></block>
   <block id="1b9eb4a1347f52519d9e7d0e26300a53" category="paragraph"><block ref="01cf67ff20127008355664826b726767" category="inline-link-macro-rx"></block>。</block>
@@ -3951,19 +3949,13 @@ https://support.netapp.com
   <block id="cdf60a7d13d1d74e115661d87ae97a3f" category="list-text">Ubuntu 24.04 LTS</block>
   <block id="b6f945763d62ac8e8f24fb52111049ee" category="summary">BlueXP  身份和访问管理包括多个预定义角色、您可以将这些角色分配给组织的成员。</block>
   <block id="6a476d78ce3a8169d99c99c3285fa106" category="section-title">组织管理员</block>
-  <block id="b35f7cd4ff8cf3b50f8a254ff8eaab4d" category="list-text">具有此角色的成员可以在BlueXP  中完成以下操作：</block>
   <block id="b7468effacd77ea7140c661bd2dce11a" category="list-text">管理他们拥有权限的项目和文件夹中的所有工作环境</block>
   <block id="b510afc7b0f705daf7ba3b0e6a9509ab" category="list-text">使用所有BlueXP  服务</block>
   <block id="379e8cc7b99cd4d7696788fde49a89de" category="list-text">通过设置&gt;凭据管理凭据</block>
   <block id="5c2549b200adb54fcf4ab1fa173b79b7" category="list-text">查看BlueXP  时间线</block>
   <block id="ea6f3818343083288cee520c382ca65a" category="list-text">注册BlueXP  以获得支持并提交案例</block>
   <block id="36910b765d93c29f4611f725c05faabe" category="section-title">SnapCenter管理员</block>
-  <block id="9475c3d2084f0988bba4e27b2659a267" category="list-text">能够使用适用于应用程序的BlueXP  备份和恢复功能从内部ONTAP集群备份快照。</block>
   <block id="b839a58c0750f04dc83675a2a8c1ba61" category="list-text">从备份和恢复&gt;应用程序完成任何操作</block>
-  <block id="1393a4279651a3334e20f39925a139f5" category="section-title">分类查看器</block>
-  <block id="4a7c2bc5a034a095b9cd966aff4637c5" category="list-text">提供查看BlueXP  分类扫描结果的功能。</block>
-  <block id="84e4a7656b5466806bf9fbeda2eedd15" category="list-text">查看合规性信息并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。</block>
-  <block id="5f8c43dca47697fafd9a89eae3ea6f82" category="paragraph">具有此角色的成员不能执行任何其他操作。</block>
   <block id="ef8eb5bec0bebce3b4cac1797fe12831" category="list-text"><block ref="ef8eb5bec0bebce3b4cac1797fe12831" category="inline-link-macro-rx"></block></block>
   <block id="24fff469b53b3c0caad8c3049aada3bc" category="doc">为BlueXP  控制台准备网络连接</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="list-title">相关信息</block>
@@ -4891,13 +4883,8 @@ https://support.netapp.com
   <block id="31e872437335d3d81483e87525b418b2" category="paragraph">一个组织是BlueXP  IAM系统的顶级组织、通常代表您的公司。您的组织由文件夹、项目、成员、角色和资源组成。连接器与组织中的特定项目相关联。</block>
   <block id="2514dc2ef1e14f7696838f5cc8280315" category="paragraph">注册BlueXP  时、系统会提示您创建新组织。</block>
   <block id="229579d2bfa52f21a46468d1600ae5db" category="paragraph">您不需要创建文件夹。它们是可选的。</block>
-  <block id="778cae7482baa87153f906bf3473adc3" category="section-title">预定义角色</block>
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  支持多个预定义角色、您可以将这些角色分配给组织的成员。</block>
-  <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">了解IAM预定义角色</block>
-  <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">平台角色</block>
-  <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">允许用户不受限制地访问组织中的所有项目和文件夹、向任何项目或文件夹添加成员、以及执行任何BlueXP  任务和使用任何数据服务。</block>
-  <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">平台角色比较表</block>
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">大型跨国组织在BlueXP  中的组织角色示例</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">如果需要，请选择*添加成员*以指定应具有文件夹或项目访问权限的其他组织成员，然后选择角色。角色用于定义成员对文件夹或项目拥有的权限。</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">从成员页面管理权限</block>
@@ -4916,9 +4903,6 @@ https://support.netapp.com
   <block id="a7d6279e87395342f6ca8ef1ab6ad3ca" category="list-text"><block ref="a7d6279e87395342f6ca8ef1ab6ad3ca" category="inline-link-macro-rx"></block></block>
   <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">应用程序角色</block>
   <block id="a11961cab6627eac643ea36ae57ce8df" category="section-title">Keystone角色</block>
-  <block id="2a04d5504b28b9efe0f0dfff02a03355" category="paragraph">您可以使用以下角色为用户分配对Keystone的访问权限。</block>
-  <block id="cdcfd0d4763f6f8983003ea128be38cf" category="list-text">* Keystone管理员*：管理Keystone订阅并对警报、报告和订阅采取措施。</block>
-  <block id="3275a956f3a80df98f4623ac3ac931a6" category="list-text">* Keystone查看器*：查看Keystone订阅以及报告、警报和资产。</block>
   <block id="147e83598b37ab6627136a0fbebd7717" category="paragraph">下表显示了每个Keystone角色可以执行的操作。</block>
   <block id="4420e7353184ac575b539cdce1b991db" category="cell">功能和操作</block>
   <block id="3522959e95c9f2aad088e504a7c016d0" category="cell">Keystone管理员</block>
@@ -4940,10 +4924,6 @@ https://support.netapp.com
   <block id="4d1159457f35bcc3ef7ee5b2f65bc124" category="cell">自行创建报告</block>
   <block id="3b8988881170da948296006bcb3af098" category="cell">*服务请求*：</block>
   <block id="c144ad302e0d51a72f17afbd09594ba8" category="cell">创建服务请求</block>
-  <block id="452c59bc627cf63c04afb8e67c894d8f" category="paragraph">分类没有管理员角色。</block>
-  <block id="6e4131153ef85e6099f1a34150c48c4e" category="paragraph">您可以使用以下角色为用户分配勒索软件保护访问权限。</block>
-  <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">*防系统保护管理员*：管理"保护"、"警报"、"恢复"、"设置"和"报告"选项卡上的操作。</block>
-  <block id="2342f940e11a97078a40faa46aad14e1" category="list-text">*防软件保护查看器*：查看工作负载数据、查看警报数据、下载恢复数据和下载报告。</block>
   <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">下表显示了每个BlueXP  勒索软件保护角色可以执行的操作。</block>
   <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="cell">勒索软件保护管理员</block>
   <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="cell">勒索软件保护查看器</block>
@@ -4992,20 +4972,15 @@ https://support.netapp.com
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">BlueXP  设置和管理</block>
   <block id="52ae0ac7aa539174fa20e657c71eddf3" category="paragraph">BlueXP  身份和访问管理(IAM)包括多个预定义角色、您可以将这些角色分配给组织中不同级别的资源层次结构成员。在分配这些角色之前、您应了解每个角色包含的权限。角色分为以下几类：平台、应用程序和数据服务。</block>
   <block id="af7aabee58f78d8c3ba27e6b227a45cd" category="paragraph">平台角色是您可以分配给用户的最广泛角色、并且允许使用所有权限进行BlueXP管理、包括分配角色和添加用户。具有平台角色的用户可以访问BlueXP  中的所有数据服务和应用程序。BlueXP  IAM包括两个平台角色：组织管理员和文件夹管理员或项目管理员。两个BlueXP  IAM平台角色之间的主要区别是范围。</block>
-  <block id="354b5c7e04f33eff066b4dc5b8104237" category="paragraph">允许用户不受限制地访问为其分配的特定项目和文件夹。可以将成员添加到他们管理的文件夹或项目、以及执行任何BlueXP  任务、并使用分配给他们的文件夹或项目中资源上的任何数据服务或应用程序。</block>
-  <block id="ac6f21d3ccd4ab7c12a14f56f9a464bd" category="paragraph">文件夹或项目管理员角色无法创建连接器。</block>
   <block id="91ddd20c84fc1e8ded7b005f805d8705" category="cell">创建连接器</block>
   <block id="1963c5def9c98c78ad1a24795d77fd45" category="cell">创建文件夹和项目、包括删除</block>
   <block id="3e02e95230f791e515adffdd7086123c" category="cell">重命名现有文件夹和项目</block>
   <block id="c9cff18229760a66e25f980da9c1850b" category="cell">从文件夹和项目中删除接头</block>
   <block id="b6f5b5483997d6dff9a8ee0bc1932433" category="cell">管理连接器(编辑证书、设置等)</block>
-  <block id="0600246627669cf56a49de00fb320e66" category="paragraph">为此、在XYZ公司的BlueXP  中分配了组织管理员角色的人员会创建一个初始工作环境、然后在BlueXP  中为每个区域创建单独的文件夹。每个区域的文件夹都包含与该区域相关的项目(以及相关资源)。组织管理员为每个区域的BlueXP  用户分配文件夹/项目管理员角色。</block>
-  <block id="35a83113bde80420d7102c597d0dfac6" category="paragraph">完成初始设置后、具有文件夹或项目管理员角色的区域管理员可以创建新的工作环境并在其区域内添加用户。这些区域管理员还可以添加/删除/重命名为其分配的文件夹和项目。组织管理员可以继承任何新工作环境或资源的权限、从而保持整个组织内存储使用情况的可见性。</block>
   <block id="d76310e425debd9a2b76f8114d4c1d27" category="paragraph">以下是应用程序类别中的角色列表。每个角色在其指定范围内授予特定权限。没有所需应用程序角色或平台角色的用户将无法访问此应用程序。</block>
   <block id="4be5ebc45ada5051c97493c24dafb98f" category="admonition">目前、通过BlueXP  访问Keystone处于测试阶段。如果您希望参与Keystone测试版、请联系您的NetApp代表。</block>
   <block id="124cd0f2df6f1c0e90303ec188b16200" category="cell">查看订阅</block>
   <block id="d01d98071916332acadef4e86c7ff279" category="cell">修改或续订订阅</block>
-  <block id="57b248bc2bcc519c9d26da79b5753feb" category="cell">组织内任何用户创建的CView服务请求</block>
   <block id="40abfc355f5aea2697c05cedc7637005" category="section-title">数据服务角色</block>
   <block id="3b5148467641fe76592e826ef571410c" category="paragraph">以下是数据服务类别中的角色列表。每个角色在其指定范围内授予特定权限。不具备所需数据服务角色或平台角色的用户将无法访问数据服务。</block>
   <block id="490e13bea5876f4583d326593619ee16" category="list-text">现在、在操作系统上启用了SELinux的连接器支持Cloud Volumes ONTAP系统的管理。</block>
@@ -5027,8 +5002,113 @@ https://support.netapp.com
   <block id="91db0dcecdec6f07d8d7296d1c7d5cf1" category="list-text">对于要更新的NSS帐户，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*显示电子邮件地址*。您可以使用复制按钮复制电子邮件地址。</block>
   <block id="95113dfcf72340b0f58f2233f6b68f7d" category="paragraph">您不能删除当前与Cloud Volumes ONTAP工作环境关联的帐户。您首先需要<block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>。</block>
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">2025年2月18日</block>
-  <block id="186343db38833a48df757e694e69337d" category="doc">管理与BlueXP  关联的NSS凭据</block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">数字钱包中的许可证更新、这意味着您将无法利用新购买的容量。</block>
   <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">在Connector主机上维护操作系统是您(客户)的责任。例如、您(客户)应按照公司的操作系统分发标准过程对Connector主机上的操作系统应用安全更新。</block>
   <block id="ec3b20ec97830a6ca400807ee52fba22" category="list-text">从Linux主机中、删除现已不使用的旧容器映像文件。这样可以确保/var"目录中有足够的空间来重新安装。</block>
+  <block id="1d91ba09123988594615f201a8f3eb35" category="paragraph">27.0.0 28.0.0支持_new_ 3.9.52或更高版本的安装</block>
+  <block id="acd994f3f908677c5d2ca549b13f2fdd" category="paragraph">请注意、在应用次要安全更新时、您(客户)不需要停止Connector主机上的任何服务。</block>
+  <block id="cadb6c86b1cf837dd9677b37639d5d4d" category="paragraph">如果您(客户)需要先停止再启动Connector VM、则应从云提供商的控制台执行此操作、或者使用内部管理的标准过程执行此操作。</block>
+  <block id="f4136fdf902ca32b4530c7a614c0ed71" category="doc">连接器3.9.52</block>
+  <block id="aa9f9a6b10a3fcd2209035620051306c" category="paragraph">此版本的BlueXP  连接器提供了一些小的安全改进和错误修复、以及一些附加更新。</block>
+  <block id="6f9b6bb76caa4f1e59bff34c9ae037fe" category="paragraph">目前、3.9.52版本可用于标准模式和受限模式。</block>
+  <block id="66b821747bf772a5a92a60270143558a" category="section-title">支持Docker 27和Docker 28</block>
+  <block id="01bd213c78b554183ce88619eeb02cce" category="paragraph">连接器现在支持Docker 27和Docker 28。</block>
+  <block id="ab83fd01c3620a62252ab67adbc06a91" category="section-title">Keystone管理可在BlueXP  中使用</block>
+  <block id="4359bea5882e2896e306955792589a33" category="paragraph">BlueXP  中的NetApp Keystone测试版增加了对Keystone管理的访问权限。您可以从BlueXP  的左侧导航栏访问NetApp Keystone测试版的注册页面。</block>
+  <block id="3c4f7accda6c4e5b05c122dfef01bebe" category="paragraph">以下各节介绍了在BlueXP  中使用IAM的不同组件。</block>
+  <block id="e95e1ea14aa7dd2b3186795a75b45b13" category="paragraph">如果需要分离职责或存储资源、您可以将资源组织到文件夹中。</block>
+  <block id="b1371d1a1eaa0db34a42be4569a94358" category="section-title">访问角色</block>
+  <block id="55b6d94d9ad6439fe5c46ccdba149ed3" category="paragraph">BlueXP  支持多个访问角色、您可以将这些角色分配给组织的成员。</block>
+  <block id="2c2e7be4268cd14a5e106bbdd7de7669" category="section-title">访问角色</block>
+  <block id="481fde2b9d3163b5bc94a4f5d5a81c31" category="summary">BlueXP  身份和访问管理提供了两个管理角色、您可以将这些角色分配给组织的成员。</block>
+  <block id="917ed85266888b2a7a9981b7b5a988fd" category="doc">BlueXP  的Keystone访问角色</block>
+  <block id="8523ef412b93586e7483ff371da34a44" category="paragraph">Keystone角色提供对Keystone信息板的访问权限、并允许用户查看和管理其Keystone订阅。Keystone角色有两个：Keystone管理员和Keystone查看器。这两个角色之间的主要区别在于它们可以在Keystone中执行的操作。Keystone管理员角色是唯一可以创建服务请求或修改订阅的角色。</block>
+  <block id="cf05bacc5606910682219fb31232e8be" category="paragraph-title">BlueXP  中的Keystone角色示例</block>
+  <block id="6711a14165f040e53c13e848daea3ef0" category="paragraph">在Keystone订阅中、XYZ Corporation有四名来自不同部门的存储工程师、他们可以查看有关其Keystone订阅的信息。尽管所有这些用户都需要监控Keystone订阅、但仅允许团队主管发出服务请求。三个团队成员被赋予* Keystone查看器*角色，而团队主管被赋予* Keystone管理员*角色，以便对公司的服务请求有一个控制点。</block>
+  <block id="e9bbe4519d8938c73c2ce0dbaa4adf60" category="cell">查看组织内任何用户创建的服务请求</block>
+  <block id="f14b021b1ac020c4bd6150459ddd2d19" category="doc">BlueXP  平台访问角色</block>
+  <block id="2a80e7029e86e0b477bbea9ab387b5e3" category="paragraph">平台角色是您可以分配给用户的最广泛角色、并且允许使用所有权限进行BlueXP管理、包括分配角色和添加用户。具有平台角色的用户可以访问BlueXP  中的所有数据服务和应用程序。BlueXP  包括两个平台角色：*组织管理员*和*文件夹或项目管理员*。这两个BlueXP  平台角色之间的主要区别在于该角色所适用的范围。</block>
+  <block id="0a93e6a5a2b06eac2cb4370bc70d9a40" category="paragraph">为此，在XYZ公司的BlueXP  中分配了*组织管理员*角色的人员会创建一个初始工作环境，然后在BlueXP  中为每个区域创建单独的文件夹。每个区域的文件夹都包含与该区域相关的项目(以及相关资源)。组织管理员*为每个区域的BlueXP  用户分配*文件夹或项目管理员*角色。</block>
+  <block id="14be76003904f893c083de9f6a193111" category="paragraph">初始设置完成后，具有*文件夹或项目管理员*角色的区域管理员可以创建新的工作环境并在其区域内添加用户。这些区域管理员还可以添加/删除/重命名为其分配的文件夹和项目。组织管理员*可以继承对任何新工作环境或资源的权限，从而保持整个组织内存储使用情况的可见性。</block>
+  <block id="f7e279e88014dd7b5f4694b49a2c91f2" category="paragraph">下表显示了每个BlueXP  平台角色可以执行的操作。</block>
+  <block id="3aba2887bff41f744b43940b1b82080a" category="cell">平台角色</block>
+  <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">职责</block>
+  <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">组织管理员</block>
+  <block id="35ccbb635b1465432c3a19f88cbf034c" category="cell"><block ref="35ccbb635b1465432c3a19f88cbf034c" category="inline-link-macro-rx"></block></block>
+  <block id="6d67156c2e45db37cd67283f29d6768d" category="cell">允许用户不受限制地访问组织中的所有项目和文件夹、向任何项目或文件夹添加成员、以及执行任何BlueXP  任务和使用任何数据服务。具有此角色的用户负责组织和管理整个BlueXP  环境。他们可以创建文件夹和项目、分配角色以及向任何项目或文件夹添加用户。他们还可以管理组织内的所有工作环境。这是唯一可以创建连接器的访问角色。</block>
+  <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
+  <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">允许用户不受限制地访问为其分配的特定项目和文件夹。可以将成员添加到他们管理的文件夹或项目、以及执行任何BlueXP  任务、并使用分配给他们的文件夹或项目中资源上的任何数据服务或应用程序。文件夹或项目管理员角色无法创建连接器。</block>
+  <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">应用程序角色</block>
+  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
+  <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">具有Keystone管理员角色的用户可以创建服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。</block>
+  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
+  <block id="1457cd573aaf85c5528a52382534d843" category="cell">具有Keystone查看器角色的用户无法发出服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。////</block>
+  <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">存储管理员</block>
+  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
+  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">管理存储运行状况和监管功能、发现存储资源以及修改和删除现有工作环境。</block>
+  <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">存储查看器</block>
+  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
+  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">查看存储运行状况和监管功能、以及先前发现的存储资源。无法发现、修改或删除现有存储工作环境。</block>
+  <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">系统运行状况专家</block>
+  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
+  <block id="d5ce9b158c00a4469a72ebb1ff919ca7" category="cell">管理存储以及运行状况和监管功能、存储管理员的所有权限(不能修改或删除现有工作环境除外)。////</block>
+  <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">数据服务角色</block>
+  <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分类管理员</block>
+  <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">提供查看BlueXP  分类扫描结果的功能。分类没有查看者角色。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。</block>
+  <block id="d9662380e44d74fee971f8bcdbb998ba" category="cell"><block ref="d9662380e44d74fee971f8bcdbb998ba" category="inline-link-macro-rx"></block></block>
+  <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">管理防反向器保护服务的"保护"、"警报"、"恢复"、"设置"和"报告"选项卡上的操作。</block>
+  <block id="61e1bc1deec24a3ec686d90d9df2cf23" category="cell"><block ref="61e1bc1deec24a3ec686d90d9df2cf23" category="inline-link-macro-rx"></block></block>
+  <block id="c449660979799948a46372470a0eddb9" category="cell">在防软件保护服务中查看工作负载数据、查看警报数据、下载恢复数据以及下载报告。</block>
+  <block id="7da7bcb3da6129c11bc8f0544e81beb1" category="paragraph">能够使用适用于应用程序的BlueXP  备份和恢复功能从内部ONTAP集群备份快照。具有此角色的成员可以在BlueXP  中完成以下操作：</block>
+  <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">BlueXP  的勒索软件保护访问角色</block>
+  <block id="47ecf80e12db1325b5156ff3a7d35b15" category="paragraph">勒索软件角色旨在提供对勒索软件保护服务的访问。可以为用户分配一个管理角色、使其能够在防兰软件保护中执行操作；如果用户仅负责监控、则可以分配一个查看器角色。这两个角色是防系统软件保护管理员和防系统软件保护查看器。这两个角色之间的主要区别是它们在防兰森保护中可以执行的操作。</block>
+  <block id="318302fa87b47b527d51268d94db7ea6" category="doc">BlueXP  的存储访问角色</block>
+  <block id="53105795a2d166c0331ae09564295071" category="paragraph">您可以为用户分配以下角色、使其能够访问BlueXP  中与受支持的存储资源关联的存储管理功能。可以为用户分配一个管理角色、使其能够在存储管理中执行操作；如果用户仅负责监控、则可以分配一个查看器角色。</block>
+  <block id="09e3c84fe1afd5eaa9fc94f8638d3695" category="paragraph">可以为用户分配以下存储资源和功能的存储角色：</block>
+  <block id="2074db110c64e6023c79b620df0670af" category="paragraph">存储资源：</block>
+  <block id="8961844857d18125fa7300df96ad4e94" category="paragraph">BlueXP  服务和功能：</block>
+  <block id="7d4d3675a79561800c46dfdad71222a2" category="paragraph-title">BlueXP  中的存储角色示例</block>
+  <block id="47f8970af0c44342a763bfde8e222e13" category="paragraph">XYZ Corporation是一家跨国公司、拥有庞大的存储工程师和存储管理员团队。他们希望赋予该团队管理各自区域存储资产的能力、但要限制他们对核心BlueXP  管理任务(如用户管理、连接器创建和数字钱包等成本管理工具)的访问权限。</block>
+  <block id="3917088f255e5877d39c6fe9da2e1f62" category="paragraph">在一个由12人组成的团队中，将为两个用户提供*存储查看器*角色，使他们能够监控与其分配到的BlueXP  项目相关的存储资源。其余九个将被授予*存储管理员*角色，其中包括管理软件更新、通过BlueXP  访问ONTAP系统管理器以及发现存储资源(添加工作环境)。团队中有一人被授予*系统运行状况专家*角色，以便他们可以管理其所在地区存储资源的运行状况，但不能修改或删除任何工作环境。此人员还可以对分配给他们的项目的存储资源执行软件更新。</block>
+  <block id="31fd11b2048f5356558b9e26634e67ce" category="paragraph">该组织还有两个具有*组织管理员*角色的用户，他们可以管理BlueXP  的各个方面，包括用户管理、连接器创建和成本管理工具(如数字钱包)，还有几个具有*文件夹或项目管理员*角色的用户，他们可以对分配给他们的文件夹和项目执行BlueXP  管理任务。</block>
+  <block id="294e40f9cc227c86e788ac8d546ddade" category="paragraph">下表显示了每个BlueXP  存储角色可以执行的操作。</block>
+  <block id="32d0b8cf78bc04242aed5ba6801818b6" category="cell">*帆布*：</block>
+  <block id="eaef5d2ec844a2f5d6658bd86a05a85a" category="cell">发现新资源(创建新的工作环境)</block>
+  <block id="65075797bf35acb1b1da033d464a2127" category="cell">查看已发现的资源</block>
+  <block id="93b557fcf4dca896b9a77328a5ae0e92" category="cell">删除工作环境</block>
+  <block id="c7b18a0b4f7adea3bae003772260030d" category="cell">修改工作环境</block>
+  <block id="a58bf8bc00d7951e76f88f0a279baa68" category="cell">*创建连接器*</block>
+  <block id="8822cc008eedc76497bc19a6017e6e3c" category="cell">*数字顾问*</block>
+  <block id="eab210dd297eed7a23f02ae9ff070512" category="cell">查看所有页面和功能</block>
+  <block id="15f388beaad85e03ee21e73343d1f1e7" category="cell">*电子钱包*</block>
+  <block id="5c079e1551d5969c8a448104c556be58" category="cell">*软件更新*</block>
+  <block id="f65dcc1f4a8bfacd0a2da1809fb7646a" category="cell">查看登录页面和建议</block>
+  <block id="b578911d78bfaf1e75bbe69b0a471d0b" category="cell">查看可能的版本建议和主要优势</block>
+  <block id="34153016d27f6bc08ca28afe350597f0" category="cell">查看集群的更新详细信息</block>
+  <block id="b9632e5402da95a15f8096dffe8fe849" category="cell">运行更新前检查并下载升级计划</block>
+  <block id="26c438938da81386c731f3d387eda803" category="cell">安装软件更新</block>
+  <block id="faf3b0fdd74f34bfe5b5e712fd212952" category="cell">*运营故障恢复能力*</block>
+  <block id="71dfe4aa697335a7f919f97a8273c0b2" category="cell">查看安全风险问题</block>
+  <block id="0416203226164e8fc52087494d33b58d" category="cell">下载《安赛尔游戏手册》</block>
+  <block id="55ecbcc86c1df8e0bbccc58434b65675" category="cell">自动修复问题</block>
+  <block id="c7c10204d64df7a89f6234e58c752612" category="cell">*经济效益*</block>
+  <block id="2dcdbb99022cfb6c4ef2bd327930b9d0" category="cell">查看容量规划状态</block>
+  <block id="a9857843d1ca1e121ff59133f171d8cf" category="cell">选择下一步行动(最佳实践、分层)</block>
+  <block id="80b117d13aeb1c0337cca44c4f432522" category="cell">将冷数据分层到云存储并释放存储空间</block>
+  <block id="92232278439b322df2fe12388a374e65" category="cell">设置提醒</block>
+  <block id="b028539b680706e70a20202f01750b69" category="cell">*可持续性*</block>
+  <block id="912c827ef07339a2dbfe984d27d383f4" category="cell">查看信息板和建议</block>
+  <block id="7060312ff39606d1f6621f242cc6790b" category="cell">下载报告数据</block>
+  <block id="512234aa0dc7508aa0db235f9f41b384" category="cell">编辑碳缓解百分比</block>
+  <block id="45ecf2d70851bc50cacb9f98bc2fea05" category="cell">修复建议</block>
+  <block id="7aea1a17c89c2ee783bd1fa5128e24a4" category="cell">延迟建议</block>
+  <block id="6223d9366b08aab00344df4d74ae6ef3" category="cell">*系统管理器访问*</block>
+  <block id="27f3006d10a705c76accae9904ea16cd" category="cell">可以输入凭据</block>
+  <block id="3a8e375f86c81e7b283b9ee0db531e4d" category="cell">* 凭据 *</block>
+  <block id="1dc9c22149f4c0ef8e2fc6c49159dc73" category="cell">用户凭据</block>
+  <block id="6cf4eb09d2134609121513a507415999" category="doc">管理与git BlueXP  关联的NSS凭据</block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025年5月12日</block>
+  <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">了解BlueXP  访问角色</block>
+  <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">数据服务角色</block>
+  <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">勒索软件保护角色</block>
 </blocks>

@@ -1,0 +1,23 @@
+= 连接器3.9.52
+:allow-uri-read: 
+
+
+
+
+=== 连接器3.9.52
+
+此版本的BlueXP  连接器提供了一些小的安全改进和错误修复、以及一些附加更新。
+
+目前、3.9.52版本可用于标准模式和受限模式。
+
+
+
+==== 支持Docker 27和Docker 28
+
+连接器现在支持Docker 27和Docker 28。
+
+
+
+=== Keystone管理可在BlueXP  中使用
+
+BlueXP  中的NetApp Keystone测试版增加了对Keystone管理的访问权限。您可以从BlueXP  的左侧导航栏访问NetApp Keystone测试版的注册页面。

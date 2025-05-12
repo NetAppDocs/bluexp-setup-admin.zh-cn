@@ -1,0 +1,143 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-keystone-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: BlueXP  身份和访问管理提供了两个管理角色、您可以将这些角色分配给组织的成员。 
+---
+= BlueXP  的Keystone访问角色
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Keystone角色提供对Keystone信息板的访问权限、并允许用户查看和管理其Keystone订阅。Keystone角色有两个：Keystone管理员和Keystone查看器。这两个角色之间的主要区别在于它们可以在Keystone中执行的操作。Keystone管理员角色是唯一可以创建服务请求或修改订阅的角色。
+
+.BlueXP  中的Keystone角色示例
+在Keystone订阅中、XYZ Corporation有四名来自不同部门的存储工程师、他们可以查看有关其Keystone订阅的信息。尽管所有这些用户都需要监控Keystone订阅、但仅允许团队主管发出服务请求。三个团队成员被赋予* Keystone查看器*角色，而团队主管被赋予* Keystone管理员*角色，以便对公司的服务请求有一个控制点。
+
+下表显示了每个Keystone角色可以执行的操作。
+
+[cols="40,20a,20a"]
+|===
+| 功能和操作 | Keystone管理员 | Keystone查看器 
+
+
+| 查看以下选项卡："订 阅"、"资产"、"监控"和"管理"  a| 
+是的。
+ a| 
+是的。
+
+
+
+3+| *Keystone订阅页面*： 
+
+
+| 查看订阅  a| 
+是的。
+ a| 
+是的。
+
+
+
+| 修改或续订订阅  a| 
+是的。
+ a| 
+否
+
+
+
+3+| *Keystone资产页面*： 
+
+
+| 查看资产  a| 
+是的。
+ a| 
+是的。
+
+
+
+| 管理资产  a| 
+是的。
+ a| 
+否
+
+
+
+3+| *Keystone警报页面*： 
+
+
+| 查看警报  a| 
+是的。
+ a| 
+否
+
+
+
+| 管理警报  a| 
+是的。
+ a| 
+否
+
+
+
+| 为自己创建警报  a| 
+是的。
+ a| 
+是的。
+
+
+
+3+| *电子钱包*： 
+
+
+| 可以查看电子钱包  a| 
+是的。
+ a| 
+是的。
+
+
+
+3+| *Keystone报告页*： 
+
+
+| 下载报告  a| 
+是的。
+ a| 
+是的。
+
+
+
+| 管理报告  a| 
+是的。
+ a| 
+是的。
+
+
+
+| 自行创建报告  a| 
+是的。
+ a| 
+是的。
+
+
+
+3+| *服务请求*： 
+
+
+| 创建服务请求  a| 
+是的。
+ a| 
+否
+
+
+
+| 查看组织内任何用户创建的服务请求  a| 
+是的。
+ a| 
+是的。
+
+|===
