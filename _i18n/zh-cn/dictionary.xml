@@ -5039,19 +5039,10 @@ https://support.netapp.com
   <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
   <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">允许用户不受限制地访问为其分配的特定项目和文件夹。可以将成员添加到他们管理的文件夹或项目、以及执行任何BlueXP  任务、并使用分配给他们的文件夹或项目中资源上的任何数据服务或应用程序。文件夹或项目管理员角色无法创建连接器。</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">应用程序角色</block>
-  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">具有Keystone管理员角色的用户可以创建服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。</block>
-  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
-  <block id="1457cd573aaf85c5528a52382534d843" category="cell">具有Keystone查看器角色的用户无法发出服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。////</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">存储管理员</block>
-  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
-  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">管理存储运行状况和监管功能、发现存储资源以及修改和删除现有工作环境。</block>
   <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">存储查看器</block>
-  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
-  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">查看存储运行状况和监管功能、以及先前发现的存储资源。无法发现、修改或删除现有存储工作环境。</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">系统运行状况专家</block>
-  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
-  <block id="d5ce9b158c00a4469a72ebb1ff919ca7" category="cell">管理存储以及运行状况和监管功能、存储管理员的所有权限(不能修改或删除现有工作环境除外)。////</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">数据服务角色</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分类管理员</block>
   <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">提供查看BlueXP  分类扫描结果的功能。分类没有查看者角色。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。</block>
@@ -5111,4 +5102,7 @@ https://support.netapp.com
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">了解BlueXP  访问角色</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">数据服务角色</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">勒索软件保护角色</block>
+  <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
+  <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
+  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">具有Keystone查看器角色的用户无法创建服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。</block>
 </blocks>
