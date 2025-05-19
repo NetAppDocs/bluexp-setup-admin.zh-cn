@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam, notice' 
 summary: 了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器、云提供商凭据等。 
 ---
 = 新增功能
