@@ -125,8 +125,6 @@
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
-  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
-  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">BlueXP通知</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="paragraph"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
   <block id="077d70acc6fcd0e9c32a626a8ef8e416" category="paragraph">通过准备您的环境并部署Connector、在私有模式下开始使用BlueXP。</block>
@@ -5108,4 +5106,5 @@ https://support.netapp.com
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">用于Connector下载的安全端点现在支持备份和恢复以及防兰软件保护</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">了解用于Connector下载的安全端点。</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">如果您使用的是备份和恢复或防兰软件保护、则现在可以使用安全端点进行Connector下载。 <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
+  <block id="299e5505ce975112afaefec130cc83e0" category="paragraph">7.9</block>
 </blocks>
