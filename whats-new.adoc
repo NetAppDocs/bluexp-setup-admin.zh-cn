@@ -18,6 +18,38 @@ summary: 了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器�
 
 
 
+== 2025年5月29日
+
+
+
+=== 专用模式版本(3.9.52)
+
+现在、可从下载新的专用模式版本 https://mysupport.netapp.com/site/downloads["NetApp 支持站点"^]
+
+3.9.52版本包括对以下BlueXP  组件和服务的更新。
+
+[cols="3*"]
+|===
+| 组件或服务 | 此版本包含的版本 | 自上一个专用模式版本以来的更改 
+
+
+| 连接器 | 3.9.52 3.9.51 | 转到 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP  连接器页面中的新增功能"]、并参阅3.9.52和3.9.50中包含的更改。 
+
+
+| 备份和恢复 | 2025年5月12日 | 前往 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  备份和恢复页面中的新增功能"^]并参考 2025 年 5 月版本中包含的更改。 
+
+
+| 分类 | 2025 年 5 月 12 日（版本 1.43） | 转到 https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分类页面中的新增功能"^]、并参阅1.38 1.371.41版本中包含的更改。 
+|===
+有关专用模式的更多详细信息、包括如何升级、请参见以下内容：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
+
+
+
+
 == 2025年5月12日
 
 

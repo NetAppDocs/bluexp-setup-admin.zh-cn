@@ -284,7 +284,7 @@ image:screenshot_azure_client_secret.gif["Azure门户的屏幕截图、其中显
 如果您刚刚在云提供商中创建了这些凭据，则可能需要几分钟的时间才能使用这些凭据。请等待几分钟、然后再将凭据添加到BlueXP。
 
 .开始之前
-您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何创建 Connector"]。
+您需要先创建Connector、然后才能更改BlueXP设置。link:concept-connectors.html#connector-installation["了解如何创建 Connector"](英文)
 
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
@@ -334,7 +334,7 @@ image:screenshot_accounts_switch_azure.gif["屏幕截图、显示在详细信息
 
 
 .开始之前
-您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何操作"]。
+您需要先创建连接器，然后才能更改 BlueXP 设置。l link:concept-connectors.html#connector-installation["了解如何创建 Connector"] 。
 
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。

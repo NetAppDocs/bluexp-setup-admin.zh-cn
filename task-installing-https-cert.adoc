@@ -20,7 +20,7 @@ summary: 在受限模式或专用模式下使用BlueXP  时、安装用于访�
 
 == 开始之前
 
-您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何创建 Connector"]。
+您需要先创建Connector、然后才能更改BlueXP设置。link:concept-connectors.html#connector-installation["了解如何创建 Connector"](英文)
 
 
 

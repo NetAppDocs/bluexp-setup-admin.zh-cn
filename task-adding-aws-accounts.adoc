@@ -235,7 +235,7 @@ image:screenshot-settings-icon-organization.png["一个屏幕截图、显示了B
 
 
 .开始之前
-您需要先创建Connector、然后才能更改BlueXP设置。 link:concept-connectors.html#how-to-create-a-connector["了解如何创建 Connector"]。
+您需要先创建Connector、然后才能更改BlueXP设置。link:concept-connectors.html#connector-installation["了解如何创建 Connector"](英文)
 
 以下视频显示了从AWS Marketplace订阅BlueXP  的步骤：
 

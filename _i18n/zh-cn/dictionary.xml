@@ -176,8 +176,6 @@
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">通过 HTTP （ 80 ）和 HTTPS （ 443 ），您可以访问本地 UI ，在极少数情况下，您可以使用此界面。</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">只有在需要连接到主机进行故障排除时，才需要使用 SSH （ 22 ）。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">开始之前</block>
-  <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">了解如何操作</block>
-  <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">您需要先创建Connector、然后才能更改BlueXP设置。 <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>。</block>
   <block id="c49ff7d7009f9d4727b2b25afa496418" category="section-title">安装 HTTPS 证书</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">在BlueXP控制台的右上角、选择设置图标、然后选择* HTTPS设置*。</block>
   <block id="4d646a6e32f8084a095a674812f1fb31" category="list-text">在 HTTPS 设置页面中、通过生成证书签名请求（ CSR ）或安装您自己的 CA 签名证书来安装证书：</block>
@@ -2326,7 +2324,6 @@
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">适用于ONTAP 的Amazon FSX的BlueXP文档</block>
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">有关详细信息，请参见<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">了解如何创建 Connector</block>
-  <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">您需要先创建Connector、然后才能更改BlueXP设置。 <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>。</block>
   <block id="eceb74088d706d5484df6b70296f87ad" category="paragraph">通过更改帐户类型(AWS密钥或承担角色)、编辑名称或更新凭据本身(密钥或角色ARN)、在BlueXP中编辑AWS凭据。</block>
   <block id="608e5d2c6ae29eafd4acefb54d76730a" category="admonition">您不能编辑与 Connector 实例关联的实例配置文件的凭据。</block>
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">您不能删除与 Connector 实例关联的实例配置文件的凭据。</block>
@@ -3946,8 +3943,6 @@ https://support.netapp.com
   <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">在BlueXP  控制台的右上角，选择<block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block>&gt;*身份和访问管理*。</block>
   <block id="898a5f7650c6f7bf6a01efe09c881973" category="list-text">选择*连接器*。</block>
   <block id="efd7c600c956f9a4ecd581c9e8a5de04" category="list-text">从表中、找到要关联的连接器。</block>
-  <block id="0e081d7aa898f932c4f244f1d41dd4df" category="paragraph">要查找特定连接器、您可以使用表上方的搜索、并通过选择资源层次结构的特定部分来筛选表的内容。</block>
-  <block id="16b0f0c24bd4a14288344d064f0b09c2" category="list-text">要首先查看与连接器关联的文件夹和项目，请选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*查看详细信息*。</block>
   <block id="a2884a208c64d00906f60b988f29dfd3" category="paragraph">BlueXP  显示与连接器关联的文件夹和项目的详细信息。</block>
   <block id="7b0e84897f645e2241868699f64b6699" category="list-text">选择*关联到文件夹或项目*。</block>
   <block id="3ecb65defa4c1a5901512a34a0590820" category="list-text">选择文件夹或项目，然后选择*accept。</block>
@@ -4007,7 +4002,6 @@ https://support.netapp.com
   <block id="5506a3204ff4171234856af0ca0d34fd" category="list-text">提供有关文件夹或项目的详细信息：</block>
   <block id="0ab63481584814b59197d796cfc5dc97" category="list-text">*名称和位置*：输入名称并在层次结构中为文件夹或项目选择一个位置。文件夹或项目可以直接位于组织的下方或文件夹内。</block>
   <block id="f46059ba82cb53e4af025ce918760999" category="list-text">*资源*：选择要与此文件夹或项目关联的资源。</block>
-  <block id="217f7358d2ee319a9c814b539574d78d" category="paragraph">您只能从与文件夹或项目的父级关联的资源中进行选择。如果父级是组织、则可以从组织中的任何资源中进行选择。如果父级是文件夹、则只能从与该文件夹关联的资源中进行选择。</block>
   <block id="dc401be3adab60c813414832f0b97d88" category="inline-link-macro">了解何时可以将资源与文件夹相关联</block>
   <block id="d706c5ded100123a86d8602a03703158" category="paragraph"><block ref="114ceb4aae340f51ba021c40f504c25f" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="8bb3c5dc86a399d0babf2eb49831e5ec" category="list-text">*访问*：根据您的资源层次结构中已定义的现有权限查看将有权访问文件夹或项目的成员。</block>
@@ -4032,7 +4026,6 @@ https://support.netapp.com
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">选择*应用*</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">修改成员对文件夹或项目的访问权限</block>
-  <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">修改成员对文件夹或项目的访问权限、以确保正确的成员能够访问与文件夹或项目关联的资源。</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">修改成员访问权限：</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*添加成员*：选择要添加到文件夹或项目中的成员并为其分配角色。</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*更改成员的角色*：对于具有组织管理员以外角色的任何成员，请选择其现有角色，然后选择新角色。</block>
@@ -4314,8 +4307,6 @@ https://support.netapp.com
   <block id="798eb88714cdc2034c3335c3a6c21193" category="list-text">在“*组织*”页面中，导航到表中的项目，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="efb318f1d905ec45c96414554f0f7c18" category="paragraph">此时将显示项目ID。</block>
   <block id="811c7706be3ba95d1d407ea18e420365" category="list-text">要复制ID、请选择复制按钮。</block>
-  <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">文件夹和项目表的屏幕截图、显示选择项目操作菜单后的项目ID。</block>
-  <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024年11月11日</block>
   <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">专用模式版本(3.9.46)</block>
   <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">现在、可从下载新的专用模式版本<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
@@ -4464,11 +4455,9 @@ https://support.netapp.com
   <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">在以下两种情况下、您可以在向BlueXP  添加凭据后配置AWS Marketplace订阅：</block>
   <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">最初向BlueXP  添加凭据时、您未配置订阅。</block>
   <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">您希望更改配置为AWS凭据的AWS Marketplace订阅。</block>
-  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">您的组织的资源层次结构的深度可向下划分为7个级别。因此、您可以创建6个级别的嵌套文件夹。最后一个嵌套文件夹可以包括层次结构第七级的项目。</block>
   <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">下图说明了组织资源层次结构的最大深度：</block>
   <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">查看与文件夹或项目关联的资源</block>
   <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">在*Edit*页上，您可以通过展开*Resores*或*Access*部分来查看有关选定文件夹或项目的详细信息。</block>
-  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">您可以通过关联或解除关联资源来修改与文件夹或项目关联的资源。例如、您可能希望将某个资源与另一个项目相关联、因为该资源具有其他团队可以利用的容量。将资源与文件夹或项目相关联后、对该文件夹或项目具有权限的组织成员可以访问关联的资源。</block>
   <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">查看与文件夹或项目关联的成员</block>
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">在*Edit*页面上，选择*Access*以查看有权访问选定文件夹或项目的成员列表。</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">当您使用BlueXP  身份和访问管理(IAM)将成员与您的组织关联时、您可以在组织、文件夹或项目级别提供权限。要确保这些成员有权访问适当的资源、您需要通过将资源与特定项目和文件夹关联来管理组织的资源层次结构。_resource _是BlueXP  已管理或已知的存储资源。</block>
@@ -4898,7 +4887,6 @@ https://support.netapp.com
   <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">2025年1月22日(版本1.39)</block>
   <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">转到<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>、并参考1.39版本中包含的更改。</block>
   <block id="09d7c2dac047caa965175fead07159aa" category="cell">2025年2月21日</block>
-  <block id="c77472b3cb88175d9f673b4976ce643a" category="paragraph">如果成员访问权限是在较高级别(文件夹或组织级别)提供的、则在查看较低级别的文件夹或项目时、无法删除或更改成员访问权限。您需要切换到层次结构的该部分、并在此更新成员的权限。或者，您也可以<block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>。</block>
   <block id="e07d586e54fb2ecc1791d2d434436330" category="doc">添加BlueXP  成员并管理其权限</block>
   <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="45fa36bab7b7452cfb911598ccd2d223" category="inline-link-macro">了解如何使用角色控制对BlueXP  资源的访问。</block>
@@ -5133,4 +5121,24 @@ https://support.netapp.com
   <block id="ab244aa8ea93b8114e0cc9009af3f81b" category="list-text">您现在可以管理更多内部部署存储系统，例如 E 系列和 StorageGRID。</block>
   <block id="036d3952a98988224205b6f039be487f" category="list-text"><block ref="036d3952a98988224205b6f039be487f" category="inline-link-rx"></block></block>
   <block id="6a3405f47013290acf99c18684c84269" category="list-text">Cloud Tiering 现在会显示您是否有任何未发现的 on-premisesONTAP 集群，以便您可以将它们添加到 Cloud Manager 以在这些集群上启用分层或其他服务。</block>
+  <block id="5aac456da49390227897f1fa93e12f80" category="doc">专用模式版本(3.9.52)</block>
+  <block id="3ad3533e2236195b0d2ff39cc302bac1" category="paragraph">3.9.52版本包括对以下BlueXP  组件和服务的更新。</block>
+  <block id="918d08b069e4e8b9bd825945d099eff0" category="cell">3.9.52 3.9.51</block>
+  <block id="d29240cb60727e796e55d4bf8ac33966" category="cell">转到<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>、并参阅3.9.52和3.9.50中包含的更改。</block>
+  <block id="fb6bee0c273267d6fdde07008552b62f" category="cell">前往<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>并参考 2025 年 5 月版本中包含的更改。</block>
+  <block id="3e18ba454ff1bfb5aee5e5d425b20ea3" category="cell">2025 年 5 月 12 日（版本 1.43）</block>
+  <block id="e604d3f0ea5a3e895506b1c61f048b4d" category="paragraph">您需要先创建Connector、然后才能更改BlueXP设置。<block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block>(英文)</block>
+  <block id="5b5ddc8c08b78e13543c02ee18a88455" category="paragraph">您需要先创建连接器，然后才能更改 BlueXP 设置。l <block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block> 。</block>
+  <block id="e049b2d97a8ed0a8d2e842c6e0c625b3" category="inline-image-macro">设置图标</block>
+  <block id="1ffc44d5620a15f62b04c6a8580e783a" category="list-text">在BlueXP  控制台的右上角，选择<block ref="c0116accfefd0197a42c99a28533a02c" category="inline-image-macro-rx" type="image"></block>&gt;*身份和访问管理*。</block>
+  <block id="aa16286c48b235d2df04d578aeed8edb" category="paragraph">使用表格上方的搜索功能查找特定的连接器或按资源层次结构过滤表格。</block>
+  <block id="f53392d049b9dddff4ba55ad74c96588" category="inline-image-macro">包含三个点的图标</block>
+  <block id="c16d0f9fc94c90341b26a5a3efda881c" category="list-text">要查看链接到连接器的文件夹和项目，请选择<block ref="e85cc783c74f9ef35cfeeca99fcaf6f6" category="inline-image-macro-rx" type="image"></block>然后选择*查看详细信息*。</block>
+  <block id="e91f37331347d046e8f84d619f57d7c8" category="paragraph">您的组织的资源层次结构最多可以有 7 个级别，嵌套文件夹最多可有 6 个级别，项目最多可有 7 个级别。</block>
+  <block id="8d7e1bfd65485e98b0f12b20edd6d4b2" category="paragraph">您可以选择与父文件夹或项目关联的资源：组织父级的所有资源，或文件夹父级的文件夹特定资源。</block>
+  <block id="e6e4545a44f4062ee0d1ed5ca569ddc1" category="paragraph">系统显示项目 ID。</block>
+  <block id="189b8907a7ab6c4c7b1ea92510e40d70" category="paragraph">拥有文件夹或项目权限的成员可以访问其相关资源。</block>
+  <block id="838d404665efe77bad8374ea27c3b7ca" category="paragraph">修改成员访问权限以确保正确的成员可以访问相关资源。</block>
+  <block id="a5adc30e4e36f3ae2a8e99ff0f19a490" category="paragraph">较高层次结构级别提供的成员访问权限不能在较低级别更改。您需要切换到层次结构的该部分、并在此更新成员的权限。或者，您也可以<block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>。</block>
+  <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">2025年5月29日</block>
 </blocks>
