@@ -166,9 +166,7 @@ API endpoint:: API调用会调用Connector虚拟机。
 | 数字电子钱包 | 您可以在受限模式下将电子钱包与下面列出的受支持许可选项结合使用。 
 
 
-| 内部 ONTAP 集群 | 同时支持使用连接器进行发现和不使用连接器进行发现(直接发现)。
-
-如果您发现使用Connector的内部集群、则不支持高级视图(System Manager)。 
+| 内部 ONTAP 集群 | 同时支持使用连接器进行发现和不使用连接器进行发现(直接发现)。当您发现带有连接器的本地集群时，高级视图（系统管理器）不受支持。 
 
 
 | Replication | 受限模式的政府区域支持。在商业区域或受限模式的主权区域不支持。 
@@ -251,7 +249,7 @@ API endpoint:: API调用会调用Connector虚拟机。
 不支持不使用连接器(直接发现)进行发现。 
 |===
 --
-在内部部署中支持的BlueXP服务:: 如果您的内部安装了Connector、则BlueXP支持以下私有模式存储和数据服务：
+本地部署中支持的 BlueXP 服务:: 如果您的内部安装了Connector、则BlueXP支持以下私有模式存储和数据服务：
 +
 --
 [cols="2*"]
@@ -343,7 +341,7 @@ NOTE: 如果要在中使用BlueXP https://aws.amazon.com/federal/secret-cloud/["
 | Google Cloud 存储 | 否 | 否 
 
 
-| 内部 ONTAP 集群 | 是的。 | 是的。 
+| 本地 ONTAP 集群 | 是的。 | 是的。 
 
 
 | E 系列 | 否 | 否 

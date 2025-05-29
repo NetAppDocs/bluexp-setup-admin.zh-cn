@@ -4,7 +4,7 @@ permalink: reference-ports-on-prem.html
 keywords: networking, network, requirements, ports, on-prem, linux, http, https 
 summary: 当连接器手动安装在内部Linux主机上时、它会使用入站端口。在进行规划时、您可能需要引用这些端口。 
 ---
-= 内部连接器的端口
+= on-premisesConnector 的端口
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

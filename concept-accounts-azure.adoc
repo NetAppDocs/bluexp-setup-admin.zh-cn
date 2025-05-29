@@ -96,7 +96,7 @@ link:task-adding-azure-accounts.html#subscribe["了解如何关联Azure订阅"]�
 
 
 
-=== 凭据如何用于市场部署和内置部署？
+=== 凭证如何用于市场部署和本地部署？
 
 以上各节介绍了BlueXP中建议的Connector部署方法。您还可以从Azure Marketplace在Azure中部署Connector、并在您自己的Linux主机上安装Connector软件。
 
@@ -109,7 +109,7 @@ link:task-adding-azure-accounts.html#subscribe["了解如何关联Azure订阅"]�
 * 标准模式
 +
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["为Azure Marketplace部署设置权限"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["设置对内置部署的权限"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["设置本地部署的权限"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["设置受限模式的权限"]

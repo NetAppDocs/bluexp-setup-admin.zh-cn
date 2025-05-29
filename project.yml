@@ -221,7 +221,7 @@ sidebar:
         url: "/reference-ports-azure.html"
       - title: Google Cloud中的连接器防火墙规则
         url: "/reference-ports-gcp.html"
-      - title: 内部连接器的端口
+      - title: on-premisesConnector 的端口
         url: "/reference-ports-on-prem.html"
   - title: 知识和支持
     entries:

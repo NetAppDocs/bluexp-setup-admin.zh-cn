@@ -36,7 +36,7 @@ link:task-configuring-proxy.html["了解有关将代理服务器与Connector结�
 
 BlueXP使用IP地址位于172.17.0.0/16和172.18.0.0/16范围的两个接口部署Connector。
 
-如果您的网络中的子网配置了上述任一范围、则您可能会在BlueXP中遇到连接失败。例如、在BlueXP中发现内部ONTAP 集群可能会失败。
+如果您的网络中的子网配置了上述任一范围、则您可能会在BlueXP中遇到连接失败。例如，在 BlueXP 中发现 on-premisesONTAP 集群可能会失败。
 
 请参见知识库文章 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["BlueXP Connector IP与现有网络冲突"] 有关如何更改连接器接口的IP地址的说明。
 

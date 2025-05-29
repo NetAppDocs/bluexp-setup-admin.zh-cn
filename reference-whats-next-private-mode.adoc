@@ -20,7 +20,7 @@ summary: 在专用模式下启动和运行BlueXP后、您可以开始使用私�
 
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["发现内部ONTAP 集群"^]
 * https://docs.netapp.com/us-en/bluexp-software-updates/index.html["管理软件更新"^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["使用BlueXP分类扫描内置ONTAP 卷数据"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["使用 BlueXP 分类扫描本地 ONTAP 卷数据"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["利用电子钱包监控许可证使用情况"^]
 * https://docs.netapp.com/us-en/active-iq/index.html["使用数字顾问查看存储运行状况信息"^]
 

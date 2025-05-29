@@ -184,7 +184,7 @@ BlueXP需要对Connector和各个服务拥有Google Cloud权限。
 
 
 
-| 将内部ONTAP集群备份到Google Cloud | 使用BlueXP备份和恢复来备份内置ONTAP集群时、您需要向连接器添加权限、才能使用"搜索和还原"功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["搜索和恢复功能的权限()"^] 
+| 将内部ONTAP集群备份到Google Cloud | 当使用 BlueXP 备份和恢复来备份本地 ONTAP 集群时，您需要向连接器添加权限才能使用“搜索和恢复”功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["搜索和恢复功能的权限()"^] 
 |===
 
 

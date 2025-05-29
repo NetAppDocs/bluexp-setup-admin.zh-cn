@@ -4,7 +4,7 @@ permalink: concept-connectors.html
 keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery' 
 summary: Connector是在云网络或内部网络中运行的NetApp软件。它会执行BlueXP管理数据基础架构所需执行的操作。Connector会不断轮询BlueXP SaaS层以了解它需要执行的任何操作。您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。 
 ---
-= 了解连接器
+= 了解BlueXP  连接器
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -48,7 +48,7 @@ _Connector_是在云网络或内部网络中运行的NetApp软件。它会执行
 虽然直接发现内部ONTAP 集群不需要连接器、但如果要利用其他BlueXP功能、则需要连接器。
 
 +
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["了解有关内部ONTAP 集群的发现和管理选项的更多信息"^]
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["了解有关本地 ONTAP 集群的发现和管理选项的更多信息"^]
 
 * 软件更新
 * 可持续性
@@ -90,7 +90,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["�
 
 连接器是BlueXP服务架构的基本组成部分。您有责任确保相关连接器始终正常运行且可访问。虽然此服务旨在克服连接器可用性短暂中断的问题、但您必须在需要时立即采取措施来修复基础架构故障。
 
-本文档受EULA约束。如果本产品未按照文档进行操作、则可能会对本产品的功能和运行以及您在EULA下的权利产生不利影响。
+本文档受EULA约束。如果未按照文档操作产品，则产品的功能和操作以及您在 EULA 下的权利可能会受到不利影响。
 
 
 
@@ -114,7 +114,7 @@ Azure中的连接器应部署在与它所管理的Cloud Volumes ONTAP系统相�
 
 == 与云提供商进行通信
 
-Connector使用TLS 1.2与AWS、Azure和Google Cloud进行所有通信。
+Connector使用TLS 1.3与AWS、Azure和Google Cloud进行所有通信。
 
 
 
@@ -126,9 +126,9 @@ link:concept-modes.html["了解BlueXP部署模式"]。
 
 
 
-== 如何创建 Connector
+== 如何安装连接器
 
-您可以直接从BlueXP 、云提供商的市场或通过在自己的Linux主机上手动安装软件来创建Connector。如何开始取决于您是在标准模式、受限模式还是专用模式下使用BlueXP。
+您可以直接从 BlueXP、云提供商的市场安装连接器，也可以在您自己的 Linux 主机上手动安装该软件。如何开始取决于您是在标准模式、受限模式还是专用模式下使用BlueXP。
 
 * link:concept-modes.html["了解BlueXP部署模式"]
 * link:task-quick-start-standard-mode.html["以标准模式开始使用BlueXP"]
@@ -151,7 +151,7 @@ link:concept-modes.html["了解BlueXP部署模式"]。
 ** link:concept-install-options-aws.html["AWS中的连接器安装选项"]
 ** link:concept-install-options-azure.html["Azure中的连接器安装选项"]
 ** link:concept-install-options-google.html["Google Cloud中的连接器安装选项"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["为内部部署设置云权限"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["为本地部署设置云权限"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["设置受限模式的权限"]
@@ -171,7 +171,7 @@ link:concept-modes.html["了解BlueXP部署模式"]。
 
 == 连接器升级
 
-我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然BlueXP  平台中的大多数服务和功能都是通过基于SaaS的软件提供的、但少数功能取决于Connector的版本。其中包括 Cloud Volumes ONTAP 管理，内部 ONTAP 集群管理，设置和帮助。
+我们通常每月更新一次 Connector 软件，以引入新功能并提高稳定性。虽然BlueXP  平台中的大多数服务和功能都是通过基于SaaS的软件提供的、但少数功能取决于Connector的版本。其中包括 Cloud Volumes ONTAP 管理、on-premisesONTAP 集群管理、设置和帮助。
 
 当您在标准模式或受限模式下使用BlueXP时、Connector会自动将其软件更新到最新版本、只要它可以通过出站Internet访问来获取软件更新即可。如果您正在私有模式下使用BlueXP、则需要手动升级Connector。
 
@@ -201,6 +201,6 @@ link:task-upgrade-connector.html["了解如何在使用私有模式时手动升�
 
 以下是几个示例：
 
-* 您有一个多云环境(例如AWS和Azure)、并且更喜欢在AWS中使用一个Connector、而在Azure中使用另一个Connector。每个都管理在这些环境中运行的 Cloud Volumes ONTAP 系统。
+* 您有一个多云环境（例如，AWS 和 Azure），并且您希望在 AWS 中使用一个连接器，在 Azure 中使用另一个连接器。每个都管理在这些环境中运行的 Cloud Volumes ONTAP 系统。
 * 服务提供商可以使用一个BlueXP  组织为其客户提供服务、而使用另一个组织为其业务部门之一提供灾难恢复。每个组织都有单独的连接器。
 

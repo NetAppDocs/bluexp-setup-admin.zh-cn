@@ -31,7 +31,7 @@ summary: 当BlueXP在AWS中启动Connector实例时、它会向此实例附加�
 * 要查看使用这些策略的分步说明、请参见以下页面：
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["为AWS Marketplace部署设置权限"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["设置对内置部署的权限"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["设置本地部署的权限"]
 ** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["设置受限模式的权限"]
 ** link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["设置私有模式的权限"]
 
