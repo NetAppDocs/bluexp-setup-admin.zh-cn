@@ -43,8 +43,8 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 
 
-== c0227cef6f07a8cd2ac72f2945b031aa
+== 开放源代码
 
-9b73989307c1975dfa4d5e1581e4afe8
+通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。
 
 link:media/notice.pdf["BlueXP通知"^]

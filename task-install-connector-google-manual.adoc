@@ -143,11 +143,14 @@ BlueXP需要中的此空间 `/var` 因为Docker或Podman的架构设计是为了
 --
 按照以下步骤安装Podman并对其进行配置，使其符合以下要求：
 
-* 必须启用并启动Podman.sSocket服务
-* 必须安装python3
-* 必须安装Podman-compose软件包1.0.6版
-* 必须将Podman-compose添加到PATH环境变量中
+* 启用并启动 podman.socket 服务
+* 安装python3
+* 安装 podman-compose 软件包版本 1.0.6
+* 将 podman-compose 添加到 PATH 环境变量
 
+
+
+NOTE: 使用 Podman 时，请在安装 Connector 后调整 aardvark-dns 服务端口（默认值：53），以避免与主机上的 DNS 端口冲突。请按照说明配置端口。
 
 .步骤
 . 如果在主机上安装了Podman-Docker软件包、请将其删除。
@@ -636,6 +639,27 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 -cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。只有在指定HTTPS代理服务器或代理为截获代理时、才需要此参数。
 
+. 如果您使用 Podman，则需要调整 aardvark-dns 端口。
++
+.. 通过 SSH 连接到 BlueXP Connector 虚拟机。
+.. 打开 podman_/usr/share/containers/containers.conf_ 文件并修改 Aardvark DNS 服务的所选端口。例如，将其更改为 54。
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. 重新启动 Connector 虚拟机。
+
+
 . 等待安装完成。
 +
 在安装结束时、如果您指定了代理服务器、则Connector服务(occa)将重新启动两次。
@@ -656,9 +680,6 @@ https://_ipaddress_[]
 
 
 
-
-.结果
-现在、您的BlueXP  组织已安装并设置了连接器。
 
 如果您在创建Connector的同一个Google Cloud帐户中具有Google Cloud Storage分段、则会在BlueXP画布上自动显示Google Cloud Storage工作环境。 https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["了解如何从BlueXP管理Google Cloud Storage"^]
 

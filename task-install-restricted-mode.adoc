@@ -303,6 +303,27 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 -cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。只有在指定HTTPS代理服务器或代理为截获代理时、才需要此参数。
 
+. 如果您使用 Podman，则需要调整 aardvark-dns 端口。
++
+.. 通过 SSH 连接到 BlueXP Connector 虚拟机。
+.. 打开 podman_/usr/share/containers/containers.conf_ 文件并修改 Aardvark DNS 服务的所选端口。例如，将其更改为 54。
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. 重新启动 Connector 虚拟机。
+
+
 
 
 .结果
