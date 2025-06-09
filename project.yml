@@ -71,7 +71,7 @@ sidebar:
             url: "/task-install-connector-google-manual.html"
         - title: 内部部署
           url: "/task-install-connector-on-prem.html"
-      - title: 订阅BlueXP
+      - title: 订阅 NetApp 智能服务
         url: "/task-subscribe-standard-mode.html"
       - title: 接下来可以执行的操作
         url: "/reference-whats-next.html"
@@ -83,7 +83,7 @@ sidebar:
         url: "/task-prepare-restricted-mode.html"
       - title: 部署连接器
         url: "/task-install-restricted-mode.html"
-      - title: 订阅BlueXP
+      - title: 订阅 NetApp 智能服务
         url: "/task-subscribe-restricted-mode.html"
       - title: 接下来可以执行的操作
         url: "/reference-whats-next-restricted-mode.html"
@@ -103,8 +103,12 @@ sidebar:
           url: "/task-managing-netapp-accounts.html"
       - title: 接下来可以执行的操作
         url: "/reference-whats-next-private-mode.html"
+  - title: 使用 BlueXP
+    entries:
     - title: 登录到BlueXP
       url: "/task-logging-in.html"
+    - title: 管理您的 BlueXP 用户设置
+      url: "/task-user-settings.html"
   - title: 管理BlueXP
     entries:
     - title: 身份和访问管理
@@ -115,7 +119,7 @@ sidebar:
         url: "/task-iam-get-started.html"
       - title: 使用文件夹和项目组织资源
         url: "/task-iam-manage-folders-projects.html"
-      - title: 添加成员和服务帐户
+      - title: 管理会员和服务帐户
         url: "/task-iam-manage-members-permissions.html"
       - title: 使用角色控制成员对资源的访问
         url: "/task-iam-manage-roles.html"

@@ -337,7 +337,7 @@ image:screenshot_accounts_switch_azure.gif["屏幕截图、显示在详细信息
 您需要先创建连接器，然后才能更改 BlueXP 设置。l link:concept-connectors.html#connector-installation["了解如何创建 Connector"] 。
 
 .步骤
-. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+. 在控制台的右上角，选择“设置”图标，然后选择“*凭据*”。
 . 选择一组凭据的操作菜单，然后选择*Configure订阅*。
 +
 您必须选择与连接器关联的凭据。您不能将商城订阅与BlueXP关联的凭据关联。
@@ -350,7 +350,7 @@ image:screenshot_accounts_switch_azure.gif["屏幕截图、显示在详细信息
 .. 填写表单并选择*订阅*。
 .. 订阅过程完成后、选择*立即配置帐户*。
 +
-您将重定向到BlueXP网站。
+您将被重定向至 BlueXP。
 
 .. 在*订阅分配*页面中：
 +
@@ -367,7 +367,7 @@ BlueXP  会将组织或帐户中所有凭据的现有订阅替换为此新订�
 以下视频显示了从Azure Marketplace订阅的步骤：
 
 +
-.从Azure Marketplace订阅BlueXP
+.从 Azure 市场订阅 NetApp 智能服务
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 

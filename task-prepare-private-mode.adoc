@@ -17,17 +17,17 @@ summary: 在私有模式下部署BlueXP之前、请准备好您的环境。例�
 在私有模式下部署BlueXP之前、请准备好您的环境。例如、您需要查看主机要求、准备网络连接、设置权限等。
 
 
-NOTE: 如果要在中使用BlueXP https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^] 或 https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^]然后，您应按照单独的说明开始使用这些环境。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["了解如何在AWS机密云或Top SecretCloud中开始使用Cloud Volumes ONTAP"^]
+NOTE: 在 https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^]或 https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^] ，请遵循针对这些环境的具体说明。  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["了解如何在AWS机密云或Top SecretCloud中开始使用Cloud Volumes ONTAP"^]
 
 
 
 == 第1步：了解私有模式的工作原理
 
-开始之前、您应了解BlueXP在专用模式下的工作原理。
+在开始之前，您应该了解私人模式。
 
-例如、您应了解需要使用基于浏览器的界面、该界面可从需要安装的BlueXP Connector本地访问。您无法从通过SaaS层提供的基于Web的控制台访问BlueXP。
+例如，您需要使用您安装的连接器本地提供的基于浏览器的界面。您无法从通过SaaS层提供的基于Web的控制台访问BlueXP。
 
-此外、并非所有BlueXP服务都可用。
+此外，并非所有功能和服务都可用。
 
 link:concept-modes.html["了解私有模式的工作原理"]。
 
@@ -43,7 +43,7 @@ link:concept-modes.html["了解私有模式的工作原理"]。
 
 == 第3步：查看主机要求
 
-连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。
+主机必须满足特定的操作系统要求、RAM 要求、端口要求等才能运行连接器软件。
 
 专用主机:: 与其他应用程序共享的主机不支持此连接器。主机必须是专用主机。
 +
@@ -263,9 +263,8 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 == 第5步：准备网络连接
 
-设置您的网络，以便 Connector 可以管理公有云环境中的资源和流程。除了为Connector提供虚拟网络和子网之外、您还需要确保满足以下要求。
+为 Connector 设置网络，以便管理公有云中的资源。除了为 Connector 提供虚拟网络和子网外，请确保满足以下要求。与目标网络的连接：Connector 必须与您计划管理存储的位置建立网络连接。例如、您计划部署Cloud Volumes ONTAP 的VPC或vNet、或者您的内部ONTAP 集群所在的数据中心。
 
-连接到目标网络:: Connector必须与您计划管理存储的位置建立网络连接。例如、您计划部署Cloud Volumes ONTAP 的VPC或vNet、或者您的内部ONTAP 集群所在的数据中心。
 用于日常操作的端点:: 如果您计划创建Cloud Volumes ONTAP系统、则连接器需要连接到云提供商的公共可用资源中的端点。
 +
 --
@@ -375,7 +374,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 == 第6步：准备云权限
 
-如果Connector安装在云中、而您计划创建Cloud Volumes ONTAP系统、则BlueXP需要云提供商的权限。您需要在云提供商中设置权限、然后在安装Connector实例后将这些权限与之关联。
+如果连接器安装在云中并且您计划创建 Cloud Volumes ONTAP 系统，则 BlueXP 需要云提供商权限。您需要在云提供商中设置权限、然后在安装Connector实例后将这些权限与之关联。
 
 要查看所需步骤、请选择要用于云提供商的身份验证选项。
 
@@ -410,7 +409,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 .AWS访问密钥
 --
-为IAM用户设置权限和访问密钥。安装Connector并设置BlueXP后、您需要为BlueXP提供AWS访问密钥。
+为IAM用户设置权限和访问密钥。安装连接器并设置 BlueXP 后，向 BlueXP 提供 AWS 访问密钥。
 
 .步骤
 . 登录到AWS控制台并导航到IAM服务。
@@ -442,7 +441,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 .Azure角色
 --
-使用所需权限创建Azure自定义角色。您将为Connector VM分配此角色。
+使用所需权限创建Azure自定义角色。将此角色分配给连接器虚拟机。
 
 请注意、您可以使用Azure门户、Azure PowerShell、Azure命令行界面或REST API创建Azure自定义角色。以下步骤显示了如何使用Azure命令行界面创建角色。如果您希望使用其他方法、请参见 https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Azure 文档"^]
 
@@ -639,7 +638,7 @@ image:screenshot_azure_client_secret.gif["Azure门户的屏幕截图、其中显
 
 
 .结果
-此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。添加Azure帐户时、您需要在BlueXP中输入此信息。
+此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。在 BlueXP 中添加 Azure 帐户时输入此信息。
 
 --
 .Google Cloud服务帐户
@@ -688,7 +687,7 @@ https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_
 
 == 第7步：启用Google Cloud API
 
-要在Google Cloud中部署Cloud Volumes ONTAP 、需要使用多个API。
+您需要启用多个 API 才能在 Google Cloud 中部署 Cloud Volumes ONTAP。
 
 .步骤
 . https://cloud.google.com/apis/docs/getting-started#enabling_apis["在项目中启用以下 Google Cloud API"^]

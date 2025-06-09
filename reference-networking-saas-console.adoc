@@ -14,11 +14,11 @@ summary: 当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它�
 
 
 [role="lead"]
-当您登录并使用BlueXP  基于Web的控制台时、BlueXP  会联系多个端点以完成您启动的操作。访问BlueXP  控制台的计算机必须连接到这些端点。
+当您登录并使用基于 Web 的控制台时，BlueXP 会联系多个端点来完成您发起的操作。访问控制台的计算机必须连接到这些端点。
 
 在以下两种情况下会联系这些端点：
 
-* 从以软件即服务(SaaS)形式提供的完成特定操作时、从用户的计算机执行此操作 https://console.bluexp.netapp.com["基于Web的BlueXP控制台"^]。
+* 在用户的计算机上完成 https://console.bluexp.netapp.com["基于Web的BlueXP控制台"^]可以作为软件即服务（SaaS）使用。
 * 在用户的计算机上打开Web浏览器时、输入Connector主机的IP地址、然后登录并设置Connector。如果您手动安装连接器、则需要执行以下步骤。
 
 
@@ -28,13 +28,13 @@ summary: 当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它�
 
 
 | \https://console.bluexp.netapp.com
-\https://*.console.bluexp.netapp.com | 这是您在Web浏览器中输入的端点、用于使用BlueXP  基于Web的控制台。 
+\https://*.console.bluexp.netapp.com | 这是您在 Web 浏览器中输入以使用基于 Web 的控制台的端点。 
 
 
-| \https://api.bluexp.netapp.com | 基于Web的BlueXP  控制台会与此端点联系、以便与BlueXP  API进行交互、以执行与授权、许可、订阅、凭据、通知等相关的操作。 
+| \https://api.bluexp.netapp.com | 基于 Web 的控制台联系此端点与 API 进行交互，以执行与授权、许可、订阅、凭证、通知等相关的操作。 
 
 
-| \https://aiq.netapp.com | 需要访问BlueXP数字顾问。 
+| \https://aiq.netapp.com | 需要访问数字顾问。 
 
 
  a| 
@@ -46,7 +46,7 @@ AWS 服务（ AmazonAWS.com ）：
 * 安全令牌服务（ STS ）
 * 简单存储服务 (S3)
 
-| 在AWS中从BlueXP部署连接器时需要此功能。确切的端点取决于部署 Connector 的区域。 https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息，请参阅 AWS 文档。"^] 
+| 在AWS中从BlueXP部署连接器时需要此功能。确切的端点取决于您部署连接器的区域。  https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息，请参阅 AWS 文档。"]建议：  https://docs.aws.amazon.com/general/latest/gr/rande.html["有关详细信息，请参阅 AWS 文档。"] 
 
 
 | \https://management.azure.com
@@ -77,9 +77,9 @@ AWS 服务（ AmazonAWS.com ）：
 \https://services.cloud.netapp.com | 您的Web浏览器连接到这些端点、以便通过BlueXP集中进行用户身份验证。 
 
 
-| \https://widget.intercom.io | 用于与 NetApp 云专家交流的产品内聊天。 
+| \https://widget.intercom.io | 通过产品内聊天，您可以与 NetApp 支持人员沟通。 
 |===
-除了这些端点之外、您还需要确保Connector可以通过出站Internet访问来联系特定端点以进行日常操作。您可以通过以下下一节中的链接找到这些端点的列表。
+确保连接器具有对联系终端节点的出站互联网访问权限，以便进行日常操作。请点击下方下一节中的链接，查找这些终端节点的列表。
 
 .相关信息
 * 为连接器准备网络连接

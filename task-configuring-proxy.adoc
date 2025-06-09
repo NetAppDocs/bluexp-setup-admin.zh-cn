@@ -16,9 +16,9 @@ summary: 如果您的公司策略要求您使用代理服务器进行与Internet
 [role="lead"]
 如果您的公司策略要求您使用代理服务器进行与Internet的所有通信、则需要将您的连接器配置为使用该代理服务器。如果您未将Connector配置为在安装期间使用代理服务器、则可以将Connector配置为随时使用该代理服务器。
 
-如果公共IP地址或NAT网关不可用、则将Connector配置为使用代理服务器可提供出站Internet访问。此代理服务器仅为Connector提供出站连接。它不为Cloud Volumes ONTAP 系统提供任何连接。
+将 Connector 配置为使用代理服务器，可在公共 IP 地址或 NAT 网关不可用时启用出站互联网访问。代理服务器仅为 Connector 提供出站连接，不为 Cloud Volumes ONTAP 系统提供出站连接。
 
-如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署Connector后、您需要打开此端口。
+如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署连接器后打开此端口。
 
 
 

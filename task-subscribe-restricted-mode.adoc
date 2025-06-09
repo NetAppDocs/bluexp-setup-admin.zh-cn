@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-subscribe-restricted-mode.html 
 keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
-summary: 从云提供商的市场订阅BlueXP、按小时费率或按年合同支付BlueXP服务费用。如果您从NetApp购买了许可证、则还需要订阅此市场产品。您的许可证始终会首先收费、但如果超出许可容量或许可证期限到期、则会按小时收费。 
+summary: 从您的云提供商市场订阅 NetApp 智能服务，以按小时费率或通过年度合同支付 BlueXP 服务费用。如果您从NetApp购买了许可证、则还需要订阅此市场产品。您的许可证始终会首先收费、但如果超出许可容量或许可证期限到期、则会按小时收费。 
 ---
-= 订阅BlueXP  数据服务(受限模式)
+= 订阅 NetApp 智能服务（受限模式）
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: 从云提供商的市场订阅BlueXP、按小时费率或按年合同�
 
 
 [role="lead"]
-从云提供商的市场订阅BlueXP、按小时费率(PAYGO)或按年合同支付BlueXP服务费用。如果您从NetApp (BYOL)购买了许可证、则还需要订阅市场产品。您的许可证始终会首先收费、但如果超出许可容量或许可证期限到期、则会按小时收费。
+从云提供商的市场订阅 NetApp 智能服务，以按小时费率 (PAYGO) 或通过年度合同支付数据服务费用。如果您从NetApp (BYOL)购买了许可证、则还需要订阅市场产品。您的许可证始终会首先收费、但如果超出许可容量或许可证期限到期、则会按小时收费。
 
-商城订阅支持对以下受限模式的BlueXP  数据服务收费：
+市场订阅支持以受限模式对以下数据服务收费：
 
 * 备份和恢复
 * Cloud Volumes ONTAP
@@ -25,16 +25,18 @@ summary: 从云提供商的市场订阅BlueXP、按小时费率或按年合同�
 * 灾难恢复
 
 
+分类功能可通过您的订阅启用，但使用分类是免费的。
+
 .开始之前
-订阅BlueXP涉及将市场订阅与与Connector关联的云凭据相关联。如果您按照"开始使用受限模式"工作流操作、则您应该已经拥有Connector。要了解更多信息、请查看 link:task-quick-start-restricted-mode.html["在受限模式下快速启动BlueXP"]。
+订阅数据服务涉及将市场订阅与与连接器关联的云凭据关联起来。如果您按照"开始使用受限模式"工作流操作、则您应该已经拥有Connector。要了解更多信息，请查看link:task-quick-start-restricted-mode.html["在受限模式下快速启动BlueXP"]。
 
 [role="tabbed-block"]
 ====
 .AWS
 --
-以下视频显示了从AWS Marketplace订阅BlueXP  的步骤：
+以下视频展示了从 AWS Marketplace 订阅 NetApp 智能服务的步骤：
 
-.从AWS Marketplace订阅BlueXP
+.从 AWS Marketplace 订阅 NetApp 智能服务
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
@@ -75,7 +77,7 @@ BlueXP  会将组织或帐户中所有凭据的现有订阅替换为此新订�
 .Azure 酒店
 --
 .步骤
-. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+. 在控制台的右上角，选择“设置”图标，然后选择“*凭据*”。
 . 选择一组凭据的操作菜单，然后选择*Configure订阅*。
 +
 您必须选择与连接器关联的凭据。您不能将商城订阅与BlueXP关联的凭据关联。
@@ -88,7 +90,7 @@ BlueXP  会将组织或帐户中所有凭据的现有订阅替换为此新订�
 .. 填写表单并选择*订阅*。
 .. 订阅过程完成后、选择*立即配置帐户*。
 +
-您将重定向到BlueXP网站。
+您将被重定向至 BlueXP。
 
 .. 在*订阅分配*页面中：
 +
@@ -105,7 +107,7 @@ BlueXP  会将组织或帐户中所有凭据的现有订阅替换为此新订�
 以下视频显示了从Azure Marketplace订阅的步骤：
 
 +
-.从Azure Marketplace订阅BlueXP
+.从 Azure 市场订阅 NetApp 智能服务
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
@@ -117,7 +119,7 @@ video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 .Google Cloud
 --
 .步骤
-. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+. 在控制台的右上角，选择“设置”图标，然后选择“*凭据*”。
 . 选择一组凭据的操作菜单，然后选择*Configure订阅*。+需要新屏幕截图(TS)image:screenshot_gcp_add_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
 . 要使用选定凭据配置现有订阅、请从下拉列表中选择Google Cloud项目和订阅、然后选择*配置*。
 +
@@ -129,7 +131,7 @@ image:screenshot_gcp_associate.gif["为 Google Cloud 凭据选择的 Google Clou
 NOTE: 在完成以下步骤之前、请确保您在Google Cloud帐户中同时拥有计费管理员权限、并同时拥有BlueXP登录权限。
 
 +
-.. 重定向到后 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace上的NetApp BlueXP页面"^]，确保在顶部导航菜单中选择了正确的项目。
+.. 在您被重定向到 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace 上的 NetApp 智能服务页面"^] ，确保在顶部导航菜单中选择了正确的项目。
 +
 image:screenshot_gcp_cvo_marketplace.png["Google Cloud中Cloud Volumes ONTAP Marketplace页面的屏幕截图。"]
 
@@ -181,8 +183,8 @@ image:screenshot_gcp_associate.gif["订阅分配页面的屏幕截图。"]
 ====
 .相关信息
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["管理Cloud Volumes ONTAP 的BYOL基于容量的许可证"^]
-* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["管理BlueXP数据服务的BYOL许可证"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["管理BlueXP的AWS凭据和订阅"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["管理BlueXP的Azure凭据和订阅"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["管理BlueXP的Google Cloud凭据和订阅"]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["管理数据服务的 BYOL 许可证"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["管理 AWS 凭证和订阅"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["管理 Azure 凭据和订阅"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["管理 Google Cloud 凭据和订阅"]
 

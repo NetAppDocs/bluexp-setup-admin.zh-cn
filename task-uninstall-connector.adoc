@@ -22,7 +22,7 @@ link:concept-modes.html["了解BlueXP部署模式"]。
 
 == 使用标准模式或受限模式时卸载Connector
 
-如果您在标准模式或受限模式下使用BlueXP (换言之、Connector主机具有出站连接)、则应按照以下步骤卸载Connector软件。
+如果您使用的是标准模式或受限模式（换句话说，连接器主机具有出站连接），那么您应该按照以下步骤卸载连接器软件。
 
 .步骤
 . 连接到Connector的Linux VM。
@@ -39,7 +39,7 @@ _silent_ 运行此脚本，而不提示您进行确认。
 
 == 使用专用模式时卸载Connector
 
-如果您在私有模式下使用BlueXP (即、Connector主机具有_no_出站连接)、则应按照以下步骤卸载Connector软件。
+如果您使用的是私有模式（换句话说，连接器主机没有出站连接），那么您应该按照以下步骤卸载连接器软件。
 
 .步骤
 . 连接到Connector的Linux VM。
@@ -50,7 +50,7 @@ _silent_ 运行此脚本，而不提示您进行确认。
 /opt/application/netapp/ds/cleanup.sh
 rm -rf /opt/application/netapp/
 ----
-. 从Linux主机中、删除现已不使用的旧容器映像文件。这样可以确保/var"目录中有足够的空间来重新安装。
+. 从 Linux 主机删除旧的、未使用的容器映像文件，以释放 /var 目录中的空间以供重新安装。
 +
 [role="tabbed-block"]
 ====
@@ -80,7 +80,7 @@ docker system prune -a
 有关删除连接器，请注意以下事项：
 
 * 此操作不会删除虚拟机。
-* 无法还原此操作—从BlueXP中删除Connector后、便无法重新添加它。
+* 此操作无法恢复 - 一旦删除连接器，就无法将其添加回来。
 
 
 .步骤

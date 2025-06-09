@@ -16,8 +16,6 @@ summary: 登录BlueXP的方式取决于您的帐户使用的BlueXP部署模式�
 [role="lead"]
 登录BlueXP的方式取决于您的帐户使用的BlueXP部署模式。
 
-Connector包括一个本地UI、可从Connector主机访问此UI。此UI面向在受限模式或专用模式下使用BlueXP的客户。在标准模式下使用BlueXP时、您应从访问用户界面 https://console.bluexp.netapp.com/["BlueXP SaaS控制台"^]
-
 link:concept-modes.html["了解BlueXP部署模式"]。
 
 [role="tabbed-block"]

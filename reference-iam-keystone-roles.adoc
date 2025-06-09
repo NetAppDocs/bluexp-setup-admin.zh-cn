@@ -17,7 +17,7 @@ summary: BlueXP  身份和访问管理提供了两个管理角色、您可以�
 Keystone角色提供对Keystone信息板的访问权限、并允许用户查看和管理其Keystone订阅。Keystone角色有两个：Keystone管理员和Keystone查看器。这两个角色之间的主要区别在于它们可以在Keystone中执行的操作。Keystone管理员角色是唯一可以创建服务请求或修改订阅的角色。
 
 .BlueXP  中的Keystone角色示例
-在Keystone订阅中、XYZ Corporation有四名来自不同部门的存储工程师、他们可以查看有关其Keystone订阅的信息。尽管所有这些用户都需要监控Keystone订阅、但仅允许团队主管发出服务请求。三个团队成员被赋予* Keystone查看器*角色，而团队主管被赋予* Keystone管理员*角色，以便对公司的服务请求有一个控制点。
+XYZ 公司有四名来自不同部门的存储工程师查看 Keystone 订阅信息。尽管所有这些用户都需要监控Keystone订阅、但仅允许团队主管发出服务请求。三个团队成员被赋予* Keystone查看器*角色，而团队主管被赋予* Keystone管理员*角色，以便对公司的服务请求有一个控制点。
 
 下表显示了每个Keystone角色可以执行的操作。
 

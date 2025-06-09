@@ -3,7 +3,7 @@
 
 
 .步骤
-. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+. 在控制台的右上角，选择“设置”图标，然后选择“*凭据*”。
 . 选择一组凭据的操作菜单，然后选择*Configure订阅*。+需要新屏幕截图(TS)image:screenshot_gcp_add_subscription.png["一组现有凭据的操作菜单屏幕截图。"]
 . 要使用选定凭据配置现有订阅、请从下拉列表中选择Google Cloud项目和订阅、然后选择*配置*。
 +
@@ -15,7 +15,7 @@ image:screenshot_gcp_associate.gif["为 Google Cloud 凭据选择的 Google Clou
 NOTE: 在完成以下步骤之前、请确保您在Google Cloud帐户中同时拥有计费管理员权限、并同时拥有BlueXP登录权限。
 
 +
-.. 重定向到后 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace上的NetApp BlueXP页面"^]，确保在顶部导航菜单中选择了正确的项目。
+.. 在您被重定向到 https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Google Cloud Marketplace 上的 NetApp 智能服务页面"^] ，确保在顶部导航菜单中选择了正确的项目。
 +
 image:screenshot_gcp_cvo_marketplace.png["Google Cloud中Cloud Volumes ONTAP Marketplace页面的屏幕截图。"]
 

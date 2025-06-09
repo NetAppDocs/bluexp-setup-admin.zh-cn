@@ -14,9 +14,9 @@ summary: '通过为BlueXP控制台准备网络连接、注册和创建帐户、(
 
 
 [role="lead"]
-通过为BlueXP控制台准备网络连接、注册和创建帐户、(可选)创建Connector以及订阅BlueXP、在标准模式下开始使用BlueXP。
+通过为 BlueXP 控制台准备网络、注册并创建帐户、（可选）创建连接器以及订阅 NetApp 智能服务，以标准模式开始使用 BlueXP。
 
-在标准模式下、用户可从基于Web的控制台以云服务的形式访问BlueXP。开始之前，您应了解 link:concept-modes.html["部署模式"] 和 link:concept-connectors.html["连接器"]。
+在标准模式下，您可以访问由 NetApp 作为软件即服务 (SaaS) 产品托管的基于 Web 的控制台。开始之前，您应了解 link:concept-modes.html["部署模式"] 和 link:concept-connectors.html["连接器"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] link:reference-networking-saas-console.html["准备网络以使用BlueXP控制台"]
 [role="quick-margin-para"]
@@ -24,7 +24,7 @@ summary: '通过为BlueXP控制台准备网络连接、注册和创建帐户、(
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] link:task-sign-up-saas.html["注册并创建组织"]
 [role="quick-margin-para"]
-转到 https://console.bluexp.netapp.com["BlueXP控制台"^]并注册。您可以选择创建BlueXP  组织、但如果您被邀请加入现有组织、则可以跳过该步骤。
+转到 https://console.bluexp.netapp.com["BlueXP控制台"^]并注册。您将可以选择创建一个组织，但如果您被邀请加入现有组织，则可以跳过该步骤。
 
 [role="quick-margin-para"]
 此时、您已登录并可以开始使用多种BlueXP服务、例如Digital Advisor、Amazon FSX for ONTAP 、Azure NetApp Files 等。 link:concept-connectors.html["了解没有Connector可以执行的操作"]。
@@ -45,8 +45,8 @@ summary: '通过为BlueXP控制台准备网络连接、注册和创建帐户、(
 
 
 [role="quick-margin-para"]
-请注意、如果要使用BlueXP服务在Google Cloud中管理存储和数据、则Connector必须在Google Cloud中运行。
+请注意，如果您想使用 NetApp 智能数据服务来管理 Google Cloud 中的存储和数据，则连接器必须在 Google Cloud 中运行。请注意，如果您想使用 NetApp 智能数据服务来管理 Google Cloud 中的存储和数据，则连接器必须在 Google Cloud 中运行。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] link:task-subscribe-standard-mode.html["订阅BlueXP"]
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] link:task-subscribe-standard-mode.html["订阅 NetApp 智能服务（可选）"]
 [role="quick-margin-para"]
-从云提供商的市场订阅BlueXP、按小时费率(PAYGO)或按年合同支付BlueXP服务费用。
+从您的云提供商市场订购 NetApp 智能服务，按小时费率 (PAYGO) 或按年合同支付数据服务费用。NetApp智能服务包括备份和恢复、Cloud Volumes ONTAP、分层、勒索软件防护和灾难恢复。分类功能包含在您的订阅中，无需额外付费。

@@ -14,7 +14,7 @@ summary: BlueXP提供了多种部署模式、使您能够以满足业务和安�
 
 
 [role="lead"]
-BlueXP提供了多种部署模式_、使您能够以满足业务和安全要求的方式使用BlueXP。_Standard mode_利用BlueXP  软件即服务(SaaS)层提供完整功能、而_Restricted mode_and _private mode_则 可用于具有连接限制的组织。
+BlueXP 提供多种部署模式，助您满足业务和安全需求。标准模式利用软件即服务 (SaaS) 层提供完整功能，而受限模式和私有模式则适用于存在连接限制的组织。
 
 虽然BlueXP  在使用受限模式或私有模式时会阻止流量、通信和数据的流动、但您有责任确保您的环境(内部和云中)符合所需的法规。
 
@@ -22,15 +22,15 @@ BlueXP提供了多种部署模式_、使您能够以满足业务和安全要求�
 
 == 概述
 
-BlueXP  提供三种部署模式。每个模式在出站连接要求、部署位置、安装过程、身份验证方法、可用数据和存储服务以及收费方法方面都有所不同。
+每种部署模式在出站连接要求、部署位置、安装过程、身份验证方法、可用数据和存储服务以及收费方法方面有所不同。
 
-标准模式:: 用户可以从基于Web的控制台以云服务的形式访问BlueXP。根据您计划使用的BlueXP服务、BlueXP管理员会创建一个或多个连接器来管理混合云环境中的数据。
+标准模式:: 您可以通过基于 Web 的控制台使用 SaaS 服务。根据您计划使用的数据服务和功能，BlueXP 管理员会创建一个或多个连接器来管理混合云环境中的数据。
 +
 --
 此模式使用通过公共Internet进行加密数据传输。
 
 --
-受限模式:: BlueXP Connector安装在云中(在政府区域、主权云区域或商业区域)、并且与BlueXP SaaS层的出站连接有限。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
+受限模式:: 您在云中（在政府区域、主权云区域或商业区域）安装 BlueXP 连接器，并且与 BlueXP SaaS 层的出站连接有限。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
 +
 --
 此模式通常由州和地方政府以及受监管公司使用。
@@ -38,7 +38,7 @@ BlueXP  提供三种部署模式。每个模式在出站连接要求、部署�
 <<受限模式,详细了解与SaaS层的出站连接>>。
 
 --
-私有模式:: BlueXP  连接器安装在内部环境或云中(位于安全区域、主权云区域或商业区域)、并且与BlueXP  SaaS层之间具有_no_连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
+私有模式:: 您在本地或云端（安全区域、主权云区域或商业区域）安装 BlueXP 连接器，并且与 BlueXP SaaS 层没有连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
 +
 --
 安全区域包括 https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^]， https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^]，和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
@@ -77,7 +77,7 @@ BlueXP  提供三种部署模式。每个模式在出站连接要求、部署�
 | 存储和数据服务 | 支持所有这些功能 | 支持许多 | 支持多个 
 
 
-| 许可选项 | Marketplace订阅和BYOL | Marketplace订阅和BYOL | BYOL 
+| 数据服务许可选项 | Marketplace订阅和BYOL | Marketplace订阅和BYOL | BYOL 
 |===
 通读以下各节、了解有关这些模式的更多信息、包括支持哪些BlueXP功能和服务。
 

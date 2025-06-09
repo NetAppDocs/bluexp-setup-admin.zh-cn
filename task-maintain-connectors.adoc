@@ -14,7 +14,7 @@ summary: 您应负责维护Connector主机上的操作系统。例如、您应�
 
 
 [role="lead"]
-您应负责维护Connector主机上的操作系统。例如、您应按照公司的操作系统分发标准过程对Connector主机上的操作系统应用安全更新。
+维护连接器主机上的操作系统是您（客户）的责任。例如，您（客户）应按照公司操作系统分发的标准流程，将安全更新应用于连接器主机上的操作系统。
 
 
 TIP: 如果您已有Connector、则应注意 link:reference-connector-operating-system-changes.html["对支持的Linux操作系统进行的更改"]。
