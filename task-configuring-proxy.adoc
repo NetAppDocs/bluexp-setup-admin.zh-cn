@@ -16,9 +16,9 @@ summary: 如果您的公司策略要求您使用代理服务器进行与Internet
 [role="lead"]
 如果您的公司策略要求您使用代理服务器进行与Internet的所有通信、则需要将您的连接器配置为使用该代理服务器。如果您未将Connector配置为在安装期间使用代理服务器、则可以将Connector配置为随时使用该代理服务器。
 
-将 Connector 配置为使用代理服务器，可在公共 IP 地址或 NAT 网关不可用时启用出站互联网访问。代理服务器仅为 Connector 提供出站连接，不为 Cloud Volumes ONTAP 系统提供出站连接。
+当没有可用的公共 IP 或 NAT 网关时，使用带有连接器的代理服务器可以实现出站互联网访问。代理服务器仅为 Connector 提供出站连接，不为 Cloud Volumes ONTAP 系统提供出站连接。
 
-如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。唯一的要求是确保Connector的安全组允许通过端口3128进行入站连接。部署连接器后打开此端口。
+如果Cloud Volumes ONTAP 系统没有出站Internet连接来发送AutoSupport 消息、则BlueXP会自动将这些Cloud Volumes ONTAP 系统配置为使用Connector附带的代理服务器。您必须确保连接器的安全组允许通过端口 3128 的入站连接。部署连接器后，打开此端口。
 
 
 
@@ -35,12 +35,12 @@ summary: 如果您的公司策略要求您使用代理服务器进行与Internet
 
 在将 Connector 配置为使用代理服务器时，该连接器及其管理的 Cloud Volumes ONTAP 系统（包括任何 HA 调解器）都会使用代理服务器。
 
-请注意，此操作将重新启动 Connector 。在继续操作之前、请确保Connector未执行任何操作。
+此操作将重新启动连接器。在继续操作之前、请确保Connector未执行任何操作。
 
 .步骤
 . 导航到*编辑BlueXP Connecter*页面。
 +
-导航方式取决于您是在标准模式下使用BlueXP (从SaaS网站访问BlueXP界面)、还是在受限模式或私有模式下使用BlueXP (从Connector主机本地访问BlueXP界面)。
+导航取决于您的 BlueXP 模式。在标准模式下，从 SaaS 网站访问界面。在受限或私有模式下，从连接器主机本地访问。
 
 +
 [role="tabbed-block"]
@@ -97,16 +97,16 @@ image:screenshot-edit-connector.png["显示\"编辑连接器\"选项的屏幕截
 
 == 启用直接 API 流量
 
-如果您将Connector配置为使用代理服务器、则可以在Connector上启用直接API流量、以便在不通过代理的情况下直接向云提供商服务发送API调用。在 AWS ， Azure 或 Google Cloud 中运行的 Connectors 支持此选项。
+如果您将Connector配置为使用代理服务器、则可以在Connector上启用直接API流量、以便在不通过代理的情况下直接向云提供商服务发送API调用。在 AWS、Azure 或 Google Cloud 中运行的连接器支持此选项。
 
-如果您禁用了在Cloud Volumes ONTAP 中使用Azure专用链路、而是使用服务端点、则必须启用直接API流量。否则、流量将无法正确路由。
+如果您禁用带有 Cloud Volumes ONTAP 的 Azure Private Links 并使用服务端点，请启用直接 API 流量。否则、流量将无法正确路由。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["了解有关将Azure专用链路或服务端点与Cloud Volumes ONTAP 结合使用的更多信息"^]
 
 .步骤
 . 导航到*编辑BlueXP Connecter*页面：
 +
-导航方式取决于您是在标准模式下使用BlueXP (从SaaS网站访问BlueXP界面)、还是在受限模式或私有模式下使用BlueXP (从Connector主机本地访问BlueXP界面)。
+导航取决于您的 BlueXP 模式。在标准模式下，从 SaaS 网站访问界面。在受限或私有模式下，从连接器主机本地访问。
 
 +
 [role="tabbed-block"]

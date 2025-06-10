@@ -26,13 +26,13 @@ _Identity Federation_支持使用BlueXP进行单点登录、以便用户可以�
 * 将此表单提交到表单中指定的电子邮件地址
 
 
-NetApp 身份和访问管理团队审核您的请求。
+NetApp 支持团队将审核并处理您的请求。
 
 
 
 == 身份联合的工作原理
 
-设置身份联合会在BlueXP的身份验证服务提供程序(auth0)与您自己的身份管理提供程序之间创建信任连接。
+设置身份联合会在BlueXP的身份验证服务提供程序(Auth0)与您自己的身份管理提供程序之间创建信任连接。
 
 下图展示了身份联合如何与BlueXP配合使用：
 
@@ -57,11 +57,11 @@ BlueXP支持以下身份提供程序：
 
 * 安全断言标记语言(SAML)身份提供程序
 * Microsoft Entra ID
-* Active Directory 联合身份验证服务（ ADFS ）
+* Active Directory 联合身份验证服务 (AD FS)
 * PingFederate
 
 
-BlueXP仅支持服务提供商启动(SP启动)的SSO。不支持身份提供程序启动(IdP启动)的SSO。
+BlueXP 仅支持服务提供商发起的（SP 发起的）SSO。
 
 
 
@@ -75,97 +75,56 @@ BlueXP仅支持服务提供商启动(SP启动)的SSO。不支持身份提供程�
 
 === SAML身份提供程序
 
-概括地说、在BlueXP和SAML身份提供程序之间设置联合连接包括以下步骤：
+与 SAML 身份提供者建立联合连接涉及以下步骤：
 
 [cols="10,15,75"]
 |===
 | 步骤 | 完成者 | Description 
 
 
-| 1. | Active Directory (AD)管理员  a| 
-配置SAML身份提供程序以启用与BlueXP的身份联合。
-
-查看SAML身份提供程序的说明：
-
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-adfs-saml-connections["ADFS"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-okta-as-saml-identity-provider["Okta"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-onelogin-as-saml-identity-provider["OneLogin"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-pingfederate-as-saml-identity-provider["PingFederate"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-salesforce-as-saml-identity-provider["Salesforce"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-siteminder-as-saml-identity-provider["SiteMinder"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-ssocircle-as-saml-identity-provider["SSOcircle"^]
-
-
-如果您的身份提供程序未显示在上述列表中、 https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["请按照以下通用说明进行操作"^]
-
-
-TIP: Do _not_ complete the steps that describe how to create a connection in auth0。您将在下一步中创建此连接。
-
+| 1. | IdP 管理员 | 配置SAML身份提供程序以启用与BlueXP的身份联合。查看您的 SAML 身份提供商的说明：*  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-adfs-saml-connections["ADFS"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-okta-as-saml-identity-provider["Okta"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-onelogin-as-saml-identity-provider["OneLogin"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-pingfederate-as-saml-identity-provider["PingFederate"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-salesforce-as-saml-identity-provider["Salesforce"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-siteminder-as-saml-identity-provider["SiteMinder"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-ssocircle-as-saml-identity-provider["SSOcircle"^]如果您的身份提供商未出现在上面的列表中，  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["请按照以下通用说明进行操作"^]提示：不要完成描述如何在 auth0 中创建连接的步骤。您将在下一步中创建此连接。 
 
 
 | 2. | BlueXP管理员  a| 
 转至 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^] 并创建与BlueXP的连接。
 
-要完成此步骤、您需要从AD管理员处获取有关身份提供程序的以下信息：
+要完成此步骤，您需要从 IdP 管理员处获取有关身份提供者的以下信息：
 
 * 登录URL
 * X509签名证书(PEM或CERs格式)
 * 注销URL (可选)
 
 
-使用此信息创建连接后、"Federation Setup"页面将列出可发送给AD管理员以在下一步完成配置的参数。
+使用此信息创建连接后，联合设置页面会列出您可以发送给 IdP 管理员的参数，以便在下一步中完成配置。
 
 
 NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新证书_Before _、它将过期。这是您的责任。BlueXP 不跟踪证书到期日期，因此您必须在证书到期前监控并更新证书。最好与您的 IT 团队合作，以便及时收到警报。
 
 
 
-| 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数在身份提供程序上完成配置。 
+| 3. | IdP 管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数在身份提供程序上完成配置。 
 
 
-| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]
-
-请注意、此页面会在测试连接和启用连接之间刷新。 
+| 4. | BlueXP管理员 | 测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]页面会在测试连接和启用连接之间刷新。 
 |===
 
 
 === Microsoft Entra ID
 
-总体而言、在BlueXP和Microsoft Entra ID之间设置联合连接包括以下步骤：
+在 BlueXP 和 Microsoft Entra ID 之间建立联合连接包括以下步骤：
 
 [cols="10,15,75"]
 |===
 | 步骤 | 完成者 | Description 
 
 
-| 1. | AD管理员  a| 
-配置Microsoft Entra ID以启用与BlueXP的身份联合。
-
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["查看有关使用Microsoft Entra ID注册应用程序的说明"^]
+| 1. | IdP 管理员 | 配置Microsoft Entra ID以启用与BlueXP的身份联合。https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["查看有关使用Microsoft Entra ID注册应用程序的说明"^]提示：不要完成描述如何在 auth0 中创建连接的步骤。您将在下一步中创建此连接。 
 
 
-TIP: Do _not_ complete the steps that describe how to create a connection in auth0。您将在下一步中创建此连接。
+| 2. | BlueXP管理员 | 前往 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]并与 BlueXP 建立连接。要完成此步骤，您需要从 IdP 管理员处获取以下信息：* 客户端 ID * 客户端密钥值 * Microsoft Entra ID 域。使用此信息创建连接后，“联合设置”页面会列出您可以发送给 AD 管理员的参数，以便在下一步中完成配置。注意：请记下密钥的到期日期。您需要返回到"联盟设置"页面并更新证书_Before _、它将过期。这是您的责任。BlueXP不会跟踪到期日期。最好与您的广告团队合作、以便及时收到警报。 
 
 
-
-| 2. | BlueXP管理员  a| 
-转至 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^] 并创建与BlueXP的连接。
-
-要完成此步骤、您需要从AD管理员处获取以下信息：
-
-* 客户端 ID
-* 客户端密钥值
-* Microsoft Entra ID域
-
-
-使用此信息创建连接后、"Federation Setup"页面将列出可发送给AD管理员以在下一步完成配置的参数。
-
-
-NOTE: 记下机密密钥的到期日期。您需要返回到"联盟设置"页面并更新证书_Before _、它将过期。这是您的责任。BlueXP不会跟踪到期日期。最好与您的广告团队合作、以便及时收到警报。
-
-
-
-| 3. | AD管理员 | 完成步骤2后、使用"联合身份验证设置"页面上显示的参数在Microsoft Entra ID中完成配置。 
+| 3. | IdP 管理员 | 完成步骤2后、使用"联合身份验证设置"页面上显示的参数在Microsoft Entra ID中完成配置。 
 
 
 | 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]
@@ -174,84 +133,56 @@ NOTE: 记下机密密钥的到期日期。您需要返回到"联盟设置"页面
 |===
 
 
-=== ADFS
+=== AD FS
 
-总体而言、在BlueXP和ADFS之间设置联合连接包括以下步骤：
+在 BlueXP 和 AD FS 之间建立联合连接包括以下步骤：
 
 [cols="10,15,75"]
 |===
 | 步骤 | 完成者 | Description 
 
 
-| 1. | AD管理员  a| 
-配置ADFS服务器以启用与BlueXP的身份联合。
-
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs["查看使用auth0配置ADFS服务器的说明"^]
-
+| 1. | IdP 管理员 | 配置 AD FS 服务器以启用与 BlueXP 的身份联合。 https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs["查看使用auth0配置ADFS服务器的说明"^] 
 
 
 | 2. | BlueXP管理员  a| 
 转至 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^] 并创建与BlueXP的连接。
 
-要完成此步骤、您需要从AD管理员处获取以下内容：ADFS服务器的URL或联合元数据文件。
+要完成此步骤，您需要从 IdP 管理员处获取以下内容：AD FS 服务器或联合元数据文件的 URL。
 
-使用此信息创建连接后、"Federation Setup"页面将列出可发送给AD管理员以在下一步完成配置的参数。
-
-
-NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新证书_Before _、它将过期。这是您的责任。BlueXP不会跟踪到期日期。最好与您的广告团队合作、以便及时收到警报。
+使用此信息创建连接后，联合设置页面会列出您可以发送给 IdP 管理员的参数，以便在下一步中完成配置。
 
 
+NOTE: 跟踪证书到期日期。在证书到期之前，请在“联合设置”页面上更新证书。这是您的责任。BlueXP不会跟踪到期日期。最好与您的广告团队合作、以便及时收到警报。
 
-| 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数完成ADFS服务器上的配置。 
 
 
-| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]
+| 3. | IdP 管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数完成ADFS服务器上的配置。 
 
-请注意、此页面会在测试连接和启用连接之间刷新。 
+
+| 4. | BlueXP管理员 | 测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]页面会在测试和启用连接之间刷新。 
 |===
 
 
 === PingFederate
 
-概括地说、在BlueXP和PingFederate服务器之间设置联合连接包括以下步骤：
+在 BlueXP 和 PingFederate 服务器之间建立联合连接包括以下步骤：
 
 [cols="10,15,75"]
 |===
 | 步骤 | 完成者 | Description 
 
 
-| 1. | AD管理员  a| 
-配置PingFederate服务器以启用与BlueXP的身份联合。
-
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["查看有关创建连接的说明"^]
+| 1. | IdP 管理员 | 配置PingFederate服务器以启用与BlueXP的身份联合。https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["查看有关创建连接的说明"^]提示：不要完成描述如何在 auth0 中创建连接的步骤。您将在下一步中创建此连接。 
 
 
-TIP: Do _not_ complete the steps that describe how to create a connection in auth0。您将在下一步中创建此连接。
+| 2. | BlueXP管理员 | 前往 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]并与 BlueXP 建立连接。要完成此步骤，您需要从 AD 管理员处获取以下信息：* PingFederate 服务器的 URL * X509 签名证书（PEM 或 CER 格式）。使用此信息创建连接后，“联合设置”页面会列出您可以发送给 AD 管理员的参数，以便完成下一步的配置。注意：请跟踪证书到期日期。请在证书到期前在“联合设置”页面上更新证书。这是您的责任。BlueXP不会跟踪到期日期。最好与您的 IdP 团队合作，以便及时收到通知。 
 
 
-
-| 2. | BlueXP管理员  a| 
-转至 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^] 并创建与BlueXP的连接。
-
-要完成此步骤、您需要从AD管理员处获取以下信息：
-
-* PingFederate服务器的URL
-* X509签名证书(PEM或CERs格式)
+| 3. | IdP 管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数在PingFederate服务器上完成配置。 
 
 
-使用此信息创建连接后、"Federation Setup"页面将列出可发送给AD管理员以在下一步完成配置的参数。
-
-
-NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新证书_Before _、它将过期。这是您的责任。BlueXP不会跟踪到期日期。最好与您的广告团队合作、以便及时收到警报。
-
-
-
-| 3. | AD管理员 | 完成步骤2后、使用"Federation Setup"页面上显示的参数在PingFederate服务器上完成配置。 
-
-
-| 4. | BlueXP管理员 | 从测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]
-
-请注意、此页面会在测试连接和启用连接之间刷新。 
+| 4. | BlueXP管理员 | 测试并启用连接 https://services.cloud.netapp.com/federation-setup["NetApp联合设置页面"^]页面会在测试连接和启用连接之间刷新。 
 |===
 
 
@@ -261,4 +192,4 @@ NOTE: 记下证书到期日期。您需要返回到"联盟设置"页面并更新
 
 例如、您可能需要通过上传新证书来更新连接。
 
-创建连接的BlueXP管理员是唯一可以更新连接的授权用户。如果您要添加其他管理员、请联系NetApp支持部门。
+只有创建该连接的 BlueXP 管理员可以更新它。如果您想添加其他管理员，请联系 NetApp 支持。

@@ -144,7 +144,7 @@ sidebar:
           - title: Keystone角色
             url: "/reference-iam-keystone-roles.html"
           - title: 存储角色
-            url: "/reference-iam-storage.roles.html"
+            url: "/reference-iam-storage-roles.html"
         - title: 数据服务角色
           entries:
           - title: 勒索软件保护角色

@@ -16,13 +16,13 @@ summary: BlueXP提供了多种部署模式、使您能够以满足业务和安�
 [role="lead"]
 BlueXP 提供多种部署模式，助您满足业务和安全需求。标准模式利用软件即服务 (SaaS) 层提供完整功能，而受限模式和私有模式则适用于存在连接限制的组织。
 
-虽然BlueXP  在使用受限模式或私有模式时会阻止流量、通信和数据的流动、但您有责任确保您的环境(内部和云中)符合所需的法规。
+虽然 BlueXP 在使用受限模式或私有模式时会抑制流量、通信和数据的流动，但您有责任确保您的环境（本地和云端）符合您业务所需的规定。
 
 
 
 == 概述
 
-每种部署模式在出站连接要求、部署位置、安装过程、身份验证方法、可用数据和存储服务以及收费方法方面有所不同。
+每种部署模式在出站连接、位置、安装、身份验证、数据服务和收费方法方面有所不同。
 
 标准模式:: 您可以通过基于 Web 的控制台使用 SaaS 服务。根据您计划使用的数据服务和功能，BlueXP 管理员会创建一个或多个连接器来管理混合云环境中的数据。
 +
@@ -30,7 +30,7 @@ BlueXP 提供多种部署模式，助您满足业务和安全需求。标准模�
 此模式使用通过公共Internet进行加密数据传输。
 
 --
-受限模式:: 您在云中（在政府区域、主权云区域或商业区域）安装 BlueXP 连接器，并且与 BlueXP SaaS 层的出站连接有限。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
+受限模式:: 您在云中（在政府、主权或商业区域）安装 BlueXP 连接器，并且它与 BlueXP SaaS 层的出站连接有限。
 +
 --
 此模式通常由州和地方政府以及受监管公司使用。
@@ -38,7 +38,7 @@ BlueXP 提供多种部署模式，助您满足业务和安全需求。标准模�
 <<受限模式,详细了解与SaaS层的出站连接>>。
 
 --
-私有模式:: 您在本地或云端（安全区域、主权云区域或商业区域）安装 BlueXP 连接器，并且与 BlueXP SaaS 层没有连接。用户可以从Connector提供的基于Web的控制台本地访问BlueXP、而不是从SaaS层访问。
+私有模式:: 您在本地或云端（安全区域、主权云区域或商业区域）安装 BlueXP 连接器，并且与 BlueXP SaaS 层没有连接。用户在本地访问 Connector 提供的 BlueXP 控制台，而不是 SaaS 层。
 +
 --
 安全区域包括 https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^]， https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^]，和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
@@ -101,8 +101,8 @@ BlueXP在标准模式下的工作原理如下：
 
 --
 支持的连接器位置:: 在标准模式下、云或内部环境支持Connector。
-连接器安装:: 可以通过BlueXP中的设置向导、AWS或Azure Marketplace或使用安装程序在数据中心或云中您自己的Linux主机上手动安装Connector。
-连接器升级:: 您可以从BlueXP自动升级Connector软件、每月更新一次。
+连接器安装:: 您可以使用 BlueXP 安装向导、AWS 或 Azure Marketplace、Google Cloud SDK 或数据中心或云中的 Linux 主机上的手动安装程序来安装连接器。
+连接器升级:: BlueXP 通过每月更新提供 Connector 软件的自动升级。
 用户界面访问:: 用户界面可从通过SaaS层提供的基于Web的控制台访问。
 API endpoint:: 将对以下端点执行API调用：
 \https://cloudmanager.cloud.netapp.com
@@ -127,7 +127,7 @@ image:diagram-restricted-mode.png["一个概念映像、用于显示可用SaaS�
 
 BlueXP在受限模式下的工作原理如下：
 
-出站通信:: 要使用BlueXP数据服务、启用Connector的自动软件升级、使用基于auth0的身份验证以及发送元数据以进行收费(Storage VM名称、已分配容量以及卷UUID、类型和IOPS)、需要从Connector到BlueXP SaaS层的出站连接。
+出站通信:: 连接器需要与 BlueXP SaaS 层建立出站连接，以实现数据服务、软件升级、身份验证和元数据传输。
 +
 --
 BlueXP SaaS层不会启动与连接器的通信。所有通信均由Connector启动、它可以根据需要从SaaS层提取或推送到SaaS层。
@@ -137,7 +137,7 @@ BlueXP SaaS层不会启动与连接器的通信。所有通信均由Connector启
 --
 支持的连接器位置:: 在受限模式下、云支持Connector：在政府区域、主权区域或商业区域。
 连接器安装:: 可以从AWS或Azure Marketplace安装连接器、也可以在您自己的Linux主机上手动安装连接器。
-连接器升级:: 您可以从BlueXP自动升级Connector软件、每月更新一次。
+连接器升级:: BlueXP 通过每月更新提供 Connector 软件的自动升级。
 用户界面访问:: 用户界面可从云区域中部署的Connector虚拟机访问。
 API endpoint:: API调用会调用Connector虚拟机。
 身份验证:: 身份验证通过使用auth0的BlueXP云服务提供。此外、还可以使用身份联合。
