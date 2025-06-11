@@ -4939,15 +4939,10 @@ https://support.netapp.com
   <block id="12cae065030aa4e0842692035a8202bd" category="inline-link">Google Cloud Marketplace 上的 NetApp 智能服务页面</block>
   <block id="6e7edd679a9a95191eb6b90ce6943fe5" category="list-text">在您被重定向到<block ref="e3f48af04aeab9b1f546df3c8b75ea2a" category="inline-link-rx"></block> ，确保在顶部导航菜单中选择了正确的项目。</block>
   <block id="d46543c7114457c380d6e75a76c470af" category="paragraph">从云提供商的市场订阅 NetApp 智能服务，以按小时费率 (PAYGO) 或通过年度合同支付数据服务费用。如果您从NetApp (BYOL)购买了许可证、则还需要订阅市场产品。您的许可证始终会首先收费、但如果超出许可容量或许可证期限到期、则会按小时收费。</block>
-  <block id="4f8b575844fe92cc4a57a5823b2c4c6f" category="paragraph">当连接器不合规或停机超过 14 天时，Cloud Volumes ONTAP 基于容量的节点不再关闭。当 Cloud Volumes ONTAP 失去对连接器的访问权限时，它仍会发送事件管理消息。此更改是为了确保即使连接器长时间停机，Cloud Volumes ONTAP 也能继续运行。此更改不会改变连接器的合规性要求。</block>
-  <block id="078afc7a02a9e486708bde9dd30391e7" category="paragraph">BlueXP IAM 中提供以下新功能。</block>
-  <block id="6b83d0ae16acd42e6178ac5dde77e977" category="section-title">本地用户的多重身份验证 (MFA)</block>
-  <block id="e79a1a29d1adbbfc3e2d52a916a22b07" category="paragraph">本地用户（非联合用户且未与 NetApp 支持站点帐户关联）可以启用多重身份验证。管理员可以管理用户的 MFA 设置，例如在需要时暂时禁用或移除 MFA。</block>
   <block id="e9bf07011be1831466ac0bf1bbfe1140" category="doc">连接器3.9.53</block>
   <block id="734a861d3d201b7a4e47067ddb5a7339" category="paragraph">BlueXP Connector 的此版本包括安全改进和错误修复。</block>
   <block id="216b28cad63bed5c978cb116067bfc38" category="paragraph">目前、3.9.53版本可用于标准模式和受限模式。</block>
   <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">多因素身份验证（ MFA ）</block>
-  <block id="35234ac77de9ce6dd39c6d724c620019" category="paragraph">非联合用户现在可以为其 BlueXP 帐户启用多重身份验证 (MFA)，从而增强帐户安全性。BlueXP管理员可以管理用户的 MFA 设置，并根据需要为各个用户重置或禁用 MFA。</block>
   <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">了解如何为自己设置多重身份验证。</block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">工作负载</block>
   <block id="01537291f07f4eb50dc075e6b0282ce8" category="paragraph">您现在可以从 BlueXP 中的凭证页面查看和删除 Amazon FSx for NetApp ONTAP 凭证。</block>
@@ -5144,8 +5139,6 @@ https://support.netapp.com
   <block id="102e22f275df79c5a1dde1e8293216b7" category="sidebar">订阅 NetApp 智能服务</block>
   <block id="60a6933aebf1c90a063b74167b72b65a" category="sidebar">使用 BlueXP</block>
   <block id="6055633e93e75f195e1ce7a98f705965" category="sidebar">管理会员和服务帐户</block>
-  <block id="09788a09cd40182e19bc9a2e7bfaa2ac" category="inline-link-macro">了解如何管理用户的多重身份验证。</block>
-  <block id="b06421b9a95d9ca2cc843abf3c5edbe4" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="6e0396b4058b8ab3f91c2a62781d9fbc" category="inline-link-macro-rx"></block></block>
   <block id="b41bf2522840309de504df12a13b70d2" category="paragraph">NetApp 支持团队将审核并处理您的请求。</block>
   <block id="fcad29f3a62024a218de540d2a955cdf" category="paragraph">设置身份联合会在BlueXP的身份验证服务提供程序(Auth0)与您自己的身份管理提供程序之间创建信任连接。</block>
   <block id="d1d43f38caca7dedb941839c492f984b" category="list-text">Active Directory 联合身份验证服务 (AD FS)</block>
@@ -5214,4 +5207,10 @@ https://support.netapp.com
   <block id="62fb2f4eacb3d56ea8cb96e9b068426c" category="admonition">如果您无法访问您的身份验证应用程序或恢复代码，您将需要联系您的 BlueXP 管理员来重置您的 MFA 配置。</block>
   <block id="42f007f9f4877a6aa4543c5ae82e6e41" category="paragraph">如果您需要联系组织管理员，可以直接通过 BlueXP 向他们发送电子邮件。管理员管理组织内的用户帐户和权限。</block>
   <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">2025年6月9日</block>
+  <block id="079da054a19d880b356cedc5deeaf9e3" category="paragraph">非联合用户现在可以为其 BlueXP 帐户启用多重身份验证 (MFA)，从而增强帐户安全性。BlueXP管理员可以管理用户的 MFA 设置，并根据需要为各个用户重置或禁用 MFA。这仅在标准模式下受支持。</block>
+  <block id="8b6178443fc25355a974613e3d6951b4" category="inline-link-macro">了解如何为用户管理多重身份验证。</block>
+  <block id="432ca61a502f036a7c9fe7850d55f376" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="1104a8a08c217b6a8c157f716ea4a98c" category="inline-link-macro-rx"></block></block>
+  <block id="1a504cebc3822fd967eb6426a7ff0a31" category="cell">多因素身份验证</block>
+  <block id="812dbc1b1f1c0d72bc2c50e8ea107ab8" category="cell">适用于本地用户</block>
+  <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">不可用</block>
 </blocks>
