@@ -26,7 +26,13 @@ summary: 了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器�
 
 BlueXP Connector 的此版本包括安全改进和错误修复。
 
-目前、3.9.53版本可用于标准模式和受限模式。
+3.9.53版本适用于标准模式和受限模式。
+
+
+
+=== 磁盘空间使用情况警报
+
+通知中心现在包含连接器上磁盘空间使用情况的警报。 link:task-maintain-connectors.html#monitor-disk-space["了解更多信息。"^]
 
 
 
