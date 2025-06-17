@@ -1995,7 +1995,6 @@
   <block id="3d1f92a565d3b1a61880236e33c49bf3" category="cell">时间线</block>
   <block id="0486b07a3d352a89611f0005bff8bbd3" category="cell">显示事件和操作的高级状态</block>
   <block id="c32042b6c968f47ecb4422de1d828cb1" category="cell">提供每个事件或操作的详细信息以供进一步调查</block>
-  <block id="2ddcf1998aac047c3f06e0a1fcf978b5" category="cell">显示当前登录会话的状态(注销后、此信息不会显示在通知中心中)</block>
   <block id="2fe85263c62b0b870277c30652459354" category="cell">保留上个月的状态</block>
   <block id="b2d8a4e919485c2282a84ad3f4408095" category="cell">仅显示在用户界面中启动的操作</block>
   <block id="8c6775236733a876a2482bf9932cd018" category="cell">显示 UI 或 API 中的所有操作</block>
@@ -2009,7 +2008,6 @@
   <block id="d59387ab05a2cbd005866b74628417a0" category="inline-image-macro">显示通知中心中当前通知列表的屏幕截图。</block>
   <block id="e24c5199eee665d8e879dc72dc56c667" category="paragraph"><block ref="e24c5199eee665d8e879dc72dc56c667" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2a4be390687f80c7cdf976afca0fe778" category="section-title">通知类型</block>
-  <block id="0ebfeb3212b9bb4b152ea82a5877a33b" category="paragraph">通知分为以下几类：</block>
   <block id="9e89e978c220a2a733d027866cb12907" category="cell">通知类型</block>
   <block id="278d01e5af56273bae1bb99a98b370cd" category="cell">严重</block>
   <block id="0b68cecd3f3f6281c0b25a5c4847524e" category="cell">发生的问题可能会导致服务中断，如果不立即采取更正操作。</block>
@@ -2042,7 +2040,6 @@
   <block id="5e56842d0cfbf695522e945a01570eba" category="paragraph"><block ref="5e56842d0cfbf695522e945a01570eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d7c731c9a7afeb038e27198fc653763a" category="list-text">输入姓名、电子邮件地址、然后选择收件人将收到的通知类型、然后选择*添加新收件人*。</block>
   <block id="f56df3affea06e9aeedc9830da1f0d91" category="section-title">取消通知</block>
-  <block id="e438ae665566728a83af19e41ac9ac6d" category="paragraph">如果您不再需要查看通知，可以从页面中删除这些通知。您可以一次性取消所有通知，也可以取消单个通知。</block>
   <block id="61130fb01406e968937613de0add552f" category="inline-image-macro">一个包含三个垂直点的图标</block>
   <block id="ca1c9774b98be72a0f55d88b3579e19c" category="inline-image-macro">显示通知菜单的屏幕截图，用于选择设置并取消所有选项。</block>
   <block id="fd0bf9d17b691309acb1c6ef4b12bd43" category="paragraph">要取消所有通知、请在通知中心中选择 <block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> 并选择 * 全部取消 * 。
@@ -2050,7 +2047,6 @@
   <block id="8e94ce578d759d7ee56ab163db1168d4" category="inline-image-macro">显示如何取消单个通知的屏幕截图。</block>
   <block id="f0347b571f6b77eac494a6f04226e225" category="paragraph">要取消单个通知、请将光标悬停在通知上方并选择*取消*。
 <block ref="1932261efa358e221b5ec460a7384dc2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="322812be635bbd80fb94dbae450a00b4" category="paragraph">如果您需要确定执行特定操作的人员，或者需要确定操作的状态，则检查时间线会很有帮助。</block>
   <block id="1c03861f288d9b723fd929e611a6e8fd" category="summary">添加和管理Azure凭据、以便BlueXP拥有在Azure订阅中部署和管理云资源所需的权限。如果您管理多个 Azure Marketplace 订阅，则可以从 " 凭据 " 页面将其中每个订阅分配给不同的 Azure 凭据。</block>
   <block id="92a9c164b3357bd8694c8be608dc3d23" category="paragraph">如果您需要使用多个 Azure 凭据或多个适用于 Cloud Volumes ONTAP 的 Azure Marketplace 订阅，请按照此页面上的步骤进行操作。</block>
   <block id="67cbb61f9d12c71b3b67153567963530" category="paragraph">可以通过两种方式在BlueXP中添加其他Azure订阅和凭据。</block>
@@ -2474,7 +2470,6 @@
   <block id="cb4a26e3cea7ec3938d93961d212ef39" category="list-text">如果要管理其他项目中的资源、请通过向该项目添加具有BlueXP角色的服务帐户来授予访问权限。您需要对每个项目重复此步骤。</block>
   <block id="c063b725387c641804ed10699362a645" category="list-text">部署 Connector 时，系统会提示您选择<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> VM 实例。BlueXP从服务帐户中获得创建和管理Cloud Volumes ONTAP系统、使用BlueXP备份和恢复管理备份等的权限。权限可通过将自定义角色附加到服务帐户来提供。</block>
   <block id="4196d70b52fef46e6943a70842908897" category="paragraph">如果为Cloud Volumes ONTAP创建新的工作环境、则BlueXP会默认选择以下Azure凭据：</block>
-  <block id="9704e328148ed91b7f98eb143244edd7" category="paragraph">通知可跟踪您在BlueXP中启动的操作的进度、以便您可以验证操作是否成功。您可以通过它们查看当前登录会话期间启动的许多BlueXP操作的状态。此时并非所有BlueXP服务都会将信息报告到通知中心。</block>
   <block id="8efb4a247c34c0ca71ba217009352182" category="inline-xref">设置电子邮件通知设置</block>
   <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">默认情况下、您将在"通知中心"中看到所有活动通知。您可以筛选您看到的通知、以便仅显示对您重要的通知。您可以按BlueX"服务"和通知"类型"进行筛选。</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">所有其他用户和收件人都配置为不接收任何通知电子邮件、因此您需要为任何其他用户配置通知设置。</block>
@@ -4015,12 +4010,10 @@ https://support.netapp.com
   <block id="a15dab64157b0024121a37b3726311bd" category="summary">通过添加用户、创建服务帐户以实现自动化以及添加工作空间等方式来管理BlueXP  帐户。</block>
   <block id="b89af40709c02abb8e0b01ae305dfd7f" category="summary">您可以监控BlueXP正在执行的操作的状态、以查看是否存在需要解决的任何问题。您可以在时间线、通知中心中查看状态、或者将通知发送到您的电子邮件。</block>
   <block id="57bee919903f0c92a41c5582519db779" category="doc">监控BlueXP  操作</block>
-  <block id="5d4df6d8936b94b888789b2712dcb953" category="paragraph">下表对时间线和通知中心进行了比较、以便您了解每个时间线和通知中心的功能。</block>
   <block id="a7eb158a02fb55f7c66bb86081e76732" category="cell">提供向用户和其他人发送电子邮件通知的功能</block>
   <block id="5059f2db2465d7555c44d131a23b2fdb" category="section-title">从BlueXP  时间线审核用户活动</block>
   <block id="e8bcacc75837d7d116d27b0912ef8827" category="list-text">使用表上方的筛选器可更改表中显示的操作。</block>
   <block id="76bf1023f56feea71963b97c682ddeec" category="paragraph">例如，可以使用*Service*过滤器显示与特定BlueXP  服务相关的操作，也可以使用*User*过滤器显示与特定用户帐户相关的操作。</block>
-  <block id="706ba753310eea4d62504cab3d622cb4" category="paragraph">时间线将更新、以显示已完成的管理操作。</block>
   <block id="d9e60fcce9ab0af5d2ac79ed5bd1726a" category="paragraph">您还可以将BlueXP配置为通过电子邮件发送特定类型的通知、以便即使您未登录到系统、也可以获得重要系统活动的通知。电子邮件可以发送给您的BlueXP  组织或帐户中的任何用户、也可以发送给需要了解某些类型的系统活动的任何其他收件人。请参见操作说明<block ref="a148e670707e0255b9681ed2a38729bc" category="inline-xref-macro-rx"></block>。</block>
   <block id="d7070a88c379ebcd8e00bafb5d6aaffa" category="section-title">将通知中心与BlueXP  警报进行比较</block>
   <block id="9e449a0ea34e3a3f3848e51e4cec5859" category="paragraph">通过通知中心、您可以查看从BlueXP  启动的操作的状态、并为某些类型的系统活动设置警报通知。同时、通过BlueXP  警报、您可以查看ONTAP存储环境中与容量、可用性、性能、保护和安全性相关的问题或潜在风险。</block>
@@ -5058,8 +5051,6 @@ https://support.netapp.com
   <block id="559bd85dc0b5b9d897cd8986e9388b2b" category="paragraph">NSS帐户级别的凭据与与BlueXP登录关联的NSS帐户不同。NSS 帐户级凭证使您能够使用 BYOL 部署 Cloud Volumes ONTAP、注册 PAYGO 系统并升级其软件。</block>
   <block id="5c6dd86ba1cfb5c1af500970adb2daaa" category="paragraph">BlueXP 会更新您的凭证，您在访问 ONTAP 集群、数字顾问或案例管理页面时会看到更改。</block>
   <block id="521c45217c3b337424dd8adb5c5179b2" category="paragraph">时间线显示用户为管理您的组织或帐户而完成的操作。其中包括关联用户、创建工作环境、创建连接器等管理操作。</block>
-  <block id="575fd6319f836c10418c8e0f6cdd8167" category="list-text">以下功能和服务的通知通过电子邮件发送：连接器、数字钱包、复制和同步以及备份和恢复。</block>
-  <block id="72cda922628bc633fbe14c3e16ca18f4" category="paragraph">您必须具有组织管理员角色才能自定义通知设置。</block>
   <block id="1d0dc238d165f094b64e86313624b2d9" category="paragraph">_用户_选项卡中显示的用户是从您的组织或帐户中的用户自动填充的。您可以在_Additional recipients _选项卡中为无权访问BlueXP但需要获得特定类型警报和通知通知的其他人员或组添加电子邮件地址。</block>
   <block id="6eee4754146b2d969d2a7e90197130a3" category="paragraph">默认情况下，Connector 凭据允许用户访问高级视图 (ONTAP 系统管理器)。您可以改为提示用户输入其 ONTAP 凭据。这样可以确保在Cloud Volumes ONTAP和ONTAP内部部署集群中使用ONTAP集群时应用用户的ONTAP权限。</block>
   <block id="00acd0a6ea62c6d6fd734cfcb2850d1f" category="admonition">您必须具有组织管理员角色才能编辑连接器设置。</block>
@@ -5219,4 +5210,21 @@ https://support.netapp.com
   <block id="373df0df4c9bf458b635c60e6bd81875" category="inline-link-macro">查看 NetApp 知识库文章</block>
   <block id="2b081e4d7f5e73b0295cc7f384e9ef53" category="paragraph">当 Connector VM 的磁盘空间不足时，BlueXP 会通知您。您可以在通知中心监控这些通知，或将其配置为发送电子邮件警报。解决磁盘空间问题是您的责任。<block ref="2f3ae1328a4e13fb2f2d9aa6f559f827" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="b76919d8a6dd33b62b49a16ab1b560aa" category="paragraph"><block ref="b76919d8a6dd33b62b49a16ab1b560aa" category="inline-link-macro-rx"></block></block>
+  <block id="35e36a667d1baf91dbb76a03357b3183" category="section-title">审计改进</block>
+  <block id="37e905ff49f6da834567cfa78667e2b7" category="paragraph">时间线现在包含用户的登录事件。这使您能够查看用户何时登录 BlueXP，这有助于审计和安全监控。具有组织管理员角色的 API 用户可以通过添加以下信息来查看已登录用户的电子邮件地址： <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block>参数如下： <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> 。</block>
+  <block id="a0b97dd4496f33209c0a49172d25b07e" category="section-title">BlueXP 中提供 Keystone 订阅管理</block>
+  <block id="92fd6983a547cfe3acf24d017a43dd47" category="paragraph">您可以从 BlueXP 管理您的 NetApp Keystone 订阅。</block>
+  <block id="29e615c9125f030edfca48f5dd489a27" category="inline-link-macro">了解 BlueXP 中的 Keystone 订阅管理。</block>
+  <block id="b449211baca42f6cd385865db145f827" category="paragraph"><block ref="b449211baca42f6cd385865db145f827" category="inline-link-macro-rx"></block></block>
+  <block id="edf88e3025787a448a9dd00447a52f8b" category="paragraph">该表比较了时间线和通知中心以突出它们的功能。</block>
+  <block id="b89956868ff9efb9e5c6419d523fce3a" category="cell">显示当前登录会话的状态（注销后，该信息不会出现在通知中心）</block>
+  <block id="4219da23ef386f3439d954a399b71bf7" category="paragraph">时间线有助于识别谁执行了某个操作或其状态。</block>
+  <block id="7e141c8ec6a4f5611124b9a17fc58d90" category="section-title">从时间线下载审计日志</block>
+  <block id="818dacbccd1bb52d545879ff94db3fb8" category="paragraph">您可以将时间线中的审核日志下载到 CSV 文件中。这样，您就可以记录用户在组织中执行的操作。下载的 CSV 文件包含时间线中所有可用的列，无论您在时间线中筛选或显示哪些列。</block>
+  <block id="5ed869e88cbd6968dfbc3468b7f488e9" category="list-text">在时间线中，选择表格右上角的下载图标。</block>
+  <block id="4a299decaff59944c828ad4546959edb" category="paragraph">通知会跟踪您的 BlueXP 操作的进度以验证是否成功。您可以通过它们查看当前登录会话期间启动的许多BlueXP操作的状态。此时并非所有BlueXP服务都会将信息报告到通知中心。</block>
+  <block id="9cb953f0886e30994918dec9a83c9369" category="paragraph">BlueXP 将通知分为以下几类：</block>
+  <block id="5c978e399a8f1d0acd4407aa13d8eb47" category="paragraph">如果您不再需要查看通知，可以从页面中删除这些通知。您可以单独或一次性关闭所有通知。</block>
+  <block id="d7fce9a3c3250c2897219cf1e55613fc" category="list-text">BlueXP 为连接器、数字钱包、复制和同步以及备份和恢复发送电子邮件通知。</block>
+  <block id="1d3e249b6555eefc80860021fe042ffd" category="paragraph">您必须具有组织管理员角色才能自定义通知设置。</block>
 </blocks>

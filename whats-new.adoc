@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam, notice' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors, bluexp, iam, notice, releases' 
 summary: 了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器、云提供商凭据等。 
 ---
 = 新增功能
@@ -33,6 +33,20 @@ BlueXP Connector 的此版本包括安全改进和错误修复。
 === 磁盘空间使用情况警报
 
 通知中心现在包含连接器上磁盘空间使用情况的警报。 link:task-maintain-connectors.html#monitor-disk-space["了解更多信息。"^]
+
+
+
+=== 审计改进
+
+时间线现在包含用户的登录事件。这使您能够查看用户何时登录 BlueXP，这有助于审计和安全监控。具有组织管理员角色的 API 用户可以通过添加以下信息来查看已登录用户的电子邮件地址：  `includeUserData=true``参数如下：  `/audit/<account_id>?includeUserData=true` 。
+
+
+
+=== BlueXP 中提供 Keystone 订阅管理
+
+您可以从 BlueXP 管理您的 NetApp Keystone 订阅。
+
+link:https://docs.netapp.com/us-en/keystone-staas/index.html["了解 BlueXP 中的 Keystone 订阅管理。"^]
 
 
 
