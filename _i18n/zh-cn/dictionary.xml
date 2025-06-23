@@ -5205,7 +5205,6 @@ https://support.netapp.com
   <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">不可用</block>
   <block id="33eba214b6723fe54975309f2fc419fe" category="paragraph">3.9.53版本适用于标准模式和受限模式。</block>
   <block id="39615b94cc2fe576502275ed459d404b" category="section-title">磁盘空间使用情况警报</block>
-  <block id="0b6d76bd9d461e2dc31436ce64d71b70" category="paragraph">通知中心现在包含连接器上磁盘空间使用情况的警报。 <block ref="f731d1927408fd2f4c1db9e73951a633" category="inline-link-macro-rx"></block></block>
   <block id="797f681b34046f4455905e56cb5d8cd4" category="section-title">监控磁盘空间</block>
   <block id="373df0df4c9bf458b635c60e6bd81875" category="inline-link-macro">查看 NetApp 知识库文章</block>
   <block id="2b081e4d7f5e73b0295cc7f384e9ef53" category="paragraph">当 Connector VM 的磁盘空间不足时，BlueXP 会通知您。您可以在通知中心监控这些通知，或将其配置为发送电子邮件警报。解决磁盘空间问题是您的责任。<block ref="2f3ae1328a4e13fb2f2d9aa6f559f827" category="inline-link-macro-rx"></block>(英文)</block>
@@ -5227,4 +5226,5 @@ https://support.netapp.com
   <block id="d7fce9a3c3250c2897219cf1e55613fc" category="list-text">BlueXP 为连接器、数字钱包、复制和同步以及备份和恢复发送电子邮件通知。</block>
   <block id="1d3e249b6555eefc80860021fe042ffd" category="paragraph">您必须具有组织管理员角色才能自定义通知设置。</block>
   <block id="71c9d16d02984e33cfc9f5c051c0fdb6" category="paragraph">时间线现在包含用户的登录和注销事件。您可以查看登录活动的时间，这有助于审计和安全监控。具有组织管理员角色的 API 用户可以通过添加以下信息来查看已登录用户的电子邮件地址： <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block>参数如下： <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> 。</block>
+  <block id="da15b66e2df6f7619f48e376251ca70a" category="paragraph">通知中心现在包含连接器上磁盘空间使用情况的警报。 <block ref="c622bedc83ce36b38252ce6167a6dc1f" category="inline-link-macro-rx"></block></block>
 </blocks>
