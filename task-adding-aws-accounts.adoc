@@ -362,7 +362,7 @@ image:screenshot-credentials-with-subscription.png["BlueXP帐户凭据页面的�
 通过更改帐户类型（AWS 密钥或承担角色）、编辑名称或更新凭证本身（密钥或角色 ARN）来编辑您的 AWS 凭证。
 
 
-NOTE: 您无法编辑与连接器实例或 Amazon FSx for ONTAP 实例关联的实例配置文件的凭证。
+NOTE: 您无法编辑与连接器实例或 Amazon FSx for ONTAP 实例关联的实例配置文件的凭证。您只能重命名 FSx for ONTAP 实例的凭据。
 
 .步骤
 . 在控制台的右上角，选择“设置”图标，然后选择“*凭据*”。
