@@ -3632,7 +3632,6 @@ https://support.netapp.com
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="paragraph">Ubuntu</block>
   <block id="4cb2cce5e859bbc5a24d65a5385fba47" category="paragraph">24.04 LTS</block>
   <block id="8be08c10396c9c621de2a80e7ee83e4b" category="paragraph">3.8.5.4.5.8.5.3.8.5.8.5.8.5.3.8.5.8.5.8.5.3.8.5.8.5.8. BlueXP </block>
-  <block id="e8ad09ce82a676af682d64048bfaccdf" category="paragraph">Docker 26.0.0</block>
   <block id="aa7f77e663b832d5b0e544c5511e680c" category="paragraph">不支持</block>
   <block id="2464b5a925b66efe79da228156bcf8ec" category="paragraph">22.04 LTS</block>
   <block id="607262a04e5c4340fc8d641e874a5695" category="paragraph">3.9.29或更高版本</block>
@@ -4724,7 +4723,6 @@ https://support.netapp.com
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">2025年2月18日</block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">数字钱包中的许可证更新、这意味着您将无法利用新购买的容量。</block>
   <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">在Connector主机上维护操作系统是您(客户)的责任。例如、您(客户)应按照公司的操作系统分发标准过程对Connector主机上的操作系统应用安全更新。</block>
-  <block id="1d91ba09123988594615f201a8f3eb35" category="paragraph">27.0.0 28.0.0支持_new_ 3.9.52或更高版本的安装</block>
   <block id="acd994f3f908677c5d2ca549b13f2fdd" category="paragraph">请注意、在应用次要安全更新时、您(客户)不需要停止Connector主机上的任何服务。</block>
   <block id="cadb6c86b1cf837dd9677b37639d5d4d" category="paragraph">如果您(客户)需要先停止再启动Connector VM、则应从云提供商的控制台执行此操作、或者使用内部管理的标准过程执行此操作。</block>
   <block id="f4136fdf902ca32b4530c7a614c0ed71" category="doc">连接器3.9.52</block>
@@ -5227,4 +5225,6 @@ https://support.netapp.com
   <block id="1d3e249b6555eefc80860021fe042ffd" category="paragraph">您必须具有组织管理员角色才能自定义通知设置。</block>
   <block id="71c9d16d02984e33cfc9f5c051c0fdb6" category="paragraph">时间线现在包含用户的登录和注销事件。您可以查看登录活动的时间，这有助于审计和安全监控。具有组织管理员角色的 API 用户可以通过添加以下信息来查看已登录用户的电子邮件地址： <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block>参数如下： <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> 。</block>
   <block id="da15b66e2df6f7619f48e376251ca70a" category="paragraph">通知中心现在包含连接器上磁盘空间使用情况的警报。 <block ref="c622bedc83ce36b38252ce6167a6dc1f" category="inline-link-macro-rx"></block></block>
+  <block id="8d6b52099b0900a6f09e2d0ebba1cd5a" category="paragraph">Docker Engine 23.06 至 28.0.0。</block>
+  <block id="0930e6e62078c5446e99045f0a678607" category="paragraph">Docker Engine 23.0.6 至 28.0.0。</block>
 </blocks>
