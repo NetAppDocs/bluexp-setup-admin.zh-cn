@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-maint-console.html 
+keywords: transparent proxy, connector certificate, agent maintenance console, proxy configuration, connector proxy 
+summary: 使用维护控制台配置连接器以使用透明代理服务器。 
+---
+= 连接器维护控制台
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用维护控制台将连接器配置为使用透明代理服务器。
+
+
+
+== 访问维护控制台
+
+您可以从连接器主机访问维护控制台。导航到以下目录：
+
+[source, CLI]
+----
+/opt/application/netapp/service-manager-2/connector-maint-console
+----
+
+
+== 透明代理命令
+
+维护控制台提供了配置连接器以使用透明代理服务器的命令。
+
+
+
+=== 查看当前透明代理配置
+
+要查看当前透明代理配置，请使用以下命令：
+
+[source, CLI]
+----
+./connector-maint-console proxy get
+----
+
+
+=== 添加透明代理服务器
+
+要添加透明代理服务器，请使用以下命令，其中 `/home/ubuntu/myCA1.pem`是代理服务器证书文件的路径。该证书文件必须采用 PEM 格式：
+
+[source, CLI]
+----
+./connector-maint-console proxy add -c /home/ubuntu/myCA1.pem
+----
+确保证书文件与命令位于同一目录中，或者指定证书文件的完整路径。
+
+
+
+=== 更新透明代理服务器的证书
+
+要更新透明代理服务器的证书，请使用以下命令，其中 `/home/ubuntu/myCA1.pem`是代理服务器新证书文件的路径。该证书文件必须采用 PEM 格式：
+
+[source, CLI]
+----
+./connector-maint-console proxy update -c /home/ubuntu/myCA1.pem
+----
+确保证书文件与命令位于同一目录中，或者指定证书文件的完整路径。
+
+
+
+=== 删除透明代理服务器
+
+要删除透明代理服务器，请使用以下命令：
+
+[source, CLI]
+----
+./connector-maint-console proxy remove
+----
+
+
+=== 查看任何命令的帮助
+
+要查看任何命令的帮助，请附加 `--help`命令。例如，要查看 `proxy add`命令，使用以下命令：
+
+[source, CLI]
+----
+./connector-maint-console proxy add --help
+----

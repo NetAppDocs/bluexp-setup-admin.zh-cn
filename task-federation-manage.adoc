@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: task-federation-manage.html 
+keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verified domain, credentials, certificate, client secret, update, manage federations, security, compliance, user access, productivity, account management, authentication, access control, business continuity 
+summary: 添加联邦连接后，您可以在BlueXP中管理它。您可以查看连接的状态，并根据需要启用或禁用它。 
+---
+= 在 BLueXP 中管理联盟
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以在BlueXP中管理您的联盟。您可以禁用它、更新过期的凭据，以及在不再需要时将其禁用。
+
+您还可以将已验证的域添加到现有联合中，这允许您使用多个域进行联合连接。
+
+
+NOTE: 联合管理事件（例如启用、禁用和更新联合）显示在时间轴中。 link:task-monitor-cm-operations.html["了解有关BlueXP中的监控操作的更多信息。"]
+
+.必需角色
+需要组织管理员或联盟管理员才能创建和管理联盟。联盟查看者可以查看联盟页面。 link:reference-iam-predefined-roles.html["了解有关访问角色的更多信息。"]
+
+
+
+== 启用联盟
+
+如果您已创建联合但尚未启用，您可以通过BlueXP中的“联合”选项卡启用它。启用联合后，与联合关联的用户可以使用其公司凭证登录BlueXP 。您必须已创建联合并成功测试后才能启用它。
+
+.步骤
+. 在BlueXP  控制台的右上角，选择image:icon-settings-option.png["BlueXP  Web控制台右上角显示的设置图标。"]>*身份和访问管理*。
+. 选择“*Federation*”选项卡。
+. 选择操作菜单image:icon-action.png["带有三个水平点的图标"]旁边的您想要启用的联盟并选择*启用*。
+
+
+
+
+== 将已验证的域添加到现有联合
+
+您可以将已验证的域添加到BlueXP中的现有联合，以便使用具有相同身份提供商 (IdP) 的多个域。
+
+您必须已在BlueXP中验证域名，然后才能将其添加到联盟。如果您尚未验证域名，可以按照以下步骤进行验证link:task-federation-verify-domain.html["在BlueXP中验证您的域名"] 。
+
+.步骤
+. 在BlueXP  控制台的右上角，选择image:icon-settings-option.png["BlueXP  Web控制台右上角显示的设置图标。"]>*身份和访问管理*。
+. 选择“*Federation*”选项卡。
+. 选择操作菜单image:button_3_vert_dots.png["一个包含三个垂直点的图标"] ，然后选择“更新域”。“更新域”对话框会列出已与此联盟关联的域。
+. 从可用域列表中选择一个已验证的域。
+. 选择 * 更新 * 。新域的用户最多需要 30 秒才能联合访问BlueXP。
+
+
+
+
+== 更新即将到期的联合连接
+
+您可以在BlueXP中更新联合的详细信息。例如，如果证书或客户端密钥等凭证过期，则需要更新联合。如有需要，请更新通知日期，以提醒您在连接过期前更新连接。
+
+
+IMPORTANT: 为避免登录问题，请先更新BlueXP ，然后再更新您的 IdP。更新过程中请保持BlueXP登录状态。
+
+.步骤
+. 在BlueXP  控制台的右上角，选择image:icon-settings-option.png["BlueXP  Web控制台右上角显示的设置图标。"]>*身份和访问管理*。
+. 选择“*Federation*”选项卡。
+. 选择要更新的联合旁边的操作菜单（三个垂直点），然后选择*更新联合*。
+. 根据需要更新联盟的详细信息。
+. 选择 * 更新 * 。
+
+
+
+
+== 测试现有联盟
+
+如果您在使用现有联盟时遇到问题，可以测试连接是否正常工作。这可以帮助您识别联盟中存在的问题并进行故障排除。
+
+.步骤
+. 在BlueXP  控制台的右上角，选择image:icon-settings-option.png["BlueXP  Web控制台右上角显示的设置图标。"]>*身份和访问管理*。
+. 选择“*Federation*”选项卡。
+. 选择操作菜单image:button_3_vert_dots.png["一个包含三个垂直点的图标"]旁边的您想要添加已验证域的联盟，然后选择*测试连接*。
+. 选择“测试”。系统会提示您使用公司凭证登录。如果连接成功，您将被重定向到BlueXP控制台。如果连接失败，您将看到一条错误消息，提示您联盟存在问题。
+. 选择“*完成*”返回“*联合*”选项卡。
+
+
+
+
+== 禁用联合
+
+如果您不再需要联盟，可以将其禁用。这将阻止与联盟关联的用户使用其公司凭据登录BlueXP 。您可以稍后根据需要重新启用联盟。
+
+您应该在删除联合身份验证之前先将其禁用。例如，如果您要停用某个 IdP 以支持其他 IdP，或者不再想使用联合身份验证，则应先禁用该 IdP。这样，您就可以在以后需要时重新启用它。
+
+.步骤
+. 在BlueXP  控制台的右上角，选择image:icon-settings-option.png["BlueXP  Web控制台右上角显示的设置图标。"]>*身份和访问管理*。
+. 选择“*Federation*”选项卡。
+. 选择操作菜单image:button_3_vert_dots.png["一个包含三个垂直点的图标"]在您要添加已验证域的联盟旁边，然后选择*禁用*。
+
+
+
+
+== 删除联盟
+
+如果您不再需要某个联合，可以将其删除。这会将该联合从BlueXP中移除，并阻止任何与该联合关联的用户使用其公司凭证登录BlueXP 。例如，如果 IdP 即将停用，或者不再需要该联合。删除联合后，您将无法恢复。您必须创建新的联合。
+
+
+IMPORTANT: 您必须先禁用联盟，然后才能删除它。删除联盟后，您将无法恢复删除。
+
+.步骤
+. 在BlueXP  控制台的右上角，选择image:icon-settings-option.png["BlueXP  Web控制台右上角显示的设置图标。"]>*身份和访问管理*。
+. 选择“*Federation*”选项卡。
+. 选择操作菜单image:button_3_vert_dots.png["一个包含三个垂直点的图标"]旁边的您想要添加已验证域的联盟，然后选择*删除*。
+

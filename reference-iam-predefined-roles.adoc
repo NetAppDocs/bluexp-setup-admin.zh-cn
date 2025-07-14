@@ -14,7 +14,7 @@ summary: BlueXP  身份和访问管理包括多个预定义角色、您可以�
 
 
 [role="lead"]
-BlueXP  身份和访问管理(IAM)包括多个预定义角色、您可以将这些角色分配给组织中不同级别的资源层次结构成员。在分配这些角色之前、您应了解每个角色包含的权限。角色分为以下几类：平台、应用程序和数据服务。
+BlueXP身份和访问管理 (IAM) 包括预定义角色，您可以将这些角色分配给资源层次结构不同级别的组织成员。在分配这些角色之前、您应了解每个角色包含的权限。角色分为以下几类：平台、应用程序和数据服务。
 
 
 
@@ -31,6 +31,12 @@ BlueXP  身份和访问管理(IAM)包括多个预定义角色、您可以将这
 
 
 | link:reference-iam-platform-roles.html["文件夹或项目管理员"] | 允许用户不受限制地访问为其分配的特定项目和文件夹。可以将成员添加到他们管理的文件夹或项目、以及执行任何BlueXP  任务、并使用分配给他们的文件夹或项目中资源上的任何数据服务或应用程序。文件夹或项目管理员角色无法创建连接器。 
+
+
+| link:reference-iam-platform-roles.html["联盟管理员"] | 允许用户使用BlueXP创建和管理联合，从而实现单点登录 (SSO)。 
+
+
+| link:reference-iam-platform-roles.html["联合查看器"] | 允许用户使用BlueXP查看现有的联合。无法创建或管理联合。 
 |===
 
 
@@ -66,6 +72,33 @@ BlueXP  身份和访问管理(IAM)包括多个预定义角色、您可以将这
 [cols="10,24"]
 |===
 | 数据服务角色 | 职责 
+
+
+| link:reference-iam-backup-rec-roles.html["备份和恢复超级管理员"] | 执行备份和恢复服务中的任何操作。 
+
+
+| link:reference-iam-backup-rec-roles.html["备份和恢复管理员"] | 执行本地快照备份、复制到二级存储以及备份到对象存储。 
+
+
+| link:reference-iam-backup-rec-roles.html["备份和恢复恢复管理员"] | 恢复备份和恢复服务中的工作负载。 
+
+
+| link:reference-iam-backup-rec-roles.html["备份和恢复克隆管理员"] | 在备份和恢复服务中克隆应用程序和数据。 
+
+
+| link:reference-iam-backup-rec-roles.html["备份和恢复查看器"] | 查看备份和恢复信息。 
+
+
+| link:reference-iam-disaster-rec-roles.html["灾难恢复管理员"] | 执行灾难恢复服务中的任何操作。 
+
+
+| link:reference-iam-disaster-rec-roles.html["灾难恢复故障转移管理员"] | 执行故障转移和迁移。 
+
+
+| link:reference-iam-disaster-rec-roles.html["灾难恢复应用程序管理员"] | 创建复制计划、修改复制计划并启动测试故障转移。 
+
+
+| link:reference-iam-disaster-rec-roles.html["灾难恢复查看器"] | 仅查看信息。 
 
 
 | 分类管理员 | 提供查看BlueXP  分类扫描结果的功能。分类没有查看者角色。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。 

@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task-federation-verify-domain.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: '与您的 Active Directory 联合身份验证服务 (AD FS) 联合，为BlueXP启用单点登录 (SSO)。这允许用户使用其公司凭证登录。' 
+---
+= 验证联合连接的电子邮件域
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您要与不同于您电子邮件域名的域名进行联盟，则必须先验证您是否拥有该域名。您只能使用已验证的域名进行联盟。
+
+.必需角色
+组织管理员或联盟管理员。 link:reference-iam-predefined-roles.html["了解有关访问角色的更多信息。"]
+
+验证您的域名需要向您域名的 DNS 设置添加一条 TXT 记录。此记录用于证明您拥有该域名，并允许BlueXP信任该域名以进行联合身份验证。您可能需要与您的 IT 或网络管理员协调完成此步骤。
+
+.步骤
+. 在BlueXP  控制台的右上角，选择image:icon-settings-option.png["BlueXP  Web控制台右上角显示的设置图标。"]>*身份和访问管理*。
+. 选择“*Federation*”选项卡。
+. 选择*配置新联合*。
+. 选择*验证域名所有权*。
+. 输入您要验证的域名并选择*继续*。
+. 复制提供的 TXT 记录。
+. 前往您域名的 DNS 设置，并配置作为域名 TXT 记录提供的 TXT 值。如有需要，请与您的 IT 或网络管理员联系。
+. 添加 TXT 记录后，返回BlueXP并选择 *验证*。
+

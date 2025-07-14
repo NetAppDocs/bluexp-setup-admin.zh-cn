@@ -279,12 +279,8 @@ BlueXP  会将组织或帐户中所有凭据的现有订阅替换为此新订�
 
 当您从 AWS Marketplace 订阅时，流程的最后一步是将订阅与您的组织关联。如果您未完成此步骤，则无法将订阅与您的组织或账户一起使用。
 
-
-TIP: 如果您使用标准或受限模式，您将拥有一个_BlueXP 组织_，您可以使用 BlueXP 身份和访问管理 (IAM) 来管理它。但是、如果您在私有模式下使用BlueXP 、则您将拥有一个BlueXP  account_。
-
 * link:concept-modes.html["了解BlueXP部署模式"]
 * link:concept-identity-and-access-management.html["了解BlueXP  身份和访问管理"]
-* link:concept-netapp-accounts.html["了解有关BlueXP帐户的信息"]
 
 
 如果您从 AWS Marketplace 订阅了 NetApp 智能数据服务，但错过了将订阅与您的帐户关联的步骤，请按照以下步骤操作。

@@ -492,7 +492,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
-代理服务器:: 如果您的企业需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。请注意、BlueXP不支持透明代理服务器。
+代理服务器:: NetApp支持显式和透明代理配置。如果您使用透明代理，则只需提供代理服务器的证书。如果您使用显式代理，则还需要 IP 地址和凭据。
 +
 --
 * IP 地址

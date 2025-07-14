@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-maintain-connectors.html 
-keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector 
+keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector, notifications, connector health, connector disk space, connector cpu usage, connector ram usage, connector vm, connector ip address, connector uri 
 summary: 您应负责维护Connector主机上的操作系统。例如、您应按照公司的操作系统分发标准过程对Connector主机上的操作系统应用安全更新。 
 ---
 = 维护Connector VM和操作系统
@@ -23,15 +23,15 @@ TIP: 如果您已有Connector、则应注意 link:reference-connector-operating-
 
 == 操作系统修补程序和连接器
 
-应用操作系统安全修补程序时、您无需停止Connector主机上的任何服务。
+无需停止连接器主机服务即可应用操作系统安全补丁。
 
 
 
 == VM或实例类型
 
-如果您直接从BlueXP创建了Connector、则BlueXP会使用默认配置在云提供商中部署一个虚拟机实例。创建连接器后、不应更改为CPU或RAM更少的较小VM实例。
+如果您通过BlueXP创建连接器，它会使用默认配置在您的云提供商中部署一个虚拟机实例。创建连接器后，请勿切换到 CPU 或 RAM 较少的小型虚拟机实例。
 
-CPU和RAM要求如下：
+下表列出了 CPU 和 RAM 要求：
 
 CPU:: 8 个核心或 8 个 vCPU
 RAM:: 32 GB
@@ -41,17 +41,35 @@ link:reference-connector-default-config.html["了解Connector的默认配置"]�
 
 
 
-== 监控磁盘空间
+== 监控连接器
 
-当 Connector VM 的磁盘空间不足时，BlueXP 会通知您。您可以在通知中心监控这些通知，或将其配置为发送电子邮件警报。解决磁盘空间问题是您的责任。link:ttps://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["查看 NetApp 知识库文章"^](英文)
+当连接器虚拟机出现问题（包括磁盘空间、RAM 和 CPU 问题）时， BlueXP会通知您。您可以在BlueXP 的通知中心监控这些通知，也可以配置电子邮件通知。磁盘空间、内存或 CPU 使用率偶尔增加是正常现象，但如果这种情况频繁发生，您应该采取措施解决。
+
+当连接器资源（CPU、RAM 或磁盘空间）连续 30 分钟超过其总容量的 90% 时， BlueXP会通知您。之后，如果资源使用率降至该阈值以下，通知中心会显示为“已解决”（绿色）。
+
+
+NOTE: 如果您对修改连接器虚拟机有任何疑问，请联系NetApp支持。
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center["了解更多信息。"^]
 
+[cols="47,47"]
+|===
+| 通知 | 需要采取行动 
+
+
+| 磁盘空间过高 | link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["查看 NetApp 知识库文章"^](英文) 
+
+
+| CPU 使用率过高 | 根据您安装连接器虚拟机的位置，在超大规模服务器或本地增加其 CPU 大小。或者，创建更多连接器，并将工作负载分配到多个连接器上。RAM利用率会因您的环境、 ONTAP工作负载、 Cloud Volumes ONTAP系统数量以及您使用的数据服务而异。 
+
+
+| RAM 使用率过高 | 根据您安装连接器虚拟机的位置，在超大规模服务器或本地增加其 RAM。或者，创建其他连接器，并将工作负载分配到多个连接器上。RAM利用率会因您的环境、 ONTAP工作负载、 Cloud Volumes ONTAP系统数量以及您所使用的数据服务而异。 
+|===
 
 
 == 停止和启动Connector VM
 
-如果需要先停止再启动Connector VM、则应从云提供商的控制台执行此操作、或者使用内部管理的标准过程执行此操作。
+如果需要，请使用云提供商的控制台或标准内部部署程序停止并启动连接器虚拟机。
 
 link:concept-connectors.html#connectors-must-be-operational-at-all-times["请注意、连接器必须始终正常运行"]。
 
@@ -59,15 +77,15 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times["请注
 
 == 连接到 Linux VM
 
-如果您需要连接到运行 Connector 的 Linux VM ，可以使用云提供商提供的连接选项来执行此操作。
+如果您需要连接到运行连接器的 Linux VM，请使用云提供商提供的连接选项。
 
-AWS:: 在 AWS 中创建 Connector 实例时，您提供了 AWS 访问密钥和机密密钥。您可以使用此密钥对通过 SSH 连接到实例。EC2 Linux实例的用户名为Ubuntu (对于2023年5月之前创建的连接器、用户名为EC2-user)。
+AWS:: 在 AWS 中创建连接器实例时，请提供 AWS 访问密钥和密钥。您可以使用此密钥对通过 SSH 连接到实例。对于 EC2 Linux 实例，请使用用户名“ubuntu”。对于 2023 年 5 月之前创建的连接器，请使用用户名“ec2-user”。
 +
 --
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS 文档：连接到 Linux 实例"^]
 
 --
-Azure 酒店:: 在Azure中创建Connector VM时、您指定了用户名并选择使用密码或SSH公共密钥进行身份验证。使用您选择的身份验证方法连接到虚拟机。
+Azure 酒店:: 在 Azure 中创建连接器虚拟机时，您可以指定用户名并选择使用密码或 SSH 公钥进行身份验证。使用您选择的身份验证方法连接到虚拟机。
 +
 --
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure 文档：通过 SSH 连接到虚拟机"^]
@@ -85,14 +103,14 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 == 更改连接器的 IP 地址
 
-如果您的业务需要，您可以更改云提供商自动分配的 Connector 实例的内部 IP 地址和公有 IP 地址。
+如果需要，您可以更改云提供商分配的连接器实例的内部和公共 IP 地址。
 
 .步骤
 . 按照云提供商的说明更改连接器实例的本地 IP 地址或公有 IP 地址（或两者）。
-. 如果您更改了公有 IP地址、并且需要连接到在Connector上运行的本地用户界面、请重新启动Connector实例、以便向BlueXP注册新的IP地址。
+. 重新启动 Connector 实例以向BlueXP注册新的公共 IP 地址。
 . 如果更改了专用 IP 地址，请更新 Cloud Volumes ONTAP 配置文件的备份位置，以便将备份发送到 Connector 上的新专用 IP 地址。
 +
-您需要更新每个Cloud Volumes ONTAP系统的备份位置。
+更新每个Cloud Volumes ONTAP系统的备份位置。
 
 +
 .. 在Cloud Volumes ONTAP命令行界面中、将权限级别设置为高级：
@@ -121,12 +139,11 @@ system configuration backup settings modify -destination <target-location>
 
 == 编辑Connector的URI
 
-添加并删除Connector的统一资源标识符(Uniform Resource Identifier、URI)。
+您可以添加和删除连接器的统一资源标识符 (URI)。
 
 .步骤
 . 从BlueXP标题中选择*连接器*下拉列表。
 . 选择*管理连接器*。
-. 展开*Connector URIs*栏以查看连接器的URL。
-. 展开*Connector URIs*栏以查看连接器的URL。
+. 展开“*连接器 URI*”栏以查看连接器 URI。
 . 添加并删除URI、然后选择*应用*。
 

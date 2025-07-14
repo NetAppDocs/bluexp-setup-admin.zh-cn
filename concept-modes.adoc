@@ -109,7 +109,7 @@ BlueXP在标准模式下的工作原理如下：
 用户界面访问:: 用户界面可从通过SaaS层提供的基于Web的控制台访问。
 API endpoint:: 将对以下端点执行API调用：
 \https://cloudmanager.cloud.netapp.com
-身份验证:: 身份验证通过使用auth0或NetApp 支持站点 (NSS)登录的BlueXP云服务提供。身份联合可用。
+身份验证:: BlueXP提供通过 auth0 或NetApp支持站点 (NSS) 登录的身份验证。身份联合可用。
 支持的BlueXP服务:: 所有BlueXP服务均可供用户使用。
 支持的许可选项:: 标准模式支持Marketplace订阅和BYOL；但是、支持的许可选项取决于您正在使用的BlueXP服务。查看每个服务的文档、了解有关可用许可选项的更多信息。
 如何开始使用标准模式:: 转至 https://console.bluexp.netapp.com["基于Web的BlueXP控制台"^] 并注册。
@@ -197,7 +197,7 @@ API endpoint:: API调用会调用Connector虚拟机。
 如何开始使用受限模式:: 创建BlueXP帐户时、您需要启用受限模式。
 +
 --
-如果您还没有组织、当您首次从手动安装的连接器或从云提供商的市场创建的连接器登录到BlueXP  时、系统将提示您创建您的组织并启用受限模式。
+如果您还没有组织，当您第一次从手动安装的连接器或从云提供商的市场创建的连接器登录BlueXP时，系统会提示您创建组织并启用受限模式。
 
 请注意、在BlueXP  创建组织后、您无法更改受限模式设置。您不能稍后启用受限模式、也不能稍后禁用它。
 
@@ -252,7 +252,7 @@ API endpoint:: API调用会调用Connector虚拟机。
 不支持不使用连接器(直接发现)进行发现。 
 |===
 --
-本地部署中支持的 BlueXP 服务:: 如果您的内部安装了Connector、则BlueXP支持以下私有模式存储和数据服务：
+本地部署中支持的BlueXP服务:: 如果您的内部安装了Connector、则BlueXP支持以下私有模式存储和数据服务：
 +
 --
 [cols="2*"]
@@ -292,7 +292,7 @@ https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-
 支持的许可选项:: 专用模式仅支持BYOL。
 +
 --
-对于Cloud Volumes ONTAP BYOL、仅支持基于节点的许可。不支持基于容量的许可。由于出站Internet连接不可用、您需要手动将Cloud Volumes ONTAP 许可文件上传到BlueXP电子钱包中。
+对于Cloud Volumes ONTAP BYOL、仅支持基于节点的许可。不支持基于容量的许可。由于没有可用的出站互联网连接，您需要在BlueXP digital wallet中手动上传您的Cloud Volumes ONTAP许可文件。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["了解如何将许可证添加到BlueXP电子钱包中"^]
 
@@ -408,10 +408,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | 工作负载工厂 | 否 | 否 
 
 
-.7+| *功能* | BlueXP  身份和访问管理 | 是的。 | 否 
-
-
-| BlueXP帐户 | 是的。 | 是的。 
+.7+| *功能* | BlueXP  身份和访问管理 | 是的。 | 是的。 
 
 
 | 凭据 | 是的。 | 是的。 

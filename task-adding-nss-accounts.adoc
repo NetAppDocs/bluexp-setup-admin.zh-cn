@@ -14,16 +14,12 @@ summary: 将NetApp支持站点帐户与您的BlueXP  组织或帐户关联、�
 
 
 [role="lead"]
-将NetApp支持站点帐户与您的BlueXP  组织或帐户关联、以启用Cloud Volumes ONTAP的关键工作流。这些NSS凭据与整个BlueXP  组织或帐户相关联。
+将NetApp支持站点帐户与您的BlueXP组织关联，以启用Cloud Volumes ONTAP 的关键工作流程。这些 NSS 凭据与整个BlueXP组织相关联。
 
 BlueXP  还支持为每个BlueXP  用户帐户关联一个NSS帐户。link:task-manage-user-credentials.html["了解如何管理用户级别的凭据"](英文)
 
-
-TIP: 如果您在标准模式或受限模式下使用BlueXP 、您将拥有一个_IAM BlueXP  组织_、您可以使用BlueXP  身份和访问管理(IAM)来管理此组织。但是、如果您在私有模式下使用BlueXP 、则您将拥有一个BlueXP  account_。
-
 * link:concept-modes.html["了解BlueXP部署模式"]
 * link:concept-identity-and-access-management.html["了解BlueXP  身份和访问管理"]
-* link:concept-netapp-accounts.html["了解有关BlueXP帐户的信息"]
 
 
 

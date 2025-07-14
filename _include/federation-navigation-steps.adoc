@@ -1,0 +1,9 @@
+= 
+:allow-uri-read: 
+
+
+.步骤
+. 在BlueXP  控制台的右上角，选择image:icon-settings-option.png["BlueXP  Web控制台右上角显示的设置图标。"]>*身份和访问管理*。
+. 选择“*Federation*”选项卡。
+. 选择*配置新联合*。
+

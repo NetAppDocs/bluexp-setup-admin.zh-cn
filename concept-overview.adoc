@@ -26,7 +26,7 @@ BlueXP  可跨混合多云和集成数据服务统一控制存储、以保护�
 
 === 通过BlueXP  画布统一控制存储
 
-_BlueXP 画布_可让您发现、部署和管理云和本地存储。此画布为所有存储管理提供了一个位置。
+_BlueXP 画布_可让您发现、部署和管理云和本地存储。画布集中存储管理。
 
 
 
@@ -75,13 +75,12 @@ image:screenshot-canvas.png["BlueXP  画布的屏幕截图、其中显示了多
 
 === 集成服务、用于保护、保护和优化数据
 
-BlueXP 包括集成数据服务，以维护本地和云存储中数据的安全性和可用性。
+BlueXP包括数据服务，以确保和维护跨存储的数据可用性。
 
 BlueXP  警报:: 查看ONTAP环境中与容量、可用性、性能、保护和安全相关的问题。
 BlueXP自动化目录:: 使用脚本化解决方案自动部署和集成NetApp产品和服务。
 BlueXP备份和恢复:: 备份和恢复云和本地数据。
 BlueXP分类:: 让您的应用程序数据和云环境做好隐私准备。
-BlueXP云操作:: 深入了解您的云计算支出并确定潜在节省量。
 BlueXP复制和同步:: 在本地和云数据存储之间同步数据。
 BlueXP数字顾问:: 利用预测性分析和主动式支持优化数据基础架构。
 BlueXP数字电子钱包:: 管理和监控许可证和订阅。
@@ -92,7 +91,7 @@ BlueXP勒索软件保护:: 检测可能导致勒索软件攻击的异常情况�
 BlueXP复制:: 在存储系统之间复制数据以支持备份和灾难恢复。
 BlueXP  软件更新:: 自动执行ONTAP升级的评估、规划和执行。
 BlueXP Sustainability信息板:: 分析存储系统的可持续性。
-BlueXP层:: 将您的本地 ONTAP 存储扩展到云端。
+BlueXP层:: 将您的本地ONTAP存储扩展到云端。
 BlueXP卷缓存:: 创建可写缓存卷、以加快数据访问速度或从访问量较多的卷卸载流量。
 BlueXP  工作负载工厂:: 使用Amazon FSx for NetApp ONTAP设计、设置和运行关键工作负载。
 
@@ -138,14 +137,13 @@ BlueXP  身份和访问管理(IAM)是一种资源和访问管理模型、可提
 在标准或受限模式下使用 BlueXP 时，支持 BlueXP IAM。如果您在私有模式下使用 BlueXP，则可以使用 BlueXP 帐户来管理工作区、用户和资源。
 
 * link:concept-identity-and-access-management.html["详细了解BlueXP  IAM"]
-* link:concept-netapp-accounts.html["了解有关BlueXP帐户的信息"]
 
 
 
 
 === 连接器
 
-您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。通过Connector、您可以管理内部环境和云环境中的资源和流程。它是管理工作环境(例如Cloud Volumes ONTAP)和使用许多BlueXP  服务所必需的。
+您无需使用Connector即可开始使用BlueXP、但您需要创建一个Connector来解锁所有BlueXP功能和服务。连接器使您能够管理本地和云环境中的资源和流程。您需要它来管理工作环境（例如Cloud Volumes ONTAP）并使用许多BlueXP服务。
 
 link:concept-connectors.html["了解有关连接器的更多信息"]。
 
@@ -161,6 +159,6 @@ link:concept-modes.html["详细了解BlueXP部署模式"]。
 
 == SOC 2 类型 2 认证
 
-一家独立的注册会计师事务所和服务审计师对BlueXP进行了检查、并确认它根据适用的信任服务标准获得了SOC 2类型2报告。
+一家独立的注册会计师事务所和服务审计师对BlueXP进行了审查，并确认BlueXP根据适用的信托服务标准获得了 SOC 2 类型 2 报告。
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["查看 NetApp 的 SOC 2 报告"^]

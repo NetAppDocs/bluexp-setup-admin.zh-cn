@@ -17,7 +17,7 @@ summary: 在内部安装连接器、然后登录并进行设置、以便与您�
 您可以在其中一台内部计算机上安装Connector。要在内部运行Connector、您需要查看主机要求、设置网络、准备云权限、安装Connector、设置Connector、然后提供您准备的权限。
 
 .开始之前
-* 您应具有link:concept-connectors.html["了解连接器"]。
+* 查看有关的信息link:concept-connectors.html["连接器"] 。
 * 您应查看 link:reference-limitations.html["连接器限制"]。
 
 
@@ -25,7 +25,7 @@ summary: 在内部安装连接器、然后登录并进行设置、以便与您�
 
 == 第1步：查看主机要求
 
-连接器软件必须在满足特定操作系统要求， RAM 要求，端口要求等要求的主机上运行。在安装连接器之前、请确保主机满足这些要求。
+在满足操作系统、RAM 和端口要求的主机上运行连接器软件。在安装连接器之前、请确保主机满足这些要求。
 
 
 NOTE: 连接器保留 19000 到 19200 的 UID 和 GID 范围。此范围是固定的，无法修改。如果主机上的任何第三方软件使用此范围内的 UID 或 GID，连接器安装将失败。NetApp建议使用未安装第三方软件的主机，以避免冲突。
@@ -247,7 +247,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 == 第3步：设置网络
 
-设置您的网络、以便Connector可以管理混合云环境中的资源和流程。例如、您需要确保目标网络可以连接、并且可以访问出站Internet。
+设置网络以确保连接器可以管理资源，并连接到目标网络并进行出站互联网访问。
 
 连接到目标网络:: Connector需要与您计划创建和管理工作环境的位置建立网络连接。例如、您计划在内部环境中创建Cloud Volumes ONTAP系统或存储系统的网络。
 
@@ -404,7 +404,7 @@ https://mysupport.netapp.com
 --
 
 
-代理服务器:: 如果您的企业需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。请注意、BlueXP不支持透明代理服务器。
+代理服务器:: NetApp支持显式和透明代理配置。如果您使用透明代理，则只需提供代理服务器的证书。如果您使用显式代理，则还需要 IP 地址和凭据。
 +
 --
 * IP 地址
@@ -439,7 +439,7 @@ https://mysupport.netapp.com
 如果要将AWS或Azure中的BlueXP服务与内部部署的Connector结合使用、则需要在云提供程序中设置权限、以便可以在安装Connector后将凭据添加到Connector。
 
 
-TIP: 为什么不选择Google Cloud？如果在您的内部安装了Connector、则它无法在Google Cloud中管理您的资源。连接器必须安装在Google Cloud中、才能管理驻留在其中的任何资源。
+TIP: 为什么不选择Google Cloud？如果在您的内部安装了Connector、则它无法在Google Cloud中管理您的资源。您必须在 Google Cloud 中安装连接器才能管理驻留在那里的任何资源。
 
 [role="tabbed-block"]
 ====
@@ -474,7 +474,7 @@ TIP: 为什么不选择Google Cloud？如果在您的内部安装了Connector、
 
 
 .结果
-现在、您应该拥有具有所需权限的IAM用户的访问密钥。安装Connector后、您需要将这些凭据与BlueXP中的Connector相关联。
+现在、您应该拥有具有所需权限的IAM用户的访问密钥。安装连接器后，将这些凭据与BlueXP中的连接器关联。
 
 --
 .Azure 酒店
@@ -624,9 +624,6 @@ image:screenshot_azure_client_secret.gif["Azure门户的屏幕截图、其中显
 
 
 
-.结果
-此时，您的服务主体已设置完毕，您应已复制应用程序（客户端） ID ，目录（租户） ID 和客户端密钥值。安装Connector后、您需要将这些凭据与BlueXP中的Connector相关联。
-
 --
 ====
 
@@ -643,11 +640,11 @@ image:screenshot_azure_client_secret.gif["Azure门户的屏幕截图、其中显
 +
 您可以选择在安装后配置代理服务器、但这样做需要重新启动Connector。
 
-+
-请注意、BlueXP不支持透明代理服务器。
-
 * CA签名证书、如果代理服务器使用HTTPS或代理是截获代理。
 
+
+
+NOTE: 手动安装连接器时，无法为透明代理服务器设置证书。如果需要为透明代理服务器设置证书，则必须在安装后使用维护控制台。了解有关的更多信息link:reference-connector-maint-console.html["连接器维护控制台"]。
 
 .关于此任务
 NetApp 支持站点上提供的安装程序可能是早期版本。安装后，如果有新版本可用， Connector 会自动进行更新。
@@ -683,10 +680,10 @@ chmod +x BlueXP-Connector-Cloud-<version>
  ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
--proxy和-cacert参数是可选的。如果您有代理服务器、则需要输入所示的参数。安装程序不会提示您提供有关代理的信息。
+如果您的网络需要代理才能访问互联网，则需要添加代理信息。您可以添加透明代理或显式代理。--proxy 和 --cacert 参数是可选的，系统不会提示您添加它们。如果您有代理服务器、则需要输入所示的参数。
 
 +
-以下是使用这两个可选参数的命令示例：
+以下是使用 CA 签名证书配置显式代理服务器的示例：
 
 +
 [source, cli]
@@ -717,13 +714,21 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 \http://bxpproxyuser:netapp1\!@address:3128
 
-
++
+-cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。HTTPS代理服务器、拦截代理服务器、透明代理服务器都需要此参数。
 
 
 
 +
--cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。只有在指定HTTPS代理服务器或代理为截获代理时、才需要此参数。
+以下是配置透明代理服务器的示例。配置透明代理时，无需定义代理服务器。只需向连接器主机添加 CA 签名的证书即可：
 
+
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40 --cacert /tmp/cacert/certificate.cer
+----
 . 如果您使用 Podman，则需要调整 aardvark-dns 端口。
 +
 .. 通过 SSH 连接到 BlueXP Connector 虚拟机。
@@ -748,13 +753,13 @@ Esc:wq
 
 
 .结果
-此时将安装Connector。在安装结束时、如果您指定了代理服务器、则Connector服务(occa)将重新启动两次。
+在安装结束时、如果您指定了代理服务器、则Connector服务(occa)将重新启动两次。
 
 
 
-== 第6步：设置连接器
+== 步骤 6：使用BlueXP注册连接器
 
-注册或登录、然后设置Connector以与您的BlueXP  组织配合使用。
+登录BlueXP并将连接器与您的组织关联。登录方式取决于您使用BlueXP 的模式。如果您在标准模式下使用BlueXP ，则可以通过 SaaS 网站登录。如果您在受限或私有模式下使用BlueXP ，则可以通过连接器主机本地登录。
 
 .步骤
 . 打开 Web 浏览器并输入以下 URL ：
@@ -771,15 +776,12 @@ _ipaddress_ 可以是 localhost ，专用 IP 地址或公有 IP 地址，具体�
 .. 输入系统名称。
 .. 在*是否在安全环境中运行？*下、保持禁用受限模式。
 +
-您应始终禁用受限模式、因为这些步骤说明了如何在标准模式下使用BlueXP。(此外、如果连接器安装在内部、则不支持受限模式。)
+保持受限模式处于禁用状态，因为这些步骤在标准模式下使用BlueXP 。(此外、如果连接器安装在内部、则不支持受限模式。)
 
 .. 选择*开始*。
 
 
 
-
-.结果
-现在、BlueXP已设置为使用您刚刚安装的Connector。
 
 
 
@@ -792,7 +794,7 @@ _ipaddress_ 可以是 localhost ，专用 IP 地址或公有 IP 地址，具体�
 .AWS
 --
 .开始之前
-如果您刚刚在AWS中创建了这些凭据、则可能需要几分钟的时间才能使用这些凭据。请等待几分钟、然后再将凭据添加到BlueXP。
+如果您刚刚创建这些 AWS 凭证，它们可能需要几分钟才能生效。请等待几分钟、然后再将凭据添加到BlueXP。
 
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
@@ -818,7 +820,7 @@ image:screenshot-settings-icon-organization.png["一个屏幕截图、显示了B
 .Azure 酒店
 --
 .开始之前
-如果您刚刚在Azure中创建了这些凭据、则可能需要几分钟的时间才能使用它们。请等待几分钟、然后再将凭据添加到BlueXP。
+如果您刚刚创建了这些 Azure 凭据，它们可能需要几分钟才能可用。请等待几分钟、然后再将凭据添加到BlueXP。
 
 .步骤
 . 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。

@@ -38,7 +38,7 @@ link:https://docs.netapp.com/us-en/keystone-staas/index.html["了解 BlueXP 中�
 
 ==== 多因素身份验证（ MFA ）
 
-非联合用户现在可以为其 BlueXP 帐户启用多重身份验证 (MFA)，从而增强帐户安全性。BlueXP管理员可以管理用户的 MFA 设置，并根据需要为各个用户重置或禁用 MFA。这仅在标准模式下受支持。
+非联合用户可以为其BlueXP帐户启用 MFA 以提高安全性。管理员可以管理 MFA 设置，包括根据需要为用户重置或禁用 MFA。这仅在标准模式下受支持。
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["了解如何为自己设置多重身份验证。"^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["了解如何为用户管理多重身份验证。"^]
 

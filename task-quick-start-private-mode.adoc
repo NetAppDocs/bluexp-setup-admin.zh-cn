@@ -18,7 +18,7 @@ summary: 通过准备您的环境并部署Connector、在私有模式下开始�
 
 私有模式通常用于无Internet连接的内部环境和安全云区域、其中包括 https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^]， https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^]，和 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
 
-开始之前、您应了解 link:concept-netapp-accounts.html["BlueXP帐户"]， link:concept-connectors.html["连接器"]，和 link:concept-modes.html["部署模式"]。
+开始之前，您应了解 link:concept-connectors.html["连接器"] 和 link:concept-modes.html["部署模式"]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] link:task-prepare-private-mode.html["准备部署"]
 [role="quick-margin-list"]

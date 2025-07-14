@@ -25,7 +25,7 @@ summary: 要从BlueXP或使用gCloud在Google Cloud中创建Connector、您需�
 
 == 第1步：设置网络
 
-设置您的网络、以便Connector可以管理混合云环境中的资源和流程。例如、您需要确保目标网络可以连接、并且可以访问出站Internet。
+设置网络以确保连接器可以管理资源，并连接到目标网络并进行出站互联网访问。
 
 VPC和子网:: 创建Connector时、需要指定此Connector应驻留的VPC和子网。
 
@@ -110,7 +110,7 @@ link:reference-networking-saas-console.html["从BlueXP控制台查看已联系�
 --
 
 
-代理服务器:: 如果您的企业需要为所有传出Internet流量部署代理服务器、请获取有关HTTP或HTTPS代理的以下信息。您需要在安装期间提供此信息。请注意、BlueXP不支持透明代理服务器。
+代理服务器:: NetApp支持显式和透明代理配置。如果您使用透明代理，则只需提供代理服务器的证书。如果您使用显式代理，则还需要 IP 地址和凭据。
 +
 --
 * IP 地址
@@ -138,7 +138,7 @@ link:reference-networking-saas-console.html["从BlueXP控制台查看已联系�
 启用NTP:: 如果您计划使用BlueXP分类来扫描公司数据源、则应在BlueXP Connector系统和BlueXP分类系统上启用网络时间协议(Network Time Protocol、NTP)服务、以便在系统之间同步时间。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["了解有关BlueXP分类的更多信息"^]
 +
 --
-创建连接器后、您需要实施此网络连接要求。
+创建连接器后实现此网络需求。
 
 --
 
@@ -236,9 +236,6 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Google Cloud文档：授予单个角色"^]
 
 
-
-.结果
-Google Cloud用户现在具有创建Connector所需的权限。
 
 
 
@@ -360,7 +357,7 @@ compute.networkUser
 
 == 第5步：启用Google Cloud API
 
-必须先启用多个Google Cloud API、然后才能在Google Cloud中部署Connector和Cloud Volumes ONTAP。
+在部署连接器和Cloud Volumes ONTAP之前，您必须启用多个 Google Cloud API。
 
 .步骤
 . 在项目中启用以下Google Cloud API：
@@ -387,7 +384,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Google Cloud�
 直接从BlueXP基于Web的控制台或使用gCloud创建Connector。
 
 .关于此任务
-创建Connector会使用默认配置在Google Cloud中部署虚拟机实例。创建连接器后、不应更改为CPU或RAM更少的较小VM实例。 link:reference-connector-default-config.html["了解Connector的默认配置"]。
+创建Connector会使用默认配置在Google Cloud中部署虚拟机实例。创建后，请勿将连接器更改为具有较少 CPU 或 RAM 的较小 VM 实例。link:reference-connector-default-config.html["了解Connector的默认配置"](英文)
 
 [role="tabbed-block"]
 ====
@@ -422,6 +419,7 @@ image:screenshot_connector_add.gif["标题中显示 Connector 图标和 Add Conn
 ** *详细信息*：输入虚拟机实例的名称、指定标记、选择项目、然后选择具有所需权限的服务帐户(有关详细信息、请参见上述部分)。
 ** * 位置 * ：指定实例的区域，分区， VPC 和子网。
 ** * 网络 * ：选择是否启用公有 IP 地址，并可选择指定代理配置。
+** *网络标签*：如果使用透明代理，请向连接器实例添加网络标签。网络标签必须以小写字母开头，可以包含小写字母、数字和连字符。标签必须以小写字母或数字结尾。例如，您可以使用“connector-proxy”标签。
 ** *防火墙策略*：选择是创建新的防火墙策略，还是选择允许所需入站和出站规则的现有防火墙策略。
 +
 link:reference-ports-gcp.html["Google Cloud中的防火墙规则"]
@@ -431,12 +429,12 @@ link:reference-ports-gcp.html["Google Cloud中的防火墙规则"]
 
 . 选择 * 添加 * 。
 +
-此实例应在大约 7 分钟后准备就绪。您应停留在页面上，直到此过程完成。
+实例大约需要 7 分钟才能准备就绪；请停留在页面上直到该过程完成。
 
 
 
 .结果
-此过程完成后、即可从BlueXP使用Connector。
+该过程完成后，即可从BlueXP使用连接器。
 
 如果您在创建Connector的同一个Google Cloud帐户中具有Google Cloud Storage分段、则会在BlueXP画布上自动显示Google Cloud Storage工作环境。 https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["了解如何从BlueXP管理Google Cloud Storage"^]
 
@@ -461,7 +459,7 @@ link:reference-ports-gcp.html["Google Cloud中的防火墙规则"]
 
 
 .步骤
-. 使用您首选的方法登录到 gcloud SDK 。
+. 使用您喜欢的方法登录 gcloud SDK。
 +
 在我们的示例中、我们将使用安装了gcloud SDK的本地Shell、但您可以在Google云控制台中使用原生 Google Cloud Shell。
 

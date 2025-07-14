@@ -221,10 +221,12 @@ Azure 使用指定的设置部署虚拟机。虚拟机和 Connector 软件应在
 +
 您可以选择在安装后配置代理服务器、但这样做需要重新启动Connector。
 
-+
-请注意、BlueXP不支持透明代理服务器。
-
 * CA签名证书、如果代理服务器使用HTTPS或代理是截获代理。
+
+
+
+NOTE: 手动安装连接器时，无法为透明代理服务器设置证书。如果需要为透明代理服务器设置证书，则必须在安装后使用维护控制台。了解有关的更多信息link:reference-connector-maint-console.html["连接器维护控制台"]。
+
 * 根据您的操作系统、在安装Connector之前需要使用Podman或Docker引擎。
 
 
@@ -262,10 +264,10 @@ chmod +x BlueXP-Connector-Cloud-<version>
  ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
--proxy和-cacert参数是可选的。如果您有代理服务器、则需要输入所示的参数。安装程序不会提示您提供有关代理的信息。
+如果您的网络需要代理才能访问互联网，则需要添加代理信息。您可以添加透明代理或显式代理。--proxy 和 --cacert 参数是可选的，系统不会提示您添加它们。如果您有代理服务器、则需要输入所示的参数。
 
 +
-以下是使用这两个可选参数的命令示例：
+以下是使用 CA 签名证书配置显式代理服务器的示例：
 
 +
 [source, cli]
@@ -296,13 +298,21 @@ chmod +x BlueXP-Connector-Cloud-<version>
 +
 \http://bxpproxyuser:netapp1\!@address:3128
 
-
++
+-cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。HTTPS代理服务器、拦截代理服务器、透明代理服务器都需要此参数。
 
 
 
 +
--cacert指定用于在Connector和代理服务器之间进行HTTPS访问的CA签名证书。只有在指定HTTPS代理服务器或代理为截获代理时、才需要此参数。
+以下是配置透明代理服务器的示例。配置透明代理时，无需定义代理服务器。只需向连接器主机添加 CA 签名的证书即可：
 
+
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40 --cacert /tmp/cacert/certificate.cer
+----
 . 如果您使用 Podman，则需要调整 aardvark-dns 端口。
 +
 .. 通过 SSH 连接到 BlueXP Connector 虚拟机。
