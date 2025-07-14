@@ -5015,7 +5015,6 @@ https://support.netapp.com
   <block id="f7b353257b71afef5402701e6c93dc8a" category="doc">连接器3.9.54</block>
   <block id="98b6a9150dc84b6f02a11b49d3f18c05" category="paragraph">此版本的BlueXP Connector 包括安全性改进、错误修复以及以下新功能：</block>
   <block id="0e0a4ccfeecf6ead97d3838c2dc57d40" category="inline-link-macro">了解有关配置透明代理的更多信息。</block>
-  <block id="313ef52bd65a76709d5fc69694074f0c" category="list-text">支持专用于支持Cloud Volumes ONTAP服务的连接器的透明代理。 <block ref="139e9d43e4ebdf2d28d8a7ff0c85548a" category="inline-link-macro-rx"></block></block>
   <block id="4439ae12e6cc703b73c18fa22032bcff" category="list-text">当连接器部署在 Google Cloud 环境中时，能够使用网络标签来帮助路由连接器流量。</block>
   <block id="a72a5a23a9089a372f557a0032363d4e" category="list-text">用于连接器健康监控的附加产品内通知，包括 CPU 和 RAM 使用情况。</block>
   <block id="86c10fecfc44ffe6d27d3e73e9158cad" category="paragraph">目前、3.9.54版本可用于标准模式和受限模式。</block>
@@ -5031,18 +5030,15 @@ https://support.netapp.com
   <block id="a7cc903fc36eaee51a699d9d59b1496c" category="paragraph">BlueXP现在提供更直观的身份联合管理界面。这包括更便捷的导航、更清晰的联合连接配置选项，以及更强大的现有联合可见性。</block>
   <block id="c06fd8d559af4ac97a50afd1857f0e4e" category="paragraph">通过身份联合启用单点登录 (SSO)，用户可以使用其公司凭证登录BlueXP 。这提高了安全性，减少了密码使用量，并简化了用户入职流程。</block>
   <block id="62532a5520311cce692e8abb3a619189" category="inline-link-macro">了解有关将现有联合连接导入BlueXP 的更多信息。</block>
-  <block id="09de16a2da9f0884c7445f0a40b10aa4" category="paragraph">系统将提示您将所有现有的联合连接导入新界面，以获取新的管理功能。这样，您无需重新创建联合连接即可充分利用最新的增强功能。 <block ref="172066467f700483f74d71d92d89ce7c" category="inline-link-macro-rx"></block></block>
   <block id="35db97c0083a9f24d4de60744f2ae08c" category="paragraph">改进的联合管理允许您：</block>
   <block id="c7cfa37b557dec5d42fe4ae1f33a84a9" category="list-text">将多个已验证的域添加到联合连接，允许您将多个域与同一个身份提供商 (IdP) 一起使用。</block>
   <block id="b4a4e2a03df0b0c5b7847629f778c654" category="list-text">在需要时禁用或删除联合连接，让您控制用户访问和安全。</block>
   <block id="77f3e518793db250165393f568090955" category="list-text">使用 IAM 角色控制对联合管理的访问。</block>
   <block id="ac784304eb7a6a12a493cf93b5cef5a9" category="inline-link-macro">了解有关BlueXP中的身份联合的更多信息。</block>
-  <block id="7970bfbac6093d2cbee1b40bcff193c3" category="paragraph"><block ref="7970bfbac6093d2cbee1b40bcff193c3" category="inline-link-macro-rx"></block></block>
   <block id="e16a950fa56f1c93596e628653af0177" category="section-title">BlueXP backup and recovery、 BlueXP disaster recovery和联合管理的新访问角色</block>
   <block id="f4b57a3793a05b2b72338f8e9fcc9496" category="paragraph">BlueXP现在支持使用 IAM 角色实现以下功能和数据服务：</block>
   <block id="43db2a9bc6b7310c67fd6873bb6ca7a4" category="list-text">联邦</block>
   <block id="f52cf765b6d2324047bf70dbb3a134b2" category="inline-link-macro">了解有关使用访问角色的更多信息。</block>
-  <block id="10bab6385b6290f87ce28199462adf76" category="paragraph"><block ref="10bab6385b6290f87ce28199462adf76" category="inline-link-macro-rx"></block></block>
   <block id="59d63e81aab85c8d960a9f1f13ec3a20" category="paragraph">_Connector_是在云网络或内部网络中运行的NetApp软件。它用于将 BlueXP 的服务连接到您的存储环境。</block>
   <block id="8e3127f706f1e56c4038e102362daa9e" category="summary">身份联合支持使用BlueXP进行单点登录、以便用户可以使用您公司身份中的凭据进行登录。首先，查看设置过程。</block>
   <block id="35da6b1009cfb85617a9cb6b76ca78b5" category="paragraph">单点登录（联合）功能允许用户使用其公司凭证登录BlueXP ，从而简化登录流程并增强安全性。您可以通过身份提供商 (IdP) 或NetApp支持站点启用单点登录 (SSO)。</block>
@@ -5283,7 +5279,6 @@ https://support.netapp.com
   <block id="c3735d9c34fd4ed334e4dbdf6f9399bf" category="list-text">创建依赖信任标识符时，使用 **YOUR_TENANT** 值： <block ref="54abc930040d4aaee039ddb6714c161b" prefix=" " category="inline-code"></block></block>
   <block id="5f1e9ae008e49ccbc1bb7bb997f7072d" category="list-text">当您选择“启用对 WS-Federation 的支持”时，请使用“YOUR_AUTH0_DOMAIN”值： <block ref="fe93c33621416c4736b5beefec28d44e" prefix=" " category="inline-code"></block></block>
   <block id="bf7f21a3f0a9d15815e8898ab4b0d126" category="list-text">创建信任后，从 AD FS 服务器复制元数据 URL 或下载联合元数据文件。您需要此 URL 或文件才能在BlueXP中完成连接。</block>
-  <block id="84999323afead336ecc889d3b9f1f8b9" category="paragraph">+ NetApp建议使用元数据 URL，让BlueXP自动检索最新的 AD FS 配置。如果您下载了联合元数据文件，则每当 AD FS 配置发生更改时，都需要在BlueXP中手动更新该文件。</block>
   <block id="ca0d62b869f281351aeda2084ef067c3" category="list-text">返回BlueXP，然后选择 *下一步* 创建连接。</block>
   <block id="4b682b6bee53df811273a0bfbe611e45" category="list-text">创建与 AD FS 的连接。</block>
   <block id="c1b7d1f0d06c7cfb1404c3d5e03d6802" category="list-text">输入您在上一步中从 AD FS 服务器复制的 *AD FS URL* 或上传您从 AD FS 服务器下载的联合元数据文件。</block>
@@ -5305,7 +5300,6 @@ https://support.netapp.com
   <block id="a31725e5a996167aefdc67c1628c7ebf" category="list-text">输入您在上一步中创建的客户端 ID 和客户端密钥。</block>
   <block id="56195ae93f466d39ec4d363a2fb1500e" category="list-text">输入 Microsoft Entra ID 域名。</block>
   <block id="414584aec7c36f7a64ee722e65458b2f" category="list-text">选择“创建连接”。系统将在几秒钟内创建连接。</block>
-  <block id="a341e999958dd720d932630dc8e0be57" category="floating-title">测试并启用连接</block>
   <block id="085cc3c433cdddd132661c8498367dd3" category="summary">将您现有的联合连接导入BlueXP ，以便在新界面中进行管理。这样，您无需重新创建联合连接，即可充分利用最新的增强功能。</block>
   <block id="c25a3e76b4346814957eaeaf7f21b29b" category="doc">将您的联盟导入BlueXP</block>
   <block id="e4ebb9b2ed3ade70212bc0487a5b0956" category="paragraph">已与BlueXP建立联合连接的现有客户，可以将现有联合导入新界面。这样，您就可以在新的“联合”页面中管理您的联合连接，而无需重新创建。</block>
@@ -5453,4 +5447,10 @@ https://support.netapp.com
   <block id="d00255b25e6ac270c154c1b88351cb61" category="sidebar">管理联盟</block>
   <block id="b738cb995b90e7ef0f6b53e82271107a" category="sidebar">导入现有的联合连接</block>
   <block id="20bcff7d6fd558badea4ab3c38447c64" category="sidebar">连接器维护台</block>
+  <block id="5e976f8888129db7a70ab686bfcc86b9" category="list-text">支持专用于支持Cloud Volumes ONTAP服务的连接器的透明代理。 <block ref="addeb9305f92d41fc2dd640d1ef810f0" category="inline-link-macro-rx"></block></block>
+  <block id="a930f8ca18589b33c946f81801d0bbf6" category="paragraph">系统将提示您将所有现有的联合连接导入新界面，以获取新的管理功能。这样，您无需重新创建联合连接即可充分利用最新的增强功能。 <block ref="374020c220651e051317a80c1b5ae1db" category="inline-link-macro-rx"></block></block>
+  <block id="b658b3504fd725bf7abab622b28f1851" category="paragraph"><block ref="b658b3504fd725bf7abab622b28f1851" category="inline-link-macro-rx"></block></block>
+  <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
+  <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp建议使用元数据 URL 让BlueXP自动检索最新的 AD FS 配置。如果您下载了联合元数据文件，则每当 AD FS 配置发生更改时，都需要在BlueXP中手动更新该文件。</block>
+  <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">测试并启用连接</block>
 </blocks>
