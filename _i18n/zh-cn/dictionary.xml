@@ -4565,7 +4565,6 @@ https://support.netapp.com
   <block id="3aba2887bff41f744b43940b1b82080a" category="cell">平台角色</block>
   <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">职责</block>
   <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">组织管理员</block>
-  <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">允许用户不受限制地访问为其分配的特定项目和文件夹。可以将成员添加到他们管理的文件夹或项目、以及执行任何BlueXP  任务、并使用分配给他们的文件夹或项目中资源上的任何数据服务或应用程序。文件夹或项目管理员角色无法创建连接器。</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">应用程序角色</block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">具有Keystone管理员角色的用户可以创建服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">存储管理员</block>
@@ -4573,7 +4572,6 @@ https://support.netapp.com
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">系统运行状况专家</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">数据服务角色</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分类管理员</block>
-  <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">提供查看BlueXP  分类扫描结果的功能。分类没有查看者角色。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。</block>
   <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">管理防反向器保护服务的"保护"、"警报"、"恢复"、"设置"和"报告"选项卡上的操作。</block>
   <block id="c449660979799948a46372470a0eddb9" category="cell">在防软件保护服务中查看工作负载数据、查看警报数据、下载恢复数据以及下载报告。</block>
   <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">BlueXP  的勒索软件保护访问角色</block>
@@ -4658,7 +4656,6 @@ https://support.netapp.com
   <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
   <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
-  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">管理存储运行状况和监管功能、发现存储资源以及修改和删除现有工作环境。</block>
   <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
   <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">查看存储运行状况和监管功能、以及先前发现的存储资源。无法发现、修改或删除现有存储工作环境。</block>
   <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
@@ -4753,8 +4750,6 @@ https://support.netapp.com
   <block id="23281988aab04cbdc82eb76f370939d5" category="paragraph">BlueXP 提供多种部署模式，助您满足业务和安全需求。标准模式利用软件即服务 (SaaS) 层提供完整功能，而受限模式和私有模式则适用于存在连接限制的组织。</block>
   <block id="43edcdb6c00656305d8defca5b3b7be0" category="cell">数据服务许可选项</block>
   <block id="960800e4f6948441d5ac2b7201b75a9b" category="paragraph">XYZ 公司有四名来自不同部门的存储工程师查看 Keystone 订阅信息。尽管所有这些用户都需要监控Keystone订阅、但仅允许团队主管发出服务请求。三个团队成员被赋予* Keystone查看器*角色，而团队主管被赋予* Keystone管理员*角色，以便对公司的服务请求有一个控制点。</block>
-  <block id="25145ab25e099e46c84c50107c0e7b62" category="paragraph">平台角色授予 BlueXP 管理的所有权限，包括分配角色和添加用户。具有平台角色的用户可以访问BlueXP  中的所有数据服务和应用程序。BlueXP IAM 包括两个平台角色：组织管理员和文件夹或项目管理员。两个BlueXP  IAM平台角色之间的主要区别是范围。</block>
-  <block id="7b04a3d971f6fb74392d3b30085071f6" category="cell">允许用户不受限制地访问组织中的所有项目和文件夹、向任何项目或文件夹添加成员、以及执行任何BlueXP  任务和使用任何数据服务。具有此角色的用户负责组织和管理整个 BlueXP 环境。他们可以创建文件夹和项目、分配角色、添加用户，并且如果拥有相应权限，还可以管理所有工作环境。这是唯一可以创建连接器的访问角色。</block>
   <block id="69d1234e785810f2a95867f80dbd3641" category="cell">能够使用适用于应用程序的BlueXP  备份和恢复功能从内部ONTAP集群备份快照。拥有此角色的成员可以在 BlueXP 中完成以下操作：* 完成“备份和恢复”&gt;“应用程序”中的任何操作* 管理他们拥有权限的项目和文件夹中的所有工作环境* 使用所有 BlueXP 服务 SnapCenter 没有查看者角色。</block>
   <block id="3165f916e808450973ebffe2ea357d4f" category="paragraph">下表显示了每个 BlueXP 勒索软件防护角色可以执行的操作。</block>
   <block id="bd03ede87c82adb65c788a5ae08c50b6" category="cell">发现工作负载</block>
@@ -5207,7 +5202,6 @@ https://support.netapp.com
   <block id="d16108a94f09df45e5ddf78eb3f9301c" category="cell">查看联盟及其详细信息</block>
   <block id="d1030414e0b81438e7c1e475b3ff1c37" category="paragraph">BlueXP身份和访问管理 (IAM) 包括预定义角色，您可以将这些角色分配给资源层次结构不同级别的组织成员。在分配这些角色之前、您应了解每个角色包含的权限。角色分为以下几类：平台、应用程序和数据服务。</block>
   <block id="10140df1e1454ada0fe484df8f86e609" category="cell"><block ref="10140df1e1454ada0fe484df8f86e609" category="inline-link-macro-rx"></block></block>
-  <block id="4e85a0bcc87f86ef6776a6100384468f" category="cell">允许用户使用BlueXP创建和管理联合，从而实现单点登录 (SSO)。</block>
   <block id="94dc84e1e8721887c7b647f1cdb802f2" category="cell"><block ref="94dc84e1e8721887c7b647f1cdb802f2" category="inline-link-macro-rx"></block></block>
   <block id="178e676d4dcf16fc5b1d8f7c9431f792" category="cell">允许用户使用BlueXP查看现有的联合。无法创建或管理联合。</block>
   <block id="da46150dd1fb0497beb9ff6a9328d80c" category="cell"><block ref="da46150dd1fb0497beb9ff6a9328d80c" category="inline-link-macro-rx"></block></block>
@@ -5453,4 +5447,25 @@ https://support.netapp.com
   <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp建议使用元数据 URL 让BlueXP自动检索最新的 AD FS 配置。如果您下载了联合元数据文件，则每当 AD FS 配置发生更改时，都需要在BlueXP中手动更新该文件。</block>
   <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">测试并启用连接</block>
   <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">确保您拥有代理服务器的 PEM 格式的证书文件。如果您没有证书，请联系网络管理员获取。</block>
+  <block id="89d69ff3dca93dc4c1c160728186e722" category="doc">支持Google Cloud NetApp Volumes</block>
+  <block id="c0f8420dd2331e8c703faf905ce556ba" category="inline-link-macro">了解有关Google Cloud NetApp Volumes 的更多信息。</block>
+  <block id="e1541d92f45c55d1c796b46df595a40b" category="paragraph">您现在可以在BlueXP中查看Google Cloud NetApp Volumes 。 <block ref="2d9a0dbc9abdf3f5520c900e61ce6c78" category="inline-link-macro-rx"></block></block>
+  <block id="7ef119d24b993215797de865841c626e" category="section-title">Google Cloud NetApp Volumes的新访问角色</block>
+  <block id="558052264db83696c2bf10ecfe0eaedd" category="paragraph">BlueXP现在支持对以下存储系统使用访问角色：</block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="list-text">Google Cloud NetApp卷</block>
+  <block id="88dadd964be88ff7da405999bf5d6376" category="summary">BlueXP身份和访问管理提供了管理员角色，您可以将其分配给需要访问Google Cloud NetApp Volumes 的组织成员。</block>
+  <block id="5c06fd7ff7155e85c2867088844a5bb8" category="doc">Google Cloud NetApp Volumes角色</block>
+  <block id="30c0516d71000af9463ac4def215fd5d" category="paragraph">您可以为用户分配以下角色，以便他们访问BlueXP中的Google Cloud NetApp Volumes 。</block>
+  <block id="656f6fe68f4a2af975dfebecd7cca424" category="paragraph">Google Cloud NetApp Volumes使用以下角色：</block>
+  <block id="0b4cb7a54420fa8396e2ded3254b1844" category="list-text">* Google Cloud NetApp Volumes管理员*：在BlueXP中发现和管理Google Cloud NetApp Volumes 。</block>
+  <block id="b55b12e6582a0dc256699ea566c98812" category="paragraph">平台角色授予所有BlueXP管理权限，包括分配角色和添加用户。平台角色提供对所有BlueXP数据服务和应用程序的访问权限。BlueXP IAM 包括两个平台角色：组织管理员和文件夹或项目管理员。两个BlueXP  IAM平台角色之间的主要区别是范围。</block>
+  <block id="ab916e6cd4ed974d54491c86731e930c" category="cell">允许用户不受限制地访问组织中的所有项目和文件夹、向任何项目或文件夹添加成员、以及执行任何BlueXP  任务和使用任何数据服务。具有此角色的用户组织和管理您的BlueXP组织。他们可以创建文件夹和项目、分配角色、添加用户，并且如果拥有相应权限，还可以管理所有工作环境。这是唯一可以创建连接器的访问角色。</block>
+  <block id="332cf7fa33c69ec5f4db12e0c5d4c230" category="cell">允许用户不受限制地访问为其分配的特定项目和文件夹。可以将成员添加到他们管理的文件夹或项目、以及执行任何BlueXP  任务、并使用分配给他们的文件夹或项目中资源上的任何数据服务或应用程序。文件夹或项目管理员无法创建连接器。</block>
+  <block id="1e92f5c7fccb14971fe2537bec747773" category="cell">允许用户使用BlueXP创建和管理联合，从而实现单点登录 (SSO)。</block>
+  <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Google Cloud NetApp Volumes管理员</block>
+  <block id="42e05b82ea98ae962f4c09a6330b152a" category="cell"><block ref="42e05b82ea98ae962f4c09a6330b152a" category="inline-link-macro-rx"></block></block>
+  <block id="ee848730515e9ec34272f93a110738f2" category="cell">具有Google Cloud NetApp Volumes角色的用户可以发现和管理Google Cloud NetApp Volumes。</block>
+  <block id="afa251e583f752e51e3383587060e30b" category="cell">管理存储健康和治理功能，发现存储资源，以及更改和删除现有的工作环境。</block>
+  <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">提供查看BlueXP classification扫描结果的能力。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。分类没有查看者角色。</block>
+  <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
 </blocks>

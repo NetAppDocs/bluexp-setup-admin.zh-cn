@@ -20,17 +20,17 @@ BlueXP身份和访问管理 (IAM) 包括预定义角色，您可以将这些角�
 
 == 平台角色
 
-平台角色授予 BlueXP 管理的所有权限，包括分配角色和添加用户。具有平台角色的用户可以访问BlueXP  中的所有数据服务和应用程序。BlueXP IAM 包括两个平台角色：组织管理员和文件夹或项目管理员。两个BlueXP  IAM平台角色之间的主要区别是范围。
+平台角色授予所有BlueXP管理权限，包括分配角色和添加用户。平台角色提供对所有BlueXP数据服务和应用程序的访问权限。BlueXP IAM 包括两个平台角色：组织管理员和文件夹或项目管理员。两个BlueXP  IAM平台角色之间的主要区别是范围。
 
 [cols="1,2"]
 |===
 | 平台角色 | 职责 
 
 
-| link:reference-iam-platform-roles.html["组织管理员"] | 允许用户不受限制地访问组织中的所有项目和文件夹、向任何项目或文件夹添加成员、以及执行任何BlueXP  任务和使用任何数据服务。具有此角色的用户负责组织和管理整个 BlueXP 环境。他们可以创建文件夹和项目、分配角色、添加用户，并且如果拥有相应权限，还可以管理所有工作环境。这是唯一可以创建连接器的访问角色。 
+| link:reference-iam-platform-roles.html["组织管理员"] | 允许用户不受限制地访问组织中的所有项目和文件夹、向任何项目或文件夹添加成员、以及执行任何BlueXP  任务和使用任何数据服务。具有此角色的用户组织和管理您的BlueXP组织。他们可以创建文件夹和项目、分配角色、添加用户，并且如果拥有相应权限，还可以管理所有工作环境。这是唯一可以创建连接器的访问角色。 
 
 
-| link:reference-iam-platform-roles.html["文件夹或项目管理员"] | 允许用户不受限制地访问为其分配的特定项目和文件夹。可以将成员添加到他们管理的文件夹或项目、以及执行任何BlueXP  任务、并使用分配给他们的文件夹或项目中资源上的任何数据服务或应用程序。文件夹或项目管理员角色无法创建连接器。 
+| link:reference-iam-platform-roles.html["文件夹或项目管理员"] | 允许用户不受限制地访问为其分配的特定项目和文件夹。可以将成员添加到他们管理的文件夹或项目、以及执行任何BlueXP  任务、并使用分配给他们的文件夹或项目中资源上的任何数据服务或应用程序。文件夹或项目管理员无法创建连接器。 
 
 
 | link:reference-iam-platform-roles.html["联盟管理员"] | 允许用户使用BlueXP创建和管理联合，从而实现单点登录 (SSO)。 
@@ -49,13 +49,16 @@ BlueXP身份和访问管理 (IAM) 包括预定义角色，您可以将这些角�
 | 应用程序角色 | 职责 
 
 
+| link:reference-iam-keystone-roles.html["Google Cloud NetApp Volumes管理员"] | 具有Google Cloud NetApp Volumes角色的用户可以发现和管理Google Cloud NetApp Volumes。 
+
+
 | link:reference-iam-keystone-roles.html["Keystone管理员"] | 具有Keystone管理员角色的用户可以创建服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。 
 
 
 | link:reference-iam-keystone-roles.html["Keystone查看器"] | 具有Keystone查看器角色的用户无法创建服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。 
 
 
-| link:reference-iam-storage-roles.html["存储管理员"] | 管理存储运行状况和监管功能、发现存储资源以及修改和删除现有工作环境。 
+| link:reference-iam-storage-roles.html["存储管理员"] | 管理存储健康和治理功能，发现存储资源，以及更改和删除现有的工作环境。 
 
 
 | link:reference-iam-storage-roles.html["存储查看器"] | 查看存储运行状况和监管功能、以及先前发现的存储资源。无法发现、修改或删除现有存储工作环境。 
@@ -101,7 +104,7 @@ BlueXP身份和访问管理 (IAM) 包括预定义角色，您可以将这些角�
 | link:reference-iam-disaster-rec-roles.html["灾难恢复查看器"] | 仅查看信息。 
 
 
-| 分类管理员 | 提供查看BlueXP  分类扫描结果的功能。分类没有查看者角色。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。 
+| 分类管理员 | 提供查看BlueXP classification扫描结果的能力。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。分类没有查看者角色。 
 
 
 | link:reference-iam-ransomware-roles.html["勒索软件保护管理员"] | 管理防反向器保护服务的"保护"、"警报"、"恢复"、"设置"和"报告"选项卡上的操作。 
