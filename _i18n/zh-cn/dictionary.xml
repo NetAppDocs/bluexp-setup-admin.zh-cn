@@ -5449,7 +5449,6 @@ https://support.netapp.com
   <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">确保您拥有代理服务器的 PEM 格式的证书文件。如果您没有证书，请联系网络管理员获取。</block>
   <block id="89d69ff3dca93dc4c1c160728186e722" category="doc">支持Google Cloud NetApp Volumes</block>
   <block id="c0f8420dd2331e8c703faf905ce556ba" category="inline-link-macro">了解有关Google Cloud NetApp Volumes 的更多信息。</block>
-  <block id="e1541d92f45c55d1c796b46df595a40b" category="paragraph">您现在可以在BlueXP中查看Google Cloud NetApp Volumes 。 <block ref="2d9a0dbc9abdf3f5520c900e61ce6c78" category="inline-link-macro-rx"></block></block>
   <block id="7ef119d24b993215797de865841c626e" category="section-title">Google Cloud NetApp Volumes的新访问角色</block>
   <block id="558052264db83696c2bf10ecfe0eaedd" category="paragraph">BlueXP现在支持对以下存储系统使用访问角色：</block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="list-text">Google Cloud NetApp卷</block>
@@ -5468,4 +5467,5 @@ https://support.netapp.com
   <block id="afa251e583f752e51e3383587060e30b" category="cell">管理存储健康和治理功能，发现存储资源，以及更改和删除现有的工作环境。</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">提供查看BlueXP classification扫描结果的能力。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。分类没有查看者角色。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
+  <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">您现在可以在BlueXP中查看Google Cloud NetApp Volumes 。 <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
 </blocks>
