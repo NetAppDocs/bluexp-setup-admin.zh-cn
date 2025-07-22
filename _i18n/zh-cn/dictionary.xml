@@ -5464,7 +5464,6 @@ https://support.netapp.com
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">提供查看BlueXP classification扫描结果的能力。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。分类没有查看者角色。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
   <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">您现在可以在BlueXP中查看Google Cloud NetApp Volumes 。 <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
-  <block id="4ac442f979edeb4aaec2d297a7c152be" category="cell">具有Keystone查看器角色的用户无法创建服务请求。允许用户监控和查看他们访问的Keystone租户内的消费、资产和管理信息。</block>
   <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">ONTAP调解器设置角色</block>
   <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="inline-link-macro">ONTAP云调解器</block>
   <block id="04799ba9193d1752205122631a125181" category="cell">具有ONTAP调解器设置角色的服务帐户可以创建服务请求。服务帐户中需要此角色来配置<block ref="a95914b5fa4d5193b1ebdf5a17356faa" category="inline-link-macro-rx"></block> 。</block>
@@ -5474,4 +5473,5 @@ https://support.netapp.com
   <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP仅显示一次客户端密钥并且不存储它。复制或下载密钥并将其安全存储。请注意、您可以稍后根据需要重新创建客户端ID和客户端密钥。</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">从“成员”页面，导航到表中的成员，选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>然后选择*删除用户*。</block>
   <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
+  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">具有Keystone查看器角色的用户无法创建服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。</block>
 </blocks>
