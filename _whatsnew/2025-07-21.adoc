@@ -21,4 +21,4 @@ BlueXP现在支持对以下存储系统使用访问角色：
 * Google Cloud NetApp卷
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["了解有关使用访问角色的更多信息。"]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解有关使用访问角色的更多信息。"]

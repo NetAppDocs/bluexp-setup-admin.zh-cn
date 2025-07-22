@@ -5473,4 +5473,5 @@ https://support.netapp.com
   <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*选择一个类别*，然后选择一个*角色*，该角色为成员提供与您选择的组织、文件夹或项目相关的资源的权限。</block>
   <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP仅显示一次客户端密钥并且不存储它。复制或下载密钥并将其安全存储。请注意、您可以稍后根据需要重新创建客户端ID和客户端密钥。</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">从“成员”页面，导航到表中的成员，选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>然后选择*删除用户*。</block>
+  <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
 </blocks>
