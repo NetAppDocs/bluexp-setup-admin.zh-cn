@@ -55,7 +55,13 @@ BlueXP身份和访问管理 (IAM) 包括预定义角色，您可以将这些角�
 | link:reference-iam-keystone-roles.html["Keystone管理员"] | 具有Keystone管理员角色的用户可以创建服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。 
 
 
-| link:reference-iam-keystone-roles.html["Keystone查看器"] | 具有Keystone查看器角色的用户无法创建服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。 
+| link:reference-iam-keystone-roles.html["Keystone查看器"] | 具有Keystone查看器角色的用户无法创建服务请求。允许用户监控和查看他们访问的Keystone租户内的消费、资产和管理信息。 
+
+
+| ONTAP调解器设置角色 | 具有ONTAP调解器设置角色的服务帐户可以创建服务请求。服务帐户中需要此角色来配置link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["ONTAP云调解器"^] 。 
+
+
+| link:reference-iam-storage-roles.html["存储管理员"] | 管理存储运行状况和监管功能、发现存储资源以及修改和删除现有工作环境。 
 
 
 | link:reference-iam-storage-roles.html["存储管理员"] | 管理存储健康和治理功能，发现存储资源，以及更改和删除现有的工作环境。 

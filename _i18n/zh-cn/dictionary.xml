@@ -1809,7 +1809,6 @@
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">注册这两种类型的序列号可实现打开支持服务单和自动生成案例等功能。要完成注册、请按如下所述将NetApp 支持站点(NSS)帐户添加到BlueXP中。</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
-  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">具有NSS帐户的现有客户</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是拥有NSS帐户的NetApp客户、则只需通过BlueXP注册支持即可。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">选择*添加NSS凭证*，然后按照NetApp 支持站点(NSS)鉴定提示进行操作。</block>
@@ -3779,7 +3778,6 @@ https://support.netapp.com
   <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">在*成员*表中，导航到服务帐户，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*重新创建密码*。</block>
   <block id="8de213850e1e3dc79a14014382d25163" category="list-text">选择*重新创建*。</block>
   <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">从组织中删除成员</block>
-  <block id="0479745abf593369ddbda5e8df849e57" category="list-text">从*成员*页面导航到表中的成员，选择，然后选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*删除用户*。</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">确认要从组织中删除该成员。</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">通过将资源与特定项目和文件夹相关联来管理组织的资源层次结构。</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">查看组织中的资源</block>
@@ -4619,7 +4617,6 @@ https://support.netapp.com
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">了解BlueXP  访问角色</block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">数据服务角色</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">勒索软件保护角色</block>
-  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">具有Keystone查看器角色的用户无法创建服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。</block>
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">用于Connector下载的安全端点现在支持备份和恢复以及防兰软件保护</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">了解用于Connector下载的安全端点。</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">如果您使用的是备份和恢复或防兰软件保护、则现在可以使用安全端点进行Connector下载。 <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
@@ -4693,7 +4690,6 @@ https://support.netapp.com
   <block id="f2822d5dedda5be93d6f6e298458878b" category="paragraph">具有此角色的用户只能管理指定文件夹或项目的成员</block>
   <block id="d0dc99396b7d861a7866a8e109f9b1c6" category="paragraph">注册后，用户完成*注册*页面，查看电子邮件并登录。如果提示创建组织，他们应该关闭 BlueXP 并通知您他们的帐户已创建。然后、您可以将此用户添加到现有BlueXP  组织中。</block>
   <block id="08a2395e6fbea42394d928f53df9f3e7" category="paragraph">用户会收到来自 NetApp BlueXP 的电子邮件，其中包含会员用于访问 BlueXP 的信息。</block>
-  <block id="00407d7a171d24d8741b64c4670528bc" category="paragraph">lueXP 仅显示一次客户端密钥并且不存储它。复制或下载密钥并将其安全存储。请注意、您可以稍后根据需要重新创建客户端ID和客户端密钥。</block>
   <block id="981e68aebbf5499db66d9a2b0c273b16" category="paragraph">*成员*表显示您组织的成员。</block>
   <block id="e4cb5729a397d486706aec2c33ce4ea6" category="paragraph">您可能需要从您的组织中删除某个成员 - 例如，如果他们离开了您的公司。</block>
   <block id="a8b5ca2eacd6c76f00fb50a8de358707" category="paragraph">删除成员会撤销其权限，但保留其 BlueXP 和 NetApp 支持站点帐户。</block>
@@ -5468,4 +5464,13 @@ https://support.netapp.com
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">提供查看BlueXP classification扫描结果的能力。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。分类没有查看者角色。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
   <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">您现在可以在BlueXP中查看Google Cloud NetApp Volumes 。 <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
+  <block id="4ac442f979edeb4aaec2d297a7c152be" category="cell">具有Keystone查看器角色的用户无法创建服务请求。允许用户监控和查看他们访问的Keystone租户内的消费、资产和管理信息。</block>
+  <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">ONTAP调解器设置角色</block>
+  <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="inline-link-macro">ONTAP云调解器</block>
+  <block id="04799ba9193d1752205122631a125181" category="cell">具有ONTAP调解器设置角色的服务帐户可以创建服务请求。服务帐户中需要此角色来配置<block ref="a95914b5fa4d5193b1ebdf5a17356faa" category="inline-link-macro-rx"></block> 。</block>
+  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">管理存储运行状况和监管功能、发现存储资源以及修改和删除现有工作环境。</block>
+  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*选择一个类别*，然后选择一个*角色*，该角色为成员提供与您选择的组织、文件夹或项目相关的资源的权限。</block>
+  <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP仅显示一次客户端密钥并且不存储它。复制或下载密钥并将其安全存储。请注意、您可以稍后根据需要重新创建客户端ID和客户端密钥。</block>
+  <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">从“成员”页面，导航到表中的成员，选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>然后选择*删除用户*。</block>
 </blocks>
