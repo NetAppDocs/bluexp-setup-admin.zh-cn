@@ -59,7 +59,7 @@ summary: 在向NetApp技术支持部门创建支持案例之前、您需要向Bl
 “资源”页面应显示您的BlueXP  组织已注册支持。
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-support-registration.png["屏幕截图、显示帐户序列号、绿色复选框以及注册支持的文本。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-support-registration.png["屏幕截图显示了帐户序列号、绿色复选框和文本“已注册支持”。"]
 
 +
 请注意、其他BlueXP用户如果没有将NetApp 支持站点 帐户与其BlueXP登录关联、则不会看到此相同的支持注册状态。但是、这并不意味着您的BlueXP  组织未注册支持。只要组织中有一个用户执行了这些步骤、您的组织就已注册。

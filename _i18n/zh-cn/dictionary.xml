@@ -756,7 +756,6 @@
   <block id="7390f55a27add10ddc1a6c765b8a67c7" category="doc">BlueXP设置和管理文档</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp通过多种方式为BlueXP提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">获取帮助</block>
-  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp通过多种方式为BlueXP及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自助支持选项</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">这些选项每周 7 天，每天 24 小时免费提供：</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文档。</block>
@@ -1812,8 +1811,6 @@
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">具有NSS帐户的现有客户</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是拥有NSS帐户的NetApp客户、则只需通过BlueXP注册支持即可。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">选择*添加NSS凭证*，然后按照NetApp 支持站点(NSS)鉴定提示进行操作。</block>
-  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">屏幕截图、显示帐户序列号、绿色复选框以及注册支持的文本。</block>
-  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">现有客户、但无NSS帐户</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是现有许可证和序列号但拥有_no_ nss帐户的现有NetApp客户、则需要创建一个NSS帐户并将其与BlueXP登录关联。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp 支持站点 用户注册表</block>
@@ -5295,19 +5292,12 @@ https://support.netapp.com
   <block id="ed0a34e7c50c8b6a49b38156f4ad0507" category="inline-link-macro">了解有关管理联盟的更多信息。</block>
   <block id="a28baf546d6789e9df4bf20f4b47ea7e" category="admonition">导入现有联盟后，您可以从联盟页面管理该联盟。 <block ref="9d534edc1c56628e78a226390e0c6f0b" category="inline-link-macro-rx"></block></block>
   <block id="4538ec0a58b95f3c1aac1a5acb748667" category="paragraph">组织管理员或联盟管理员。 <block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
-  <block id="6a83e05584ae3a368d76b79ed5fca4ac" category="section-title">导入联盟</block>
   <block id="af5e5162616eb70fd66eb845ab93c3b3" category="list-text">选择*导入联合*。</block>
   <block id="ad0b8ffb10bbe432e9cf58b09772aa69" category="section-title">将已验证的域添加到现有联合</block>
-  <block id="a0ddba99351ac47d380e4259aadba269" category="paragraph">您可以将已验证的域添加到BlueXP中的现有联合。您可以将已验证的域添加到BlueXP中的现有联合，以便将多个域与同一个身份提供商 (IdP) 一起使用。</block>
-  <block id="be834cc1c8b7f8b6b0e9b3daed0042f5" category="paragraph">您必须已在BlueXP中验证该域，然后才能将其添加到联盟。如果您尚未验证该域，可以按照<block ref="1a287a79053335f45f3db75bc57fd747" category="inline-link-macro-rx"></block> 。</block>
-  <block id="d62d240b9c34b152e7a4c1f1ba2faecc" category="paragraph">&lt;这里需要一个用例来说明何时需要这样做&gt;--Tonia &lt;这个新域名的用户需要多长时间才能登录？--Tonia&gt; 步骤</block>
   <block id="62d5f424f490cb35fe635af945e09e93" category="list-text">选择操作菜单<block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> ，然后选择“更新域”。“更新域”对话框会列出已与此联盟关联的域。</block>
   <block id="d84c85105e6a24d5f4e5213f4a62212a" category="list-text">从可用域列表中选择一个已验证的域。</block>
   <block id="35165f9b14f6cde03fa7f6f9b03732ba" category="list-text">选择 * 更新 * 。</block>
   <block id="b9441c75b64b2bff3d5c0252b881eb80" category="section-title">更新即将到期的联合连接</block>
-  <block id="50bc8d94201d22ead4d5ac5de70f8c4e" category="paragraph">您可以在BlueXP中更新联合连接的详细信息。例如，如果证书或客户端密钥等凭证过期，则需要更新联合连接。如有需要，请更新通知日期，以提醒您在连接过期前更新连接。</block>
-  <block id="6ec267b868ac52e9c551ecf053445e50" category="admonition">为避免登录问题，请先更新 IdP，然后再更新BlueXP中的连接。更新过程中请保持BlueXP登录状态。——这里的顺序是什么？——Tonia</block>
-  <block id="e8d5347d0ad03b9156b4d8234c820a54" category="list-text">选择要添加已验证域的联盟旁边的操作菜单（三个垂直点），然后选择“更新联盟”。“更新域”对话框会列出已与此联盟关联的域。</block>
   <block id="e82e66adccb64cbe61e87f3c0617c3f8" category="list-text">根据需要更新联盟的详细信息。</block>
   <block id="f0c3a42a5f59fcf574664a16032f7f98" category="section-title">测试现有联盟</block>
   <block id="579e693274492fb64ae09b19e40c366a" category="paragraph">如果您在使用现有联盟时遇到问题，可以测试连接是否正常工作。这可以帮助您识别联盟中存在的问题并进行故障排除。</block>
@@ -5316,7 +5306,6 @@ https://support.netapp.com
   <block id="f00c704f82067284063e6d08ee509d82" category="list-text">选择“*完成*”返回“*联合*”选项卡。</block>
   <block id="3104ea2b12b1bb5b1bf9e44f8a04c551" category="section-title">禁用联合</block>
   <block id="e29366acd257602b75067c91b960f62f" category="paragraph">如果您不再需要联盟，可以将其禁用。这将阻止与联盟关联的用户使用其公司凭据登录BlueXP 。您可以稍后根据需要重新启用联盟。</block>
-  <block id="29fd568fb93920cf501488e171b7f20b" category="paragraph">用户何时应禁用联邦？例如，如果 IdP 正在更新，或者不再需要联邦。——Tonia？</block>
   <block id="ba1cad8ed3a99d167191e2e7f53a0e1d" category="list-text">选择操作菜单<block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block>在您要添加已验证域的联盟旁边，然后选择*禁用*。</block>
   <block id="a679ca81df887999afdb29cc812dba1a" category="section-title">删除联盟</block>
   <block id="2e39c9a75c534c723834aef16604225c" category="paragraph">如果您不再需要某个联合，可以将其删除。这会将该联合从BlueXP中移除，并阻止任何与该联合关联的用户使用其公司凭证登录BlueXP 。例如，如果 IdP 即将停用，或者不再需要该联合。删除联合后，您将无法恢复。您必须创建新的联合。</block>
@@ -5474,4 +5463,11 @@ https://support.netapp.com
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">从“成员”页面，导航到表中的成员，选择<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>然后选择*删除用户*。</block>
   <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">具有Keystone查看器角色的用户无法创建服务请求。允许用户监控和查看所访问的Keystone租户中的使用情况、资产和管理信息。</block>
+  <block id="43fcb7c92b7808baf72f1cd9eecef7a5" category="list-text">具体来说，对于Amazon FSx for NetApp ONTAP ，编辑 *信任关系* 策略以包含“AWS”：“arn:aws:iam::952013314444:root”。</block>
+  <block id="f8aabc110ec9d0099e69b9276f73b751" category="paragraph">例如，该策略应如下所示：</block>
+  <block id="37747908c82600c4f83a3de02bd7dc1a" category="inline-link-macro">AWS 身份和访问管理 (IAM) 文档</block>
+  <block id="e8cffeeec612132e8c2cb2355463f31f" category="paragraph">参考<block ref="ac3530460cd18c242c3653db3709495c" category="inline-link-macro-rx"></block>有关 IAM 中跨账户资源访问的更多信息。</block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp以多种方式为BlueXP及其云服务提供支持。我们提供全天候 (24/7) 的大量免费自助支持选项，例如知识库 (KB) 文章和社区论坛。您的支持注册包含通过网络工单获取的远程技术支持。</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">屏幕截图显示了帐户序列号、绿色复选框和文本“已注册支持”。</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
