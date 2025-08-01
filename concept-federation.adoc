@@ -23,7 +23,7 @@ summary: 身份联合支持使用BlueXP进行单点登录、以便用户可以�
 
 == 与NetApp支持站点的身份联合
 
-当您与NetApp支持站点联合时，用户可以使用您用于NetApp支持站点、 Active IQ以及与您的NetApp支持站点帐户关联的其他应用程序的相同凭据登录访问BlueXP 。设置联合后，任何创建NetApp支持站点帐户的新用户也将能够访问BlueXP。
+当您与NetApp支持站点联合时，用户可以使用与访问NetApp支持站点、 Active IQ Digital Advisor以及与您的NetApp支持站点帐户关联的其他应用程序相同的凭据登录以访问BlueXP 。设置联合后，任何创建NetApp支持站点帐户的新用户也将能够访问BlueXP。
 
 
 NOTE: 如果您与NetApp支持站点联合，则无法同时与您的企业身份管理提供商联合。请选择最适合您组织的提供商。
@@ -46,7 +46,7 @@ NetApp支持团队将审核并处理您的请求。
 
 === 支持的身份提供程序
 
-NetApp支持以下联合身份提供商和协议：
+NetApp支持以下联合协议和身份提供程序：
 
 .协议
 * 安全断言标记语言(SAML)身份提供程序

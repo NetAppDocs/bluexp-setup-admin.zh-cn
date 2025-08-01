@@ -22,7 +22,7 @@ summary: 了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器�
 
 
 
-=== 专用模式版本(3.9.52)
+=== 私人模式发布（3.9.54）
 
 现在、可从下载新的专用模式版本 https://mysupport.netapp.com/site/downloads["NetApp 支持站点"^]
 
@@ -36,7 +36,7 @@ summary: 了解BlueXP  管理功能的新增功能：BlueXP  IAM、连接器�
 | 连接器 | 3.9.54, 3.9.53 | 前往 https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["BlueXP页面中的新功能"^]并参考版本 3.9.54 和 3.9.53 所包含的更改。 
 
 
-| 备份和恢复 | 2025年7月22日 | 前往 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  备份和恢复页面中的新增功能"^]并参考 2025 年 7 月版本中包含的更改。 
+| 备份和恢复 | 2025年7月28日 | 前往 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  备份和恢复页面中的新增功能"^]并参考 2025 年 7 月版本中包含的更改。 
 
 
 | 分类 | 2025 年 7 月 14 日（版本 1.45） | 前往 https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分类页面中的新增功能"^]。 
