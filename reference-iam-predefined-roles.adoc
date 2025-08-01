@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-iam-predefined-roles.html 
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac 
 summary: BlueXP  身份和访问管理包括多个预定义角色、您可以将这些角色分配给组织的成员。 
 ---
 = 了解BlueXP  访问角色
@@ -36,7 +36,7 @@ BlueXP身份和访问管理 (IAM) 包括预定义角色，您可以将这些角�
 | link:reference-iam-platform-roles.html["联盟管理员"] | 允许用户使用BlueXP创建和管理联合，从而实现单点登录 (SSO)。 
 
 
-| link:reference-iam-platform-roles.html["联合查看器"] | 允许用户使用BlueXP查看现有的联合。无法创建或管理联合。 
+| link:reference-iam-platform-roles.html["联合查看器"] | 允许用户查看与BlueXP 的现有联合。无法创建或管理联盟 
 |===
 
 
@@ -62,9 +62,6 @@ BlueXP身份和访问管理 (IAM) 包括预定义角色，您可以将这些角�
 
 
 | link:reference-iam-storage-roles.html["存储管理员"] | 管理存储运行状况和监管功能、发现存储资源以及修改和删除现有工作环境。 
-
-
-| link:reference-iam-storage-roles.html["存储管理员"] | 管理存储健康和治理功能，发现存储资源，以及更改和删除现有的工作环境。 
 
 
 | link:reference-iam-storage-roles.html["存储查看器"] | 查看存储运行状况和监管功能、以及先前发现的存储资源。无法发现、修改或删除现有存储工作环境。 
@@ -110,7 +107,7 @@ BlueXP身份和访问管理 (IAM) 包括预定义角色，您可以将这些角�
 | link:reference-iam-disaster-rec-roles.html["灾难恢复查看器"] | 仅查看信息。 
 
 
-| 分类管理员 | 提供查看BlueXP classification扫描结果的能力。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。分类没有查看者角色。 
+| 分类查看器 | 提供查看BlueXP classification扫描结果的能力。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。分类没有查看者角色。 
 
 
 | link:reference-iam-ransomware-roles.html["勒索软件保护管理员"] | 管理防反向器保护服务的"保护"、"警报"、"恢复"、"设置"和"报告"选项卡上的操作。 

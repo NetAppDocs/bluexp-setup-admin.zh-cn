@@ -356,11 +356,7 @@ NOTE: 如果要在中使用BlueXP https://aws.amazon.com/federal/secret-cloud/["
 .17+| * 服务 * | 警报 | 否 | 否 
 
 
-| 备份和恢复 | 是的。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["查看ONTAP卷数据支持的备份目标列表"^] | 是的。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["查看ONTAP卷数据支持的备份目标列表"^] 
+| 备份和恢复 | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["查看ONTAP卷数据支持的备份目标列表"^] | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["查看ONTAP卷数据支持的备份目标列表"^] 
 
 
 | 分类 | 是的。 | 是的。 

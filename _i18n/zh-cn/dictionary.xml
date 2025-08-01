@@ -2392,14 +2392,11 @@
   <block id="9a29204f81d065ca790be5e05be49951" category="paragraph">现在、您可以转到<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> 开始将Connector与BlueXP结合使用。</block>
   <block id="3cedfb797d3e1bc073ba2b0b4d2502cf" category="inline-link">Azure 文档</block>
   <block id="5c5eae78661bfbe6d566f6e00a0b5a67" category="paragraph">请注意、您可以使用Azure门户、Azure PowerShell、Azure命令行界面或REST API创建Azure自定义角色。以下步骤显示了如何使用Azure命令行界面创建角色。如果您希望使用其他方法、请参见<block ref="9dee1d16cb9c40964c81f1bda0fd9839" category="inline-link-rx"></block></block>
-  <block id="5377c5407df56ba84e782b4e83f6c6ba" category="cell">将内部ONTAP集群备份到Amazon S3</block>
   <block id="adfa465566f5539105be4291db1cc510" category="cell">激活ONTAP卷上的备份时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。</block>
   <block id="ba37f89d4d4c6ea1b335169793666fbe" category="inline-link">为备份设置S3权限</block>
-  <block id="3a723efda81312f328c7de4a7741cb2c" category="cell"><block ref="3a723efda81312f328c7de4a7741cb2c" category="inline-link-rx"></block></block>
   <block id="9f60318dba873b8aa280da655451eafb" category="cell">将内部ONTAP集群备份到StorageGRID</block>
   <block id="649c5239d0163afb3411e36c5e857809" category="cell">当您准备StorageGRID作为ONTAP集群的备份目标时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。</block>
   <block id="08cdeb7ce64fda06111111c8fea66510" category="inline-link">准备StorageGRID作为备份目标</block>
-  <block id="62d09ae20af8b1a53c08a95792d3bdb1" category="cell"><block ref="62d09ae20af8b1a53c08a95792d3bdb1" category="inline-link-rx"></block></block>
   <block id="e6b202bba8f7c7c067b2137e58a41397" category="cell">在启用BlueXP分层到AWS时、此向导会提示您输入访问密钥和机密密钥。这些凭据将传递到ONTAP 集群、以便ONTAP 可以将数据分层到S3存储分段。</block>
   <block id="827bb82562627531a1105788bd9826e6" category="inline-link">设置用于层的S3权限</block>
   <block id="5f2c172dbfc6022aa5027029dc114852" category="cell"><block ref="5f2c172dbfc6022aa5027029dc114852" category="inline-link-rx"></block></block>
@@ -2411,12 +2408,7 @@
   <block id="498541290e9165e5844d20ce7c56fdce" category="paragraph">在以下情况下、使用BlueXP备份和恢复来备份Cloud Volumes ONTAP时、您需要向连接器添加权限：</block>
   <block id="963c1d6b60ef9ab217e4a2f0f2f4a47f" category="list-text">您希望使用"搜索和还原"功能</block>
   <block id="0ce14c433ae57608c1aced4d631bc039" category="list-text">您希望使用客户管理的加密密钥(CMDK)</block>
-  <block id="3f4149dc5a7846817dd458a59e650f5f" category="inline-link">搜索和恢复功能的权限(&amp;A)</block>
-  <block id="aae920cbe0beab1a7b76937b223c2d92" category="list-text"><block ref="4b3b7e478cad27964ed24a4ab3fe4c45" category="inline-link-rx"></block></block>
-  <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">CMACK的权限</block>
-  <block id="73206ed184feb2313c9f626b7f266208" category="list-text"><block ref="73206ed184feb2313c9f626b7f266208" category="inline-link-rx"></block></block>
   <block id="6e9436752850e460930666efdaf1e025" category="cell">将内部ONTAP集群备份到Google Cloud</block>
-  <block id="072b4c796b4a06820f943c41d4da3162" category="cell"><block ref="6a045f48523c0716d40c678a68c87636" category="inline-link-rx"></block></block>
   <block id="33afe8d49ba0b54b76d44e7f5b190b53" category="section-title">为BlueXP服务准备网络连接</block>
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">BlueXP文档</block>
   <block id="1c74bcfdef9917ce07420aafab8bce83" category="paragraph"><block ref="1c74bcfdef9917ce07420aafab8bce83" category="inline-link-rx"></block></block>
@@ -2878,12 +2870,6 @@ https://support.netapp.com
   <block id="d0622c7af7b2cc2435986b2d005d8fc3" category="cell">*工作环境*
 
 表的这一部分列出了BlueXP画布中对工作环境管理的支持。它并不表示BlueXP备份和恢复支持的备份目标。</block>
-  <block id="156b68e03278a01a3d2781f8c900caac" category="cell">是的。
-
-<block ref="14c876cb6a245f558ae78bae571d2b6e" category="inline-link-rx"></block></block>
-  <block id="fa0738e12b2324073fa9b5f91af71e48" category="cell">是的。
-
-<block ref="42dbd2df9d57eeeb664cce05b5a35bf1" category="inline-link-rx"></block></block>
   <block id="ceff1e7e9afd603be2687369aac73bb6" category="paragraph">此设置非常重要、因为托管标识允许Connector虚拟机通过Microsoft Entra ID标识自身、而无需提供任何凭据。<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>。</block>
   <block id="10d9864d222fd249479246f9c50df58c" category="list-text">*定义凭据*：输入有关授予所需权限的Microsoft Entra服务主体的信息：</block>
   <block id="9c0e62a86b9fe558cad9c4d280ea439d" category="list-text">启用NTP</block>
@@ -4565,7 +4551,6 @@ https://support.netapp.com
   <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">存储查看器</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">系统运行状况专家</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">数据服务角色</block>
-  <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">分类管理员</block>
   <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">管理防反向器保护服务的"保护"、"警报"、"恢复"、"设置"和"报告"选项卡上的操作。</block>
   <block id="c449660979799948a46372470a0eddb9" category="cell">在防软件保护服务中查看工作负载数据、查看警报数据、下载恢复数据以及下载报告。</block>
   <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">BlueXP  的勒索软件保护访问角色</block>
@@ -5192,7 +5177,6 @@ https://support.netapp.com
   <block id="d1030414e0b81438e7c1e475b3ff1c37" category="paragraph">BlueXP身份和访问管理 (IAM) 包括预定义角色，您可以将这些角色分配给资源层次结构不同级别的组织成员。在分配这些角色之前、您应了解每个角色包含的权限。角色分为以下几类：平台、应用程序和数据服务。</block>
   <block id="10140df1e1454ada0fe484df8f86e609" category="cell"><block ref="10140df1e1454ada0fe484df8f86e609" category="inline-link-macro-rx"></block></block>
   <block id="94dc84e1e8721887c7b647f1cdb802f2" category="cell"><block ref="94dc84e1e8721887c7b647f1cdb802f2" category="inline-link-macro-rx"></block></block>
-  <block id="178e676d4dcf16fc5b1d8f7c9431f792" category="cell">允许用户使用BlueXP查看现有的联合。无法创建或管理联合。</block>
   <block id="da46150dd1fb0497beb9ff6a9328d80c" category="cell"><block ref="da46150dd1fb0497beb9ff6a9328d80c" category="inline-link-macro-rx"></block></block>
   <block id="589491adabb65d62d42f2088d68fdee0" category="cell">执行备份和恢复服务中的任何操作。</block>
   <block id="eaec472b7a23d9c311a78adfd10b1032" category="inline-link-macro">备份和恢复管理员</block>
@@ -5445,7 +5429,6 @@ https://support.netapp.com
   <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Google Cloud NetApp Volumes管理员</block>
   <block id="42e05b82ea98ae962f4c09a6330b152a" category="cell"><block ref="42e05b82ea98ae962f4c09a6330b152a" category="inline-link-macro-rx"></block></block>
   <block id="ee848730515e9ec34272f93a110738f2" category="cell">具有Google Cloud NetApp Volumes角色的用户可以发现和管理Google Cloud NetApp Volumes。</block>
-  <block id="afa251e583f752e51e3383587060e30b" category="cell">管理存储健康和治理功能，发现存储资源，以及更改和删除现有的工作环境。</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">提供查看BlueXP classification扫描结果的能力。具有此角色的用户可以查看合规性信息、并为其有权访问的资源生成报告。这些用户无法启用或禁用对卷、分段或数据库架构的扫描。分类没有查看者角色。</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
   <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">ONTAP调解器设置角色</block>
@@ -5479,4 +5462,21 @@ https://support.netapp.com
   <block id="985faaef42ae98b8d59df17cd449681e" category="paragraph">当您与NetApp支持站点联合时，用户可以使用与访问NetApp支持站点、 Active IQ Digital Advisor以及与您的NetApp支持站点帐户关联的其他应用程序相同的凭据登录以访问BlueXP 。设置联合后，任何创建NetApp支持站点帐户的新用户也将能够访问BlueXP。</block>
   <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp支持以下联合协议和身份提供程序：</block>
   <block id="f207a0643b8dada892565ed2318b05cd" category="cell"><block ref="f207a0643b8dada892565ed2318b05cd" category="inline-link-macro-rx"></block></block>
+  <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">是的<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
+  <block id="a6c599d9b9bbe744be463c056f9e194a" category="cell">是的<block ref="8cbf8dca81955ce6c3d97cec5394e7fd" category="inline-link-rx"></block></block>
+  <block id="e3e606b368c3f3a65f5cb75fbe9c3115" category="cell">允许用户查看与BlueXP 的现有联合。无法创建或管理联盟</block>
+  <block id="1393a4279651a3334e20f39925a139f5" category="cell">分类查看器</block>
+  <block id="725b2ecc37229f77405f9188278a6a1f" category="cell">使用BlueXP backup and recovery将本地ONTAP集群备份到 Amazon S3</block>
+  <block id="12e11cedace336bc23a4b1c9ab448974" category="cell"><block ref="12e11cedace336bc23a4b1c9ab448974" category="inline-link-rx"></block></block>
+  <block id="51fa9005485af9016610af9875c0e913" category="cell">将Cloud Volumes ONTAP备份到 Azure Blob 存储</block>
+  <block id="8625ed737cea7841c422023f4e27bc1d" category="inline-link">使用备份和恢复将Cloud Volumes ONTAP数据备份到 Azure Blob 存储</block>
+  <block id="518ffd78f998d0a25c5446da8989b6a6" category="list-text"><block ref="518ffd78f998d0a25c5446da8989b6a6" category="inline-link-rx"></block></block>
+  <block id="f66493a5c1b72a6a6a675e1d79371789" category="cell">将本地ONTAP集群备份到 Azure Blob 存储</block>
+  <block id="957901780fae6c72beed34248e8e252d" category="inline-link">使用备份和恢复将本地ONTAP数据备份到 Azure Blob 存储</block>
+  <block id="6d94d8c7b4ec021fb7a5a5704629681e" category="cell"><block ref="6d94d8c7b4ec021fb7a5a5704629681e" category="inline-link-rx"></block></block>
+  <block id="cd84e76d2557bd459057089ba5e1385c" category="inline-link">使用备份和恢复将Cloud Volumes ONTAP数据备份到 Google Cloud Storage</block>
+  <block id="3b5162ff96cd00bbd1b1ad424d59bd8f" category="list-text"><block ref="3b5162ff96cd00bbd1b1ad424d59bd8f" category="inline-link-rx"></block></block>
+  <block id="6d4f1161a06d11fa7424e224b2a86d25" category="inline-link">使用备份和恢复将本地ONTAP数据备份到 Google Cloud Storage</block>
+  <block id="b9142ed8495860430205961c82c827a0" category="cell"><block ref="b9142ed8495860430205961c82c827a0" category="inline-link-rx"></block></block>
+  <block id="86b4fb0c56ea4924e5069e8f25d3a778" category="cell"><block ref="86b4fb0c56ea4924e5069e8f25d3a778" category="inline-link-rx"></block></block>
 </blocks>
