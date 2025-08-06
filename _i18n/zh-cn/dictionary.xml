@@ -5029,13 +5029,9 @@ https://support.netapp.com
   <block id="444f23e40f44fdeee25f2095f5e98011" category="paragraph">NetApp仅支持服务提供商发起的（SP发起的）SSO。您需要先配置身份提供商，以信任NetApp作为服务提供商。然后，您可以在BlueXP中创建使用身份提供商配置的连接。</block>
   <block id="26171afe4f87cd094533f930e17a3ab6" category="paragraph">您可以与您的电子邮件域名或您拥有的其他域名联合。要与您的电子邮件域名以外的域名联合，请先验证您拥有该域名。</block>
   <block id="a360b57a0977bad37074d03167fc6b97" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>验证您的域名（如果不使用您的电子邮件域名）</block>
-  <block id="6081ea9f6e28129fa43045bdc0656c38" category="paragraph">如果您要与不同于您电子邮件域名的域名联合，则必须先验证您是否拥有该域名。您无需执行任何额外步骤即可联合您的电子邮件域名。</block>
   <block id="3b7b59f484394c5f795c6658135940dc" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>配置您的 IdP 以信任NetApp作为服务提供商</block>
-  <block id="46f8b82359f12177914eba80e56d79bf" category="paragraph">您可以通过创建新应用程序并提供必要的信息（例如 ACS URL、实体 ID 或其他凭证信息）来配置身份提供商，使其信任NetApp作为服务提供商。服务提供商信息因身份提供商而异，因此请参阅特定身份提供商的文档以了解详细信息。您需要与您的 IdP 管理员合作完成此步骤。</block>
   <block id="1f2c27a0069d4204cb2408f8f09f64b3" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>在BlueXP中创建联邦连接</block>
-  <block id="a30e0aeeb1336c06519d765bed7b8b15" category="paragraph">要创建连接，您需要提供来自身份提供商的必要信息，例如 SAML 元数据 URL 或文件。此信息用于建立BlueXP与您的身份提供商之间的信任关系。您提供的信息取决于您使用的 IdP。例如，如果您使用的是 Microsoft Entra ID，则需要提供客户端 ID、密钥和域。</block>
   <block id="c542c1747b658c80eb08d07be8315a3c" category="paragraph-title"><block ref="d5b760e3b486da6aca46a9bd83d66c13" category="inline-image-macro-rx" type="image"></block>在BlueXP中测试您的联盟</block>
-  <block id="eba895451c518afe06d457af732c326f" category="paragraph">在启用联邦连接之前，请先测试它以确保其正常工作。BlueXP中的“联邦”页面提供了一个测试选项，可让您验证测试用户是否能够成功进行身份验证。如果测试成功，您就可以启用该连接。</block>
   <block id="a0f566a97e3f69eafdb05d87fcd258d4" category="paragraph-title"><block ref="3fb1f11a25837416d87a2007da1d76e6" category="inline-image-macro-rx" type="image"></block>在BlueXP中启用您的连接</block>
   <block id="bd2e9b54c20d09ff4a304cf10f821155" category="paragraph">启用连接后，用户可以使用其公司凭证登录BlueXP 。</block>
   <block id="7a15d5af6f3fb4b588190669535d4bbe" category="paragraph">查看相应协议或 IdP 的主题以开始：</block>
@@ -5459,7 +5455,6 @@ https://support.netapp.com
   <block id="328e39c031d3f6a77403904d6dda2377" category="section-title">2025年7月31日</block>
   <block id="8ec07d17b9626eed73b7d8c3ecb0e32f" category="doc">私人模式发布（3.9.54）</block>
   <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="cell">2025年7月28日</block>
-  <block id="985faaef42ae98b8d59df17cd449681e" category="paragraph">当您与NetApp支持站点联合时，用户可以使用与访问NetApp支持站点、 Active IQ Digital Advisor以及与您的NetApp支持站点帐户关联的其他应用程序相同的凭据登录以访问BlueXP 。设置联合后，任何创建NetApp支持站点帐户的新用户也将能够访问BlueXP。</block>
   <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp支持以下联合协议和身份提供程序：</block>
   <block id="f207a0643b8dada892565ed2318b05cd" category="cell"><block ref="f207a0643b8dada892565ed2318b05cd" category="inline-link-macro-rx"></block></block>
   <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">是的<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
@@ -5479,4 +5474,12 @@ https://support.netapp.com
   <block id="6d4f1161a06d11fa7424e224b2a86d25" category="inline-link">使用备份和恢复将本地ONTAP数据备份到 Google Cloud Storage</block>
   <block id="b9142ed8495860430205961c82c827a0" category="cell"><block ref="b9142ed8495860430205961c82c827a0" category="inline-link-rx"></block></block>
   <block id="86b4fb0c56ea4924e5069e8f25d3a778" category="cell"><block ref="86b4fb0c56ea4924e5069e8f25d3a778" category="inline-link-rx"></block></block>
+  <block id="00f4500782739238dc0801f2579a354e" category="paragraph">当您与NetApp支持站点联合时，用户可以使用与访问NetApp支持站点、 Active IQ Digital Advisor以及与您的NetApp支持站点帐户关联的其他应用程序相同的凭据登录以访问BlueXP 。设置联合后，任何创建NetApp支持站点帐户的新用户也能够访问BlueXP。</block>
+  <block id="6ead1a7fe0f07609f377bd234facc0ef" category="inline-link-macro">了解如何导入您的联盟</block>
+  <block id="91f0c5ab0e5f85ccb6fe978fe56bab40" category="admonition">如果您之前使用NetApp Cloud Central（ BlueXP的外部应用程序）配置了联合，则需要使用BlueXP Federation 页面导入联合，以便能够在BlueXP中管理它。<block ref="57d57f1ec815a326ebb31008786ac229" category="inline-link-macro-rx"></block></block>
+  <block id="c2e95c6a48fbf11a14fe5caa4ff899bc" category="paragraph">要与不同于您的电子邮件域的域联合，请验证您拥有该域。您无需任何额外步骤即可联合您的电子邮件域。</block>
+  <block id="c386ea934563047c1e78820c2a719b62" category="paragraph">通过创建新的应用程序并提供必要的信息（例如 ACS URL、实体 ID 或其他凭证信息）来配置您的身份提供商以信任NetApp 。服务提供商信息因身份提供商而异，因此请参阅特定身份提供商的文档以了解详细信息。您需要与您的 IdP 管理员合作来完成此步骤。</block>
+  <block id="c4b307083b5d0cdb2a3121de7077c81a" category="paragraph">要创建连接，您需要从身份提供商处提供必要的信息，例如 SAML 元数据 URL 或文件。此信息用于建立BlueXP和您的身份提供商之间的信任关系。您提供的信息取决于您使用的 IdP。例如，如果您使用 Microsoft Entra ID，则需要提供客户端 ID、密钥和域。</block>
+  <block id="c86db883022c01769d1a691d6239d6b6" category="paragraph">在启用联合连接之前对其进行测试。 BlueXP中的 Federation 页面提供了一个测试选项，允许您验证测试用户是否能够成功进行身份验证。如果测试成功，则可以启用连接。</block>
+  <block id="891726cdad713442b056e44ee0faab3d" category="paragraph">如果您之前已通过NetApp Cloud Central（ BlueXP的外部应用程序）设置联合，则联合页面会提示您将现有的联合连接导入BlueXP以便在新界面中进行管理。这使您能够利用最新的增强功能，而无需重新创建联合连接。</block>
 </blocks>

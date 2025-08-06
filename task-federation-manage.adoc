@@ -16,6 +16,9 @@ summary: 添加联邦连接后，您可以在BlueXP中管理它。您可以查�
 [role="lead"]
 您可以在BlueXP中管理您的联盟。您可以禁用它、更新过期的凭据，以及在不再需要时将其禁用。
 
+
+NOTE: 如果您之前使用NetApp Cloud Central（ BlueXP的外部应用程序）配置了联合，则需要使用BlueXP Federation 页面导入联合，以便能够在BlueXP中管理它。link:task-federation-import.html["了解如何导入您的联盟"]
+
 您还可以将已验证的域添加到现有联合中，这允许您使用多个域进行联合连接。
 
 
