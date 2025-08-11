@@ -3639,8 +3639,6 @@ https://support.netapp.com
   <block id="c7b1fe992423d57d0e492585ff631c02" category="list-text">使用基于Amazon FSx for ONTAP的VMware Cloud作为灾难恢复站点来保护内部VMware工作负载。</block>
   <block id="71bd4794c020a7645a4cfe74173f4058" category="list-text">BlueXP经济效益</block>
   <block id="068ff21264880d35ad4153fad90e3828" category="list-text">确定当前或预测的低容量集群、并实施数据分层或其他容量建议。</block>
-  <block id="dd7c710b103a018a2046baa2f5052ed9" category="list-text">BlueXP操作故障恢复能力</block>
-  <block id="00ac035a0893138aed2f04da8c8223d3" category="list-text">实施自动化固件和软件配置风险修复、以保持ONTAP 集群的运行状况。</block>
   <block id="67ecb6c0a19888100e5352d06f886856" category="list-text">BlueXP勒索软件保护</block>
   <block id="a8dd42d088a97f32bf9a4c69abc2517a" category="list-text">检测可能导致勒索软件攻击的异常情况。保护和恢复工作负载。</block>
   <block id="3ffe2e9dffcfea6ba0652c1f11e54fc1" category="list-text">BlueXP复制</block>
@@ -3897,7 +3895,6 @@ https://support.netapp.com
   <block id="da48a166a29b8e248a3113d9bd6cba04" category="paragraph">仅当需要使用Connector向数字钱包添加许可证时、才需要使用Cloud Volumes ONTAP _no-based _许可证。在这种情况下，需要使用连接器，因为数据是从 Cloud Volumes ONTAP 系统上安装的许可证中获取的。</block>
   <block id="bf2f35a1367a7ddb519a7dd3cedacfdd" category="paragraph">在标准模式下使用BlueXP时、需要使用Connector才能在BlueXP中实现以下功能和服务：</block>
   <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">经济效益^1^</block>
-  <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">运营弹性^1^</block>
   <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">^1^虽然您可以在没有连接器的情况下访问这些服务、但要从这些服务启动操作、需要使用连接器。</block>
   <block id="ca61c00bb942882ff64e228d1e677f97" category="paragraph">要在受限模式或专用模式下使用BlueXP、需要使用Connector。</block>
   <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">连接器是BlueXP服务架构的基本组成部分。您有责任确保相关连接器始终正常运行且可访问。虽然此服务旨在克服连接器可用性短暂中断的问题、但您必须在需要时立即采取措施来修复基础架构故障。</block>
@@ -4074,10 +4071,6 @@ https://support.netapp.com
   <block id="34153016d27f6bc08ca28afe350597f0" category="cell">查看集群的更新详细信息</block>
   <block id="b9632e5402da95a15f8096dffe8fe849" category="cell">运行更新前检查并下载升级计划</block>
   <block id="26c438938da81386c731f3d387eda803" category="cell">安装软件更新</block>
-  <block id="faf3b0fdd74f34bfe5b5e712fd212952" category="cell">*运营故障恢复能力*</block>
-  <block id="71dfe4aa697335a7f919f97a8273c0b2" category="cell">查看安全风险问题</block>
-  <block id="0416203226164e8fc52087494d33b58d" category="cell">下载《安赛尔游戏手册》</block>
-  <block id="55ecbcc86c1df8e0bbccc58434b65675" category="cell">自动修复问题</block>
   <block id="c7c10204d64df7a89f6234e58c752612" category="cell">*经济效益*</block>
   <block id="2dcdbb99022cfb6c4ef2bd327930b9d0" category="cell">查看容量规划状态</block>
   <block id="a9857843d1ca1e121ff59133f171d8cf" category="cell">选择下一步行动(最佳实践、分层)</block>
@@ -5007,4 +5000,6 @@ https://support.netapp.com
   <block id="a99608db4d85374403174f1119cac088" category="list-text">移动*黑暗主题*滑块以启用它。</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">2025年8月11日</block>
   <block id="107d607a0fbcdbb5eddd688662ad90ca" category="sidebar">运营支持分析师</block>
+  <block id="63c109031bd5690629b7c9170bf3f4e8" category="section-title">运营弹性功能</block>
+  <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">操作弹性功能已从BlueXP中删除。如果遇到问题，请联系NetApp支持。</block>
 </blocks>
