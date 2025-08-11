@@ -136,6 +136,8 @@ sidebar:
           entries:
           - title: Keystone角色
             url: "/reference-iam-keystone-roles.html"
+          - title: 运营支持分析师
+            url: "/reference-iam-analyst-roles.html"
           - title: 存储角色
             url: "/reference-iam-storage-roles.html"
         - title: 数据服务角色

@@ -259,5 +259,5 @@ BlueXP需要对两项服务拥有StorageGRID权限。
 | 目标 | Description | 链接。 
 
 
-| 将内部ONTAP集群分层到StorageGRID | 在将BlueXP分层设置为StorageGRID时、您需要为BlueXP分层提供S3访问密钥和机密密钥。BlueXP分层使用密钥访问您的存储分段。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["准备向StorageGRID进行层"^] 
+| 将内部ONTAP集群分层到StorageGRID | 在将BlueXP分层设置为StorageGRID时、您需要为BlueXP分层提供S3访问密钥和机密密钥。BlueXP分层使用密钥访问您的存储分段。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html["准备向StorageGRID进行层"^] 
 |===

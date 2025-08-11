@@ -64,4 +64,4 @@ BlueXP现在支持使用 IAM 角色实现以下功能和数据服务：
 * 联邦
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["了解有关使用访问角色的更多信息。"]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解有关使用访问角色的更多信息。"]

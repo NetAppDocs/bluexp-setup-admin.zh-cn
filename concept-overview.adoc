@@ -40,6 +40,7 @@ _BlueXP 画布_可让您发现、部署和管理云和本地存储。画布集�
 * 适用于 NetApp ONTAP 的 Amazon FSX
 * Azure NetApp Files
 * Cloud Volumes ONTAP
+* Google Cloud NetApp卷
 
 
 --

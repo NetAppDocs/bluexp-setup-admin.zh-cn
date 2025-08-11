@@ -155,7 +155,7 @@ API endpoint:: API调用会调用Connector虚拟机。
 | Azure NetApp Files | 完全支持 
 
 
-| 备份和恢复 | 受限模式的政府区域和商业区域支持。受限模式的主权区域不支持。在受限模式下、BlueXP  备份和恢复仅支持备份和还原ONTAP卷数据。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["查看ONTAP数据支持的备份目标列表"^]不支持备份和还原应用程序数据和虚拟机数据。 
+| 备份和恢复 | 在政府区域和商业区域受限制模式支持。不支持在具有限制模式的主权区域使用。在受限模式下， BlueXP backup and recovery仅支持ONTAP卷数据的备份和恢复。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["查看ONTAP数据支持的备份目标列表"^]不支持应用程序数据和虚拟机数据的备份和恢复。 
 
 
 | 分类  a| 
@@ -238,7 +238,7 @@ API endpoint:: API调用会调用Connector虚拟机。
 | 支持的服务 | 注释： 
 
 
-| 备份和恢复 | 在AWS和Azure商业区域中受支持。BlueXP  备份和恢复在Google Cloud、、或私有模式中不受支持 https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^] https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^] https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 、仅支持备份和还原ONTAP卷数据。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["查看ONTAP数据支持的备份目标列表"^]不支持备份和还原应用程序数据和虚拟机数据。 
+| 备份和恢复 | 在 AWS 和 Azure 商业区域受支持。在 Google Cloud 或 https://aws.amazon.com/federal/secret-cloud/["AWS机密云"^]， https://aws.amazon.com/federal/top-secret-cloud/["AWS云的绝密"^] ， 或者 https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]在私有模式下， BlueXP backup and recovery仅支持ONTAP卷数据的备份和恢复。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["查看ONTAP数据支持的备份目标列表"^]不支持应用程序数据和虚拟机数据的备份和恢复。 
 
 
 | Cloud Volumes ONTAP | 由于无法访问Internet、因此无法使用以下功能：自动软件升级和AutoSupport。 
@@ -261,7 +261,7 @@ API endpoint:: API调用会调用Connector虚拟机。
 
 
 | 备份和恢复  a| 
-在私有模式下、BlueXP备份和恢复仅支持备份和还原ONTAP卷数据。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["查看ONTAP卷数据支持的备份目标列表"^]
+在私有模式下， BlueXP backup and recovery仅支持ONTAP卷数据的备份和恢复。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["查看ONTAP卷数据支持的备份目标列表"^]
 
 不支持备份和还原应用程序数据和虚拟机数据。
 
@@ -356,7 +356,7 @@ NOTE: 如果要在中使用BlueXP https://aws.amazon.com/federal/secret-cloud/["
 .17+| * 服务 * | 警报 | 否 | 否 
 
 
-| 备份和恢复 | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["查看ONTAP卷数据支持的备份目标列表"^] | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["查看ONTAP卷数据支持的备份目标列表"^] 
+| 备份和恢复 | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["查看ONTAP卷数据支持的备份目标列表"^] https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["查看ONTAP卷数据支持的备份目标列表"^] | 是的https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["查看ONTAP卷数据支持的备份目标列表"^] 
 
 
 | 分类 | 是的。 | 是的。 
