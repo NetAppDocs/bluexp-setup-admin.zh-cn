@@ -401,7 +401,7 @@ NOTE: 如果要在中使用BlueXP https://aws.amazon.com/federal/secret-cloud/["
 | 工作负载工厂 | 否 | 否 
 
 
-.7+| *功能* | BlueXP  身份和访问管理 | 是的。 
+.6+| *功能* | BlueXP  身份和访问管理 | 是的。 
 
 
 | 是的。 | 凭据 | 是的。 

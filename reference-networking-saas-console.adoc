@@ -18,7 +18,7 @@ summary: 当您使用通过SaaS层提供的基于Web的BlueXP控制台时、它�
 
 在以下两种情况下会联系这些端点：
 
-* 在用户的计算机上完成 https://console.bluexp.netapp.com["基于Web的BlueXP控制台"^]可以作为软件即服务（SaaS）使用。
+* 在用户计算机上完成以下部分时 https://console.bluexp.netapp.com["基于Web的BlueXP控制台"^]可以作为软件即服务（SaaS）使用。
 * 在用户的计算机上打开Web浏览器时、输入Connector主机的IP地址、然后登录并设置Connector。如果您手动安装连接器、则需要执行以下步骤。
 
 

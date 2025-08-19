@@ -4208,7 +4208,6 @@ https://support.netapp.com
   <block id="6c5717b14632d720938288e07cadd604" category="paragraph">XYZ Corporation是一家跨国公司、拥有庞大的存储工程师和存储管理员团队。他们允许该团队管理其所在地区的存储资产，同时限制对核心 BlueXP 任务（如用户管理、连接器创建和数字钱包等成本工具）的访问。</block>
   <block id="496d5f930a1daf128efdaf083cd8dcbb" category="paragraph">下表显示了每个 BlueXP 存储角色执行的操作。</block>
   <block id="f427e4ecee2d5f4a7a3729b4087d142b" category="paragraph">当您登录并使用基于 Web 的控制台时，BlueXP 会联系多个端点来完成您发起的操作。访问控制台的计算机必须连接到这些端点。</block>
-  <block id="6c5ff8f0129671982d1831fd73cf4dc0" category="list-text">在用户的计算机上完成<block ref="eecb3fc8bedef660fde4567972ba79cf" category="inline-link-rx"></block>可以作为软件即服务（SaaS）使用。</block>
   <block id="6f7595410ecabe6d611ded757d1f969c" category="cell">这是您在 Web 浏览器中输入以使用基于 Web 的控制台的端点。</block>
   <block id="3e692c92398b899f8bef9e541b9e153b" category="cell">基于 Web 的控制台联系此端点与 API 进行交互，以执行与授权、许可、订阅、凭证、通知等相关的操作。</block>
   <block id="f3000ad965f0ab15a5956bdd572c01d0" category="cell">需要访问数字顾问。</block>
@@ -5002,4 +5001,5 @@ https://support.netapp.com
   <block id="63c109031bd5690629b7c9170bf3f4e8" category="section-title">运营弹性功能</block>
   <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">操作弹性功能已从BlueXP中删除。如果遇到问题，请联系NetApp支持。</block>
   <block id="1483f680ce3bdf9d9815a763f9aff7ff" category="paragraph">BlueXP提供_部署模式_，使您能够满足您的业务和安全需求。  _标准模式_利用软件即服务 (SaaS) 层来提供全部功能，而_限制模式_和_私人模式_适用于有连接限制的组织。</block>
+  <block id="123a6b352fe45a0ef3d13dd5def43f93" category="list-text">在用户计算机上完成以下部分时<block ref="eecb3fc8bedef660fde4567972ba79cf" category="inline-link-rx"></block>可以作为软件即服务（SaaS）使用。</block>
 </blocks>
