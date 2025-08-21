@@ -1026,3 +1026,202 @@ Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有�
 === 身份联合的用户验证
 
 如果将身份联合与BlueXP  结合使用、则首次登录到BlueXP  的每个用户都需要填写一个快速表单来验证其身份。
+
+
+
+== 2024年7月31日
+
+
+
+=== 私人模式发布（3.9.42）
+
+现在可以从NetApp 支持站点 下载新的专用模式版本。
+
+.支持RHEL 8和9
+此版本包括在私人模式下使用BlueXP时在 Red Hat Enterprise Linux 8 或 9 主机上安装连接器的支持。支持以下版本的 RHEL：
+
+* 8.6 到 8.10
+* 9.1 至 9.3
+
+
+Podman 是这些操作系统所必需的容器编排工具。
+
+您应该了解 Podman 的要求、已知的限制、操作系统支持的摘要、如果您有 RHEL 7 主机该怎么做、如何开始等等。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
+
+.此版本包含的版本
+此版本包括支持私人模式的以下版本的BlueXP服务。
+
+[cols="2*"]
+|===
+| 服务 | 包含版本 
+
+
+| 连接器 | 3.9.42 
+
+
+| 备份和恢复 | 2024年7月18日 
+
+
+| 分类 | 2024 年 7 月 1 日（版本 1.33） 
+
+
+| Cloud Volumes ONTAP管理 | 2024年6月10日 
+
+
+| 数字电子钱包 | 2023年7月30日 
+
+
+| 内部ONTAP集群管理 | 2023年7月30日 
+
+
+| Replication | 2022年9月18日 
+|===
+要了解有关这些BlueXP服务版本中包含的内容的更多信息，请参阅每个BlueXP服务的发行说明。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["了解BlueXP backup and recovery的新功能"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["了解BlueXP classification的新功能"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["了解BlueXP中Cloud Volumes ONTAP管理的新功能"^]
+
+
+
+
+== 2024年7月15日
+
+
+
+=== 支持 RHEL 8.10
+
+BlueXP现在支持在使用标准模式或受限模式时在 Red Hat Enterprise Linux 8.10 主机上安装连接器。
+
+从 Connector 3.9.40 版本开始支持 RHEL 8.10。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
+
+
+
+== 2024年7月8日
+
+
+
+=== 连接器 3.9.42
+
+此版本包括一些小改进、错误修复以及对 AWS 加拿大西部（卡尔加里）地区连接器的支持。
+
+3.9.42 版本适用于标准模式和限制模式。
+
+
+
+=== 更新了 Docker Engine 要求
+
+当连接器安装在 Ubuntu 主机上时，Docker Engine 的最低支持版本现在为 23.0.6。之前是 19.3.1。
+
+最高支持版本仍为25.0.5。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector主机要求"]。
+
+
+
+=== 现在需要电子邮件验证
+
+现在，注册BlueXP 的新用户需要验证他们的电子邮件地址才能登录。
+
+
+
+== 2024年6月12日
+
+
+
+=== 连接器 3.9.41
+
+此版本的BlueXP Connector包括一些小的安全改进和错误修复。
+
+3.9.41 版本适用于标准模式和限制模式。
+
+
+
+== 2024年6月4日
+
+
+
+=== 私人模式发布（3.9.40）
+
+现在可以从NetApp支持站点下载新的私有模式版本。此版本包括支持私人模式的以下版本的BlueXP服务。
+
+请注意，此私有模式版本不包括对 Red Hat Enterprise Linux 8 和 9 的连接器的支持。
+
+[cols="2*"]
+|===
+| 服务 | 包含版本 
+
+
+| 连接器 | 3.9.40 
+
+
+| 备份和恢复 | 2024年5月17日 
+
+
+| 分类 | 2024年5月15日(版本1.31) 
+
+
+| Cloud Volumes ONTAP管理 | 2024年5月17日 
+
+
+| 数字电子钱包 | 2023年7月30日 
+
+
+| 内部ONTAP集群管理 | 2023年7月30日 
+
+
+| Replication | 2022年9月18日 
+|===
+要了解有关这些BlueXP服务版本中包含的内容的更多信息，请参阅每个BlueXP服务的发行说明。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["了解BlueXP backup and recovery的新功能"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["了解BlueXP classification的新功能"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["了解BlueXP中Cloud Volumes ONTAP管理的新功能"^]
+
+
+
+
+== 2024年5月17日
+
+
+
+=== 连接器 3.9.40
+
+BlueXP Connector 的此版本包括对其他操作系统的支持、小的安全改进和错误修复。
+
+目前，3.9.40 版本适用于标准模式和限制模式。
+
+.支持RHEL 8和9
+在标准模式或限制模式下使用BlueXP时，运行以下版本的 Red Hat Enterprise Linux 且安装了_new_ Connector 的主机现在支持该连接器：
+
+* 8.6 至 8.9
+* 9.1 至 9.3
+
+
+Podman 是这些操作系统所必需的容器编排工具。
+
+您应该了解 Podman 的要求、已知的限制、操作系统支持的摘要、如果您有 RHEL 7 主机该怎么做、如何开始等等。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
+
+.不再支持RHEL 7和CentOS 7
+2024 年 6 月 30 日，RHEL 7 将达到维护终止（EOM），而 CentOS 7 将达到生命周期终止（EOL）。  NetApp将继续支持这些 Linux 发行版上的 Connector，直到 2024 年 6 月 30 日。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解如果现有的 Connector 在 RHEL 7 或 CentOS 7 上运行，该怎么办"] 。
+
+.AWS 权限更新
+在 3.9.38 版本中，我们更新了 AWS 的连接器策略以包含“ec2:DescribeAvailabilityZones”权限。现在需要此权限来支持具有Cloud Volumes ONTAP 的AWS 本地区域。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["查看连接器的 AWS 权限"] 。
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["了解有关 AWS 本地区域支持的更多信息"^]
+

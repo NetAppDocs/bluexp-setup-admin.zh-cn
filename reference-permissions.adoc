@@ -49,7 +49,7 @@ BlueXP需要对Connector和各个服务拥有AWS权限。
 | 目标 | Description | 链接。 
 
 
-| 使用BlueXP backup and recovery将本地ONTAP集群备份到 Amazon S3 | 激活ONTAP卷上的备份时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html["为备份设置S3权限"^] 
+| 使用BlueXP backup and recovery将本地ONTAP集群备份到 Amazon S3 | 激活ONTAP卷上的备份时、BlueXP备份和恢复会提示您输入具有特定权限的IAM用户的访问密钥和密钥。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-aws.html#set-up-s3-permissions["为备份设置S3权限"^] 
 |===
 
 
@@ -202,11 +202,12 @@ BlueXP需要对Connector和各个服务拥有Google Cloud权限。
 
  a| 
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html["使用备份和恢复将Cloud Volumes ONTAP数据备份到 Google Cloud Storage"^]
+* hhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[CMEK 的权限^]
 
 
 
 
-| 将内部ONTAP集群备份到Google Cloud | 当使用 BlueXP 备份和恢复来备份本地 ONTAP 集群时，您需要向连接器添加权限才能使用“搜索和恢复”功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["使用备份和恢复将本地ONTAP数据备份到 Google Cloud Storage"^] 
+| 将内部ONTAP集群备份到Google Cloud | 当使用 BlueXP 备份和恢复来备份本地 ONTAP 集群时，您需要向连接器添加权限才能使用“搜索和恢复”功能。 | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-gcp.html["搜索和恢复功能的权限"^] 
 |===
 
 
