@@ -72,8 +72,6 @@ Red Hat Enterprise Linux
 9.1 到 9.4
 
 8.6 到 8.10
-
-7.9
  a| 
 3.9.40或更高版本、BlueXP  处于标准模式或受限模式
  a| 

@@ -4092,7 +4092,6 @@ https://support.netapp.com
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">用于Connector下载的安全端点现在支持备份和恢复以及防兰软件保护</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">了解用于Connector下载的安全端点。</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">如果您使用的是备份和恢复或防兰软件保护、则现在可以使用安全端点进行Connector下载。 <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
-  <block id="299e5505ce975112afaefec130cc83e0" category="paragraph">7.9</block>
   <block id="4d286ab7c41699ac1c0222a6a25c8ee6" category="list-text">如果您使用 Podman，则需要调整 aardvark-dns 端口。</block>
   <block id="6d6b1f0f1080ec2381bb912afda46e99" category="list-text">通过 SSH 连接到 BlueXP Connector 虚拟机。</block>
   <block id="dbd4c3db8125866be9bb5a796f445d43" category="list-text">打开 podman_/usr/share/containers/containers.conf_ 文件并修改 Aardvark DNS 服务的所选端口。例如，将其更改为 54。</block>
@@ -4503,7 +4502,6 @@ https://support.netapp.com
   <block id="3f2aa4bd073d2458603c46bc293f8ade" category="inline-link-macro">与 SAML 身份提供商建立联合连接</block>
   <block id="00aef0f14c29d451cdbf8446ce6b0b8e" category="list-text"><block ref="00aef0f14c29d451cdbf8446ce6b0b8e" category="inline-link-macro-rx"></block></block>
   <block id="89d483b606a77baabe08bc060a494729" category="paragraph">BlueXP IAM 允许您通过为用户分配层次结构中特定部分的访问角色来授予资源访问权限。例如，可以为某个包含五个资源的项目分配文件夹或项目管理员角色。</block>
-  <block id="2c6203bceaf797d85b477f5b84315d7e" category="paragraph">文件夹可以包含项目、其他文件夹或两者。创建文件夹是可选的。</block>
   <block id="fe82a8e97a8582336b585b91be018051" category="paragraph">_组织管理员_可能会将资源与文件夹关联，以允许_文件夹或项目管理员_将该资源链接到文件夹中的相应项目。</block>
   <block id="0e60822112467cb5794c648314aae8c1" category="paragraph">将资源与文件夹关联并不会使所有项目都可以访问它；只有文件夹或项目管理员可以看到它。文件夹管理员或项目管理员会决定哪些项目可以访问该资源，并将该资源与相应的项目关联。</block>
   <block id="7b83c7b722f59c1d116d59def3df05be" category="paragraph">在特定层次结构级别授予权限会限制成员对所需资源以及可以使用这些资源的服务的访问。</block>
@@ -4739,7 +4737,6 @@ https://support.netapp.com
   <block id="a679ca81df887999afdb29cc812dba1a" category="section-title">删除联盟</block>
   <block id="2e39c9a75c534c723834aef16604225c" category="paragraph">如果您不再需要某个联合，可以将其删除。这会将该联合从BlueXP中移除，并阻止任何与该联合关联的用户使用其公司凭证登录BlueXP 。例如，如果 IdP 即将停用，或者不再需要该联合。删除联合后，您将无法恢复。您必须创建新的联合。</block>
   <block id="46e00d5f60a3c01d902dd137d055d6cb" category="summary">添加联邦连接后，您可以在BlueXP中管理它。您可以查看连接的状态，并根据需要启用或禁用它。</block>
-  <block id="1b5bf5b8576a36a3f5b9e0e44e117c81" category="doc">在 BLueXP 中管理联盟</block>
   <block id="da8dd0a914b02a392c9eda56004447a3" category="paragraph">您可以在BlueXP中管理您的联盟。您可以禁用它、更新过期的凭据，以及在不再需要时将其禁用。</block>
   <block id="22ae8cdedea46c7c71a0f34e66a726f1" category="paragraph">您还可以将已验证的域添加到现有联合中，这允许您使用多个域进行联合连接。</block>
   <block id="92627f50638acf35c284d9f2b5e45cb5" category="inline-link-macro">了解有关BlueXP中的监控操作的更多信息。</block>
@@ -5059,4 +5056,6 @@ https://support.netapp.com
   <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">了解有关 AWS 本地区域支持的更多信息</block>
   <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
   <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">是的<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
+  <block id="4ebca8d078924ec17de1cf258147df0c" category="paragraph">文件夹可以包含项目、其他文件夹或两者。创建文件夹是可选的。</block>
+  <block id="5c2b3c6d1859da2427f6c94e995cf39c" category="doc">在BlueXP中管理联盟</block>
 </blocks>
