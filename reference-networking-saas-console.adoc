@@ -70,11 +70,7 @@ AWS 服务（ AmazonAWS.com ）：
 | \https://signin.b2c.netapp.com | 需要更新NetApp 支持站点 (NSS)凭据或向BlueXP添加新的NSS凭据。 
 
 
-| \https://netapp-cloud-account.auth0.com
-
-\https://cdn.auth0.com
-
-\https://services.cloud.netapp.com | 您的Web浏览器连接到这些端点、以便通过BlueXP集中进行用户身份验证。 
+| \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://cdn.auth0.com \ https://services.cloud.netapp.com | 您的Web浏览器连接到这些端点、以便通过BlueXP集中进行用户身份验证。 
 
 
 | \https://widget.intercom.io | 通过产品内聊天，您可以与 NetApp 支持人员沟通。 
